@@ -378,6 +378,23 @@ a.toc-label-link {
   cursor: pointer;
 }
 a.toc-label-link:hover { color: var(--ink); }
+
+/* "References" link at the bottom of the chapter TOC — small caps, same
+   accent blue, left-aligned with the toc content (same x as chapter
+   numbers in the items above). */
+.toc-refs-link {
+  display: block;
+  margin-top: 18px;
+  padding-top: 14px;
+  border-top: 1px solid var(--rule);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--accent);
+  text-decoration: none;
+}
+.toc-refs-link:hover { color: var(--ink); }
 .toc-label-2 { margin-top: 56px; padding-top: 0; border-top: 0; }
 .home-toc .toc-onpage,
 .home-toc .toc-chapters { list-style: none; padding: 0; margin: 0; }

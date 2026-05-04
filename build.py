@@ -647,6 +647,7 @@ CHAPTER_TEMPLATE = """{head}{topstrip}
   <nav class="toc" aria-label="Chapter outline">
     <a class="toc-label toc-label-link" href="#" aria-label="Back to top">{toc_label}</a>
     {toc_items_block}
+    {toc_refs_link}
   </nav>
 
   <section class="content">
@@ -1019,11 +1020,17 @@ def render_chapter_page(
         "window.__HEADSHOTS__=" + json.dumps(_CTX.get("headshots", {}), separators=(",", ":")) + ";"
     )
 
+    toc_refs_link = (
+        '<a class="toc-refs-link" href="#references">References</a>'
+        if refs_html else ""
+    )
+
     return CHAPTER_TEMPLATE.format(
         head=head,
         topstrip=topstrip,
         toc_label=toc_label,
         toc_items_block=toc_items_block,
+        toc_refs_link=toc_refs_link,
         title=html.escape(title),
         publish_date=html.escape(publish_date),
         n_authors=len(chap_authors),
