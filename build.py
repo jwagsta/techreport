@@ -532,7 +532,7 @@ def _face_style(name: str) -> tuple[str, bool]:
     ), True
 
 
-def author_card(a: dict) -> str:
+def author_card(a: dict, role: str = "author") -> str:
     name = a.get("name", "")
     aff = a.get("affiliation", "")
     style, has_img = _face_style(name)
@@ -540,12 +540,14 @@ def author_card(a: dict) -> str:
     face_inner = "" if has_img else html.escape(initials_of(name))
     safe_name = html.escape(name)
     safe_aff = html.escape(aff)
+    safe_role = html.escape(role)
     return (
-        '<button type="button" class="author author-link" '
-        f'data-author-name="{safe_name}" data-author-aff="{safe_aff}">'
-        f'<span class="face"{face_attrs} {style} aria-hidden="true">{face_inner}</span>'
-        f'<span class="who"><b>{safe_name}</b><span>{safe_aff}</span></span>'
-        '</button>'
+        '<div class="author" tabindex="0" role="button" '
+        f'data-author-name="{safe_name}" data-author-aff="{safe_aff}" '
+        f'data-author-role="{safe_role}">'
+        f'<div class="face"{face_attrs} {style} aria-hidden="true">{face_inner}</div>'
+        f'<div class="who"><b>{safe_name}</b><span>{safe_aff}</span></div>'
+        '</div>'
     )
 
 
@@ -623,7 +625,7 @@ TOPSTRIP = """<header class="topstrip">
       <span class="brand-wrap">
         <a class="brand" href="{home}">Technical Report on Mirror Bacteria</a>
         <nav class="chap-menu" aria-label="Chapters">
-          {summary_menu_link}<a class="chap-menu-home" href="{home}">About this report</a>
+          <a class="chap-menu-home" href="{home}">About this report</a>{summary_menu_link}
           <div class="chap-menu-sep"></div>
           {chap_menu}
         </nav>
@@ -652,8 +654,6 @@ CHAPTER_TEMPLATE = """{head}{topstrip}
       <h1 class="chap-title">{title}.</h1>
       <div class="chap-meta">
         <span>{publish_date}</span>
-        <span>·</span>
-        <span>{n_authors} authors</span>
       </div>
     </header>
 
@@ -733,6 +733,23 @@ INDEX_TEMPLATE = """{head}{topstrip}
   </section>
 </main>
 
+<div class="drawer-scrim" id="scrim" onclick="closeDrawer()"></div>
+<aside class="drawer" id="drawer" aria-label="Preview" aria-hidden="true">
+  <div class="dhead">
+    <div class="src">
+      <button class="back" id="d-back" onclick="drawerBack()" aria-label="Back">← Back</button>
+      <span class="preview-label" id="d-preview-label">Preview</span>
+      <span class="src-title" id="d-source">—</span>
+    </div>
+    <div class="dactions">
+      <button id="d-jump" onclick="jumpThere()">Jump</button>
+      <button class="x" onclick="closeDrawer()" aria-label="Close">×</button>
+    </div>
+  </div>
+  <div class="dbody" id="d-body"></div>
+</aside>
+
+<script>{boot_script}</script>
 <script src="app.js"></script>
 <script src="search.js"></script>
 </body>
@@ -761,7 +778,7 @@ def _build_chap_menu(chapters: list, home_prefix: str = "../") -> str:
         t = clean_ws(c.get("title", ""))
         items.append(
             '<a class="chap-menu-item" href="{home}{cid}/">'
-            '<span class="chap-menu-num">Ch. {n}</span>'
+            '<span class="chap-menu-num">{n}</span>'
             '<span class="chap-menu-title">{t}</span>'
             '</a>'.format(home=home_prefix, cid=html.escape(cid), n=n, t=html.escape(t))
         )
@@ -997,7 +1014,10 @@ def render_chapter_page(
         summary_menu_link=_CTX.get("summary_menu_link", ""),
         narrow_crumb=narrow_crumb,
     )
-    boot = "window.__TARGETS__=" + json.dumps(target_map, separators=(",", ":")) + ";"
+    boot = (
+        "window.__TARGETS__=" + json.dumps(target_map, separators=(",", ":")) + ";"
+        "window.__HEADSHOTS__=" + json.dumps(_CTX.get("headshots", {}), separators=(",", ":")) + ";"
+    )
 
     return CHAPTER_TEMPLATE.format(
         head=head,
@@ -1075,23 +1095,28 @@ def render_index(
     abstract_html = render_prose_section(abstract_section, "abstract", "Abstract")
 
     # Pull "Rationale for Public Release" out of about-this-report and render
-    # it as its own top-level section on the home page.
+    # it as its own top-level section on the home page. Move the
+    # "Content decisions" subsection under the new Rationale section.
     rationale_section = None
     about_section_trimmed = about_section
     if about_section:
-        rest = []
-        for ss in about_section.get("subsections", []) or []:
-            if ss.get("id") == "rationale-for-public-release":
-                rationale_section = {
-                    "id": "rationale-for-public-release",
-                    "title": "Rationale for public release",
-                    "blocks": ss.get("blocks", []),
-                    "subsections": ss.get("subsections", []),
-                }
+        all_subs = list(about_section.get("subsections", []) or [])
+        rationale_subs = []
+        kept_in_about = []
+        for ss in all_subs:
+            sid = ss.get("id", "")
+            if sid == "rationale-for-public-release":
+                rationale_section = dict(ss)
+            elif sid == "content-decisions":
+                rationale_subs.append(ss)
             else:
-                rest.append(ss)
+                kept_in_about.append(ss)
+        if rationale_section:
+            existing = list(rationale_section.get("subsections", []) or [])
+            rationale_section["subsections"] = existing + rationale_subs
+            rationale_section["title"] = "Rationale for public release"
         about_section_trimmed = dict(about_section)
-        about_section_trimmed["subsections"] = rest
+        about_section_trimmed["subsections"] = kept_in_about
 
     about_html = render_prose_section(about_section_trimmed, "about", "About this report")
     rationale_html = render_prose_section(rationale_section, "rationale", "Rationale for public release") if rationale_section else ""
@@ -1107,7 +1132,7 @@ def render_index(
             if isinstance(b, dict) and b.get("type") == "blockquote":
                 continue
             review_body += render_block(b, used)
-    reviewer_cards = "".join(author_card(r) for r in reviewers)
+    reviewer_cards = "".join(author_card(r, role="reviewer") for r in reviewers)
     review_html = ""
     if review_body or reviewers:
         review_html = (
@@ -1161,15 +1186,24 @@ def render_index(
         n = c.get("number")
         cid = c.get("id", "")
         t = clean_ws(c.get("title", ""))
-        label = "Summary" if n == 0 else f"Ch. {n}"
+        num_text = "" if n == 0 else str(n)
         chap_toc_items_list.append(
-            '<li><a href="{cid}/">'
-            '<span class="toc-num">{label}</span>'
-            ' {t}</a></li>'.format(cid=html.escape(cid),
-                                    label=html.escape(label),
-                                    t=html.escape(t))
+            '<li><a href="{cid}/" title="{title_attr}">'
+            '<span class="toc-num">{num}</span>'
+            '<span class="toc-title">{t}</span>'
+            '</a></li>'.format(
+                cid=html.escape(cid),
+                num=html.escape(num_text),
+                t=html.escape(t),
+                title_attr=html.escape(t),
+            )
         )
     chap_toc_items = "\n      ".join(chap_toc_items_list)
+
+    boot = (
+        "window.__HEADSHOTS__="
+        + json.dumps(_CTX.get("headshots", {}), separators=(",", ":")) + ";"
+    )
 
     return INDEX_TEMPLATE.format(
         head=head,
@@ -1189,6 +1223,7 @@ def render_index(
         rationale_html=rationale_html,
         review_html=review_html,
         ack_html=ack_html,
+        boot_script=boot,
     )
 
 
@@ -1310,6 +1345,7 @@ def main() -> None:
 
     refs_data = json.loads(REFERENCES_FILE.read_text()) if REFERENCES_FILE.exists() else {}
     _CTX["cite_map"] = build_citation_map(refs_data)
+    _CTX["footnotes_lookup"] = footnotes_lookup
 
     chapters = []
     abstract_section = None

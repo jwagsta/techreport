@@ -33,7 +33,8 @@
 
 * { box-sizing: border-box; }
 html, body { margin: 0; padding: 0; }
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; overscroll-behavior-y: none; }
+body { overscroll-behavior-y: none; }
 
 body {
   background: var(--paper);
@@ -59,8 +60,9 @@ body {
 .topstrip .inner {
   max-width: var(--max);
   margin: 0 auto;
-  /* match .page padding so the brand link lines up with the TOC below */
-  padding: 10px 28px 10px 14px;
+  /* Match the TOC's content-area left so the brand aligns with
+     "On this page" / "Report contents" labels below. */
+  padding: 10px 28px 10px 46px;
   display: flex; justify-content: space-between; align-items: center;
   font-size: 12px; letter-spacing: 0.02em;
   color: var(--muted);
@@ -273,14 +275,20 @@ body.search-open { overflow: hidden; }
   transform: translateY(0);
   transition-delay: 0s;
 }
+/* Match the left-sidebar typography: Inter 12.5px / 1.5, hanging-indent
+   number column where the number's left edge lines up with "About this
+   report" / "Summary" above it. */
+.chap-menu .chap-menu-home,
+.chap-menu .chap-menu-item {
+  font-family: var(--sans);
+  font-size: 12.5px;
+  line-height: 1.5;
+}
 .chap-menu .chap-menu-home {
   display: block;
-  padding: 8px 18px;
-  font-size: 11px;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--muted);
-  font-weight: 600;
+  padding: 6px 18px;
+  color: var(--ink-2);
+  font-weight: 500;
 }
 .chap-menu .chap-menu-home:hover {
   background: var(--paper-2);
@@ -293,13 +301,11 @@ body.search-open { overflow: hidden; }
 }
 .chap-menu .chap-menu-item {
   display: grid;
-  grid-template-columns: 56px 1fr;
-  gap: 10px;
-  padding: 9px 18px;
+  grid-template-columns: 18px 1fr;
+  column-gap: 14px;
+  padding: 6px 18px;
   align-items: baseline;
   color: var(--ink-2);
-  font-size: 13px;
-  line-height: 1.35;
   transition: background 0.1s, color 0.1s;
 }
 .chap-menu .chap-menu-item:hover {
@@ -307,12 +313,11 @@ body.search-open { overflow: hidden; }
   color: var(--ink);
 }
 .chap-menu .chap-menu-num {
-  font-size: 11px;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
+  font-size: 12px;
   color: var(--accent);
   font-variant-numeric: tabular-nums;
   font-weight: 600;
+  text-align: left;
 }
 .chap-menu .chap-menu-title {
   font-family: var(--serif);
@@ -339,14 +344,23 @@ body.search-open { overflow: hidden; }
 
 .toc {
   grid-column: 1;
-  position: sticky; top: 64px; align-self: start;
+  /* Fully fixed — never moves on scroll. */
+  position: fixed;
+  top: 88px;     /* sits well below the topstrip */
+  left: max(14px, calc(50vw - (var(--max) / 2) + 14px));
+  width: var(--col-toc);
+  max-height: calc(100vh - 108px);
+  overflow-y: auto;
+  /* Reserve a hanging-indent gutter on the left for the chapter numbers,
+     so titles align flush with the on-this-page links and numbers hang
+     into this gutter. */
+  padding-left: 32px;
+  padding-right: 12px;
   font-family: var(--sans);
   font-size: 12.5px;
   line-height: 1.5;
   color: var(--muted);
-  max-height: calc(100vh - 96px);
-  overflow-y: auto;
-  padding-right: 8px;
+  z-index: 30;
 }
 .toc-label {
   font-size: 11px; letter-spacing: 0.12em;
@@ -361,30 +375,46 @@ a.toc-label-link {
   cursor: pointer;
 }
 a.toc-label-link:hover { color: var(--ink); }
-.toc-label-2 { margin-top: 24px; padding-top: 16px; border-top: 1px solid var(--rule); }
-.home-toc { max-height: calc(100vh - 96px); overflow-y: auto; }
+.toc-label-2 { margin-top: 56px; padding-top: 0; border-top: 0; }
 .home-toc .toc-onpage,
 .home-toc .toc-chapters { list-style: none; padding: 0; margin: 0; }
+/* Hanging-indent layout: chapter titles align flush left (same x as the
+   On-this-page links above); the blue chapter number sits in the gutter
+   to the left of the title (in the toc's padding-left). */
 .home-toc .toc-chapters a {
-  display: grid;
-  grid-template-columns: 56px 1fr;
-  gap: 6px;
+  display: block;
+  position: relative;
+  padding: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.home-toc .toc-chapters li { padding: 6px 0; }
+.home-toc .toc-chapters .toc-title {
+  display: inline;
 }
 .home-toc .toc-chapters .toc-num {
+  position: absolute;
+  right: 100%;
+  top: 4px;
+  margin-right: 12px;
+  width: 18px;
+  text-align: right;
   color: var(--accent);
-  letter-spacing: 0.06em;
   font-variant-numeric: tabular-nums;
+  font-size: 12px;
+  font-weight: 600;
 }
 .toc ol { list-style: none; padding: 0; margin: 0; }
 .toc li { padding: 6px 0; line-height: 1.4; }
-.toc a {
+.toc ol a {
   color: var(--ink-3); text-decoration: none;
   display: grid; grid-template-columns: 26px 1fr; gap: 6px;
   transition: color 0.15s;
 }
-.toc a:hover { color: var(--ink); }
-.toc a.current { color: var(--ink); font-weight: 600; }
-.toc a.current .toc-num { color: var(--accent); }
+.toc ol a:hover { color: var(--ink); }
+.toc ol a.current { color: var(--ink); font-weight: 600; }
+.toc ol a.current .toc-num { color: var(--accent); }
 .toc-num {
   color: var(--rule-2); font-variant-numeric: tabular-nums;
   font-size: 11px; padding-top: 1px;
@@ -478,23 +508,8 @@ a.toc-label-link:hover { color: var(--ink); }
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 14px 22px;
 }
-/* Author / reviewer cards — clickable buttons that open the drawer */
-.author {
-  display: flex; gap: 10px; align-items: flex-start;
-  background: transparent;
-  border: 0;
-  padding: 4px 6px;
-  margin: -4px -6px;
-  text-align: left;
-  font: inherit;
-  color: inherit;
-  cursor: pointer;
-  border-radius: 6px;
-  width: 100%;
-  transition: background 0.1s;
-}
-.author:hover { background: var(--paper-2); }
-.author:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.author { display: flex; gap: 10px; align-items: flex-start; cursor: pointer; }
+.author:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 4px; }
 .author .face {
   width: 46px; height: 46px;
   border-radius: 50%;
@@ -593,6 +608,16 @@ a.toc-label-link:hover { color: var(--ink); }
   line-height: 1.5;
   color: var(--ink-2);
   padding-top: 4px;  /* roughly align with paragraph baseline */
+}
+/* On the home page, sidenotes float out of the grid row so a tall note
+   doesn't push the next main-text paragraph downwards. */
+.index-page .row { position: relative; }
+.index-page .row > .row-sidenotes {
+  position: absolute;
+  top: 0;
+  left: calc(100% - var(--col-marg));
+  width: var(--col-marg);
+  padding-left: 0;
 }
 .row > .row-sidenotes .sidenote {
   border-top: 1px solid var(--rule);
@@ -917,8 +942,9 @@ a.ilink:hover, a.cite:hover {
 .drawer {
   position: fixed;
   right: 0; top: 0; bottom: 0;
-  /* Always wide — fits images, tables, and prose comfortably. */
-  width: min(1040px, 86vw);
+  /* About half the viewport on common laptop sizes, capped so it doesn't
+     get absurdly wide on big monitors and never falls below a usable width. */
+  width: clamp(360px, 50vw, 720px);
   background: var(--paper);
   border-left: 1px solid var(--rule);
   box-shadow: -16px 0 40px rgba(0,0,0,0.06);
@@ -1057,7 +1083,6 @@ a.ilink:hover, a.cite:hover {
 }
 .drawer .dbody p { font-size: 16px; line-height: 1.55; margin: 0 0 0.9em; }
 .drawer .dbody img { max-width: 100%; height: auto; border-radius: 2px; }
-.drawer .dbody .deyebrow { font-family: var(--sans); font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.1em; }
 
 /* ============================================================
    HOVER PEEK on footnote markers (desktop only)
@@ -1167,8 +1192,8 @@ a.ilink:hover, a.cite:hover {
 .index-page .reviewer-strip .author .who b { font-size: 12.5px; }
 .index-page .reviewer-strip .author .who span { font-size: 11.5px; }
 
-/* TOC entries on the index page: one line each, no number gutter */
-.index-page .toc a {
+/* On-this-page TOC entries are simple single-line links (no number gutter). */
+.index-page .home-toc .toc-onpage a {
   display: block;
   grid-template-columns: none;
   white-space: nowrap;
@@ -1181,9 +1206,11 @@ a.ilink:hover, a.cite:hover {
 .index-page .prose-section { display: contents; }
 
 .index-page .chap-list { margin-top: 48px; }
-.index-page > .content > .section-title,
-.index-page .chap-list .section-title {
-  grid-column: 1 / -1;
+/* Every section heading on the home page is constrained to the main column
+   so it never auto-places into the empty sidenote-column slot. */
+.index-page .section-title {
+  grid-column: 1;
+  max-width: 38em;
   margin: 48px 0 22px;
   font-size: 22px;
   font-weight: 600;
@@ -1191,7 +1218,7 @@ a.ilink:hover, a.cite:hover {
   letter-spacing: -0.005em;
   scroll-margin-top: 80px;
 }
-.index-page > .content > .body { margin-bottom: 18px; }
+.index-page .prose-section > .body { margin-bottom: 18px; }
 .index-page .subsection-title {
   font-size: 19px;
   margin: 32px 0 10px;

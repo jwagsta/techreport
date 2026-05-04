@@ -77,14 +77,6 @@
     return el || null;
   }
 
-  function shouldBeWide(el) {
-    // Figures and tables look much better in a wider drawer.
-    if (!el) return false;
-    if (el.tagName === 'FIGURE' || el.tagName === 'TABLE') return true;
-    if (el.querySelector && (el.querySelector('figure') || el.querySelector('table'))) return true;
-    return false;
-  }
-
   function buildLocalPreview(targetId) {
     const el = findOnPage(targetId);
     if (!el) return null;
@@ -113,7 +105,6 @@
       label: label,
       html: clone.outerHTML,
       href: '#' + targetId,
-      wide: shouldBeWide(el),
     };
   }
 
@@ -127,6 +118,9 @@
       const doc = new DOMParser().parseFromString(text, 'text/html');
       // Pull base info: chapter title (the first h1) and target element
       const chapTitle = doc.querySelector('.chap-title')?.textContent?.trim() || chapSlug;
+      // Preserve the chapter number from the slug (e.g. "chapter-4-…" → "4").
+      const chapMatch = chapSlug.match(/^chapter-(\d+)/);
+      const chapNumLabel = chapMatch ? 'Chapter ' + chapMatch[1] + ' · ' : '';
       let target = chapSlug === targetId ? null : doc.getElementById(targetId);
       if (!target) {
         // Whole-chapter preview: header + first paragraph or two of body
@@ -134,7 +128,7 @@
         const firstParas = Array.from(doc.querySelectorAll('.body .row .prose')).slice(0, 3)
           .map(function (p) { return p.outerHTML; }).join('');
         return {
-          label: 'Chapter · ' + chapTitle,
+          label: chapNumLabel + chapTitle,
           html: headerHtml + firstParas,
           href: url,
         };
@@ -143,7 +137,7 @@
       const clone = target.cloneNode(true);
       clone.querySelectorAll('[id]').forEach(function (n) { n.removeAttribute('id'); });
       clone.removeAttribute('id');
-      let label = 'In: ' + chapTitle;
+      let label = chapNumLabel + chapTitle;
       if (target.tagName === 'SECTION') {
         const h = target.querySelector('h2, h3, h4');
         if (h) label = h.textContent.trim() + ' · ' + chapTitle;
@@ -168,7 +162,6 @@
         label: label,
         html: clone.outerHTML,
         href: url + '#' + targetId,
-        wide: shouldBeWide(target),
       };
     } catch (e) {
       return null;
@@ -241,31 +234,75 @@
   }
 
   // Click handler on author/reviewer cards → open a drawer preview.
-  // Extensible: future bios / personal pages can be slotted in here.
-  function buildAuthorPreview(name, aff) {
+  // The body shows just the picture (duotone) + name + affiliation.
+  function buildAuthorFaceHtml(name) {
+    const head = (window.__HEADSHOTS__ || {})[name];
+    if (!head || !head.url) {
+      return '';  // initials fallback drawn elsewhere if needed
+    }
+    const r = (head.height || 1) / (head.width || 1);
+    const c = head.crop || { x: 0, y: 0, size: 1 };
+    const size = Math.max(0.0001, c.size);
+    const bgSize = (1 / size) * 100;
+    const bgX = size >= 1 ? 0 : (c.x / (1 - size)) * 100;
+    const bgY = Math.abs(r - size) < 1e-9 ? 0 : (c.y * r) / (r - size) * 100;
+    const styleVars =
+      "--head-img:url('" + head.url + "');" +
+      "--head-bg-size:" + bgSize.toFixed(3) + "% auto;" +
+      "--head-bg-pos:" + bgX.toFixed(3) + "% " + bgY.toFixed(3) + "%;";
+    return (
+      '<div class="face drawer-face" data-headshot="1" ' +
+      'style="' + styleVars + 'width:120px;height:120px;border-radius:50%"></div>'
+    );
+  }
+
+  function buildAuthorPreview(name, aff, role) {
     const safe = (s) => escapeHtml(s || '');
+    const label = role === 'reviewer' ? 'Reviewer' : 'Author';
+    const faceHtml = buildAuthorFaceHtml(name);
     return {
-      label: safe(name),
+      // No src-title — name is shown next to the face, no need to repeat it.
+      label: '',
+      previewLabel: label,
       html:
-        '<div style="font-family: var(--sans); padding: 8px 0;">' +
-          '<h2 style="font-family: var(--serif); font-size: 26px; font-weight: 600; line-height: 1.2; margin: 0 0 6px;">' + safe(name) + '</h2>' +
-          (aff
-            ? '<p style="color: var(--muted); font-size: 13px; margin: 0 0 18px;">' + safe(aff) + '</p>'
-            : '') +
-          '<p style="color: var(--muted); font-size: 13px; line-height: 1.55; max-width: 38em;">' +
-            'Bio coming soon. Click <em>Jump</em> to be taken to this person’s public page once it’s linked.' +
-          '</p>' +
+        '<div style="font-family: var(--sans); padding: 8px 0; display: flex; gap: 22px; align-items: center;">' +
+          faceHtml +
+          '<div style="min-width:0;">' +
+            '<h2 style="font-family: var(--serif); font-size: 26px; font-weight: 600; line-height: 1.2; margin: 0 0 6px;">' + safe(name) + '</h2>' +
+            (aff
+              ? '<p style="color: var(--muted); font-size: 13px; margin: 0;">' + safe(aff) + '</p>'
+              : '') +
+          '</div>' +
         '</div>',
       href: '',
+      hideJump: true,
     };
   }
 
+  function openAuthorFromEl(el) {
+    if (!el) return;
+    openDrawer(buildAuthorPreview(
+      el.dataset.authorName,
+      el.dataset.authorAff,
+      el.dataset.authorRole || 'author'
+    ));
+  }
+
   document.addEventListener('click', function (e) {
-    const author = e.target.closest('.author-link[data-author-name]');
+    const author = e.target.closest('[data-author-name]');
     if (author) {
       e.preventDefault();
-      openDrawer(buildAuthorPreview(author.dataset.authorName, author.dataset.authorAff));
+      openAuthorFromEl(author);
       return;
+    }
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Enter' || e.key === ' ') {
+      const author = document.activeElement?.closest?.('[data-author-name]');
+      if (author) {
+        e.preventDefault();
+        openAuthorFromEl(author);
+      }
     }
   });
 
