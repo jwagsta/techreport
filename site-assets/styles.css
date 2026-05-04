@@ -601,28 +601,49 @@ body.search-open { overflow: hidden; }
   scroll-margin-top: 80px;
 }
 
+/* Subsection-title sizing depends on depth.
+   level-2 (h3) → primary subsection like 2.2 — biggest
+   level-3 (h4) → 2.2.1 — smaller, lighter weight
+   level-4 (h5) → 2.2.1.1 — smaller still */
 .subsection-title,
 .section-title {
   font-family: var(--serif);
   font-weight: 600;
-  font-size: 26px;
   line-height: 1.22;
   letter-spacing: -0.008em;
   margin: 56px 0 16px;
   max-width: none;
   color: var(--ink);
+  scroll-margin-top: 80px;
+}
+.section-title { font-size: 26px; }
+h3.subsection-title { font-size: 26px; }
+h4.subsection-title {
+  font-size: 19px;
+  font-weight: 600;
+  margin: 36px 0 10px;
+  color: var(--ink-2);
+}
+h5.subsection-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 28px 0 8px;
+  color: var(--ink-2);
+  letter-spacing: 0;
 }
 .subsection-num,
 .section-num {
   display: inline-block;
   font-family: var(--sans);
-  font-size: 13px;
   font-weight: 600;
   letter-spacing: 0.08em;
   color: var(--accent);
-  margin-right: 14px;
   vertical-align: 4px;
+  font-size: 13px;
+  margin-right: 6px;
 }
+h4.subsection-title .subsection-num { font-size: 11px; vertical-align: 3px; }
+h5.subsection-title .subsection-num { font-size: 10px; vertical-align: 2px; letter-spacing: 0.06em; }
 .row > .subsection-title,
 .row > .section-title { grid-column: 1; max-width: 38em; }
 
@@ -633,6 +654,7 @@ body.search-open { overflow: hidden; }
 .figrow {
   margin: 36px 0;
   row-gap: 12px;
+  scroll-margin-top: 80px;
 }
 .figrow img {
   grid-column: 1;
@@ -675,7 +697,7 @@ body.search-open { overflow: hidden; }
    ============================================================ */
 
 /* tables span both columns (main + sidenote) */
-.tablerow { margin: 32px 0; }
+.tablerow { margin: 32px 0; scroll-margin-top: 80px; }
 .tablerow > table {
   grid-column: 1 / -1;
   width: 100%;
@@ -720,6 +742,7 @@ body.search-open { overflow: hidden; }
   margin: 32px 0;
   border-radius: 2px;
   display: block;  /* override .row's subgrid */
+  scroll-margin-top: 80px;
 }
 .boxrow .box-label {
   font-family: var(--sans);
@@ -1072,7 +1095,8 @@ a.cite:hover {
 .index-page .reviewer-strip .author .face {
   width: 34px; height: 34px; font-size: 10px;
   margin-top: 2px;
-  background: linear-gradient(135deg, #d2dcec, #a4b6cf); /* slightly different palette */
+  /* same default fallback as authors; the duotone treatment from
+     .face[data-headshot] takes over once a headshot is present */
 }
 .index-page .reviewer-strip .author .who { font-size: 12px; line-height: 1.35; }
 .index-page .reviewer-strip .author .who b { font-size: 12.5px; }

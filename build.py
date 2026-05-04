@@ -562,22 +562,26 @@ def render_footnote(num: str, body_html: str) -> str:
 # Recursive subsection rendering
 # ============================================================
 
+def strip_leading_number(title: str, number: str) -> str:
+    """Strip a leading "<number><sep>" prefix from a title (e.g. "2.2 Foo" → "Foo")."""
+    if not number or not title:
+        return title
+    pat = re.compile(r"^\s*" + re.escape(number) + r"[.\s)\-:]*", re.I)
+    return pat.sub("", title).strip()
+
+
 def render_subsection(ss: dict, depth: int, used_fns: set[str], number: str = "") -> str:
     sid = html.escape(ss.get("id", ""))
-    raw_title = clean_ws(ss.get("title", ""))
-    # Some subsection titles already start with the number (e.g. "1.1 Foo");
-    # strip it so we don't render the number twice.
-    if number:
-        leading_num_re = re.compile(r"^\s*" + re.escape(number) + r"[.\s)\-:]*", re.I)
-        raw_title = leading_num_re.sub("", raw_title).strip()
+    raw_title = strip_leading_number(clean_ws(ss.get("title", "")), number)
     title_h = html.escape(raw_title)
     h_tag = f"h{min(depth + 1, 6)}"
     num_html = (
-        f'<span class="subsection-num">{html.escape(number)}</span>'
+        f'<span class="subsection-num">{html.escape(number)}</span> '
         if number else ""
     )
+    level_cls = f"level-{depth}"
     parts = [
-        f'<section class="subsection" id="{sid}">',
+        f'<section class="subsection {level_cls}" id="{sid}">',
         '<div class="row">',
         f'<{h_tag} class="subsection-title">{num_html}{title_h}</{h_tag}>',
         '</div>',
@@ -736,17 +740,19 @@ def estimate_read_minutes(body_html: str) -> int:
 # ============================================================
 
 def _build_chap_menu(chapters: list, home_prefix: str = "../") -> str:
-    """Markup for the hover dropdown listing every chapter."""
+    """Markup for the hover dropdown listing every chapter (incl. Summary at 0)."""
     items = []
     for c in chapters:
         n = c.get("number")
         cid = c.get("id", "")
         t = clean_ws(c.get("title", ""))
+        label = "Summary" if n == 0 else f"Ch. {n}"
         items.append(
             '<a class="chap-menu-item" href="{home}{cid}/">'
-            '<span class="chap-menu-num">Ch. {n}</span>'
+            '<span class="chap-menu-num">{label}</span>'
             '<span class="chap-menu-title">{t}</span>'
-            '</a>'.format(home=home_prefix, cid=html.escape(cid), n=n, t=html.escape(t))
+            '</a>'.format(home=home_prefix, cid=html.escape(cid),
+                          label=html.escape(label), t=html.escape(t))
         )
     return "\n          ".join(items)
 
@@ -889,22 +895,31 @@ def render_chapter_page(
     chap_authors, byline_consumed = parse_chapter_authors(blocks, all_authors)
     body_blocks = blocks[byline_consumed:]
 
+    is_summary = n == 0
     body_parts = [render_block(b, used_fns) for b in body_blocks]
     for i, ss in enumerate(chapter.get("subsections", []) or [], start=1):
-        ss_num = f"{n}.{i}" if n is not None else ""
+        ss_num = "" if is_summary or n is None else f"{n}.{i}"
         body_parts.append(render_subsection(ss, depth=2, used_fns=used_fns, number=ss_num))
     body_html = "\n".join(p for p in body_parts if p)
 
     toc_items = []
     for i, ss in enumerate(chapter.get("subsections", []) or [], start=1):
-        ss_num = f"{n}.{i}" if n is not None else ""
+        ss_num = "" if is_summary or n is None else f"{n}.{i}"
+        ss_title = strip_leading_number(clean_ws(ss.get("title", "")), ss_num)
+        num_span = (
+            f'<span class="toc-num">{html.escape(ss_num)}</span> '
+            if ss_num else ""
+        )
         toc_items.append(
-            f'<li><a href="#{html.escape(ss["id"])}">'
-            f'<span class="toc-num">{html.escape(ss_num)}</span>'
-            f'{html.escape(clean_ws(ss.get("title","")))}</a></li>'
+            f'<li><a href="#{html.escape(ss["id"])}">{num_span}{html.escape(ss_title)}</a></li>'
         )
     toc_items_str = "\n      ".join(toc_items) or "<li><em>—</em></li>"
-    toc_label = f"Chapter {n}" if n else "Contents"
+    if is_summary:
+        toc_label = "Summary"
+    elif n:
+        toc_label = f"Chapter {n}"
+    else:
+        toc_label = "Contents"
 
     cards = [author_card(a) for a in chap_authors]
     faculty_strip = (
@@ -941,7 +956,12 @@ def render_chapter_page(
             )
 
     head = PAGE_HEAD.format(title=html.escape(title), css_path=css_path)
-    crumb = f"Chapter {n}" if n else (title or "")
+    if is_summary:
+        crumb = "Summary"
+    elif n:
+        crumb = f"Chapter {n}"
+    else:
+        crumb = title or ""
     narrow_crumb = (
         f'<span class="narrow-crumb"><span class="crumb-sep">·</span>{html.escape(crumb)}</span>'
         if crumb else ""
@@ -999,11 +1019,12 @@ def render_index(
         n = c.get("number")
         cid = c.get("id", "")
         t = clean_ws(c.get("title", ""))
+        label = "Summary" if n == 0 else f"Chapter {n}"
         chap_links.append(
             '<a class="chap-link" href="{cid}/">'
-            '<span class="chap-link-num">Chapter {n}</span>'
+            '<span class="chap-link-num">{label}</span>'
             '<span class="chap-link-title">{t}</span>'
-            '</a>'.format(cid=html.escape(cid), n=n, t=html.escape(t))
+            '</a>'.format(cid=html.escape(cid), label=html.escape(label), t=html.escape(t))
         )
     authors_html = "".join(author_card(a) for a in authors)
 
@@ -1016,9 +1037,11 @@ def render_index(
             body_blocks.append(render_block(b, used))
         for ss in section.get("subsections", []) or []:
             body_blocks.append(render_subsection(ss, depth=2, used_fns=used))
+        # id lives on the heading (the section uses display:contents on the
+        # index page so its bounding box is unreliable for scroll targeting).
         return (
-            f'<section class="prose-section" id="{css_id}">'
-            f'<h2 class="section-title">{html.escape(label)}</h2>'
+            f'<section class="prose-section">'
+            f'<h2 class="section-title" id="{css_id}">{html.escape(label)}</h2>'
             f'<article class="body">{"".join(body_blocks)}</article>'
             f'</section>'
         )
@@ -1041,16 +1064,16 @@ def render_index(
     review_html = ""
     if review_body or reviewers:
         review_html = (
-            '<section class="prose-section" id="review">'
-            '<h2 class="section-title">Review</h2>'
+            '<section class="prose-section">'
+            '<h2 class="section-title" id="review">Review</h2>'
             f'<article class="body">{review_body}</article>'
             + (f'<div class="reviewer-strip">{reviewer_cards}</div>' if reviewers else '')
             + '</section>'
         )
 
     contents_html = (
-        '<section class="chap-list" id="contents">'
-        '<h2 class="section-title">Contents</h2>'
+        '<section class="chap-list">'
+        '<h2 class="section-title" id="contents">Contents</h2>'
         f'{"".join(chap_links)}'
         '</section>'
     )
@@ -1089,7 +1112,7 @@ def render_index(
         title=html.escape(meta.get("title", "")),
         tagline=tagline,
         publish_date=html.escape(meta.get("publishDate", "")),
-        n_chapters=len(chapters),
+        n_chapters=sum(1 for c in chapters if c.get("number")),
         n_authors=len(authors),
         license=html.escape(meta.get("license", "")),
         toc_items=toc_items,
@@ -1226,6 +1249,7 @@ def main() -> None:
     about_section = None
     ack_section = None
     review_section = None
+    summary_section = None
     for path in sorted(CHAPTERS_DIR.glob("*.json")):
         ch = json.loads(path.read_text())
         kind = ch.get("kind")
@@ -1240,7 +1264,18 @@ def main() -> None:
             ack_section = ch
         elif cid == "review":
             review_section = ch
+        elif cid == "summary":
+            summary_section = ch
     chapters.sort(key=lambda c: c.get("number") or 0)
+
+    # Treat Summary as a "chapter 0" — render it as its own page and slot it
+    # at the front of the chapter list so the menu / contents include it.
+    if summary_section is not None:
+        summary_section = dict(summary_section)
+        summary_section["kind"] = "chapter"
+        summary_section["number"] = 0
+        chapters = [summary_section] + chapters
+
     reviewers = index_data.get("reviewers", [])
 
     if SITE.exists():
