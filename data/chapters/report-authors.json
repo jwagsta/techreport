@@ -1,0 +1,123 @@
+{
+  "id": "report-authors",
+  "level": 1,
+  "title": "Report Authors",
+  "title_html": "Report Authors",
+  "blocks": [
+    {
+      "type": "paragraph",
+      "html": "<em>In alphabetical order:</em>"
+    },
+    {
+      "type": "paragraph",
+      "html": "Katarzyna P. Adamala, University of Minnesota"
+    },
+    {
+      "type": "paragraph",
+      "html": "Deepa Agashe, National Centre for Biological Sciences, Bengaluru"
+    },
+    {
+      "type": "paragraph",
+      "html": "Damon J. Binder, Open Philanthropy"
+    },
+    {
+      "type": "paragraph",
+      "html": "Yizhi Cai, University of Manchester"
+    },
+    {
+      "type": "paragraph",
+      "html": "Vaughn S. Cooper, University of Pittsburgh"
+    },
+    {
+      "type": "paragraph",
+      "html": "Ryan K. Duncombe, Mirror Biology Dialogues Fund"
+    },
+    {
+      "type": "paragraph",
+      "html": "Kevin M. Esvelt, Massachusetts Institute of Technology"
+    },
+    {
+      "type": "paragraph",
+      "html": "John I. Glass, J. Craig Venter Institute"
+    },
+    {
+      "type": "paragraph",
+      "html": "Timothy W. Hand, University of Pittsburgh"
+    },
+    {
+      "type": "paragraph",
+      "html": "Thomas V. Inglesby, Johns Hopkins Center for Health Security"
+    },
+    {
+      "type": "paragraph",
+      "html": "Farren J. Isaacs, Yale University"
+    },
+    {
+      "type": "paragraph",
+      "html": "Jonathan D. G. Jones, Sainsbury Laboratory, University of East\nAnglia"
+    },
+    {
+      "type": "paragraph",
+      "html": "Richard E. Lenski, Michigan State University"
+    },
+    {
+      "type": "paragraph",
+      "html": "Gregory Lewis, Massachusetts Institute of Technology"
+    },
+    {
+      "type": "paragraph",
+      "html": "Ruslan Medzhitov, Yale University"
+    },
+    {
+      "type": "paragraph",
+      "html": "Matthew L. Nicotra, Johns Hopkins Center for Health Security"
+    },
+    {
+      "type": "paragraph",
+      "html": "Sebastian B. Oehm, University of Cambridge"
+    },
+    {
+      "type": "paragraph",
+      "html": "Jaspreet Pannu, Johns Hopkins Center for Health Security and Stanford\nUniversity"
+    },
+    {
+      "type": "paragraph",
+      "html": "David A. Relman, Stanford University"
+    },
+    {
+      "type": "paragraph",
+      "html": "Hiroaki Suga, University of Tokyo"
+    },
+    {
+      "type": "paragraph",
+      "html": "Johanna M. Sweere, Mirror Biology Dialogues Fund"
+    },
+    {
+      "type": "paragraph",
+      "html": "Jack W. Szostak, University of Chicago"
+    },
+    {
+      "type": "paragraph",
+      "html": "Nicholas J. Talbot, Sainsbury Laboratory, University of East\nAnglia"
+    },
+    {
+      "type": "paragraph",
+      "html": "Brian Wang, Panoplia Laboratories"
+    },
+    {
+      "type": "paragraph",
+      "html": "<strong>Contact</strong>"
+    },
+    {
+      "type": "paragraph",
+      "html": "The authors welcome comments and feedback."
+    },
+    {
+      "type": "paragraph",
+      "html": "Please contact us via technical-report@mbdialogues.org."
+    }
+  ],
+  "subsections": [],
+  "kind": "frontmatter",
+  "number": null
+}

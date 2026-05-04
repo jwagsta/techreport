@@ -1,0 +1,70 @@
+{
+  "id": "about-this-report",
+  "level": 1,
+  "title": "About this Report",
+  "title_html": "About this Report",
+  "blocks": [
+    {
+      "type": "paragraph",
+      "html": "This technical report analyzes the feasibility of creating mirror\nbacteria, evaluates the possible consequences of their release into the\nenvironment, and outlines some potential countermeasures."
+    },
+    {
+      "type": "paragraph",
+      "html": "Many authors of this report are co-authors of the article\n\"Confronting risks of mirror life\", published in <em>Science</em> in\nDecember 2024 (DOI: 10.1126/science.ads9158). Both that article and this\ntechnical report emerged from the activities of an international working\ngroup of scientific experts from a range of disciplines. This technical\nreport informed the findings and recommendations of the <em>Science</em>\narticle; while that article contains policy recommendations, this report\nfocuses solely on technical analysis and risk assessment. The views\nexpressed in this report reflect those of the authors and not\nnecessarily those of their affiliated institutions."
+    },
+    {
+      "type": "paragraph",
+      "html": "This work is licensed under a Creative Commons\nAttribution-NonCommercial-ShareAlike 4.0 International License (CC\nBY-NC-SA 4.0)."
+    }
+  ],
+  "subsections": [
+    {
+      "id": "rationale-for-public-release",
+      "level": 2,
+      "title": "Rationale for Public Release",
+      "title_html": "<strong>Rationale for Public\nRelease</strong>",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Releasing this report inevitably draws attention to a potentially\ndestructive scientific development. We do not believe that drawing\nattention to threats is always the best approach for mitigating them.\nHowever, in this instance we believe that public disclosure and open\nscientific discussion are necessary to mitigate the risks from mirror\nbacteria. We have two primary reasons to believe disclosure is\nnecessary:"
+        },
+        {
+          "type": "paragraph",
+          "html": "<strong>1) To prevent accidents and well-intentioned\ndevelopment<br/>\n</strong>If no serious concerns are raised, the default course of\nwell-intentioned scientific and technological development would likely\nresult in the eventual creation of mirror bacteria. Creating mirror life\nhas been a long-term aspiration of many academic investigators, and\nefforts toward this have been supported by multiple scientific\nfunders.<a class=\"footnote-ref\" data-footnote-ref=\"fn1\" href=\"#fn1\" id=\"fnref1\" role=\"doc-noteref\"><sup>1</sup></a> While creating mirror bacteria is\nnot yet possible or imminent, advances in enabling technologies are\nexpected to make it achievable within the coming decades. It does not\nappear possible to develop these technologies safely (or deliberately\nchoose to forgo them) without widespread awareness of the risks, as well\nas deliberate planning to mitigate them."
+        },
+        {
+          "type": "paragraph",
+          "html": "This concern is compounded by the possibility that mirror bacteria\ncould accidentally cause irreversible harm even without intentional\nmisuse. Without awareness of the threat, some of the most dangerous\nmodifications would likely be made for well-intentioned reasons, such as\nendowing mirror bacteria with the ability to metabolize ᴅ-glucose to\nallow growth in standard media."
+        },
+        {
+          "type": "paragraph",
+          "html": "<strong>2) To build guardrails that could reliably prevent\nmisuse<br/>\n</strong>There are currently substantial technical barriers to creating\nmirror bacteria. Success within a decade would require efforts akin to\nthose of the Human Genome Project or other major scientific endeavors: a\nsubstantial number of skilled scientists collaborating for many years,\nwith a large budget and unimpeded access to specialized goods and\nservices. Without these resources, entities reckless enough to disregard\nthe risks or intent upon misuse would have difficulty creating mirror\nbacteria on their own. Disclosure therefore greatly reduces the\nprobability that well-intentioned funders and scientists would\nunwittingly aid such an effort while providing very little actionable\ninformation to those who may seek to cause harm in the near term."
+        },
+        {
+          "type": "paragraph",
+          "html": "Crucially, maintaining this high technical barrier in the longer term\nalso appears achievable with a sustained effort. If well-intentioned\nscientists avoid developing certain critical components, such as methods\nrelevant to assembling a mirror genome or key components of the mirror\nproteome, these challenges would continue to present significant\nbarriers to malicious or reckless actors. Closely monitoring critical\nmaterials and reagents such as mirror nucleic acids would create\nadditional obstacles. These protective measures could likely be\nimplemented without impeding the vast majority of beneficial research,\nalthough decisions about regulatory boundaries would require broad\ndiscussion amongst the scientific community and other stakeholders,\nincluding policymakers and the public. Since ongoing advances will\nnaturally erode technical barriers, disclosure is necessary in order to\nbegin discussions while those barriers remain formidable."
+        }
+      ],
+      "subsections": []
+    },
+    {
+      "id": "content-decisions",
+      "level": 2,
+      "title": "Content Decisions",
+      "title_html": "<strong>Content Decisions</strong>",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "An understanding of both the major technical barriers and how they\ncould be eroded by technological progress over the coming decades is\nnecessary for grounded scientific deliberation and the development of\neffective guardrails. For this reason, <a href=\"#chapter-2-pathways-to-mirror-life\">Chapters 2</a> and <a href=\"#chapter-3-engineering-biosafety-and-biosecurity-of-mirror-bacteria\">3</a>\nprovide a high-level assessment of the potential pathways by which\nmirror bacteria might be created and then transformed into other\nspecies. They do not provide explicit, detailed technical instructions\nfor the creation of a mirror bacterium (and given the immaturity of the\nprecursor technologies, doing so would be impossible at this stage)."
+        },
+        {
+          "type": "paragraph",
+          "html": "As a matter of prudence, our discussion of risks focuses on mirrored\nversions of existing bacteria, particularly those that are commonly\nstudied and engineered, as well as traits that could arise naturally\nthrough mutation. We also discuss certain modifications to mirror\nbacteria that legitimate researchers would likely pursue if unaware of\nthe risks described in this report. We intentionally do not discuss\npossible modifications that would serve only destructive purposes.<a class=\"footnote-ref\" data-footnote-ref=\"fn2\" href=\"#fn2\" id=\"fnref2\" role=\"doc-noteref\"><sup>2</sup></a>"
+        }
+      ],
+      "subsections": []
+    }
+  ],
+  "kind": "frontmatter",
+  "number": null
+}

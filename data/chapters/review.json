@@ -1,0 +1,100 @@
+{
+  "id": "review",
+  "level": 1,
+  "title": "Review",
+  "title_html": "Review",
+  "blocks": [
+    {
+      "type": "paragraph",
+      "html": "Prior to release, feedback on scope, completeness, accuracy, and\npresentation of the analysis was solicited from scientific experts in\neach of the areas covered by the report. Experts were invited to comment\non one or several chapters of the report. The authors of each chapter\nretained final editorial authority over the content and integration of\nexpert feedback. Providing review comments does not imply endorsement of\nthe report’s overall findings or conclusions. Experts were given the\noption to be publicly acknowledged in this report. Reviewers who agreed\nto be acknowledged were (in alphabetical order):"
+    },
+    {
+      "type": "blockquote",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Rocco Casagrande, Gryphon Scientific"
+        },
+        {
+          "type": "paragraph",
+          "html": "Matthew Wook Chang, National University of Singapore"
+        },
+        {
+          "type": "paragraph",
+          "html": "George M. Church, Harvard University"
+        },
+        {
+          "type": "paragraph",
+          "html": "Gitta L. Coaker, University of California, Davis"
+        },
+        {
+          "type": "paragraph",
+          "html": "Jeffery L. Dangl, University of North Carolina at Chapel Hill"
+        },
+        {
+          "type": "paragraph",
+          "html": "Drew Endy, Stanford University"
+        },
+        {
+          "type": "paragraph",
+          "html": "Jeff Gore, Massachusetts Institute of Technology"
+        },
+        {
+          "type": "paragraph",
+          "html": "Chuan He, University of Chicago"
+        },
+        {
+          "type": "paragraph",
+          "html": "Sheng Yang He, Duke University"
+        },
+        {
+          "type": "paragraph",
+          "html": "Kenya Honda, Keio University"
+        },
+        {
+          "type": "paragraph",
+          "html": "Wilhelm T. S. Huck, Radboud University"
+        },
+        {
+          "type": "paragraph",
+          "html": "Jonathan C. Kagan, Harvard University"
+        },
+        {
+          "type": "paragraph",
+          "html": "Michael S. Kay, University of Utah"
+        },
+        {
+          "type": "paragraph",
+          "html": "Simon A. Levin, Princeton University"
+        },
+        {
+          "type": "paragraph",
+          "html": "Robert D. Miller, University of New Mexico"
+        },
+        {
+          "type": "paragraph",
+          "html": "John H. Rex, AMR.Solutions"
+        },
+        {
+          "type": "paragraph",
+          "html": "Daniel Simberloff, University of Tennessee, Knoxville"
+        },
+        {
+          "type": "paragraph",
+          "html": "James M. Tiedje, Michigan State University"
+        },
+        {
+          "type": "paragraph",
+          "html": "Paul E. Turner, Yale University"
+        },
+        {
+          "type": "paragraph",
+          "html": "J. Craig Venter, J. Craig Venter Institute"
+        }
+      ]
+    }
+  ],
+  "subsections": [],
+  "kind": "frontmatter",
+  "number": null
+}

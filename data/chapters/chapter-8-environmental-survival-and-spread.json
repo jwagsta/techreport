@@ -1,0 +1,885 @@
+{
+  "id": "chapter-8-environmental-survival-and-spread",
+  "level": 1,
+  "title": "Environmental Survival and Spread",
+  "title_html": "Chapter 8:\nEnvironmental Survival and Spread",
+  "blocks": [
+    {
+      "type": "paragraph",
+      "html": "<em>Deepa Agashe<sup>1</sup>, Damon J. Binder<sup>2</sup>, Vaughn S.\nCooper<sup>3</sup>, Kevin M. Esvelt<sup>4</sup>,</em>"
+    },
+    {
+      "type": "paragraph",
+      "html": "<em>Richard E. Lenski<sup>5,6</sup>, David A.\nRelman<sup>7,8,9</sup></em>"
+    },
+    {
+      "type": "table",
+      "html": "<table>\n<colgroup>\n<col style=\"width: 100%\"/>\n</colgroup>\n<thead>\n<tr>\n<th><em>Authors are listed in alphabetical order. Affiliations:</em>\n<sup>1</sup> National Centre for Biological Sciences, Tata Institute of\nFundamental Research, Bengaluru, India; <sup>2</sup> Open Philanthropy,\nSan Francisco, California, USA; <sup>3</sup> Department of Microbiology\nand Molecular Genetics, University of Pittsburgh, Pittsburgh,\nPennsylvania, USA; <sup>4</sup> Media Laboratory, Massachusetts\nInstitute of Technology, Cambridge, Massachusetts, USA; <sup>5</sup>\nDepartment of Microbiology, Genetics, and Immunology, Michigan State\nUniversity, East Lansing, Michigan, USA; <sup>6</sup> Program in\nEcology, Evolution, and Behavior, Michigan State University, East\nLansing, Michigan, USA; <sup>7</sup> Department of Medicine, Stanford\nSchool of Medicine, Stanford University, Stanford, California, USA;\n<sup>8</sup> Department of Microbiology and Immunology, Stanford School\nof Medicine, Stanford University, California, USA; <sup>9</sup>\nInfectious Diseases Section, Veterans Affairs Palo Alto Health Care\nSystem, Palo Alto, California, USA</th>\n</tr>\n</thead>\n<tbody>\n</tbody>\n</table>",
+      "kind": "affiliations"
+    },
+    {
+      "type": "paragraph",
+      "html": "Populations of organisms expand when their reproductive rate exceeds\ntheir death rate. The availability of resources and efficiency of\nconversion into progeny determine rates of reproduction. Resource\navailability decreases in the presence of competing species. Death rates\nare governed by natural enemies such as predators and pathogens, as well\nas by environmental stresses such as desiccation, extreme temperatures,\nand starvation. When a species’ reproductive rate exceeds its death\nrate, its abundance will increase until resources are exhausted, natural\nenemies proliferate, or the environment changes. For most species there\nis an approximate balance between births and deaths, such that\npopulations remain approximately constant or exhibit a seasonal cycle\ninfluenced by nutrient availability and predators."
+    },
+    {
+      "type": "paragraph",
+      "html": "Occasionally, the population of a species introduced into a new\nenvironment with fewer natural enemies, including predators, can\nincrease dramatically, sometimes causing great damage to natural and\nagricultural ecosystems. Even if the introduced species is somewhat less\nadapted to its abiotic conditions or local resources than native\nspecies, it can often expand and cause harm—becoming invasive—due to a\nlow death rate resulting from the absence of natural enemies."
+    },
+    {
+      "type": "paragraph",
+      "html": "A major concern in this chapter is that mirror bacteria could, by\nvirtue of their altered chirality, escape from many natural enemies and\nso have a greatly reduced death rate due to predation and parasitism. In\naddition, as discussed in <a href=\"#chapter-4-risks-to-human-health\">Chapters 4</a>, <a href=\"#chapter-6-animal-infection\">6</a>, and <a href=\"#chapter-7-plant-infection\">7</a>, mirror bacteria could plausibly\ninfect and survive in a wide range of multicellular organisms.\nNevertheless, mirror bacterial growth rates may be substantially lower\nthan those of natural bacteria, as mirror bacteria would have a reduced\ncapacity to obtain nutrients and would lack other specialized\nadaptations for most environments encountered. Should the advantages\nfrom reduced predation and any benefits from infecting multicellular\norganisms outweigh the disadvantages in a given environment, mirror\nbacteria could then colonize that ecosystem."
+    },
+    {
+      "type": "paragraph",
+      "html": "Imagine, for example, an environment in which the natural-chirality\nbacteria, on average, divide once per day and die once per day, thereby\nmaintaining roughly steady numbers. Now imagine a mirror bacterium is\nintroduced that escapes predation and experiences only a quarter of that\nmortality. Even a two-thirds reduction in the mirror bacterium's growth\nrate would still exceed its death rate, allowing the mirror bacterium to\ninvade and increase in numbers until the available nutrients are\nsufficiently depleted. Without effective predation and an accompanying\nincrease in the number of predators, mirror bacterial populations could\npotentially reach very high densities, with extraordinarily damaging\nconsequences for the environment, agriculture, and human wellbeing."
+    },
+    {
+      "type": "paragraph",
+      "html": "<a href=\"#mirror-bacteria-would-be-inherently-resistant-to-many-biological-controls\">Section\n8.1</a> discusses the effects of biotic processes on survival. Phage\nlysis, protist predation, and microbial warfare rely primarily on chiral\nmechanisms. Mirror bacteria would likely experience reduced rates of\npredation and would be completely resistant to natural phages, which may\nallow long-term survival outside of hosts and facilitate transmission\nbetween infected multicellular organisms."
+    },
+    {
+      "type": "paragraph",
+      "html": "<a href=\"#mirror-bacteria-could-colonize-natural-environments-outside-of-multicellular-hosts\">Section\n8.2</a> discusses the possibility that a mirror bacterial generalist\ncapable of evading most forms of biological control could invade\nenvironments outside of multicellular hosts. Mirror heterotrophic\nbacteria could be capable of utilizing a number of common nutrients, and\nthough their growth would be impaired compared to that of natural\nbacteria, escape from natural predators could still enable the\ncolonization of some environments. Such invasive bacteria could\nplausibly grow until most nutrients are depleted, as most top-down\nbiological controls would be absent."
+    },
+    {
+      "type": "paragraph",
+      "html": "<a href=\"#invasive-mirror-bacteria-could-rapidly-disperse-through-the-environment\">Section\n8.3</a> describes the possible spread of an invasive mirror bacterium\nthrough the environment by hitchhiking on human transportation and\nanimal hosts, or by wind or water, allowing rapid dispersal."
+    },
+    {
+      "type": "paragraph",
+      "html": "<a href=\"#invasive-mirror-bacteria-could-rapidly-evolve-and-diversify\">Section\n8.4</a> examines the possible evolution of invasive mirror bacteria.\nAbsent human intervention, there would be little genetic diversity, and\nmirror bacteria would have no ability to obtain genetic material from\nnatural chirality bacteria, leaving <em>de novo</em> mutation as the\nonly source of variation and new capabilities. Nonetheless, evolutionary\nadaptation under conditions of population expansion into new\nenvironments can be rapid. By contrast, we expect there would be little\npotential for predators to evolve to consume mirror bacteria within any\nhuman-relevant timescale."
+    },
+    {
+      "type": "paragraph",
+      "html": "<a href=\"#invasive-mirror-bacteria-could-cause-irreversible-ecological-harm\">Section\n8.5</a> describes potential ecological harms that could result from the\nspread of invasive mirror bacteria, including the extinction of\nsusceptible animals and plants as well as changes to habitats and\nbiogeochemical cycling."
+    },
+    {
+      "type": "paragraph",
+      "html": "In <a href=\"#countermeasures-to-invasive-mirror-bacteria-might-lessen-but-would-not-halt-the-ecological-damage\">Section\n8.6</a> we close with a brief discussion of possible countermeasures.\nWith sufficient coordination and resources, certain countermeasures\ncould mitigate some harmful effects, but they appear unlikely to prevent\nwidespread and irreversible environmental harm."
+    }
+  ],
+  "subsections": [
+    {
+      "id": "mirror-bacteria-would-be-inherently-resistant-to-many-biological-controls",
+      "level": 2,
+      "title": "8.1 Mirror bacteria would be inherently resistant to many biological controls",
+      "title_html": "<strong>8.1\nMirror bacteria would be inherently resistant to many biological\ncontrols</strong>",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "In natural environments, individual bacterial cells often perish from\npredation by protists and bacteriophages (viruses that infect bacteria,\noften referred to as “phages”) or are killed by the microbial weapons of\ncompetitors (Kirchman, 2018; Pernthaler, 2005; Thingstad, 2000). Mirror\nbacteria would likely be largely resistant to protist grazing, entirely\nresistant to natural phages, and resistant to most weapons of microbial\ncompetitors. This inherent resistance could substantially enhance the\nsurvival of mirror bacteria in most ecosystems."
+        }
+      ],
+      "subsections": [
+        {
+          "id": "mirror-bacteria-would-be-resistant-to-natural-phages",
+          "level": 3,
+          "title": "Mirror bacteria would be resistant to natural phages",
+          "title_html": "Mirror\nbacteria would be resistant to natural phages",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "Phages are responsible for a large fraction of bacterial deaths in\nmany environments. There are 10 to 20 phages for every bacterial cell in\nboth soils and natural waters (Cobián Güemes <em>et al</em>., 2016),\nleading to frequent encounters (A. G. Murray & Jackson, 1992).\nHowever, not every cell is susceptible to every phage, and natural\nbacteria have evolved defenses against some of the phages that infected\ntheir ancestors. Despite these defenses, bacterial death rates from\nphages in the best-studied marine environments range from ~ 0.01\nday<sup>-1</sup> to over 20 day<sup>-1</sup> (Carlson <em>et al</em>.,\n2022; Mann, 2003; Weinbauer, 2004). Many bacterial populations grow\nrapidly while they are resistant or otherwise phage-free, then encounter\na phage to which they are susceptible and are dramatically reduced in\nnumber. For example, cyanobacterial “blooms” created by nutrient\ninfluxes in aquatic environments are often ended by phages (Grasso\n<em>et al</em>., 2022; T. D. Harris <em>et al</em>., 2024; Mann, 2003).\nMirror bacteria would be inherently and completely resistant to every\nnatural phage, likely providing a major fitness advantage."
+            },
+            {
+              "type": "paragraph",
+              "html": "All viruses parasitize their host’s cellular translation system and\nnucleoside triphosphate pool to produce proteins and new viral genomes.\nMirror ribosomes could not produce natural-chirality proteins, nor could\nmirror nucleotide triphosphates be used to replicate natural-chirality\nviral genomes. Thus, no natural phage could successfully reproduce\nwithin a mirror bacterium. Even infection—the entry of the phage’s\ngenetic material into a mirror bacterium—is mediated by chiral phage\nproteins binding to chiral cellular receptors, and therefore is highly\nunlikely to occur (Labrie <em>et al</em>., 2010)."
+            },
+            {
+              "type": "paragraph",
+              "html": "In summary, natural phages would not be able to infect mirror\nbacteria, completely removing a major source of bacterial mortality.\nOnly synthetic mirror phages, which do not currently exist, could kill\nand replicate within mirror bacteria; they are discussed as a potential\nmedical countermeasure in <a href=\"#the-efficacy-of-other-countermeasures-against-mirror-bacterial-infection-is-unclear\">Section\n5.3</a> and as a potential environmental countermeasure in <a href=\"#countermeasures-to-invasive-mirror-bacteria-might-lessen-but-would-not-halt-the-ecological-damage\">Section\n8.6</a>."
+            }
+          ],
+          "subsections": []
+        },
+        {
+          "id": "mirror-bacteria-would-probably-be-resistant-to-other-predators",
+          "level": 3,
+          "title": "Mirror bacteria would probably be resistant to other predators",
+          "title_html": "Mirror\nbacteria would probably be resistant to other predators",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "In addition to phages, bacteria are preyed upon by phagocytic amoebae\nand other protists, other bacteria, and multicellular eukaryotes\nincluding nematodes, arthropods, and rotifers (T. D. Harris <em>et\nal</em>., 2024; Morgan <em>et al</em>., 2010; Potapov <em>et al</em>.,\n2022). Mirror bacteria could be harder for predators to track because\nthey would leave trails of mirror-image biomolecules that would not\nproperly bind to the predator’s receptors; they could be resistant to\nbeing killed even when consumed; and they would provide few nutrients of\nuse to their predators. Animals that ingest mirror bacteria could\ninstead become infected by them (<a href=\"#chapter-6-animal-infection\">Chapter 6</a>)."
+            },
+            {
+              "type": "paragraph",
+              "html": "We first discuss protists. In marine ecosystems, protists are often\nthe leading cause of bacterial death and the primary control on\nbacterial abundance (Pernthaler, 2005). Grazing rates by\nmicrozooplankton on phytoplankton of ~40% per day are common, with\napproximately two-thirds of primary production consumed by this\nprotist-dominated group (Calbet & Landry, 2004); however, which\nspecies are primarily responsible for this consumption is much less\ncertain (Frias-Lopez <em>et al</em>., 2009; Wilken <em>et al</em>.,\n2023). Although less well-studied than the marine variety (Geisen <em>et\nal</em>., 2017), terrestrial protists are also major consumers of\nbacteria in soil (Geisen <em>et al</em>., 2018; Trap <em>et al</em>.,\n2016)."
+            },
+            {
+              "type": "paragraph",
+              "html": "Bacterial consumption by protists usually occurs through\nphagocytosis. This is the same process used by the professional\nphagocytes of the human immune system (Desjardins <em>et al</em>.,\n2005), and so protist phagocytosis would therefore likely suffer from\nanalogous defects to those described in <a href=\"#mirror-bacteria-would-likely-be-resistant-to-most-innate-immune-responses\">Section\n4.2</a>. Protists are highly diverse, and the molecular mechanisms\ninvolved in the tracking, recognition, engulfment, and killing of prey\nare not well-characterized in any organism. This makes it difficult to\ndetermine how a given protist would respond to mirror bacteria,\nparticularly given that recognition and killing could still occur to\nsome extent through non-specific or achiral mechanisms."
+            },
+            {
+              "type": "paragraph",
+              "html": "<a href=\"#box-8.1-dictyostelium-discoideum-may-not-effectively-phagocytose-and-kill-mirror-bacteria\">Box\n8.1</a> discusses phagocytosis of mirror bacteria in the model amoeba\n<em>Dictyostelium discoideum</em>, which is perhaps the most\nwell-studied of all protists. The evidence here suggests that mirror\nbacteria could be ingested at greatly reduced rates due to the absence\nof specific prey signals such as folate and peptidoglycan (Pan <em>et\nal</em>., 2018). Whether ingested mirror bacteria would survive\nphagocytosis is unclear, but it is likely that the undigested mirror\nbacterium—whether living or dead—would be egested after several\nhours."
+            },
+            {
+              "type": "paragraph",
+              "html": "Outside of <em>D. discoideum</em>, the molecular mechanisms involved\nin phagocytosis are less characterized. Prey-seeking based on chiral\nmechanisms occurs in many protists, which can sense and actively swim\ntoward bacterial exudates<a class=\"footnote-ref\" data-footnote-ref=\"fn15\" href=\"#fn15\" id=\"fnref15\" role=\"doc-noteref\"><sup>15</sup></a> such as sugars and\namino acids (Spero, 1985; Martel, 2006; Rashidi & Ostrowski, 2019;\nRoberts <em>et al</em>., 2011) and discriminate between prey through the\nrecognition of specific surface compounds (Jürgens & Matz, 2002;\nMontagnes <em>et al</em>., 2008; Shi <em>et al</em>., 2021) such as\nmannose (Wootton <em>et al</em>., 2007). Since most recognized surface\nmolecules are thought to be chiral, it is likely that most protists\nwould ingest mirror cells at substantially lower rates. However,\nprotists ingest latex beads and microplastics (Rillig & Bonkowski,\n2018) and some protists consume them at rates similar to their\nconsumption of natural bacteria (Pace & Bailiff, 1987), so some\nphagocytosis of mirror bacteria would likely occur even if chemotaxis\nwere to completely fail."
+            },
+            {
+              "type": "paragraph",
+              "html": "Once engulfed, bacteria are subjected to acidic conditions and lytic\nantimicrobial enzymes (Guerrier <em>et al</em>., 2017; Shi <em>et\nal</em>., 2021) and, at least in <em>D. discoideum</em>, ROS and\ntransition metal poisons as well (Dunn <em>et al</em>., 2017). Lytic\nenzymes are not expected to function, so efficient intracellular killing\nof mirror bacteria would be likely only if achiral mechanisms were\nadequate and triggered absent prey signals. It is not clear that this is\nthe case for <em>D. discoideum</em> (<a href=\"#box-8.1-dictyostelium-discoideum-may-not-effectively-phagocytose-and-kill-mirror-bacteria\">Box\n8.1</a>). Regardless of whether it would be killed or not, the mirror\nbacterium would not be digested. Most likely either the mirror bacterium\nor its remains would be egested, but other outcomes are possible if\negestion fails. In some cases it may even be possible for living mirror\ncells to persist within protist food vacuoles like certain"
+            },
+            {
+              "type": "box",
+              "id": "box-8.1-dictyostelium-discoideum-may-not-effectively-phagocytose-and-kill-mirror-bacteria",
+              "label": "Box 8.1",
+              "title": "Dictyostelium discoideum may not effectively phagocytose and kill mirror bacteria",
+              "blocks": [
+                {
+                  "type": "paragraph",
+                  "html": "<em>Dictyostelium discoideum</em> is a soil-dwelling amoeba (or\n“slime mold”) used as a model organism to study phagocytosis, and has\noften served as a model for human phagocytic cells."
+                },
+                {
+                  "type": "paragraph",
+                  "html": "The mechanisms by which <em>D. discoideum</em> recognizes prey are\nnot well understood (Dunn <em>et al</em>., 2017), but different\nbacterial species are known to elicit specific transcriptional responses\n(Lamrabet <em>et al</em>., 2020; Nasser <em>et al</em>., 2013). The\nG-protein-coupled receptor fAR1 detects chiral folate and\nlipopolysaccharide produced by bacteria (Pan <em>et al</em>., 2018); one\nfAR1 knockout strain showed a significant reduction in uptake of the\nprey bacterium <em>Klebsiella aerogenes</em> (Pan <em>et al</em>.,\n2016). Other, as yet uncharacterized, pathways appear to be involved in\nuptake of <em>Bacillus subtilis</em> (Lima <em>et al</em>., 2014). There\nis also evidence for the use of (as yet unidentified) lectin-like\nreceptors in phagocytosis (Vogel <em>et al</em>., 1980). It is unclear\nif any would detect achiral molecules. <em>D. discoideum</em> can also\nphagocytose latex beads, although mutants that can phagocytose beads but\nnot bacteria are known (Vogel <em>et al</em>., 1980), suggesting that\nlatex bead uptake is driven by hydrophobic interactions that are absent\nfor many natural bacteria and therefore may not be that relevant for\ntheir mirror counterparts. The extent to which <em>D. discoideum</em>\nwould engulf mirror bacteria thus remains unclear, but it appears likely\nthat engulfment would occur at a substantially lower frequency compared\nto natural bacteria."
+                },
+                {
+                  "type": "paragraph",
+                  "html": "Once the outer membrane engulfs a food particle, it becomes enclosed\nwithin a compartment called a phagosome. During phagosomal maturation\nthe pH decreases to 3.5–4.5 (Gopaldass <em>et al</em>., 2012; Marchetti\n<em>et al</em>., 2009), and lytic enzymes, oxidases, and metal\ntransporters are delivered, contributing to a bactericidal environment\n(Dunn <em>et al</em>., 2017). During late maturation nutrients are\nabsorbed and enzymes retrieved. Undigested material is then egested from\nthe cell; the entire process occurs over a few hours. Phagosomal\ntrafficking, acidification, the delivery of lysosomal hydrolases, and\nthe final expulsion of undigested material all proceed normally during\nthe phagocytosis of latex beads (Gotthardt <em>et al</em>., 2002; Padh\n<em>et al</em>., 1993) and so would likely also occur in response to the\ningestion of a mirror bacterium."
+                },
+                {
+                  "type": "paragraph",
+                  "html": "<em>D. discoideum</em> deploys both chiral mechanisms, such as lytic\nenzymes; and achiral mechanisms, such as reactive oxygen species (ROS)\nand transition metal poisons (Barisch <em>et al</em>., 2018; Hao <em>et\nal</em>., 2016), to kill bacteria. Knockout experiments suggest that\nreducing the efficacy of lysosomal enzymes greatly impairs intracellular\nkilling of <em>Escherichia coli</em> and other bacteria, while the\neffect of removing ROS generation or increasing phagosomal pH appears\ncomparatively modest (Crespo-Yanez <em>et al</em>., 2023; Jauslin <em>et\nal</em>., 2021). Killing mechanisms vary with prey (Jauslin <em>et\nal</em>., 2021; Nasser <em>et al</em>., 2013) and the detection of\nfolate is known to play an important role in intracellular killing\n(Bodinier <em>et</em> <em>al</em>., 2020; Leiba <em>et al</em>., 2017).\nWhether other chiral signals also regulate intracellular killing is\nunknown. Given that lytic enzymes are unlikely to harm mirror bacteria,\nit appears that intracellular killing could be greatly impaired, but\nwhether this would allow mirror <em>E. coli</em>, for example, to\nsurvive ingestions by <em>D. discoideum</em> is unclear."
+                },
+                {
+                  "type": "paragraph",
+                  "html": "In summary, <em>D. discoideum</em> would likely ingest mirror\nbacteria at lower rates than natural-chirality bacteria, and it is\nunclear how effectively mirror bacteria would be killed in the\nphagosome. After a few hours it is likely that either the mirror\nbacterium or its largely undigested remains would be egested from the\ncell, with the protist deriving few, if any, nutrients from it."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "html": "natural bacteria, including species which are not typically\nintracellular parasites (Barker <em>et al</em>., 1999). Mirror\nmetabolites released following the successful lysis of a mirror\nbacterium might also be imported into the protist cytosol or (if\nhydrophobic) incorporated into the protist lipid membrane, where they\nmight accumulate and may or may not prove harmful to the protist."
+            },
+            {
+              "type": "paragraph",
+              "html": "To summarize, the mechanisms involved in protist predation are\ncomplex and not well understood. While protist species could exhibit\ndiverse responses to a mirror bacterium, in most cases it is likely that\nkey mechanisms would fail to function effectively, resulting in reduced\nrates of ingestion, killing, and digestion (<a href=\"#figure-8.1-mirror-bacteria-could-be-resistant-to-protists-a-major-cause-of-bacterial-mortality\">Figure\n8.1</a>)."
+            },
+            {
+              "type": "paragraph",
+              "html": "The nematode <em>Caenorhabditis elegans</em> illustrates some of the\ninteractions between bacterivorous animals and mirror bacteria. As\ndiscussed in <a href=\"#chapter-6-animal-infection\">Chapter 6</a>, <em>C.\nelegans</em> is a filter feeder that would ingest mirror bacteria,\nthough the absence of chiral signals may somewhat reduce intake compared\nto the nematode’s preferred prey. Lytic enzymes play key roles in both\nkilling and digesting prey, both on their own and in synergy with other\nmechanisms such as pharyngeal grinding, which crushes most ingested\nbacteria (Seymour <em>et al</em>., 1983) but is impaired in the absence\nof lysozyme (Gravato-Nobre <em>et al</em>., 2016). Because mirror\nbacteria are expected to be resistant to these enzymes, it is plausible\nthat those which survive ingestion would be expelled along with other\nwaste. If able to persist within the intestine they could plausibly\ncause a lethal infection. If infection does not occur, the nematode\nmight learn to avoid mirror bacteria as low-quality food items."
+            },
+            {
+              "type": "paragraph",
+              "html": "Bacteria are subject to many other forms of predation, including\nphages (discussed in the previous section), parasitic and predatory\nbacteria, and a diverse array of animals. A detailed analysis of all\npossibilities is beyond the scope of this report. Nevertheless, failures\nof recognition, killing, and digestion are expected to be common. Lytic\nenzymes, in particular, are used by almost all bacterial predators to\nkill and digest bacteria (Karasov & Douglas, 2013; Lancaster <em>et\nal</em>., 2019; J. Pérez <em>et al</em>., 2016), and while this is\nusually not the only killing mechanism, it often acts synergistically\nwith others. This deficiency could partially, in some cases perhaps\nsubstantially, reduce the mortality rates experienced by mirror\nbacteria, increasing environmental persistence and potentially allowing\nnet positive population growth in some environments."
+            },
+            {
+              "type": "figure",
+              "id": "figure-8.1-mirror-bacteria-could-be-resistant-to-protists-a-major-cause-of-bacterial-mortality",
+              "src": "assets/image17.png",
+              "alt": "",
+              "width": "6.41146in",
+              "height": "6.39016in",
+              "caption": {
+                "id": "figure-8.1-mirror-bacteria-could-be-resistant-to-protists-a-major-cause-of-bacterial-mortality",
+                "title": "Figure 8.1: Mirror bacteria could be resistant to protists, a major cause of bacterial mortality",
+                "title_html": "Figure\n8.1: Mirror bacteria could be resistant to protists, a major cause of\nbacterial mortality",
+                "body_html": "<p>(A) Phagocytosis of natural-chirality bacteria by protists relies\nprimarily on chiral mechanisms at each step: tracking, recognition,\ninternalization, killing, and digestion. (B) Phagocytosis of mirror\nbacteria could fail because each step at least partially depends on the\ninteractions of chiral molecules. Failure of any of the first three\nsteps (tracking, recognition, or internalization) could result in failed\npredation. Should phagocytosis succeed but the mirror bacteria survive,\nmultiple outcomes are possible, including ones in which the protist\nsuffers harm. Even if mirror bacterial killing occurs, the protist would\nnot be able to properly digest and extract nutrients.</p>"
+              }
+            },
+            {
+              "type": "paragraph",
+              "html": "Even predators that do successfully ingest and kill mirror bacteria\nwould derive few nutrients from them. Natural enzymes would fail to\ndecompose mirror proteins and other chiral macromolecules, which make up\nover 95% of the dry biomass of a typical bacterial cell (Milo &\nPhillips, 2015). Most small molecule metabolites in bacteria are also\nchiral (Bennett <em>et al</em>., 2009), and so they too could probably\nnot be catabolized. Under normal conditions, a growing bacterial\npopulation facilitates the"
+            },
+            {
+              "type": "table",
+              "html": "<table>\n<colgroup>\n<col style=\"width: 1%\"/>\n<col style=\"width: 17%\"/>\n<col style=\"width: 21%\"/>\n<col style=\"width: 23%\"/>\n<col style=\"width: 9%\"/>\n<col style=\"width: 26%\"/>\n</colgroup>\n<thead>\n<tr>\n<th colspan=\"2\"><strong>Group</strong></th>\n<th><strong>Examples</strong></th>\n<th><strong>Target /<br/>\nMechanism of action</strong></th>\n<th style=\"text-align: center;\"><strong>Activity vs Mirror</strong></th>\n<th style=\"text-align: right;\"><strong>References</strong></th>\n</tr>\n<tr>\n<th colspan=\"6\"><strong>Achiral antibiotics</strong></th>\n</tr>\n<tr>\n<th></th>\n<th>Dithiolopyrrolones</th>\n<th>Holomycin, Thiolutin</th>\n<th>RNA polymerase</th>\n<th style=\"text-align: center;\">Yes*</th>\n<th style=\"text-align: right;\">B. Li <em>et al</em>., 2014</th>\n</tr>\n<tr>\n<th></th>\n<th>Nitroimidazoles</th>\n<th>Azomycin</th>\n<th>Ribonucleotide reductase</th>\n<th style=\"text-align: center;\">Yes*</th>\n<th style=\"text-align: right;\">Saeki <em>et al</em>., 1974</th>\n</tr>\n<tr>\n<th></th>\n<th>Pigments</th>\n<th>Prodigiosin, Pyocyanin, Violacein</th>\n<th>Various</th>\n<th style=\"text-align: center;\">Yes*</th>\n<th style=\"text-align: right;\">Choi <em>et al</em>., 2015; Danevčič\n<em>et al</em>., 2016; Noto <em>et al</em>., 2017</th>\n</tr>\n<tr>\n<th colspan=\"6\"><strong>Membrane-disrupting antibiotics</strong></th>\n</tr>\n<tr>\n<th></th>\n<th>Enniatins</th>\n<th>Enniatin B</th>\n<th>Lipid membranes</th>\n<th style=\"text-align: center;\">Yes*</th>\n<th style=\"text-align: right;\">Kamyar <em>et al</em>., 2004; Shenyakin\n<em>et al</em>., 1967</th>\n</tr>\n<tr>\n<th></th>\n<th>Lipopeptides</th>\n<th><p>Daptomycin</p>\n<p>Surfactin</p></th>\n<th><p>Phosphatidylglycerol</p>\n<p>Lipid membranes</p></th>\n<th style=\"text-align: center;\"><p>No*</p>\n<p>Yes*</p></th>\n<th style=\"text-align: right;\"><p>Moreira &amp; Taylor, 2022</p>\n<p>Zhen <em>et al</em>., 2023</p></th>\n</tr>\n<tr>\n<th></th>\n<th>Polyethers</th>\n<th><p>Routiennocin</p>\n<p>Monensin, Salinomycin</p></th>\n<th><p>Ionophores</p>\n<p>Ionophores</p></th>\n<th style=\"text-align: center;\"><p>Yes*</p>\n<p>Yes*</p></th>\n<th style=\"text-align: right;\"><p>Borcher Møller <em>et al</em>.,\n2024</p>\n<p>Rutkowski &amp; Brzezinski, 2013</p></th>\n</tr>\n<tr>\n<th></th>\n<th>Polypeptides</th>\n<th><p>Bacitracin A</p>\n<p>Gramicidin A</p>\n<p>Polymyxin B</p></th>\n<th><p>Bactoprenylpyrophosphate</p>\n<p>Ionophore</p>\n<p>Lipid A</p></th>\n<th style=\"text-align: center;\"><p>Yes*</p>\n<p>Yes*</p>\n<p>No*</p></th>\n<th style=\"text-align: right;\"><p>McDougal &amp; Griffin, 2003</p>\n<p>Providence <em>et al</em>., 1995</p>\n<p>Slingerland <em>et al</em>., 2022</p></th>\n</tr>\n<tr>\n<th colspan=\"6\"><h5 id=\"table-8.1-naturally-occurring-antibiotics-that-could-retain-efficacy-against-mirror-bacteria\">Table\n8.1: Naturally occurring antibiotics that could retain efficacy against\nmirror bacteria </h5>\n<p>Most antibiotics are unlikely to retain bactericidal activity against\nmirror bacteria (see <a href=\"#new-antimirror-compounds-could-be-developed-to-target-mirror-bacteria-but-most-existing-antibiotics-would-not-function\">Section\n5.1</a>). Those listed in this table are exceptions, either because they\nare achiral or, although chiral, act by disrupting membrane function.\nFor some of the chiral antibiotics, the efficacy of the enantiomer\nagainst bacteria has been tested, allowing the efficacy of the\nnatural-chirality antibiotic against a mirror bacterium to be inferred.\nIn those cases marked by *, no such results are available, so the likely\nefficacy is inferred from what is known about the mechanism of\naction.</p></th>\n</tr>\n</thead>\n<tbody>\n</tbody>\n</table>"
+            },
+            {
+              "type": "paragraph",
+              "html": "expansion of predator populations, which thereby increases the\nbacterial mortality rate and keeps the prey population in check\n(Kirchman, 2018; Levin <em>et al</em>., 1977). A growing mirror\nbacterial population, however, would not support the growth of\npredators, and so it would likely expand until eventually constrained by\nresources."
+            }
+          ],
+          "subsections": []
+        },
+        {
+          "id": "mirror-bacteria-would-be-resistant-to-many-natural-antimicrobial-toxins",
+          "level": 3,
+          "title": "Mirror bacteria would be resistant to many natural antimicrobial toxins",
+          "title_html": "Mirror\nbacteria would be resistant to many natural antimicrobial toxins",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "Microbes have evolved a diverse array of toxins and other molecular\nweapons to harm and kill competitors (Granato <em>et al</em>., 2019).\nBacterial weapons are particularly well-documented in the gut microbiota\nof mammals (García-Bayona & Comstock, 2018) and the rhizosphere of\nplant roots (Doornbos <em>et al</em>., 2012; Hassani <em>et al</em>.,\n2018). Almost all known microbial weapons operate by chiral mechanisms\nand are unlikely to affect mirror bacteria."
+            },
+            {
+              "type": "paragraph",
+              "html": "Most antibiotics are chiral and typically function by inhibiting\nchiral enzymes and ribosomes required for key cellular processes such as\ntranslation or cell wall biosynthesis (Kohanski <em>et al</em>., 2010).\nThus, they are unlikely to be effective against a mirror bacterium (see\n<a href=\"#new-antimirror-compounds-could-be-developed-to-target-mirror-bacteria-but-most-existing-antibiotics-would-not-function\">Section\n5.1</a>). The only exceptions are those antibiotics that are achiral,\nact as ionophores, or otherwise disrupt membrane"
+            },
+            {
+              "type": "table",
+              "html": "<table style=\"width:99%;\">\n<colgroup>\n<col style=\"width: 1%\"/>\n<col style=\"width: 14%\"/>\n<col style=\"width: 14%\"/>\n<col style=\"width: 20%\"/>\n<col style=\"width: 16%\"/>\n<col style=\"width: 9%\"/>\n<col style=\"width: 23%\"/>\n</colgroup>\n<thead>\n<tr>\n<th colspan=\"2\"></th>\n<th><strong>Examples</strong></th>\n<th><strong>Mechanisms</strong></th>\n<th><strong>Target / Receptor</strong></th>\n<th style=\"text-align: center;\"><strong>Activity vs Mirror</strong></th>\n<th style=\"text-align: right;\"><strong>References</strong></th>\n</tr>\n<tr>\n<th colspan=\"7\"><strong>Class I: Modified bacteriocins</strong></th>\n</tr>\n<tr>\n<th rowspan=\"3\"></th>\n<th>Lantibiotics</th>\n<th><p>Mersacidin</p>\n<p>Nisin,<br/>\nSubtilin</p></th>\n<th><p>Membrane disruption</p>\n<p>Cell wall inhibition, membrane disruption</p></th>\n<th><p>Lipid II</p>\n<p>Lipid II</p></th>\n<th style=\"text-align: center;\"><p>No</p>\n<p>No</p></th>\n<th style=\"text-align: right;\"><p>Hsu <em>et al</em>., 2003</p>\n<p>Hsu <em>et al</em>., 2004;<br/>\nParisot <em>et al</em>., 2008</p></th>\n</tr>\n<tr>\n<th>Lasso peptides</th>\n<th>Capistruin, Microcin J25</th>\n<th>Block transcription</th>\n<th>RNA Pol III</th>\n<th style=\"text-align: center;\">No</th>\n<th style=\"text-align: right;\">Bayro <em>et al</em>., 2003; Kuznedelov\n<em>et al</em>., 2011</th>\n</tr>\n<tr>\n<th>Thiopeptides</th>\n<th><p>Thiostrepton</p>\n<p>GE2270A</p></th>\n<th><p>Block translation</p>\n<p>Block translation</p></th>\n<th><p>50S ribosome</p>\n<p>EF-Tu</p></th>\n<th style=\"text-align: center;\"><p>No</p>\n<p>No</p></th>\n<th style=\"text-align: right;\"><p>Harms <em>et al</em>., 2008</p>\n<p>Parmeggiani <em>et al</em>., 2006</p></th>\n</tr>\n<tr>\n<th colspan=\"7\"><strong>Class IIa: Pediocin-like</strong></th>\n</tr>\n<tr>\n<th></th>\n<th>Pediocin-like</th>\n<th>Pediocin, <strong>Leucocin A</strong></th>\n<th>Membrane disruption</th>\n<th>Mannose-PTS</th>\n<th style=\"text-align: center;\">No</th>\n<th style=\"text-align: right;\">Gravesen <em>et al</em>., 2002;<br/>\nYan <em>et al</em>., 2000;<br/>\nZhu <em>et al</em>., 2022</th>\n</tr>\n<tr>\n<th colspan=\"7\"><strong>Class IIc: Cyclic peptides</strong></th>\n</tr>\n<tr>\n<th></th>\n<th>Circular bacteriocins</th>\n<th><p>AS-48,<br/>\nCarnocyclin, Gassericin</p>\n<p>Garvicin ML</p></th>\n<th><p>Membrane disruption</p>\n<p>Membrane disruption</p></th>\n<th><p>No receptor</p>\n<p>Maltose transporter</p></th>\n<th style=\"text-align: center;\"><p>Yes</p>\n<p>No</p></th>\n<th style=\"text-align: right;\"><p>Gálvez <em>et al</em>., 1991;<br/>\nGong <em>et al</em>., 2009;<br/>\nKawai <em>et al</em>., 2004</p>\n<p>Gabrielsen <em>et al</em>., 2012</p></th>\n</tr>\n<tr>\n<th colspan=\"7\"><strong>Class IId: Miscellaneous unmodified\nbacteriocins</strong></th>\n</tr>\n<tr>\n<th rowspan=\"2\"></th>\n<th>Saposin-like leaderless<br/>\npeptides</th>\n<th><strong>Aureocin A53,</strong> <strong>Lacticin Q,</strong><br/>\nEnterocin L50</th>\n<th>Membrane disruption</th>\n<th>No receptor</th>\n<th style=\"text-align: center;\">Yes</th>\n<th style=\"text-align: right;\">Lander <em>et al</em>., 2023;<br/>\nNetz, 2002; Tymoszewska <em>et al</em>., 2021;<br/>\nYoneyama <em>et al</em>., 2009</th>\n</tr>\n<tr>\n<th>Other</th>\n<th>Garvicin Q</th>\n<th>Membrane disruption</th>\n<th>Mannose-PTS</th>\n<th style=\"text-align: center;\">No</th>\n<th style=\"text-align: right;\">Tymoszewska <em>et al</em>., 2017</th>\n</tr>\n<tr>\n<th colspan=\"7\"><h5 id=\"table-8.2-efficacy-of-broad-spectrum-bacteriocins-against-mirror-bacteria\">Table\n8.2: Efficacy of broad-spectrum bacteriocins against mirror\nbacteria</h5>\n<p>Examples of bacteriocins known to exhibit a relatively broad spectrum\nof antibacterial activity, listed according to a proposed classification\nsystem (Cotter <em>et al</em>., 2013). Of these, only certain circular\nand leaderless bacteriocins act by disrupting membranes without a\nspecific target on the cell surface and so are expected to remain\nharmful to mirror bacteria. For those examples in <strong>bold</strong>,\ntesting of the enantiomer for antibacterial activity has been reported\nin the literature.</p></th>\n</tr>\n</thead>\n<tbody>\n</tbody>\n</table>"
+            },
+            {
+              "type": "paragraph",
+              "html": "function (<a href=\"#table-8.1-naturally-occurring-antibiotics-that-could-retain-efficacy-against-mirror-bacteria\">Table\n8.1</a>). There are very few naturally occurring achiral antibiotics—all\nof those on the WHO List of Medically Important Antimicrobials, for\ninstance, are synthetic (World Health Organization, 2024)—but a number\nof non-ribosomal peptides and polyether ionophores would retain\nefficacy, primarily against the mirror versions of Gram-positive\nbacteria."
+            },
+            {
+              "type": "paragraph",
+              "html": "Bacteriocins are small ribosomally synthesized peptides with diverse\nmechanisms of action which are usually chiral (<a href=\"#table-8.2-efficacy-of-broad-spectrum-bacteriocins-against-mirror-bacteria\">Table\n8.2</a>). Similar to antimicrobial peptides produced by humans\n(discussed in <a href=\"#mirror-bacteria-would-likely-be-resistant-to-most-innate-immune-responses\">Section\n4.2</a>) and other eukaryotes, many bacteriocins form pores within\nmembranes or otherwise disrupt membrane function (Acedo <em>et al</em>.,\n2018). Although the basal mechanism is typically insensitive to membrane\nchirality, bacteriocins normally target the membrane through specific\nchiral receptors on the cell surface, and consequently are unlikely to\nretain efficacy against mirror bacteria. This inference has been\nverified experimentally in the case of leucocin A: its ᴅ-enantiomer\nshowed no antimicrobial activity at the minimum inhibitory concentration\nof the natural-chirality compound (Yan <em>et al</em>., 2000)."
+            },
+            {
+              "type": "paragraph",
+              "html": "The only bacteriocins likely to retain efficacy against mirror\nbacteria are those that do not require receptors to target membranes. To\nour knowledge, all such bacteriocins are either circular or leaderless\npeptides. They have shared structural features and broad-spectrum\nactivity against Gram-positive bacteria, but are only effective against\nGram-negative bacteria if the outer membrane is disrupted (Towle &\nVederas, 2017). The ᴅ-enantiomers of the leaderless peptides aureocin\nA53 and lacticin Q were recently tested and found to have similar\nantimicrobial activity to their ʟ-enantiomers (Lander <em>et al</em>.,\n2023), confirming that the natural ʟ-enantiomers should be effective\nagainst mirror Gram-positive bacteria."
+            },
+            {
+              "type": "paragraph",
+              "html": "Larger bacterial toxins, mechanical weapons, and prophages are almost\nalways narrow-spectrum and generally require binding to specific\nreceptors to properly function (<a href=\"#table-8.3-other-examples-of-bacterial-weapon-systems\">Table\n8.3</a>). The type VI secretion system provides an exception (Acedo\n<em>et al</em>., 2018), but only when equipped with a pore-forming\nprotein such as Ssp6 or VasX. Because most bacterial weapons have not\nyet been characterized, additional achiral antibiotics, pore-forming\npeptides, and perhaps more sophisticated weapon systems that would\nretain efficacy may exist. Nevertheless, the available evidence suggests\nthat mirror bacteria would be intrinsically resistant to the vast\nmajority of weapons used for bacteria-on-bacteria warfare."
+            },
+            {
+              "type": "paragraph",
+              "html": "Unlike the specialized weapons considered so far, some metabolic\nbyproducts such as ethanol (Ingram, 1990) and small organic acids\n(Pinhal <em>et al</em>., 2019) act as broad inhibitors of bacterial\ngrowth when present at high concentrations. These metabolites are\nachiral or cause harm through general mechanisms, such as membrane\nuncoupling, that are not sensitive to chirality. More generally,\nmicrobial metabolic processes can create unfavorable growth\nenvironments, such as by modifying environmental pH or redox conditions\nin ways that could prevent a mirror cell that otherwise might colonize\nfrom doing so. Therefore, while many forms of interference-based\ncompetition between natural microbes and mirror bacteria would likely be\nimpaired, some others could continue to function."
+            }
+          ],
+          "subsections": []
+        }
+      ]
+    },
+    {
+      "id": "mirror-bacteria-could-colonize-natural-environments-outside-of-multicellular-hosts",
+      "level": 2,
+      "title": "8.2 Mirror bacteria could colonize natural environments outside of multicellular hosts",
+      "title_html": "<strong>8.2\nMirror bacteria could colonize natural environments outside of\nmulticellular hosts</strong>",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "No matter how predation-resistant they may be, organisms can only\ncolonize new environments if capable of acquiring nutrients sufficient\nto replicate. Given that many generalist bacteria such as <em>E.\ncoli</em> and <em>B. subtilis</em> can grow under diverse conditions and\non achiral nutrients, there is no fundamental obstacle preventing\nmirrored versions of such organisms from surviving and replicating in\nthe environment, though low nutrient concentrations or hostile abiotic\nconditions could create substantial barriers."
+        },
+        {
+          "type": "paragraph",
+          "html": "An introduced species can colonize an environment if it has a\npositive net growth rate. Population expansion will continue until one\nor more ecological feedbacks, such as decreases in nutrient\nconcentrations or increases in predator populations, cause the growth\nrate to decline. If the"
+        },
+        {
+          "type": "table",
+          "html": "<table style=\"width:100%;\">\n<colgroup>\n<col style=\"width: 1%\"/>\n<col style=\"width: 34%\"/>\n<col style=\"width: 15%\"/>\n<col style=\"width: 16%\"/>\n<col style=\"width: 8%\"/>\n<col style=\"width: 23%\"/>\n</colgroup>\n<thead>\n<tr>\n<th></th>\n<th><strong>Mechanism</strong></th>\n<th><strong>Examples</strong></th>\n<th><strong>Target</strong></th>\n<th style=\"text-align: center;\"><strong>Activity vs Mirror</strong></th>\n<th style=\"text-align: right;\"><strong>References</strong></th>\n</tr>\n<tr>\n<th colspan=\"5\"><strong>Bacteriolysins</strong></th>\n<th style=\"text-align: right;\"></th>\n</tr>\n<tr>\n<th></th>\n<th>Cleaves peptidoglycan<br/>\n(Acedo <em>et al</em>., 2018)</th>\n<th><p>Enterolysin A</p>\n<p>Millericin B</p></th>\n<th><p>Peptidoglycan</p>\n<p>Peptidoglycan</p></th>\n<th style=\"text-align: center;\"><p>No</p>\n<p>No</p></th>\n<th style=\"text-align: right;\"><p>Beukes <em>et al</em>., 2000</p>\n<p>Khan <em>et al</em>., 2013</p></th>\n</tr>\n<tr>\n<th colspan=\"5\"><strong>Pore-forming toxins</strong></th>\n<th style=\"text-align: right;\"></th>\n</tr>\n<tr>\n<th></th>\n<th>Receptor-dependent pore formation<br/>\nin membranes<br/>\n(Dal Peraro &amp; van der Goot, 2016)</th>\n<th><p>Colicin Ia</p>\n<p>Pyocin S5</p></th>\n<th><p>Colicin I receptor</p>\n<p>TonB transporter</p></th>\n<th style=\"text-align: center;\"><p>No</p>\n<p>No</p></th>\n<th style=\"text-align: right;\"><p>Buchanan <em>et al</em>., 2007</p>\n<p>Behrens <em>et al</em>., 2020</p></th>\n</tr>\n<tr>\n<th colspan=\"5\"><strong>Prophage</strong></th>\n<th style=\"text-align: right;\"></th>\n</tr>\n<tr>\n<th></th>\n<th>Infection and lysis<br/>\n(X.-Y. Li <em>et al</em>., 2017)</th>\n<th>Phage lambda</th>\n<th>LamB protein</th>\n<th style=\"text-align: center;\">No</th>\n<th style=\"text-align: right;\">Wendling <em>et al</em>., 2021</th>\n</tr>\n<tr>\n<th colspan=\"5\"><strong>Tailocin</strong></th>\n<th style=\"text-align: right;\"></th>\n</tr>\n<tr>\n<th></th>\n<th>Membrane disruption through<br/>\nbinding to chiral receptors</th>\n<th><p>R-type pyocins</p>\n<p>F-type pyocins</p></th>\n<th><p>Chiral receptors</p>\n<p>Chiral receptors</p></th>\n<th style=\"text-align: center;\"><p>No</p>\n<p>No</p></th>\n<th style=\"text-align: right;\">Ghequire &amp; De Mot, 2015; Woudstra\n<em>et al</em>., 2024</th>\n</tr>\n<tr>\n<th colspan=\"5\"><strong>Toxin delivery via CDI</strong></th>\n<th style=\"text-align: right;\"></th>\n</tr>\n<tr>\n<th></th>\n<th>Toxin delivered via receptor-binding protein syringe<br/>\n(Ruhe <em>et al</em>., 2017)</th>\n<th><p>Cdi_STEC031</p>\n<p>EC536</p>\n<p>EC93</p></th>\n<th><p>Tsx</p>\n<p>OmpC</p>\n<p>BamA</p></th>\n<th style=\"text-align: center;\"><p>No</p>\n<p>No</p>\n<p>No</p></th>\n<th style=\"text-align: right;\"><p>Ruhe <em>et al</em>., 2017</p>\n<p>Ruhe <em>et al</em>., 2017</p>\n<p>Aoki <em>et al</em>., 2010</p></th>\n</tr>\n<tr>\n<th colspan=\"5\"><strong>Toxin delivery T6SS</strong></th>\n<th style=\"text-align: right;\"></th>\n</tr>\n<tr>\n<th rowspan=\"2\"></th>\n<th rowspan=\"2\">Toxin delivered by protein<br/>\nsyringe that does not require<br/>\na specific receptor<br/>\n(Galán &amp; Waksman, 2018)</th>\n<th rowspan=\"2\"><p>ART-ARHs</p>\n<p>RhsA</p>\n<p>Tle</p>\n<p>Tne2</p>\n<p>Tre1</p>\n<p>WapA</p>\n<p>Ssp6</p>\n<p>VasX</p></th>\n<th rowspan=\"2\"><p>FtsZ</p>\n<p>DNA</p>\n<p>Phospholipids</p>\n<p>NAD(P)</p>\n<p>Peptidoglycan</p>\n<p>RNA</p>\n<p>Lipid membranes</p>\n<p>Lipid membranes</p></th>\n<th rowspan=\"2\" style=\"text-align: center;\"><p>No</p>\n<p>No</p>\n<p>No</p>\n<p>No</p>\n<p>No</p>\n<p>No</p>\n<p>Yes</p>\n<p>Yes</p></th>\n<th rowspan=\"2\" style=\"text-align: right;\"><p>Ting <em>et al</em>.,\n2018</p>\n<p>Koskiniemi <em>et al</em>., 2013</p>\n<p>Russell <em>et al</em>., 2013</p>\n<p>J. Y. Tang <em>et al</em>., 2018</p>\n<p>Ting <em>et al</em>., 2018</p>\n<p>Koskiniemi <em>et al</em>., 2013</p>\n<p>Mariano <em>et al</em>., 2019</p>\n<p>Miyata <em>et al</em>., 2013</p></th>\n</tr>\n<tr>\n</tr>\n<tr>\n<th colspan=\"6\"><h5 id=\"table-8.3-other-examples-of-bacterial-weapon-systems\">Table 8.3:\nOther examples of bacterial weapon systems</h5>\n<p>Bacteriolysins, pore-forming toxins, and tailocins act on chiral\ntargets on the cell surface, while prophages and toxin-delivery via CDI\nrequires chiral interactions at the cell surface in order to inject\neffectors into the cell. Only the delivery of lipid-membrane disrupting\npore-forming proteins through a T6SS could plausibly retain efficacy\nagainst mirror bacteria.</p></th>\n</tr>\n</thead>\n<tbody>\n</tbody>\n</table>"
+        },
+        {
+          "type": "paragraph",
+          "html": "introduced population is initially small or localized, it may suffer\nextinction through stochastic effects (Dallas <em>et al</em>., 2021).\nHowever, so long as the expected growth rate is positive, then\ncolonization will occur with some non-zero probability, and with\nrepeated reintroductions successful colonization becomes increasingly\nlikely."
+        },
+        {
+          "type": "paragraph",
+          "html": "The intrinsic resistance of mirror bacteria to many forms of\npredation could enable colonization of some environments despite their\ngrowth likely being slower than native bacteria. Even environments that\ncannot be stably colonized by mirror bacteria could act as temporary\nreservoirs, facilitating spread between hosts or colonization of other\nenvironments, or provide time for adaptations that could allow\npersistence (Dennehy <em>et al</em>., 2006)."
+        }
+      ],
+      "subsections": [
+        {
+          "id": "mirror-bacteria-could-obtain-nutrients-from-the-environment",
+          "level": 3,
+          "title": "Mirror bacteria could obtain nutrients from the environment",
+          "title_html": "Mirror\nbacteria could obtain nutrients from the environment",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "All bacteria require nutrients to grow. Cyanobacteria and other\nphotoautotrophs typically require only inorganic nutrients such as\nnitrogen, phosphorus, and sulfur, which are present in the environment\nas achiral ions such as ammonia, nitrate, phosphate, and sulfate.\n<em>Prochlorococcus</em>, <em>Synechococcus</em>, and\n<em>Synechocystis</em> strains can grow rapidly in fully synthetic media\nthat contain no chiral compounds (L. R. Moore <em>et al</em>., 2007; Yu\n<em>et al</em>., 2015). Though some cyanobacteria opportunistically\nconsume chiral organic compounds (Muñoz-Marín <em>et al</em>., 2020) and\nsome cyanobacterial strains have chiral vitamin requirements (A. A.\nPérez <em>et al</em>., 2016), mirror photoautotrophs could likely grow\nat similar rates to natural-chirality photoautotrophs."
+            },
+            {
+              "type": "paragraph",
+              "html": "Autotrophs generally do not require any chiral nutrients or chiral\ninteractions with other living organisms to survive. Heterotrophs, by\ncontrast, consume a wide range of low-molecular-weight organic compounds\nproduced by other living organisms or by the breakdown of decaying\nbiomass. Most of these organic compounds are chiral. Concentrations of\nthese nutrients are typically low due to fierce microbial competition,\nbut they suffice to support the slow growth of a diverse array of\nheterotrophic bacteria (Kirchman, 2016; Rousk & Bååth, 2011)."
+            },
+            {
+              "type": "paragraph",
+              "html": "A mirror heterotroph would likely not be capable of utilizing most\nchiral nutrients in the environment. The catabolic capabilities of\ncommonly studied heterotrophic bacteria are nevertheless diverse, and\nthis breadth could allow their mirror counterparts to consume a range of\ncommon achiral and chiral compounds. For example, a mirrored version of\n<em>E. coli</em> K-12—the most commonly studied bacterial strain in\nmicrobiology and biotechnology—could grow on diverse achiral central\nmetabolites, fatty acids, and fermentation products (see <a href=\"#table-1.1-achiral-organic-molecules-that-can-be-utilized-by-wild-type-or-mutant-e.-coli-k-12\">Table\n1.1</a>). It could also utilize a number of chiral organic compounds,\nincluding both enantiomers of alanine, cysteine, serine, xylose,\nlactate, malate, and tartrate (<a href=\"#chapter-1-introduction\">Chapter\n1</a>). These metabolites are often among the most abundant small\norganic compounds present in many environments. While a mirror <em>E.\ncoli</em> would not be capable of catabolizing simple sugars such as\nᴅ-glucose, it could be engineered to do so by encoding known metabolic\npathways (see <a href=\"#table-1.3-utilization-of-the-enantiomers-of-common-monosaccharides-by-e.-coli\">Table\n1.3</a>), which would expand the range of environments that could\nsupport mirror bacterial growth and substantially increase their\npopulation densities."
+            },
+            {
+              "type": "paragraph",
+              "html": "Environments are often highly heterogeneous, and many bacteria have\nevolved to detect and move toward nutrients through chemotaxis (Keegstra\n<em>et al</em>., 2022). Chemotactic receptors are highly promiscuous,\nbinding to a very wide array of biomolecules that might be catabolized.\nWhile many of the compounds recognized are chiral, it appears likely\nthat mirrored versions of chemotactic bacteria could slowly move toward\nnutrients even absent modifications of their receptors. <em>E.\ncoli</em>, for example, is attracted to diverse sugars and amino acids\nincluding both enantiomers of galactose, glucose, mannose, and xylose\n(Adler <em>et al</em>., 1973), both enantiomers of aspartate and serine,\nand the achiral molecules ammonium, nitrate, fumarate, and succinate\n(Mesibov & Adler, 1972; Taylor <em>et al</em>., 1979). While\naffinities for the enantiomers of common sugars are markedly lower, they\ndo suffice for chemotaxis. It therefore appears likely that mirror\n<em>E. coli</em> cells would be able to recognize and find chiral\nnutrients, and though they would not have an optimal foraging strategy,\nthey could improve rapidly by natural selection (see <a href=\"#invasive-mirror-bacteria-could-rapidly-evolve-and-diversify\">Section\n8.4</a>). Other mirror bacteria would likely exhibit similar behaviors.\nOverall, mirror heterotrophs would presumably grow more slowly than\nnative competitors, but some growth appears possible in many cases. And\nwith little or no predation, even slow growth may allow mirror\nheterotrophs to colonize diverse environments."
+            },
+            {
+              "type": "paragraph",
+              "html": "The minimal carbon requirements for bacterial growth are very low.\nFor instance, <em>E. coli</em>, a bacterium whose primary niche is\nwithin the nutrient-rich intestines of warm-blooded animals, can\nmaintain a positive growth rate of ~ 0.2 hr<sup>-1</sup> with only 20\nµg/L glucose as its sole carbon source (Füchslin <em>et al</em>., 2012;\nShehata & Marr, 1971). While estimates of minimal required\nconcentrations for other nutrients are not available, it is plausible\nthat <em>E. coli</em> can slowly grow on a wide variety of\nsubstrates—including those in <a href=\"#table-1.1-achiral-organic-molecules-that-can-be-utilized-by-wild-type-or-mutant-e.-coli-k-12\">Table\n1.1</a>—at concentrations in the hundreds of micrograms per liter, and\nthus potentially proliferate due to their intrinsic resistance to\npredation."
+            },
+            {
+              "type": "paragraph",
+              "html": "In natural waters, many nutrients that could be accessible to mirror\nbacteria are typically present at concentrations of 1–1000 µg/L\n(Thurman, 2014), including simple organic acids such as acetic, butyric,\nglycolic, lactic, and propionic acids; amino acids such as ʟ-alanine and\nʟ-serine; and ᴅ-glucose, ᴅ-fructose, and other common sugars that could\nbe available to a suitably engineered mirror bacterium. Though organic\ncarbon might be too sparse to support mirror <em>E. coli</em> growth in\nseawater, this may not be true of all mirror heterotrophs. Moreover,\ngrowth in some rivers, eutrophic lakes, and marshes could be possible\nfor many kinds of mirror heterotrophs."
+            },
+            {
+              "type": "paragraph",
+              "html": "Soils also contain diverse organic compounds. Sugars are the most\nimportant carbon and energy source for soil microorganisms (Gunina &\nKuzyakov, 2015), while organic acids including acetic, fumaric,\nglycolic, lactic, and malic acid are also common due to exudation by\nplant roots (Kamilova <em>et al</em>., 2006) and release by microbes\n(Adeleke <em>et al</em>., 2017). Free amino acids are also significant\ncontributors to soil organic matter (Hu <em>et al</em>., 2018; Senwo\n& Tabatabai, 1998; Werdin-Pfisterer <em>et al</em>., 2009), and\nᴅ-amino acids are usually present, though at lower concentrations\n(Vranova <em>et al</em>., 2012). While abiotic factors can limit the\naccessibility of these nutrients—particularly water activity (R. F.\nHarris, 1981) and redox potential (Husson, 2013)—some soils could\nplausibly support growth of a mirror <em>E. coli</em> strain or similar\nmirror heterotrophic bacteria, especially one engineered to metabolize\nᴅ-glucose and other common sugars."
+            },
+            {
+              "type": "paragraph",
+              "html": "Bacterial growth in soils is typically limited by carbon (Demoling\n<em>et al</em>., 2007), but phosphate and nitrogen concentrations can be\nlimiting in natural waters (Paerl, 2018; Sterner, 2008). Marine\nphosphate concentrations, for instance, are typically much lower than 1\nµM (Paytan & McLaughlin, 2007), which is far too low to support\n<em>E. coli</em> growth (Shehata & Marr, 1971). In most\nenvironments, however, mirror heterotroph growth would probably not be\nprevented by a lack of inorganic nutrients."
+            },
+            {
+              "type": "paragraph",
+              "html": "Iron is an interesting case. The Fe<sup>3+</sup> ion is highly\ninsoluble, and so in oxygenic environments iron is almost exclusively\nfound complexed with organic molecules. A common strategy bacteria use\nto acquire iron is to produce siderophores, which are small iron-binding\nmolecules released into the environment and subsequently reabsorbed.\nThese siderophores are highly diverse and usually, though not always,\nchiral (Sandy & Butler, 2009). Mirror bacteria are therefore\nunlikely to be able to use naturally occurring siderophores, and\nlikewise natural-chirality bacteria could probably not use the\nsiderophores produced by mirror bacteria. Because siderophores are\nreleased into the environment, they can act as “public goods” benefiting\nall strains able to utilize them, including “cheaters” that consume but\ndo not produce siderophores (Kramer <em>et al</em>., 2020). The extent\nto which producing and consuming reversed-chirality siderophores would\nprove harmful, or perhaps even beneficial, to mirror bacteria is\nunclear."
+            },
+            {
+              "type": "paragraph",
+              "html": "In the specific case of <em>E. coli</em>, it is known that mirror\nferric enterobactin, the most commonly utilized siderophore, is imported\ninto the cytoplasm but not cleaved, and therefore cannot be used to\nobtain iron (Abergel <em>et al</em>., 2009). A mirror <em>E. coli</em>\nwould produce mirror enterobactin, but would be unable to utilize\nnatural-chirality enterobactin; thus, natural-chirality and mirror\n<em>E. coli</em> would likely interfere with each other’s ability to\nacquire iron through enterobactin. <em>E. coli</em> can also obtain iron\nfrom iron(III)-citrate complexes and, in anoxic environments, by\ndirectly importing Fe<sup>2+</sup> (Braun, 2003); these iron acquisition\nmechanisms would not be sensitive to chirality."
+            }
+          ],
+          "subsections": []
+        },
+        {
+          "id": "mirrored-bacteria-could-be-robust-to-abiotic-stressors",
+          "level": 3,
+          "title": "Mirrored bacteria could be robust to abiotic stressors",
+          "title_html": "Mirrored\nbacteria could be robust to abiotic stressors",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "In addition to nutrients, bacterial growth also requires tolerable\nenvironmental conditions. Abiotic stressors such as temperature, pH,\noxidative stress, and osmotic pressure are achiral, and organismal\nresponses to these stressors seldom involve chiral interactions with the\nexternal environment. A mirror bacterium would therefore have similar\ntolerances to abiotic stressors as its natural-chirality equivalent."
+            },
+            {
+              "type": "paragraph",
+              "html": "The first mirror bacteria, if created, might be fragile and\nfunctionally inflexible, akin to existing highly laboratory-adapted or\nengineered cells (Fredens <em>et al</em>., 2019; Hutchison <em>et\nal</em>., 2016). As described in <a href=\"#chapter-3-engineering-biosafety-and-biosecurity-of-mirror-bacteria\">Chapter\n3</a>, however, transforming these initial fragile cells into analogs of\nmore robust bacterial species through gene addition would be feasible\nand required for most applications. A mirror <em>E. coli</em>, for\ninstance, would be a natural target given the central role played by\nthis model organism in both research and biotechnological applications.\nWhile the primary niche of <em>E. coli</em> is the mammalian gut, it can\nsurvive and replicate under diverse environmental conditions (<a href=\"#box-8.2-escherichia-coli-can-survive-and-replicate-under-many-environmental-conditions\">Box\n8.2</a>)."
+            },
+            {
+              "type": "paragraph",
+              "html": "We have focused on <em>E. coli</em> to this point because, as a model\norganism, a great deal is known about its resource utilization and\nenvironmental tolerances. Importantly, some bacterial species are more\nrobust than <em>E. coli</em> in many environments. A mirror version of\nan environmental generalist such as <em>Pseudomonas aeruginosa</em>\nwould likely exhibit better survival in many soils and natural waters. A\nmirror version of <em>Vibrio</em> would likely thrive in seawater if\nable to acquire nutrients, and a mirror cyanobacterium such as\n<em>Prochlorococcus</em> or <em>Synechococcus</em> would not even\nrequire organic carbon to grow."
+            },
+            {
+              "type": "paragraph",
+              "html": "While abiotic stressors are themselves achiral, some responses can\ninvolve chiral mechanisms that may be altered or impaired in mirror\nbacteria. For example, during osmotic stress <em>E. coli</em>\npreferentially imports ʟ-proline as a compatible solute and cannot\nsimilarly use ᴅ-proline (Sasaki <em>et al</em>., 2007). A mirror <em>E.\ncoli</em> could not import ʟ-proline, though it could still import the\nachiral betaine (Cayley <em>et al</em>., 1992), and in the absence of\neither preferred osmolyte could simply import potassium ions."
+            },
+            {
+              "type": "box",
+              "id": "box-8.2-escherichia-coli-can-survive-and-replicate-under-many-environmental-conditions",
+              "label": "Box 8.2",
+              "title": "Escherichia coli can survive and replicate under many environmental conditions",
+              "blocks": [
+                {
+                  "type": "paragraph",
+                  "html": "While primarily known as an intestinal commensal of warm-blooded\nanimals, <em>E. coli</em> is capable of survival and growth under a wide\nrange of conditions if nutrients are available. Many strains can sustain\ngrowth between ~8℃ and as high as ~48℃ (Baka <em>et al</em>., 2013; Ross\n<em>et al</em>., 2003), and they readily survive colder temperatures\nincluding even freezing (Sleight <em>et al</em>., 2006). Strains can\ngrow between pH of ~4 to ~9 (Baka <em>et al</em>., 2013; Ross <em>et\nal</em>., 2003), and many can survive more acidic conditions for hours\n(Gorden & Small, 1993). <em>E. coli</em> can even grow in seawater\nif nutrients are supplemented (Jannasch, 1968)."
+                },
+                {
+                  "type": "paragraph",
+                  "html": "Such conditions are characteristic of many natural environments,\nimplying that <em>E. coli</em> can survive for extended time periods in\nmany soils and natural waters. Studies of pathogenic strain O157:H7, for\ninstance, find that it can survive for many weeks or months in soil\n(Alegbeleye <em>et al</em>., 2018; Mukherjee <em>et al</em>., 2006;\nOngeng <em>et al</em>., 2011; Yao <em>et al</em>., 2013; Zhang <em>et\nal</em>., 2013), feces and manure (Fukushima <em>et al</em>., 1999;\nJiang <em>et al</em>., 2002; Kudva <em>et al</em>., 1998), and\nfreshwaters (Ogden <em>et al</em>., 2001; Wang & Doyle, 1998)."
+                },
+                {
+                  "type": "paragraph",
+                  "html": "Predators appear to be a major cause of <em>E. coli</em> mortality in\nthe environment, which is particularly important considering that a\nmirror <em>E. coli</em> strain would be resistant to many forms of\npredation. Studies that compare <em>E. coli</em> K-12 or O157:H7 growth\nin untreated vs. pre-sterilized soils, natural freshwaters, and seawater\nfind greatly enhanced survival, and sometimes net growth, in the\nsterilized samples that lack phages, predators, and competitors\n(Bogosian <em>et al</em>., 1996; W. L. Chao & Feng, 1990; Rozen\n& Belkin, 2001; Vital <em>et al</em>., 2008). <em>E. coli</em> K-12\ncells can persist for months in sterile soil and natural freshwaters\n(Bogosian <em>et al</em>., 1996; Flint, 1987) and for over a week in\nsterile seawater (Byrd & Colwell, 1990; Gauthier & Le Rudulier,\n1990; Sørensen, 1991). If seawater is enriched with nutrients, <em>E.\ncoli</em> can even outcompete marine heterotrophs (Jannasch, 1968)."
+                },
+                {
+                  "type": "paragraph",
+                  "html": "While neither K-12 nor O157:H7 are generally able to sustain\npopulation growth outside of their hosts, naturalized <em>E. coli</em>\nstrains have been discovered in diverse environments (Ishii &\nSadowsky, 2008; Jang <em>et al</em>., 2017; Luo <em>et al</em>., 2011),\nincluding in various soils (Byappanahalli & Fujioka, 2004; Ishii\n<em>et al</em>., 2006; Solo-Gabriele <em>et al</em>., 2000; Topp <em>et\nal</em>., 2003), sands (Beversdorf <em>et al</em>., 2007; R. L. Whitman\n& Nevers, 2003), sediments (Desmarais <em>et al</em>., 2002), and\nnatural freshwaters (Byappanahalli <em>et al</em>., 2003; Carrill <em>et\nal</em>., 1985). The fact that <em>E. coli</em> can become naturalized\nto such varied environments raises the possibility that a mirror <em>E.\ncoli</em>, which would be resistant to most forms of predation, might\nalso be capable of colonizing similar environments."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "html": "Biofilm production is another common response to abiotic stressors.\nGiven that many bacteria can attach themselves to abiotic surfaces\nthrough often non-specific interactions (Beloin <em>et al</em>., 2008;\nBerne <em>et al</em>., 2018), the general ability for mirror bacteria to\nform biofilms on abiotic surfaces would not be impaired. However, the\nrecognition of and attachment to biological surfaces may be impaired in\nsome cases, as could participation in biofilms produced by natural\nbacteria. Reversed chirality might also present some benefits: mirror\nbacteria would be resistant to many of the antagonistic interactions\nthat are common in dense microbial communities (Rendueles & Ghigo,\n2012; Stubbendieck & Straight, 2016), and they would excrete\nextracellular polymeric substances that would not easily be degraded by\nnaturally occurring enzymes."
+            },
+            {
+              "type": "paragraph",
+              "html": "In addition to broad physical-chemical conditions such as temperature\nand osmotic pressure, bacterial growth can also be inhibited by the\npresence of specific toxic molecules. There is a possibility that\ntoxicities of chiral molecules might pose a barrier to environmental\ncolonization. As discussed in the Introduction, certain chiral compounds\nsuch as ʟ-tryptophan or ʟ-cysteine could be toxic to mirror bacteria,\nbut the requisite concentrations, at least for mirror <em>E. coli</em>,\nare much greater than those of almost any organic molecule typically\nfound in natural environments. Given the low concentrations of nutrients\nin the environment and the lack of evidence that any common metabolites\nwould be particularly toxic to mirror bacteria, it appears unlikely that\nchiral incompatibilities would prevent growth of mirror bacteria in\notherwise hospitable ecosystems."
+            },
+            {
+              "type": "paragraph",
+              "html": "In summary, a mirror <em>E. coli</em> or other generalist bacterium\nmay be capable of abiotic survival in many environments, including most\ninhabited by humans, and could likely grow in the presence of sufficient\nnutrients. Some responses to abiotic stressors, such as biofilm\nproduction or osmolyte uptake, could be affected by their reversed\nchirality, but this appears unlikely to substantially reduce fitness in\nmost environments. Moreover, any mirror bacteria that colonized a\nnatural environment would experience evolutionary pressure to adapt to\nthe local conditions, enabling them to grow to higher densities and\nexpand their range. We return to this issue in <a href=\"#invasive-mirror-bacteria-could-rapidly-evolve-and-diversify\">Section\n8.4</a>."
+            }
+          ],
+          "subsections": []
+        },
+        {
+          "id": "colonization-requires-growth-to-outpace-mortality",
+          "level": 3,
+          "title": "Colonization requires growth to outpace mortality",
+          "title_html": "Colonization\nrequires growth to outpace mortality",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "Even though bacteria can grow in a wide variety of environments,\noptimal growth is typically restricted to a narrow range of conditions:\neven bacterial “generalists” are typically comprised of many different\nstrains that thrive in slightly different niches. It might therefore\nseem unlikely that a single mirror strain could compete successfully\nwith natural bacteria across many different ecosystems. Unfortunately,\neven setting aside the evolution of the mirror strain (see <a href=\"#invasive-mirror-bacteria-could-rapidly-evolve-and-diversify\">Section\n8.4</a>), this intuition is incomplete, because mirror bacteria would\nlikely evade predation to an unprecedented degree. If mirror bacteria\nare capable of net positive growth in an environment, then colonization\nis possible even if their replication rates are low."
+            },
+            {
+              "type": "paragraph",
+              "html": "While the first robust mirror bacteria are likely to be heterotrophs,\nsuch as <em>E. coli</em>, it is instructive to first consider the\nbalance between growth and death of a mirror autotroph.\n<em>Prochlorococcus</em> strains are the most abundant cyanobacteria in\nthe ocean, and are found in most tropical and subtropical waters\n(Flombaum <em>et al</em>., 2013). Growth rates for\n<em>Prochlorococcus</em> are typically around 0.5 day<sup>-1</sup>\n(Kirchman, 2016), matched, on average, by an equal loss to predation by\nprotists and phages. There are many different ecotypes and strains of\n<em>Prochlorococcus</em>, each of which grows optimally under a limited\nrange of conditions (Biller <em>et al</em>., 2015). The\n<em>Prochlorococcus</em> eMIT9312 strain, for instance, grows optimally\nat 25℃ but can maintain growth between 16℃ and 32℃ (Johnson <em>et\nal</em>., 2006). In natural environments, eMIT9312 will only dominate at\nhigher temperatures, not because it cannot grow at 20℃, but because it\nis outcompeted by other <em>Prochlorococcus</em> strains that are better\nadapted to cooler waters and grow faster than eMIT9312 at lower\ntemperatures. At their equilibrium density, these cold-tolerant strains\nsupport populations of phages and protists that hold the cold-tolerant\nstrains in check, but which would consume eMIT9312 faster than it can\ngrow.<a class=\"footnote-ref\" data-footnote-ref=\"fn16\" href=\"#fn16\" id=\"fnref16\" role=\"doc-noteref\"><sup>16</sup></a> While eMIT9312 may be capable of\nreplicating at 0.4 day<sup>-1</sup> in cooler waters, it will not\npersist if its mortality rate is 0.5 day<sup>-1</sup>."
+            },
+            {
+              "type": "paragraph",
+              "html": "A mirror eMIT9312 would grow at a similar rate to its\nnatural-chirality counterpart, since it requires only sunlight and\nachiral inorganic nutrients.<a class=\"footnote-ref\" data-footnote-ref=\"fn17\" href=\"#fn17\" id=\"fnref17\" role=\"doc-noteref\"><sup>17</sup></a> But it would fall prey\nto phages and protists at substantially lower rates, greatly increasing\nthe average lifespan of the mirror strain. While the mirror strain would\nstill grow in 20℃ water at a rate of 0.4 day<sup>-1</sup>, its death\nrate would be much lower than that, allowing it to invade areas such as\ncooler waters that its natural equivalent could not (<a href=\"#figure-8.2-mirror-phototrophic-bacteria-could-evade-predation-thereby-colonizing-large-fractions-of-the-ocean-with-severe-consequences-for-marine-ecosystems\">Figure\n8.2</a>). The abiotic limits on growth would still hold—mirror\n<em>Prochloroccus</em> eMIT9312 could not colonize water below 16℃,\nalthough it might evolve to do so over time. It would also be unlikely\nto entirely outcompete native <em>Prochlorococcus</em> strains in the\nregions it colonized (see <a href=\"#invasive-mirror-bacteria-could-cause-irreversible-ecological-harm\">Section\n8.5</a>). Nevertheless, the mirror strain could probably colonize large\nfractions of the ocean even without evolution. Such a mirror bacterium\nwould properly be considered an invasive species, and the consequences\nfor marine ecosystems and even global biogeochemistry could be severe\n(<a href=\"#invasive-mirror-bacteria-could-cause-irreversible-ecological-harm\">Section\n8.5</a>)."
+            },
+            {
+              "type": "paragraph",
+              "html": "There are several important differences between a mirror heterotroph\nand a mirror photoautotroph, but the core colonization dynamics are\nfundamentally similar. Natural heterotrophs exist in a quasi-steady\nstate where slow grow rates—typically around 0.03–0.3 day<sup>-1</sup>\nin both soils (Rousk & Bååth, 2011) and marine environments\n(Kirchman, 2016)—are balanced by predation and other causes of\nmortality. A mirror heterotroph would likely have a substantially lower\ngrowth rate than natural heterotrophs due, in part, to a limited ability\nto acquire chiral nutrients. However, the mirror heterotroph would\nprobably also have a much lower mortality rate because it could evade\nmost forms of predation and microbial antagonism. Accessible carbon is\noften very limited in the environment, and in many cases this might\npreclude growth, and hence colonization, entirely. But if the mirror\nheterotroph can grow even slowly, and if its growth rate exceeds its\nmortality rate, then it would have net positive population growth. Thus,\nthe mirror heterotroph could colonize the ecosystem, despite having\nslower growth rate than the native heterotrophic bacteria."
+            },
+            {
+              "type": "paragraph",
+              "html": "As described previously, there does not appear to be any fundamental\nobstacle to the growth of mirror heterotrophic bacteria in the\nenvironment. It is plausible that a mirror <em>E. coli</em>, for\nexample, would be capable of growth in some soils and natural waters,\nparticularly if able to catabolize ᴅ-glucose and other common sugars.\nGiven that a mirror <em>E. coli</em> would likely be resistant to most\nforms of predation and microbial weapons, this advantage may allow it to\ncolonize some environments even if it has other major disadvantages.\nOther mirror heterotrophs would differ in"
+            },
+            {
+              "type": "figure",
+              "id": "figure-8.2-mirror-phototrophic-bacteria-could-evade-predation-thereby-colonizing-large-fractions-of-the-ocean-with-severe-consequences-for-marine-ecosystems",
+              "src": "assets/image16.png",
+              "alt": "",
+              "width": "6.48267in",
+              "height": "4.16146in",
+              "caption": {
+                "id": "figure-8.2-mirror-phototrophic-bacteria-could-evade-predation-thereby-colonizing-large-fractions-of-the-ocean-with-severe-consequences-for-marine-ecosystems",
+                "title": "Figure 8.2: Mirror phototrophic bacteria could evade predation, thereby colonizing large fractions of the ocean with severe consequences for marine ecosystems",
+                "title_html": "Figure\n8.2: Mirror phototrophic bacteria could evade predation, thereby\ncolonizing large fractions of the ocean with severe consequences for\nmarine ecosystems",
+                "body_html": "<p><strong>A.</strong> Illustrative population growth and mortality\nrates of various <em>Prochlorococcus</em> strains show the potential\nconsequences of mirror <em>Prochlorococcus</em> invasion. The precise\nrates would vary in real-world scenarios, but the values here are\nroughly in line with available data (Kirchman, 2016), though predation\nrates (including the split between protists and phages) are more\nuncertain. In this scenario, a native <em>Prochlorococcus</em> strain\nexhibits a growth rate (0.5 day<sup>-1</sup>) roughly matching predation\nrates by protists and phages (0.4 day<sup>-1</sup> and 0.1\nday<sup>-1</sup>, respectively, for a total of 0.5 day<sup>-1</sup>),\nthereby resulting in a steady population. Non-native\n<em>Prochlorococcus</em> strains that are maladapted for this\nenvironment, here the eMIT9312 strain, will have slightly lower growth\nrates (0.4 day<sup>-1</sup>) but similar predation rates (0.5\nday<sup>-1</sup>), and therefore cannot survive in conditions better\nsuited to the native strain. A mirror eMIT9312 strain could exhibit\nsimilar growth rates to its natural-chirality, non-native counterpart\nbut experience significantly decreased predation rates, speculatively\nshown here as a total of 0.1 day<sup>-1</sup>, thereby allowing invasive\ngrowth. <strong>B.</strong> Invasive growth could allow mirror\n<em>Prochlorococcus</em> strains to dominate niches normally occupied by\nmultiple natural <em>Prochlorococcus</em> strains, thereby causing a\ndecline in natural <em>Prochlorococcus</em> populations and the protists\nthat feed on them. The resulting reduction in digestible biomass could\ndrive many animal species that are higher in the food web to extinction\n(see <a href=\"#invasive-mirror-bacteria-could-cause-irreversible-ecological-harm\">Section\n8.5</a>).</p>"
+              }
+            },
+            {
+              "type": "paragraph",
+              "html": "their catabolic capabilities and robustness to abiotic stressors but\ncould create similar, and in some cases even greater, concerns."
+            }
+          ],
+          "subsections": []
+        },
+        {
+          "id": "mirror-bacteria-capable-of-colonization-could-become-highly-abundant",
+          "level": 3,
+          "title": "Mirror bacteria capable of colonization could become highly abundant",
+          "title_html": "Mirror\nbacteria capable of colonization could become highly abundant",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "Even at a modest net growth rate of 0.1 day<sup>-1</sup>, a single\nbacterium unchecked by nutrient limitations or predation could give rise\nto roughly 5<span class=\"math inline\">×</span>10<sup>31</sup>\ndescendants in just 2 years—more than the estimated total number of\nbacteria on the planet (Bar-On <em>et al</em>., 2018; W. B. Whitman\n<em>et al</em>., 1998). Of course, no population can grow forever. As\npopulations grow, they deplete nutrient supplies and other resources\n(“bottom-up control”), and they become prey to a growing population of\npredators and parasites (“top-down control”), eventually reducing the\nnet growth rate and causing the population to stabilize or decline."
+            },
+            {
+              "type": "paragraph",
+              "html": "We have already discussed both nutrients and predation in the context\nof initial colonization—namely, could a small initial population of\nmirror bacteria sustain net positive growth? Here, the issue is slightly\ndifferent—how would nutrient availability and predation pressure change\nas the mirror population grows? Reduced predation and parasitism is a\ncommon feature of many invasive species (the “enemy release hypothesis”;\nKeane & Crawley, 2002). Nevertheless, at least some predation and\nparasitism usually occurs, and the corresponding predator and parasite\npopulations expand in response to growth of the invasive species."
+            },
+            {
+              "type": "paragraph",
+              "html": "As discussed in <a href=\"#mirror-bacteria-would-be-inherently-resistant-to-many-biological-controls\">Section\n8.1</a>, a similar response to colonizing mirror bacteria is unlikely.\nMirror bacteria would provide few if any nutrients to predators,\nprecluding any commensurate expansion in predator or parasite\npopulations as the mirror bacteria proliferate. Mirror bacterial\npopulations would thus escape the normal mechanism of top-down control,\nallowing them to grow unchecked until limited by the available\nnutrients. Reduced predation would reduce the overall mortality rate and\nlower the minimum nutrient concentration necessary to sustain an\nequilibrium population, which in simple ecological models is what\nultimately determines the winner in resource competition (Tilman, 1982).\nMirror bacteria would essentially be accidental “defense-specialists”\n(Våge <em>et al</em>., 2014; Winter <em>et al</em>., 2010) with very low\nmortality due to predation, and this could allow them to reach\npopulation densities much larger than those typically achieved by\nindividual bacterial strains in nature. The effect could be particularly\nstrong in environments where bacterial mortality is dominated by\npredators. By contrast, mirror bacteria may struggle to colonize or\noutcompete native bacteria in environments where abiotic processes are\nthe primary driver of bacterial mortality, as the advantages of\nreversed-chirality would be relatively small. <a href=\"#invasive-mirror-bacteria-could-cause-irreversible-ecological-harm\">Section\n8.5</a> discusses potentially severe and irreversible harms that could\nresult from mirror bacterial colonization and growth in natural\necosystems."
+            }
+          ],
+          "subsections": []
+        },
+        {
+          "id": "environmental-reservoirs-would-facilitate-the-spread-of-infectious-mirror-bacteria",
+          "level": 3,
+          "title": "Environmental reservoirs would facilitate the spread of infectious mirror bacteria",
+          "title_html": "Environmental\nreservoirs would facilitate the spread of infectious mirror\nbacteria",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "As discussed in <a href=\"#chapter-4-risks-to-human-health\">Chapters\n4</a>, <a href=\"#chapter-6-animal-infection\">6</a>, and <a href=\"#chapter-7-plant-infection\">7</a>, mirror bacteria appear likely\nto enter animals and plants through a variety of mechanisms and may\nestablish infections due to their anticipated immune evasion. Because\nmirror bacterial translocation through the animal gut appears plausible\n(see <a href=\"#mirror-bacteria-could-plausibly-pass-barrier-surfaces-and-translocate-into-the-bloodstream-and-tissues\">Sections\n4.4</a> and <a href=\"#vertebrate-susceptibility-to-mirror-bacterial-infection-would-likely-be-similar-to-that-of-humans\">6.1–2</a>),\npredators, parasites, and scavengers could be infected as well, then\nspread the mirror bacterium to other organisms through the food web.\nWith many potential hosts and the presumed capacity to spread between\nthem, mirror bacteria could potentially persist in some ecosystems even\nif they were largely incapable of surviving in the environment. The\nkinetics of infection and population expansion within each host species\nwould be important for the rate of geographic spread (see <a href=\"#invasive-mirror-bacteria-could-rapidly-evolve-and-diversify\">Section\n8.4</a>), but any mirror bacterium capable of reaching a dense\npopulation within a host organism could plausibly spread to others that\nfeed upon this host."
+            },
+            {
+              "type": "paragraph",
+              "html": "Infected animals would repeatedly introduce mirror bacteria into\nsoils and natural waters. When the animal dies, it could release a\nrelatively large population of mirror bacteria into the environment,\nreducing the likelihood of local extinction. Any external environment\nsusceptible to colonization by mirror bacteria might eventually be\ncolonized, creating a permanent reservoir of mirror bacteria that could\nin turn infect new multicellular hosts."
+            },
+            {
+              "type": "paragraph",
+              "html": "Some environments could not be stably colonized by any given mirror\nbacterium. There might simply be too few nutrients available to support\nmirror bacterial growth, the abiotic conditions might not be suitable,\nor acute abiotic stresses might cause mortality that outpaces growth.\nEnvironments with low rates of bacterial mortality from predators or\nmicrobial warfare may be particularly unlikely to be colonized, as the\necological advantages of reverse chirality result from disruptions to\nthese processes. Even so, such environments could act as temporary\nreservoirs for mirror bacteria. Persistent environmental phases are\ncommon for many bacterial commensals and pathogens. <em>E. coli</em> can\npersist for months in soils and natural waters (<a href=\"#box-8.2-escherichia-coli-can-survive-and-replicate-under-many-environmental-conditions\">Box\n8.2</a>), which is unsurprising given its biphasic life cycle (Blount,\n2015), and pathogens such as <em>Bacillus anthracis</em> (Hugh-Jones\n& Blackburn, 2009) and <em>Vibrio cholerae</em> (Faruque <em>et\nal</em>., 1998) also persist for extended periods in the external\nenvironment between host infections."
+            },
+            {
+              "type": "paragraph",
+              "html": "Mirror bacteria could be made similarly robust to abiotic stressors\nwhile also avoiding predation and other biological processes that\ncommonly remove pathogens from the environment. They could also\npotentially infect a greater range of animal and plant hosts. Mirror\nbacteria might therefore reach relatively high densities even in\nenvironments that they cannot colonize, as they would be repeatedly\nreintroduced by dying infected organisms. The presence of a large\ntransient mirror bacterial population in soils and natural waters could\nin turn accelerate the evolution of adaptations that would facilitate\ntrue colonization of these environments (Kawecki, 2008)."
+            }
+          ],
+          "subsections": []
+        }
+      ]
+    },
+    {
+      "id": "invasive-mirror-bacteria-could-rapidly-disperse-through-the-environment",
+      "level": 2,
+      "title": "8.3 Invasive mirror bacteria could rapidly disperse through the environment",
+      "title_html": "<strong>8.3\nInvasive mirror bacteria could rapidly disperse through the\nenvironment</strong>",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "A population of mobile organisms with a net positive growth rate can\nexpand until it reaches the boundaries of the hospitable region. In the\ncase of mirror bacteria, we expect that most movement would occur via\nmulticellular host organisms or human transport. Mirror bacteria could\nplausibly infect and be carried by many different animal hosts, and they\nwould presumably be as able as natural bacteria to hitchhike on\nvehicles. Therefore, the rates of spread of historical invasive species\ncan provide an indication of how rapidly they would disperse."
+        },
+        {
+          "type": "paragraph",
+          "html": "Invasive species have been reported to spread at rates ranging from\n1–100 km/yr for invasive mammals and insects (Shigesada & Kawasaki,\n2001) to 50–10 000 km/yr for plant and animal pathogens (Kerr, 2012;\nMcCallum <em>et al</em>., 2003) (<a href=\"#table-8.4-rates-of-spread-of-animals-and-novel-pathogens-during-historical-invasions-and-epidemics\">Table\n8.4</a>). Pandemic human viruses are the fastest of all: SARS-CoV-2\nspread to every inhabited continent within four months of the first case\n(Ali <em>et al</em>., 2020)."
+        }
+      ],
+      "subsections": [
+        {
+          "id": "animal-hosts-could-spread-invasive-mirror-bacteria-throughout-the-environment",
+          "level": 3,
+          "title": "Animal hosts could spread invasive mirror bacteria throughout the environment",
+          "title_html": "Animal\nhosts could spread invasive mirror bacteria throughout the\nenvironment",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "The spread rate of an animal pathogen depends on how rapidly new\nhosts become infected and how far they travel before transmission. The\nsimplest diffusion models of biological invasions predict a constant\nvelocity of spread (Lewis <em>et al</em>., 2016; J. D. Murray,\n2003):"
+            },
+            {
+              "type": "paragraph",
+              "html": "<span class=\"math inline\"><em>v</em> = 2</span>"
+            },
+            {
+              "type": "paragraph",
+              "html": "where <span class=\"math inline\"><em>λ</em></span> is the growth rate\nof the infected population and <span class=\"math inline\"><em>D</em></span> is the diffusion rate for the\nmovement of infected individuals. These models give reasonable estimates\nfor the spread rate of many invasive species and pathogens (Andow <em>et\nal</em>., 1990; J. D. Murray <em>et al</em>., 1986; Noble, 1974; van den\nBosch <em>et al</em>., 1992). In some cases, animal movements include\nsmall probabilities of long-distance movements (“jump dispersals”),\nwhich can cause much faster spread velocities (Clark <em>et al</em>.,\n1998; Nathan, 2006; Neubert & Caswell, 2000; Pyšek & Hulme,\n2005; Suarez <em>et al</em>., 2001), a result readily derived from more\ngeneral growth-dispersal models (Kot <em>et al</em>., 1996; Lewis <em>et\nal</em>., 2016)."
+            },
+            {
+              "type": "paragraph",
+              "html": "A mirror bacterium would be a novel kind of pathogen, but if it were\ntransmitted between animal hosts, it should spread approximately as fast\nas other diseases transmitted between similar hosts with similar growth\nrates. Since many different species may be susceptible to infection, the\nspread of an invasive mirror bacterium would likely be determined by\nthose hosts that travel furthest and transmit most readily."
+            },
+            {
+              "type": "table",
+              "html": "<table>\n<colgroup>\n<col style=\"width: 1%\"/>\n<col style=\"width: 35%\"/>\n<col style=\"width: 14%\"/>\n<col style=\"width: 5%\"/>\n<col style=\"width: 10%\"/>\n<col style=\"width: 32%\"/>\n</colgroup>\n<thead>\n<tr>\n<th colspan=\"2\"><strong>Invasive species</strong></th>\n<th colspan=\"2\"><strong>Origin</strong></th>\n<th style=\"text-align: right;\"><strong>Spread rate<br/>\n(km/year)</strong></th>\n<th style=\"text-align: right;\"><strong>References</strong></th>\n</tr>\n<tr>\n<th colspan=\"6\"><strong>Animals</strong></th>\n</tr>\n<tr>\n<th></th>\n<th>Earthworm, <em>Lumbricus rubellus</em></th>\n<th colspan=\"2\">Netherlands (20th C)</th>\n<th style=\"text-align: right;\">0.014</th>\n<th style=\"text-align: right;\">Marinissen &amp; van den Bosch, 1992</th>\n</tr>\n<tr>\n<th></th>\n<th>Sea otter, <em>Enhydra lutis</em></th>\n<th colspan=\"2\">California (20th C)</th>\n<th style=\"text-align: right;\">1</th>\n<th style=\"text-align: right;\">Lubina &amp; Levin, 1988</th>\n</tr>\n<tr>\n<th></th>\n<th>Muskrat, <em>Ondatra zibethica</em></th>\n<th colspan=\"2\">Czechoslovakia (1905)</th>\n<th style=\"text-align: right;\">13</th>\n<th style=\"text-align: right;\">Andow <em>et al</em>., 1990</th>\n</tr>\n<tr>\n<th></th>\n<th>Cereal leaf beetle, <em>Oulema melanopus</em></th>\n<th colspan=\"2\">Michigan (1958)</th>\n<th style=\"text-align: right;\">58</th>\n<th style=\"text-align: right;\">Andow <em>et al</em>., 1990</th>\n</tr>\n<tr>\n<th></th>\n<th>Rabbit, <em>Oryctolagus cuniculus</em></th>\n<th colspan=\"2\">Australia (19th C)</th>\n<th style=\"text-align: right;\">100</th>\n<th style=\"text-align: right;\">Alves <em>et al</em>., 2022</th>\n</tr>\n<tr>\n<th colspan=\"6\"><strong>Pathogens</strong></th>\n</tr>\n<tr>\n<th></th>\n<th>Dutch elm disease, <em>Ophiostoma ulmi</em></th>\n<th colspan=\"2\">Britain (1960s)</th>\n<th style=\"text-align: right;\">50</th>\n<th style=\"text-align: right;\">Harwood <em>et al</em>., 2011</th>\n</tr>\n<tr>\n<th></th>\n<th>Rabies, <em>Rabies lyssavirus</em></th>\n<th colspan=\"2\">Europe (20th C)</th>\n<th style=\"text-align: right;\">50</th>\n<th style=\"text-align: right;\">Anderson <em>et al</em>., 1981</th>\n</tr>\n<tr>\n<th></th>\n<th>Mycoplasmal conjunctivitis,<br/>\n<em>Mycoplasma gallisepticum</em></th>\n<th colspan=\"2\">USA (1994)</th>\n<th style=\"text-align: right;\">510</th>\n<th style=\"text-align: right;\">Dhondt <em>et al</em>., 1998</th>\n</tr>\n<tr>\n<th></th>\n<th>Coral bacterium, <em>Sphingomonas</em></th>\n<th colspan=\"2\">Florida (1995)</th>\n<th style=\"text-align: right;\">600</th>\n<th style=\"text-align: right;\">Richardson <em>et al</em>., 1998</th>\n</tr>\n<tr>\n<th></th>\n<th>Zika virus, ZKV</th>\n<th colspan=\"2\">Brazil (2015)</th>\n<th style=\"text-align: right;\">2190</th>\n<th style=\"text-align: right;\">Lowe <em>et al</em>., 2018</th>\n</tr>\n<tr>\n<th></th>\n<th>Myxomatosis virus, <em>Myxoma</em></th>\n<th colspan=\"2\">Australia (1950)</th>\n<th style=\"text-align: right;\">7300</th>\n<th style=\"text-align: right;\">Kerr, 2012</th>\n</tr>\n<tr>\n<th></th>\n<th>Severe acute respiratory syndrome<br/>\nvirus, SARS-CoV-2</th>\n<th colspan=\"2\">World (2020)</th>\n<th style=\"text-align: right;\">48000</th>\n<th style=\"text-align: right;\">Ali <em>et al</em>., 2020</th>\n</tr>\n<tr>\n<th colspan=\"6\"><h5 id=\"table-8.4-rates-of-spread-of-animals-and-novel-pathogens-during-historical-invasions-and-epidemics\">Table\n8.4: Rates of spread of animals and novel pathogens during historical\ninvasions and epidemics</h5></th>\n</tr>\n</thead>\n<tbody>\n</tbody>\n</table>"
+            },
+            {
+              "type": "paragraph",
+              "html": "Flying insects are responsible for some of the fastest spreading\nterrestrial animal pathogens, including the myxoma and Zika viruses (<a href=\"#table-8.2-efficacy-of-broad-spectrum-bacteriocins-against-mirror-bacteria\">Table\n8.2</a>). However, even mirror bacteria capable of infecting most\ninsects are unlikely to spread as rapidly as these insect-vectored\nviruses, which tend to replicate faster within hosts than existing\npathogenic bacteria. Moreover, mirror strains are unlikely to be\nefficiently transmitted via mosquito salivary glands, although a few\nbacteria (<em>Francisella tularensis</em>, <em>B. anthracis</em>, and\n<em>Rickettsia felis</em>) can be transmitted by mosquitoes via an\nunknown mechanism (Abdellahoum <em>et al</em>., 2020)."
+            },
+            {
+              "type": "paragraph",
+              "html": "Even mirror bacteria that are not very infectious or are limited in\ntheir host range could still spread reasonably quickly. Rabies has an\nincubation period of roughly 1 month (Toma & Andral, 1977) and is\nspread only by physical contact with an infected animal. As a result,\nthe pathogen spread at a comparatively slow ~ 50 km/yr (Anderson <em>et\nal</em>., 1981) through European foxes in the 20th century, which was\nstill rapid enough to spread across the continent in a few decades. A\nmirror bacterium capable of infecting humans would likely also infect\nother terrestrial vertebrates, possibly including migratory birds, and\nrabies provides a conservative lower bound for the spread rate in most\ninhabited regions."
+            }
+          ],
+          "subsections": []
+        },
+        {
+          "id": "human-activity-could-spread-invasive-mirror-bacteria-globally-in-just-a-few-months",
+          "level": 3,
+          "title": "Human activity could spread invasive mirror bacteria globally in just a few months",
+          "title_html": "Human\nactivity could spread invasive mirror bacteria globally in just a few\nmonths",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "Modern humans travel much further and faster than any migratory\nanimal; air travel allows an infected person to cross and move between\ncontinents within a day. Global travel explains why SARS-CoV-2 spread\nmuch faster than any animal virus."
+            },
+            {
+              "type": "paragraph",
+              "html": "Mirror bacteria could also be transported on contaminated items,\nwithin transported animals or plants or products made from them, or\nperhaps via hitchhiking insects (Gratz <em>et al</em>., 2000; Tatem\n<em>et al</em>., 2012). Container ships (Kaluza <em>et al</em>., 2010;\nLounibos, 2002; Ruiz <em>et al</em>., 2000) transport goods across the\nplanet and would also inadvertently spread mirror bacteria, as would\ntrains, trucks, and cars traveling across continents (Ansong &\nPickering, 2013; Gippet <em>et al</em>., 2019). As noted in the previous\nsection, such human-mediated “jump dispersals” can greatly increase the\nrate at which invasive species spread. It is difficult to envision any\nplausible way to avoid the inadvertent spread of an invasive mirror\nbacterium to most populated locations without ceasing nearly all global\ntravel and cargo transport. Even if such extreme measures were feasible,\nthey would not prevent more localized spread of mirror bacteria through\nnatural animal populations."
+            },
+            {
+              "type": "paragraph",
+              "html": "Outside of animal hosts or human vehicles, mirror bacteria could\nstill spread through terrestrial environments, albeit more slowly.\nBacterial pathogens are often transported by water, including through\nsurface runoff, by rivers and streams, and during flooding events\n(Boithias <em>et al</em>., 2021; Bradford <em>et al</em>., 2013; Cho\n<em>et al</em>., 2016); mirror bacteria present in soil could be\nsimilarly transported. Bacterial plant pathogens are often dispersed\nthrough wind and rain, generally over short distances, but occasionally\nover several kilometers (West, 2014). Long-distance transport by wind is\npossible, though infrequent (Mayol <em>et al</em>., 2017). Bacterial\nsurvival during atmospheric transport is challenging due to mortality\nfrom ultraviolet radiation and desiccation (Fernandez <em>et al</em>.,\n2019; J. W. Tang, 2009), but some transport does occur, plausibly\nfacilitated by co-transportation and shielding by dust or dead biomass\n(Griffin <em>et al</em>., 2017; Yoo <em>et al</em>., 2019). These and\nsimilar jump dispersals may be responsible for the global mixing of\nprokaryotic species over many thousands of years (Louca, 2022), though\nanthropogenic transport likely dominates in the contemporary world."
+            }
+          ],
+          "subsections": []
+        },
+        {
+          "id": "marine-mirror-bacteria-could-spread-through-ocean-currents",
+          "level": 3,
+          "title": "Marine mirror bacteria could spread through ocean currents",
+          "title_html": "Marine\nmirror bacteria could spread through ocean currents",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "In marine environments the movement of water passively disperses\norganisms. Effective diffusion rates from turbulent mixing are ~1\nkm<sup>2</sup>/day over a few days (Okubo, 1971; Thorpe, 2012) and 5–50\nkm<sup>2</sup>/day over timescales greater than a couple of weeks\n(Zhurbas & Oh, 2004). Given a positive growth rate within the water\ncolumn, an invasive mirror <em>Prochlorococcus</em> or other marine\nbacterium could spread through the ocean at velocities of a few\nkilometers each day due to turbulent diffusion."
+            },
+            {
+              "type": "paragraph",
+              "html": "A mirror <em>E. coli</em> may not be able to replicate in seawater\ndue to the paucity of nutrients (particularly phosphorus). Nevertheless,\n<em>E. coli</em> can survive in seawater for several days (see <a href=\"#box-8.2-escherichia-coli-can-survive-and-replicate-under-many-environmental-conditions\">Box\n8.2</a>). A mirror <em>E. coli</em> capable of infecting marine mammals\nor other marine organisms might therefore spread several kilometers each\nday by turbulence and currents when outside of hosts, much like the\npathogenic coral bacterium <em>Sphingomonas</em> spread through\nFloridian reefs at 2 km/day on ocean currents in 1995 (Richardson <em>et\nal</em>., 1998)."
+            }
+          ],
+          "subsections": []
+        }
+      ]
+    },
+    {
+      "id": "invasive-mirror-bacteria-could-rapidly-evolve-and-diversify",
+      "level": 2,
+      "title": "8.4 Invasive mirror bacteria could rapidly evolve and diversify",
+      "title_html": "<strong>8.4\nInvasive mirror bacteria could rapidly evolve and\ndiversify</strong>",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Natural bacteria evolve when errors in genome replication create\nmutations, some of which modify traits affecting survival or\nreproduction. Mirror bacteria would be no different. If invasive mirror\nbacteria were released into the environment, they could quickly adapt\nand diversify, further expanding the range of susceptible hosts and\necosystems."
+        },
+        {
+          "type": "paragraph",
+          "html": "This section focuses on the initial evolution of mirror bacterium\nsubsequent to colonization of an environment. Existing organisms would\nalso evolve in response to mirror bacteria. Evolution in response to\nmirror bacteria would, however, only occur once the mirror bacteria are\nsufficiently abundant to apply selective pressure on natural organisms.\nSuch adaptations could have important consequences for the long-term\necological response to mirror bacteria but would have limited relevance\nduring the initial expansion of an invasive mirror bacterium."
+        }
+      ],
+      "subsections": [
+        {
+          "id": "mirror-bacterial-evolution-would-depend-on-new-mutations-which-could-arise-quickly",
+          "level": 3,
+          "title": "Mirror bacterial evolution would depend on new mutations, which could arise quickly",
+          "title_html": "Mirror\nbacterial evolution would depend on new mutations, which could arise\nquickly",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "A mirror bacterium that accidentally escapes containment would likely\nstart with essentially no standing genetic variation. Mirror bacteria\nwould be incapable of horizontal gene transfer with normal-chirality\norganisms, which would prevent the acquisition of novel genes and\nfunctions from other organisms. As a consequence, the genetic diversity\nthat fuels adaptation by natural selection would have to be generated\nthrough <em>de novo</em> mutations arising after release. Even so,\nevolution that relies entirely on new mutations can fuel rapid and\nextensive adaptation, especially when bacteria encounter new\nenvironments."
+            },
+            {
+              "type": "paragraph",
+              "html": "Bacterial populations can replicate and expand quickly, with typical\npoint mutation rates of 10<sup>-10</sup> to 10<sup>-9</sup> mutations\nper nucleotide per generation (Lynch <em>et al</em>., 2016). The total\nnumber of bacteria in a typical human is about 4<span class=\"math inline\">×</span>10<sup>13</sup> (Sender <em>et al</em>.,\n2016). While the total number of mirror bacteria that would arise during\nan infection is highly uncertain and would in part depend on the size of\nthe infected animal, populations of 10<sup>10</sup> or more are\ncertainly plausible. Assuming a genome size of several Mb (million\nbases), nearly every single possible point mutation could be generated\nand subjected to natural selection in the first large animal to become\ninfected."
+            },
+            {
+              "type": "paragraph",
+              "html": "As the mirror bacterial population expands, lineages would experience\ndifferent rates of adaptation due to variability in replication and\nmutation rates. Replication rates are highly variable because the\nenvironment is highly variable: doubling times within a host animal\ncould be measured in hours or even minutes, whereas the strain might\nrequire many days to divide in soils and natural waters. Mutation rates\ncan be dramatically increased by mutations to DNA replication and repair\nmechanisms. Such “mutator” phenotypes typically rise to high frequencies\nwhen bacteria encounter new selective conditions (Mao <em>et al</em>.,\n1997; Oliver <em>et al</em>., 2000; Sniegowski <em>et al</em>., 1997;\nTaddei <em>et al</em>., 1997; Tenaillon <em>et al</em>., 2016; Wiser\n<em>et al</em>., 2013), where they can accelerate the process of genetic\nadaptation. Mirror bacteria that are spreading invasively through new\nenvironments appear likely candidates to evolve hypermutability."
+            },
+            {
+              "type": "paragraph",
+              "html": "Lineages that reach higher population sizes would explore more\nmutations and thus may evolve more rapidly. These fast-adapting mirror\nlineages could experience hundreds or even thousands of generations each\nyear, and with huge populations they would continuously generate new\nmutations. While deleterious changes would generally be eliminated by\nnatural selection, these lineages could accumulate many neutral and,\nmore consequentially, beneficial mutations each year (Tenaillon <em>et\nal</em>., 2016)."
+            }
+          ],
+          "subsections": []
+        },
+        {
+          "id": "natural-selection-could-rapidly-increase-the-fitness-of-an-invasive-mirror-bacterium",
+          "level": 3,
+          "title": "Natural selection could rapidly increase the fitness of an invasive mirror bacterium",
+          "title_html": "Natural\nselection could rapidly increase the fitness of an invasive mirror\nbacterium",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "Laboratory evolution experiments have demonstrated that bacterial\npopulations can rapidly adapt to new conditions. Over the first 2 000\ngenerations (about a year) of the long-term evolution experiment (LTEE),\nthe fitness of the evolving <em>E. coli</em> populations increased by\nmore than 20% relative to their ancestors in a benign environment\nwithout predators, competitors, or abiotic stresses. Similar studies in\nwhich <em>E. coli</em> were exposed to more substantial challenges have\nobserved even faster and larger fitness improvements (Baym <em>et\nal</em>., 2016; Tenaillon <em>et al</em>., 2012). In the LTEE, the\nadaptation rate shows strongly diminishing returns, but fitness\ncontinues to increase. After 50 000 generations (about 22 years),\nrelative fitness had increased by about 75% in those populations that\nevolved hypermutability, which accumulated 500–2 500 mutations, and by\nabout 60% for those that retained the lower ancestral mutation rate,\nwhich had acquired an average of 60–100 mutations (Tenaillon <em>et\nal</em>., 2016; Wiser <em>et al</em>., 2013)."
+            },
+            {
+              "type": "paragraph",
+              "html": "Other experiments have demonstrated that a wide variety of specific\nadaptations can evolve quickly in <em>E. coli</em>, including improved\ntolerance of acidity (Harden <em>et al</em>., 2015), oxidative stress\n(Rodríguez-Rojas <em>et al</em>., 2020), osmotic stress (Guo <em>et\nal</em>., 2017), ionizing radiation (D. R. Harris <em>et al</em>.,\n2009), starvation (Finkel & Kolter, 1999), high temperatures\n(Rudolph <em>et al</em>., 2010), freeze-thaw cycles (Sleight <em>et\nal</em>., 2008), and antibiotics (Baym <em>et al</em>., 2016). <em>E.\ncoli</em> can rapidly evolve to increase growth rates on non-preferred\nor even non-native carbon sources (Blount <em>et al</em>., 2012; Fong\n<em>et al</em>., 2003; Herring <em>et al</em>., 2006; Izutsu &\nLenski, 2022; Lee & Palsson, 2010), and they can quickly overcome\nlow growth rates from metabolic imbalances caused by genome reduction\n(Choe <em>et al</em>., 2019; Hitomi <em>et al</em>., 2024;\nMoger-Reischer <em>et al</em>., 2023). Mutagenesis experiments show that\nmutants of <em>E. coli</em> K-12 can utilize numerous non-native\nnutrient sources (see <a href=\"#table-1.1-achiral-organic-molecules-that-can-be-utilized-by-wild-type-or-mutant-e.-coli-k-12\">Table\n1.1</a>–3), including the right-handed forms (i.e., reverse chirality)\nof eight of the 20 canonical amino acids (Celis, 1977; Kuhn &\nSomerville, 1971); a further seven of the 20 can be used natively by at\nleast some <em>E. coli</em> strains (see <a href=\"#table-1.2-utilization-of-ʟ--and-ᴅ-amino-acids-by-e.-coli\">Table\n1.2</a>)."
+            },
+            {
+              "type": "paragraph",
+              "html": "An invasive mirror <em>E. coli</em> or similar mirror generalist\nwould experience strong selection to increase its growth and survival,\nboth within hosts and in the external environment. Mirror populations in\na single large animal or patch of soil could greatly exceed the numbers\ntypically used in laboratory evolution experiments, providing\nsubstantial opportunities for adaptive evolution. Spatiotemporal\ngradients and other environmental heterogeneities could further\naccelerate evolution by selecting for different capabilities, which\ncould promote sustained adaptation by preventing populations from\nbecoming trapped at local fitness peaks (Baym <em>et al</em>., 2016;\nKashtan <em>et al</em>., 2007). Potential targets of adaptation in\nmirror bacteria would include improved chemotaxis toward accessible\nnutrients (Adler <em>et al</em>., 1973), faster transport of nutrients\nacross the cell envelope, improved regulation of catabolic pathways for\nswitching between available nutrients, enhanced translocation into and\ninfection of multicellular hosts, tolerance to acidity and reactive\noxygen to survive in the phagosomes of protists and phagocytes of hosts,\nand tolerance to abiotic stressors such as temperature extremes and low\nwater availability."
+            },
+            {
+              "type": "paragraph",
+              "html": "Evolution is typically slower to discover novel capabilities that are\nunrelated to existing genes. Despite their large populations, invasive\nmirror bacteria might take a long time to acquire some highly beneficial\nfunctions due to their initially low genetic diversity and lack of\nhorizontal gene transfer with natural organisms. Enzymes able to\ncatalyze novel reactions, such as a mirror nitrogenase in <em>E.\ncoli</em>, might require millions of years to evolve, if ever, as no\ngenes with related functions would be present in the initial mirror\nstrain (unless introduced through human intervention). A key question\nconcerns how long it would take for ᴅ-glucose catabolism to evolve if it\nwas not engineered into the initial strain. A mirror <em>E. coli</em>\nwould likely need at least four new enzymatic activities, as well as a\ntransporter. However, the basic catalytic mechanisms would already be\npresent in existing metabolic pathways targeting different sugar\nsubstrates. Moreover, the mirror bacterium would gain energy and fitness\nupon altering the substrate specificity of an existing enzyme to\ncatalyze each of the first two steps (Shimizu <em>et al</em>., 2012).\nThe hydrolysis of di- and oligo-saccharides such as ᴅ-sucrose and\nᴅ-trehalose could be important within plants and insects, though these\ncapabilities might be able to evolve from mutations to existing\nglycoside hydrolases."
+            }
+          ],
+          "subsections": []
+        },
+        {
+          "id": "an-invasive-mirror-bacterium-could-diversify-and-fill-available-niches",
+          "level": 3,
+          "title": "An invasive mirror bacterium could diversify and fill available niches",
+          "title_html": "An\ninvasive mirror bacterium could diversify and fill available niches",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "If they spread through the environment, lineages of mirror bacteria\nwould be subject to diverse selective pressures. Mutations that are\nbeneficial under some conditions are often deleterious under others\n(Cooper & Lenski, 2000), favoring diversification into increasingly\nspecialized strains. Even in extremely simple laboratory conditions,\ninitially homogeneous populations of bacteria often evolve stable\necotypes that specialize on different physical, chemical, and biological\naspects of their environment (Good <em>et al</em>., 2017; Rainey &\nTravisano, 1998). Geographic distance would also cause mirror bacterial\npopulations to diverge over time, even without differences in selection\npressures. Increasingly fit mirror bacteria could expand at the expense\nof their progenitors, although this displacement would usually be slower\nthan the initial invasion of mirror bacteria."
+            },
+            {
+              "type": "paragraph",
+              "html": "As previously mentioned, horizontal gene transfer between\nnatural-chirality bacteria and mirror bacteria would be impossible.\nHorizontal gene transfer between mirror bacteria would be theoretically\npossible, but in the absence of mirror phages or conjugative plasmids it\nwould require the uptake of and transformation by L-DNA released from\nmirror cells. Also, during the initial evolution of invasive mirror\nbacteria, the importance of horizontal gene transfer for evolution would\nbe limited by their lack of genetic diversity. However, as mirror\nlineages diverged, horizontal gene transfer between them could become a\nmore important driver of their evolution, especially if mirror phages or\nplasmids were present."
+            },
+            {
+              "type": "paragraph",
+              "html": "In summary, an invasive mirror bacterium capable of spreading in the\nenvironment would likely produce a very large population, allowing it to\ngenerate diverse mutations upon which selection would act to increase\nboth its local fitness and its ability to colonize previously\ninaccessible environments. However, novel enzymes with functions\nunrelated to those already present would be slow or unlikely to evolve.\nEven if a released mirror bacterium was initially restricted to a narrow\nset of environmental conditions, it could evolve rapidly to expand its\nrange. The potential for mirror bacteria to evolve and diversify\nunderscores the biosafety and biosecurity challenges raised by their\ncreation (see <a href=\"#chapter-3-engineering-biosafety-and-biosecurity-of-mirror-bacteria\">Chapter\n3</a>)."
+            }
+          ],
+          "subsections": []
+        }
+      ]
+    },
+    {
+      "id": "invasive-mirror-bacteria-could-cause-irreversible-ecological-harm",
+      "level": 2,
+      "title": "8.5 Invasive mirror bacteria could cause irreversible ecological harm",
+      "title_html": "<strong>8.5\nInvasive mirror bacteria could cause irreversible ecological\nharm</strong>",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Predicting whether a mirror bacterium could colonize any given\nenvironment is challenging, and forecasting the long-term consequences\nof a successful invasion is even more so. Invasive mirror bacteria that\nbecome common in the environment might well eliminate some of those\nanimal and plant species that are susceptible to infection. Less visible\nbut equally important impacts to microbial ecosystems could lead to\nmajor and irreversible changes to ecological and geochemical\nprocesses."
+        },
+        {
+          "type": "paragraph",
+          "html": "We emphasize severe outcomes because they are the most consequential\nand cannot be excluded based on what we know from the limited available\ndata. Given the multipronged risks to human health (<a href=\"#chapter-4-risks-to-human-health\">Chapter 4</a>), animals (<a href=\"#chapter-6-animal-infection\">Chapter 6</a>), plants (<a href=\"#chapter-7-plant-infection\">Chapter 7</a>), and natural ecosystems\n(this chapter), we think it is important to emphasize the breadth and\ndepth of the problems that could be caused by mirror bacteria if they\ninvade and become established in nature."
+        }
+      ],
+      "subsections": [
+        {
+          "id": "invasive-mirror-bacteria-could-drive-susceptible-plant-and-animal-species-to-extinction",
+          "level": 3,
+          "title": "Invasive mirror bacteria could drive susceptible plant and animal species to extinction",
+          "title_html": "Invasive\nmirror bacteria could drive susceptible plant and animal species to\nextinction",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "Invasive pathogens are a major cause of ecological harm, and in some\ncases have driven species to extinction. The amphibian-killing fungus\n<em>Batrachochytrium dendrobatidis</em> spread from East Asia sometime\nin the early 20th century (O’Hanlon <em>et al</em>., 2018), leading to\nglobal declines of amphibian populations and contributing to at least 90\npresumed extinctions (Scheele <em>et al</em>., 2019). In less than a\ndecade, the invasive white-nose fungus has killed over 90% of several\nNorth American bat species (Cheng <em>et al</em>., 2021) and may drive\nmultiple species to extinction. The oomycete <em>Phytophthora</em>\n<em>cinnamomi</em> infects ~ 5 000 plant species, causing a form of root\nrot that devastates native ecosystems in Australia and Europe and\nthreatens hundreds of susceptible plants with extinction (Invasive\nSpecies Council, 2023). The invasive <em>Ceratocystis lukuohia</em>\nfungus is rapidly infecting and killing trees of the keystone ‘ōhi‘a\ntree (Barnes <em>et al</em>., 2018), which accounts for ~80% of the\nbiomass in Hawaiian forests and 50% of the surface area of all woody\nplants on the archipelago (Fortini <em>et al</em>., 2019). Also in\nHawaii, the introductions of avian malaria and bird pox were likely\nresponsible for the extinction of a substantial proportion of the native\navifauna in the late 19th century (van Riper <em>et al</em>., 1986;\nWarner, 1968)."
+            },
+            {
+              "type": "paragraph",
+              "html": "An important feature of the aforementioned pathogens is their ability\nto infect many host species. While there are numerous examples of\ninfectious diseases causing large reductions in host populations,\ndiseases do not usually cause the extinction of their host species\n(Smith <em>et al</em>., 2006). Most pathogens require sufficient host\ndensity to survive and spread, and so pathogen frequencies generally\ndecline once the host population falls below some threshold density (De\nCastro & Bolker, 2005; McCallum, 2012). For pathogens that can\nexploit multiple hosts or which replicate in the environment, this logic\nno longer applies. Persistence in the more resilient hosts or external\nreservoirs allows the pathogen to be repeatedly reintroduced into the\nmore susceptible hosts."
+            },
+            {
+              "type": "paragraph",
+              "html": "An invasive mirror bacterium could plausibly infect a diverse set of\nhost species (see <a href=\"#chapter-6-animal-infection\">Chapters 6</a>\nand <a href=\"#chapter-7-plant-infection\">7</a>), and might be able to\ncolonize some external environments as well (this chapter). This breadth\ncould make invasive mirror bacteria particularly ecologically\ndevastating. Given the broad immunological deficiencies discussed in <a href=\"#chapter-4-risks-to-human-health\">Chapters 4</a>, <a href=\"#chapter-6-animal-infection\">6</a>, and <a href=\"#chapter-7-plant-infection\">7</a>—consequences of the complete\nnaivety of all natural organisms to mirror bacteria—it is plausible that\nmany susceptible populations of plants and animals would contain few or\nno individuals with intrinsic resistance to infection. Such populations\ncould be rapidly driven extinct, with little opportunity for the\nevolution of a resistant phenotype."
+            },
+            {
+              "type": "paragraph",
+              "html": "Species in which preexisting resistance to mirror bacteria was\nfortuitously more common would likely see rapid evolution toward\nincreased resistance to infection. While rapid evolution is observed in\nresponse to some pathogen outbreaks (Bonneaud <em>et al</em>., 2018; Di\nGiallonardo & Holmes, 2015; Epstein <em>et al</em>., 2016), there\nare important differences with the case of mirror bacteria. In\nparticular, as previously noted, specialized pathogens typically cannot\ndrive their host species to extinction, which allows time for the\ngradual evolution of traits that increase the host’s resistance. For\ninvasive mirror bacteria (or other diseases with environmental\nreservoirs or multiple hosts), species survival requires that some\nindividuals are able to survive and reproduce in the face of repeated\nexposure from environmental reservoirs or spillover infections from\nother susceptible species. In vertebrates, this challenge may be further\nexacerbated by the likely impairment of adaptive immunity and immune\nmemory formation (see <a href=\"#chapter-4-risks-to-human-health\">Chapters 4</a> and <a href=\"#chapter-6-animal-infection\">6</a>); unlike most infectious\ndiseases, an individual’s fortuitous survival of a mirror bacterial\ninfection may not provide robust protection against future\ninfections."
+            },
+            {
+              "type": "paragraph",
+              "html": "Widespread infections leading to population crashes or extinction of\nsusceptible animal and plant populations may be the most substantial\ncause of ecological harm from invasive mirror bacteria. We should\nemphasize that the degree to which different animal and plant species\nare susceptible to mirror bacterial infection is uncertain, and would\nlikely depend on the specific mirror bacterium in question.\nNevertheless, a mirror bacterium capable of infecting multiple species\ncould be ecologically devastating to an extent that is potentially much\ngreater than existing invasive pathogens."
+            }
+          ],
+          "subsections": []
+        },
+        {
+          "id": "disruptions-to-terrestrial-ecosystems-could-eliminate-key-habitats-and-impact-geochemical-cycles",
+          "level": 3,
+          "title": "Disruptions to terrestrial ecosystems could eliminate key habitats and impact geochemical cycles",
+          "title_html": "Disruptions\nto terrestrial ecosystems could eliminate key habitats and impact\ngeochemical cycles",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "While the extinction of any species is unfortunate, the loss of many\nspecies simultaneously could cause severe disruptions to critically\nimportant ecosystems and the functions they provide. This is\nparticularly true if certain “keystone” species or guilds (i.e., groups\nof species that perform similar functions) are susceptible to mirror\nbacterial infection. For example, while the invasive <em>C.\nlukuohia</em> fungus is unlikely to drive the ‘ōhi‘a to extinction (Luiz\n<em>et al</em>., 2021), ‘ōhi‘a are so dominant in Hawaiian forests that\nthe loss of most mature trees would eliminate the primary habitat of\nmost other native plant and animal species (Fortini <em>et al</em>.,\n2019). Coral reefs, mangrove forests, coastal salt marshes, and wetlands\nare likewise reliant on certain key species to stabilize the physical\nenvironment and provide habitats for other species. If these key species\nwere susceptible to mirror bacterial infection, the result would not\njust be their potential loss, but also severe damage to the entire\necosystem."
+            },
+            {
+              "type": "paragraph",
+              "html": "While most forest ecosystems are more diverse and robust than\nHawaiian ‘ōhi‘a forests, a few major genera of trees dominate many\nglobal forests, particularly beech, eucalypt, pine, oak, and spruce\ntrees. If members of these genera were susceptible to mirror bacterial\ninfection, the results could severely damage local forest ecosystems.\nForests are also important stores of carbon, containing about 450 GtC\n(Erb <em>et al</em>., 2018), and so the death and decomposition of even\na small fraction of these trees could greatly exceed the 11 GtC/yr\nemitted by human activities (Friedlingstein <em>et al</em>., 2023). If\nonly a moderate fraction of trees prove susceptible, the long-term\neffects on geochemical cycles might be moderated as resistant trees grow\nto replace susceptible ones. On the other hand, if mirror bacteria could\ninfect most tree species and prevent their regrowth, the climate impacts\ncould be dramatic, with atmospheric CO<sub>2</sub> potentially\nincreasing on the order of 100 ppm over the course of a few years."
+            },
+            {
+              "type": "paragraph",
+              "html": "While not as visible as plants and animals, microbial communities\nwithin soils are also vital for many ecosystem functions. Soil\nmicrobiota are critical for the transformation and recycling of organic\nmatter (Hoffland <em>et al</em>., 2020), nitrogen fixation (Chen <em>et\nal</em>., 2003), and making micronutrients available to plants (Singh\n<em>et al</em>., 2022). Physical, chemical, and biological disruptions\nto soil ecosystems are known to degrade soil quality and thereby reduce\nagricultural or ecosystem productivity (Eswaran <em>et al</em>., 2001),\nand can trigger desertification (D’Odorico <em>et al</em>., 2013).\nMirror bacteria could directly impact soil communities by competing with\nother microbes for organic matter (to the extent it is accessible to\nmirror metabolism) and key inorganic nutrients like phosphorus and\nnitrogen, as well as by potentially harming bacterial predators and\nother soil fauna. Because these types of disruptions would be\nunprecedented, predicting the consequences is exceptionally\ndifficult."
+            },
+            {
+              "type": "paragraph",
+              "html": "Global soils contain around 2500 GtC (Jackson <em>et al</em>., 2017),\nmuch greater than the 900 GtC currently present in the atmosphere and\nthe 450 GtC in vegetation. Thus, the loss of substantial primary\nproduction combined with the potential release of stored carbon from\ndegraded soils could theoretically lead to a further increase in global\ntemperatures, although the uncertainty surrounding this outcome is\nconsiderably greater than for direct impacts."
+            }
+          ],
+          "subsections": []
+        },
+        {
+          "id": "ecological-disruptions-would-lead-to-strong-selective-pressures-on-natural-organisms-but-some-responses-could-be-severely-constrained",
+          "level": 3,
+          "title": "Ecological disruptions would lead to strong selective pressures on natural organisms, but some responses could be severely constrained",
+          "title_html": "Ecological\ndisruptions would lead to strong selective pressures on natural\norganisms, but some responses could be severely constrained",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "If mirror bacteria were to become abundant, they would exert strong\nselection pressure on other species. As discussed earlier, organisms\nsusceptible to mirror bacterial infection would experience intense\nselection for resistance. If most individuals in a population were\nsusceptible to infection, a population crash could ensue, limiting the\npopulation’s genetic diversity and potentially harming the associated\necosystem. If extinction does not occur, then rapid evolution driven by\nselection among the surviving variants is a likely consequence of the\npopulation crash."
+            },
+            {
+              "type": "paragraph",
+              "html": "More generally, other organisms could not preemptively adapt to the\npresence of mirror bacteria elsewhere in the world, or even to early\ncolonists at low abundance. Strong selection pressure would require\nrelatively abundant mirror bacteria in the local environment. Evolution\nis therefore unlikely to prevent either the initial spread of mirror\nbacteria or mitigate any irreversible ecological harms they might cause\nduring the first wave of colonization."
+            },
+            {
+              "type": "paragraph",
+              "html": "Given enough time and selection pressure, other organisms could\nlikely evolve to prey upon or otherwise harm the mirror bacteria.\nNatural bacteria might have a particularly rapid evolutionary response,\ngiven their own extremely large populations and high replication rates,\nas well as some preexisting weapons that may be partially effective\nagainst mirror bacteria and might be refined to increase their efficacy.\nIt also seems likely that natural bacteria would evolve to consume some\nmirror bacterial detritus, eventually including the mirror-chirality\nmacromolecules that initially could not be utilized; if so, some might\nevolve to actively kill and consume mirror bacteria. Horizontal gene\ntransfer might also spread such antimirror adaptations between natural\nstrains of bacteria, albeit only once populations of mirror organisms\nhave become abundant."
+            },
+            {
+              "type": "paragraph",
+              "html": "The evolution of protists and animals that prey on mirror bacteria\nappears more challenging. Protists and animals lack the enzymes required\nto degrade mirror proteins, sugars, nucleic acids, and lipids. They\nlikely have limited or no ability to catabolize most mirror metabolites\n(Friedman & Levin, 2012), and some ᴅ-amino acids are toxic to many\norganisms (Forsum <em>et al</em>., 2008; Friedman & Levin, 2012; Yow\n<em>et al</em>., 2006; see also <a href=\"#box-1.2-could-natural-chirality-molecules-be-toxic-to-mirror-life\">Box\n1.2</a>). These deficiencies could not be remedied through a handful of\nmutations, but would require the much slower evolution of novel proteins\nand catabolic pathways."
+            },
+            {
+              "type": "paragraph",
+              "html": "To give an illustrative example, <em>C. elegans</em> relies on many\ndozens of distinct lysozymes, glycosidases, proteases, phospholipases,\nnucleases, and other lytic enzymes to digest the macromolecules present\nin their bacterial prey (McGhee <em>et al</em>., 2007; Yilmaz &\nWalhout, 2016). Digesting even a simple macromolecule like\nbacterial-derived glycogen requires intestinal amylase and α-glucosidase\nto decompose the glycogen into first maltose and then glucose, followed\nby transport into intestinal cells via the FGT-1 transporter (Kitaoka\n<em>et al</em>., 2013), where glucose is catabolized into phosphorylated\ntrioses through several additional enzymes. Evolving a similar catabolic\npathway for mirror glycogen would almost certainly require a similar or\ngreater number of novel enzymes, and it seems questionable whether such\nadaptations could arise in nematodes even over millions of years."
+            },
+            {
+              "type": "paragraph",
+              "html": "Absent these adaptations, the consumption of mirror bacteria by many\nnatural organisms would likely be futile or even harmful. Thus, there\nwould be no selection pressure for increased consumption of the mirror\nbacteria, and indeed there might instead be selection to avoid them. It\nis certainly possible, perhaps even likely, that some protists and\nanimals would eventually evolve the ability to consume mirror bacteria,\nbut it is impossible to predict how long this would take or which taxa\nmight acquire this ability."
+            },
+            {
+              "type": "paragraph",
+              "html": "It is unclear whether phages that target mirror bacteria would arise\nnaturally. As discussed earlier, natural phages cannot infect mirror\nbacteria, as there is no plausible mechanism by which a\nnatural-chirality viral genome could be replicated within a mirror\nbacterium. There is also no plausible natural mechanism by which a\nnatural-chirality viral genome could be transcribed into mirror nucleic\nacids and translated into mirror proteins. It is therefore extremely\nunlikely that existing natural phages would evolve to infect mirror\nbacteria. However, if the mirror bacterium harbored a prophage in its\ngenome, the prophage might be activated and evolve to become an\neffective predator. Also, the ultimate origins of viruses remain\nuncertain (Krupovic <em>et al</em>., 2019), and so perhaps mirror phages\ncould eventually evolve <em>de novo</em> from mirror bacteria."
+            },
+            {
+              "type": "paragraph",
+              "html": "While natural enemies to mirror bacteria might eventually arise and\nhelp limit mirror bacterial populations, they could not plausibly drive\nall mirror bacteria to extinction. Given the fundamental biochemical\ndifferences between mirror bacteria and natural-chirality organisms,\npredation on mirror bacteria would require specialized adaptations that\nwere advantageous only if mirror bacteria were present in the\nenvironment. Once they become established in the environment, the\ncomplete elimination of mirror bacteria therefore appears unlikely, even\nover evolutionary timescales, and the final “equilibrium” state that is\nachieved may be very different from present-day ecosystems."
+            }
+          ],
+          "subsections": []
+        },
+        {
+          "id": "mirror-cyanobacteria-could-profoundly-alter-marine-ecosystems-and-the-global-carbon-cycle",
+          "level": 3,
+          "title": "Mirror cyanobacteria could profoundly alter marine ecosystems and the global carbon cycle",
+          "title_html": "Mirror\ncyanobacteria could profoundly alter marine ecosystems and the global\ncarbon cycle",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "Photoautotrophs fix carbon directly from sunlight and carbon dioxide,\nand often do not require any chiral nutrients in order to grow. The\nproduction of organic matter by photoautotrophs in turn lays the\nfoundation for almost all other life on the planet. This makes the\nprospect of a mirror photoautotroph particularly concerning from an\necological standpoint. For concreteness, this section focuses on the\nconsequences of a mirror <em>Prochlorococcus</em>, though the effects of\na mirror marine <em>Synechococcus</em> (a paraphyletic genus which\ncontains <em>Prochlorococcus</em> as a subclade (Komárek <em>et\nal.,</em> 2020) could be similar. It appears less likely that a mirror\nphototroph would be created than a mirror heterotroph, given the\npotential biotechnological applications of a mirror heterotroph.\nNonetheless, it is important to consider the possibility of a mirror\nprototroph, perhaps especially given interest in engineering solutions\nto climate change."
+            },
+            {
+              "type": "paragraph",
+              "html": "As discussed in <a href=\"#mirror-bacteria-could-colonize-natural-environments-outside-of-multicellular-hosts\">Section\n8.2</a>, a mirror <em>Prochlorococcus</em> could plausibly replace\nnative <em>Prochlorococcus</em> strains across much of the world’s\noceans. Natural <em>Prochlorococcus</em> growth rates under current\nmarine conditions are typically ~ 0.5 day<sup>-1</sup> (Kirchman, 2016),\nand growth is typically limited by nitrogen (Paerl, 2018), although iron\n(J. K. Moore <em>et al</em>., 2001) and phosphate (Martiny <em>et\nal</em>., 2019) can also be limiting. Because the protists and phages\nresponsible for almost all <em>Prochlorococcus</em> mortality (Beckett\n<em>et al</em>., 2024) would not efficiently target a mirror version,\nthe mirror bacterial population would likely expand until the local\nconcentrations of nitrogen, phosphorus, and/or iron were drawn down to\nlevels too low to support further growth."
+            },
+            {
+              "type": "paragraph",
+              "html": "As nutrient concentrations decrease, so would the populations of\nexisting phototrophs and the protists and phages that prey on them.\nWhile it is impossible to predict precisely how marine ecosystems would\nbe affected, the consequences would likely be severe. It is extremely\nunlikely that natural-chirality phototrophs would be driven extinct;\nwith the decline of many predators, some native <em>Prochlorococcus</em>\nstrains and other phototrophs could still coexist with the mirror\n<em>Prochlorococcus</em> due to their greater genetic diversity and\nadaptation to particular niches. Nevertheless, it appears likely that a\nnew equilibrium would be reached in which mirror\n<em>Prochlorococcus</em> dominated a nutrient-depleted ocean. The\ngreatly reduced population of natural phototrophs would support a much\nless diverse marine food chain, as the reduction in digestible biomass\nwould likely drive many animal species to extinction (see <a href=\"#figure-8.2-mirror-phototrophic-bacteria-could-evade-predation-thereby-colonizing-large-fractions-of-the-ocean-with-severe-consequences-for-marine-ecosystems\">Figure\n8.2</a>)."
+            },
+            {
+              "type": "paragraph",
+              "html": "The effects of mirror <em>Prochlorococcus</em> on the carbon cycle\nwould be even more complicated. It has previously been speculated that\nmirror cyanobacteria would sequester vast quantities of CO<sub>2</sub>\nfrom the atmosphere, causing terrestrial photosynthesis to fail over a\nfew centuries and triggering an ice age (Bohannon, 2010). This scenario\ndoes not appear particularly likely to us because the production of\nmirror <em>Prochlorococcus</em> biomass would be limited by the\navailability of other nutrients; however, it cannot be ruled out if\nthere were substantial carbon fixation beyond that needed to produce\nbiomass. The next few paragraphs explore these complex dynamics in more\ndetail."
+            },
+            {
+              "type": "paragraph",
+              "html": "In the tropical and subtropical waters where <em>Prochlorococcus</em>\nthrives, the limiting nutrient is often nitrogen. As the mirror\n<em>Prochlorococcus</em> population expanded, it would sequester\nnitrogen within its own biomass. Transferring nitrogen from\nnatural-chirality biomass to mirror biomass would not greatly change the\ntotal fixed carbon in the surface oceans, as the C:N ratio of\n<em>Prochlorococcus</em> of about 7:1 is broadly comparable to other\nliving organisms (Bertilsson <em>et al</em>., 2003). Transferring\nnitrogen from dissolved organic matter to mirror biomass would meanwhile\ndecrease the total fixed carbon, as the C:N of dissolved organic matter\nis typically closer to 15:1 (Sipler & Bronk, 2015). Transferring\nnitrogen from nitrate and other inorganic sources to mirror\n<em>Prochlorococcus</em> would also increase fixed carbon stockpiles.\nBut because most nitrogen in the surface ocean is already sequestered in\nbiomass and dissolved organic matter (Sipler & Bronk, 2015), it is\nnot clear that the takeover of surface oceans by mirror\n<em>Prochlorococcus</em> would greatly increase the total organic matter\nin the surface oceans. Similar constraints would arise in regions where\niron or phosphorus is limiting."
+            },
+            {
+              "type": "paragraph",
+              "html": "Not all carbon fixed by photoautotrophs goes into biomass. Since they\nare typically limited by nitrogen and managing photosynthetic fluxes is\nchallenging, <em>Prochlorococcus</em> cells have been observed to\nrelease anywhere between 2% and 90% of the carbon that they fix back\ninto the environment (Bertilsson <em>et al</em>., 2005; López-Sandoval\n<em>et al</em>., 2013; Roth‐Rosenberg <em>et al</em>., 2021). Some of\nthis fixed carbon is released as glycolate, acetate, and other small\nmetabolites, but much of it takes the form of complex and poorly\ncharacterized high-molecular-weight compounds (Iuculano <em>et al</em>.,\n2017; Kujawinski, 2011). The mirror versions of these large compounds\ncould probably not be degraded by existing heterotrophs. Since these\ncompounds lack nitrogen and could not support growth in a\nnitrogen-limited environment, there may not be substantial selection to\nacquire the capability to consume these compounds. Absent consumption,\nthis leakage could therefore result in much greater concentrations of\norganic carbon in the surface ocean."
+            },
+            {
+              "type": "paragraph",
+              "html": "Predicting how much carbon overproduction would occur in the years\nand decades following the release of a mirror <em>Prochlorococcus</em>\nis challenging. On the one hand, the standing biomass of mirror\n<em>Prochlorococcus</em> could be large. A recent estimate suggests that\nthe current standing biomass of planktonic autotrophs is roughly 0.6\nGtC, of which perhaps a quarter is <em>Prochlorococcus</em>; the total\nbiomass of marine organisms is closer to 6 GtC, or about ten-fold\ngreater (Bar-On & Milo, 2019). While these estimates are very crude,\nthey suggest that the standing biomass of a mirror\n<em>Prochlorococcus</em> could potentially even exceed that of all\npresent-day phytoplankton. It is therefore at least possible that carbon\noverproduction by mirror <em>Prochlorococcus</em> could be comparable to\nor even greater than current marine net primary production (NPP), which\nis about 50 GtC/yr (Field <em>et al</em>., 1998). On the other hand,\ngiven the wide uncertainty in the extent of carbon overproduction and\nthe very slow biomass accumulation of the mirror\n<em>Prochlorococcus</em> population once nutrients are depleted, it is\nplausible that mirror <em>Prochlorococcus</em> would engage in very\nlittle carbon overproduction."
+            },
+            {
+              "type": "paragraph",
+              "html": "If carbon overproduction proved to be very large, then the climate\nconsequences could be severe even over a few decades. The atmosphere\ncontains about 870 GtC of carbon—up from the pre-industrial average of\n571 GtC (IPCC, 2021)—and the removal of tens of GtC each year would\nlower atmospheric CO<sub>2</sub> to below pre-industrial levels in a\nmatter of years or decades, and to levels below that required for\nterrestrial photosynthesis over hundreds of years, as speculated\nelsewhere (Bohannon, 2010). If carbon overproduction were instead\nminimal, then the initial climate effects would probably be small,\nthough other ecological consequences would still be severe. Over longer\ntimescales the climate would still likely be greatly altered, because\nbiological processes play a crucial role in determining carbon storage\nin the deep ocean (Ridgwell & Arndt, 2015) and these processes could\nbe profoundly disrupted by mirror <em>Prochlorococcus</em>. In\nparticular, <em>Prochlorococcus</em> and heterotrophic bacteria are\nclose to neutrally buoyant; the extent to which a mirror\n<em>Prochlorococcus</em>-dominated ecosystem would sequester carbon\nthrough the usual biological pump (Siegel <em>et al</em>., 2023) is\ntherefore unclear. Careful modeling efforts might better discern the\nrange of plausible climate outcomes over both decades and millenia.\nHowever, given the uncertainties in the extent of carbon overproduction\nand the longer-term ecological and evolutionary responses to mirror\n<em>Prochlorococcus</em>, substantial uncertainty will doubtless\nremain."
+            }
+          ],
+          "subsections": []
+        }
+      ]
+    },
+    {
+      "id": "countermeasures-to-invasive-mirror-bacteria-might-lessen-but-would-not-halt-the-ecological-damage",
+      "level": 2,
+      "title": "8.6 Countermeasures to invasive mirror bacteria might lessen but would not halt the ecological damage",
+      "title_html": "<strong>8.6\nCountermeasures to invasive mirror bacteria might lessen but would not\nhalt the ecological damage</strong>",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Strategies to minimize the environmental harms caused by invasive\nmirror bacteria can be divided into two main categories: those that\ndirectly reduce populations of mirror bacteria, and those that reduce\nthe adverse effects on other organisms. Neither approach appears likely\nto prevent widespread, irreversible environmental damage."
+        }
+      ],
+      "subsections": [
+        {
+          "id": "biological-methods-could-reduce-but-not-eliminate-mirror-bacterial-populations",
+          "level": 3,
+          "title": "Biological methods could reduce but not eliminate mirror bacterial populations",
+          "title_html": "Biological\nmethods could reduce but not eliminate mirror bacterial populations",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "Given the immense size of natural ecosystems, the only realistic\nmethods for reducing mirror bacterial populations at a global scale are\nself-replicating biological agents. Human manufacture of mirror\nantibiotic compounds might protect or remediate small areas, but even\nswitching the entire global production of antibiotics to antimirror\ncompounds may not provide all humans with prophylactic treatment. As\nnoted in <a href=\"#chapter-7-plant-infection\">Chapter 7</a>, protecting\ncrops through antimirror compounds appears infeasible; scaling\nproduction to the level required to protect entire ecosystems would be\nimpossible. Other conventional means for preventing the spread of\nagricultural pathogens could not be performed at the required scale (<a href=\"#countermeasures-for-agricultural-plants\">Section 7.4</a>), and\ncould entail significant environmental damage if applied to natural\nenvironments (rather than agricultural fields)."
+            },
+            {
+              "type": "paragraph",
+              "html": "By contrast, biological agents that prey on mirror bacteria could\nself-replicate and multiply in the environment with no need for\nmanufacture at scale. Mirror phages are the simplest and most promising\nsuch biological countermeasure. A mirror phage could function as an\neffective predator (Weitz, 2016), substantially reducing the local\nabundance of its prey. Like mirror bacteria themselves, mirror phages\ncould be spread by the movement of water, wind, and animals; spread\nthrough marine environments would be particularly rapid due to passive\nmovement by ocean currents and turbulent mixing (see <a href=\"#invasive-mirror-bacteria-could-rapidly-disperse-through-the-environment\">Section\n8.3</a>). The extent to which a mirror phage could spread effectively\nthrough terrestrial environments is less clear, though mirror phages\ncould be released in many locations to assist their spread."
+            },
+            {
+              "type": "paragraph",
+              "html": "Despite their ability to replicate, mirror phages suffer from\ninherent limitations. Sustained phage replication would require the\npresence of a sufficiently high density of mirror bacteria in the\nenvironment. As a result, mirror phages could never prevent the initial\ninvasion and spread of mirror bacteria into a new environment, a fact\nmore generally true of any attempt to use specialist predators as\nbiological controls (Lewis <em>et al</em>., 2016; Owen & Lewis,\n2001). For similar reasons, mirror phages would not eliminate mirror\nbacteria from the environment, as the mirror phages require sufficient\ndensities of mirror bacteria in order to replicate. At best, mirror\nphages would help control the equilibrium concentrations of mirror\nbacteria in the environment, thereby reducing, but not eliminating,\ninfections of susceptible multicellular organisms. Such limitations are\nfamiliar from the analogous use of biological controls in the management\nof invasive species, where the intended aim is to maintain the density\nof the invasive species at a low homeostatic equilibrium (Murphy &\nEvans, 2009)."
+            },
+            {
+              "type": "paragraph",
+              "html": "A further difficulty with mirror phages is that they would exert\nstrong selection pressure on the mirror bacteria to evolve phage\nresistance. Inactivating the surface receptor used by a phage to enter\nthe cell, or reducing its production, can render that cell entirely or\npartially resistant to that particular phage (Bohannan & Lenski,\n2000; Meyer <em>et al</em>., 2012). These receptors generally have\nimportant functions for the bacteria; many are involved in acquiring\nnutrients from the environment. In nature, resisting predation from any\ngiven phage may be less important than retaining the function of the\nreceptor, although resistance can sometimes evolve by altering a\nreceptor’s structure without destroying its function. Moreover, an\ninvasive mirror bacterium could plausibly lose multiple receptors and\nstill thrive. Though the phages themselves may evolve to overcome host\nresistance, and humans could synthesize mirror versions of phage known\nto prey upon the natural equivalent of the mirror strain, it is likely\nthat the coevolving mirror bacteria would diverge into multiple\nlineages, each preyed upon by specialized phages (L. Chao <em>et\nal</em>., 1977; Weitz <em>et al</em>., 2005; Williams, 2013). A single\nmirror phage could effectively control the population of any given\nmirror bacterial strain. However, as the number of strains expands, the\ncoevolving phage lineages may become less effective at controlling the\ntotal population of mirror bacteria (Thingstad, 2000; Waterbury &\nValois, 1993)."
+            },
+            {
+              "type": "paragraph",
+              "html": "As noted in <a href=\"#the-efficacy-of-other-countermeasures-against-mirror-bacterial-infection-is-unclear\">Section\n5.3</a>, using mirror phages to control mirror bacteria would present\nsome additional risks: they would provide a mechanism for horizontal\ngene transfer between mirror bacterial strains and introduce novel genes\nand proteins into the mirror bacterial population. If an invasive mirror\nbacterium were already causing major ecological damage, these\nconsiderations would likely be secondary to the need to reduce the\nmirror bacteria and their harmful effects by whatever means available.\nImportantly, mirror phage countermeasures would not need to be developed\nin advance, as they could be swiftly generated once the target species\nof mirror bacterium was identified."
+            },
+            {
+              "type": "paragraph",
+              "html": "Other biological means of controlling mirror bacterial populations\nappear even more challenging while suffering from similar limitations.\nProtists could, in principle, be reengineered to recognize mirror\nbacteria, equipped with enzymes capable of degrading mirror\nmacromolecules, and provided with metabolic pathways to utilize mirror\nmetabolites. Such engineering is, however, beyond current abilities.\nBecause protist species have limited ecological ranges (Grossmann <em>et\nal</em>., 2016), many different protist species may need to be\nreengineered in order to provide top-down biological control across the\nrelevant ecosystems, which would further increase the challenge. The\nprimary advantage of engineering protists to consume mirror bacteria is\nthat, over the very long run, such protists might be more effective than\nmirror phages at controlling the total mirror bacterial population;\nprotist predation tends to be less strain-specific and the evolution of\nresistance less straightforward. Engineering heterotrophic bacteria\nand/or fungi to produce antimirror compounds would likely be easier than\nreengineering protists, but also probably less effective."
+            },
+            {
+              "type": "paragraph",
+              "html": "In summary, if an invasive mirror bacterium were to be released into\nthe environment, there appears to be no practical means to either\nprevent its spread or eliminate it from the environment. Predators\nincluding mirror phages and, more speculatively, engineered protists\ncould restore some degree of top-down control on mirror bacteria and so\nhelp to reduce their overall numbers. However, they could neither\neliminate mirror bacteria nor prevent potentially irreversible\necological changes. Indeed, the addition of human-engineered biological\ncontrol agents might lead to further unexpected and irreversible\necological changes. While the production and establishment of artificial\nbiological controls might prove to be necessary, they could neither\nprevent nor reverse severe ecological harms expected to result from the\nintroduction of invasive mirror bacteria."
+            }
+          ],
+          "subsections": []
+        },
+        {
+          "id": "germline-engineering-might-allow-the-creation-of-plants-and-animals-resistant-to-mirror-bacteria",
+          "level": 3,
+          "title": "Germline engineering might allow the creation of plants and animals resistant to mirror bacteria",
+          "title_html": "Germline\nengineering might allow the creation of plants and animals resistant to\nmirror bacteria",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "Of the many potential ecological consequences of invasive mirror\nbacteria, perhaps the most concerning is that a mirror heterotroph could\ndirectly infect and kill many animal and plant species to the point of\nextinction. Given the rapidity with which invasive microbes can spread\nthrough the environment and the absence of biological controls or other\nrealistic countermeasures to block the spread of mirror bacteria,\nprotecting susceptible wild populations appears implausible."
+            },
+            {
+              "type": "paragraph",
+              "html": "It might be possible to genetically engineer some animals and plants\nto resist mirror bacterial infection (as discussed for plants in <a href=\"#chapter-7-plant-infection\">Chapter 7</a>). Receptors might be\nengineered to recognize common mirror macromolecules (Cesari <em>et\nal</em>., 2022; June & Sadelain, 2018), synthetic mirror-responsive\nreceptors could trigger the release of anti-mirror effectors (Weinberg\n<em>et al</em>., 2024; Zhu <em>et al</em>., 2022), and mirror-responsive\nopsonins (Banaszek <em>et al</em>., 2019) could enable existing\nneutrophils to find and kill infecting mirror bacteria with ROS. Any\nnatural plants and animals that proved resilient to infection might\nsuggest other protective mechanisms. If successfully engineered into the\ngermline, such measures could potentially prevent mirror bacteria from\nestablishing an infection in the protected organisms and their\ndescendants."
+            },
+            {
+              "type": "paragraph",
+              "html": "While heritable immunity to mirror infection appears feasible with\nsufficiently advanced biotechnology, logistical hurdles would likely\npreclude protecting more than a tiny fraction of the millions of\ndifferent plants and animals in nature (Mora <em>et al</em>., 2011).\nThus, germline engineering would likely prove most effective if used to\nprotect key crops and a few other highly valued species. Along with any\nnaturally resistant survivors, these engineered species might be used to\nrepopulate devastated ecosystems in order to create new functional\necosystems, akin to rewilding efforts that use functional analogs\n(Svenning <em>et al</em>., 2016) but on a much larger scale. Engineered\nresistance might eventually mitigate some of the worst effects of\ninvasive mirror bacteria, but the resulting artificial ecosystems would\nbe greatly impoverished, and much biodiversity would be irreversibly\nlost."
+            }
+          ],
+          "subsections": []
+        }
+      ]
+    }
+  ],
+  "kind": "chapter",
+  "number": 8
+}

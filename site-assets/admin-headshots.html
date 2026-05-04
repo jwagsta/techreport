@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Headshot picker — Mirror Bacteria Report</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #ffffff;
+    --paper-2: #fafafa;
+    --paper-3: #f4f4f4;
+    --ink: #0a0a0a;
+    --ink-2: #2a2a2a;
+    --muted: #6a6a6a;
+    --muted-2: #8a8a8a;
+    --rule: #e5e5e5;
+    --rule-2: #d6d6d6;
+    --accent: #0f62fe;
+    --accent-soft: #e8f0fe;
+    --warn: #b15a2c;
+    --good: #1f8b4c;
+    --serif: 'Source Serif 4', Georgia, serif;
+    --sans: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; height: 100%; }
+  body {
+    background: var(--paper-2);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 14px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ----- layout ----- */
+  .topbar {
+    position: sticky; top: 0; z-index: 50;
+    background: var(--paper);
+    border-bottom: 1px solid var(--rule);
+    padding: 12px 24px;
+    display: flex; align-items: center; gap: 18px;
+  }
+  .topbar h1 {
+    margin: 0;
+    font-family: var(--sans);
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    font-weight: 600;
+  }
+  .topbar .progress { color: var(--muted); font-size: 12px; }
+  .topbar .progress strong { color: var(--ink); }
+  .topbar .grow { flex: 1; }
+  .topbar button {
+    font: inherit;
+    padding: 6px 14px;
+    border: 1px solid var(--rule);
+    border-radius: 999px;
+    background: var(--paper);
+    color: var(--ink-2);
+    cursor: pointer;
+    transition: border-color 0.12s, color 0.12s;
+  }
+  .topbar button:hover { border-color: var(--accent); color: var(--accent); }
+  .topbar button.primary {
+    background: var(--accent); color: white; border-color: var(--accent);
+  }
+  .topbar button.primary:hover { background: #0e54d8; color: white; }
+
+  .main {
+    display: grid;
+    grid-template-columns: 220px minmax(0, 1fr);
+    gap: 24px;
+    padding: 24px;
+    align-items: start;
+  }
+  @media (max-width: 800px) {
+    .main { grid-template-columns: 1fr; }
+  }
+
+  .sidebar {
+    position: sticky;
+    top: 72px;
+    background: var(--paper);
+    border: 1px solid var(--rule);
+    border-radius: 6px;
+    max-height: calc(100vh - 96px);
+    overflow-y: auto;
+  }
+  .sidebar .group-label {
+    padding: 10px 14px;
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted-2);
+    font-weight: 600;
+    border-bottom: 1px solid var(--rule);
+  }
+  .sidebar a {
+    display: flex; align-items: center; gap: 8px;
+    padding: 8px 14px;
+    color: var(--ink-2);
+    text-decoration: none;
+    font-size: 12px;
+    border-bottom: 1px solid var(--rule-2);
+    transition: background 0.1s;
+  }
+  .sidebar a:hover { background: var(--paper-2); }
+  .sidebar a.done .name { color: var(--ink); }
+  .sidebar a.skipped .name { color: var(--muted-2); text-decoration: line-through; }
+  .sidebar .dot {
+    width: 9px; height: 9px; border-radius: 50%;
+    background: var(--rule-2); flex-shrink: 0;
+  }
+  .sidebar .done .dot { background: var(--good); }
+  .sidebar .skipped .dot { background: var(--muted-2); }
+  .sidebar .name { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+  /* ----- cards ----- */
+  .author-card {
+    background: var(--paper);
+    border: 1px solid var(--rule);
+    border-radius: 8px;
+    margin-bottom: 18px;
+    padding: 18px 22px 22px;
+    scroll-margin-top: 80px;
+  }
+  .author-card.skipped { opacity: 0.6; }
+  .author-card .head {
+    display: flex; align-items: baseline; gap: 12px;
+    margin-bottom: 14px;
+    border-bottom: 1px solid var(--rule);
+    padding-bottom: 10px;
+  }
+  .author-card .head h2 {
+    margin: 0;
+    font-family: var(--serif);
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--ink);
+  }
+  .author-card .head .aff {
+    color: var(--muted);
+    font-size: 12px;
+  }
+  .author-card .head .actions { margin-left: auto; }
+  .author-card .head button {
+    font: inherit;
+    padding: 4px 10px;
+    border: 1px solid var(--rule);
+    border-radius: 999px;
+    background: transparent;
+    color: var(--muted);
+    cursor: pointer;
+    font-size: 11px;
+  }
+  .author-card .head button:hover { border-color: var(--accent); color: var(--accent); }
+  .author-card .head button.skipped {
+    background: var(--paper-2); color: var(--muted-2);
+  }
+
+  .candidates {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 10px;
+    margin-bottom: 16px;
+  }
+  .candidate {
+    border: 2px solid var(--rule);
+    border-radius: 6px;
+    padding: 8px;
+    background: var(--paper-2);
+    cursor: pointer;
+    transition: border-color 0.12s;
+    display: flex; flex-direction: column;
+    gap: 6px;
+  }
+  .candidate.selected {
+    border-color: var(--accent);
+    background: var(--accent-soft);
+  }
+  .candidate .thumb {
+    width: 100%;
+    aspect-ratio: 1;
+    background: var(--paper-3) center / cover no-repeat;
+    border-radius: 4px;
+    object-fit: cover;
+    overflow: hidden;
+    position: relative;
+    color: var(--muted-2);
+    font-size: 10px;
+    display: flex; align-items: center; justify-content: center; text-align: center;
+  }
+  .candidate .thumb img {
+    width: 100%; height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .candidate .thumb .err {
+    position: absolute; inset: 0;
+    background: var(--paper-3);
+    color: var(--muted);
+    font-size: 11px;
+    padding: 8px;
+    display: flex; align-items: center; justify-content: center; text-align: center;
+  }
+  .candidate .meta {
+    font-size: 11px;
+    color: var(--muted);
+    line-height: 1.3;
+  }
+  .candidate .meta a { color: var(--accent); text-decoration: none; }
+  .candidate .meta a:hover { text-decoration: underline; }
+
+  /* ----- crop area ----- */
+  .crop-area {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 220px;
+    gap: 16px;
+    align-items: start;
+    background: var(--paper-2);
+    border: 1px solid var(--rule);
+    border-radius: 6px;
+    padding: 14px;
+  }
+  @media (max-width: 700px) {
+    .crop-area { grid-template-columns: 1fr; }
+  }
+  .crop-host {
+    position: relative;
+    background: #1a1a1a;
+    border-radius: 4px;
+    overflow: hidden;
+    user-select: none;
+    max-width: 480px;
+  }
+  .crop-host img {
+    display: block;
+    width: 100%;
+    height: auto;
+    user-select: none;
+    -webkit-user-drag: none;
+  }
+  .crop-region {
+    position: absolute;
+    border: 2px solid white;
+    border-radius: 50%;
+    box-shadow: 0 0 0 9999px rgba(0,0,0,0.45);
+    cursor: move;
+  }
+  .crop-region .handle {
+    position: absolute;
+    width: 14px; height: 14px;
+    background: white;
+    border: 2px solid var(--accent);
+    border-radius: 50%;
+  }
+  .crop-region .handle.se { bottom: -7px; right: -7px;  cursor: nwse-resize; }
+  .crop-region .handle.sw { bottom: -7px; left:  -7px;  cursor: nesw-resize; }
+  .crop-region .handle.ne { top:    -7px; right: -7px;  cursor: nesw-resize; }
+  .crop-region .handle.nw { top:    -7px; left:  -7px;  cursor: nwse-resize; }
+  /* Size slider as a backup if all four corner handles end up off-image */
+  .preview .size-slider { width: 100%; }
+  .preview .size-row { display: flex; gap: 8px; align-items: center; font-size: 11px; color: var(--muted); }
+  .preview {
+    display: flex; flex-direction: column; gap: 10px;
+  }
+  .preview .label {
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted-2);
+    font-weight: 600;
+  }
+  .preview .pic {
+    width: 96px; height: 96px;
+    border-radius: 50%;
+    background: var(--paper-3) center / cover no-repeat;
+    border: 1px solid var(--rule);
+  }
+  .preview .pic.small {
+    width: 36px; height: 36px;
+  }
+  /* Duotone preview — simulates the eventual brand-blue treatment.
+     Implementation: stack a normalized grayscale image under a blue overlay
+     using mix-blend-mode. The blue overlay's opacity is driven by a global
+     CSS var --duotone-strength so the user can dial the effect up/down. */
+  :root { --duotone-strength: 1; }
+  .preview .pic.duotone {
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+    background-color: var(--accent);
+  }
+  .preview .pic.duotone::before {
+    content: '';
+    position: absolute; inset: 0;
+    background-image: inherit;
+    background-size: inherit;
+    background-position: inherit;
+    background-repeat: no-repeat;
+    filter: grayscale(1) contrast(1.1) brightness(1.1);
+    mix-blend-mode: screen;
+    z-index: 1;
+  }
+  .preview .pic.duotone::after {
+    content: '';
+    position: absolute; inset: 0;
+    background: var(--accent);
+    mix-blend-mode: multiply;
+    opacity: var(--duotone-strength);
+    z-index: 2;
+  }
+  .preview-row { display: flex; gap: 10px; align-items: center; }
+  .preview-row.duotone-row { padding-top: 6px; border-top: 1px dashed var(--rule); }
+  .preview .coords {
+    font-size: 11px; color: var(--muted);
+    font-family: ui-monospace, Menlo, monospace;
+  }
+  .preview .clear {
+    margin-top: 6px;
+    font-size: 11px; color: var(--muted);
+    background: none; border: none; cursor: pointer;
+    text-decoration: underline; padding: 0;
+    align-self: flex-start;
+  }
+  .preview .clear:hover { color: var(--accent); }
+
+  .empty-state {
+    color: var(--muted);
+    font-size: 13px;
+    padding: 14px 0;
+  }
+  .add-url {
+    margin-top: 8px;
+    display: flex; gap: 6px;
+  }
+  .add-url input {
+    flex: 1; padding: 6px 10px;
+    border: 1px solid var(--rule); border-radius: 4px;
+    font: inherit; font-size: 12px;
+  }
+  .add-url button {
+    font: inherit; font-size: 12px;
+    padding: 6px 12px;
+    border: 1px solid var(--rule);
+    background: var(--paper);
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .add-url button:hover { border-color: var(--accent); color: var(--accent); }
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <h1>Headshot picker</h1>
+  <div class="progress"><strong id="prog-done">0</strong>/<span id="prog-total">0</span> picked · <span id="prog-skipped">0</span> skipped</div>
+  <div class="grow"></div>
+  <label class="duotone-control" style="display:flex; align-items:center; gap:8px; font-size:11px; color:var(--muted);">
+    Duotone strength
+    <input type="range" id="duotone-strength" min="0" max="1" step="0.05" value="1" style="width: 120px;">
+    <span id="duotone-strength-readout" style="width:32px; font-variant-numeric: tabular-nums;">100%</span>
+  </label>
+  <button id="btn-import">Import previous</button>
+  <button id="btn-export" class="primary">Export selections</button>
+</header>
+
+<div class="main">
+  <nav class="sidebar" id="sidebar"></nav>
+  <div id="cards"></div>
+</div>
+
+<input id="file-import" type="file" accept="application/json" style="display:none">
+
+<script>
+'use strict';
+
+const STORAGE_KEY = 'mb-headshot-selections-v1';
+let people = [];           // {kind: 'author'|'reviewer', name, affiliation, candidates}
+let selections = {};       // name -> {src, source, license, note, crop:{x,y,size}, status:'picked'|'skipped'}
+
+async function fetchJSON(url) {
+  try {
+    const r = await fetch(url);
+    if (!r.ok) return null;
+    return await r.json();
+  } catch (e) { return null; }
+}
+
+async function loadPeople() {
+  const authorsData = await fetchJSON('../../headshot-candidates.json');
+  const reviewersData = await fetchJSON('../../reviewer-headshot-candidates.json');
+  const indexData = await fetchJSON('../../index.json');
+  const affByName = new Map();
+  (indexData?.authors || []).forEach(a => affByName.set(a.name, a.affiliation));
+  (indexData?.reviewers || []).forEach(a => affByName.set(a.name, a.affiliation));
+
+  const list = [];
+  (authorsData?.authors || []).forEach(a => {
+    list.push({ kind: 'author', name: a.name, affiliation: affByName.get(a.name) || '', candidates: a.candidates || [] });
+  });
+  (reviewersData?.reviewers || []).forEach(r => {
+    list.push({ kind: 'reviewer', name: r.name, affiliation: affByName.get(r.name) || '', candidates: r.candidates || [] });
+  });
+  return list;
+}
+
+function loadSelections() {
+  try {
+    const s = JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}');
+    return s || {};
+  } catch (e) { return {}; }
+}
+function saveSelections() {
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(selections));
+}
+
+function renderSidebar() {
+  const grouped = { author: [], reviewer: [] };
+  people.forEach((p, i) => grouped[p.kind].push({ p, i }));
+  const sb = document.getElementById('sidebar');
+  let html = '';
+  ['author', 'reviewer'].forEach(kind => {
+    if (!grouped[kind].length) return;
+    html += '<div class="group-label">' + (kind === 'author' ? 'Authors' : 'Reviewers') +
+      ' (' + grouped[kind].length + ')</div>';
+    grouped[kind].forEach(({ p, i }) => {
+      const sel = selections[p.name];
+      const cls = sel?.status === 'skipped' ? 'skipped' : (sel?.status === 'picked' ? 'done' : '');
+      html += '<a href="#card-' + i + '" class="' + cls + '">' +
+        '<span class="dot"></span><span class="name">' + escapeHtml(p.name) + '</span></a>';
+    });
+  });
+  sb.innerHTML = html;
+}
+
+function renderCards() {
+  const wrap = document.getElementById('cards');
+  wrap.innerHTML = people.map((p, i) => renderCard(p, i)).join('');
+  // wire interactions
+  document.querySelectorAll('.candidate').forEach(card => {
+    card.addEventListener('click', () => {
+      const personIdx = +card.dataset.person;
+      const candIdx = +card.dataset.candidate;
+      pickCandidate(personIdx, candIdx);
+    });
+    // image error fallback
+    const img = card.querySelector('img');
+    if (img) {
+      img.addEventListener('error', () => {
+        const thumb = img.parentElement;
+        thumb.innerHTML = '<div class="err">Image failed to load (CORS or 403). Use the source link.</div>';
+      });
+    }
+  });
+  document.querySelectorAll('[data-skip]').forEach(b => {
+    b.addEventListener('click', e => {
+      e.stopPropagation();
+      const personIdx = +b.dataset.skip;
+      toggleSkip(personIdx);
+    });
+  });
+  document.querySelectorAll('[data-add-url]').forEach(form => {
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      const personIdx = +form.dataset.addUrl;
+      const input = form.querySelector('input');
+      const url = input.value.trim();
+      if (!url) return;
+      addCustomCandidate(personIdx, url);
+      input.value = '';
+    });
+  });
+  document.querySelectorAll('[data-clear]').forEach(b => {
+    b.addEventListener('click', e => {
+      const personIdx = +b.dataset.clear;
+      clearSelection(personIdx);
+    });
+  });
+}
+
+function renderCard(p, i) {
+  const sel = selections[p.name];
+  const isSkipped = sel?.status === 'skipped';
+  const skipLabel = isSkipped ? 'Skipped — restore' : 'Skip';
+  const cardCls = 'author-card' + (isSkipped ? ' skipped' : '');
+  const candidatesHtml = (p.candidates || []).map((c, ci) => renderCandidate(p, c, i, ci, sel)).join('') || '';
+  const empty = (p.candidates || []).length === 0
+    ? '<div class="empty-state">No candidates found by the research agent.</div>'
+    : '';
+  let cropAreaHtml = '';
+  if (sel?.status === 'picked' && sel.src) {
+    cropAreaHtml = renderCropArea(p, i, sel);
+  }
+  return (
+    '<section class="' + cardCls + '" id="card-' + i + '">' +
+      '<div class="head">' +
+        '<h2>' + escapeHtml(p.name) + '</h2>' +
+        '<span class="aff">' + escapeHtml(p.affiliation || '') + '</span>' +
+        '<div class="actions">' +
+          '<button data-skip="' + i + '" class="' + (isSkipped ? 'skipped' : '') + '">' + skipLabel + '</button>' +
+        '</div>' +
+      '</div>' +
+      '<div class="candidates">' + candidatesHtml + '</div>' +
+      empty +
+      '<form class="add-url" data-add-url="' + i + '">' +
+        '<input type="url" placeholder="Paste another image URL (e.g. faculty page)…">' +
+        '<button type="submit">Add</button>' +
+      '</form>' +
+      cropAreaHtml +
+    '</section>'
+  );
+}
+
+function renderCandidate(p, c, personIdx, candIdx, sel) {
+  const isSel = sel?.status === 'picked' && sel.src === c.src;
+  const cls = 'candidate' + (isSel ? ' selected' : '');
+  const src = c.src || '';
+  const note = (c.note || '') + (c.license ? (c.note ? ' · ' : '') + c.license : '');
+  return (
+    '<div class="' + cls + '" data-person="' + personIdx + '" data-candidate="' + candIdx + '">' +
+      '<div class="thumb">' +
+        (src ? '<img src="' + escapeAttr(src) + '" alt="" referrerpolicy="no-referrer" loading="lazy">' : '<div class="err">No image URL</div>') +
+      '</div>' +
+      '<div class="meta">' +
+        (c.source ? '<a href="' + escapeAttr(c.source) + '" target="_blank" rel="noopener">source ↗</a> ' : '') +
+        (note ? '<span>' + escapeHtml(note) + '</span>' : '') +
+      '</div>' +
+    '</div>'
+  );
+}
+
+function renderCropArea(p, i, sel) {
+  const crop = sel.crop || { x: 0.1, y: 0.05, size: 0.8 };
+  return (
+    '<div class="crop-area" data-crop-area="' + i + '">' +
+      '<div class="crop-host" data-crop-host="' + i + '">' +
+        '<img src="' + escapeAttr(sel.src) + '" referrerpolicy="no-referrer" alt="" data-crop-img="' + i + '">' +
+        '<div class="crop-region" data-crop-region="' + i + '"' +
+          ' style="left:' + (crop.x * 100) + '%;top:' + (crop.y * 100) + '%;width:' + (crop.size * 100) + '%;aspect-ratio:1">' +
+          '<div class="handle nw" data-handle="nw"></div>' +
+          '<div class="handle ne" data-handle="ne"></div>' +
+          '<div class="handle sw" data-handle="sw"></div>' +
+          '<div class="handle se" data-handle="se"></div>' +
+        '</div>' +
+      '</div>' +
+      '<div class="preview">' +
+        '<div class="label">Preview</div>' +
+        '<div class="preview-row">' +
+          '<div class="pic" data-preview="' + i + '"></div>' +
+          '<div class="pic small" data-preview-small="' + i + '"></div>' +
+        '</div>' +
+        '<div class="label" style="margin-top:4px">Duotone (brand blue)</div>' +
+        '<div class="preview-row">' +
+          '<div class="pic duotone" data-preview-duotone="' + i + '"></div>' +
+          '<div class="pic small duotone" data-preview-duotone-small="' + i + '"></div>' +
+        '</div>' +
+        '<div class="coords" data-coords="' + i + '"></div>' +
+        '<button class="clear" data-clear="' + i + '">Clear selection</button>' +
+      '</div>' +
+    '</div>'
+  );
+}
+
+function pickCandidate(personIdx, candIdx) {
+  const p = people[personIdx];
+  const c = p.candidates[candIdx];
+  selections[p.name] = {
+    kind: p.kind,
+    affiliation: p.affiliation,
+    src: c.src,
+    source: c.source || '',
+    license: c.license || '',
+    note: c.note || '',
+    crop: selections[p.name]?.src === c.src ? selections[p.name].crop : { x: 0.1, y: 0.05, size: 0.8 },
+    status: 'picked',
+  };
+  saveSelections();
+  renderCards();
+  attachCropHandlers();
+  updateAllPreviews();
+  updateProgress();
+  renderSidebar();
+}
+
+function clearSelection(personIdx) {
+  const p = people[personIdx];
+  delete selections[p.name];
+  saveSelections();
+  renderCards();
+  attachCropHandlers();
+  updateAllPreviews();
+  updateProgress();
+  renderSidebar();
+}
+
+function toggleSkip(personIdx) {
+  const p = people[personIdx];
+  const cur = selections[p.name];
+  if (cur?.status === 'skipped') {
+    delete selections[p.name];
+  } else {
+    selections[p.name] = { kind: p.kind, affiliation: p.affiliation, status: 'skipped' };
+  }
+  saveSelections();
+  renderCards();
+  attachCropHandlers();
+  updateAllPreviews();
+  updateProgress();
+  renderSidebar();
+}
+
+function addCustomCandidate(personIdx, url) {
+  const p = people[personIdx];
+  p.candidates = p.candidates || [];
+  p.candidates.push({
+    src: url,
+    source: url,
+    license: 'user-provided',
+    note: 'pasted by you',
+  });
+  renderCards();
+  attachCropHandlers();
+  updateAllPreviews();
+}
+
+// ----- crop interactions -----
+
+function attachCropHandlers() {
+  document.querySelectorAll('[data-crop-img]').forEach(img => {
+    img.addEventListener('load', () => {
+      const i = +img.dataset.cropImg;
+      updatePreview(i);
+    });
+  });
+
+  document.querySelectorAll('[data-crop-region]').forEach(reg => {
+    let dragMode = null;          // 'move' | 'resize'
+    let dragHandle = null;        // 'nw' | 'ne' | 'sw' | 'se'
+    let startX, startY, startCrop, hostRect, hostAspect;
+
+    function onPointerDown(e) {
+      e.preventDefault();
+      const i = +reg.dataset.cropRegion;
+      const host = document.querySelector('[data-crop-host="' + i + '"]');
+      hostRect = host.getBoundingClientRect();
+      // crop region is square in pixels (aspect-ratio: 1) sized off host width;
+      // store host aspect so we can convert vertical pixel deltas → fraction-of-height correctly
+      hostAspect = hostRect.width / hostRect.height;
+      const handleAttr = e.target.dataset.handle;
+      if (handleAttr && handleAttr.length === 2) {
+        dragMode = 'resize';
+        dragHandle = handleAttr;
+      } else {
+        dragMode = 'move';
+        dragHandle = null;
+      }
+      startX = e.clientX; startY = e.clientY;
+      const sel = selections[people[i].name];
+      startCrop = { ...sel.crop };
+      window.addEventListener('pointermove', onPointerMove);
+      window.addEventListener('pointerup', onPointerUp, { once: true });
+    }
+    function onPointerMove(e) {
+      const i = +reg.dataset.cropRegion;
+      const dxFrac = (e.clientX - startX) / hostRect.width;
+      const dyFrac = (e.clientY - startY) / hostRect.height;
+      const sel = selections[people[i].name];
+
+      if (dragMode === 'move') {
+        // size in y-fraction = size * (W/H) (because crop region is a pixel-square, side = size*W)
+        const sizeY = startCrop.size * hostAspect;
+        let nx = Math.max(0, Math.min(1 - startCrop.size, startCrop.x + dxFrac));
+        let ny = Math.max(0, Math.min(1 - sizeY,         startCrop.y + dyFrac));
+        sel.crop = { ...startCrop, x: nx, y: ny };
+      } else if (dragMode === 'resize') {
+        // Compute the dominant scalar change in size based on which corner is dragged.
+        // For each corner, positive ds means "make square bigger". We use whichever
+        // axis (x or y) the user moved more decisively.
+        const xSign = dragHandle.endsWith('e') ? 1 : -1;     // east→bigger, west→smaller
+        const ySign = dragHandle.startsWith('s') ? 1 : -1;   // south→bigger, north→smaller
+        // Vertical pixel-delta as fraction of host width (so x and y are in same pixel-equivalent space)
+        const dyFracX = dyFrac * hostRect.height / hostRect.width;
+        const dsCandidates = [xSign * dxFrac, ySign * dyFracX];
+        const ds = Math.abs(dsCandidates[0]) > Math.abs(dsCandidates[1])
+          ? dsCandidates[0] : dsCandidates[1];
+
+        let nsize = Math.max(0.05, Math.min(1, startCrop.size + ds));
+        // Anchor the OPPOSITE corner. Adjust x/y so the anchored corner doesn't move.
+        let nx = startCrop.x;
+        let ny = startCrop.y;
+        if (dragHandle.endsWith('w')) {
+          nx = startCrop.x + (startCrop.size - nsize);
+        }
+        if (dragHandle.startsWith('n')) {
+          // y range is in fraction of HEIGHT, but size is in fraction of WIDTH.
+          ny = startCrop.y + (startCrop.size - nsize) * hostAspect;
+        }
+        // Clamp so crop stays inside the image
+        const sizeY = nsize * hostAspect;
+        if (nx < 0) { nsize -= -nx; nx = 0; }
+        if (ny < 0) { nsize -= (-ny) / hostAspect; ny = 0; }
+        if (nx + nsize > 1) nsize = 1 - nx;
+        if (ny + sizeY > 1) nsize = (1 - ny) / hostAspect;
+        nsize = Math.max(0.05, nsize);
+        sel.crop = { ...startCrop, x: nx, y: ny, size: nsize };
+      }
+      const c = sel.crop;
+      reg.style.left = (c.x * 100) + '%';
+      reg.style.top = (c.y * 100) + '%';
+      reg.style.width = (c.size * 100) + '%';
+      updatePreview(i);
+    }
+    function onPointerUp() {
+      window.removeEventListener('pointermove', onPointerMove);
+      saveSelections();
+    }
+
+    reg.addEventListener('pointerdown', onPointerDown);
+  });
+}
+
+function updatePreview(i) {
+  const sel = selections[people[i].name];
+  if (!sel || !sel.src) return;
+  const img = document.querySelector('[data-crop-img="' + i + '"]');
+  if (!img || !img.complete || !img.naturalWidth) return;
+  const c = sel.crop;
+  const targets = document.querySelectorAll(
+    '[data-preview="' + i + '"], [data-preview-small="' + i + '"], ' +
+    '[data-preview-duotone="' + i + '"], [data-preview-duotone-small="' + i + '"]'
+  );
+  const naturalW = img.naturalWidth;
+  const naturalH = img.naturalHeight;
+  // The crop region is a SQUARE in pixels (aspect-ratio: 1), with side = c.size * imageWidth.
+  // c.x is normalized to image width; c.y is normalized to image HEIGHT.
+  // For background positioning to align the cropped square with the preview's top-left,
+  // we need the image aspect ratio to compute the y position correctly.
+  const r = naturalH / naturalW;
+  const bgSize = (1 / c.size) * 100;                          // image width as % of preview
+  const bgX = (c.x / (1 - c.size)) * 100;                     // %
+  const bgY = (c.y * r) / (r - c.size) * 100;                 // %
+  targets.forEach(t => {
+    t.style.backgroundImage = 'url("' + sel.src + '")';
+    t.style.backgroundSize = bgSize + '%';
+    t.style.backgroundPosition = bgX + '% ' + bgY + '%';
+  });
+  const coords = document.querySelector('[data-coords="' + i + '"]');
+  if (coords) {
+    coords.textContent = 'crop x=' + c.x.toFixed(3) + ' y=' + c.y.toFixed(3) + ' size=' + c.size.toFixed(3) +
+      ' · img ' + naturalW + '×' + naturalH;
+  }
+}
+function updateAllPreviews() {
+  people.forEach((_, i) => updatePreview(i));
+}
+
+// ----- progress / export -----
+
+function updateProgress() {
+  const total = people.length;
+  let done = 0, skipped = 0;
+  people.forEach(p => {
+    const s = selections[p.name];
+    if (s?.status === 'picked') done++;
+    else if (s?.status === 'skipped') skipped++;
+  });
+  document.getElementById('prog-total').textContent = total;
+  document.getElementById('prog-done').textContent = done;
+  document.getElementById('prog-skipped').textContent = skipped;
+}
+
+function exportSelections() {
+  const out = {
+    schemaVersion: '1.0',
+    generatedAt: new Date().toISOString(),
+    selections: {},
+  };
+  Object.entries(selections).forEach(([name, sel]) => {
+    out.selections[name] = sel;
+  });
+  const blob = new Blob([JSON.stringify(out, null, 2)], { type: 'application/json' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = 'headshot-selections.json';
+  document.body.appendChild(a); a.click(); a.remove();
+  setTimeout(() => URL.revokeObjectURL(url), 1000);
+}
+
+function importSelections(file) {
+  const reader = new FileReader();
+  reader.onload = () => {
+    try {
+      const data = JSON.parse(reader.result);
+      if (data && data.selections) {
+        selections = data.selections;
+        saveSelections();
+        renderCards();
+        attachCropHandlers();
+        updateAllPreviews();
+        updateProgress();
+        renderSidebar();
+        alert('Imported ' + Object.keys(selections).length + ' selections.');
+      }
+    } catch (e) {
+      alert('Could not parse JSON: ' + e.message);
+    }
+  };
+  reader.readAsText(file);
+}
+
+// ----- helpers -----
+
+function escapeHtml(s) {
+  return String(s ?? '')
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
+}
+function escapeAttr(s) {
+  return escapeHtml(s);
+}
+
+// ----- boot -----
+
+(async function () {
+  selections = loadSelections();
+  people = await loadPeople();
+  if (!people.length) {
+    document.getElementById('cards').innerHTML =
+      '<div class="empty-state">Could not load any candidate data. Check that <code>data/headshot-candidates.json</code> and <code>data/reviewer-headshot-candidates.json</code> exist.</div>';
+    return;
+  }
+  renderSidebar();
+  renderCards();
+  attachCropHandlers();
+  updateAllPreviews();
+  updateProgress();
+
+  // Duotone strength slider — drives a CSS variable on :root
+  const ds = document.getElementById('duotone-strength');
+  const dsReadout = document.getElementById('duotone-strength-readout');
+  const savedStrength = localStorage.getItem('mb-duotone-strength');
+  if (savedStrength != null) ds.value = savedStrength;
+  function applyDuotoneStrength() {
+    document.documentElement.style.setProperty('--duotone-strength', ds.value);
+    dsReadout.textContent = Math.round(parseFloat(ds.value) * 100) + '%';
+    localStorage.setItem('mb-duotone-strength', ds.value);
+  }
+  ds.addEventListener('input', applyDuotoneStrength);
+  applyDuotoneStrength();
+
+  document.getElementById('btn-export').addEventListener('click', exportSelections);
+  document.getElementById('btn-import').addEventListener('click', () => document.getElementById('file-import').click());
+  document.getElementById('file-import').addEventListener('change', e => {
+    const file = e.target.files?.[0];
+    if (file) importSelections(file);
+    e.target.value = '';
+  });
+})();
+</script>
+</body>
+</html>

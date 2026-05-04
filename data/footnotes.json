@@ -1,0 +1,70 @@
+[
+  {
+    "id": "1",
+    "html": "<p>For instance, in 2019 the U.S. National Science\nFoundation awarded $4 million to a group of investigators seeking “to\ndesign, construct, and safely deploy synthetic mirror cells in which all\nof the key molecules—nucleic acids, proteins, carbohydrates, and\nlipids—exist in chiral states opposite to their natural forms” (National\nScience Foundation Award #1935120, #1935372). The National Natural\nScience Foundation of China has similarly supported work toward the\ncreation of a mirror-image central dogma (National Natural Science\nFoundation of China grants 32050178 and 21925702), and the European\nCommission ERA-Net MirrorBio consortium, with similar goals, was\nsupported by the German Federal Ministry of Education and Research\n(Bundesministerium für Bildung und Forschung grant 031A461).</p>"
+  },
+  {
+    "id": "2",
+    "html": "<p>The closest the report comes to this is in <a href=\"#chapter-3-engineering-biosafety-and-biosecurity-of-mirror-bacteria\">Chapter\n3</a>, where we describe at a high level how a malicious or reckless\nactor could remove added safety mechanisms. We believe such analysis is\nessential for understanding which, if any, biocontainment strategies are\npromising.</p>"
+  },
+  {
+    "id": "3",
+    "html": "<p>Bundesministerium für Bildung und Forschung grant\n031A461</p>"
+  },
+  {
+    "id": "4",
+    "html": "<p>There are many other immune cell subsets within major\nlineages, often resident in specific tissues, that are too numerous to\ncover in this report. Therefore,we have limited discussion to responses\nacross major cellular lineages, with the exception of certain cell\nsubsets that appear particularly important for understanding\nimmunological responses to mirror bacteria.</p>"
+  },
+  {
+    "id": "5",
+    "html": "<p>The molecules sensed by PRRs are often referred to as\n“pathogen associated molecular patterns” or PAMPs <a data-citation=\"paperpile\" href=\"https://paperpile.com/c/aJSi1r/cUOu\">(Janeway, 1989)</a>. In this\nreport, we use MAMP to acknowledge that these molecules are found in\npathogenic and non-pathogenic microbes alike.</p>"
+  },
+  {
+    "id": "6",
+    "html": "<p>Bacterial proteins start with formyl methionine (f-met),\nbut eukaryotic proteins do not. This makes f-met an effective MAMP.</p>"
+  },
+  {
+    "id": "7",
+    "html": "<p><a data-citation=\"paperpile\" href=\"https://paperpile.com/c/aJSi1r/H0zn\">Markart</a> <a data-citation=\"paperpile\" href=\"https://paperpile.com/c/aJSi1r/Z1PA\"><em>et al</em></a><a data-citation=\"paperpile\" href=\"https://paperpile.com/c/aJSi1r/H0zn\">. (2004)</a> were able to\nculture 100–5 000 colony forming units of lactobacilli from lung\nhomogenates of lysozyme-deficient mice, but nothing grew from lung\nhomogenates of co-housed wildtype mice.</p>"
+  },
+  {
+    "id": "8",
+    "html": "<p>We focus on MHC-II because we expect mirror bacterial\ninfection to be largely extracellular. Although antigen presentation by\nMHC-I would suffer analogous defects to MHC-II, this would likely be\nless relevant during mirror bacterial infection because MHC-I molecules\ntypically present peptides derived from intracellular pathogens.</p>"
+  },
+  {
+    "id": "9",
+    "html": "<p>Lamprey and hagfish have a form of adaptive immunity\nthat does not rely on antigen presentation by MHC molecules <a data-citation=\"paperpile\" href=\"https://paperpile.com/c/1JF34A/fO37\">(Boehm <em>et al</em>.,\n2018)</a>. It is unclear whether these alternative adaptive immune\nsystems rely on the processing and presentation of peptide antigens,\nmaking it difficult to assess whether they would be sensitive to mirror\nbacteria. Lamprey and hagfish innate immune systems are expected to be\nbroadly similar to that of other vertebrates.</p>"
+  },
+  {
+    "id": "10",
+    "html": "<p>In mosquitoes and wax moths, melanization reactions of\nvarying intensity can be triggered by the injection of beads composed of\ndextran or coated with chiral materials, but not glass beads <a data-citation=\"paperpile\" href=\"https://paperpile.com/c/1JF34A/SSU1+T92J+ETS3\">(Barreaux <em>et\nal</em>., 2017; Schwartz &amp; Koella, 2004; Wiesner, 1992)</a>.\nAlthough these responses might be mediated by a form of immune\nrecognition, the precise mechanisms have not been identified, and it\nremains unclear whether mirror bacteria would trigger similar responses.\nWe have been unable to locate similar studies in <em>D.\nmelanogaster.</em></p>"
+  },
+  {
+    "id": "11",
+    "html": "<p>There appear to be no studies of immune responses in\nPGRP knockout <em>D. melanogaster</em> larvae. Larval exposure to\nbacteria may be even higher than adult fruit flies, given that larvae\neat dead and decaying matter.</p>"
+  },
+  {
+    "id": "12",
+    "html": "<p>Plant immune defenses of the intracellular phloem,\ndiscussed in Section 7.3, are poorly understood but may involve some\nanalog of PTI <a data-citation=\"paperpile\" href=\"https://paperpile.com/c/wDN9Zm/u1rb\">(Jiang\n<em>et al</em>., 2019)</a>.</p>"
+  },
+  {
+    "id": "13",
+    "html": "<p>Even if engineered to produce polygalacturonases, the\nmirror polygalacturonases produced by mirror bacteria are unlikely to\ntarget the (chiral) glycosidic bonds within plant cell walls.</p>"
+  },
+  {
+    "id": "14",
+    "html": "<p>The role of P-proteins in occluding phloem is\nparticularly controversial <a data-citation=\"paperpile\" href=\"https://paperpile.com/c/wDN9Zm/FdmX+LPzF\">(Knoblauch <em>et\nal</em>., 2014; Noll <em>et al</em>., 2022)</a>.</p>"
+  },
+  {
+    "id": "15",
+    "html": "<p>While most solute attractants are likely chiral, there\nare exceptions. The marine dinoflagellate <em>Oxyrrhis marina</em>, for\nexample, is attracted to achiral dimethylsulphoniopropionate <a data-citation=\"paperpile\" href=\"https://paperpile.com/c/AsDv0L/hPIK\">(Breckels <em>et al</em>.,\n2011)</a> as well as to chiral amino acids and sugars (Martel, 2006).\nVolatile compounds are small and often achiral, and so it is plausible\nthat mirror bacteria might “smell” more normal to soil protists than\nthey “taste”. The extent to which volatile compounds produced by\nbacteria influence predatory protists is largely unknown, but one study\nof three protists and six bacterial species found effects that were\nstrongly dependent on the specific pairing of predator and prey <a data-citation=\"paperpile\" href=\"https://paperpile.com/c/AsDv0L/TPX5\">(Schulz-Bohm <em>et al</em>.,\n2017</a>).</p>"
+  },
+  {
+    "id": "16",
+    "html": "<p>Note that competition between <em>Prochlorococcus</em>\nstrains is not perfect. Any given region of the ocean may contain\nhundreds of genetically distinct subpopulations <a data-citation=\"paperpile\" href=\"https://paperpile.com/c/AsDv0L/Eomn\">(Kashtan <em>et al</em>.,\n2014)</a>, though usually one ecotype is predominant <a data-citation=\"paperpile\" href=\"https://paperpile.com/c/AsDv0L/lMvt\">(Farrant <em>et al</em>.,\n2016)</a>. The mechanisms governing this coexistence are not well\nunderstood, though variable resistance to cyanophages is likely an\nimportant factor <a data-citation=\"paperpile\" href=\"https://paperpile.com/c/AsDv0L/nNfD+QOJ2\">(Biller <em>et al</em>.,\n2015; Rodriguez-Valera <em>et al</em>., 2009)</a>.</p>"
+  },
+  {
+    "id": "17",
+    "html": "<p><em>Prochlorococcus</em> can opportunistically consume\nchiral organic compounds <a data-citation=\"paperpile\" href=\"https://paperpile.com/c/AsDv0L/Ojfd\">(Muñoz-Marín <em>et al</em>.,\n2020)</a>, so there could be some disadvantage, but in practice this\nwould probably be small.</p>"
+  }
+]

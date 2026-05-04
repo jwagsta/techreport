@@ -1,0 +1,103 @@
+{
+  "id": "summary",
+  "level": 1,
+  "title": "Summary",
+  "title_html": "Summary",
+  "blocks": [
+    {
+      "type": "paragraph",
+      "html": "Many of the key molecules common to all living organisms are chiral:\ntheir mirror images cannot be superimposed upon one another. In nature,\nnearly all amino acids and sugars are predominantly present as only one\nof their two possible mirror-image forms. Synthetic mirror polypeptides\nand nucleic acids fold into perfect mirror images of their natural\ncounterparts and interact identically with the mirror images of their\nnatural substrates. The same principle applies to other biological\nstructures. Scaling this logic, a mirror cell in which all molecules\nwere replaced with their mirror-images would function identically to a\nnatural-chirality cell, but with everything precisely mirrored."
+    },
+    {
+      "type": "paragraph",
+      "html": "Scientists have long considered the possibility of creating mirror\ncells, including mirror bacteria. In isolation, they would behave\nidentically to natural-chirality bacteria—mirror bacteria would grow\nunder the same physical conditions, and would grow at the same rates on\nachiral nutrients. But because natural life is chiral, interactions\nbetween natural organisms and mirror bacteria would be profoundly\naltered. This report describes the technical feasibility of creating\nmirror bacteria, and the potentially serious risks that mirror life\ncould pose to humans, other animals, plants, and the environment."
+    }
+  ],
+  "subsections": [
+    {
+      "id": "robust-mirror-bacteria-could-be-developed-in-the-coming-years-and-would-be-vulnerable-to-accidental-or-deliberate-misuse",
+      "level": 3,
+      "title": "Robust mirror bacteria could be developed in the coming years and would be vulnerable to accidental or deliberate misuse",
+      "title_html": "Robust\nmirror bacteria could be developed in the coming years and would be\nvulnerable to accidental or deliberate misuse",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "It is not yet possible to create a living cell from non-living\nprecursors. Despite major technical challenges, it appears plausible\nthat this feat could be achieved within as little as a decade given\nsufficient resources. Once methods of creating natural-chirality cells\nhave been established, a similar approach could be used to create mirror\ncells from mirror components. A small group of researchers and funders\nhave begun to explicitly work toward the creation of mirror life, with a\nfocus on a “bottom-up” approach, in which a mirror genome as well as\ntranscription and translation machinery are used to build other mirror\ncellular components. Modern methods for protein synthesis are in\nprinciple sufficient to synthesize most of the mirror proteins that\nwould be needed to construct a mirror cell, though currently at\nprohibitive costs. Mirror-image enzymes have recently been used to\nconstruct kilobase-length mirror RNA and DNA, and research is\nprogressing toward building a mirror ribosome."
+        },
+        {
+          "type": "paragraph",
+          "html": "Other pathways to mirror bacteria appear possible. For example, a\n“top-down” approach, in which a natural-chirality bacterium is stepwise\nconverted into a mirror bacterium, may become technically feasible as\ntranslational engineering advances."
+        },
+        {
+          "type": "paragraph",
+          "html": "The first mirror bacterium would likely be a fragile microbe\nexhibiting metabolic defects, which would limit its growth and\ndurability outside the laboratory. Once created, however, mirror\nbacteria could be readily engineered to become more robust by using\nstandard techniques to deliver mirror versions of existing bacterial\ngenes. This could confer new capabilities or even transform them into\nmirrored versions of robust existing bacteria. Adding mirrored versions\nof known metabolic pathways would allow mirror bacteria to utilize\nnatural-chirality glucose and other common sugars."
+        },
+        {
+          "type": "paragraph",
+          "html": "Biocontainment measures could ensure that mirror bacteria are\nincapable of survival outside of a lab. However, these measures would be\nvulnerable to human error or deliberate misuse. Achieving robust\nbiocontainment that could not be removed by a moderately skilled actor\nwith access to mirror DNA does not appear feasible."
+        }
+      ],
+      "subsections": []
+    },
+    {
+      "id": "mirror-bacteria-could-evade-many-aspects-of-human-immunity-and-potentially-cause-life-threatening-infection",
+      "level": 3,
+      "title": "Mirror bacteria could evade many aspects of human immunity and potentially cause life-threatening infection",
+      "title_html": "Mirror\nbacteria could evade many aspects of human immunity and potentially\ncause life-threatening infection",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Most immunological mechanisms rely on precise stereospecific\ninteractions between host and pathogen macromolecules. The mirror-image\nmacromolecules of mirror bacteria would likely not properly bind to host\nreceptors, enzymes, or other host effectors, as they would have the\n“wrong” chirality. This could grant mirror bacteria a degree of\nintrinsic immune evasion well beyond any known natural pathogen."
+        },
+        {
+          "type": "paragraph",
+          "html": "The immune system could be compromised in three key ways. First, the\ninnate immune response relies upon initial detection of conserved\nmicrobial biomolecules, such as bacterial lipopolysaccharides and\npeptidoglycans, by host pattern recognition receptors. Because these\nmolecules are almost exclusively chiral, immune recognition of mirror\nbacteria could be substantially impaired. Second, many innate immune\nmechanisms of pathogen control could be directly compromised; for\nexample, phagocytosis, antimicrobial enzymes, and several complement\nsystem pathways rely on stereospecific protein interactions. Finally,\nmirror proteins would resist degradation and other stereospecific\nmechanisms necessary for antigen processing and presentation by innate\nimmune cells, which would impair the activation of adaptive T and B\nimmune cells and antibody production."
+        },
+        {
+          "type": "paragraph",
+          "html": "Human exposure to intrinsically immune-evasive mirror organisms may\nlead to infection and possibly death. While mirror bacteria would lack\nfunctional virulence factors that facilitate invasion, transient\nbacteremias caused by environmental bacteria are common, suggesting that\nexposure to mirror bacteria through inhalation, ingestion,\nmicroabrasions, or wounds could result in passive translocation across\nepithelial barriers."
+        },
+        {
+          "type": "paragraph",
+          "html": "Once inside, mirror versions of common bacteria such as\n<em>Escherichia coli</em> would be able to grow on achiral nutrients\nsuch as glycerol and, with suitable engineering, on glucose and other\ncommon chiral nutrients. Impaired immunity would likely permit extensive\nreplication within the bloodstream. The exact clinical presentation of a\nmirror bacterial infection is unclear, but absent an effective immune\nresponse, a lethal outcome appears highly plausible."
+        },
+        {
+          "type": "paragraph",
+          "html": "Treatment options would be limited. Most antibiotics interact\nstereospecifically with their microbial targets, so existing stocks\nwould be restricted to a few achiral or racemic antibiotics. As an\nemerging infectious disease, there would be no pre-existing vaccine. It\nshould be possible to develop novel antimirror compounds and conjugate\nvaccines; nevertheless, as with a new pandemic, the practical challenges\nto developing such measures quickly and at scale would be\nconsiderable."
+        }
+      ],
+      "subsections": []
+    },
+    {
+      "id": "mirror-bacteria-could-potentially-infect-many-other-animals-and-plants-and-colonize-some-external-environments-causing-irreversible-ecological-disruption",
+      "level": 3,
+      "title": "Mirror bacteria could potentially infect many other animals and plants and colonize some external environments, causing irreversible ecological disruption",
+      "title_html": "Mirror\nbacteria could potentially infect many other animals and plants and\ncolonize some external environments, causing irreversible ecological\ndisruption",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Other multicellular organisms may be similarly vulnerable to mirror\nbacterial infection. Vertebrates share broadly similar immune systems\nand would likely suffer from equivalent defects to humans. Invertebrate\nimmune systems are more variable and less thoroughly characterized, but\nmay be similarly ineffective. For example, the model insect\n<em>Drosophila melanogaster</em> relies on peptidoglycan recognition to\ninitiate antibacterial immune mechanisms, and so is unlikely to\nrecognize mirror bacteria. The model nematode <em>Caenorhabditis\nelegans</em> does not appear to rely on the recognition of\npathogen-associated molecules, but instead on pathogen avoidance and the\nrecognition of host damage; the latter may or may not permit nematodes\nto survive a mirror bacterial infection. The consumption of tissues from\nan infected organism by a predator or scavenger could lead to infection,\ncausing mirror bacteria to spread through the food web."
+        },
+        {
+          "type": "paragraph",
+          "html": "Plant immune systems also rely on the detection of conserved pathogen\nbiomolecules. Almost all known immune receptors in plants recognize\nchiral ligands, and thus would be unlikely to recognize mirror bacteria.\nAlthough mirror bacteria would not by default possess specific\nadaptations to invade and colonize plants, both plant roots and leaf\nstomata could allow for passive translocation of mirror bacteria from\nthe environment. Whether mirror bacteria could spread through\nvasculature is unclear and may vary for different types of plants, but\nif systemic infections did occur they might be fatal. Key crops could\nprobably be engineered to be resistant, but protecting wild plants and\ntheir associated ecosystems would be infeasible."
+        },
+        {
+          "type": "paragraph",
+          "html": "In addition to functioning as a dangerous “accidental pathogen” to a\nwide range of natural-chirality species, mirror bacteria could persist\nwithin and potentially colonize external environments. Unlike their\nnatural chirality counterparts, mirror bacteria would be completely\nresistant to all bacteriophages, partially evasive of and largely\nindigestible to predators, and largely resistant to antimicrobial\ncompounds released by competing microbial species. These potentially\ndecisive competitive advantages could allow sufficiently robust mirror\nbacteria to successfully invade many ecological niches despite lacking\nspecific adaptations for them. Because predators would not be able to\ndigest most mirror macromolecules, a growing mirror bacterial population\nwould not be controlled by any commensurate increase in predation, which\ncould allow populations to reach high abundance."
+        },
+        {
+          "type": "paragraph",
+          "html": "Once released, invasive mirror bacteria could be spread rapidly by\ninfected animals and humans, and by the transport of contaminated goods\nand produce. While a released mirror bacterium would likely have little\npre-existing genetic variation and no ability for gene transfer with\nnatural-chirality bacteria, evolutionary diversification and adaptation\nto expand the environmental and host range of mirror bacteria would\nensue."
+        },
+        {
+          "type": "paragraph",
+          "html": "Mirror bacteria may directly drive vulnerable plant and animal\nspecies to extinction, and the loss of vulnerable “keystone species”\ncould indirectly trigger severe ecological disruptions. Very large\nmirror bacterial populations, especially autotrophic mirror bacteria,\nmay disrupt nutrient cycling in many ecosystems, and could impact the\nglobal carbon cycle. Ecological countermeasures such as the synthesis\nand release of mirror phages that target the invasive mirror bacteria\ncould reduce their maximum population size, but would have little\nrealistic prospect of averting these large and irreversible harms."
+        }
+      ],
+      "subsections": []
+    }
+  ],
+  "kind": "frontmatter",
+  "number": null
+}

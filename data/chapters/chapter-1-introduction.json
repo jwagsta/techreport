@@ -1,0 +1,487 @@
+{
+  "id": "chapter-1-introduction",
+  "level": 1,
+  "title": "Introduction",
+  "title_html": "Chapter 1: Introduction",
+  "blocks": [
+    {
+      "type": "paragraph",
+      "html": "<em>Katarzyna P. Adamala<sup>1</sup>, Damon J. Binder<sup>2</sup>,\nKevin M. Esvelt<sup>3</sup>, John I. Glass<sup>4</sup>, Richard E.\nLenski<sup>5,6</sup>,</em>"
+    },
+    {
+      "type": "paragraph",
+      "html": "<em>Jaspreet Pannu<sup>7,8,9</sup>, David A.\nRelman<sup>9,10,11</sup></em>"
+    },
+    {
+      "type": "paragraph",
+      "html": "All known life on Earth shares a common set of chiral molecules.\nProteins, sugars, lipids, and nucleic acids can all physically exist in\neither of two mirror-image configurations, but living organisms\noverwhelmingly use only one of these two configurations. By convention,\none member of the pair is designated to be the ʟ, or “left-handed” form,\nwhile the other is designated the ᴅ, or “right-handed” form. Virtually\nall proteins are constructed solely from the 20 canonical amino acids,\nof which all but achiral glycine are ʟ-amino acids (<a href=\"#figure-1.1-chiral-molecules-have-non-superimposable-mirror-images\">Figure\n1.1</a>). Their mirror images are ᴅ-amino acids, which play only\nmarginal roles in existing life. The ribose in RNA is always in the form\nof ᴅ-ribose; its mirror image ʟ-ribose is essentially absent from nature\n(<a href=\"#figure-1.2-living-organisms-are-built-from-both-chiral-and-achiral-molecules\">Figure\n1.2</a>)."
+    },
+    {
+      "type": "paragraph",
+      "html": "Pairs of molecules that are mirror images of each other are known as\nenantiomers, which have almost exactly mirrored physical and chemical\nproperties (see <a href=\"#box-1.1-violations-of-chiral-symmetry-are-negligible-in-biological-systems\">Box\n1.1</a>). Their crystalline structures are mirror images of each other\nand melt at the same temperatures. They have identical solubilities in\nwater and identical acid-base dissociation constants, but they rotate\npolarized light in opposite directions."
+    },
+    {
+      "type": "paragraph",
+      "html": "Proteins are large, chiral molecules. Just as a protein with a\nspecific sequence of ʟ-amino acids will fold into a specific\nconfiguration, a mirror-image protein with the same specific sequence of\nᴅ-amino acids folds into a configuration precisely mirroring that of the\nnatural-chirality protein (<a href=\"#figure-1.3-mirror-image-amino-acids-compose-mirror-image-peptides-that-fold-into-mirror-image-proteins\">Figure\n1.3</a>). If a protein naturally binds to some small molecule, an exact\nmirror-image of that protein will bind equally well to the enantiomer of\nthat small molecule. This exact mirroring extends to catalytic activity:\nmirror-image enzymes will catalyze reactions involving the enantiomers\nof the products and substrates of the natural enzyme (<a href=\"#figure-1.4-mirror-image-enzymes-catalyze-mirror-image-reactions\">Figure\n1.4</a>). Despite being exactly as versatile as natural-chirality\nproteins, mirror proteins cannot be made by natural living organisms and\ndo not exist in nature."
+    },
+    {
+      "type": "table",
+      "html": "<table>\n<colgroup>\n<col style=\"width: 100%\"/>\n</colgroup>\n<thead>\n<tr>\n<th><p><em>Authors are listed in alphabetical order. Affiliations</em>:\n<sup>1</sup> Department of Genetics, Cell Biology and Development,\nUniversity of Minnesota, Minneapolis, Minnesota, USA; <sup>2</sup> Open\nPhilanthropy, San Francisco, California, USA; <sup>3</sup> Media\nLaboratory, Massachusetts Institute of Technology, Cambridge,\nMassachusetts, USA; <sup>4</sup> J. Craig Venter Institute, La Jolla,\nCalifornia, USA; <sup>5</sup> Department of Microbiology, Genetics, and\nImmunology, Michigan State University, East Lansing, Michigan, USA;\n<sup>6</sup> Program in Ecology, Evolution, and Behavior, Michigan State\nUniversity, East Lansing, Michigan, USA; <sup>7</sup> Center for Health\nSecurity, Bloomberg School of Public Health, Johns Hopkins University,\nBaltimore, Maryland, USA;</p>\n<p><sup>8</sup> Department of Health Policy, Stanford School of\nMedicine, Stanford University, Stanford, California, USA;</p>\n<p><sup>9</sup> Department of Medicine, Stanford School of Medicine,\nStanford University, Stanford, California, USA; <sup>10</sup> Department\nof Microbiology and Immunology, Stanford School of Medicine, Stanford,\nCalifornia, USA; <sup>11</sup> Infectious Diseases Section, Veterans\nAffairs Palo Alto Health Care System, Palo Alto, California,\nUSA</p></th>\n</tr>\n</thead>\n<tbody>\n</tbody>\n</table>",
+      "kind": "affiliations"
+    },
+    {
+      "type": "paragraph",
+      "html": "Other mirror-image macromolecules also precisely mirror\nnatural-chirality macromolecules. Mirror DNA, made with ʟ-deoxyribose\nrather than ᴅ-deoxyribose, forms an opposite-handed double helix"
+    },
+    {
+      "type": "figure",
+      "id": "figure-1.1-chiral-molecules-have-non-superimposable-mirror-images",
+      "src": "assets/image21.png",
+      "alt": "",
+      "width": null,
+      "height": null,
+      "caption": {
+        "id": "figure-1.1-chiral-molecules-have-non-superimposable-mirror-images",
+        "title": "Figure 1.1: Chiral molecules have non-superimposable mirror images",
+        "title_html": "Figure 1.1: Chiral molecules have non-superimposable mirror images",
+        "body_html": "<p><strong>A.</strong> The amino acid glycine is an achiral molecule, as it can be superimposed on its mirror image. <strong>B.</strong> All other canonical amino acids are chiral molecules, with two non-superimposable mirror images. Alanine is illustrated as an example. Even if ᴅ-alanine is rotated 180° so its amino and carboxyl groups are in the same orientation as ʟ-alanine, as shown in the figure, the two cannot be superimposed because the methyl group in ʟ-alanine is projecting into the page but the methyl group in ᴅ-alanine is projecting out of the page.</p>"
+      }
+    },
+    {
+      "type": "table",
+      "html": "<table>\n<tbody>\n</tbody>\n</table>"
+    },
+    {
+      "type": "paragraph",
+      "html": "that precisely mirrors the double helix of natural-chirality DNA.\nMirror nucleic acid polymerases could make new mirror DNA and mirror RNA\nfrom mirror nucleotides, and mirror ribosomes could synthesize mirror\nproteins from mirror amino acids using mirror mRNA templates (<a href=\"#figure-1.5-a-mirror-image-of-the-central-dogma\">Figure\n1.5</a>)."
+    },
+    {
+      "type": "paragraph",
+      "html": "Given the symmetry between enantiomers, it should in theory be\npossible to construct an organism entirely out of mirror biomolecules.\nReplacing every single molecule in a bacterium with its enantiomer would\nresult in a “mirror bacterium” that would behave identically to a\nnatural-chirality bacterium except for being mirrored. Such a mirror\nbacterium would natively consume “opposite” chirality nutrients relative\nto natural bacteria; for example, it would utilize ʟ-glucose rather than\nᴅ-glucose. But alone in an achiral medium, such as minimal media with\nachiral glycerol for a carbon source, a mirror bacterium should behave\nindistinguishably from its mirror-image natural-chirality bacterium."
+    },
+    {
+      "type": "paragraph",
+      "html": "It is well known that protein binding is stereospecific and therefore\ngenerally only one member of an enantiomeric pair is recognized by its\nbinding partner. For example, the enantiomers of chiral drugs typically\nbind different receptors and consequently have different biological\neffects (Shen <em>et al</em>., 2013; Smith, 2009). Most famously,\nthalidomide was originally approved as a treatment for morning sickness,\nbut it was manufactured as a racemic mixture of both enantiomers. One\nenantiomer acts as a mild sedative, but the other is harmful to dividing\ncells and can cause severe birth defects (Tokunaga <em>et al</em>.,\n2018). Similarly, enantiomers often have different odors because they\nbind to different olfactory receptors; one enantiomer of the oil carvone\nsmells like caraway, while the other smells like spearmint (Bentley,\n2006). Larger mirror macromolecules are also generally not recognized by\nnatural enzymes. Proteases, for instance, are generally unable to cleave\nᴅ-peptides (Miller <em>et al</em>., 1995), which therefore have much\nlonger half-lives in the body, making them potentially useful\ntherapeutics (Lander <em>et al</em>., 2023)."
+    },
+    {
+      "type": "figure",
+      "id": "figure-1.2-living-organisms-are-built-from-both-chiral-and-achiral-molecules",
+      "src": "assets/image25.png",
+      "alt": "",
+      "width": "5.97917in",
+      "height": "6.03134in",
+      "caption": {
+        "id": "figure-1.2-living-organisms-are-built-from-both-chiral-and-achiral-molecules",
+        "title": "Figure 1.2: Living organisms are built from both chiral and achiral molecules",
+        "title_html": "Figure\n1.2: Living organisms are built from both chiral and achiral\nmolecules",
+        "body_html": "<p><strong>A.</strong> Glycerol and simple fatty acids are common in\nanimals and plants; they are also achiral molecules that can be\nsuperimposed on their mirror images. <strong>B.</strong> Sugars are\namong the most abundant biological molecules on Earth, and are almost\nalways chiral. For example, both glucose and ribose have two enantiomers\n(ʟ- and ᴅ-) which are non-superimposable mirror images of each other.\nLiving organisms use only one of the available enantiomers of chiral\nmolecules: all RNA in all organisms on Earth is composed of ᴅ-ribose,\nwhile ʟ-ribose is essentially absent from nature.</p>"
+      }
+    },
+    {
+      "type": "figure",
+      "id": "figure-1.3-mirror-image-amino-acids-compose-mirror-image-peptides-that-fold-into-mirror-image-proteins",
+      "src": "assets/image14.png",
+      "alt": "",
+      "width": "6.47917in",
+      "height": "3.81973in",
+      "caption": {
+        "id": "figure-1.3-mirror-image-amino-acids-compose-mirror-image-peptides-that-fold-into-mirror-image-proteins",
+        "title": "Figure 1.3: Mirror-image amino acids compose mirror-image peptides that fold into mirror-image proteins",
+        "title_html": "Figure\n1.3: Mirror-image amino acids compose mirror-image peptides that fold\ninto mirror-image proteins",
+        "body_html": "<p>All natural amino acids except glycine are chiral, and only the\nʟ-enantiomers are used in natural proteins. Substituting the ʟ-amino\nacids for their mirror image ᴅ-amino acid enantiomers would result in a\nmirror-image polypeptide chain. The interactions between the side chains\nfor amino acids in the ᴅ-peptide are the same as the ʟ-peptide, but with\nthe opposite orientation. Thus, the mirror-image peptide chain folds\ninto a protein that is the mirror image of its natural chirality\ncounterpart. (Structure image for example protein, carbonic anhydrase,\nproduced by Pymol 3.0.0 from Protein Data Bank accession number\n1CA2.)</p>"
+      }
+    },
+    {
+      "type": "paragraph",
+      "html": "A mirror lifeform would be made entirely of mirror-image molecules,\nand as a consequence its interactions with natural biological organisms\nwould be profoundly different. Just as a right-handed glove cannot fit a\nleft hand, the molecules within a mirror bacterium would not “fit” the\nopposite-handed molecules found in nature. The natural-chirality\nreceptors and enzymes of natural organisms would not properly bind to\nthe mirror metabolites and macromolecules produced by a mirror\nbacterium, nor would the mirror-image receptors and enzymes in a mirror\nbacterium properly bind to natural-chirality metabolites and\nmacromolecules."
+    },
+    {
+      "type": "paragraph",
+      "html": "Scientists, including several authors of this report, have long\nconsidered the possibility of creating mirror cells. One motivation\ncomes from advances in synthetic chemistry, which have permitted the\ncreation of progressively larger mirror nucleic acids and proteins.\nThese mirror macromolecules retain the flexible programmability and\nfunctionality of natural biopolymers, but they resist degradation by\nnucleases and proteases and are much less likely to trigger undesired\nimmune reactions—both properties that are desirable in therapeutic\nmolecules. It is currently laborious to create mirror macromolecules\nsynthetically, but increasingly accessible mirror nucleic acids and\nmirror enzymes will enable the creation of larger and more complex\nmirror molecular systems."
+    },
+    {
+      "type": "paragraph",
+      "html": "Independently, many synthetic biologists seek to understand how cells\ncould be created from their constituent molecules. This is motivated\nboth by a desire to better understand how life first arose, and to\nunderstand what other kinds of life might be possible. If a\nnatural-chirality cell can be created from lifeless molecules, then a\nmirror-image cell could be created from mirror-image molecules using the\nsame methods."
+    },
+    {
+      "type": "figure",
+      "id": "figure-1.4-mirror-image-enzymes-catalyze-mirror-image-reactions",
+      "src": "assets/image1.png",
+      "alt": "",
+      "width": "6.47917in",
+      "height": "6.0625in",
+      "caption": {
+        "id": "figure-1.4-mirror-image-enzymes-catalyze-mirror-image-reactions",
+        "title": "Figure 1.4: Mirror-image enzymes catalyze mirror-image reactions",
+        "title_html": "Figure\n1.4: Mirror-image enzymes catalyze mirror-image reactions",
+        "body_html": "<p>Enzyme catalysis requires precise (and thus stereospecific) binding\nof substrate molecules to the active site. <strong>A.</strong> If all\nsubstrates and products of an enzyme are achiral, such as for carbonic\nanhydrase, the natural-chirality and mirror-image enzymes would behave\nidentically. <strong>B.</strong> When the products of an enzymatic\nreaction are chiral, the natural-chirality enzyme exclusively produces\none enantiomer and its mirror-image enzyme would produce the other. For\nexample, both fumarase and mirror-image fumarase would produce malic\nacid from fumaric acid and water, but natural-chirality fumarase\nexclusively produces ʟ-malic acid (the enantiomer seen in nature), while\nmirror-image fumarase would exclusively produce ᴅ-malic acid.\n<strong>C.</strong> When the substrate of an enzyme is chiral, catalysis\nis typically specific to that enantiomer. For example, natural-chirality\nphosphoglucomutase can convert ᴅ-glucose 1-phosphate to ᴅ-glucose\n6-phosphate. In contrast, mirror-image phosphoglucomutase would convert\nʟ-glucose 1-phosphate to ʟ-glucose 6-phosphate. (Structure images for\ncarbonic anhydrase, fumarase, and phosphoglucomutase produced by Pymol\n3.0.0 from Protein Data Bank accession numbers 1CA2, 3E04, and 3PMG\nrespectively.)</p>"
+      }
+    },
+    {
+      "type": "figure",
+      "id": "figure-1.5-a-mirror-image-of-the-central-dogma",
+      "src": "assets/image22.png",
+      "alt": "",
+      "width": "6.44739in",
+      "height": "5.71354in",
+      "caption": {
+        "id": "figure-1.5-a-mirror-image-of-the-central-dogma",
+        "title": "Figure 1.5: A mirror image of the central dogma",
+        "title_html": "Figure 1.5:\nA mirror image of the central dogma",
+        "body_html": "<p><strong>A.</strong> The central dogma of molecular biology. Genetic\ninformation in the form of ᴅ-DNA is transcribed by natural-chirality RNA\nto ᴅ-messenger RNA (ᴅ-mRNA), which is in turn translated into\nnatural-chirality polypeptides and proteins. All of these stages\nexclusively use one of the two possible chiralities: natural chirality\nRNA polymerase transcribes ᴅ-DNA into ᴅ-mRNA, which the\nnatural-chirality ribosome and transfer RNA (tRNA) carrying ʟ-amino\nacids then translate into ʟ-proteins. <strong>B.</strong> The central\ndogma could be chirally inverted: ʟ-DNA would be transcribed by a\nmirror-image RNA polymerase into ʟ-mRNA, which would be translated into\nmirror-image ᴅ-proteins. (Structure images for RNA polymerase, the\nribosome, tRNA, and example protein (phosphoglucomutase) produced by\nPymol 3.0.0 from Protein Data Bank accession numbers 4YG2, 5AFI, 6UGG,\nand 3PMG respectively.)</p>"
+      }
+    },
+    {
+      "type": "paragraph",
+      "html": "Once created, mirror cells could be further engineered using many of\nthe same methods as natural-chirality organisms. Genes from\nnatural-chirality organisms could be recreated with mirror-image DNA and\nengineered into mirror organisms, and the functionality of these genes\nwould exactly mirror that of their natural counterparts. Diverse mirror\nlifeforms could thus be created by copying natural life. By perfectly\nmirroring existing life in isolation, but exhibiting greatly altered\ninteractions with natural organisms, mirror life could present an\nunprecedented and difficult to predict mixture of familiar and entirely\nnovel behavior."
+    },
+    {
+      "type": "paragraph",
+      "html": "The authors of this report have come to the conclusion that mirror\nbacteria could present unique and severe risks. Their altered\ninteractions with natural organisms could lead to profound and highly\nconsequential effects on those natural organisms, as will be detailed in\nthe subsequent chapters of this technical report."
+    },
+    {
+      "type": "paragraph",
+      "html": "The immune systems of humans, other animals, and plants primarily\ndetect pathogens through the recognition of conserved chiral molecules.\nRecognition is stereospecific—it depends on the precise spatial\narrangement of atoms in a molecule—and so the mirrored chiral molecules\nof mirror bacteria may not be properly recognized. Nor would\nantimicrobial enzymes or chiral antibiotics necessarily harm mirror\nbacteria, since they generally operate through chiral mechanisms.\nProtists and other predators could similarly have difficulty\nrecognizing, killing, and digesting mirror bacteria. Mirror bacteria\nwould also be entirely resistant to all natural bacteriophages. As a\nresult, many if not most of the biological mechanisms that protect\nmulticellular organisms from bacterial infection and limit bacterial\npopulations in natural ecosystems would not function properly against\nmirror bacteria."
+    },
+    {
+      "type": "paragraph",
+      "html": "Like natural bacteria, mirror bacteria could be able to survive and\nreplicate under diverse conditions. Some mirror bacteria may be fragile\nor lack the ability to synthesize required metabolites, just as is the\ncase for many natural and engineered bacteria. But once the first mirror\ncells exist, creating more robust and diverse mirror bacteria should be\nstraightforward and, absent concerns about potential risks, likely to be\npursued by scientists seeking to advance the science and its practical\napplications. Such mirror bacteria could grow on achiral nutrients that\nare commonly found in many environments. They could also be engineered\nto consume ᴅ-glucose and other common chiral nutrients, and though there\ncould be practical benefits to such engineering, this would also greatly\nfacilitate growth in the environment."
+    },
+    {
+      "type": "paragraph",
+      "html": "If mirror bacteria could replicate within humans or other animals\nwithout being effectively cleared by the host immune system, they could\nestablish a systemic infection with severe and plausibly fatal\nconsequences. If that host or its carcass was consumed by another\nanimal, the infection could spread, leading to transmission through the\nfood chain. If mirror bacteria could replicate in soils and natural\nwaters, but were not kept in check by natural enemies such as predators\nand phages, they would become invasive, severely disrupting natural\necosystems."
+    },
+    {
+      "type": "paragraph",
+      "html": "This chapter provides an overview of the entire report. <a href=\"#chapter-2-pathways-to-mirror-life\">Chapter 2</a> describes\npotential pathways scientists could pursue to create the first mirror\nbacterium. <a href=\"#chapter-3-engineering-biosafety-and-biosecurity-of-mirror-bacteria\">Chapter\n3</a> then describes how mirror bacteria could be engineered to improve\nrobustness and metabolic capabilities, which would raise serious\nbiosafety and biosecurity challenges. Together these two chapters\nexplain why, were it not for safety and security concerns, we think\nscientific progress over the next one to few decades could lead to the\ncreation of mirror bacteria."
+    },
+    {
+      "type": "paragraph",
+      "html": "The remaining five chapters describe in detail the risks from mirror\nbacteria to humans, other animals, plants, and the environment more\nbroadly. <a href=\"#chapter-4-risks-to-human-health\">Chapter 4</a>\ndescribes the potential consequences of mirror bacteria for human\nhealth, detailing first the likely failures of both innate and adaptive\nimmunity to recognize and respond to mirror bacteria before discussing\nthe plausible course and consequences of a systemic mirror bacterial\ninfection. <a href=\"#chapter-5-medical-countermeasures\">Chapter 5</a>\nthen gives a brief overview of potential medical countermeasures that\ncould protect humans from mirror bacteria, and the difficulties that\ndeveloping and deploying such countermeasures would likely face."
+    },
+    {
+      "type": "paragraph",
+      "html": "<a href=\"#chapter-6-animal-infection\">Chapters 6</a> and <a href=\"#chapter-7-plant-infection\">7</a> discuss other animals and\nplants, respectively. As with humans, serious immunological impairments\ncould plausibly enable mirror bacteria to establish systemic infections\nwithin many animals and plants. <a href=\"#chapter-8-environmental-survival-and-spread\">Chapter 8</a>\ndescribes the survival and spread of mirror bacteria in the environment,\nboth through and external to multicellular hosts, and closes by\ndescribing the irreversible ecological damage that an invasive mirror\nbacterium could cause."
+    },
+    {
+      "type": "paragraph",
+      "html": "Many aspects of our conclusions are necessarily tentative and\nuncertain. Natural organisms and ecosystems are complex and highly\ndiverse, and any assessment of risk must extrapolate from limited\ninformation and a handful of examples subjected to detailed study. This\nsingle report, written at a single point in time with access to limited\ninformation on mirror biology, cannot be considered definite. We hope\nthat others will build upon our initial analyses to examine these\ninterdisciplinary risks in greater detail, potentially unearthing key\nconsiderations that we may have overlooked."
+    }
+  ],
+  "subsections": [
+    {
+      "id": "mirror-bacteria-could-plausibly-be-created-in-the-next-one-to-few-decades",
+      "level": 3,
+      "title": "Mirror bacteria could plausibly be created in the next one to few decades",
+      "title_html": "Mirror\nbacteria could plausibly be created in the next one to few decades",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Many laboratories currently seek to achieve synthetic abiogenesis:\nthe creation of life from its chemical building-blocks. The synthetic\ncell community is working to encapsulate self-replicating nucleic acids\nwithin a membrane and initiate metabolism under conditions that will\ntrigger replication. Other biologists aim to simplify and then build\nsynthetic versions of existing bacteria (Rothschild <em>et al</em>.,\n2024). As the smallest known bacterial genome size continues to\ndecline—currently at half a million base pairs for engineered strains\nwith reduced genomes (Hutchison <em>et al</em>., 2016)—the feasibility\nof creating a cell from scratch will grow."
+        },
+        {
+          "type": "paragraph",
+          "html": "Work toward mirror life is a natural outgrowth of work on synthetic\ncells. If scientists could construct a living bacterium from\nnatural-chirality molecular precursors, the same methods could be used\nto construct a mirror bacterium from opposite-chirality precursors.\nWhile normal bioengineering often fails because the engineered\nalterations are incompatible with the rest of the organism, the\nprocesses for creating the first mirror cells could closely follow\nefforts to create natural-chirality cells. The first mirror cell could\nbe an exact mirror-image of a pre-existing (albeit synthetic)\nnatural-chirality cell."
+        },
+        {
+          "type": "paragraph",
+          "html": "Research on mirror-image proteins and nucleic acids is primarily\nmotivated by potential near-term applications (see <a href=\"#section-1\">Boxes 2.1</a> and <a href=\"#section-2\">2.2</a> in <a href=\"#chapter-2-pathways-to-mirror-life\">Chapter 2</a>). Creating\nmirror life is a longer-term aspiration of multiple laboratories and\nmajor funders in an effort to better understand life and potentially aid\nin therapeutic development. For example, the U.S. National Science\nFoundation awarded $4 million to a group of investigators aiming “to\ndesign, construct, and safely deploy synthetic mirror cells in which all\nof the key molecules—nucleic acids, proteins, carbohydrates, and\nlipids—exist in chiral states opposite to their natural forms” (National\nScience Foundation, 2019a; National Science Foundation, 2019b). The\nNational Natural Science Foundation of China has likewise supported work\non the creation of a mirror-image central dogma (National Natural\nScience Foundation of China, 2022), and the European Commission’s\nERA-NET MirrorBio consortium, with similar goals, was"
+        },
+        {
+          "type": "box",
+          "id": "box-1.1-violations-of-chiral-symmetry-are-negligible-in-biological-systems",
+          "label": "Box 1.1",
+          "title": "Violations of chiral symmetry are negligible in biological systems",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "Throughout this report we assume that mirror life would perfectly\nmirror natural-chirality life. If enantiomeric molecules perfectly\nmirrored one another, then it follows that the behavior of mirror\nbacteria would perfectly mirror that of natural-chirality bacteria.\nConversely, if mirror bacteria did not perfectly mirror\nnatural-chirality bacteria, this would imply the existence of some\nphysical process that violates chiral symmetry between enantiomers."
+            },
+            {
+              "type": "paragraph",
+              "html": "Of the four fundamental forces in physics, only the weak force\nviolates chiral symmetry. Any violation of chiral symmetry would result\nin a “parity-violation energy difference”, or PVED, between enantiomers.\nTheoretical calculations for the weak force estimate a PVED of about\n10<sup>-11</sup> J/mol (Horný & Quack, 2015), which is about\n10<sup>14</sup> times smaller than thermal noise at room temperature,\nand 10<sup>16</sup> times smaller than the strength of a typical\nchemical bond. It is therefore extremely difficult to see how such\nnegligible effects could have any role in biology."
+            },
+            {
+              "type": "paragraph",
+              "html": "Attempts to experimentally observe differences between enantiomeric\nmolecules have not yet succeeded (Quack <em>et al</em>., 2022;\nSallembien <em>et al</em>., 2022). The most precise measurements to\ndate, in CFHClBr, found no PVED at a sensitivity of ~ 10<sup>-8</sup>\nJ/mol (Daussy <em>et al</em>., 1999). While experimental methods cannot\nyet detect the PVED from the weak force, these precision measurements,\nalong with others in particle, atomic, and molecular physics (Chupp\n<em>et al</em>., 2019; Safronova <em>et al</em>., 2018) provide\ncompelling evidence for the absence of other, as yet unknown, processes\nthat could violate chiral symmetry at molecular scales."
+            },
+            {
+              "type": "paragraph",
+              "html": "Precision measurements focus on individual atoms and small molecules\nbecause they are the easiest to study; the possibility that parity\nviolation would somehow become visible only in larger systems is remote.\nStudies of mirror-image proteins (Milton <em>et al</em>., 1992; Zawadzke\n& Berg, 1993) and mirror-image nucleic acids (Xu & Zhu, 2022)\nhave not revealed any deviations from the expected mirror symmetry, nor\nhave measurements of optical rotation angles or crystallographic\nstructures of organic compounds provided any evidence of violations of\nchiral symmetry. It is therefore implausible that any hitherto unknown\nviolation of chiral symmetry could play a role in biology, and so it is\nalmost certain that a correctly constructed mirror life would\nessentially be a perfect mirror of natural life."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "html": "supported by the German Federal Ministry of Education and Research<a class=\"footnote-ref\" data-footnote-ref=\"fn3\" href=\"#fn3\" id=\"fnref3\" role=\"doc-noteref\"><sup>3</sup></a> and the U.S. National Science\nFoundation (National Science Foundation, 2014). We expect interest in\nmirror bacteria to grow as work on both synthetic cells and mirror-image\nmacromolecules advances, which would make the task of building a mirror\ncell increasingly feasible."
+        },
+        {
+          "type": "paragraph",
+          "html": "Estimating timelines is difficult. It is likely that normal-chirality\nsynthetic cells are still years away, and that creating a synthetic\nmirror bacterium would take longer. Still, as detailed in <a href=\"#chapter-2-pathways-to-mirror-life\">Chapter 2</a>, the\nfoundational technologies are rapidly progressing, and there are\nmultiple pathways by which the first mirror bacterium could be\ncreated."
+        }
+      ],
+      "subsections": []
+    },
+    {
+      "id": "the-creation-of-any-mirror-bacterium-could-enable-the-creation-of-robust-mirror-bacteria",
+      "level": 3,
+      "title": "The creation of any mirror bacterium could enable the creation of robust mirror bacteria",
+      "title_html": "The\ncreation of any mirror bacterium could enable the creation of robust\nmirror bacteria",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "While creating the first mirror bacterium would be extremely\nchallenging, the subsequent engineering of an existing mirror bacterium\nshould be comparatively straightforward. Any bioengineering technique\nthat can be accomplished by engineering a natural-chirality bacterium\nwith normal DNA would apply to an equivalent mirror bacterium and mirror\nDNA. Even if the first mirror cells were fragile and catabolically\nlimited—which is plausible but not certain—a logical next step would be\nto further engineer mirror bacteria in order to functionally mirror\nexisting bacterial strains. A minimal and fragile mirror <em>Escherichia\ncoli</em>, for instance, could be converted into the exact mirrors of\nwidely used strains such as <em>E. coli</em> K-12, BL21, and Nissle\n1917, and plausibly into more diverse bacterial species. <a href=\"#chapter-3-engineering-biosafety-and-biosecurity-of-mirror-bacteria\">Chapter\n3</a> discusses the potential engineering of mirror bacteria in more\ndetail."
+        },
+        {
+          "type": "paragraph",
+          "html": "Absent the severe risks discussed in this report, the mirror bacteria\nof greatest interest and utility would likely be mirrored versions of\ncommonly studied heterotrophs such as <em>E. coli</em>, <em>Bacillus\nsubtilis</em>, and <em>Pseudomonas aeruginosa</em>. These bacteria are\nuseful, in part, because they are robust and can grow under diverse\nconditions. Because chirality would have little impact on robustness to\nabiotic stressors such as temperature, acidity, and oxidative stress,\nmirror versions of these heterotrophs would be similarly robust under\ndiverse conditions. Given the likelihood that the first mirror bacteria\nwould be a mirrored strain of <em>E. coli</em> or another species\ncommonly used in the lab, a “generalist” <em>E. coli</em> is frequently\nused in this report as an illustrative example."
+        }
+      ],
+      "subsections": []
+    },
+    {
+      "id": "mirror-bacteria-could-acquire-nutrients-in-natural-environments",
+      "level": 3,
+      "title": "Mirror bacteria could acquire nutrients in natural environments",
+      "title_html": "Mirror\nbacteria could acquire nutrients in natural environments",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Sugars, amino acids, and other common nutrients are typically chiral.\nIt might therefore appear that a mirror bacterium could not survive in\nthe natural world: it would be unable to eat the available organic\ncompounds and would thus starve. But this is not the case. Many common\nnutrients would be accessible to the mirrored versions of common\nheterotrophic bacteria, and with suitable engineering, additional\nnutrients like ᴅ-glucose could be made accessible."
+        },
+        {
+          "type": "paragraph",
+          "html": "As a concrete illustration, consider the example of an exact mirror\n<em>E. coli</em> K-12. The preferred carbon source for natural-chirality\n<em>E. coli</em> is ᴅ-glucose, so a mirror <em>E. coli</em> would prefer\nʟ-glucose, which is thought to be essentially absent from nature.\nHowever, natural <em>E. coli</em> can grow on a wide range of achiral\nsubstrates as sole carbon sources (see <a href=\"#table-1.1-achiral-organic-molecules-that-can-be-utilized-by-wild-type-or-mutant-e.-coli-k-12\">Table\n1.1</a>), including a number of central metabolites, fatty acids, and\nfermentation byproducts that are common in both multicellular hosts and\nin many external environments. A mirror <em>E. coli</em> should\ntherefore grow as well as natural <em>E. coli</em> on these\ncompounds."
+        },
+        {
+          "type": "paragraph",
+          "html": "There is nothing particularly exceptional about <em>E.</em> coli K-12\nin this regard. The major metabolic pathways of life include a number of\nachiral metabolites, which are relatively abundant in nature and can be\nacquired and utilized relatively easily as nutrient sources. Some common\nachiral metabolites"
+        },
+        {
+          "type": "table",
+          "html": "<table>\n<colgroup>\n<col style=\"width: 1%\"/>\n<col style=\"width: 14%\"/>\n<col style=\"width: 1%\"/>\n<col style=\"width: 53%\"/>\n<col style=\"width: 1%\"/>\n<col style=\"width: 27%\"/>\n</colgroup>\n<thead>\n<tr>\n<th colspan=\"4\"><strong>Sole carbon sources</strong></th>\n<th></th>\n<th><strong>References</strong></th>\n</tr>\n<tr>\n<th></th>\n<th></th>\n<th></th>\n<th></th>\n<th></th>\n<th>±</th>\n</tr>\n<tr>\n<th></th>\n<th><strong>Central Metabolites</strong></th>\n<th></th>\n<th><em>Citrate,</em> fumarate, glycolate, glyoxylate, ɑ-ketoglutarate,\npyruvate, succinate</th>\n<th></th>\n<th>Clark &amp; Cronan, 1996; Lin, 1996; Tong <em>et al</em>., 2020</th>\n</tr>\n<tr>\n<th></th>\n<th><strong>Fatty Acids</strong></th>\n<th></th>\n<th>Acetate, acetoacetate, <em>butyrate</em>, propionate,\n<em>valerate</em><br/>\n<em>Medium-chain (C<sub>6</sub>–C<sub>10</sub>) fatty acids</em><br/>\nLong-chain (≥C<sub>12</sub>) fatty acids</th>\n<th></th>\n<th>Clark &amp; Cronan, 1996; Clark &amp; Rod, 1987</th>\n</tr>\n<tr>\n<th></th>\n<th><strong>Alcohols</strong></th>\n<th></th>\n<th><em>Butanol</em>, <em>ethanol</em>, <em>propanol</em></th>\n<th></th>\n<th>Clark &amp; Cronan, 1996; Clark &amp; Rod, 1987</th>\n</tr>\n<tr>\n<th></th>\n<th><strong>Sugars and polyols</strong></th>\n<th></th>\n<th>Dihydroxyacetone, <em>ethylene glycol</em>, galactitol, glycerol,\nmucate</th>\n<th></th>\n<th>Lin, 1996; Tong <em>et al</em>., 2020</th>\n</tr>\n<tr>\n<th></th>\n<th><strong>Aromatic Acids</strong></th>\n<th></th>\n<th><em>Benzoate</em>, m-coumarate, <em>2-furoate</em>,\n<em>3-hydroxyphenylacetate</em>, phenylacetate, phenylpropionate,\nphenylethylamine</th>\n<th></th>\n<th>Abdulrashid &amp; Clark, 1987; Díaz <em>et al</em>., 2001</th>\n</tr>\n<tr>\n<th></th>\n<th><strong>Amines</strong></th>\n<th></th>\n<th><em>γ-aminobutyrate</em>, <em>putrescine</em></th>\n<th></th>\n<th>Dover &amp; Halpern, 1972;<br/>\nPrieto <em>et al</em>., 1987</th>\n</tr>\n<tr>\n<th></th>\n<th><strong>Miscellaneous</strong></th>\n<th></th>\n<th>γ-hydroxybutyric acid, methyl pyruvate, m-tartaric acid</th>\n<th></th>\n<th>Tong <em>et al</em>., 2020</th>\n</tr>\n<tr>\n<th colspan=\"4\"><strong>Sole nitrogen sources</strong></th>\n<th></th>\n<th></th>\n</tr>\n<tr>\n<th colspan=\"4\"></th>\n<th></th>\n<th></th>\n</tr>\n<tr>\n<th></th>\n<th><strong>Amino Acids</strong></th>\n<th></th>\n<th>Glycine</th>\n<th></th>\n<th>Reitzer, 2005</th>\n</tr>\n<tr>\n<th></th>\n<th><strong>Amines</strong></th>\n<th></th>\n<th>Agmatine, γ-aminobutyrate, dopamine, phenylethylamine, putrescine,\nspermidine, tyramine</th>\n<th></th>\n<th>Díaz <em>et al</em>., 2001; Reitzer, 2005</th>\n</tr>\n<tr>\n<th></th>\n<th><strong>Nucleobases</strong></th>\n<th></th>\n<th>Adenine, cytidine, thymine, uracil<br/>\nAllantoin*, urate*</th>\n<th></th>\n<th>Cusa <em>et al</em>., 1999; Iwadate &amp; Kato, 2019; Tyler, 1978;\nXi <em>et al</em>., 2000</th>\n</tr>\n<tr>\n<th colspan=\"6\"><h5 id=\"table-1.1-achiral-organic-molecules-that-can-be-utilized-by-wild-type-or-mutant-e.-coli-k-12\">Table\n1.1: Achiral organic molecules that can be utilized by wild-type or\nmutant <em>E. coli</em> K-12</h5>\n<p><em>E. coli</em> K-12 can use a number of achiral organic compounds\nas either sole carbon or nitrogen sources. Entries in <em>italics</em>\nindicate use by mutants. *Can only be utilized as a nitrogen source\nunder anaerobic conditions.</p></th>\n</tr>\n</thead>\n<tbody>\n</tbody>\n</table>"
+        },
+        {
+          "type": "paragraph",
+          "html": "cannot be utilized as a sole carbon source by natural <em>E.\ncoli</em> K-12, but can be used by other bacteria. These include\nethanol, glycine, inositol, methanol, and ribitol, although in all five\ncases strains of <em>E. coli</em> K-12 have been engineered to grow on\nthese compounds as sole carbon sources (Cao <em>et al</em>., 2020; Fung\n<em>et al</em>., 2023; Keller <em>et al</em>., 2022; Scangos &\nReiner, 1978; Shiue & Prather, 2014)."
+        },
+        {
+          "type": "paragraph",
+          "html": "A number of chiral nutrients could also be utilized by mirror <em>E.\ncoli</em> K-12 to varying extents. <a href=\"#table-1.2-utilization-of-ʟ--and-ᴅ-amino-acids-by-e.-coli\">Table\n1.2</a> compares the catabolic utilization of ʟ- and ᴅ-amino acids by\nnatural-chirality <em>E. coli</em> K-12. Although amino acids of the\nwrong chirality cannot be incorporated directly into proteins by the\nribosome, they can be degraded to provide energy and useful nutrients. A\nmirror <em>E. coli</em> could utilize seven of the canonical amino acids\nto some extent, and the ability to utilize a further eight could quickly\narise through mutations (see <a href=\"#invasive-mirror-bacteria-could-rapidly-evolve-and-diversify\">Section\n8.4</a> for further discussion of mirror bacterial evolution). Most\nnotably, natural-chirality <em>E. coli</em> catabolizes ʟ-alanine\nthrough ᴅ-alanine and can use either as a sole carbon and nitrogen\nsource (Reitzer, 2005). A mirror <em>E. coli</em> would therefore have\nno difficulty catabolizing ʟ-alanine, which is among the most abundant\namino acids. Other common chiral nutrients that could be utilized by\nmirror <em>E. coli</em> include lactic, malic, and tartaric acid, as\nnatural <em>E. coli</em> can catabolize both enantiomers of these chiral\ncompounds (Dong <em>et al</em>., 1993; Lukas <em>et al</em>., 2010;\nUnden <em>et al</em>., 2016)."
+        },
+        {
+          "type": "paragraph",
+          "html": "An exactly mirrored <em>E. coli</em> could not catabolize ᴅ-glucose,\nbut engineering mirror <em>E. coli</em> to catabolize ᴅ-glucose should\nbe feasible. Genes for ʟ-glucose catabolism have been identified from\nα-proteobacteria <em>Paracoccus laeviglucosivorans</em> (Shimizu <em>et\nal</em>., 2012); while this ability has not yet been engineered into a\nnatural-chirality <em>E. coli</em>, there appears to be no inherent\nbarrier to doing so. Plausible catabolic pathways for other\nmonosaccharides also exist (see <a href=\"#table-1.3-utilization-of-the-enantiomers-of-common-monosaccharides-by-e.-coli\">Table\n1.3</a>). Mirror <em>E. coli</em> would also exhibit chemotaxis toward\ncommon sugars, though less effectively than natural-chirality <em>E.\ncoli</em> (Adler <em>et al</em>., 1973)."
+        },
+        {
+          "type": "table",
+          "html": "<table style=\"width:41%;\">\n<colgroup>\n<col style=\"width: 16%\"/>\n<col style=\"width: 24%\"/>\n</colgroup>\n<thead>\n<tr>\n<th><strong>Amino Acid</strong></th>\n<th><strong>ʟ-isomer</strong></th>\n</tr>\n<tr>\n<th></th>\n<th></th>\n</tr>\n<tr>\n<th>Alanine</th>\n<th>Sole C and N source</th>\n</tr>\n<tr>\n<th>Arginine</th>\n<th>C source, sole N source</th>\n</tr>\n<tr>\n<th>Asparagine</th>\n<th>Sole C and N source</th>\n</tr>\n<tr>\n<th>Aspartate</th>\n<th>Sole C and N source</th>\n</tr>\n<tr>\n<th>Cysteine</th>\n<th>C source, sole N and S source</th>\n</tr>\n<tr>\n<th>Glutamine</th>\n<th>C source, sole N source</th>\n</tr>\n<tr>\n<th>Glutamate</th>\n<th><em>C source</em>, sole N source</th>\n</tr>\n<tr>\n<th>Histidine</th>\n<th>Utilize</th>\n</tr>\n<tr>\n<th>Isoleucine</th>\n<th>Utilize</th>\n</tr>\n<tr>\n<th>Leucine</th>\n<th>Utilize</th>\n</tr>\n<tr>\n<th>Lysine</th>\n<th>Utilize</th>\n</tr>\n<tr>\n<th>Methionine</th>\n<th>Utilize</th>\n</tr>\n<tr>\n<th>Phenylalanine</th>\n<th>Sole C and N source</th>\n</tr>\n<tr>\n<th>Proline</th>\n<th>Sole C and N source</th>\n</tr>\n<tr>\n<th>Serine</th>\n<th>Sole C and N source</th>\n</tr>\n<tr>\n<th>Threonine</th>\n<th>C source, sole N source</th>\n</tr>\n<tr>\n<th>Tryptophan</th>\n<th>C source, sole N source</th>\n</tr>\n<tr>\n<th>Tyrosine</th>\n<th>Utilize</th>\n</tr>\n<tr>\n<th>Valine</th>\n<th>Utilize</th>\n</tr>\n<tr>\n<th colspan=\"2\"><h5 id=\"table-1.2-utilization-of-ʟ--and-ᴅ-amino-acids-by-e.-coli\">Table 1.2:\nUtilization of ʟ- and ᴅ-amino acids by <em>E. coli</em> </h5>\n<p>Entries in <em>italics</em> indicate use by mutants. Citation to\n(Kuhn &amp; Somerville, 1971; Reitzer, 2005) unless otherwise indicated.\nFor some ᴅ-amino acids we were unable to find studies of their\nutilization by <em>E. coli</em>, though ᴅ-asparagine, ᴅ-aspartate, and\nᴅ-lysine cannot be used as a sole nitrogen source (Bochner <em>et\nal</em>., 2001). Glycine, which is achiral, is absent from the table; it\ncan be used as a carbon source and as a sole nitrogen source.</p></th>\n</tr>\n</thead>\n<tbody>\n</tbody>\n</table>"
+        },
+        {
+          "type": "table",
+          "html": "<table>\n<colgroup>\n<col style=\"width: 2%\"/>\n<col style=\"width: 17%\"/>\n<col style=\"width: 14%\"/>\n<col style=\"width: 40%\"/>\n<col style=\"width: 25%\"/>\n</colgroup>\n<thead>\n<tr>\n<th colspan=\"2\"><strong>Monosaccharide</strong></th>\n<th><strong>Utilization<br/>\nby <em>E. coli</em></strong></th>\n<th><strong>Potential pathways</strong></th>\n<th><strong>References</strong></th>\n</tr>\n<tr>\n<th colspan=\"2\"><strong>Hexoses</strong></th>\n<th></th>\n<th></th>\n<th></th>\n</tr>\n<tr>\n<th></th>\n<th>ʟ-fructose</th>\n<th>No</th>\n<th>Through isomerase to ʟ-glucose</th>\n<th>Park <em>et al</em>., 2007</th>\n</tr>\n<tr>\n<th></th>\n<th>ʟ-galactose</th>\n<th>By mutation</th>\n<th>ʟ-fucose regulatory mutation and selection</th>\n<th>Zhu &amp; Lin, 1986</th>\n</tr>\n<tr>\n<th></th>\n<th>ʟ-glucose</th>\n<th>No</th>\n<th>Through ʟ-gluconate to pyruvate and GAP</th>\n<th>Shimizu <em>et al</em>., 2012</th>\n</tr>\n<tr>\n<th></th>\n<th>ʟ-mannose</th>\n<th>No</th>\n<th>Through isomerase to ʟ-fructose</th>\n<th>Park <em>et al</em>., 2007</th>\n</tr>\n<tr>\n<th colspan=\"2\"><strong>Pentoses</strong></th>\n<th></th>\n<th></th>\n<th></th>\n</tr>\n<tr>\n<th></th>\n<th>ᴅ-arabinose</th>\n<th>By mutation</th>\n<th>ʟ-fucose regulatory mutation and selection</th>\n<th>LeBlanc &amp; Mortlock, 1971</th>\n</tr>\n<tr>\n<th></th>\n<th>ʟ-ribose</th>\n<th>By mutation</th>\n<th>Through mutation and selection</th>\n<th>Trimbur &amp; Mortlock, 1991</th>\n</tr>\n<tr>\n<th></th>\n<th>ʟ-xylose</th>\n<th>No</th>\n<th>Through isomerase to ʟ-xylulose</th>\n<th>Usvalampi <em>et al</em>., 2012</th>\n</tr>\n<tr>\n<th></th>\n<th>ʟ-xylulose</th>\n<th>Yes</th>\n<th>Native ability</th>\n<th>Ibañez <em>et al</em>., 2000</th>\n</tr>\n<tr>\n<th colspan=\"2\"><strong>Trioses</strong></th>\n<th></th>\n<th></th>\n<th></th>\n</tr>\n<tr>\n<th></th>\n<th>ʟ-glyceraldehyde</th>\n<th>By mutation</th>\n<th>Through glycerol-3-phosphate<br/>\nThrough glycerol</th>\n<th>Baldomà &amp; Aguilar, 1987; Kalyananda <em>et al</em>., 1987; Zhu\n&amp; Lin, 1987</th>\n</tr>\n<tr>\n<th colspan=\"5\"><h5 id=\"table-1.3-utilization-of-the-enantiomers-of-common-monosaccharides-by-e.-coli\">Table\n1.3: Utilization of the enantiomers of common monosaccharides by <em>E.\ncoli</em></h5>\n<p><em>E. coli</em> is able to utilize the enantiomers of a number of\ncommon sugars. Note that unlike most sugars, ʟ-arabinose is the form\nmost commonly found in nature.</p></th>\n</tr>\n</thead>\n<tbody>\n</tbody>\n</table>"
+        },
+        {
+          "type": "paragraph",
+          "html": "Catabolizing larger sugars such as ʟ-sucrose or ʟ-trehalose might be\nmore challenging, as it is unclear whether suitable transporters or\nhydrolytic enzymes exist in nature. Nevertheless, there is no underlying\nprinciple that would prohibit engineering a mirror bacterium with rich\nand varied catabolic capabilities; absent concerns about the risks, such\nwork could proceed rapidly."
+        },
+        {
+          "type": "paragraph",
+          "html": "In addition to organic carbon, heterotrophic bacteria also require\ninorganic nutrients, but these are almost always available in achiral\nforms. Like most bacteria, <em>E. coli</em> can acquire nitrogen from\ninorganic ammonium, nitrate, and nitrite, and from achiral organic\ncompounds such as glycine and urea. Phosphorus and sulfur are likewise\navailable as phosphate and sulfate, while chlorine and metals are\navailable as monatomic ions. Indeed, an organic carbon source like\nᴅ-glucose is often the only chiral nutrient used in minimal culture\nmedia."
+        },
+        {
+          "type": "paragraph",
+          "html": "It appears that many environments could have suitable abiotic\nconditions and sufficient nutrients to support growth of a mirror <em>E.\ncoli</em> or other similarly robust mirror bacterium; we discuss\nspecific environments in more detail in <a href=\"#chapter-4-risks-to-human-health\">Chapters 4</a>, <a href=\"#chapter-6-animal-infection\">6</a>, <a href=\"#chapter-7-plant-infection\">7</a>, and <a href=\"#chapter-8-environmental-survival-and-spread\">8</a>. It is\nconceivable that some common chiral compounds could be toxic to mirror\nbacteria, but as discussed in <a href=\"#box-1.2-could-natural-chirality-molecules-be-toxic-to-mirror-life\">Box\n1.2</a>, this does not appear to be a significant impediment. Thus,\nthere do not appear to be any fundamental barriers preventing the\nsurvival and replication of mirror bacteria in many natural\nenvironments."
+        },
+        {
+          "type": "box",
+          "id": "box-1.2-could-natural-chirality-molecules-be-toxic-to-mirror-life",
+          "label": "Box 1.2",
+          "title": "Could natural-chirality molecules be toxic to mirror life?",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "The organic compounds found in natural environments are generally not\ntoxic to bacteria. But for a mirror bacteria containing mirror enzymes\nand other mirror macromolecules, it is conceivable that toxicities could\narise. This possibility can be addressed by considering the equivalent\n“mirrored” question: are the enantiomers of common organic compounds\ntoxic to natural bacteria?"
+            },
+            {
+              "type": "paragraph",
+              "html": "ᴅ-amino acids are the most widely studied class of mirror\nmetabolites. Studies have found that some can inhibit bacterial growth,\nbut they typically require 1–10 mM concentrations for even mildly\ninhibitory effects (Kao <em>et al</em>., 2017; Rumbo <em>et al</em>.,\n2016; Sarkar & Pires, 2015; Soutourina <em>et al</em>., 1999;\nSoutourina <em>et al</em>., 2000). ʟ-amino acid concentrations in most\nnatural environments are typically much lower, and therefore would be\nunlikely to inhibit mirror bacterial growth."
+            },
+            {
+              "type": "paragraph",
+              "html": "A few ᴅ-amino acids are particularly toxic. ᴅ-tryptophan has been\nreported to mildly suppress <em>E. coli</em> growth at low\nconcentrations (Soutourina <em>et al</em>., 2000). However, given that\n<em>E. coli</em>, <em>Acinetobacter baumannii</em>, and <em>P.\naeruginosa</em> can all sustain growth even at 5 mM (Rumbo <em>et\nal.</em>, 2016; Soutourina <em>et al</em>., 2000), naturally occurring\nconcentrations of ʟ-tryptophan are unlikely to significantly inhibit\nmirror bacterial growth. Toxicity is likely caused by the accidental\nincorporation of ᴅ-tryptophan into proteins. ᴅ-amino acid tRNA\ndeacylases, which are present in nearly all living organisms (Wydau\n<em>et al</em>., 2009), protect against misincorporation toxicity by\neliminating mischarged tRNAs. Simply upregulating this enzyme would\nlikely provide mirror bacteria with additional protection for a mirror\nbacterium."
+            },
+            {
+              "type": "paragraph",
+              "html": "ᴅ-cysteine can likewise mildly suppress <em>E. coli</em> growth at\nmicromolar concentrations in minimal media, although it has no\ninhibitory effects at even 10 mM in LB broth (Soutourina <em>et\nal</em>., 2001). ᴅ-cysteine and ᴅ-cystine are actively transported into\nthe cytosol through transporters for ʟ-cysteine and ʟ-cystine (Chonoles\nImlay <em>et al</em>., 2015; Zhou & Imlay, 2022). Toxicity appears\nto be primarily driven by inhibition of threonine deaminase, needed for\nthe biosynthesis of isoleucine, leucine, and valine, as addition of\nthese amino acids to minimal media reduces (though does not entirely\nalleviate) growth inhibition by ᴅ-cysteine (Soutourina <em>et al</em>.,\n2001); ʟ-cysteine is toxic through a similar mechanism (Sørensen &\nPedersen, 1991). ᴅ-cysteine is detoxified by ᴅ-cysteine desulfhydrase,\nwhich decomposes it into pyruvate, ammonium, and hydrogen sulfide;\nupregulation of this enzyme increases the resistance of <em>E. coli</em>\nto ᴅ-cysteine toxicity (Soutourina <em>et al</em>., 2001)."
+            },
+            {
+              "type": "paragraph",
+              "html": "The extent to which ʟ-cysteine would pose a barrier to growth of an\nunadapted mirror <em>E. coli</em> within living organisms is unclear.\nᴅ-isoleucine, ᴅ-leucine, and ᴅ-valine would not be present in natural\nenvironments, so mirror-image <em>E coli</em> would likely be reliant on\nits mirror-image threonine deaminase for biosynthesis, and so plausibly\ncould be susceptible to growth inhibition by ʟ-cysteine. Resistance to\nʟ-cysteine could rapidly emerge, for instance through mutations to the\ntransporters or by upregulation of ᴅ-cysteine desulfhydrase. Utilization\nof naturally occurring amino acids could also obviate the need for\nthreonine deaminase (see <a href=\"#table-1.3-utilization-of-the-enantiomers-of-common-monosaccharides-by-e.-coli\">Table\n1.3</a>), and <em>E. coli</em> strains lacking threonine deaminase may\nstill produce isoleucine through other metabolic pathways (Cotton <em>et\nal</em>., 2020). It is plausible that ʟ-cysteine would have similar\ninhibitory effects on other mirror bacterial strains, though not\nuniversally; <em>P. aeruginosa</em>, for instance, is uninhibited at\nmillimolar concentrations of ᴅ-cysteine (Rumbo <em>et al</em>.,\n2016)."
+            },
+            {
+              "type": "paragraph",
+              "html": "To our knowledge, the enantiomers of common sugars are generally not\ntoxic to bacteria. For <em>E. coli</em> the only exception we have found\nis ʟ-glyceraldehyde, which can mildly inhibit <em>E. coli</em> growth at\nmillimolar concentrations (Tang <em>et al</em>., 1977). It appears,\nhowever, that toxicity is due to the oxidation of ʟ-glyceraldehyde to\nʟ-glycerate, as <em>E. coli</em> mutants lacking aldehyde dehydrogenase\ncan grow on ʟ-glyceraldehyde (Zhu & Lin, 1987). The mechanism by\nwhich ʟ-glycerate is toxic to <em>E. coli</em> is not clear, but\nglyceric acid is not particularly abundant in nature."
+            },
+            {
+              "type": "paragraph",
+              "html": "We have not found other plausible chiral molecules that would\npreclude mirror <em>E. coli</em> growth in natural environments. Not all\nenantiomers of common molecules have been tested and reported in the\nliterature, and it is possible we have missed other known toxicities.\nNevertheless, it appears unlikely that any natural-chirality organic\ncompounds would prove unusually toxic to most mirror bacteria at the\nvery low concentrations typically present in most environments."
+            }
+          ]
+        }
+      ],
+      "subsections": []
+    },
+    {
+      "id": "mirror-bacteria-could-be-innately-resistant-to-many-immunological-mechanisms",
+      "level": 3,
+      "title": "Mirror bacteria could be innately resistant to many immunological mechanisms",
+      "title_html": "Mirror\nbacteria could be innately resistant to many immunological\nmechanisms",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Biochemically, the interiors of multicellular organisms are generally\nnutrient-rich and growth-permissive for many natural bacteria.\nSufficiently robust mirror bacteria would similarly be capable of\nreplicating within multicellular organisms by utilizing achiral\nnutrients and, with suitable engineering, common sugars such as\nᴅ-glucose. Plants and animals have evolved sophisticated immune systems\nto protect themselves from bacterial infection. But both the innate\nimmune receptors and the immune effectors that cause harm to bacteria\nare generally chiral, having evolved to target conserved chiral\nmolecules specific to natural-chirality bacteria. Therefore, it is\nlikely that many immunological mechanisms would not function effectively\nagainst mirror bacteria because they could not recognize the enantiomers\nof their targets."
+        },
+        {
+          "type": "paragraph",
+          "html": "Plant and animal immune systems, for example, possess\npattern-recognition receptors (PRRs) that detect the presence of\nmicrobe-associated molecular patterns (MAMPs). While the specific PRRs\nvary between species, they typically recognize highly conserved MAMPs,\nsuch as lipopolysaccharides and peptidoglycans that are present in many\nor all bacteria. Almost all such MAMPs are chiral. Because interactions\nbetween PRRs and MAMPs are stereospecific, PRRs would not typically\nrecognize mirror lipopolysaccharides, mirror peptidoglycan, or the other\nopposite-chirality macromolecules produced by mirror cells. There could\nbe exceptions: at least one achiral MAMP is known to be recognized by a\nhuman PRR (Uldrich <em>et al</em>., 2020) and another in plants (Kakkar\n<em>et al</em>., 2015), though both appear to have only marginal\nimportance. Some PRRs might primarily recognize achiral regions of their\ntargets and retain weak affinity for the enantiomer, and unexpected\ncross-reactivities could also trigger PPRs. Moreover, innate immune\nsystems detect damage-associated molecular patterns (DAMPs) caused by\ncell death, but these are unlikely to be triggered until late in an\ninfection and appear unlikely to help the immune system target and\neliminate infecting mirror bacteria. Failures of innate immune\nrecognition could seriously impair immunological responses to mirror\nbacterial infection, as discussed in <a href=\"#chapter-4-risks-to-human-health\">Chapters 4</a>, <a href=\"#chapter-6-animal-infection\">6</a>, and <a href=\"#chapter-7-plant-infection\">7</a>."
+        },
+        {
+          "type": "paragraph",
+          "html": "Humans and other vertebrates also possess an adaptive immune system,\nwhich is theoretically capable of generating antibodies against any\nnovel pathogen and could in principle produce antibodies that would bind\nto mirror-image macromolecules. But as discussed in <a href=\"#adaptive-immunity-to-mirror-bacteria-would-likely-be-impaired\">Section\n4.3</a>, many of the steps required to process and present antigens for\nT cell activation are stereospecific and would likely fail, severely\nlimiting B cell activation and the production of antibodies. An MHC-II\nimmune deficiency is perhaps the closest clinical analog, and in such\npatients the antigen-specific T and B cell response is profoundly\nimpaired."
+        },
+        {
+          "type": "paragraph",
+          "html": "Impairments in immunological recognition would be further compounded\nby the inability of some, though not all, immune effectors to harm\nbacteria. Antimicrobial enzymes such as lysozyme, phospholipases, and\nproteases target peptidoglycan, phospholipids, and proteins, all of\nwhich are chiral; these enzymes are unlikely to retain significant\nactivity against their mirror counterparts. Other antimicrobial peptides\ncause harm by disrupting membranes and, in at least some cases, would\nretain efficacy against mirror bacteria. Within vertebrates, the\nalternative complement pathway may still function, but other complement\nactivation pathways could be more significantly impaired. The extent to\nwhich professional phagocytes could successfully internalize and kill\nmirror bacteria is unclear."
+        },
+        {
+          "type": "paragraph",
+          "html": "<a href=\"#chapter-4-risks-to-human-health\">Chapters 4</a>, <a href=\"#chapter-6-animal-infection\">6</a>, and <a href=\"#chapter-7-plant-infection\">7</a> discuss these immunological\nfailures, and the consequent possibility of mirror bacterial infection\nin humans, animals, and plants in more detail. In all cases, physical\nbarriers are imperfect and allow for at least occasional bacterial\ntranslocation into vulnerable parts of the organism. Given the extent to\nwhich mirror bacteria would innately evade many immunological\nmechanisms, it appears plausible that a sufficiently robust mirror\nbacterium would be capable of entering and harming many multicellular\nhosts, including humans."
+        },
+        {
+          "type": "paragraph",
+          "html": "While mirror bacteria would lack the toxins or other virulence\nfactors typically produced by natural pathogens, uncontrolled mirror\nbacterial growth within a multicellular host could prove dangerous. In\nhumans, for instance, a systemic mirror bacterial infection might prove\nfatal through a sepsis-like severe immunological dysregulation (see <a href=\"#mirror-bacteria-could-plausibly-replicate-in-blood-and-cause-lethal-systemic-infection\">Section\n4.5</a>). Even if this were avoided, a bloodstream mirror bacterial\ninfection could likely deplete nutrients, modify blood chemistry, and\ncause physical disruptions to blood vessels and organs, all of which\ncould be lethal."
+        }
+      ],
+      "subsections": []
+    },
+    {
+      "id": "mirror-bacteria-could-be-innately-resistant-to-most-forms-of-predation",
+      "level": 3,
+      "title": "Mirror bacteria could be innately resistant to most forms of predation",
+      "title_html": "Mirror\nbacteria could be innately resistant to most forms of predation",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "<a href=\"#chapter-8-environmental-survival-and-spread\">Chapter 8</a>\ndiscusses potential ecological risks from mirror bacteria. In the\nnatural environment, bacterial populations are often kept in check by\nprotists, phages, and other predators. Mirror bacteria would be\ncompletely resistant to natural phages, which could neither adsorb to\nmirror receptors nor replicate their genomes with mirror polymerase.\nMirror bacteria may also avoid most predation from protists, which\nrecognize bacterial prey through receptors that rely on stereospecific\ninteractions. While the mechanisms of prey recognition are not well\nunderstood, plausible failures of protist receptors to recognize mirror\nmetabolites and macromolecules would impair both tracking and engulfment\nof mirror bacteria. Even if ingested, it is not clear how effectively\nprotists would kill mirror bacteria. It is clear, however, that the\nmirror macromolecules would not be digested by the natural-chirality\nhydrolases produced by protists. Protists would gain few, if any,\nnutrients from mirror bacteria and thus would be unlikely to evolve to\nconsume them more effectively. Other bacterial predators such as\nnematodes and filter feeders could likely face similar challenges."
+        },
+        {
+          "type": "paragraph",
+          "html": "Although a robust mirror bacterium could potentially replicate in\nmany environments, any given mirror strain would be unlikely to\nreplicate as rapidly as natural bacteria in the same environment because\nit would not be able to utilize the full range of chiral nutrients\navailable to natural organisms. Moreover, any single mirror strain would\ninitially be poorly adapted to most of the environments it might\nencounter."
+        },
+        {
+          "type": "paragraph",
+          "html": "However, for a mirror strain to become established within a natural\nenvironment merely requires the mirror bacteria to replicate faster than\nthey die. Replication rates of mirror bacteria relative to natural\nbacteria could be lower, but so could mortality rates, as mirror\nbacteria are likely to evade many forms of predation. Slowly growing\nmirror bacteria might therefore be able to invade some ecosystems."
+        },
+        {
+          "type": "paragraph",
+          "html": "An expanding mirror bacterial population would face no commensurate\nexpansion in phages or predation because phages would not infect mirror\nbacteria and predators would gain few, if any, nutrients from consuming\nthem. As a result, mirror bacterial populations could become large in\nsuccessfully colonized environments, with growth ceasing only once the\navailable nutrients became sufficiently depleted."
+        }
+      ],
+      "subsections": []
+    },
+    {
+      "id": "invasive-mirror-bacteria-could-spread-and-rapidly-adapt-to-new-environments-causing-severe-ecological-harms",
+      "level": 3,
+      "title": "Invasive mirror bacteria could spread and rapidly adapt to new environments, causing severe ecological harms",
+      "title_html": "Invasive\nmirror bacteria could spread and rapidly adapt to new environments,\ncausing severe ecological harms",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "A mirror bacterium capable of infecting multicellular organisms could\nspread through varied means: predation of infected animals and\nscavenging of infected corpses, insect bites and similar vectors,\nconsumption of infected plants, and exposure to contaminated soil or\nwater. It is likely that a mirror bacterium capable of infecting many\nmulticellular species would undergo sustained transmission through the\nenvironment."
+        },
+        {
+          "type": "paragraph",
+          "html": "Natural pathogens can spread many kilometers each day if transported\nby insects, birds, or other rapidly dispersing hosts. If mirror bacteria\nwere able to infect such animals, they would likewise"
+        },
+        {
+          "type": "box",
+          "id": "box-1.3-why-is-mirror-life-absent-from-nature",
+          "label": "Box 1.3",
+          "title": "Why is mirror life absent from nature?",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "The risks from mirror bacteria arise because reversed-chirality\nconfers significant advantages through immune evasion and predation\nresistance. If reversed-chirality could be so advantageous, why does\nmirror life appear to be absent from nature?"
+            },
+            {
+              "type": "paragraph",
+              "html": "Evolution is a stepwise process involving the gradual accumulation of\nadvantageous mutations. If it was possible to invert the chirality of\none surface molecule at a time, each of which would confer some\nresistance, then we might see such changes in natural organisms. But\ninverted chirality appears to be all-or-nothing: either a cell can make\nmirror proteins, and therefore other mirror macromolecules, or it\ncannot. There is simply no plausible series of stepwise changes through\nwhich a natural-chirality cell could build functional mirror proteins\nwithout severely damaging its ability to make normal proteins. Even\nsmall alterations to the genetic code alter the structure of all\nexisting proteins, likely causing numerous fatal changes (Crick, 1968).\nAs a result, the genetic code has remained remarkably conserved across\nliving organisms (Ambrogelly <em>et al</em>., 2007; Koonin &\nNovozhilov, 2017). Modifying an existing cell into a mirror cell would\nrequire many steps of similar or greater complexity to the incorporation\nof a novel amino acid, and therefore appears to be essentially\nimpossible."
+            },
+            {
+              "type": "paragraph",
+              "html": "In principle, mirror life could arise independently of existing life,\nbut there is also no compelling reason to think that mirror life would\nhave arisen independently of ordinary life. Opinion varies as to whether\nthe origin of life was an extremely rare event, almost inevitable, or\nsomething in between; the very limited evidence available does not allow\nstrong conclusions to be drawn on this matter (Spiegel & Turner,\n2012). If abiogenesis is rare, it would have been very unlikely for life\nto have arisen twice, and so mirror life probably never arose on Earth.\nEven if abiogenesis happened more than once on the early Earth, it is\nnot clear that other living organisms would have had a close resemblance\nto modern life, mirrored or otherwise."
+            },
+            {
+              "type": "paragraph",
+              "html": "It thus appears most likely that nothing similar to a mirror\nbacterium ever existed on Earth. The absence of mirror life from nature\nprovides no cause for reassurance with respect to synthetic mirror\nlife."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "html": "spread at a similar speed (see <a href=\"#invasive-mirror-bacteria-could-rapidly-disperse-through-the-environment\">Section\n8.3</a>). Human activity could spread invasive mirror bacteria even\nfaster via airplanes, cargo ships, and road vehicles."
+        },
+        {
+          "type": "paragraph",
+          "html": "Mirror bacteria that escape containment would likely start with\nessentially no standing genetic variation. They would have no ability to\nacquire genes by horizontal transfer from existing bacteria, because the\nmirrored molecular machinery of a mirror bacterium could not read\nnatural-chirality DNA. As they spread, they would encounter diverse\nenvironments they are poorly suited for, but mutation and natural\nselection would allow them to adapt (see <a href=\"#invasive-mirror-bacteria-could-rapidly-evolve-and-diversify\">Section\n8.4</a>). Invasive mirror bacteria could thus diversify into multiple\nlineages, specializing and evolving to colonize previously inaccessible\nenvironments and infect novel hosts. Even if an escaped mirror bacterium\ncould initially survive only under restricted conditions, it could\nsubsequently evolve increased fitness and an expanded range."
+        },
+        {
+          "type": "paragraph",
+          "html": "An invasive mirror bacterium able to infect many multicellular hosts\ncould plausibly drive most susceptible animal and plant species to\nextinction owing to repeated infections from abundant mirror bacterial\npopulations in the external environment. The loss of many species\nsimultaneously would be highly disruptive to natural ecosystems,\nparticularly if ecologically critical species are susceptible. A mirror\nphotoautotroph would be particularly disruptive to marine ecosystems\nbecause it would not require any chiral nutrients to thrive."
+        }
+      ],
+      "subsections": []
+    },
+    {
+      "id": "creating-biocontained-mirror-bacteria-may-be-feasible-but-securing-them-against-misuse-appears-exceptionally-challenging",
+      "level": 3,
+      "title": "Creating biocontained mirror bacteria may be feasible, but securing them against misuse appears exceptionally challenging",
+      "title_html": "Creating\nbiocontained mirror bacteria may be feasible, but securing them against\nmisuse appears exceptionally challenging",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "If mirror bacteria are created, it would be relatively\nstraightforward to engineer more robust and diverse mirror strains and\nspecies, which could pose serious risks to both human health and the\nenvironment. The creation of any mirror bacterium would thus create\nserious biosafety and biosecurity challenges. The technical feasibility\nof containment strategies to mitigate risks are discussed in <a href=\"#chapter-3-engineering-biosafety-and-biosecurity-of-mirror-bacteria\">Chapter\n3</a>."
+        },
+        {
+          "type": "paragraph",
+          "html": "Creating a “biocontained” mirror bacterium—that is, one incapable of\nreplicating outside of a laboratory—should be possible. For instance, a\nmetabolic auxotroph that lacked the biosynthetic pathways for\npantothenate and biotin would be able to grow only if provided mirror\npantothenate and mirror biotin, both of which are likely absent from\nnature. Given the potentially severe consequences of an escape, any\nbiocontainment methods used with mirror bacteria would have to be\nextremely robust to all possible paths to escape, including failures\narising from human error."
+        },
+        {
+          "type": "paragraph",
+          "html": "Most concerningly, even if robust biocontainment were possible, such\nmeasures could always be undone by malicious or reckless actors. Given\nthe relative ease with which mirror bacteria could be engineered if\ncreated, engineering versions that could not be abused by malicious\nactors appears to be extraordinarily difficult."
+        }
+      ],
+      "subsections": []
+    },
+    {
+      "id": "countermeasures-could-mitigate-some-harms-but-could-not-prevent-irreversible-environmental-damage",
+      "level": 3,
+      "title": "Countermeasures could mitigate some harms, but could not prevent irreversible environmental damage",
+      "title_html": "Countermeasures\ncould mitigate some harms, but could not prevent irreversible\nenvironmental damage",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "<a href=\"#chapter-5-medical-countermeasures\">Chapter 5</a> describes\npotential medical countermeasures that could be used to protect humans\nfrom mirror bacteria. While most existing antibiotics are chiral and\ninteract stereospecifically with their microbial targets, those\nantibiotics that are achiral would still prove harmful to mirror\nbacteria; novel “antimirror” compounds could also be identified and\nproduced. The clinical efficacy of such antimirror compounds would be\nunclear until tested, and scaling production to sufficiently protect all\nhumans would be a challenging, and perhaps impossible, undertaking.\nOther therapeutics such as conjugate vaccines, antibody therapy, and\nphage therapy appear to be technically feasible, but the practical\nchallenges to developing such measures quickly and at scale would be\nconsiderable."
+        },
+        {
+          "type": "paragraph",
+          "html": "Protecting agricultural production against invasive mirror bacteria\ncould require genetically engineering resistant crops or cultivating\nresistant microbes or simple plants as alternative food sources (see <a href=\"#countermeasures-for-agricultural-plants\">Section 7.4</a>).\nProtecting most wild plants or animals through similar engineering would\nnot be feasible. Biological countermeasures such as mirror phages,\ndiscussed in <a href=\"#countermeasures-to-invasive-mirror-bacteria-might-lessen-but-would-not-halt-the-ecological-damage\">Section\n8.6</a>, could in principle reduce mirror bacterial populations after\nthey become established. Like existing biocontrol measures, however,\nthey would be unable to completely eliminate mirror bacteria from\necosystems, and so could not protect plants and animals from repeated\nexposure and infection. If an invasive mirror bacterium were\ninadvertently or maliciously released into the environment, there does\nnot appear to be any realistic prospect for averting irreversible and\nwidespread environmental harm."
+        }
+      ],
+      "subsections": []
+    }
+  ],
+  "kind": "chapter",
+  "number": 1
+}

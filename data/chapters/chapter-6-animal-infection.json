@@ -1,0 +1,337 @@
+{
+  "id": "chapter-6-animal-infection",
+  "level": 1,
+  "title": "Animal Infection",
+  "title_html": "Chapter 6: Animal Infection",
+  "blocks": [
+    {
+      "type": "paragraph",
+      "html": "<em>Deepa Agashe<sup>1</sup>, Damon J. Binder<sup>2</sup>, Timothy W.\nHand<sup>3</sup>, Matthew L. Nicotra<sup>4</sup>, David A.\nRelman<sup>5,6,7</sup></em>"
+    },
+    {
+      "type": "table",
+      "html": "<table>\n<colgroup>\n<col style=\"width: 100%\"/>\n</colgroup>\n<thead>\n<tr>\n<th><em>Authors are listed in alphabetical order. Affiliations:</em>\n<sup>1</sup> National Centre for Biological Sciences, Tata Institute of\nFundamental Research, Bengaluru, India; <sup>2</sup> Open Philanthropy,\nSan Francisco, California, USA; <sup>3</sup> Pediatrics Department,\nInfectious Disease Section, UPMC Children’s Hospital of Pittsburgh,\nUniversity of Pittsburgh School of Medicine, Pittsburgh, Pennsylvania,\nUSA; <sup>4</sup> Center for Health Security, Bloomberg School of Public\nHealth, Johns Hopkins University, Baltimore, Maryland, USA; <sup>5</sup>\nDepartment of Medicine, Stanford School of Medicine, Stanford\nUniversity, Stanford, California, USA; <sup>6</sup> Department of\nMicrobiology and Immunology, Stanford University School of Medicine,\nStanford, California, USA; <sup>7</sup> Infectious Diseases Section,\nVeterans Affairs Palo Alto Health Care System, Palo Alto, California,\nUSA</th>\n</tr>\n</thead>\n<tbody>\n</tbody>\n</table>",
+      "kind": "affiliations"
+    },
+    {
+      "type": "paragraph",
+      "html": "<a href=\"#chapter-4-risks-to-human-health\">Chapter 4</a> describes\nthe reasons why a mirror bacterium could be expected to evade many of\nthe immunological defenses found in humans. A sufficiently robust mirror\nbacterium, if translocated past the body’s epithelial barriers, could\nplausibly cause a life-threatening systemic infection."
+    },
+    {
+      "type": "paragraph",
+      "html": "In this chapter, we consider whether mirror bacteria could pose\nsimilar risks to other animals. Many aspects of the innate immune system\nare conserved between vertebrates and invertebrates (Buchmann, 2014;\nHoffmann <em>et al</em>., 1999; Janeway & Medzhitov, 2002),\nincluding the use of specific pattern recognition receptors (PRRs) that\nrecognize chiral ligands (Brennan & Gilmore, 2018) and the killing\nof bacteria through phagocytic cells (Hartenstein, 2006) and\nantimicrobial peptides (Zasloff, 2002). As is the case in humans, these\nmechanisms may be relatively ineffective against mirror bacteria.\nHowever, given the largely underexplored diversity of animal species (at\nleast immunologically), it is plausible that some animals would be able\nto mount a robust defense. Variation in susceptibility could also arise\ndue to diversity in physical barriers to bacterial infection, as well as\nphysiological and behavioral differences."
+    },
+    {
+      "type": "paragraph",
+      "html": "<a href=\"#vertebrate-susceptibility-to-mirror-bacterial-infection-would-likely-be-similar-to-that-of-humans\">Section\n6.1</a> discusses other vertebrates, which are immunologically similar\nto humans and possess an adaptive immune system (Flajnik, 2018). The\nexpected defects in the human immune system—which are described in\ndetail in <a href=\"#chapter-4-risks-to-human-health\">Chapter 4</a>—will\nlikely be shared by most other vertebrates, suggesting that many\nvertebrates would be similarly susceptible to infection. Transmission of\nmirror bacteria between infected vertebrate hosts could facilitate their\nspread through the environment and, ultimately, transmission from the\nenvironment to humans."
+    },
+    {
+      "type": "paragraph",
+      "html": "<a href=\"#many-invertebrates-would-likely-be-susceptible-to-mirror-bacteria\">Section\n6.2</a> discusses invertebrates, focusing on insects and nematodes. In\nthe best studied insect model, the fruit fly <em>Drosophila\nmelanogaster</em>, antibacterial immunity primarily relies on\nrecognition of peptidoglycan, which is chiral. Like the mirror\nmicrobe-associated molecular patterns (MAMPs) discussed in <a href=\"#chapter-4-risks-to-human-health\">Chapter 4</a>, mirror\npeptidoglycan is unlikely to be recognized by insect PRRs. It therefore\nappears plausible that many insects would also be vulnerable to mirror\nbacterial infection. Not only are insects ecologically crucial, they\nalso play important roles in disease transmission, including between\nnon-human vertebrates and between non-human vertebrates and humans. As a\nresult, insects could provide another potential route for mirror\nbacteria to spread."
+    },
+    {
+      "type": "paragraph",
+      "html": "By contrast, the model nematode <em>Caenorhabditis elegans</em> is\nbacterivorous and protects itself by not ingesting pathogenic bacteria\nand by recognizing specialized pathogen signals within the intestines.\nMirror bacteria would likely be recognized as prey but not as pathogens,\nand may not be killed by normal digestive processes involving lytic\nenzymes. This might allow mirror bacteria to persist within the\nintestinal tract and cause potentially fatal infection, though it is\nalso plausible that mirror bacteria would simply be excreted along with\nother waste. Compared to insects and nematodes, the molecular details of\npathogen recognition in other invertebrate immune systems are relatively\npoorly studied, making it difficult to draw more general conclusions\nabout their susceptibility to mirror bacterial infections."
+    }
+  ],
+  "subsections": [
+    {
+      "id": "vertebrate-susceptibility-to-mirror-bacterial-infection-would-likely-be-similar-to-that-of-humans",
+      "level": 2,
+      "title": "6.1 Vertebrate susceptibility to mirror bacterial infection would likely be similar to that of humans",
+      "title_html": "<strong>6.1\nVertebrate susceptibility to mirror bacterial infection would likely be\nsimilar to that of humans</strong>",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "All vertebrates (with the partial exception of jawless vertebrates<a class=\"footnote-ref\" data-footnote-ref=\"fn9\" href=\"#fn9\" id=\"fnref9\" role=\"doc-noteref\"><sup>9</sup></a>) possess an innate and adaptive\nimmune system closely analogous to that of humans (Flajnik, 2018;\nRiera-Romo <em>et al</em>., 2016). Many of the expected deficits in the\nhuman immune response to mirror bacteria described in <a href=\"#chapter-4-risks-to-human-health\">Chapter 4</a> should therefore\nbe shared by mammals (Tizard, 2023), birds (Kaspers <em>et al</em>.,\n2021), reptiles (Zimmerman, 2020), amphibians (Ruiz & Robert, 2023),\nand jawed fish (Rauta <em>et al</em>., 2012). Physiological differences\namong vertebrate species, particularly differences in immune function,\nwould result in variations in susceptibility to mirror cell infection.\nFor example, Atlantic cod have lost the genes essential for processing\nand presenting antigens via major histocompatibility complex class II\n(MHC-II) molecules and have expanded repertoires of MHC class I (MHC-I)\nand Toll-like receptor (TLR) genes (Solbakken <em>et al</em>., 2016;\nStar <em>et al</em>., 2011). Similarly, zebrafish have roughly ten times\nas many nucleotide-binding domain and leucine-rich repeat-containing\n(NLR) genes as humans or mice (Howe <em>et al</em>., 2016). Most of\nthese immune receptors remain uncharacterized, and some may bind achiral\nMAMPs, allowing at least partial recognition of mirror bacteria in these\nspecies. Nevertheless, it appears likely that a mirror bacterium capable\nof infecting humans could also infect many species of jawed\nvertebrates."
+        }
+      ],
+      "subsections": [
+        {
+          "id": "most-vertebrate-immune-mechanisms-are-chirality-specific-and-thus-would-likely-be-defective",
+          "level": 3,
+          "title": "Most vertebrate immune mechanisms are chirality-specific and thus would likely be defective",
+          "title_html": "Most\nvertebrate immune mechanisms are chirality-specific and thus would\nlikely be defective",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "The immune systems of jawed vertebrates are highly conserved.\nVertebrate innate immunity relies on chiral-specific PRRs, such as TLRs\nand NLRs, to detect and respond to conserved features of microbial\npathogens such as peptidoglycan and lipopolysaccharide (Buchmann 2014;\nMagnadóttir, 2006; Neerukonda & Katneni, 2020; Riera-Romo <em>et\nal</em>., 2016). Vertebrates also use the complement system,\nprofessional macrophages, and lysozyme to target and kill foreign\nmicroorganisms (Riera-Romo <em>et al</em>., 2016). Adaptive immunity\nbased on the use of MHC molecules that present pathogen-derived peptides\nto elicit adaptive cellular and humoral immune responses is conserved\nacross jawed vertebrates (Flajnik, 2018)."
+            },
+            {
+              "type": "paragraph",
+              "html": "As discussed in <a href=\"#chapter-4-risks-to-human-health\">Chapter\n4</a>, each of the aforementioned mechanisms will likely be at least\nsomewhat defective against mirror bacteria in humans. Given that\nimmunological differences between human and other jawed vertebrates are\nrelatively slight, the immunity of jawed vertebrates could be similarly\nimpaired."
+            }
+          ],
+          "subsections": []
+        },
+        {
+          "id": "a-mirror-bacterium-capable-of-infecting-humans-could-potentially-infect-many-vertebrates",
+          "level": 3,
+          "title": "A mirror bacterium capable of infecting humans could potentially infect many vertebrates",
+          "title_html": "A\nmirror bacterium capable of infecting humans could potentially infect\nmany vertebrates",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "Like humans, other vertebrates are susceptible to infection by a\ndiverse range of both obligate and opportunistic bacterial pathogens\n(Prescott <em>et al</em>., 2022). Some are specialists, while others are\ncapable of infecting a broader range of hosts (Shaw <em>et al</em>.,\n2020). Common bacterial pathogens, including <em>Escherichia coli</em>,\n<em>Bacillus anthracis</em>, <em>Staphylococcus aureus, Salmonella\nenterica</em>, and <em>Pseudomonas aeruginosa</em>, are all capable of\ninfecting a broad range of mammalian and avian hosts, while the last two\nare also capable of infecting some reptiles and amphibians as well as\nplants (Herczeg <em>et al</em>., 2021; Mermin <em>et al</em>., 2004;\nPasmans <em>et al</em>., 2020; Schikora <em>et al</em>., 2012). All but\n<em>B. anthracis</em> have been found, at least occasionally, within\nfish, though only <em>P. aeruginosa</em> is known to be pathogenic\nwithin fish (Gauthier, 2015; Ziarati <em>et al</em>., 2022). Many other\nbacterial species can function as human pathogens if given the\nopportunity—a recent literature survey reported 1 513 known bacterial\npathogens (Bartlett <em>et al</em>., 2022)—and there is little reason to\nexpect other vertebrates to be more resistant to bacterial pathogens\nthan humans. A mirror bacterium capable of evading human immunity may\ntherefore be able to infect many vertebrate species."
+            },
+            {
+              "type": "paragraph",
+              "html": "Temperature strongly influences the growth rates of bacteria, and\nphysiological variation in vertebrate body temperatures could influence\ntheir susceptibility to infection. Birds and mammals, for instance,\ntypically maintain constant body temperatures between 35–42℃ (Clarke\n& Rothery, 2008), which is optimal for the growth of <em>E.\ncoli</em> and many other human pathogens. Reptiles, amphibians, and most\nspecies of fish, though, are generally ectothermic. However, most\nenvironments are still warm enough to support <em>E. coli</em>\ngrowth—which has a minimum temperature requirement of about 8℃ (Baka\n<em>et al</em>., 2013; T. Ross <em>et al</em>., 2003) with some\nvariation between strains—for at least part of the year, albeit at lower\ngrowth rates. Temperatures in the deep ocean, and in the polar waters\nare around −1℃ (Kirchman <em>et al</em>., 2009; Yasuhara & Danovaro,\n2016), so ectothermic fish living in these environments would not be\nsusceptible to mirror <em>E. coli</em> infection."
+            },
+            {
+              "type": "paragraph",
+              "html": "Gastric acidity also varies between vertebrates: in mammals and\nbirds, gastric pH varies from a low of 0.7 in the common buzzard\n(Herpol, 1967) to 6.7 or higher in sloths (Denis <em>et al</em>., 1966).\nWith a fasting pH of around 1.5 (Dressman <em>et al</em>., 1990; Russell\n<em>et al</em>., 1993), the human stomach is much more acidic than those\nof most other mammals, but similar to those of many avian species\n(Beasley <em>et al</em>., 2015). This suggests substantial variability\nin infection risk from the foodborne transmission of mirror bacteria.\nGiven that <em>E. coli</em> frequently pass through mammalian stomachs\nunharmed and can maintain growth at any pH above 4 in the intestines (Xu\n<em>et al</em>., 2020), a mirror <em>E. coli</em> could presumably do\nthe same. Other physiological and behavioral differences among\nvertebrates, including variation in skin and mucosa anatomy (Akat <em>et\nal</em>., 2022; A. A. Ross <em>et al</em>., 2019), dietary habits, and\ngut microbiota (G. Huang <em>et al</em>., 2022), could affect\nsusceptibility to mirror bacterial infection."
+            },
+            {
+              "type": "paragraph",
+              "html": "Like humans (discussed in <a href=\"#mirror-bacteria-could-plausibly-pass-barrier-surfaces-and-translocate-into-the-bloodstream-and-tissues\">Section\n4.4</a>), other vertebrates would likely suffer from leaky barrier\ndefenses. Bacterial entry can occur through open wounds and oral\nmicroabrasions. Bacterial translocation also occurs in both the lungs\nand intestines, though outside humans, the only experimental studies of\ntranslocation frequency are limited to mice, which exhibit rates similar\nto those in humans (Berg, 1999; Ohsugi <em>et al</em>., 1992; Wells\n<em>et al</em>., 1988). It therefore seems plausible that a mirror\nbacterium capable of infecting humans would also be capable of infecting\nmany other vertebrates."
+            }
+          ],
+          "subsections": []
+        },
+        {
+          "id": "mirror-bacterial-proliferation-during-infections-could-be-fatal-and-may-promote-environmental-spread",
+          "level": 3,
+          "title": "Mirror bacterial proliferation during infections could be fatal and may promote environmental spread",
+          "title_html": "Mirror\nbacterial proliferation during infections could be fatal and may promote\nenvironmental spread",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "In most vertebrates, the consequences of a mirror bacterial infection\nare likely to be similar to those described for humans in <a href=\"#chapter-4-risks-to-human-health\">Chapter 4</a>. Systemic\nbacterial infections are usually rapidly fatal due to sepsis, a severe\nimmunological dysregulation. Because mirror bacteria would evade most\nimmunological recognition and would, by default, lack toxins or other\ntissue-damaging virulence factors, it seems possible that mirror\nbacterial populations within a vertebrate host could become large prior\nto adverse effects on the host. In humans, it nevertheless appears\nplausible that very high mirror bacterial concentrations would\neventually result in potential fatal sepsis-like immunological\ndysregulation (see <a href=\"#mirror-bacteria-could-plausibly-replicate-in-blood-and-cause-lethal-systemic-infection\">Section\n4.5</a>). Even if this were somehow avoided, mirror bacteria within the\nbloodstream could cause lethal harm through other mechanisms, such as by\ndepleting critical nutrients or by modifying the flow and coagulation of\nblood."
+            },
+            {
+              "type": "paragraph",
+              "html": "Unlike humans, the cadavers of non-human vertebrates (particularly\nwild animals) are usually left to decompose in the environment, which\ncould promote the spread of mirror bacteria. After death, the immune\nsystem ceases to function, and mirror bacteria would face competition\nfrom endogenous gut-associated bacteria and, after corpse rupture\noccurs, from environmental bacteria as well (Metcalf <em>et al</em>.,\n2013). Changes to the internal environment within the cadaver, including\nthe loss of body heat and rapid depletion of internal oxygen (Carter\n<em>et al</em>., 2007), may also disfavor continued mirror bacterial\ngrowth after death. Nevertheless, a large mirror cell population would\nlikely be present in the cadaver for many days after death (the\nlonger-term fate of mirror bacteria within the environment is considered\nin <a href=\"#chapter-8-environmental-survival-and-spread\">Chapter\n8</a>). Indeed, mirror bacterial numbers upon death might be higher than\nin typical bacterial infections due to the expected immune deficiencies.\nThis larger mirror bacteria population could increase the length of time\nthat live mirror bacteria persist in the cadaver and, therefore, the\noverall probability of transmitting mirror bacteria to new hosts.\nTransmission to new vertebrate hosts might occur either directly through\nscavenging, or indirectly through insects or other vectors."
+            },
+            {
+              "type": "paragraph",
+              "html": "Prior to death, an infected vertebrate might transmit mirror bacteria\nto other vertebrates through a variety of mechanisms including bites and\nscratches, fecal contamination of food, water, or soil, consumption of\ninfected animals by susceptible predators, and via arthropod vectors\nsuch as mosquitoes, ticks, fleas, and lice. Transmission could occur\nbetween wild animals, spreading mirror bacteria through the environment\n(see <a href=\"#invasive-mirror-bacteria-could-rapidly-evolve-and-diversify\">Section\n8.4</a>), from animals to humans (Rahman <em>et al</em>., 2020), or from\nhumans to humans. Unlike most zoonotic bacterial infections, which are\nlimited to a subset of animal species, mirror bacteria could exhibit an\nextremely broad host range, with transmission also possible between\nlivestock and pet species."
+            }
+          ],
+          "subsections": []
+        }
+      ]
+    },
+    {
+      "id": "many-invertebrates-would-likely-be-susceptible-to-mirror-bacteria",
+      "level": 2,
+      "title": "6.2 Many invertebrates would likely be susceptible to mirror bacteria",
+      "title_html": "<strong>6.2\nMany invertebrates would likely be susceptible to mirror\nbacteria</strong>",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Invertebrates lack adaptive immunity, but many basic features of\ninnate immunity are shared with vertebrates (Pradeu <em>et al</em>.,\n2024). Vulnerabilities analogous to those of the vertebrate innate\nimmune system would therefore likely be present in many invertebrates.\nSince most invertebrate immune systems are poorly characterized compared\nto vertebrates, we have focused our assessment on the best-studied\nexamples."
+        }
+      ],
+      "subsections": [
+        {
+          "id": "insect-immune-systems-may-fail-to-recognize-mirror-bacteria",
+          "level": 3,
+          "title": "Insect immune systems may fail to recognize mirror bacteria",
+          "title_html": "Insect\nimmune systems may fail to recognize mirror bacteria",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "In <a href=\"#box-6.1-mirror-bacterial-infection-would-likely-be-fatal-to-d.-melanogaster-due-to-defective-peptidoglycan-recognition\">Box\n6.1</a>, we discuss the immune system of the model organism <em>D.\nmelanogaster</em>, the best-studied invertebrate (Buchon <em>et\nal</em>., 2014)<em>.</em> Essentially all antibacterial immunity in\n<em>D. melanogaster</em> is downstream of peptidoglycan recognition. As\ndiscussed in <a href=\"#chapter-4-risks-to-human-health\">Chapter 4</a>,\nmirror versions of chiral MAMPs such as peptidoglycan would likely not\nbe recognized by vertebrate PRRs. For similar reasons, insect PRRs are\nalso unlikely to recognize mirror MAMPs, rendering an effective immune\nresponse unlikely (<a href=\"#figure-6.1-mirror-bacteria-would-likely-evade-d.-melanogaster-immune-mechanisms-due-to-defective-peptidoglycan-recognition\">Figure\n6.1</a>)."
+            },
+            {
+              "type": "paragraph",
+              "html": "Mosquitoes and bees also rely on peptidoglycan recognition to trigger\nantibacterial responses (Evans <em>et al</em>., 2006; Liu <em>et\nal</em>., 2019; Liu <em>et al</em>., 2020; Rodgers <em>et al</em>.,\n2020; S. Wang & Beerntsen, 2015; Q. Wang <em>et al</em>., 2019).\nHowever, bees and fruit flies are not particularly closely related—both\nare within the superorder Holometabola, a group that also contains\nbutterflies, ants, and beetles (Misof <em>et al</em>., 2014). It is\ntherefore plausible that reliance on peptidoglycan recognition is\nconserved across many insects, although too little is known to be\ncertain."
+            },
+            {
+              "type": "paragraph",
+              "html": "Other aspects of immunity that rely on chiral interactions may be\nsimilarly defective. Antimicrobial enzymes are expected to have chiral\nmechanisms of action and are unlikely to retain potency against mirror\nbacteria. Lysozymes, for example, cleave peptidoglycan and are important\ncomponents of early innate immune responses in a range of insects,\nespecially against Gram-positive bacteria (Eleftherianos, Zhang <em>et\nal</em>., 2021). This enzymatic activity would be unlikely to function\nagainst mirror bacteria because the lysozymes would likely fail to bind\nto mirror peptidoglycan. However, many insect genomes encode multiple\nlysozymes (Hillyer, 2016; Van Herreweghe & Michiels, 2012), some of\nwhich lack muramidase activity and might function via achiral\nmechanisms, akin to some antimicrobial peptides (AMPs)."
+            },
+            {
+              "type": "box",
+              "id": "box-6.1-mirror-bacterial-infection-would-likely-be-fatal-to-d.-melanogaster-due-to-defective-peptidoglycan-recognition",
+              "label": "Box 6.1",
+              "title": "Mirror bacterial infection would likely be fatal to D. melanogaster due to defective peptidoglycan recognition",
+              "blocks": [
+                {
+                  "type": "paragraph",
+                  "html": "Antibacterial immunity in <em>D. melanogaster</em> is triggered\nalmost exclusively by the presence of peptidoglycan and its breakdown\nproducts (Buchon <em>et al</em>., 2014). Peptidoglycan, a chiral polymer\npresent in bacterial cell walls (Pazos & Peters, 2019), is\nrecognized by a protein called Gram-negative binding protein (GNBP) and\nmembers of the peptidoglycan recognition protein (PGRP) family (Cherry\n& Buchon, 2022; Liegeois & Ferrandon, 2022). Recognition\nactivates the Toll and Imd signaling pathways, which regulate the\nproduction of antimicrobial peptides that constitute the main defense\nagainst systemic infection (Cherry & Buchon, 2022; Liegeois &\nFerrandon, 2022). Other immune responses to bacteria, including\nphagocytosis, melanization<a class=\"footnote-ref\" data-footnote-ref=\"fn10\" href=\"#fn10\" id=\"fnref10\" role=\"doc-noteref\"><sup>10</sup></a>, nodulation,\nautophagy, and immune priming are also downstream of innate immune\nsensing (Hillyer, 2016) and would be unlikely to function normally\nagainst mirror bacteria."
+                },
+                {
+                  "type": "paragraph",
+                  "html": "PGRPs would also be unlikely to bind or be activated by mirror\npeptidoglycan. Structural studies have revealed binding interfaces\nbetween PGRPs and peptidoglycan that span chiral centers (Chang <em>et\nal</em>., 2004; Chang <em>et al</em>., 2006; Leone <em>et al</em>.,\n2008; Lim <em>et al</em>., 2006; Reiser <em>et al</em>., 2004). Although\nthe structural basis of peptidoglycan binding by GNBP is unknown, it\nmight be driven by similar interactions that would be disrupted upon\ninteraction with mirrored peptidoglycan. GNBP appears to process\npeptidoglycan to enhance detection via PGRPs and does not trigger the\nantibacterial pathways by itself (Filipe <em>et al</em>., 2005; Gobert\n<em>et al</em>., 2003; L. Wang <em>et al</em>., 2006). Therefore, the\nexpected inability of mirror peptidoglycan to bind PGRPs suggests that\nthe <em>D. melanogaster</em> immune system would be unable to detect and\nrespond to a mirror bacterial infection."
+                },
+                {
+                  "type": "paragraph",
+                  "html": "Adult flies deficient in PGRPs or GNBP fail to express antimicrobial\npeptides when challenged with a range of Gram-positive and Gram-negative\nbacteria and succumb to bacterial infections at much higher rates than\nwild-type flies (Bischoff <em>et al</em>., 2004; Gobert <em>et al</em>.,\n2003; Gottar <em>et al</em>., 2002; Iatsenko <em>et al</em>., 2016;\nMichel <em>et al</em>., 2001; Rämet <em>et al</em>., 2002; Takehana\n<em>et al</em>., 2004). It is not uncommon for 100% of PGRP or\nGNBP-deficient flies to die from bacterial infections that most\nwild-type flies survive, including infections by bacteria such as <em>E.\ncoli</em> that are not typically <em>D. melanogaster</em> pathogens.\nKnockout of the downstream Imd signaling pathway also results in\nsusceptibility to lethal <em>E. coli</em> infection (Rutschmann <em>et\nal</em>., 2000). Given that otherwise benign infections can kill flies\nunable to detect peptidoglycan, it seems likely that mirror bacteria\ncould be fatal to adult flies.<a class=\"footnote-ref\" data-footnote-ref=\"fn11\" href=\"#fn11\" id=\"fnref11\" role=\"doc-noteref\"><sup>11</sup></a>"
+                },
+                {
+                  "type": "paragraph",
+                  "html": "Unlike other forms of antibacterial immunity in <em>D.\nmelanogaster</em>, production of reactive oxygen species (ROS) within\nthe gut is triggered by uracil (Lee <em>et al</em>., 2013; Lee <em>et\nal</em>., 2015), which is achiral. While uracil is present in all living\ncells, it is not usually released by bacteria except under conditions of\nstress (Rinas <em>et al</em>., 1995), and symbionts within the <em>D.\nmelanogaster</em> gut do not elicit ROS generation (S.-H. Kim & Lee,\n2014). Uracil instead appears to be a specific signature of the\ncatabolism of uridine obtained from the gut by enteric pathogens (E.-K.\nKim <em>et al</em>., 2020). Since mirror bacteria would not possess the\nnecessary enzymes to catabolize this exogenous, chiral molecule, they\nwould be unlikely to trigger ROS production in this way."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "html": "Insects produce a diverse range of AMPs (Vilcinskas, 2013; Wu <em>et\nal</em>., 2018). As in vertebrates (see <a href=\"#mirror-bacteria-would-likely-be-resistant-to-most-innate-immune-responses\">Section\n4.2</a>), many of these AMPs function by disrupting bacterial cell\nmembranes through mechanisms that are insensitive to chirality, and\nshould therefore remain harmful to mirror bacteria. The enantiomers of\ntwo cecropins and of melittin, for example, are both bactericidal (Bland\n<em>et al</em>., 2001; Wade <em>et al</em>., 1990), which implies that\nthese AMPs should retain efficacy against mirror bacteria. Other AMPs,\nhowever, have chiral targets. Enantiomers of apidaecin, droscin,\npyrrhocoricin, and thanatin (found in honeybees, <em>D.\nmelanogaster</em>, European firebugs, and the spined soldier bug) appear\nto be inactive (Bulet <em>et al</em>., 1996; Casteels & Tempst,\n1994; Fehlbaum <em>et al</em>., 1996; Kragol <em>et al</em>., 2001),\nwhile enantiomers of two peptides produced by green bottle flies show\nmarkedly reduced activities against bacteria (Hirsch <em>et al</em>.,\n2019). AMPs are often released in response to pathogen recognition, so\neven those that would retain activity against mirror bacteria may not be\nproduced and deployed at high concentrations, given the anticipated\ndefects in immunological detection."
+            },
+            {
+              "type": "paragraph",
+              "html": "Hemocytes are analogs of the professional phagocytes in vertebrates\n(Browne <em>et al</em>., 2013) and would be expected to suffer from\nsimilar defects to those described in <a href=\"#chapter-4-risks-to-human-health\">Chapter 4</a>. Hemocytes\nrecognize bacteria directly via transmembrane phagocytic receptors or\nindirectly via opsonins (Browne <em>et al</em>., 2013; Lin <em>et\nal</em>., 2020; Melcarne <em>et al</em>., 2019). In <em>Drosophila</em>,\nfor example, the phagocytic receptor Draper binds to lipoteichoic acid\non <em>S. aureus</em> (Hashimoto <em>et al</em>., 2009). Although the\nmolecular ligands for most insect phagocytic receptors are not well\ncharacterized (Eleftherianos, Heryanto <em>et al</em>., 2021), many are\nlikely similar to the vertebrate phagocytic receptors discussed in <a href=\"#chapter-4-risks-to-human-health\">Chapter 4</a> and probably have\nchiral ligands. Recognition of mirror bacteria is therefore likely to be\nimpaired. The processes of particle engulfment, phagosome maturation,\nand bacterial killing are also broadly similar between insects and\nvertebrates (Eleftherianos, Heryanto <em>et al</em>., 2021); thus, if\nmirror bacteria were internalized, they would likely resist the killing\nactivity of antibacterial enzymes and antimicrobial peptides with chiral\nmechanisms. Even if mirror bacteria were killed by pore-forming peptides\nor oxidative damage within the phagosome, hemocytes may be unable to\ndigest the remains efficiently."
+            },
+            {
+              "type": "figure",
+              "id": "figure-6.1-mirror-bacteria-would-likely-evade-d.-melanogaster-immune-mechanisms-due-to-defective-peptidoglycan-recognition",
+              "src": "assets/image7.png",
+              "alt": "",
+              "width": "6.26042in",
+              "height": "5.65391in",
+              "caption": {
+                "id": "figure-6.1-mirror-bacteria-would-likely-evade-d.-melanogaster-immune-mechanisms-due-to-defective-peptidoglycan-recognition",
+                "title": "Figure 6.1: Mirror bacteria would likely evade D. melanogaster immune mechanisms due to defective peptidoglycan recognition",
+                "title_html": "Figure\n6.1: Mirror bacteria would likely evade <em>D. melanogaster</em> immune\nmechanisms due to defective peptidoglycan recognition",
+                "body_html": "<p><strong>A.</strong> Natural-chirality bacteria trigger innate\nimmunity in <em>D. melanogaster</em> primarily through the recognition\nof peptidoglycan and its breakdown products by multiple innate immune\nreceptors. Membrane-bound peptidoglycan recognition protein (PGRP)\nreceptors bind peptidoglycan and signal through the Imd pathway. Soluble\nPGRP molecules bind to peptidoglycan, which indirectly activates the\nToll pathway via membrane-bound Toll receptors. Both pathways induce\nantimicrobial peptides, phagocytosis, autophagy, and other mechanisms of\nanti-bacterial immunity. <strong>B.</strong> Mirror bacteria are\nunlikely to trigger innate immunity in <em>D. melanogaster</em>. Because\npeptidoglycan is a chiral molecule, PGRPs are unlikely to recognize it,\nleading to absent or severely impaired antibacterial immune responses.\nAlthough uracil, which is achiral, can trigger production of reactive\noxygen species (ROS) within the gut (A), it appears to be released only\nby enteric pathogens when they catabolize exogenous uridine, which is\nchiral. Mirror bacteria would be unlikely to catabolize by\nnatural-chirality uridine and would therefore be unlikely to produce\nuracil.</p>"
+              }
+            }
+          ],
+          "subsections": []
+        },
+        {
+          "id": "mirrored-generalist-bacteria-could-plausibly-cause-lethal-infections-in-insects",
+          "level": 3,
+          "title": "Mirrored generalist bacteria could plausibly cause lethal infections in insects",
+          "title_html": "Mirrored\ngeneralist bacteria could plausibly cause lethal infections in\ninsects",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "Despite the substantial physiological differences between mammals and\ninsects, some bacteria are capable of causing opportunistic infections\nin both. Both <em>D. melanogaster</em> and the moth larvae <em>Galleria\nmellonella</em>, for example, are used as infection models for a wide\nrange of human pathogens (Apidianakis & Rahme, 2009; Tsai <em>et\nal</em>., 2016). In most experiments, high inocula are used to kill the\ninsects because immune defenses are otherwise able to clear the\ninfection. Nevertheless, some strains of <em>P. aeruginosa</em> and\n<em>Burkholderia</em> are virulent pathogens in humans as well as <em>D.\nmelanogaster</em> and/or <em>G. mellonella</em> (Jander <em>et al</em>.,\n2000; Mulcahy <em>et al</em>., 2011; Schell <em>et al</em>., 2008).\nOther species that can cause opportunistic infection in both humans and\ninsects include <em>Bacillus thuringiensis</em> (Ghelardi <em>et\nal</em>., 2007), <em>Serratia marcescens</em> (Hejazi & Falkiner,\n1997; Raymann <em>et al</em>., 2018)<em>, Enterococcus faecalis</em>\n(Cabrera <em>et al</em>., 2023), and the plant-pathogen\n<em>Agrobacterium tumefaciens</em> (Gottar <em>et al</em>., 2002;\nSouthern, 1996). The ease with which many bacterial pathogens can cause\ninfection in many different hosts, if given the opportunity, suggests\nthat a sufficiently robust mirror bacterium might likewise be capable of\ninfecting a broad range of hosts. While the infection of\nimmunocompromised animals by natural-chirality bacteria is not a perfect\nanalogy for a mirror bacterial infection, the fact that both\nimmunocompromised <em>D. melanogaster</em> (see <a href=\"#box-6.1-mirror-bacterial-infection-would-likely-be-fatal-to-d.-melanogaster-due-to-defective-peptidoglycan-recognition\">Box\n6.1</a>) and immunocompromised humans (Bartlett <em>et al</em>., 2022)\nare susceptible to a broad and overlapping set of opportunistic\npathogens is concerning."
+            },
+            {
+              "type": "paragraph",
+              "html": "To illustrate this more concretely, consider <em>E. coli</em>, which\nis not only a mammalian commensal but also the most commonly studied\nbacterial species in microbiology and biotechnology. While not\ntraditionally considered an insect pathogen, <em>E. coli</em> can\nsurvive and replicate within insect hosts (Ciesielczuk <em>et al</em>.,\n2015; Kobayashi <em>et al</em>., 1999; Koga <em>et al</em>., 2022;\nRochon <em>et al</em>., 2004; Van den Bergh, 2022) and, if injected into\nadult <em>D. melanogaster</em>, can persist for at least a week without\ncausing obvious harm (Duneau <em>et al</em>., 2017; Troha <em>et\nal</em>., 2018). Most relevantly, infection by <em>E. coli</em> is\ntypically lethal in immunocompromised <em>D. melanogaster</em> that lack\neither a functional peptidoglycan-sensing pattern recognition receptor\n(Rämet <em>et al</em>., 2002) or a functional Imd signaling pathway\n(Rutschmann <em>et al</em>., 2000). While most experiments deliver\nbacteria directly into the fly by needle, an experiment examining oral\nexposure found that knockout of the Imd pathway caused <em>D.\nmelanogaster</em> to be susceptible to oral infection by ROS-resistant\n<em>E. coli</em> (Ryu <em>et al</em>., 2006), demonstrating survival of\n<em>E. coli</em> within the gut, translocation into the hemocoel by\nunknown mechanisms, and subsequent establishment of infection within the\nhemocoel with ROS as the main potential barrier. Because ROS production\nwithin the gut is elicited as a response to uridine catabolism (E.-K.\nKim <em>et al</em>., 2020), it is probably not relevant for mirror\nbacterial infections. Together, these experiments suggest that an\nimmune-evasive generalist like mirror <em>E. coli</em> might be able to\ncause lethal infection in <em>D. melanogaster</em> and, potentially,\nother insect species."
+            },
+            {
+              "type": "paragraph",
+              "html": "Insects are constantly exposed to environmental bacteria and often\ningest them incidentally while consuming other food. Mirror bacteria\nwould be resistant to lytic enzymes, which would facilitate their\nsurvival upon ingestion. Insect guts are often colonized by diverse\nmicroorganisms (Engel & Moran, 2013; Shao <em>et al</em>., 2024).\nThough the molecular mechanisms regulating the insect gut microbiota are\nhighly varied (Schmidt & Engel, 2021), resistance to lytic enzymes\nand evasion of innate immune detection would be major advantages that\nmight facilitate mirror bacterial colonization of the gut in some\nspecies. Insect guts often have alkaline regions (Terra & Ferreira,\n1994), reaching a pH of 9.5 in <em>D. melanogaster</em> (Overend <em>et\nal</em>., 2016) and 12 in some termites (Brune & Kühl, 1996), which\ncould present a substantial barrier to mirrored <em>E. coli</em> or\nother neutrophils. Rapid transit times through the gut may also preclude\ncolonization in some cases (Hammer <em>et al</em>., 2017), especially if\nmirror bacteria prove to be poor adherents (see <a href=\"#mirror-bacteria-could-plausibly-pass-barrier-surfaces-and-translocate-into-the-bloodstream-and-tissues\">Section\n4.4</a>). Mirror bacterial colonization of the insect gut could disrupt\nthe natural microbiome and cause harm to the insect, as is known to\noccur during other forms of dysbiosis (Buchon <em>et al</em>., 2013;\nRaymann & Moran, 2018)."
+            },
+            {
+              "type": "paragraph",
+              "html": "An even more concerning possibility is that mirror bacteria might\ncross the gut epithelium and enter the insect hemolymph. This appears to\nhave occurred, for instance, for <em>E. coli</em> in <em>D.\nmelanogaster</em> lacking a functional Imd pathway (Ryu <em>et al</em>.,\n2006). It is unclear how frequently natural-chirality commensal bacteria\nare translocated through the gut epithelium of insects; specialized\npathogens such as <em>S. marcescens</em> cross the gut epithelium to\ncause systemic infection (Nehme <em>et al</em>., 2007), but likely have\nspecialized adaptations to do so efficiently. Nevertheless, these\nbarriers are likely imperfect and could allow at least low rates of\ntranslocation. Translocation may occur even if mirror bacteria do not\nsuccessfully colonize the gut, though colonization would greatly\nincrease the rate at which it occurs. Mirror bacteria could also enter\ninsects directly through wounds (Subasi <em>et al</em>., 2024)."
+            },
+            {
+              "type": "paragraph",
+              "html": "Insect hemolymph is also somewhat different in composition to\nvertebrate blood. The primary sugar is typically trehalose, rather than\nglucose, though glucose usually remains present at lower concentrations\n(Simpson, 2003). Amino acid concentrations are generally high, with both\nalanine and glycine present at millimolar concentrations (Piyankarage\n<em>et al</em>., 2008; Uchida <em>et al</em>., 1990; Zanotto <em>et\nal</em>., 1996). As described in <a href=\"#chapter-1-introduction\">Chapter 1</a>, <em>E. coli</em> can use\nboth ʟ- and ᴅ-alanine as sole carbon and nitrogen sources, and mutants\nthat can utilize most of the enantiomers of the canonical amino acids\nhave been observed; a strain that can utilize glycine, which is achiral,\nhas also been engineered (Fung <em>et al</em>., 2023). It therefore\nappears plausible that mirrored <em>E. coli</em> could replicate within\ninsect hemolymph even without ᴅ-glucose catabolism."
+            },
+            {
+              "type": "paragraph",
+              "html": "As discussed in <a href=\"#box-1.2-could-natural-chirality-molecules-be-toxic-to-mirror-life\">Box\n1.2</a>, ᴅ-amino acids can be toxic to natural-chirality bacteria, so\nʟ-amino acids could prove similarly toxic to mirror bacteria. Insect\nhemolymph has higher concentrations of free amino acids than internal\ncompartments in most other animals (e.g., human blood), although these\nconcentrations appear to vary widely both within and between species.\nHowever, these concentrations are likely too low to cause growth\ninhibition of a mirror <em>E. coli</em> and other similar mirror\nbacteria. ʟ-Cysteine may be an exception, as it can inhibit <em>E.\ncoli</em> growth at micromolar concentrations in some media (Soutourina\n<em>et al</em>., 2001); it appears plausible, however, that mirror\nbacteria could quickly adapt to the concentrations of ʟ-cysteine found\nin most insects (see <a href=\"#box-1.2-could-natural-chirality-molecules-be-toxic-to-mirror-life\">Box\n1.2</a>). Toxicities to other chiral molecules in hemolymph also appear\nunlikely to prove a significant barrier to infection, given the lack of\nevidence that enantiomers of common metabolites are toxic to bacteria\nand the generally low concentrations of any specific metabolite within\nhemolymph."
+            },
+            {
+              "type": "paragraph",
+              "html": "Given the above evidence, it is plausible that a mirror <em>E.\ncoli</em> or similar mirror generalist bacteria could replicate within\nmany insects, which would likely be unable to mount an effective immune\nresponse. Systemic infections by <em>E. coli</em> and other typically\nnon-pathogenic bacteria are often lethal to immunocompromised <em>D.\nmelanogaster</em> (Gottar <em>et al</em>., 2002; Lemaitre <em>et\nal</em>., 1996; Michel <em>et al</em>., 2001; Rämet <em>et al</em>.,\n2002; Rutschmann <em>et al</em>., 2000; Schneider <em>et al</em>.,\n2007), and bacterial loads during infection can reach into the hundreds\nof millions of cells, or roughly 1% of the total fly mass (Duneau <em>et\nal</em>., 2017; Lemaitre <em>et al</em>., 1996). Furthermore, bacterial\ninfections in other insects often result in very high pathogen loads (Hu\n& Webster, 1998; Keshavarz <em>et al</em>., 2023; S. Singh <em>et\nal</em>., 2014). Therefore, despite a lack of toxins or deleterious\nimmunological responses that hasten host death during natural infections\n(Shirasu-Hiza & Schneider, 2007), mirror bacteria may replicate to\nhigh titers and prove fatal by depleting critical nutrients, producing\nmetabolic waste products, or creating physical obstructions in the\nhemolymphatic system."
+            }
+          ],
+          "subsections": []
+        },
+        {
+          "id": "insect-infection-with-mirror-bacteria-could-cause-ecological-damage-and-increase-spread-to-vertebrates-and-plants",
+          "level": 3,
+          "title": "Insect infection with mirror bacteria could cause ecological damage and increase spread to vertebrates and plants",
+          "title_html": "Insect\ninfection with mirror bacteria could cause ecological damage and\nincrease spread to vertebrates and plants",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "Insects are among the most abundant terrestrial animals, with a\nbiomass estimated to be 20-fold higher than that of wild vertebrates\n(Bar-On <em>et al</em>., 2018; Rosenberg <em>et al</em>., 2023). They\nplay diverse ecological roles, including pollination, seed dispersal,\nand nutrient recycling (Yang & Gratton, 2014; Noriega <em>et\nal</em>., 2018), and modern declines in insect populations are already\nan important environmental concern (Wagner, 2020). Even if only a small\nfraction of insects were susceptible to a mirror bacterial infection,\nthe ensuing ecological damage could be significant (see <a href=\"#chapter-8-environmental-survival-and-spread\">Chapter 8</a>)."
+            },
+            {
+              "type": "paragraph",
+              "html": "Insects may also spread mirror bacteria to and between other\nsusceptible organisms. Mosquitoes, flies, and fleas, are known to act as\nvectors for bacterial infection in humans and other vertebrates\n(Berenger & Parola, 2017; Laroche <em>et al</em>., 2018). Mirror\nbacteria might enter insects that feed on living vertebrates, cadavers,\nor fecal matter. The insect could then transmit mirror bacteria to other\nvertebrates through defecation or regurgitation onto food or into wounds\nand scratches on an animal’s exterior, through consumption of the insect\nby a predator, or through direct injection while feeding off the\nvertebrate. All but the last mechanism—which requires invasion of the\ninsect salivary glands (Mueller <em>et al</em>., 2010)—are plausible\neven if the mirror bacteria were unable to infect the insect itself,\nthough infection could increase the inoculum that is ultimately\ndelivered to vertebrates. Whether infected by or merely carriers of\nmirror bacteria, insects could contribute substantially to the\nenvironmental dispersal of mirror bacteria, which we discuss further in\n<a href=\"#invasive-mirror-bacteria-could-rapidly-evolve-and-diversify\">Section\n8.4</a>."
+            },
+            {
+              "type": "paragraph",
+              "html": "Bacterial plant pathogens can also be spread by insects (Eigenbrode\n<em>et al</em>., 2018; W. Huang <em>et al</em>., 2020), especially\nhemipteran insects which have piercing mouthparts for extracting sap.\nAgain, this requires invasion of the salivary glands, which would likely\nrequire the insect itself to be infected by mirror bacteria. We discuss\nthe potential infection of plants by mirror bacteria in <a href=\"#chapter-7-plant-infection\">Chapter 7</a>."
+            }
+          ],
+          "subsections": []
+        },
+        {
+          "id": "mirror-bacteria-ingested-by-c.-elegans-could-cause-fatal-infections-if-able-to-persist-within-the-worm-intestine",
+          "level": 3,
+          "title": "Mirror bacteria ingested by C. elegans could cause fatal infections if able to persist within the worm intestine",
+          "title_html": "Mirror\nbacteria ingested by <em>C. elegans</em> could cause fatal infections if\nable to persist within the worm intestine",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "Free-living nematode worms are the most abundant animals in soil\necosystems (van den Hoogen <em>et al</em>., 2019), where they play an\nessential ecological role as predators of microbes, including bacteria.\nHere we focus on the model nematode <em>C. elegans</em> because it is\nthe most well-studied nematode. Bacteria are the primary prey of <em>C.\nelegans</em> (Schulenburg & Félix, 2017), and most pathogenic\nbacteria infect the worm intestine following ingestion (Ermolaeva &\nSchumacher, 2014)."
+            },
+            {
+              "type": "paragraph",
+              "html": "The first defense of <em>C. elegans</em> against pathogenic bacteria\nis to simply avoid eating them. <em>C. elegans</em> recognizes a large\nnumber of chemical cues as attractive or repellent, and these are mostly\nachiral, volatile molecules (Ferkey <em>et al</em>., 2021; Worthy <em>et\nal</em>., 2018). By contrast, most of the water-soluble attractants are\nchiral, including the amino acids lysine, histidine, cysteine, and\nmethionine (Ward, 1973) as well as biotin (Bargmann & Horvitz,\n1991), which could reduce the attractiveness of mirror bacteria as prey.\nTo a nematode, mirror bacteria might “smell” similar to other bacteria,\nbut they may not “taste” the same. Unless they emit a repellent\npathogen-associated molecule such as phenazine-1-carboxamide (Meisel\n<em>et al</em>., 2014) or dodecanoic acid (A. Tran <em>et al</em>.,\n2017), mirror bacteria may be recognized through their volatile\ncompounds as potential prey by <em>C. elegans</em>."
+            },
+            {
+              "type": "paragraph",
+              "html": "<em>C. elegans</em> feeds by drawing bacteria suspended in liquid\ninto the pharynx and then trapping them while expelling the liquid\n(Fang-Yen <em>et al</em>., 2009). The nematode has no difficulty\ningesting bacterial-sized polystyrene beads, albeit at lower rates than\nprey (Kiyama <em>et al</em>., 2012). This strongly suggests that\nfiltration is primarily dependent on particle size and that nematodes\nwould also ingest mirror bacteria, though plausibly at a reduced rate\ndue to the absence of chiral signals."
+            },
+            {
+              "type": "paragraph",
+              "html": "Food particles are first processed mechanically by the pharyngeal\ngrinder (Avery & You, 2012), then pass to the acid intestinal lumen\nwhere they are enzymatically digested (Dimov & Maduro, 2019). These\nmechanisms are not perfect, as many natural bacteria are capable of\ncolonizing or infecting <em>C. elegans</em> (Garsin <em>et al</em>.,\n2001; Merkx-Jacques <em>et al</em>., 2013; F. Zhang <em>et al</em>.,\n2017). This even includes laboratory <em>E. coli</em> MG1655, in which\nrestoration of O antigen biosynthesis appears to provide mechanical\nresistance to pharyngeal grinding (Browning <em>et al</em>., 2013). A\nmirror bacterium would be resistant to antibacterial and digestive\nenzymes, which would greatly reduce the efficacy of normal digestive\nmechanisms. The lysozyme ILYS-3, for example, appears to be required in\nthe pharynx for the effective disruption of live bacteria (Gravato-Nobre\n<em>et al</em>., 2016), suggesting that many mirror bacteria would\nsurvive the pharyngeal grinder."
+            },
+            {
+              "type": "paragraph",
+              "html": "While mirror bacterial resistance to digestive enzymes might allow\nthem to survive nematode ingestion, it is not clear that this would\nsuffice to cause infection. Mirror bacteria would likely lack adhesins\ncapable of allowing tight adhesion to the intestinal tract, and, given\nthat passage through the intestines can be very rapid (Ghafouri &\nMcGhee, 2007), mirror bacteria may simply fail to adhere and therefore\nbe expelled by the nematode. If, however, adhesion is not needed for\ninfection, or if non-specific adhesion is sufficient to allow\npersistence within the gut, then it appears plausible that mirror\nbacterial infection would result, particularly given that the nematode\nis so readily colonized and infected by natural bacteria."
+            },
+            {
+              "type": "paragraph",
+              "html": "Unlike vertebrates or insects, <em>C. elegans</em> does not appear to\nrecognize the highly conserved bacterial MAMPs detected by the PRRs of\nother animals; instead, infections appear to be recognized through a\nmixture of more specialized pathogen and host damage signals (T. D. Tran\n& Luallen, 2024). While the signals involved are not well\nunderstood, expression patterns for different lysozymes and\nantimicrobial peptides vary greatly depending on the bacteria that\n<em>C. elegans</em> is exposed to, with much higher expression during\nexposure to known pathogens as compared to non-pathogens such as\n<em>Bacillus megaterium</em> or <em>E. coli</em> (Dierking <em>et\nal</em>., 2016), suggesting that the signals are highly specific. Such\nsignals are indeed highly specific in general, and are either molecules\nassociated with specific pathogens—for instance, the toxic metabolite\nphenazine-1-carboxamide produced by pathogenic strains of <em>P.\naeruginosa</em> (Peterson <em>et al</em>., 2023)—or the effects of\ntoxins that cause specific forms of cellular inhibition (Dunbar <em>et\nal</em>., 2012; Liu <em>et al</em>., 2014; McEwan <em>et al</em>., 2012;\nMelo & Ruvkun, 2012). Because mirror bacteria would, in general,\nproduce neither pathogen-specific signals nor toxins, they are unlikely\nto trigger any of these innate immune responses."
+            },
+            {
+              "type": "paragraph",
+              "html": "Infection of <em>C. elegans</em> by O antigen restored <em>E.\ncoli</em> MG1655, which likely lacks specialized means to cause host\ndamage, may provide a reasonable model for a mirror bacterial infection.\nIn this case, bacterial growth causes gut distension, leading to rupture\nand nematode death (Browning <em>et al</em>., 2013). Similar overgrowth\nof bacteria has been observed in response to infection by <em>E.\nfaecalis</em> (Garsin <em>et al</em>., 2001), <em>Salmonella\ntyphimurium</em> (Aballay <em>et al</em>., 2000), and <em>S.\nmarcescens</em> (Mallo <em>et al</em>., 2002), and appears to be the\ntypical end result of unchecked bacterial replication in the absence of\nother virulence factors."
+            },
+            {
+              "type": "paragraph",
+              "html": "Intestinal bloating and associated tissue damage eventually trigger\nan innate immune response (Radeke & Herman, 2021; J. Singh &\nAballay, 2019), though only at a late stage of infection. Notably, the\nimmune response does not appear sufficient to prevent nematode death\nduring infection with O antigen restored <em>E. coli</em> MG1655, or in\nsimilar bacterial infections. A mirror bacterium would be additionally\nresistant to many of the downstream antibacterial effectors, including\nlysozymes (Dierking <em>et al</em>., 2016) and C-type lectins (Pees\n<em>et al</em>., 2021). Membrane-disrupting antimicrobial peptides such\nas caenopores (Roeder <em>et al</em>., 2010) may still function—the\nᴅ‐enantiomers of similar peptides in other animals often retain efficacy\nagainst bacteria (Wei <em>et al</em>., 2009)—but overall, it seems\nunlikely that <em>C. elegans</em> could successfully control a mirror\nbacterial infection."
+            },
+            {
+              "type": "paragraph",
+              "html": "<em>C. elegans</em> can learn to avoid both pathogens (J. Singh &\nAballay, 2019; Y. Zhang <em>et al</em>., 2005) and low-quality food\n(Shtonda & Avery, 2006). A nematode that encounters mirror bacteria\nand survives—either because the mirror bacteria cannot successfully\ncolonize the gut or because the immune system successfully cleared the\ninfection—could plausibly learn to avoid consuming mirror bacteria.\nAvoidance behavior is unlikely to be perfect, but it could greatly\nreduce ingestion of mirror bacteria."
+            },
+            {
+              "type": "paragraph",
+              "html": "In summary, <em>C. elegans</em> exposed to mirror bacteria could\ningest them at similar or somewhat lower rates compared to natural\nbacteria. Mirror bacteria could be resistant to normal digestive\nprocesses and may simply pass through unharmed. If mirror bacteria are\nable to adhere to or otherwise persist within the intestines, they could\nprobably cause a lethal infection. Avoidance behavior may be somewhat\nprotective against infection if the infectious dose is high and <em>C.\nelegans</em> can learn that mirror bacteria are poor food items before\ninfection occurs."
+            }
+          ],
+          "subsections": []
+        },
+        {
+          "id": "substantial-uncertainty-remains-regarding-the-immune-responses-of-other-invertebrates",
+          "level": 3,
+          "title": "Substantial uncertainty remains regarding the immune responses of other invertebrates",
+          "title_html": "Substantial\nuncertainty remains regarding the immune responses of other\ninvertebrates",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "Beyond insects and nematodes, relatively little is understood about\nthe immune systems of most invertebrates. In many invertebrate species,\ninnate immune receptors have expanded dramatically (<a href=\"#figure-6.2-the-number-of-prr-genes-varies-widely-across-animal-species\">Figure\n6.2</a>). Unfortunately, nearly all invertebrate innate immune receptors\nremain uncharacterized"
+            },
+            {
+              "type": "figure",
+              "id": "figure-6.2-the-number-of-prr-genes-varies-widely-across-animal-species",
+              "src": "assets/image12.png",
+              "alt": "",
+              "width": "6.09426in",
+              "height": "4.61301in",
+              "caption": {
+                "id": "figure-6.2-the-number-of-prr-genes-varies-widely-across-animal-species",
+                "title": "Figure 6.2: The number of PRR genes varies widely across animal species",
+                "title_html": "Figure\n6.2: The number of PRR genes varies widely across animal species",
+                "body_html": "<p>Waffle plot displaying the number of total known genes for Toll-like\nreceptors (TLRs), nucleotide-binding domain and leucine-rich\nrepeat-containing proteins (NLR), and scavenger receptor cysteine-rich\nreceptors (SRCRs across select animal species. Each square represents\none gene. The total number of genes is displayed to the right of each\nplot. Some PRR gene families have expanded dramatically in certain\nspecies. Although nearly all characterized PRRs recognize chiral\nligands, most of the proteins encoded by these expanded gene families\nremain uncharacterized. TLR gene numbers are from (Saco <em>et al</em>.,\n2023). SCSR gene numbers are from (Peng <em>et al</em>., 2024). NLR gene\nnumbers are from (Buckley &amp; Rast, 2015), except for <em>Mus\nmusculus</em> (Sundaram <em>et al</em>., 2024), <em>Danio rerio</em>\n(Howe <em>et al</em>., 2016), <em>Mytilus edulis</em> (Zhu <em>et\nal</em>., 2022), and <em>Crassostrea gigas</em> (L. Zhang <em>et\nal</em>., 2015).</p>"
+              }
+            },
+            {
+              "type": "paragraph",
+              "html": "at a molecular level. It is plausible that some invertebrates might\nhave innate immune receptors that can recognize achiral components of\npathogens. Moreover, the sheer number of immune receptors in some\ninvertebrate species could increase the likelihood that one or more\nreceptors would cross-react with mirror molecules, thus enabling those\ninvertebrates to recognize mirror bacteria to some degree. Damage\ndetection systems such as those found in <em>C. elegans</em> may also\noffer some protection. However, it seems likely that many invertebrates\nwould have difficulty recognizing and responding to infecting mirror\nbacteria."
+            }
+          ],
+          "subsections": []
+        }
+      ]
+    }
+  ],
+  "kind": "chapter",
+  "number": 6
+}

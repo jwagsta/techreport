@@ -1,0 +1,547 @@
+{
+  "schemaVersion": "1.0",
+  "meta": {
+    "title": "Technical Report on Mirror Bacteria: Feasibility and Risks",
+    "publishDate": "December, 2024",
+    "license": "CC BY-NC-SA 4.0",
+    "doi": "10.1126/science.ads9158",
+    "contact": "technical-report@mbdialogues.org"
+  },
+  "authors": [
+    {
+      "name": "Katarzyna P. Adamala",
+      "affiliation": "University of Minnesota"
+    },
+    {
+      "name": "Deepa Agashe",
+      "affiliation": "National Centre for Biological Sciences, Bengaluru"
+    },
+    {
+      "name": "Damon J. Binder",
+      "affiliation": "Open Philanthropy"
+    },
+    {
+      "name": "Yizhi Cai",
+      "affiliation": "University of Manchester"
+    },
+    {
+      "name": "Vaughn S. Cooper",
+      "affiliation": "University of Pittsburgh"
+    },
+    {
+      "name": "Ryan K. Duncombe",
+      "affiliation": "Mirror Biology Dialogues Fund"
+    },
+    {
+      "name": "Kevin M. Esvelt",
+      "affiliation": "Massachusetts Institute of Technology"
+    },
+    {
+      "name": "John I. Glass",
+      "affiliation": "J. Craig Venter Institute"
+    },
+    {
+      "name": "Timothy W. Hand",
+      "affiliation": "University of Pittsburgh"
+    },
+    {
+      "name": "Thomas V. Inglesby",
+      "affiliation": "Johns Hopkins Center for Health Security"
+    },
+    {
+      "name": "Farren J. Isaacs",
+      "affiliation": "Yale University"
+    },
+    {
+      "name": "Jonathan D. G. Jones",
+      "affiliation": "Sainsbury Laboratory, University of East Anglia"
+    },
+    {
+      "name": "Richard E. Lenski",
+      "affiliation": "Michigan State University"
+    },
+    {
+      "name": "Gregory Lewis",
+      "affiliation": "Massachusetts Institute of Technology"
+    },
+    {
+      "name": "Ruslan Medzhitov",
+      "affiliation": "Yale University"
+    },
+    {
+      "name": "Matthew L. Nicotra",
+      "affiliation": "Johns Hopkins Center for Health Security"
+    },
+    {
+      "name": "Sebastian B. Oehm",
+      "affiliation": "University of Cambridge"
+    },
+    {
+      "name": "Jaspreet Pannu",
+      "affiliation": "Johns Hopkins Center for Health Security and Stanford University"
+    },
+    {
+      "name": "David A. Relman",
+      "affiliation": "Stanford University"
+    },
+    {
+      "name": "Hiroaki Suga",
+      "affiliation": "University of Tokyo"
+    },
+    {
+      "name": "Johanna M. Sweere",
+      "affiliation": "Mirror Biology Dialogues Fund"
+    },
+    {
+      "name": "Jack W. Szostak",
+      "affiliation": "University of Chicago"
+    },
+    {
+      "name": "Nicholas J. Talbot",
+      "affiliation": "Sainsbury Laboratory, University of East Anglia"
+    },
+    {
+      "name": "Brian Wang",
+      "affiliation": "Panoplia Laboratories"
+    }
+  ],
+  "reviewers": [
+    {
+      "name": "Rocco Casagrande",
+      "affiliation": "Gryphon Scientific"
+    },
+    {
+      "name": "Matthew Wook Chang",
+      "affiliation": "National University of Singapore"
+    },
+    {
+      "name": "George M. Church",
+      "affiliation": "Harvard University"
+    },
+    {
+      "name": "Gitta L. Coaker",
+      "affiliation": "University of California, Davis"
+    },
+    {
+      "name": "Jeffery L. Dangl",
+      "affiliation": "University of North Carolina at Chapel Hill"
+    },
+    {
+      "name": "Drew Endy",
+      "affiliation": "Stanford University"
+    },
+    {
+      "name": "Jeff Gore",
+      "affiliation": "Massachusetts Institute of Technology"
+    },
+    {
+      "name": "Chuan He",
+      "affiliation": "University of Chicago"
+    },
+    {
+      "name": "Sheng Yang He",
+      "affiliation": "Duke University"
+    },
+    {
+      "name": "Kenya Honda",
+      "affiliation": "Keio University"
+    },
+    {
+      "name": "Wilhelm T. S. Huck",
+      "affiliation": "Radboud University"
+    },
+    {
+      "name": "Jonathan C. Kagan",
+      "affiliation": "Harvard University"
+    },
+    {
+      "name": "Michael S. Kay",
+      "affiliation": "University of Utah"
+    },
+    {
+      "name": "Simon A. Levin",
+      "affiliation": "Princeton University"
+    },
+    {
+      "name": "Robert D. Miller",
+      "affiliation": "University of New Mexico"
+    },
+    {
+      "name": "John H. Rex",
+      "affiliation": "AMR.Solutions"
+    },
+    {
+      "name": "Daniel Simberloff",
+      "affiliation": "University of Tennessee, Knoxville"
+    },
+    {
+      "name": "James M. Tiedje",
+      "affiliation": "Michigan State University"
+    },
+    {
+      "name": "Paul E. Turner",
+      "affiliation": "Yale University"
+    },
+    {
+      "name": "J. Craig Venter",
+      "affiliation": "J. Craig Venter Institute"
+    }
+  ],
+  "toc": [
+    {
+      "id": "abstract",
+      "kind": "frontmatter",
+      "number": null,
+      "title": "Abstract",
+      "subsections": []
+    },
+    {
+      "id": "report-authors",
+      "kind": "frontmatter",
+      "number": null,
+      "title": "Report Authors",
+      "subsections": []
+    },
+    {
+      "id": "review",
+      "kind": "frontmatter",
+      "number": null,
+      "title": "Review",
+      "subsections": []
+    },
+    {
+      "id": "about-this-report",
+      "kind": "frontmatter",
+      "number": null,
+      "title": "About this Report",
+      "subsections": [
+        {
+          "id": "rationale-for-public-release",
+          "title": "Rationale for Public Release",
+          "level": 2
+        },
+        {
+          "id": "content-decisions",
+          "title": "Content Decisions",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "id": "table-of-contents",
+      "kind": "backmatter",
+      "number": null,
+      "title": "Table of Contents",
+      "subsections": []
+    },
+    {
+      "id": "boxes-figures-and-tables",
+      "kind": "backmatter",
+      "number": null,
+      "title": "Boxes, Figures, and Tables",
+      "subsections": []
+    },
+    {
+      "id": "summary",
+      "kind": "frontmatter",
+      "number": null,
+      "title": "Summary",
+      "subsections": [
+        {
+          "id": "robust-mirror-bacteria-could-be-developed-in-the-coming-years-and-would-be-vulnerable-to-accidental-or-deliberate-misuse",
+          "title": "Robust mirror bacteria could be developed in the coming years and would be vulnerable to accidental or deliberate misuse",
+          "level": 3
+        },
+        {
+          "id": "mirror-bacteria-could-evade-many-aspects-of-human-immunity-and-potentially-cause-life-threatening-infection",
+          "title": "Mirror bacteria could evade many aspects of human immunity and potentially cause life-threatening infection",
+          "level": 3
+        },
+        {
+          "id": "mirror-bacteria-could-potentially-infect-many-other-animals-and-plants-and-colonize-some-external-environments-causing-irreversible-ecological-disruption",
+          "title": "Mirror bacteria could potentially infect many other animals and plants and colonize some external environments, causing irreversible ecological disruption",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "id": "chapter-1-introduction",
+      "kind": "chapter",
+      "number": 1,
+      "title": "Introduction",
+      "subsections": [
+        {
+          "id": "mirror-bacteria-could-plausibly-be-created-in-the-next-one-to-few-decades",
+          "title": "Mirror bacteria could plausibly be created in the next one to few decades",
+          "level": 3
+        },
+        {
+          "id": "the-creation-of-any-mirror-bacterium-could-enable-the-creation-of-robust-mirror-bacteria",
+          "title": "The creation of any mirror bacterium could enable the creation of robust mirror bacteria",
+          "level": 3
+        },
+        {
+          "id": "mirror-bacteria-could-acquire-nutrients-in-natural-environments",
+          "title": "Mirror bacteria could acquire nutrients in natural environments",
+          "level": 3
+        },
+        {
+          "id": "mirror-bacteria-could-be-innately-resistant-to-many-immunological-mechanisms",
+          "title": "Mirror bacteria could be innately resistant to many immunological mechanisms",
+          "level": 3
+        },
+        {
+          "id": "mirror-bacteria-could-be-innately-resistant-to-most-forms-of-predation",
+          "title": "Mirror bacteria could be innately resistant to most forms of predation",
+          "level": 3
+        },
+        {
+          "id": "invasive-mirror-bacteria-could-spread-and-rapidly-adapt-to-new-environments-causing-severe-ecological-harms",
+          "title": "Invasive mirror bacteria could spread and rapidly adapt to new environments, causing severe ecological harms",
+          "level": 3
+        },
+        {
+          "id": "creating-biocontained-mirror-bacteria-may-be-feasible-but-securing-them-against-misuse-appears-exceptionally-challenging",
+          "title": "Creating biocontained mirror bacteria may be feasible, but securing them against misuse appears exceptionally challenging",
+          "level": 3
+        },
+        {
+          "id": "countermeasures-could-mitigate-some-harms-but-could-not-prevent-irreversible-environmental-damage",
+          "title": "Countermeasures could mitigate some harms, but could not prevent irreversible environmental damage",
+          "level": 3
+        }
+      ]
+    },
+    {
+      "id": "chapter-2-pathways-to-mirror-life",
+      "kind": "chapter",
+      "number": 2,
+      "title": "Pathways to Mirror Life",
+      "subsections": [
+        {
+          "id": "advances-in-chemistry-permit-the-synthesis-of-mirror-biomolecules-with-diverse-applications",
+          "title": "2.1 Advances in chemistry permit the synthesis of mirror biomolecules with diverse applications",
+          "level": 2
+        },
+        {
+          "id": "progress-in-synthetic-biology-could-allow-the-assembly-of-a-mirror-bacterium-from-non-living-mirror-components",
+          "title": "2.2 Progress in synthetic biology could allow the assembly of a mirror bacterium from non-living mirror components",
+          "level": 2
+        },
+        {
+          "id": "a-natural-chirality-bacterium-might-be-converted-into-a-mirror-bacterium-in-a-stepwise-fashion",
+          "title": "2.3 A natural-chirality bacterium might be converted into a mirror bacterium in a stepwise fashion",
+          "level": 2
+        },
+        {
+          "id": "other-approaches-to-creating-mirror-bacteria-are-plausible",
+          "title": "2.4 Other approaches to creating mirror bacteria are plausible",
+          "level": 2
+        },
+        {
+          "id": "the-feasibility-of-mirror-life-will-increase-as-related-technologies-advance",
+          "title": "2.5 The feasibility of mirror life will increase as related technologies advance",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "id": "chapter-3-engineering-biosafety-and-biosecurity-of-mirror-bacteria",
+      "kind": "chapter",
+      "number": 3,
+      "title": "Engineering, Biosafety, and Biosecurity of Mirror Bacteria",
+      "subsections": [
+        {
+          "id": "the-creation-of-any-mirror-bacterium-could-enable-the-generation-of-diverse-mirror-bacterial-strains-and-species-and-their-modification-by-routine-genetic-engineering",
+          "title": "3.1 The creation of any mirror bacterium could enable the generation of diverse mirror bacterial strains and species and their modification by routine genetic engineering",
+          "level": 2
+        },
+        {
+          "id": "biocontainment-approaches-might-reduce-accident-risk-but-they-would-face-challenges",
+          "title": "3.2 Biocontainment approaches might reduce accident risk, but they would face challenges",
+          "level": 2
+        },
+        {
+          "id": "creating-robustly-biosecure-mirror-bacteria-is-not-feasible",
+          "title": "3.3 Creating robustly biosecure mirror bacteria is not feasible",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "id": "chapter-4-risks-to-human-health",
+      "kind": "chapter",
+      "number": 4,
+      "title": "Risks to Human Health",
+      "subsections": [
+        {
+          "id": "innate-immune-detection-of-mirror-bacteria-could-be-significantly-impaired",
+          "title": "4.1 Innate immune detection of mirror bacteria could be significantly impaired",
+          "level": 2
+        },
+        {
+          "id": "mirror-bacteria-would-likely-be-resistant-to-most-innate-immune-responses",
+          "title": "4.2 Mirror bacteria would likely be resistant to most innate immune responses",
+          "level": 2
+        },
+        {
+          "id": "adaptive-immunity-to-mirror-bacteria-would-likely-be-impaired",
+          "title": "4.3 Adaptive immunity to mirror bacteria would likely be impaired",
+          "level": 2
+        },
+        {
+          "id": "mirror-bacteria-could-plausibly-pass-barrier-surfaces-and-translocate-into-the-bloodstream-and-tissues",
+          "title": "4.4 Mirror bacteria could plausibly pass barrier surfaces and translocate into the bloodstream and tissues",
+          "level": 2
+        },
+        {
+          "id": "mirror-bacteria-could-plausibly-replicate-in-blood-and-cause-lethal-systemic-infection",
+          "title": "4.5 Mirror bacteria could plausibly replicate in blood and cause lethal systemic infection",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "id": "chapter-5-medical-countermeasures",
+      "kind": "chapter",
+      "number": 5,
+      "title": "Medical Countermeasures",
+      "subsections": [
+        {
+          "id": "new-antimirror-compounds-could-be-developed-to-target-mirror-bacteria-but-most-existing-antibiotics-would-not-function",
+          "title": "5.1 New antimirror compounds could be developed to target mirror bacteria, but most existing antibiotics would not function",
+          "level": 2
+        },
+        {
+          "id": "conjugate-vaccines-could-plausibly-be-developed-against-mirror-bacteria",
+          "title": "5.2 Conjugate vaccines could plausibly be developed against mirror bacteria",
+          "level": 2
+        },
+        {
+          "id": "the-efficacy-of-other-countermeasures-against-mirror-bacterial-infection-is-unclear",
+          "title": "5.3 The efficacy of other countermeasures against mirror bacterial infection is unclear",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "id": "chapter-6-animal-infection",
+      "kind": "chapter",
+      "number": 6,
+      "title": "Animal Infection",
+      "subsections": [
+        {
+          "id": "vertebrate-susceptibility-to-mirror-bacterial-infection-would-likely-be-similar-to-that-of-humans",
+          "title": "6.1 Vertebrate susceptibility to mirror bacterial infection would likely be similar to that of humans",
+          "level": 2
+        },
+        {
+          "id": "many-invertebrates-would-likely-be-susceptible-to-mirror-bacteria",
+          "title": "6.2 Many invertebrates would likely be susceptible to mirror bacteria",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "id": "chapter-7-plant-infection",
+      "kind": "chapter",
+      "number": 7,
+      "title": "Plant Infection",
+      "subsections": [
+        {
+          "id": "mirror-bacteria-are-likely-to-evade-plant-innate-immunity",
+          "title": "7.1 Mirror bacteria are likely to evade plant innate immunity",
+          "level": 2
+        },
+        {
+          "id": "mirror-bacteria-could-plausibly-establish-chronic-local-infections-within-leaves-and-roots",
+          "title": "7.2 Mirror bacteria could plausibly establish chronic local infections within leaves and roots",
+          "level": 2
+        },
+        {
+          "id": "the-extent-to-which-mirror-bacteria-could-spread-through-and-colonize-plant-vascular-tissue-is-unclear",
+          "title": "7.3 The extent to which mirror bacteria could spread through and colonize plant vascular tissue is unclear",
+          "level": 2
+        },
+        {
+          "id": "countermeasures-for-agricultural-plants",
+          "title": "7.4 Countermeasures for agricultural plants",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "id": "chapter-8-environmental-survival-and-spread",
+      "kind": "chapter",
+      "number": 8,
+      "title": "Environmental Survival and Spread",
+      "subsections": [
+        {
+          "id": "mirror-bacteria-would-be-inherently-resistant-to-many-biological-controls",
+          "title": "8.1 Mirror bacteria would be inherently resistant to many biological controls",
+          "level": 2
+        },
+        {
+          "id": "mirror-bacteria-could-colonize-natural-environments-outside-of-multicellular-hosts",
+          "title": "8.2 Mirror bacteria could colonize natural environments outside of multicellular hosts",
+          "level": 2
+        },
+        {
+          "id": "invasive-mirror-bacteria-could-rapidly-disperse-through-the-environment",
+          "title": "8.3 Invasive mirror bacteria could rapidly disperse through the environment",
+          "level": 2
+        },
+        {
+          "id": "invasive-mirror-bacteria-could-rapidly-evolve-and-diversify",
+          "title": "8.4 Invasive mirror bacteria could rapidly evolve and diversify",
+          "level": 2
+        },
+        {
+          "id": "invasive-mirror-bacteria-could-cause-irreversible-ecological-harm",
+          "title": "8.5 Invasive mirror bacteria could cause irreversible ecological harm",
+          "level": 2
+        },
+        {
+          "id": "countermeasures-to-invasive-mirror-bacteria-might-lessen-but-would-not-halt-the-ecological-damage",
+          "title": "8.6 Countermeasures to invasive mirror bacteria might lessen but would not halt the ecological damage",
+          "level": 2
+        }
+      ]
+    },
+    {
+      "id": "contributions-and-acknowledgments",
+      "kind": "backmatter",
+      "number": null,
+      "title": "Contributions and Acknowledgments",
+      "subsections": []
+    }
+  ],
+  "assets": [
+    "image1.png",
+    "image10.png",
+    "image11.png",
+    "image12.png",
+    "image13.png",
+    "image14.png",
+    "image15.png",
+    "image16.png",
+    "image17.png",
+    "image18.png",
+    "image19.png",
+    "image2.png",
+    "image20.png",
+    "image21.png",
+    "image22.png",
+    "image23.png",
+    "image24.png",
+    "image25.png",
+    "image26.png",
+    "image3.png",
+    "image4.png",
+    "image5.png",
+    "image6.png",
+    "image7.png",
+    "image8.png",
+    "image9.png"
+  ]
+}

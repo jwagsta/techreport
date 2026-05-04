@@ -1,0 +1,28 @@
+# Generated outputs
+site/
+
+# Source documents (not redistributed publicly)
+*.docx
+*.pdf
+~$*
+
+# Parser local state
+parser/intermediates/
+parser/.venv/
+
+# Internal experiments
+archive/
+.superpowers/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor / dev tooling
+.vscode/
+.idea/

@@ -1,0 +1,622 @@
+{
+  "schemaVersion": "1.0",
+  "generatedAt": "2026-05-04T01:32:19.649Z",
+  "selections": {
+    "Katarzyna P. Adamala": {
+      "kind": "author",
+      "affiliation": "University of Minnesota",
+      "src": "https://cbs.umn.edu/sites/cbs.umn.edu/files/styles/cbs_portrait_directory_page/public/2025-03/294a8246-290-360_1.png?itok=9fiHbzq2",
+      "source": "https://cbs.umn.edu/directory/kate-adamala",
+      "license": "university faculty page (UMN College of Biological Sciences)",
+      "note": "head & shoulders, professional",
+      "crop": {
+        "x": 0,
+        "y": 0.0344970703125,
+        "size": 0.7069498697916667
+      },
+      "status": "picked"
+    },
+    "Deepa Agashe": {
+      "kind": "author",
+      "affiliation": "National Centre for Biological Sciences, Bengaluru",
+      "src": "https://images.squarespace-cdn.com/content/v1/680fbbbf62893f2695a09a6d/1e6e968c-f59f-453d-9a45-74fb3df76dfe/DeepaAgashe.jpg?format=750w",
+      "source": "https://images.squarespace-cdn.com/content/v1/680fbbbf62893f2695a09a6d/1e6e968c-f59f-453d-9a45-74fb3df76dfe/DeepaAgashe.jpg?format=750w",
+      "license": "user-provided",
+      "note": "pasted by you",
+      "crop": {
+        "x": 0.15675455729166668,
+        "y": 0.19758255471649816,
+        "size": 0.6535563151041667
+      },
+      "status": "picked"
+    },
+    "Damon J. Binder": {
+      "kind": "author",
+      "affiliation": "Open Philanthropy",
+      "src": "https://coefficientgiving.org/wp-content/uploads/PXL_20210810_154847828.PORTRAIT-Cropped.jpg",
+      "source": "https://coefficientgiving.org/wp-content/uploads/PXL_20210810_154847828.PORTRAIT-Cropped.jpg",
+      "license": "user-provided",
+      "note": "pasted by you",
+      "crop": {
+        "x": 0.0647216796875,
+        "y": 0.0963044357933219,
+        "size": 0.8989013671875
+      },
+      "status": "picked"
+    },
+    "Yizhi Cai": {
+      "kind": "author",
+      "affiliation": "University of Manchester",
+      "src": "https://www.cailab.org/wp-content/uploads/2023/01/patrick.jpg",
+      "source": "https://www.cailab.org/wp-content/uploads/2023/01/patrick.jpg",
+      "license": "user-provided",
+      "note": "pasted by you",
+      "crop": {
+        "x": 0.07044270833333334,
+        "y": 0.06044921875,
+        "size": 0.8882649739583334
+      },
+      "status": "picked"
+    },
+    "Vaughn S. Cooper": {
+      "kind": "author",
+      "affiliation": "University of Pittsburgh",
+      "src": "https://asm.org/getmedia/02413ad9-cc74-4c21-87ac-c7e7b692cc66/Vaughn-Cooper-Headshot.jpg?width=546&height=683&ext=.jpg",
+      "source": "https://asm.org/getmedia/02413ad9-cc74-4c21-87ac-c7e7b692cc66/Vaughn-Cooper-Headshot.jpg?width=546&height=683&ext=.jpg",
+      "license": "user-provided",
+      "note": "pasted by you",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "size": 1
+      },
+      "status": "picked"
+    },
+    "Ryan K. Duncombe": {
+      "kind": "author",
+      "affiliation": "Mirror Biology Dialogues Fund",
+      "src": "https://d3gicu0yq0orc5.cloudfront.net/sites/biosciences/files/styles/max_width_full/public/migrated/images/featured/RyanDuncombeHeadshotSession2B5-2mpevi7.jpg?itok=cfbo9iFB",
+      "source": "https://d3gicu0yq0orc5.cloudfront.net/sites/biosciences/files/styles/max_width_full/public/migrated/images/featured/RyanDuncombeHeadshotSession2B5-2mpevi7.jpg?itok=cfbo9iFB",
+      "license": "user-provided",
+      "note": "pasted by you",
+      "crop": {
+        "x": 0.107421875,
+        "y": 0.0313232421875,
+        "size": 0.8
+      },
+      "status": "picked"
+    },
+    "Kevin M. Esvelt": {
+      "kind": "author",
+      "affiliation": "Massachusetts Institute of Technology",
+      "src": "https://aspenideasfestival.imgix.net/7deafdc0-e8af-48f6-8095-7b2bd3f041cd/Esvelt_Kevin_AIF2017.jpg?auto=compress%2Cformat&fit=min&fm=jpg&h=290&q=80&rect=0%2C0%2C1000%2C1000&w=290",
+      "source": "https://aspenideasfestival.imgix.net/7deafdc0-e8af-48f6-8095-7b2bd3f041cd/Esvelt_Kevin_AIF2017.jpg?auto=compress%2Cformat&fit=min&fm=jpg&h=290&q=80&rect=0%2C0%2C1000%2C1000&w=290",
+      "license": "user-provided",
+      "note": "pasted by you",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "size": 1
+      },
+      "status": "picked"
+    },
+    "John I. Glass": {
+      "kind": "author",
+      "affiliation": "J. Craig Venter Institute",
+      "src": "https://www.jcvi.org/system/files/assets/bio/xglass-john.jpg.pagespeed.ic.wLh9Hy4KNe.jpg",
+      "source": "https://www.jcvi.org/about/john-glass",
+      "license": "institutional bio page (J. Craig Venter Institute)",
+      "note": "head & shoulders, professional",
+      "crop": {
+        "x": 0.06423339843749998,
+        "y": 0.0300537109375,
+        "size": 0.9357666015625
+      },
+      "status": "picked"
+    },
+    "Timothy W. Hand": {
+      "kind": "author",
+      "affiliation": "University of Pittsburgh",
+      "src": "https://www.pediatrics.pitt.edu/sites/default/files/styles/person_large/public/person-images/hand_0001crop_2_copy_2.jpg?itok=JuxFwM7e",
+      "source": "https://www.pediatrics.pitt.edu/people/timothy-w-hand-phd",
+      "license": "university faculty page (Pitt Pediatrics)",
+      "note": "head & shoulders, professional",
+      "crop": {
+        "x": 0.11122233072916668,
+        "y": 0,
+        "size": 0.8
+      },
+      "status": "picked"
+    },
+    "Thomas V. Inglesby": {
+      "kind": "author",
+      "affiliation": "Johns Hopkins Center for Health Security",
+      "src": "https://api.hub.jhu.edu/factory/sites/default/files/styles/full_width/public/tom_inglesby_inline_0.jpg",
+      "source": "https://api.hub.jhu.edu/factory/sites/default/files/styles/full_width/public/tom_inglesby_inline_0.jpg",
+      "license": "user-provided",
+      "note": "pasted by you",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "size": 1
+      },
+      "status": "picked"
+    },
+    "Farren J. Isaacs": {
+      "kind": "author",
+      "affiliation": "Yale University",
+      "src": "https://res.cloudinary.com/ysm/image/upload/yms/prod/de40476b-e5db-4655-b60b-3eee804c559f",
+      "source": "https://res.cloudinary.com/ysm/image/upload/yms/prod/de40476b-e5db-4655-b60b-3eee804c559f",
+      "license": "user-provided",
+      "note": "pasted by you",
+      "crop": {
+        "x": 0.09958496093750001,
+        "y": 0.10322265624999999,
+        "size": 0.8
+      },
+      "status": "picked"
+    },
+    "Jonathan D. G. Jones": {
+      "kind": "author",
+      "affiliation": "Sainsbury Laboratory, University of East Anglia",
+      "src": "https://s3.eu-west-2.amazonaws.com/uploads.tsl.ac.uk/shared-images/_1600x1064_crop_center-center_82_line/Jonathan-Jones-DSC8990.jpeg",
+      "source": "https://www.tsl.ac.uk/about/people/jonathan-jones",
+      "license": "institutional faculty page (Sainsbury Laboratory)",
+      "note": "head & shoulders, professional, large 1600x1064 crop",
+      "crop": {
+        "x": 0.2353190104166667,
+        "y": 0.11728712338155028,
+        "size": 0.5248372395833333
+      },
+      "status": "picked"
+    },
+    "Richard E. Lenski": {
+      "kind": "author",
+      "affiliation": "Michigan State University",
+      "src": "https://www.canr.msu.edu/contentAsset/image/c80a2d2b21b532c56314da8b5f2db939/fileAsset/filter/Jpeg,Resize,Crop/jpeg_q/80/resize_w/400/crop_x/0/crop_y/45/crop_w/400/crop_h/400",
+      "source": "https://www.canr.msu.edu/people/lenski_richard",
+      "license": "university faculty page (Michigan State CANR)",
+      "note": "square head & shoulders crop",
+      "crop": {
+        "x": 0.05533040364583334,
+        "y": 0,
+        "size": 0.9
+      },
+      "status": "picked"
+    },
+    "Gregory Lewis": {
+      "kind": "author",
+      "affiliation": "Massachusetts Institute of Technology",
+      "src": "https://thebulletin.org/wp-content/uploads/2018/02/3176-97136-Gregory-Lewis-300x200.jpg.webp",
+      "source": "https://thebulletin.org/wp-content/uploads/2018/02/3176-97136-Gregory-Lewis-300x200.jpg.webp",
+      "license": "user-provided",
+      "note": "pasted by you",
+      "crop": {
+        "x": 0.176025390625,
+        "y": 0,
+        "size": 0.6159342447916667
+      },
+      "status": "picked"
+    },
+    "Ruslan Medzhitov": {
+      "kind": "author",
+      "affiliation": "Yale University",
+      "src": "https://wti.yale.edu/sites/default/files/styles/hero_focus_crop_xlarge/public/2024-09/Medzhitov%2C%20Ruslan_2024_Wu%20Tsai%20Institute.jpg?h=ad5a3b71&itok=KJF2lYfu",
+      "source": "https://wti.yale.edu/profile/ruslan-medzhitov",
+      "license": "institutional profile (Yale Wu Tsai Institute)",
+      "note": "head & shoulders, professional, 2024",
+      "crop": {
+        "x": 0.1789794921875,
+        "y": 0.16739908854166669,
+        "size": 0.569677734375
+      },
+      "status": "picked"
+    },
+    "Sebastian B. Oehm": {
+      "kind": "author",
+      "affiliation": "University of Cambridge",
+      "src": "https://media.licdn.com/dms/image/v2/D4E03AQEsB6UW_tnk8Q/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1686353191748?e=1779321600&v=beta&t=3ZtW7MomlJVU7GjajEG8HFlaDcTrgaSUOsI-Lf39EqY",
+      "source": "https://media.licdn.com/dms/image/v2/D4E03AQEsB6UW_tnk8Q/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1686353191748?e=1779321600&v=beta&t=3ZtW7MomlJVU7GjajEG8HFlaDcTrgaSUOsI-Lf39EqY",
+      "license": "user-provided",
+      "note": "pasted by you",
+      "crop": {
+        "x": 0.012320963541666667,
+        "y": 0.04984537760416667,
+        "size": 0.95
+      },
+      "status": "picked"
+    },
+    "Jaspreet Pannu": {
+      "kind": "author",
+      "affiliation": "Johns Hopkins Center for Health Security and Stanford University",
+      "src": "https://centerforhealthsecurity.org/sites/default/files/2022-12/chs-profile-image-pannu.jpg",
+      "source": "https://centerforhealthsecurity.org/sites/default/files/2022-12/chs-profile-image-pannu.jpg",
+      "license": "user-provided",
+      "note": "pasted by you",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "size": 1
+      },
+      "status": "picked"
+    },
+    "David A. Relman": {
+      "kind": "author",
+      "affiliation": "Stanford University",
+      "src": "https://profiles.stanford.edu/proxy/api/cap/profiles/4005/resources/profilephoto/350x350.1516303822057.jpg",
+      "source": "https://profiles.stanford.edu/proxy/api/cap/profiles/4005/resources/profilephoto/350x350.1516303822057.jpg",
+      "license": "user-provided",
+      "note": "pasted by you",
+      "crop": {
+        "x": 0.06442871093750001,
+        "y": 0.03649088541666667,
+        "size": 0.8
+      },
+      "status": "picked"
+    },
+    "Hiroaki Suga": {
+      "kind": "author",
+      "affiliation": "University of Tokyo",
+      "src": "data:image/jpeg;base64,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",
+      "source": "data:image/jpeg;base64,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",
+      "license": "user-provided",
+      "note": "pasted by you",
+      "crop": {
+        "x": 0.130224609375,
+        "y": 0.01710526315789474,
+        "size": 0.8
+      },
+      "status": "picked"
+    },
+    "Johanna M. Sweere": {
+      "kind": "author",
+      "affiliation": "Mirror Biology Dialogues Fund",
+      "src": "https://media.licdn.com/dms/image/v2/D5603AQHWUiOIfNAwug/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1726336308782?e=1779321600&v=beta&t=x56VsrnawsuzRxJ_5asDx3_w5lfJt0nhB5tbSOyxqos",
+      "source": "https://media.licdn.com/dms/image/v2/D5603AQHWUiOIfNAwug/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1726336308782?e=1779321600&v=beta&t=x56VsrnawsuzRxJ_5asDx3_w5lfJt0nhB5tbSOyxqos",
+      "license": "user-provided",
+      "note": "pasted by you",
+      "crop": {
+        "x": 0.06691894531249998,
+        "y": 0,
+        "size": 0.9330810546875
+      },
+      "status": "picked"
+    },
+    "Jack W. Szostak": {
+      "kind": "author",
+      "affiliation": "University of Chicago",
+      "src": "https://chemistry.uchicago.edu/sites/default/files/styles/faculty_image/public/2024-12/Jack_Szostak.jpg?itok=_PqE0YNt",
+      "source": "https://chemistry.uchicago.edu/faculty/jack-w-szostak",
+      "license": "university faculty page (University of Chicago Chemistry)",
+      "note": "head & shoulders, professional",
+      "crop": {
+        "x": 0.048225911458333326,
+        "y": 0.048225911458333326,
+        "size": 0.9517740885416667
+      },
+      "status": "picked"
+    },
+    "Nicholas J. Talbot": {
+      "kind": "author",
+      "affiliation": "Sainsbury Laboratory, University of East Anglia",
+      "src": "https://s3.eu-west-2.amazonaws.com/uploads.tsl.ac.uk/shared-images/_1600x1200_crop_center-center_82_line/Nick-Talbot_M8A1471.jpg",
+      "source": "https://www.tsl.ac.uk/about/people/nick-talbot",
+      "license": "institutional faculty page (Sainsbury Laboratory)",
+      "note": "head & shoulders, professional, 1600x1200 crop",
+      "crop": {
+        "x": 0.12714843750000002,
+        "y": 0,
+        "size": 0.6881103515625
+      },
+      "status": "picked"
+    },
+    "Brian Wang": {
+      "kind": "author",
+      "affiliation": "Panoplia Laboratories",
+      "src": "https://manifund.org/_next/image?url=https%3A%2F%2Ffkousziwzbnkdkldjper.supabase.co%2Fstorage%2Fv1%2Fobject%2Fpublic%2Favatars%2F0f087f65-5de4-497c-a715-0228f35ef482%2Fb3de51ab-6136-3c77-10a2-4e2f8caff247&w=384&q=75",
+      "source": "https://manifund.org/_next/image?url=https%3A%2F%2Ffkousziwzbnkdkldjper.supabase.co%2Fstorage%2Fv1%2Fobject%2Fpublic%2Favatars%2F0f087f65-5de4-497c-a715-0228f35ef482%2Fb3de51ab-6136-3c77-10a2-4e2f8caff247&w=384&q=75",
+      "license": "user-provided",
+      "note": "pasted by you",
+      "crop": {
+        "x": 0.10091959635416667,
+        "y": 0,
+        "size": 0.8
+      },
+      "status": "picked"
+    },
+    "Rocco Casagrande": {
+      "kind": "reviewer",
+      "affiliation": "Gryphon Scientific",
+      "src": "https://res.cloudinary.com/csisideaslab/image/upload/v1537475623/health-commission/Casagrande_Rocco.jpg",
+      "source": "https://healthsecurity.csis.org/authors/rocco-casagrande/",
+      "license": "CSIS Commission on Strengthening America's Health Security profile",
+      "note": "head & shoulders, professional",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "size": 1
+      },
+      "status": "picked"
+    },
+    "Matthew Wook Chang": {
+      "kind": "reviewer",
+      "affiliation": "National University of Singapore",
+      "src": "https://medicine.nus.edu.sg/bch/wp-content/uploads/sites/13/2020/01/Matthew-Chang.2025.1.jpeg",
+      "source": "https://medicine.nus.edu.sg/bch/faculty/chang-matthew/",
+      "license": "university faculty page (NUS Yong Loo Lin School of Medicine, Biochemistry)",
+      "note": "head & shoulders, professional",
+      "crop": {
+        "x": 0,
+        "y": 0.024655715019083545,
+        "size": 1
+      },
+      "status": "picked"
+    },
+    "George M. Church": {
+      "kind": "reviewer",
+      "affiliation": "Harvard University",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/George_Church_343263_by_christopher_michel_10-11-23.jpg/250px-George_Church_343263_by_christopher_michel_10-11-23.jpg",
+      "source": "https://en.wikipedia.org/wiki/George_Church_(geneticist)",
+      "license": "Wikimedia Commons (Christopher Michel, 2023; check file page for exact CC license)",
+      "note": "head & shoulders, 2023 portrait",
+      "crop": {
+        "x": 0,
+        "y": 0.049533420138888895,
+        "size": 1
+      },
+      "status": "picked"
+    },
+    "Gitta L. Coaker": {
+      "kind": "reviewer",
+      "affiliation": "University of California, Davis",
+      "src": "https://www.coakerlab.org/uploads/8/4/2/3/8423116/published/gitta-2022-headshot.jpg?1672689424",
+      "source": "https://www.coakerlab.org/contact-us.html",
+      "license": "lab website (Coaker Laboratory, UC Davis)",
+      "note": "head & shoulders, professional 2022 headshot",
+      "crop": {
+        "x": 0.12207845052083333,
+        "y": 0,
+        "size": 0.7357666015625001
+      },
+      "status": "picked"
+    },
+    "Jeffery L. Dangl": {
+      "kind": "reviewer",
+      "affiliation": "University of North Carolina at Chapel Hill",
+      "src": "https://bio.unc.edu/wp-content/uploads/sites/353/2011/06/dangl-jeff-200X250.jpg",
+      "source": "https://bio.unc.edu/faculty-profile/dangl/",
+      "license": "university faculty page (UNC Department of Biology)",
+      "note": "head & shoulders, professional",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "size": 1
+      },
+      "status": "picked"
+    },
+    "Drew Endy": {
+      "kind": "reviewer",
+      "affiliation": "Stanford University",
+      "src": "https://profiles.stanford.edu/proxy/api/cap/profiles/10548/resources/profilephoto/350x350.1592068620265.jpg",
+      "source": "https://profiles.stanford.edu/drew-endy",
+      "license": "university faculty profile (Stanford CAP)",
+      "note": "head & shoulders, 350x350 official Stanford profile photo",
+      "crop": {
+        "x": 0.1415690104166667,
+        "y": 0.16773274739583338,
+        "size": 0.7554850260416667
+      },
+      "status": "picked"
+    },
+    "Jeff Gore": {
+      "kind": "reviewer",
+      "affiliation": "Massachusetts Institute of Technology",
+      "src": "https://physics.mit.edu/wp-content/uploads/2021/03/20180514_Gore-578x410-c-default.jpg",
+      "source": "https://physics.mit.edu/faculty/jeff-gore/",
+      "license": "university faculty page (MIT Physics)",
+      "note": "head & shoulders, MIT faculty photo",
+      "crop": {
+        "x": 0.43330078125000004,
+        "y": 0.4016589417649488,
+        "size": 0.24986816406249998
+      },
+      "status": "picked"
+    },
+    "Chuan He": {
+      "kind": "reviewer",
+      "affiliation": "University of Chicago",
+      "src": "https://chemistry.uchicago.edu/sites/default/files/styles/faculty_image/public/2024-12/chuan_he.jpg?itok=eqfq03fk",
+      "source": "https://chemistry.uchicago.edu/faculty/chuan-he",
+      "license": "university faculty page (UChicago Chemistry)",
+      "note": "head & shoulders, professional",
+      "crop": {
+        "x": 0.07054036458333333,
+        "y": 0.08597005208333336,
+        "size": 0.8133707682291667
+      },
+      "status": "picked"
+    },
+    "Sheng Yang He": {
+      "kind": "reviewer",
+      "affiliation": "Duke University",
+      "src": "https://scholars.duke.edu/profile-images/full/1031869.jpg",
+      "source": "https://medschool.duke.edu/profile/sheng-yang-he",
+      "license": "university scholar profile (Duke Scholars / School of Medicine)",
+      "note": "head & shoulders, professional",
+      "crop": {
+        "x": 0,
+        "y": 0.044641113281250006,
+        "size": 1
+      },
+      "status": "picked"
+    },
+    "Kenya Honda": {
+      "kind": "reviewer",
+      "affiliation": "Keio University",
+      "src": "https://www.asianscientist.com/wp-content/uploads/2021/04/AS100-Kenya-Honda.jpg",
+      "source": "https://www.asianscientist.com/wp-content/uploads/2021/04/AS100-Kenya-Honda.jpg",
+      "license": "user-provided",
+      "note": "pasted by you",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "size": 1
+      },
+      "status": "picked"
+    },
+    "Wilhelm T. S. Huck": {
+      "kind": "reviewer",
+      "affiliation": "Radboud University",
+      "src": "https://www.hucklab.com/wp-content/uploads/2021/02/1.jpg",
+      "source": "https://www.hucklab.com/wp-content/uploads/2021/02/1.jpg",
+      "license": "user-provided",
+      "note": "pasted by you",
+      "crop": {
+        "x": 0.056355794270833336,
+        "y": 0.05,
+        "size": 0.8
+      },
+      "status": "picked"
+    },
+    "Jonathan C. Kagan": {
+      "kind": "reviewer",
+      "affiliation": "Harvard University",
+      "src": "https://kaganlab.com/wp-content/uploads/2023/08/kagan_jonathan-headshot-cropped-2.jpg",
+      "source": "https://kaganlab.com/people/",
+      "license": "lab website (Kagan Lab)",
+      "note": "head & shoulders, cropped headshot",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "size": 1
+      },
+      "status": "picked"
+    },
+    "Michael S. Kay": {
+      "kind": "reviewer",
+      "affiliation": "University of Utah",
+      "src": "https://images.squarespace-cdn.com/content/v1/5ba26beb75f9eeb2751c7062/1630599011997-133IW45K6XJ4QW4RGCAG/Michael+Kay+July+2021+v2x3.jpg?format=1000w",
+      "source": "https://images.squarespace-cdn.com/content/v1/5ba26beb75f9eeb2751c7062/1630599011997-133IW45K6XJ4QW4RGCAG/Michael+Kay+July+2021+v2x3.jpg?format=1000w",
+      "license": "user-provided",
+      "note": "pasted by you",
+      "crop": {
+        "x": 0,
+        "y": 0.013812934027777779,
+        "size": 1
+      },
+      "status": "picked"
+    },
+    "Simon A. Levin": {
+      "kind": "reviewer",
+      "affiliation": "Princeton University",
+      "src": "https://eeb.princeton.edu/sites/g/files/toruqf7201/files/styles/3x4_750w_1000h/public/people/simonlevin_2_0.jpg?itok=SIk5kd8u",
+      "source": "https://eeb.princeton.edu/sites/g/files/toruqf7201/files/styles/3x4_750w_1000h/public/people/simonlevin_2_0.jpg?itok=SIk5kd8u",
+      "license": "user-provided",
+      "note": "pasted by you",
+      "crop": {
+        "x": 0.08554687500000001,
+        "y": 0.068536376953125,
+        "size": 0.9
+      },
+      "status": "picked"
+    },
+    "Robert D. Miller": {
+      "kind": "reviewer",
+      "affiliation": "University of New Mexico",
+      "src": "https://ceti.unm.edu/our-members/profile/photo/miller-76x76.jpg",
+      "source": "https://ceti.unm.edu/our-members/profile/photo/miller-76x76.jpg",
+      "license": "user-provided",
+      "note": "pasted by you",
+      "crop": {
+        "x": 0,
+        "y": 0.050000000000000044,
+        "size": 0.95
+      },
+      "status": "picked"
+    },
+    "John H. Rex": {
+      "kind": "reviewer",
+      "affiliation": "AMR.Solutions",
+      "src": "https://amr.solutions/wp-content/uploads/2020/01/john-rex-photo.jpeg",
+      "source": "https://amr.solutions/about/",
+      "license": "personal/professional website (AMR.Solutions)",
+      "note": "head & shoulders, professional",
+      "crop": {
+        "x": 0.05596516927083338,
+        "y": 0.06610080504025201,
+        "size": 0.8798746744791667
+      },
+      "status": "picked"
+    },
+    "Daniel Simberloff": {
+      "kind": "reviewer",
+      "affiliation": "University of Tennessee, Knoxville",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Daniel_Simberloff_Porto_20091027.jpg",
+      "source": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Daniel_Simberloff_Porto_20091027.jpg",
+      "license": "user-provided",
+      "note": "pasted by you",
+      "crop": {
+        "x": 0.31455078124999997,
+        "y": 0.08171252428814738,
+        "size": 0.46305338541666674
+      },
+      "status": "picked"
+    },
+    "James M. Tiedje": {
+      "kind": "reviewer",
+      "affiliation": "Michigan State University",
+      "src": "https://canr.msu.edu/contentAsset/image/e30fa2912ec28268d698858950c50b3e/fileAsset/filter/Jpeg,Resize,Crop/jpeg_q/80/resize_w/400/crop_x/0/crop_y/45/crop_w/400/crop_h/400",
+      "source": "https://www.canr.msu.edu/people/james_m_tiedje",
+      "license": "university faculty page (MSU College of Agriculture & Natural Resources)",
+      "note": "head & shoulders, 400x400 cropped faculty portrait",
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "size": 1
+      },
+      "status": "picked"
+    },
+    "Paul E. Turner": {
+      "kind": "reviewer",
+      "affiliation": "Yale University",
+      "src": "https://res.cloudinary.com/ysm/image/upload/yms/prod/b3d0300a-278a-49ef-bbe5-5e4c2cd727bc",
+      "source": "https://res.cloudinary.com/ysm/image/upload/yms/prod/b3d0300a-278a-49ef-bbe5-5e4c2cd727bc",
+      "license": "user-provided",
+      "note": "pasted by you",
+      "crop": {
+        "x": 0,
+        "y": 0.12845052083333336,
+        "size": 1
+      },
+      "status": "picked"
+    },
+    "J. Craig Venter": {
+      "kind": "reviewer",
+      "affiliation": "J. Craig Venter Institute",
+      "src": "https://www.jcvi.org/system/files/assets/bio/xventer-craig.jpg.pagespeed.ic.uvww__qELA.jpg",
+      "source": "https://www.jcvi.org/about/j-craig-venter",
+      "license": "institutional bio page (J. Craig Venter Institute)",
+      "note": "head & shoulders, official JCVI portrait",
+      "crop": {
+        "x": 0,
+        "y": 0.05,
+        "size": 0.95
+      },
+      "status": "picked"
+    },
+    "Matthew L. Nicotra": {
+      "kind": "author",
+      "affiliation": "Johns Hopkins Center for Health Security",
+      "src": "https://www.rand.org/content/rand/about/people/n/nicotra_matthew_l/jcr:content/par/bio.crop.616x616.cm.webp/1754580907142.webp",
+      "source": "https://www.rand.org/about/people/n/nicotra_matthew_l.html",
+      "license": "institution page",
+      "note": "square headshot from RAND profile",
+      "crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "size": 1.0
+      },
+      "status": "picked"
+    }
+  }
+}

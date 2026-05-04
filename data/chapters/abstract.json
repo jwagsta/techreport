@@ -1,0 +1,23 @@
+{
+  "id": "abstract",
+  "level": 1,
+  "title": "Abstract",
+  "title_html": "Abstract",
+  "blocks": [
+    {
+      "type": "paragraph",
+      "html": "This report describes the technical feasibility of creating mirror\nbacteria and the potentially serious and wide-ranging risks that they\ncould pose to humans, other animals, plants, and the environment. It\naccompanies the <em>Science</em> Policy Forum article titled\n“Confronting risks of mirror life”, published in December 2024."
+    },
+    {
+      "type": "paragraph",
+      "html": "In a mirror bacterium, all of the chiral molecules of existing\nbacteria—proteins, nucleic acids, and metabolites—are replaced by their\nmirror images. Mirror bacteria could not evolve from existing life, but\ntheir creation will become increasingly feasible as science advances.\nInteractions between organisms often depend on chirality, and so\ninteractions between natural organisms and mirror bacteria would be\nprofoundly different from those between natural organisms. Most\nimportantly, immune defenses and predation typically rely on\ninteractions between chiral molecules that could often fail to detect or\nkill mirror bacteria due to their reversed chirality. It therefore\nappears plausible, even likely, that sufficiently robust mirror bacteria\ncould spread through the environment unchecked by natural biological\ncontrols and act as dangerous opportunistic pathogens in an\nunprecedentedly wide range of other multicellular organisms, including\nhumans."
+    },
+    {
+      "type": "paragraph",
+      "html": "This report draws on expertise from synthetic biology, immunology,\necology, and related fields to provide the first comprehensive\nassessment of the risks from mirror bacteria. It consists of eight\nchapters and starts with a general introduction, followed by an\nexamination of the initial creation of mirror bacteria, their further\nengineering, as well as biosecurity and biosafety implications. The\nremaining five chapters cover risks to human health, medical\ncountermeasures, risks to other animals, risks to plants, and the\npotential ecological consequences of their introduction into the\nenvironment."
+    }
+  ],
+  "subsections": [],
+  "kind": "frontmatter",
+  "number": null
+}

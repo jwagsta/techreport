@@ -1,0 +1,226 @@
+{
+  "id": "table-of-contents",
+  "level": 1,
+  "title": "Table of Contents",
+  "title_html": "Table of Contents",
+  "blocks": [
+    {
+      "type": "paragraph",
+      "html": "<a href=\"#abstract\"><strong>Abstract</strong></a>\n<strong>i</strong>"
+    },
+    {
+      "type": "paragraph",
+      "html": "<a href=\"#report-authors\"><strong>Report Authors</strong></a>\n<strong>ii</strong>"
+    },
+    {
+      "type": "paragraph",
+      "html": "<a href=\"#review\"><strong>Review</strong></a>\n<strong>iii</strong>"
+    },
+    {
+      "type": "paragraph",
+      "html": "<a href=\"#about-this-report\"><strong>About this Report\niv</strong></a>"
+    },
+    {
+      "type": "paragraph",
+      "html": "<a href=\"#table-of-contents\"><strong>Table of Contents\nvi</strong></a>"
+    },
+    {
+      "type": "paragraph",
+      "html": "<a href=\"#boxes-figures-and-tables\"><strong>Boxes, Figures, and\nTables</strong></a> <strong>viii</strong>"
+    },
+    {
+      "type": "paragraph",
+      "html": "<a href=\"#summary\"><strong>Summary 1</strong></a>"
+    },
+    {
+      "type": "paragraph",
+      "html": "<a href=\"#chapter-1-introduction\"><strong>Chapter 1: Introduction\n5</strong></a>"
+    },
+    {
+      "type": "paragraph",
+      "html": "<a href=\"#chapter-2-pathways-to-mirror-life\"><strong>Chapter 2:\nPathways to Mirror Life 26</strong></a>"
+    },
+    {
+      "type": "blockquote",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "<a href=\"#advances-in-chemistry-permit-the-synthesis-of-mirror-biomolecules-with-diverse-applications\">2.1\nAdvances in chemistry permit the synthesis of mirror biomolecules\nwith<br/>\ndiverse applications 28</a>"
+        },
+        {
+          "type": "paragraph",
+          "html": "<a href=\"#progress-in-synthetic-biology-could-allow-the-assembly-of-a-mirror-bacterium-from-non-living-mirror-components\">2.2\nProgress in synthetic biology could allow the assembly of a mirror\nbacterium<br/>\nfrom non-living mirror components 33</a>"
+        },
+        {
+          "type": "paragraph",
+          "html": "<a href=\"#a-natural-chirality-bacterium-might-be-converted-into-a-mirror-bacterium-in-a-stepwise-fashion\">2.3\nA natural-chirality bacterium might be converted into a mirror bacterium\nin a stepwise fashion 41</a>"
+        },
+        {
+          "type": "paragraph",
+          "html": "<a href=\"#other-approaches-to-creating-mirror-bacteria-are-plausible\">2.4\nOther approaches to creating mirror bacteria are plausible 50</a>"
+        },
+        {
+          "type": "paragraph",
+          "html": "<a href=\"#the-feasibility-of-mirror-life-will-increase-as-related-technologies-advance\">2.5\nThe feasibility of mirror life will increase as related technologies\nadvance 51</a>"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "html": "<a href=\"#chapter-3-engineering-biosafety-and-biosecurity-of-mirror-bacteria\"><strong>Chapter\n3: Engineering, Biosafety, and Biosecurity of Mirror Bacteria\n54</strong></a>"
+    },
+    {
+      "type": "blockquote",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "<a href=\"#the-creation-of-any-mirror-bacterium-could-enable-the-generation-of-diverse-mirror-bacterial-strains-and-species-and-their-modification-by-routine-genetic-engineering\">3.1\nThe creation of any mirror bacterium could enable the generation of\ndiverse mirror<br/>\nbacterial strains and species and their modification by routine genetic\nengineering 55</a>"
+        },
+        {
+          "type": "paragraph",
+          "html": "<a href=\"#biocontainment-approaches-might-reduce-accident-risk-but-they-would-face-challenges\">3.2\nBiocontainment approaches might reduce accident risk, but they would\nface challenges 60</a>"
+        },
+        {
+          "type": "paragraph",
+          "html": "<a href=\"#creating-robustly-biosecure-mirror-bacteria-is-not-feasible\">3.3\nCreating robustly biosecure mirror bacteria is not feasible 62</a>"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "html": "<a href=\"#chapter-4-risks-to-human-health\"><strong>Chapter 4: Risks\nto Human Health 65</strong></a>"
+    },
+    {
+      "type": "blockquote",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "<a href=\"#innate-immune-detection-of-mirror-bacteria-could-be-significantly-impaired\">4.1\nInnate immune detection of mirror bacteria could be significantly\nimpaired 67</a>"
+        },
+        {
+          "type": "paragraph",
+          "html": "<a href=\"#mirror-bacteria-would-likely-be-resistant-to-most-innate-immune-responses\">4.2\nMirror bacteria would likely be resistant to most innate immune\nresponses 72</a>"
+        },
+        {
+          "type": "paragraph",
+          "html": "<a href=\"#adaptive-immunity-to-mirror-bacteria-would-likely-be-impaired\">4.3\nAdaptive immunity to mirror bacteria would likely be impaired 81</a>"
+        },
+        {
+          "type": "paragraph",
+          "html": "<a href=\"#mirror-bacteria-could-plausibly-pass-barrier-surfaces-and-translocate-into-the-bloodstream-and-tissues\">4.4\nMirror bacteria could plausibly pass barrier surfaces and translocate\ninto the<br/>\nbloodstream and tissues 91</a>"
+        },
+        {
+          "type": "paragraph",
+          "html": "<a href=\"#mirror-bacteria-could-plausibly-replicate-in-blood-and-cause-lethal-systemic-infection\">4.5\nMirror bacteria could plausibly replicate in blood and cause lethal\nsystemic infection 98</a>"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "html": "<a href=\"#chapter-5-medical-countermeasures\"><strong>Chapter 5:\nMedical Countermeasures 107</strong></a>"
+    },
+    {
+      "type": "blockquote",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "<a href=\"#new-antimirror-compounds-could-be-developed-to-target-mirror-bacteria-but-most-existing-antibiotics-would-not-function\">5.1\nNew antimirror compounds could be developed to target mirror\nbacteria,<br/>\nbut most existing antibiotics would not function 108</a>"
+        },
+        {
+          "type": "paragraph",
+          "html": "<a href=\"#conjugate-vaccines-could-plausibly-be-developed-against-mirror-bacteria\">5.2\nConjugate vaccines could plausibly be developed against mirror bacteria\n113</a>"
+        },
+        {
+          "type": "paragraph",
+          "html": "<a href=\"#the-efficacy-of-other-countermeasures-against-mirror-bacterial-infection-is-unclear\">5.3\nThe efficacy of other countermeasures against mirror bacterial infection\nis unclear 116</a>"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "html": "<a href=\"#chapter-6-animal-infection\"><strong>Chapter 6: Animal\nInfection 119</strong></a>"
+    },
+    {
+      "type": "blockquote",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "<a href=\"#vertebrate-susceptibility-to-mirror-bacterial-infection-would-likely-be-similar-to-that-of-humans\">6.1\nVertebrate susceptibility to mirror bacterial infection would likely be\nsimilar to that of humans 120</a>"
+        },
+        {
+          "type": "paragraph",
+          "html": "<a href=\"#many-invertebrates-would-likely-be-susceptible-to-mirror-bacteria\">6.2\nMany invertebrates would likely be susceptible to mirror bacteria\n123</a>"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "html": "<a href=\"#chapter-7-plant-infection\"><strong>Chapter 7: Plant\nInfection 134</strong></a>"
+    },
+    {
+      "type": "blockquote",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "<a href=\"#mirror-bacteria-are-likely-to-evade-plant-innate-immunity\">7.1\nMirror bacteria are likely to evade plant innate immunity 135</a>"
+        },
+        {
+          "type": "paragraph",
+          "html": "<a href=\"#mirror-bacteria-could-plausibly-establish-chronic-local-infections-within-leaves-and-roots\">7.2\nMirror bacteria could plausibly establish chronic local infections\nwithin leaves and roots 138</a>"
+        },
+        {
+          "type": "paragraph",
+          "html": "<a href=\"#the-extent-to-which-mirror-bacteria-could-spread-through-and-colonize-plant-vascular-tissue-is-unclear\">7.3\nThe extent to which mirror bacteria could spread through and\ncolonize<br/>\nplant vascular tissue is unclear 145</a>"
+        },
+        {
+          "type": "paragraph",
+          "html": "<a href=\"#countermeasures-for-agricultural-plants\">7.4\nCountermeasures for agricultural plants 151</a>"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "html": "<a href=\"#chapter-8-environmental-survival-and-spread\"><strong>Chapter 8:\nEnvironmental Survival and Spread 156</strong></a>"
+    },
+    {
+      "type": "blockquote",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "<a href=\"#mirror-bacteria-would-be-inherently-resistant-to-many-biological-controls\">8.1\nMirror bacteria would be inherently resistant to many biological\ncontrols 157</a>"
+        },
+        {
+          "type": "paragraph",
+          "html": "<a href=\"#mirror-bacteria-could-colonize-natural-environments-outside-of-multicellular-hosts\">8.2\nMirror bacteria could colonize natural environments outside of\nmulticellular hosts 165</a>"
+        },
+        {
+          "type": "paragraph",
+          "html": "<a href=\"#invasive-mirror-bacteria-could-rapidly-disperse-through-the-environment\">8.3\nInvasive mirror bacteria could rapidly disperse through the environment\n175</a>"
+        },
+        {
+          "type": "paragraph",
+          "html": "<a href=\"#invasive-mirror-bacteria-could-rapidly-evolve-and-diversify\">8.4\nInvasive mirror bacteria could rapidly evolve and diversify 178</a>"
+        },
+        {
+          "type": "paragraph",
+          "html": "<a href=\"#invasive-mirror-bacteria-could-cause-irreversible-ecological-harm\">8.5\nInvasive mirror bacteria could cause irreversible ecological harm\n181</a>"
+        },
+        {
+          "type": "paragraph",
+          "html": "<a href=\"#countermeasures-to-invasive-mirror-bacteria-might-lessen-but-would-not-halt-the-ecological-damage\">8.6\nCountermeasures to invasive mirror bacteria might lessen but would not\nhalt<br/>\nthe ecological damage 187</a>"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "html": "<a href=\"#contributions-and-acknowledgments\"><strong>Contributions\nand Acknowledgments 192</strong></a>"
+    },
+    {
+      "type": "paragraph",
+      "html": "<a href=\"#references\"><strong>References</strong></a>\n<strong>195</strong>"
+    }
+  ],
+  "subsections": [],
+  "kind": "backmatter",
+  "number": null
+}

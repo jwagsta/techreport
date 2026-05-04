@@ -1,0 +1,550 @@
+{
+  "id": "chapter-7-plant-infection",
+  "level": 1,
+  "title": "Plant Infection",
+  "title_html": "Chapter 7: Plant Infection",
+  "blocks": [
+    {
+      "type": "paragraph",
+      "html": "<em>Damon J. Binder<sup>1</sup>, Kevin M. Esvelt<sup>2</sup>,\nJonathan D. G. Jones<sup>3</sup>, Nicholas J.\nTalbot<sup>3</sup></em>"
+    },
+    {
+      "type": "paragraph",
+      "html": "Plants evolved sophisticated immune systems to defend themselves from\nbacterial pathogens while tolerating low concentrations of bacterial\nendophytes (Jones & Dangl, 2006; Jones <em>et al</em>., 2024). Like\nanimals, plants use a variety of pattern recognition receptors (PRRs) to\ndetect the presence of foreign microbes and release effectors to keep\nthem at low concentrations in the apoplast, the continuous extracellular\nspace through which water and other molecules can move without crossing\ncell membranes. These receptors are unlikely to recognize mirror\nbiomolecules, and so plants may be susceptible to mirror bacterial\ninfection."
+    },
+    {
+      "type": "paragraph",
+      "html": "Since plants are poorly studied relative to mammals, and most\nexperiments have focused on the model plant <em>Arabidopsis\nthaliana</em> or a handful of crops, our uncertainty regarding the\npotential consequences of mirror bacterial infection is considerably\nhigher. Much remains unknown concerning the interactions between plant\nimmunity and bacterial commensals, opportunists, and pathogens.\nNevertheless, we have identified two pivotal questions, the answers to\nwhich may differ across plant species. First, could mirror bacteria\ncapable of colonizing the apoplast spread beyond their initial site of\nentry, and second, could infecting mirror bacteria enter the phloem?"
+    },
+    {
+      "type": "paragraph",
+      "html": "<a href=\"#mirror-bacteria-are-likely-to-evade-plant-innate-immunity\">Section\n7.1</a> discusses plant immune systems, and shows that a mirror\nbacterium would likely evade recognition as well as some of the\ndownstream mechanisms used by plants to defend themselves from\nbacteria."
+    },
+    {
+      "type": "paragraph",
+      "html": "<a href=\"#mirror-bacteria-could-plausibly-establish-chronic-local-infections-within-leaves-and-roots\">Section\n7.2</a> discusses localized infections of leaves and roots. In both\ncases, mirror bacteria could plausibly enter and colonize the apoplast,\nestablishing a local infection. It is unclear if a local infection would\nbe particularly harmful to plants, though it is possible that widespread\nlocalized infections could cumulatively cause harm."
+    },
+    {
+      "type": "paragraph",
+      "html": "<a href=\"#the-extent-to-which-mirror-bacteria-could-spread-through-and-colonize-plant-vascular-tissue-is-unclear\">Section\n7.3</a> analyzes the potential for infections to spread through\nvasculature. Mirror bacteria would, by default, lack the extracellular\nenzymes needed to break down plant physical barriers, which may limit\ntheir ability to spread through and colonize xylem. Bacterial entry into\nthe phloem is not common, and primarily occurs via phloem-feeding\ninsects. It is unclear if mirror bacteria could otherwise enter phloem\nduring localized infection. Should it occur, mirror bacterial infection\nof phloem would likely prove highly damaging or lethal."
+    },
+    {
+      "type": "table",
+      "html": "<table>\n<colgroup>\n<col style=\"width: 100%\"/>\n</colgroup>\n<thead>\n<tr>\n<th><em>Authors are listed in alphabetical order. Affiliations:</em>\n<sup>1</sup> Open Philanthropy, San Francisco, California, USA;\n<sup>2</sup> Media Laboratory, Massachusetts Institute of Technology,\nCambridge, Massachusetts, USA; <sup>3</sup> The Sainsbury Laboratory,\nUniversity of East Anglia, Norwich, UK</th>\n</tr>\n</thead>\n<tbody>\n</tbody>\n</table>",
+      "kind": "affiliations"
+    },
+    {
+      "type": "paragraph",
+      "html": "<a href=\"#countermeasures-for-agricultural-plants\">Section 7.4</a>\ndescribes countermeasures to protect agriculture. Conventional methods\nused to control bacterial pathogens would be of limited use against\nmirror bacteria. Plants could potentially be protected by engineering\ntheir existing immune receptors to detect mirror macromolecules, which\nmay offer scalable protection for key crop species. Protecting most crop\nvarieties, or even a small fraction of wild plants, is unlikely to be\nfeasible."
+    },
+    {
+      "type": "paragraph",
+      "html": "This chapter primarily focuses on generalist mirror bacteria such as\nmirror <em>Escherichia coli</em>, which would likely be of greatest\nscientific interest. It is plausible that deliberate engineering could\ngenerate mirror bacteria that were better equipped to colonize plants,\nor to cause harm to infected plants. Such details are beyond the scope\nof the chapter."
+    }
+  ],
+  "subsections": [
+    {
+      "id": "mirror-bacteria-are-likely-to-evade-plant-innate-immunity",
+      "level": 2,
+      "title": "7.1 Mirror bacteria are likely to evade plant innate immunity",
+      "title_html": "<strong>7.1\nMirror bacteria are likely to evade plant innate immunity</strong>",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Unlike many animals, plants do not contain circulating professional\nphagocytes or other immune cells, and they also lack adaptive immunity.\nInstead, most plant cells rely on innate immune responses that are\ninitiated upon the detection of pathogen molecules by cell surface or\nintracellular immune receptors. Pattern-triggered immunity (PTI) detects\nconserved microbial patterns such as bacterial flagellin, and induces a\nlocalized immune response featuring release of antimicrobial compounds\nand proteins, as well as signaling molecules that modify local plant\nphysiology in order to combat and contain the infection (Jones &\nDangl, 2006). As with animal immune systems (see <a href=\"#chapter-4-risks-to-human-health\">Chapter 4</a> for a discussion\non human immunity, and <a href=\"#chapter-6-animal-infection\">Chapter\n6</a> for other vertebrate and invertebrate animals), cell surface PRRs\nin plants are expected to poorly recognize enantiomers of their usual\ntargets, precluding direct pathogen targeting. Many downstream defense\nmechanisms, though not all, would be similarly impaired (<a href=\"#figure-7.1-mirror-bacteria-are-likely-to-evade-detection-by-plant-immunity\">Figure\n7.1</a>)."
+        }
+      ],
+      "subsections": [
+        {
+          "id": "plant-immune-systems-are-unlikely-to-detect-mirror-bacteria",
+          "level": 3,
+          "title": "Plant immune systems are unlikely to detect mirror bacteria",
+          "title_html": "Plant\nimmune systems are unlikely to detect mirror bacteria",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "Plants recognize pathogens through two main pathways: PRRs that\ndetect generic biomolecules found in microbes, and intracellular immune\nreceptors that detect particular pathogen virulence factors\n(“effectors”) tailored to suppress plant defenses or promote pathogen\nnutrition (Jones & Dangl, 2006; Katagiri & Tsuda, 2010; Ngou\n<em>et al</em>., 2022). Effectors are protein virulence factors\ndelivered into plant cells by specialized secretions systems, most\ncommonly, the type III secretion system. Mirror bacteria are unlikely to\nhave been created with specialized type III or other secretion systems\nto deliver intracellular effectors, and so intracellular receptors are\nunlikely to contribute useful resistance to mirror bacteria (<a href=\"#figure-7.1-mirror-bacteria-are-likely-to-evade-detection-by-plant-immunity\">Figure\n7.1</a>)."
+            },
+            {
+              "type": "paragraph",
+              "html": "Plant PRRs detect conserved microbe- or pathogen-associated molecular\npatterns (MAMPs or PAMPs) (Chaudhry <em>et al</em>., 2021; Dardick &\nRonald, 2006). As in animals, these MAMPs are generally chiral (Boutrot\n& Zipfel, 2017; Schellenberger <em>et al</em>., 2019); the only\nknown achiral MAMP, the bacterial lipid cis-11-methyl-2-dodecenoic acid,\nis a quorum sensing molecule employed by a limited number of bacterial\nspecies (Kakkar <em>et al</em>., 2015). Although novel receptors\ncontinue to be discovered in plants, and some degree of cross-reactivity\nbetween a mirror molecule and a normal PRR may be possible, it is likely\nthat most plants would exhibit reduced or even entirely absent initial\nresponses to mirror bacterial infections."
+            },
+            {
+              "type": "paragraph",
+              "html": "Poor MAMP detection reduces or abolishes downstream antibacterial\nresponses, such as the closure of stomata to prevent pathogen entry\n(Zipfel <em>et al</em>., 2004), the release of defense hormones, and the\nsecretion of antimicrobials and reactive oxygen species (ROS) to kill\npathogens. Deleting a single"
+            },
+            {
+              "type": "figure",
+              "id": "figure-7.1-mirror-bacteria-are-likely-to-evade-detection-by-plant-immunity",
+              "src": "assets/image8.png",
+              "alt": "",
+              "width": "6.5in",
+              "height": "3.45833in",
+              "caption": {
+                "id": "figure-7.1-mirror-bacteria-are-likely-to-evade-detection-by-plant-immunity",
+                "title": "Figure 7.1: Mirror bacteria are likely to evade detection by plant immunity",
+                "title_html": "Figure\n7.1: Mirror bacteria are likely to evade detection by plant\nimmunity",
+                "body_html": "<p><strong>A.</strong> Natural-chirality extracellular<a class=\"footnote-ref\" data-footnote-ref=\"fn12\" href=\"#fn12\" id=\"fnref12\" role=\"doc-noteref\"><sup>12</sup></a>\nbacteria are recognized by two main pathways of plant immunity.\nPattern-triggered immunity (PTI) relies on pattern recognition receptors\n(PRRs) to detect microbial-associated molecular patterns (MAMPs) and\ninduce the release of antimicrobial compounds, reactive oxygen species\n(ROS), and signaling molecules that modify local plant physiology to\ncombat and contain infection. Effector-triggered immunity (ETI) relies\non intracellular immune receptors, such as nucleotide-binding domain and\nleucine-rich repeat containing receptors (NLRs), to detect bacterial\nvirulence factors (“effectors”) that suppress plant immune responses.\nEffectors are secreted inside of plant cells by specialist Gram-negative\nplant pathogens via type III secretion systems (T3SS).\n<strong>B.</strong> Mirror bacteria are unlikely to trigger PTI or ETI.\nBecause nearly all MAMPs are chiral, mirror MAMPs are unlikely to be\nrecognized by plant PRRs. ETI is unlikely to be relevant because mirror\nbacteria are unlikely to have T3SS or stereospecific effectors capable\nof interacting with natural-chirality plant proteins.</p>"
+              }
+            },
+            {
+              "type": "paragraph",
+              "html": "PRR can result in increased susceptibility to infection by natural\nphytopathogenic bacteria in experimental models (Ranf <em>et al</em>.,\n2015; Willmann <em>et al</em>., 2011), suggesting that impaired\nrecognition by multiple receptors would render plants still more\nsusceptible."
+            },
+            {
+              "type": "paragraph",
+              "html": "As in animals, it is possible that the later stages of mirror\nbacterial infection may damage the plant, leading to production of\ndamage-associated molecular patterns (DAMPs). Some DAMPs, such as\noligogalacturonides, trigger a significant plant immune response even in\nthe absence of MAMPs (Ferrari <em>et al</em>., 2013). However, unlike\nnatural-chirality pathogens, mirror bacteria would not secrete\npolygalacturonases<a class=\"footnote-ref\" data-footnote-ref=\"fn13\" href=\"#fn13\" id=\"fnref13\" role=\"doc-noteref\"><sup>13</sup></a> that generate oligogalacturonides\nfrom the plant cell wall, so the pathway is unlikely to be triggered. It\nis possible that other DAMPs might activate innate immune responses in\nthe absence of MAMPs once sufficient plant colonization has occurred,\nbut how MAMP and DAMP signals are integrated to determine the plant\nimmune response is not fully understood (Saijo & Loo, 2020).\nMoreover, it is unclear precisely how mirror bacterial infection would\ndamage the plant beyond directly or indirectly depleting it of\nnutrients, which may not trigger the DAMP response until relatively late\nin the course of infection, if at all."
+            },
+            {
+              "type": "paragraph",
+              "html": "Effector-triggered immunity (ETI), typically encoded by disease\nresistance genes (R genes), recognizes specific pathogen effectors that\nare delivered into the plant to interfere with MAMP detection (Cui\n<em>et al</em>., 2015; Pfeilmeier <em>et al</em>., 2016). ETI powerfully\nrestricts pathogen success: a pathogen that is normally capable of\nestablishing a virulent infection loses that capability if it expresses\na single effector recognized by an intracellular immune receptor. Mirror\nbacteria would not produce such virulence effectors by default and so\nwould go unrecognized by effector-triggered immunity."
+            }
+          ],
+          "subsections": []
+        },
+        {
+          "id": "most-antimicrobial-secondary-metabolites-and-peptides-are-unlikely-to-be-effective-against-mirror-bacteria",
+          "level": 3,
+          "title": "Most antimicrobial secondary metabolites and peptides are unlikely to be effective against mirror bacteria",
+          "title_html": "Most\nantimicrobial secondary metabolites and peptides are unlikely to be\neffective against mirror bacteria",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "Plants synthesize and accumulate an arsenal of chemical defenses to\nprotect against microbial infection (Tiku, 2020), including small\nmolecules, antimicrobial peptides, and proteases. To be effective\nagainst mirror bacteria, these chemicals must be chirality-independent\nand either reliably released in the presence of the invader or\nconstitutively present in a biologically active form. If immune\nrecognition of mirror bacteria is substantially impaired, the only\neffective chemical defenses in plants would likely be those that are\nboth active against mirror bacteria and constitutively present."
+            },
+            {
+              "type": "paragraph",
+              "html": "Such compounds appear to be rare. Antimicrobial proteases (Godson\n& van der Hoorn, 2021), as chiral enzymes that recognize chiral\nsubstrates, would likely be ineffective (see <a href=\"#mirror-bacteria-would-likely-be-resistant-to-most-innate-immune-responses\">Section\n4.2</a>). Most small-molecule toxins generated by plants are\nphytoalexins, which are synthesized only after pathogens are detected.\nPhytoanticipins are produced constitutively, but they either exist in an\ninactive state and are activated by an immune signal or physical damage,\nor are stored intracellularly in an active form and released upon\npathogen detection (Kliebenstein & Kvitko, 2023; Osbourn, 1996). If\na mirror bacterial infection becomes sufficiently severe, damage to\nplant cells may result in the release of these compounds, but they are\nunlikely to prevent an initial infection."
+            },
+            {
+              "type": "paragraph",
+              "html": "Most secondary metabolites are also chiral, though there are\nexceptions, including allicin, catechol, and curcumin (Kocaçalişkan\n<em>et al</em>., 2006; Marchese <em>et al</em>., 2016; Zheng <em>et\nal</em>., 2020). However, all of these are phytoalexins, so they would\nonly be helpful if their release was triggered through DAMPs or other\nmeans. Cyanogenic glycosides and glucosinolates are activated upon cell\ndamage (Gleadow & Møller, 2014) and the resulting isothiocyanates or\nhydrogen cyanide would likely act on mirror bacteria, but only if the\nplant was damaged. Some plants produce achiral metabolites with\nantibacterial activity that are known to be constitutively present in a\nbiologically active form, including <em>p</em>-coumaric acid (González\nMoreno <em>et al</em>., 2022; Lou <em>et al</em>., 2012), cinnamic acid\n(Dorantes <em>et al</em>., 2000), and quercetin (Wang <em>et al</em>.,\n2018). Because they are concentrated at plant barriers, they are\nprobably not sufficient to prevent survival of a sufficiently hardy\nmirror bacterium once it has already entered the plant, but they may\nhelp prevent an initial infection."
+            },
+            {
+              "type": "paragraph",
+              "html": "Plants also produce a diverse range of antimicrobial peptides (Nawrot\n<em>et al</em>., 2014), which often have chiral mechanisms of action\n(Campos <em>et al</em>., 2018) and so would typically not be effective\nagainst mirror bacteria. Thionins, which lyse cellular membranes and\nexhibit broad antimicrobial activity, provide a plausible exception (Tam\n<em>et al</em>., 2015), although their effectiveness may depend upon\npotentially chiral interactions with phospholipids (Stec <em>et\nal</em>., 2004). Some antimicrobial peptides are constitutively released\nby plant cells, but others are either stored intracellularly or\nsynthesized only once a pathogen is recognized (Nawrot <em>et al</em>.,\n2014). Overall, antimicrobial peptides appear analogous to secondary\nmetabolites: most would be ineffective or inactive in the absence of an\nimmune response, but plant immunity is poorly characterized, and there\nmay be exceptions capable of protecting some species (Jones <em>et\nal</em>., 2024)."
+            }
+          ],
+          "subsections": []
+        },
+        {
+          "id": "if-triggered-ros-and-localized-desiccation-would-retain-efficacy-against-mirror-bacteria",
+          "level": 3,
+          "title": "If triggered, ROS and localized desiccation would retain efficacy against mirror bacteria",
+          "title_html": "If\ntriggered, ROS and localized desiccation would retain efficacy against\nmirror bacteria",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "While most chemical and enzymatic antibacterials are not expected to\nbe effective against mirror bacteria, other defense mechanisms could\nstill function if triggered. ROS are generally achiral and cause damage\nthrough a chirality-independent mechanism that would harm mirror\nbacteria. However, ROS are also damaging to the plant, so their\nconcentrations within the apoplast are generally tightly controlled\n(Podgórska <em>et al</em>., 2017). Following successful pathogen\nrecognition (Wojtaszek, 1997) or other stressors (Sharma <em>et\nal</em>., 2012), a plant cell may undergo an oxidative burst—a rapid,\ntransient release of large quantities of ROS. Given the anticipated\nfailure of pattern-triggered immunity to recognize mirror MAMPs, this\nreaction is unlikely to occur. Moreover, many generalist bacteria—like\nmost plant pathogens—express catalase, providing them with some degree\nof resistance (Fones & Preston, 2012)."
+            },
+            {
+              "type": "paragraph",
+              "html": "Plants also suppress bacterial growth by restricting water\navailability in the apoplast, much of which is dry and relatively\ninhospitable to endophytes (Beattie, 2011; Roussin-Léveillée <em>et\nal</em>., 2024). The exact mechanisms are not fully understood, but\nappear to involve both pattern-triggered and effector-triggered immunity\n(Z. Liu <em>et al</em>., 2022; Wright & Beattie, 2004), and may also\nbe associated with plant cell death (Freeman & Beattie, 2009).\nDrying of the apoplast could prove effective at halting mirror bacterial\ngrowth, particularly since they are unlikely to have water-soaking\neffectors with which to release water from plant cells. However, local\ndesiccation would only be effective if induced, which appears\nunlikely."
+            },
+            {
+              "type": "paragraph",
+              "html": "Finally, plants can reduce concentrations of sugars and other key\nnutrients in response to bacterial infection (Lemonnier <em>et al</em>.,\n2014; Yamada <em>et al</em>., 2016). This could again suppress mirror\nbacterial growth, but would also likely first require immune\nactivation."
+            }
+          ],
+          "subsections": []
+        }
+      ]
+    },
+    {
+      "id": "mirror-bacteria-could-plausibly-establish-chronic-local-infections-within-leaves-and-roots",
+      "level": 2,
+      "title": "7.2 Mirror bacteria could plausibly establish chronic local infections within leaves and roots",
+      "title_html": "<strong>7.2\nMirror bacteria could plausibly establish chronic local infections\nwithin leaves and roots</strong>",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "In addition to molecular and chemical immune mechanisms, plants rely\nheavily on physical barriers to defend their internal spaces from\nmicrobial invasion. The external surfaces of plants are not very\nhospitable to bacteria and are mechanically tough. Only fungal pathogens\nhave evolved mechanisms to traverse these barriers, and bacteria instead\nusually enter through natural openings, such as lateral root emergence\nsites, stomata on leaves, hydathodes at leaf margins, or through wounds.\nDespite these barriers, both specialized plant pathogens and\nnon-specialist commensal bacteria are able to enter the leaf and root\napoplast, and at least occasional mirror bacterial entry into both\nspaces appears plausible. Given the anticipated failure of plant\nimmunological defenses, it also appears plausible that mirror bacteria\ncould colonize these apoplastic spaces, but the consequences of\nlocalized infection are difficult to predict."
+        },
+        {
+          "type": "paragraph",
+          "html": "This section focuses on whether plant exposure to environmental\nmirror bacteria could lead to infection. The potential survival and\nspread of mirror bacteria through the environment, which could result in\nwidespread exposure of plants to mirror bacteria, is addressed more\ngenerally in <a href=\"#chapter-8-environmental-survival-and-spread\">Chapter 8</a>.\nDifferent kinds of mirror bacteria could greatly vary in their ability\nto infect plants. As discussed below, it appears possible that immune\nevasion could allow a mirror <em>E. coli</em> or similar generalist\nbacteria to colonize many plants, particularly if equipped with the\nability to catabolize common sugars. Ecologically invasive mirror\nbacteria would face strong selective pressures to increase robustness\nand adaptations could arise quickly (see <a href=\"#invasive-mirror-bacteria-could-rapidly-disperse-through-the-environment\">Section\n8.3</a>), increasing both the probability of plant infection and an\nexpansion in host range over time."
+        }
+      ],
+      "subsections": [
+        {
+          "id": "deficits-in-stomatal-closure-could-allow-mirror-bacteria-to-enter-leaves",
+          "level": 3,
+          "title": "Deficits in stomatal closure could allow mirror bacteria to enter leaves",
+          "title_html": "Deficits\nin stomatal closure could allow mirror bacteria to enter leaves",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "In order to enter a leaf, mirror bacteria first need to attach to and\nsurvive on its surface. Leaf surfaces are harsh environments for\nbacteria, often hydrophobic with fluctuating temperatures and humidity,\nlow nutrients, and exposure to ultraviolet radiation. Despite this,\nenteric mammalian pathogens such as <em>Salmonella</em> and <em>E.\ncoli</em> O157:H7 are able to survive on leaf surfaces for long periods\nof time (Brandl, 2006; O’Brien & Lindow, 1989), causing outbreaks of\nfood-borne illness when contaminating leafy vegetables or other produce\n(Heaton & Jones, 2008). A mirror bacterium would not necessarily be\nas hardy, and it would be unlikely to have specialized adhesins with\nwhich to attach to leaf surfaces—though this could potentially be (at\nleast partially) remedied by curli or other non-specific adhesins (Jeter\n& Matthysse, 2005). Nonetheless, prolonged survival of generalist\nmirror bacteria on leaf surfaces remains plausible for sufficiently\nhardy strains."
+            },
+            {
+              "type": "paragraph",
+              "html": "Bacteria present on the surface of a leaf can enter the apoplast\nthrough stomata, microscopic pores on the surfaces of leaves that open\nand close to regulate gas exchange. To keep pathogens from entering,\nplants rapidly close their stomata when nearby PRRs are activated, a\nstrategy known as “stomatal defense” (Melotto <em>et al</em>., 2017).\nThe importance of stomatal defense in preventing disease has been\nunderscored by the vulnerability of model systems with even narrow\ndefects in stomatal defense (Melotto <em>et al</em>., 2006; Zeng &\nHe, 2010; Zipfel <em>et al</em>., 2004), and by the ubiquity of\nvirulence factors from bacterial pathogens that specifically inhibit the\npathways leading to stomatal closure (Kroupitski <em>et al</em>., 2009;\nMelotto <em>et al</em>., 2006)."
+            },
+            {
+              "type": "paragraph",
+              "html": "All MAMPs currently known to trigger stomatal closure appear to be\nchiral (Melotto <em>et al</em>., 2017), though many likely remain\nundiscovered. If most MAMPs that trigger stomatal closure do prove to be\nchiral, stomata may not reliably close in response to the presence of\nmirror bacteria, allowing invasion of the leaf interior (<a href=\"#figure-7.2-mirror-bacteria-might-enter-leaves-through-open-stomata-and-grow-within-the-leaf-apoplast\">Figure\n7.2</a>). A chemotactic mirror bacterium may actively approach and enter\nopen stomata due to the relatively greater concentration of nutrients\ninside the leaf (Matilla &"
+            },
+            {
+              "type": "figure",
+              "id": "figure-7.2-mirror-bacteria-might-enter-leaves-through-open-stomata-and-grow-within-the-leaf-apoplast",
+              "src": "assets/image11.png",
+              "alt": "",
+              "width": "6.51389in",
+              "height": "3.9582in",
+              "caption": {
+                "id": "figure-7.2-mirror-bacteria-might-enter-leaves-through-open-stomata-and-grow-within-the-leaf-apoplast",
+                "title": "Figure 7.2: Mirror bacteria might enter leaves through open stomata and grow within the leaf apoplast",
+                "title_html": "Figure\n7.2: Mirror bacteria might enter leaves through open stomata and grow\nwithin the leaf apoplast",
+                "body_html": "<p>A single leaf is shown in cross-section. The cuticle and upper\nepidermis form a physical barrier that would likely prevent mirror\nbacteria from entering the leaf. The lower epidermis forms a similar\nbarrier, but it is punctuated by microscopic pores called stomata that\nopen and close to regulate gas exchange. Stomata typically close when\npathogens are detected through PRRs, but would likely remain open\nbecause PRRs will not detect mirror bacteria. As a result, mirror\nbacteria could move into the apoplast, the continuous extracellular\nspace in the leaf interior. Much of the apoplast is air, but the\napoplastic fluid associated with the plant cell walls contains water and\nsome nutrients and might be capable of supporting mirror bacterial\ngrowth. Although water and nutrients flow in and out of the leaf via\nxylem and phloem, it is unclear whether mirror bacteria in the apoplast\nwould be able to pass through the physical barrier formed by bundle\nsheath cells and enter the vascular system.</p>"
+              }
+            },
+            {
+              "type": "paragraph",
+              "html": "Krell, 2018); a mirror <em>E. coli</em>, for instance, would be\nattracted by both achiral nutrients and by some natural-chirality\nhexoses and amino acids (<a href=\"#mirror-bacteria-could-colonize-natural-environments-outside-of-multicellular-hosts\">Section\n8.2</a>)."
+            },
+            {
+              "type": "paragraph",
+              "html": "Hydathodes, pore-like structures on leaf margins that secrete water\nand dissolved substances through guttation, provide another potential\nentry route for bacteria (Cerutti <em>et al</em>., 2019). Like stomata,\nthey are defended by PRRs (Paauw <em>et al</em>., 2023), which are not\nexpected to recognize mirror bacteria.<br/>\nFinally, mechanical damage—including wounds delivered by herbivores—may\nprovide a third means of entry into the leaf apoplast (Savatin <em>et\nal</em>., 2014)."
+            }
+          ],
+          "subsections": []
+        },
+        {
+          "id": "generalist-mirror-bacteria-could-plausibly-grow-within-the-leaf-apoplast",
+          "level": 3,
+          "title": "Generalist mirror bacteria could plausibly grow within the leaf apoplast",
+          "title_html": "Generalist\nmirror bacteria could plausibly grow within the leaf apoplast",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "Abiotic conditions within the leaf apoplast are generally hospitable\nto bacterial growth, as reflected by the existence of communities of\nendophytic commensal bacteria in plant leaves (Chaudhry <em>et al</em>.,\n2021; Wippel, 2023). Temperatures are similar to that of the external\nenvironment, and apoplastic fluids are typically mildly acidic (Sharp\n& Davies, 2009; Tarvainen <em>et al</em>., 2023). Osmotic pressure\nis also unlikely to pose a barrier, given that the water potentials\nwithin leaves are typically above −5 MPa (Bartlett <em>et al</em>.,\n2012), equivalent to a water activity of 0.96. Roots and xylem must have\neven higher water activities in order for water to flow from the roots\nto the leaves, and activities for fruits and vegetables are also almost\nalways above 0.95 (Schmidt & Fontana, 2008)."
+            },
+            {
+              "type": "paragraph",
+              "html": "While much of the apoplast is filled with air, it contains liquid\ncapable of supporting bacterial growth. Leaf apoplastic fluid contains\nall of the inorganic nutrients required for bacterial reproduction, as\nwell as amino acids, sugars, and other organic compounds (Gabriel &\nKesselmeier, 1999; Lohaus <em>et al</em>., 2001; López-Millán <em>et\nal</em>., 2000; O’Leary <em>et al</em>., 2016; Rico & Preston,\n2008). Concentrations of individual metabolites and minerals within\napoplastic fluids are likely highly variable between species. To our\nknowledge, there has been no systematic attempt to estimate metabolite\nconcentrations across different types of plants. Nevertheless, available\nmeasurements suggest that the achiral compounds acetate, γ-aminobutyric\nacid, citrate, glycine, pyruvate, and succinate are often present at\nconcentrations above 100 µM (Gabriel & Kesselmeier, 1999; O’Leary\n<em>et al</em>., 2016). All of these can be utilized by <em>E.\ncoli</em>; acetate, pyruvate, and succinate can serve as sole carbon\nsources in <em>E. coli</em> K12 (see <a href=\"#table-1.1-achiral-organic-molecules-that-can-be-utilized-by-wild-type-or-mutant-e.-coli-k-12\">Table\n1.1</a>). Concentrations of common ʟ-amino acids may also be around 100\nµM (O’Leary <em>et al</em>., 2016; Rico & Preston, 2008) and many\ncould provide nutrients for mirror bacteria; ʟ-alanine in particular\ncould be a sole carbon and nitrogen source for a mirror <em>E. coli</em>\n(see <a href=\"#chapter-1-introduction\">Chapter 1</a>). ʟ-malate, which\ncould also be catabolized by a mirror <em>E. coli</em>, is often present\nat around 1 mM concentrations (López-Millán <em>et al</em>., 2000;\nO’Leary <em>et al</em>., 2016). In aggregate, it appears plausible that\nthese nutrients could be sufficiently abundant to permit growth of a\nmirror <em>E. coli</em>."
+            },
+            {
+              "type": "paragraph",
+              "html": "As with other metabolites, apoplastic concentrations of sugars have\nnot been systematically measured, and existing data is highly variable\nfor individual sugars. Sucrose concentrations are typically between\n0.1–4 mM (Aked & Hall, 1993; López-Millán <em>et al</em>., 2000;\nNadwodnik & Lohaus, 2008; O’Leary <em>et al</em>., 2016; Oner-Sieben\n& Lohaus, 2014; Tetlow & Farrar, 1993), while concentrations of\nsorbitol or mannitol can be in the tens of millimolar (Nadwodnik &\nLohaus, 2008). Concentrations of glucose and fructose were measured to\nbe below 50 µM in <em>Arabidopsis</em> (O’Leary <em>et al</em>., 2016),\nbut 16 mM and 4.5 mM respectively in sugar beet (López-Millán <em>et\nal</em>., 2000). In some circumstances host cell wall invertases could\nincrease hexose concentration in the apoplast, such as in immature\nleaves (Ruan, 2014) or in response to pathogen infection (Biemelt &\nSonnewald, 2006)."
+            },
+            {
+              "type": "paragraph",
+              "html": "These sugars are chiral and so would not be accessible to an exact\nmirror-image of an <em>E. coli</em>. However, as discussed in <a href=\"#chapter-1-introduction\">Chapters 1</a> and <a href=\"#chapter-3-engineering-biosafety-and-biosecurity-of-mirror-bacteria\">3</a>,\nsystems capable of ʟ-glucose utilization do exist in a few natural\nbacteria and if implemented within mirror bacteria would allow ᴅ-glucose\ncatabolism. Isomerases interconverting ʟ-fructose and ʟ-glucose are\nalready known (Park <em>et al</em>., 2007), as is a dehydrogenase\ncapable of converting ʟ-mannitol to ʟ-fructose (Pail <em>et al</em>.,\n2004), while ʟ-sorbitol could likely be catabolized by incorporating a\nknown pathway from <em>Stenotrophomonas maltophilia</em> (Brechtel\n<em>et al</em>., 2002). There are no known enzymes capable of\nhydrolyzing ʟ-sucrose, although it is possible that a suitable glycoside\nhydrolase could be discovered, evolved, or designed. Engineering mirror\nbacteria to consume common chiral sugars—which could be motivated by a\nnumber of scientific or practical considerations—might therefore\nincrease the risk of apoplastic colonization."
+            }
+          ],
+          "subsections": []
+        },
+        {
+          "id": "the-consequences-of-generalist-mirror-bacterial-infection-of-leaves-are-unclear",
+          "level": 3,
+          "title": "The consequences of generalist mirror bacterial infection of leaves are unclear",
+          "title_html": "The\nconsequences of generalist mirror bacterial infection of leaves are\nunclear",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "Because mirror bacteria are expected to resist constitutively\nreleased plant antibacterials and avoid activating the PTI or ETI\nresponses, their mortality rate within leaves could plausibly be low.\nNutrients within apoplastic fluid could support growth, even for mirror\nbacteria that are unable to catabolize sucrose or other common sugars.\nInsofar as this growth rate is more rapid than the death rate, which is\nexpected to be low due to impaired immune recognition, the mirror\nbacterial population would expand."
+            },
+            {
+              "type": "paragraph",
+              "html": "It is difficult to predict the possible consequences of a localized\nmirror bacterial infection as there are no obvious natural analogs.\nLeaves typically contain commensal bacteria, but these endophytes\nusually remain at low concentrations of 10<sup>3</sup> CFU/g (Hallmann,\n2001). Given the availability of nutrients with apoplastic fluid, it\nappears likely that endophyte populations are directly or indirectly\nkept at low levels by the host immune response (Hacquard <em>et\nal</em>., 2017). For instance, <em>Arabidopsis</em> plants in which\nmultiple immunological pathways have been knocked out can host\nendophytic populations more than a hundred-fold greater than those in\nhealthy plants (Chen <em>et al</em>., 2020), and exhibit a\ndensity-dependent immunological response to inoculations with\nnon-pathogenic bacteria (Miebach <em>et al</em>., 2024)."
+            },
+            {
+              "type": "paragraph",
+              "html": "By evading these responses, local mirror bacterial concentrations\ncould potentially become multiple orders of magnitude greater than those\nof typical commensals. Indeed, pathogenic bacteria that release\neffectors capable of suppressing the immune response can likewise reach\nhigh concentrations in leaves (Hirano & Upper, 2000). However, such\nbacteria generally cause direct harm to the leaf through both\nintracellular effectors injected into plant cells and/or through\nextracellular enzymes that damage plant tissue, often in turn providing\nthe bacteria with additional nutrients. They also trigger strong immune\nreactions from the plant itself, including localized cell death through\nthe hypersensitive response (Balint-Kurti, 2019). Mirror bacteria could\nnot cause harm through any of these mechanisms, and therefore the\nconsequences of infection cannot be predicted on the basis of those\ncaused by natural bacterial pathogens."
+            },
+            {
+              "type": "paragraph",
+              "html": "Instead, it appears most likely that mirror bacterial populations\nwould expand until growth became limited by nutrients. Given the low\nconcentrations of accessible organic compounds compared to the\nrelatively high concentrations of inorganic nutrients such as iron\n(López-Millán <em>et al</em>., 2000; O’Leary <em>et al</em>., 2016) and\nphosphorus (Gabriel & Kesselmeier, 1999; Lohaus <em>et al</em>.,\n2001; Mimura <em>et al</em>., 1992; O’Leary <em>et al</em>., 2016),\norganic carbon would likely prove limiting, causing accessible sugars\nand organic acids to become depleted in the apoplast. The extent to\nwhich this would be harmful to the leaf is unclear. While the leaf\napoplast does contain some sugars and other organic nutrients, these\ncomprise only a very small fraction of the total carbon metabolite pools\nwithin a leaf, and organic nutrients typically move between cells\nthrough symplasmic rather than apoplasmic pathways."
+            },
+            {
+              "type": "paragraph",
+              "html": "The primary exception is phloem-loading. In many plants sucrose is\nexported apoplastically within the minor leaf veins, then imported into\nneighboring phloem sieve elements and companion cells (Braun, 2022). The\nminor leaf veins are likely inaccessible to mirror bacteria, so even in\napoplastic phloem loaders the consumption of photosynthetic production\nwould be limited. There are a few known exceptions: in many deciduous\ntrees, especially sugar maples, but also in plants such as grape (Walker\n<em>et al</em>., 2021), organic sugars are transported from starch\nreserves in the roots through xylem to support leaf growth in the\nspring. As a result, apoplastic sugars can reach concentrations as high\nas 30–150 mM sucrose (Holgate, 1950; Rapp <em>et al</em>., 2019). If\nmetabolically accessible to mirror bacteria, these levels could allow\nlocal sugar-limited populations to expand rapidly, potentially consuming\nenough of either organic or inorganic nutrients to trigger systemic\nchanges in nutrient allocation that may stunt the growth of the plant.\nHowever, even this scenario would likely require large fractions of most\nleaves to be colonized."
+            },
+            {
+              "type": "paragraph",
+              "html": "Apoplastic sucrose and malate both play important roles in the\nmetabolism and regulation of guard cells (Kang <em>et al</em>., 2007;\nLawson & Matthews, 2020; Santelia & Lawson, 2016), which unlike\nother plant cells lack plasmodesmata and so must import organic\ncompounds from the apoplast. Organic compounds in the apoplast also\nprovide nutrients to endophytes, and help regulate apoplastic pH and\nosmotic pressure. A localized mirror bacterial infection might therefore\ndisrupt leaf homeostasis and reduce productivity, but this is highly\nspeculative, and plants might substantially vary in their susceptibility\nto harm."
+            },
+            {
+              "type": "paragraph",
+              "html": "A key overarching question is the extent to which localized mirror\nbacterial infection could harm the plant as a whole. It is difficult to\nsee how chronic local infections in a limited number of leaves would\ninduce highly deleterious consequences for a plant. Plants routinely\nlose individual leaves to herbivores or other injuries; a localized\nmirror bacterial infection might not be very disruptive to an individual\nleaf, or simply result in the leaf being shed. However, the simultaneous\nand chronic infection of many leaves could cumulatively stunt plant\ngrowth by reducing the flow of sugars to roots and shoots, especially in\nspecies with seasonally higher concentrations of organic nutrients in\nthe apoplast. Cumulative local leaf stresses induced by mirror bacterial\ninfection could theoretically cause maladaptive plant behaviors by\ninducing global stress responses and systemic nutrient redirection,\nperhaps analogous to the formation of leaf galls that redirect resources\nby bacterial pathogens such as <em>Rhodococcus fascians</em> (Stes\n<em>et al</em>., 2013), but this is highly speculative given that mirror\nbacteria could not similarly reprogram the plant cells. Further research\non whether leaf-specific apoplastic disruptions can trigger systemic\nresponses could help clarify the extent to which localized mirror\nbacterial infections might be harmful to the plant as a whole.\nPersistent localized plant infections, even if initially benign, would\nfurthermore provide many opportunities for the evolution of more\nvirulent mirror bacterial strains."
+            }
+          ],
+          "subsections": []
+        },
+        {
+          "id": "mirror-generalist-bacteria-within-soils-might-infect-plant-roots",
+          "level": 3,
+          "title": "Mirror generalist bacteria within soils might infect plant roots",
+          "title_html": "Mirror\ngeneralist bacteria within soils might infect plant roots",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "As discussed in <a href=\"#chapter-8-environmental-survival-and-spread\">Chapter 8</a>,\nmirror bacteria would resist most forms of predation and antibacterial\nweapons, greatly facilitating survival in, and colonization of, soils.\nThe rhizosphere, the region surrounding the roots of a plant, features a\ndistinctive microbiota that is strongly influenced by plant secretions\n(Baker <em>et al</em>., 2024). Root exudates provide bacteria with\nsugars; predominantly glucose and fructose, organic acids, including\ncitric, succinic, and malic acids (Kamilova et al., 2006); and\nantibiotic compounds to shape the community composition (Bais <em>et\nal</em>., 2006). Rhizospheric bacteria also produce antibiotic compounds\nand lytic enzymes to harm competitors and can suppress plant infections\nby limiting the growth of pathogens (Beneduzi <em>et al</em>., 2012;\nDoornbos <em>et al</em>., 2012). Mirror bacterial resistance to most\nantibiotics and all lytic enzymes, along with resistance to most\npredatory organisms (<a href=\"#mirror-bacteria-would-be-inherently-resistant-to-many-biological-controls\">Section\n8.1</a>), could aid colonization of the rhizosphere despite competition\nfor nutrients from the natural microbiota."
+            },
+            {
+              "type": "paragraph",
+              "html": "Plants host diverse endophytic communities that largely derive from\nthe rhizosphere, some of which enter the plant (<a href=\"#figure-7.3-the-anatomy-of-a-root-could-facilitate-mirror-bacterial-colonization\">Figure\n7.3</a>). Passive penetration can occur through cracks at lateral root\nemergence sites, at root tips, or through damage created by other\nmicroorganisms (Hardoim <em>et al</em>., 2008; Reinhold-Hurek &\nHurek, 1998). Emergence sites are defended by root border cells, which\nproduce a mucilage rich in antimicrobial proteins and phytoalexins to\nprevent bacterial entry (Driouich <em>et al</em>., 2013). However, root\nborder cell release and mucilage secretion are both inducible upon\npathogen detection, and consequently are likely to prove less effective\nat blocking mirror bacteria."
+            },
+            {
+              "type": "figure",
+              "id": "figure-7.3-the-anatomy-of-a-root-could-facilitate-mirror-bacterial-colonization",
+              "src": "assets/image20.png",
+              "alt": "",
+              "width": "6.41058in",
+              "height": "3.32634in",
+              "caption": {
+                "id": "figure-7.3-the-anatomy-of-a-root-could-facilitate-mirror-bacterial-colonization",
+                "title": "Figure 7.3: The anatomy of a root could facilitate mirror bacterial colonization",
+                "title_html": "Figure\n7.3: The anatomy of a root could facilitate mirror bacterial\ncolonization",
+                "body_html": "<p>An idealized root is shown in longitudinal cross-section (left) and\nhorizontal cross-section (right). The root epidermis covers the outer\nsurface of the root. Cracks in the epidermis at lateral root emergence\nsites, the root tip, or sites of damage could permit mirror bacteria in\nthe rhizosphere (the microbe-rich soil zone near root systems) to enter\nthe cortex. The cortex is composed of loosely packed cells with large\nintercellular spaces and apoplastic fluid and could plausibly be\ncolonized by mirror bacteria. In order to reach the xylem and phloem,\nwater and nutrients from the cortex must pass through the interiors of\nendodermal cells, a barrier that would likely prevent most mirror\nbacteria in the cortex from reaching the vascular tissue.</p>"
+              }
+            },
+            {
+              "type": "paragraph",
+              "html": "Further evidence that bacteria can enter roots comes from studies of\n<em>E. coli</em> and <em>Salmonella</em>, which find they can be taken\nup from soils and hydroponic solutions into plant roots (Alegbeleye\n<em>et al</em>., 2018; Hirneisen <em>et al</em>., 2012; Perulli <em>et\nal</em>., 2021). Studies of microplastic beads similarly suggest that,\nat least within wheat and lettuce, bacteria-sized beads can be\ninternalized through roots (Li, Luo, Li <em>et al</em>., 2020; Li, Luo,\nPeijnenburg <em>et al</em>., 2020; Solomon & Matthews, 2005). While\nthese studies generally focus on small, herbaceous plants under\nconditions that are not always reflective of those in the natural\nenvironment or in agricultural settings, they nevertheless suggest that\nif mirror bacteria were present in soil, they would likely be\ninternalized into the roots of many plants at least occasionally, and\nperhaps frequently."
+            },
+            {
+              "type": "paragraph",
+              "html": "Endophytic and pathogenic bacteria are further able to penetrate the\nroot endodermis and pericycle to reach the root xylem, but likely make\nuse of cell wall degrading enzymes to do so (Compant <em>et al</em>.,\n2010). Given that mirror bacteria would lack such enzymes, the extent to\nwhich they could further penetrate roots is less clear, although reports\nof plastic microbead and human pathogen transport again suggests that it\nmay be possible in some plants (see Section 7.3)."
+            },
+            {
+              "type": "paragraph",
+              "html": "Plant roots are typically home to a diverse array of endophytic\nbacteria (H. Liu <em>et al</em>., 2017) and are generally hospitable to\nbacteria. There have been few studies of root apoplastic fluid (Dragišić\nMaksimović <em>et al</em>., 2014), but like root exudate, xylem sap\n(discussed in the next section), and leaf apoplastic fluid, it contains\nvariable concentrations of organic acids, simple sugars, and amino acids\nthat could support mirror bacterial growth in many cases. Given that\nmirror bacteria suffer from reduced mortality from plant immunological\nresponses as well as from antibacterials originating from root border\ncells and competing bacteria, it is plausible that mirror bacteria could\ncolonize root apoplasts."
+            },
+            {
+              "type": "paragraph",
+              "html": "As with a localized leaf infection, it is unclear whether\ncolonization of the rhizosphere or localized infections of the root\ncortex would prove harmful to plants. The consumption of organic\nnutrients could modify local redox potentials and pH. Metabolites\nreleased by plants play an important role in shaping endophytic and\nrhizospheric microbial communities (Badri & Vivanco, 2009; Shi\n<em>et al</em>., 2011), which in turn can facilitate plant nutrient\nuptake (Singh <em>et al</em>., 2022) and help protect against pathogens\n(Raaijmakers et al., 2009). Organic acids in particular play important\nroles in the acquisition of phosphate and micronutrients (Ryan <em>et\nal</em>., 2001) as well as the tolerance of aluminum (Ma <em>et\nal</em>., 2001). Whether the consumption of metabolites by mirror\nbacteria could disrupt these or other root processes, and if so, the\nextent to which such disruptions would harm plants, is unclear. Mirror\nbacteria might disrupt soil microbial communities more generally,\ncausing soil degradation and thereby harming plant growth and\nproductivity in both farmed and natural environments (see <a href=\"#invasive-mirror-bacteria-could-cause-irreversible-ecological-harm\">Section\n8.5</a>)."
+            }
+          ],
+          "subsections": []
+        }
+      ]
+    },
+    {
+      "id": "the-extent-to-which-mirror-bacteria-could-spread-through-and-colonize-plant-vascular-tissue-is-unclear",
+      "level": 2,
+      "title": "7.3 The extent to which mirror bacteria could spread through and colonize plant vascular tissue is unclear",
+      "title_html": "<strong>7.3\nThe extent to which mirror bacteria could spread through and colonize\nplant vascular tissue is unclear</strong>",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "The xylem and phloem are the two main components of the vascular\nsystem in plants (<a href=\"#figure-7.4-plants-transport-water-and-nutrients-via-xylem-and-phloem\">Figure\n7.4</a>). The xylem, which is part of the apoplast, primarily functions\nto transport water and dissolved minerals from the roots to the rest of\nthe plant via dead, hollow cells, using transpiration and root pressure.\nThe phloem is a bidirectional transport system composed of living cells\nthat moves sugars, amino acids, and other organic compounds produced\nthrough photosynthesis from leaves to other parts of the plant,\nincluding roots, fruits, and developing tissues. Apoplastic pathogens\nthat enter the xylem or phloem can sometimes spread widely through the\nplant. A key question is whether localized mirror bacterial infections\nmight do the same, as such spread could have very negative consequences\nto the plant."
+        },
+        {
+          "type": "figure",
+          "id": "figure-7.4-plants-transport-water-and-nutrients-via-xylem-and-phloem",
+          "src": "assets/image4.png",
+          "alt": "",
+          "width": "6.4909in",
+          "height": "4.57813in",
+          "caption": {
+            "id": "figure-7.4-plants-transport-water-and-nutrients-via-xylem-and-phloem",
+            "title": "Figure 7.4: Plants transport water and nutrients via xylem and phloem",
+            "title_html": "Figure\n7.4: Plants transport water and nutrients via xylem and phloem",
+            "body_html": "<p><strong>A.</strong> Roots absorb water from soil, which is\ntransported via the xylem through the stem to the leaves and shoot apex.\nSources (mature leaves) produce sugars and other photosynthates which\nare transported via the phloem to sinks, including shoots, young leaves,\nand roots. Unlike xylem, flow in the phloem can be bidirectional.\n<strong>B.</strong> Longitudinal cross-section of an idealized vascular\nbundle from an angiosperm. The xylem is composed of vessel elements and\ntracheids, which are dead, hollow cells. Vessel elements are stacked\nend-to-end to form vessels that permit both water conduction and the\nfree movement of bacteria. Vessels are connected to each other and to\ntracheids by pit membranes that allow water conduction, but the pits are\ntoo small to allow free movement of bacteria. The phloem is composed of\nsieve tube elements and companion cells. Sieve tube elements are\nelongated, live cells that lack a nucleus and most organelles. They are\narranged end-to-end to form sieve tubes and connected by sieve plates\nthat allow fluid and bacteria to freely flow through the tube. Each\nsieve tube element is connected to a companion cell via plasmodesmata.\nXylem and phloem are separated from each other by the cambium, a layer\nof actively dividing cells.</p>"
+          }
+        }
+      ],
+      "subsections": [
+        {
+          "id": "mirror-bacteria-may-or-may-not-spread-from-the-roots-through-xylem",
+          "level": 3,
+          "title": "Mirror bacteria may or may not spread from the roots through xylem",
+          "title_html": "Mirror\nbacteria may or may not spread from the roots through xylem",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "The xylem, a key component of the plant vascular system, is primarily\ncomposed of two types of specialized cells: tracheids and vessel\nelements. While tracheids are found in all vascular plants, vessel\nelements are unique to angiosperms. Both cell types undergo programmed\ncell death and lignification as part of their maturation process,\nresulting in hollow, reinforced structures optimized for water\ntransport. In angiosperms, vessel elements align end-to-end to form\nvessels, which can range from less than a centimeter to several meters\nin length (Jacobsen <em>et al</em>., 2012). Lateral connections between\nvessels, and between vessels and tracheids, are facilitated by pit\nmembranes. These membranes contain pores that are typically less than\n100 nm in diameter (Choat <em>et al</em>., 2008), which permit water\nmovement while theoretically restricting the passage of larger\nparticles, including microorganisms. The primary function of the xylem\nis to enable the transpiration-driven passive transport of water and\ndissolved inorganic nutrients from roots to aerial parts of the plant at\nvelocities ranging from approximately 0.3–10 mm/s (Tyree &\nZimmermann, 2011; Windt <em>et al</em>., 2006)."
+            },
+            {
+              "type": "paragraph",
+              "html": "Pathogenic bacteria can invade and spread through xylem. Being too\nlarge to readily pass through the pit membranes, it is generally assumed\nthat xylem-colonizing bacteria utilize cell wall degrading enzymes to\ntravel between these regions (Pérez-Donoso <em>et al</em>., 2010;\nReinhold-Hurek & Hurek, 2011; Roper <em>et al</em>., 2007). The\nvelocity of xylem sap is greater than typically achievable by\nflagellated bacteria (Milo & Phillips, 2015), so successful\ncolonization requires adhesion to the xylem vessel walls. Movement\nupstream is thought to occur through twitching motility (De La Fuente\n<em>et al</em>., 2022)."
+            },
+            {
+              "type": "paragraph",
+              "html": "Mirror bacteria would lack cell wall degrading enzymes, which should\nrender them unable to degrade pit membranes. They would also lack\nspecialized adaptations to adhere to, and form biofilms within, xylem,\nimpairing their ability to move against the flow of xylem sap."
+            },
+            {
+              "type": "paragraph",
+              "html": "Nevertheless, passage through xylem appears to be possible in many\nplant species (Ryser <em>et al</em>., 2009). Studies of microplastic\nbeads indicate that bacterial-sized beads can be internalized through\nroots and transported to leaves, at least in wheat and lettuce (Li, Luo,\nLi <em>et al</em>., 2020; Li, Luo, Peijnenburg <em>et al</em>., 2020;\nSolomon & Matthews, 2005). Other studies have found that the human\nenteric pathogens <em>E. coli</em> and <em>Salmonella</em> can be\ninternalized through roots and transported to leaves in\n<em>Arabidopsis</em> (Cooley <em>et al</em>., 2003), barley (Kutter\n<em>et al</em>., 2006), lettuce (Franz <em>et al</em>., 2007; Solomon\n& Matthews, 2005; Solomon <em>et al</em>., 2002), parsley (Lapidot\n& Yaron, 2009), and tomato (Guo <em>et al</em>., 2002); at least in\n<em>Arabidopsis</em>, such movement appears to require flagellar\nmotility (Cooley <em>et al</em>., 2003). In rice, maize, and other\nmonocots and dicots, rhizobial bacteria enter the roots and are\ntransported to the leaves in large numbers, although they might express\ncell wall degrading enzymes (Chi <em>et al</em>., 2005; Lamb <em>et\nal</em>., 1996). Given that both microplastic beads and the human\nenteric pathogens definitely lack such enzymes, these findings suggest\nthat a mirror bacteria could potentially travel through xylem in at\nleast some cases."
+            },
+            {
+              "type": "paragraph",
+              "html": "It is unclear how such transport occurs. One possibility is that\nbacterial-sized “holes” in pit membranes form often enough to create the\noccasional unobstructed path from roots to leaves. It is similarly\nunclear whether such transport can occur in other plants; studies have\nfound successful invasion of crop roots by <em>E. coli</em> and\n<em>Salmonella</em> without subsequent translocation to leaves,\nincluding in spinach (Hora <em>et al</em>., 2005), cabbage (Wachtel\n<em>et al</em>., 2002), and in apple and nectarine trees (Perulli <em>et\nal</em>., 2021). Given the limited evidence available—which is almost\nentirely restricted to young herbaceous plants—it is difficult to say\nanything beyond that mirror bacterial passage through xylem could\nplausibly occur in at least some plants."
+            },
+            {
+              "type": "paragraph",
+              "html": "In addition to entry through roots, direct entry into the xylem could\noccur through wounds, particularly those created by insects; entry from\nleaves might be possible in some cases, particularly if damage is\ncreated by other pathogens. Movement of mirror bacteria against the flow\nof xylem sap, however, appears unlikely. This suggests that they would\ngenerally not be able to spread from an infected leaf into other\nbranches or down to the roots absent the evolution of coordinated\nxylem-transiting capabilities. However, it must be noted that <em>E.\ncoli</em> and <em>Salmonella</em> are not thought to colonize xylem. The\nintrinsic immune evasiveness of mirror bacteria could facilitate xylem\ncolonization. Mirror bacteria that enter roots and become trapped at a\npit membrane could potentially reside there for an extended period while\nincreasing in number, affording more opportunities to pass through in\nthe event of a breach."
+            }
+          ],
+          "subsections": []
+        },
+        {
+          "id": "generalist-mirror-bacteria-could-plausibly-colonize-accessible-regions-of-xylem",
+          "level": 3,
+          "title": "Generalist mirror bacteria could plausibly colonize accessible regions of xylem",
+          "title_html": "Generalist\nmirror bacteria could plausibly colonize accessible regions of\nxylem",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "While physical barriers and sap flow may make it difficult for a\nmirror bacterium to access xylem, any regions that are accessible would\nplausibly have favorable conditions for growth. Xylem sap is generally\nconsidered to be nutrient-poor (Fatima & Senthil-Kumar, 2015), but\nconcentrations of nutrients can be highly variable. Measured glucose\nconcentrations, for instance, vary from 20 µM (Zuluaga <em>et al</em>.,\n2013) to 20 mM (López-Millán <em>et al</em>., 2000; Zuluaga <em>et\nal</em>., 2013), while concentrations of organic acids such as malate\nand citrate can likewise vary from below 5 µM (Anguita-Maeso <em>et\nal</em>., 2021; Fernandez-Garcia <em>et al</em>., 2011) to several\nmillimolar (Kasper <em>et al</em>., 2022; López-Millán <em>et al</em>.,\n2000; Prima-Putra & Botton, 1998). Amino acid concentrations are\nalso highly variable, with individual amino acids often in the 10–100 µM\nrange but sometimes over 10 mM (Anguita-Maeso <em>et al</em>., 2021;\nFernandez-Garcia <em>et al</em>., 2011; Nakamura <em>et al</em>., 2008;\nPrima-Putra & Botton, 1998; Zuluaga <em>et al</em>., 2013). Given\nthat a mirror generalist bacterium could likely catabolize many organic\nacids, some amino acids, and (with straightforward engineering) glucose\nand other simple sugars, it seems plausible that mirror bacteria would\nbe broadly capable of replicating within xylem. In the absence of immune\nrecognition and an effective immune response, this could allow\ncolonization of the xylem."
+            },
+            {
+              "type": "paragraph",
+              "html": "Growing mirror bacterial colonies could plausibly create physical\nblockages in pit membranes, the likelihood and consequences of which are\ndifficult to assess. A potentially relevant analog is <em>Xylella\nfastidiosa</em>, a xylem-restricted gamma-proteobacterium with a broad\nhost range (European Food Safety Authority, 2020; Rapicavoli <em>et\nal</em>., 2018). While a benign commensal in many plants,\n<em>X. fastidiosa</em> acts as a pathogen in others, causing symptoms\nthat appear to result from vascular occlusions impeding water transport\n(Chatterjee <em>et al</em>., 2008; Sun <em>et al</em>., 2013). Similar\nphenotypes could result from mirror bacterial infections of the xylem.\nHowever, unlike <em>X. fastidiosa</em>—which can use cell wall degrading\nenzymes to travel through xylem (Roper <em>et al</em>., 2007)—mirror\nbacteria may be restricted to a small fraction of xylem and consequently\nlimited in their ability to harm the plant. If most of the xylem were\naccessible to mirror bacteria, whether due to physiological quirks of\nthe plant, slow spread over a long time period, or—like <em>X.\nfastidiosa</em>—by being spread through insect vectors, it appears\nplausible that a systemic infection could eventually greatly reduce flow\nof water through xylem, damaging the plant."
+            }
+          ],
+          "subsections": []
+        },
+        {
+          "id": "entry-into-phloem-appears-difficult",
+          "level": 3,
+          "title": "Entry into phloem appears difficult",
+          "title_html": "Entry into phloem appears\ndifficult",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "The phloem consists of sieve tubes, elongated sieve element cells\npositioned end-to-end and connected both vertically and laterally by\nsieve pores 0.4–15 μm in width (Bussières, 2014; Esau & Cheadle,\n1959; Mullendore <em>et al</em>., 2010; Thompson & Wolniak, 2008).\nPhloem sap passively flows from leaves to sink tissues—roots, buds,\nseeds, and flowers—at around 0.05–0.4 mm/s (Fisher, 1990; Liesche <em>et\nal</em>., 2013; Windt <em>et al</em>., 2006). Unlike xylem sap, the flow\nof phloem sap can be bidirectional. For instance, phloem sap flows into\nbudding leaves to provide nutrients, but once the leaves mature they\nbecome phloem sources rather than sinks (Will <em>et al</em>., 2013). A\nmirror bacterium able to enter and survive within the phloem would\ntherefore likely be freely transported from mature leaves toward sink\ntissues, including budding shoots and leaves."
+            },
+            {
+              "type": "paragraph",
+              "html": "Entry into phloem is more challenging than xylem, and appears only\nlikely to occur in rare or exceptional circumstances. Entry requires\nfirst breaching the protective bundle sheath cells and then companion\ncells or sieve elements. While generalized plant pathogens that have\nbroadly overcome plant defenses occasionally enter phloem (Gao <em>et\nal</em>., 2016; Mensi <em>et al</em>., 2014; Roos & Hattingh, 1987),\nall known plant pathogens that primarily inhabit phloem rely on\nphloem-feeding insect hosts for entry (Jiang <em>et al</em>., 2019).\nInfected insects could potentially deliver mirror bacteria into phloem,\nthough only if the mirror bacteria can reach the insect salivary glands\nand grow to sufficiently high abundance prior to incapacitating the\ninsect."
+            },
+            {
+              "type": "paragraph",
+              "html": "Entry into phloem could occur through other types of wounds (Savatin\n<em>et al</em>., 2014). Phloem-localized proteins and callose deposition\nare believed to occlude sieve plates and thus restrict movement to the\nrest of the phloem (Bendix & Lewis, 2018), though this remains\npoorly understood.<a class=\"footnote-ref\" data-footnote-ref=\"fn14\" href=\"#fn14\" id=\"fnref14\" role=\"doc-noteref\"><sup>14</sup></a> Nevertheless, there have been\nreported observations of bacteria entering the phloem while colonizing\nother plant tissue, including both plant pathogens <em>Xanthomonas</em>\n(Mensi <em>et al</em>., 2014; Wang <em>et al</em>., 2018) and\n<em>Pseudomonas syringae</em> (Gao <em>et al</em>., 2016) as well as\nhuman enteric pathogens <em>Salmonella</em> (Gu <em>et al</em>., 2011)\nand <em>E. coli</em> (Deering <em>et al</em>., 2011). If confirmed,\nespecially for bacteria lacking cell wall degrading enzymes, mirror\nbacteria may be capable of similar entry."
+            },
+            {
+              "type": "paragraph",
+              "html": "Studies performing metagenomic sequencing of phloem exudate have\nreported finding nucleic acids corresponding to bacterial endophytes of\nthe leaves and roots in stone fruit and citrus (Eichmeier <em>et\nal</em>., 2019; Y. Wu <em>et al</em>., 2020). This could be because\nliving bacteria are occasionally translocated into the phloem before\nbeing killed by the immune response or by osmotic effects.\nAlternatively, these results may instead be explained by transport of\nnucleic acids from dead apoplastic bacteria into the phloem, or from\nsample contamination, a common occurrence due to the challenge of\nobtaining clean samples of phloem (Broussard <em>et al</em>., 2023)."
+            },
+            {
+              "type": "paragraph",
+              "html": "If endophytes do occasionally enter into the phloem of some plants\nwithout being vectored by insects, mirror bacteria may be capable of\ndoing the same unless cell wall degrading enzymes are required, which is\npossible. Given how little is known about the presence of\nnatural-chirality bacteria in the phloem outside of the phloem-limited\npathogens, more research would be needed to determine whether entry into\nthe phloem occurs commonly, infrequently, or is almost impossible."
+            }
+          ],
+          "subsections": []
+        },
+        {
+          "id": "mirror-bacteria-could-plausibly-cause-a-lethal-systemic-infection-if-they-were-to-enter-the-phloem",
+          "level": 3,
+          "title": "Mirror bacteria could plausibly cause a lethal systemic infection if they were to enter the phloem",
+          "title_html": "Mirror\nbacteria could plausibly cause a lethal systemic infection if they were\nto enter the phloem",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "The immunological defenses of the phloem are poorly understood (Jiang\n<em>et al</em>., 2019; Zhang <em>et al</em>., 2020). As a result, it is\ndifficult to assess the extent to which phloem defenses would be evaded\nby mirror bacteria. Given the extent to which chiral recognition is\nrequired for other plant immune responses, it appears plausible that\nmirror bacteria could evade phloem defenses. If so, then any mirror\nbacteria that enter the phloem could trigger unchecked growth in this\ncompartment, with highly deleterious consequences for the plant."
+            },
+            {
+              "type": "paragraph",
+              "html": "Phloem sap is very nutrient-rich. Sucrose is the primary sugar in the\nphloem sap of most plants, with typical concentrations over several\nhundred millimolar (Broussard <em>et al</em>., 2023; Dinant <em>et\nal</em>., 2010). Reducing sugars such as glucose and sucrose are\ntypically rare (D. D. Liu <em>et al</em>., 2012), while polyols such as\nmannitol and sorbitol are the primary carbohydrates in some species\n(Nadwodnik & Lohaus, 2008). Amino acids are the primary source of\nnitrogen, with total concentrations over 100 mM, including 1–10 mM of\nalanine (Dinant <em>et al</em>., 2010; Hijaz & Killiny, 2014).\nOrganic acids, such as malate, succinate, and citrate, may also be\npresent at millimolar concentrations (Broussard <em>et al</em>., 2023;\nHayashi & Chino, 1985; Lohaus <em>et al</em>., 2000). Phloem thus\ncontains plentiful nutrients for a mirror <em>E. coli</em> or a\nsimilarly robust mirror bacterium, though accessing the major sugars\nwould require catabolic pathways for sucrose, mannitol, and\nsorbitol."
+            },
+            {
+              "type": "paragraph",
+              "html": "Even though the concentrations of organic compounds within phloem sap\nare high, the overall water potential of around −1 to −2 MPa (Thompson\n& Holbrook, 2003) should support the growth of most bacteria. <em>E.\ncoli</em>, for instance, can grow at sucrose concentrations above 1 M,\nthough rapid changes in concentration can cause most cells to die\nthrough plasmolysis (Kawarai <em>et al</em>., 2009; Scheie &\nRehberg, 1972). Phloem sap is also slightly alkaline (Dinant <em>et\nal</em>., 2010), and temperatures are close to those of the external\nenvironment."
+            },
+            {
+              "type": "paragraph",
+              "html": "As discussed in <a href=\"#box-1.2-could-natural-chirality-molecules-be-toxic-to-mirror-life\">Box\n1.2</a> of <a href=\"#chapter-1-introduction\">Chapter 1</a>, millimolar\nconcentrations of individual ᴅ-amino acids can inhibit bacterial growth.\nGiven the very high amino acid concentrations in phloem sap, it is\nplausible that amino acid toxicity could reduce or entirely preclude the\ngrowth of some kinds of mirror bacteria. However, resistance to these\ntoxicities may be relatively accessible to evolution, such as through\ninactivation of the permease importing the toxic amino acid into the\ncytosol or upregulation of an existing detoxifying enzyme."
+            },
+            {
+              "type": "paragraph",
+              "html": "Given the high nutrient concentrations and likely failure of\nimmunological defenses in phloem, it is plausible that a mirror\nbacterium able to enter and survive in phloem could replicate unchecked\nand reach very high concentrations. Mirror bacteria could accumulate in\nthe phloem of roots, shoots, and other sinks, which could cause severe\ndisruption to neighboring tissues by consuming nutrients, releasing\nmetabolic waste products, or simply creating physical blockages."
+            },
+            {
+              "type": "paragraph",
+              "html": "In addition to the potential for deleterious effects from organic\nnutrient depletion, the introduction of an aerobic bacterial pathogen\ninto the phloem could be quite harmful to the plant. Unlike animals,\nplants lack an active circulatory system specialized for distributing\noxygen to tissue, and hypoxia within phloem tissue occurs within healthy\nplants (van Dongen <em>et al</em>., 2003). Even if restricted to achiral\nnutrients, aerobic respiration by mirror bacteria would likely be\nlimited by oxygen, not organic carbon, such that regions of phloem\ncolonized by mirror bacteria could readily become anoxic. Anoxic plant\ncells must produce ATP through fermentation, which yields much less\nenergy than aerobic respiration per mole of carbon and produces toxic\nbyproducts such as ethanol and lactate (Geigenberger, 2003). Plants vary\nin their ability to tolerate temporarily anoxic conditions\n(Bailey-Serres & Voesenek, 2008), but long-term anoxia would almost\ncertainly disrupt plant cell functionality and lead to cell death\n(Loreti <em>et al</em>., 2016)."
+            },
+            {
+              "type": "paragraph",
+              "html": "Other disruptions are possible. The phloem is continuous with the\ncytoplasm of adjacent plant cells, so any changes to phloem acidity,\nredox potential, or composition could disrupt functionality of\nneighboring cells. Even mirror proteins and other mirror macromolecules\nfrom lysed mirror bacteria could be transported through plasmodesmata\ninto neighboring cells (Stadler <em>et al</em>., 2005), where they would\nremain undigested. Large mirror bacterial populations could themselves\ncreate physical blockages that prevent flow of phloem into roots,\nshoots, and other sink tissues."
+            },
+            {
+              "type": "paragraph",
+              "html": "Disruptions to phloem unloading caused by localized cell death or\nbacterial overgrowth would stunt or kill roots, shoots, fruits, and\nother sink tissues. Root death would, in turn, prevent the flow of water\nand inorganic nutrients back to the leaves, leading to wilting and plant\ndeath. Systemic stunting and necrosis are common symptoms of\nphloem-limited pathogens (Bendix & Lewis, 2018), which provide\npossible analogs to a mirror bacterial infection. Interestingly,\nphloem-limited pathogens are typically incapable of aerobic respiration\n(Christensen <em>et al</em>., 2005; Duan <em>et al</em>., 2009; Marcone,\n2014; Oshima <em>et al</em>., 2004) and may be poor analogies for mirror\nbacteria in other important ways."
+            },
+            {
+              "type": "paragraph",
+              "html": "Phloem immunological defenses are poorly understood and likely\nvariable between plant species; any attempt to predict the consequences\nof a putative mirror bacterial phloem infection is therefore necessarily\nspeculative. Nevertheless, if mirror bacteria are able to enter the\nphloem and establish an infection—which remains unclear—the consequences\nare likely to be highly deleterious for most plants."
+            }
+          ],
+          "subsections": []
+        }
+      ]
+    },
+    {
+      "id": "countermeasures-for-agricultural-plants",
+      "level": 2,
+      "title": "7.4 Countermeasures for agricultural plants",
+      "title_html": "<strong>7.4\nCountermeasures for agricultural plants</strong>",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "The vast majority of human calories are produced through agriculture,\nwith more than half coming from just four crops: wheat, rice, maize, and\nsoybeans (D’Odorico <em>et al</em>., 2014). Crop pests and pathogens,\nespecially fungi, are responsible for yield losses of approximately 25%\n(Savary <em>et al</em>., 2019). Given that fairly mild biotic and\nabiotic stressors can cause large productivity losses (Boyer, 1982),\neven relatively mild mirror bacterial infections could plausibly cause\nsignificant reductions in yield. Worse outcomes might be possible. Wheat\nreportedly transports bacteria-sized microplastic beads from its roots\nto the leaves (Li, Luo, Li <em>et al</em>., 2020; Li, Luo, Peijnenburg\n<em>et al</em>., 2020), while rice and maize transport rhizobial\nmicrobes in a similar manner (Chi <em>et al</em>., 2005; Lamb <em>et\nal</em>., 1996). If these organisms are susceptible to systemic\ninfection, then invasive mirror bacteria could cause substantial losses\nin the major crops."
+        }
+      ],
+      "subsections": [
+        {
+          "id": "conventional-methods-of-controlling-bacterial-pathogens-would-be-of-limited-use-against-mirror-bacteria",
+          "level": 3,
+          "title": "Conventional methods of controlling bacterial pathogens would be of limited use against mirror bacteria",
+          "title_html": "Conventional\nmethods of controlling bacterial pathogens would be of limited use\nagainst mirror bacteria",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "As discussed in <a href=\"#chapter-8-environmental-survival-and-spread\">Chapter 8</a>, a\nsufficiently robust mirror bacterium could plausibly survive or even\ncolonize many soils and spread widely through animal hosts and human\nactivities. If such a strain were also broadly capable of infecting\nplants, it could cause unprecedented and widespread agricultural losses.\nPreventing crop exposure to invasive mirror bacteria through cultural\nmethods such as quarantines, crop rotations, elimination of alternative\nhosts, and removal of infected plants is unlikely to be effective. Soil\ntreatments such as solarization, steam heating, fire, or chemical\ndisinfestation could presumably reduce mirror bacteria concentration\nwithin soils, but are not feasible at scale, would severely disrupt\nnatural microbiota, and/or may not be able to completely eliminate the\nbacteria. Even if mirror bacteria were to be eliminated in a field, they\ncould be reintroduced by animals or from windborne dust and debris."
+            },
+            {
+              "type": "paragraph",
+              "html": "Antibiotics have seen limited use in agricultural contexts as their\nuse is not economical (McManus <em>et al</em>., 2002); they are\ngenerally only effective at preventing infection and remain active only\nfor a few days (Stockwell & Duffy, 2012). Fungicides, which are far\nmore common in agriculture, may be a better comparison. Many systemic\nfungicides, which are internalized into the plant and typically\ntransported through the apoplast—phloem mobility is rare—are able to\ncure and eradicate, rather than merely prevent, fungal infection (Oliver\n& Hewitt, 2014). However, even if systemic antimirror compounds were\nidentified, they would need to be constantly reapplied to crops to\nprevent reinfection from environmental reservoirs such as wild plants\nand untreated soils. The scale of production required to protect crops\nat scale may therefore prove infeasible."
+            },
+            {
+              "type": "paragraph",
+              "html": "Copper-based antimicrobial compounds are achiral and comparatively\ncheap. Due to their phytotoxicity, however, their application is limited\nto the preventative treatment of leaves: they have no curative or\nsystemic activity (Lamichhane <em>et al</em>., 2018)."
+            },
+            {
+              "type": "paragraph",
+              "html": "Biological methods use natural enemies such as predators or microbial\nantagonists to control pathogens (van Lenteren <em>et al</em>., 2018).\nAs discussed in <a href=\"#mirror-bacteria-would-be-inherently-resistant-to-many-biological-controls\">Section\n8.1</a>, mirror bacteria could be resistant to most forms of predation\nand many forms of microbial antagonism, and it is unlikely that existing\nbiological controls would be very effective. More speculative biological\ncontrols, such as mirror phages or genetically engineered microbes, are\ndescribed in <a href=\"#countermeasures-to-invasive-mirror-bacteria-might-lessen-but-would-not-halt-the-ecological-damage\">Section\n8.6</a>. Using such methods to eliminate mirror bacteria from a local\nenvironment such as a field appears to be very difficult; containing and\neliminating invasive mirror bacteria from the environment more broadly\ndoes not appear feasible by any method."
+            }
+          ],
+          "subsections": []
+        },
+        {
+          "id": "plants-might-be-engineered-to-resist-infection",
+          "level": 3,
+          "title": "Plants might be engineered to resist infection",
+          "title_html": "Plants might be\nengineered to resist infection",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "While highly speculative, engineering plants to be resistant to\nmirror bacteria could be a feasible strategy to enable agricultural\nproduction at scale despite the presence of an invasive mirror\nbacterium. One promising strategy would involve engineering immune\nrecognition of certain mirror MAMPs, thus allowing innate immune\ndefenses to trigger in response to mirror bacteria."
+            },
+            {
+              "type": "paragraph",
+              "html": "Plant PRRs, which are responsible for monitoring the apoplast, are\nconserved and remain functional when expressed transgenically in a wide\nrange of plants (Lacombe <em>et al</em>., 2010). For example, the EF-Tu\nreceptor from <em>Arabidopsis</em> protects against bacterial diseases\nin tomato (Kunwar <em>et al</em>., 2018), potato (Boschi <em>et\nal</em>., 2017), and citrus (Mitre <em>et al</em>., 2021). If any\nnaturally occurring PRRs have some cross-affinity to mirror bacterial\ncell wall components—which is plausible, given the diversity of PRRs\nfound in nature (Boutrot & Zipfel, 2017)—then these could be\nenhanced and transferred to major crops."
+            },
+            {
+              "type": "paragraph",
+              "html": "Engineering the binding ectodomain of a PRR to recognize unique\nsignatures of mirror bacteria would allow targeting of patterns such as\nᴅ-peptide multimers that are absent from nature. Although there is not\nyet any equivalent to engineered mammalian SNIPR receptors in plants\n(Zhu <em>et al</em>., 2022), the anti-flagellin ectodomain of the FLS2\nhas been successfully evolved to recognize a different peptide (Helft\n<em>et al</em>., 2016), and similar leucine-rich repeat domains have\nbeen retargeted by phage and yeast display (Velásquez <em>et al</em>.,\n2017; Wezner-Ptasinska & Otlewski, 2015). Once a suitable ectodomain\nhas been engineered, it could be used to create chimeric PRRs with\nnative intracellular kinase domains. Chimeric PRRs utilizing natural\nectodomains have already been engineered and found to work <em>in\nplanta</em> (Albert & Felix, 2010; Schwessinger <em>et al</em>.,\n2015; J. Wu <em>et al</em>., 2019). Directed evolution of the ectodomain\nor design of a novel binder specific to mirror peptide multimers\nfollowed by engraftment onto an existing PTI receptor could potentially\nconfer mirror-specific recognition and induction of the plant immune\nresponse. The XA21 receptor from rice, which provides ETI-level\nresistance despite being extracellular ETI (Ercoli <em>et al</em>.,\n2022), is a particularly promising candidate for engineered ᴅ-peptide\nmultimer recognition. For example, promiscuous ᴅ-peptide minibinders\nthat do not bind biomolecules found in plant tissues might be\nincorporated into the N-terminal half of the native leucine-rich repeat\nectodomain scaffold (Yeh <em>et al</em>., 2023), likely preserving the\nsignal-transducing interface between binding and transmembrane domains\nwhile reprogramming receptor specificity. Encoding several such\nengineered receptors recognizing a variety of ᴅ-peptide multimers could\nrobustly confer immunity to mirror bacteria."
+            },
+            {
+              "type": "paragraph",
+              "html": "Another possible route might leverage the nucleotide-binding,\nleucine-rich repeat (NLR) proteins that recognize intracellular\nbacterial effectors (Kourelis & van der Hoorn, 2018), which have\nbeen subject to more extensive engineering than PRRs (Bentham <em>et\nal</em>., 2023; Cesari <em>et al</em>., 2022; De la Concepción <em>et\nal.</em>, 2019; Y. Liu <em>et al</em>., 2021; Maidment <em>et al</em>.,\n2023; Zdrzałek <em>et al</em>., 2024). Most relevantly, nanobody-NLR\nfusions have been demonstrated to trigger ETI upon recognition by the\nnanobody, suggesting that this approach can be generalized to recognize\nany molecular trigger (Kourelis <em>et al</em>., 2023). However,\ninvasive mirror bacteria are not expected to enter plant cells, so\ntraditional NLRs would not be useful: the relevant signaling domains\nwould need to be fused to the transmembrane domain of an extracellular\nreceptor, as with XA21."
+            },
+            {
+              "type": "paragraph",
+              "html": "To compensate for the reduced efficacy of many plant antimicrobials\nagainst mirror bacteria, new antimirror molecules might be engineered\ninto plants, much as the transgenic expression of antimicrobial peptides\ncan increase plant tolerance to existing bacterial pathogens (Balaji\n& Smart, 2012; Hao <em>et al</em>., 2016; Zou <em>et al.</em>,\n2017). For example, the constitutive overexpression of\nchirality-independent antimicrobial peptides could provide always-on\nresistance, while inducible effectors triggered by synthetic\nmirror-specific receptors could provide targeted immunity. Metabolic\npathways for anti-mirror small molecules might also be introduced or\n(for achiral antimicrobials) upregulated. Modifications to limit the\navailability of key nutrients could provide an additional method to\nincrease plant resistance to infection."
+            },
+            {
+              "type": "paragraph",
+              "html": "While many of the strategies for engineering heritable resistance to\nmirror bacteria may appear promising, it is important to note that all\nof these putative methods of preventing infection are necessarily\nspeculative. They may have unintended and undesired consequences, such\nas reducing yields, and may not prove entirely effective at preventing\nmirror bacterial contamination of food. Developing microbial methods of\nfood production or cultivating simple plants such as duckweeds that are\nlikely to resist mirror bacterial infection might provide a more robust\nand generalizable defense against threats to traditional agriculture,\nbut these alternatives are almost wholly undeveloped. If engineering\nheritable mirror resistance in crops is pursued, it would need to be\nperformed separately in each crop species or cultivar. Protecting wild\nplants and their associated ecosystems would not be feasible."
+            }
+          ],
+          "subsections": []
+        }
+      ]
+    }
+  ],
+  "kind": "chapter",
+  "number": 7
+}

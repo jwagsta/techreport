@@ -1,0 +1,733 @@
+{
+  "id": "chapter-2-pathways-to-mirror-life",
+  "level": 1,
+  "title": "Pathways to Mirror Life",
+  "title_html": "Chapter 2: Pathways to Mirror\nLife",
+  "blocks": [
+    {
+      "type": "paragraph",
+      "html": "<em>Katarzyna P. Adamala<sup>1</sup>, Kevin M. Esvelt<sup>2</sup>,\nJohn I. Glass<sup>3</sup>, Sebastian B. Oehm<sup>3,4</sup>,</em>"
+    },
+    {
+      "type": "paragraph",
+      "html": "<em>Hiroaki Suga<sup>5</sup>, Jack W. Szostak<sup>6</sup></em>"
+    },
+    {
+      "type": "paragraph",
+      "html": "Ever since Louis Pasteur recognized the chiral nature of life,\nscientists have speculated about the possibility of mirror-image life\nforms. Mirror-image organisms would be expected to share the properties\nof their natural-chirality counterparts, akin to the similarities\nbetween left and right hands. However, they could not emerge by natural\nevolution from existing natural-chirality life: this would require the\nsimultaneous inversion of the chirality of all mirror biomolecules,\nwhich is incompatible with the gradual nature of evolution (see <a href=\"#box-1.3-why-is-mirror-life-absent-from-nature\">Box 1.3</a>). The\nconstruction of entirely new forms of life in the laboratory has long\nseemed like a distant prospect, but advances in synthetic chemistry and\nsynthetic biology make the human-led creation of mirror-image organisms\nincreasingly realistic in the coming decades."
+    },
+    {
+      "type": "paragraph",
+      "html": "In this chapter, we discuss key enabling technologies and potential\npaths through which a mirror bacterium might be created based on our\ncurrent understanding. We do not expect that the creation of a mirror\nbacterium, if further pursued, would follow exactly one of the outlined\nstrategies, but the analysis here may be illustrative to understand the\noverall feasibility, as well as the challenges and strategies that would\nbe involved in a future effort. As we will show, plausible paths to the\ncreation of a mirror bacterium exist, but numerous technical hurdles\nremain to be overcome. Overall, the creation of a mirror bacterium will\nrequire extensive research. We estimate that if substantial resources\nwere invested in a concerted effort, the creation of a mirror bacterium\nmight still be 10 years away; and if research continues on its current\ntrajectory, mirror bacteria might be created in the next 15 to 30\nyears."
+    },
+    {
+      "type": "paragraph",
+      "html": "Mirror bacteria could present novel and severe biosafety and\nbiosecurity challenges, as outlined in the other chapters of this\nreport. By default, many of the bottlenecks toward the creation of\nmirror cells will likely be addressed by scientists attempting to solve\nrelated problems, even if these researchers have no explicit interest in\ncreating mirror bacteria. This chapter aims to assess the feasibility of\nthe creation of mirror bacteria in the wider context of ongoing\nscientific advances and"
+    },
+    {
+      "type": "table",
+      "html": "<table style=\"width:100%;\">\n<colgroup>\n<col style=\"width: 99%\"/>\n</colgroup>\n<thead>\n<tr>\n<th><em>Authors are listed in alphabetical order. Affiliations</em>:\n<sup>1</sup> Department of Genetics, Cell Biology and Development,\nUniversity of Minnesota, Minneapolis, Minnesota, USA; <sup>2</sup> Media\nLaboratory, Massachusetts Institute of Technology, Cambridge,\nMassachusetts, USA; <sup>3</sup> J. Craig Venter Institute, La Jolla,\nCalifornia, USA; <sup>4</sup> Trinity College Cambridge, University of\nCambridge, Cambridge, UK; <sup>5</sup> Department of Chemistry, Graduate\nSchool of Science, The University of Tokyo, Tokyo, Japan; <sup>6</sup>\nHoward Hughes Medical Institute, Department of Chemistry, The University\nof Chicago, Chicago, Illinois, USA</th>\n</tr>\n</thead>\n<tbody>\n</tbody>\n</table>",
+      "kind": "affiliations"
+    },
+    {
+      "type": "paragraph",
+      "html": "highlight the technical hurdles, which might serve as an indicator of\nprogress toward mirror life. Discussion of governance options is out of\nthe scope of this report."
+    },
+    {
+      "type": "paragraph",
+      "html": "<a href=\"#advances-in-chemistry-permit-the-synthesis-of-mirror-biomolecules-with-diverse-applications\">Section\n2.1</a> provides an overview of recent advances in the chemical\nsynthesis of mirror biomolecules. Chemical synthesis, unlike biological\nsynthesis, is equally well suited to create natural-chirality or\nmirror-image biomolecules such as nucleic acids and proteins. Advances\nin chemical synthesis have recently enabled the synthesis of\nmirror-image DNA and RNA at the kilobase-scale, and the synthesis of\nlarge mirror-image proteins up to 100 kDa; in principle, this is\nsufficient to create most components of a mirror bacterium. Ongoing\nresearch on improving these methods is expected to lower the cost and\ncomplexity further, making mirror biomolecule synthesis more\naccessible."
+    },
+    {
+      "type": "paragraph",
+      "html": "<a href=\"#progress-in-synthetic-biology-could-allow-the-assembly-of-a-mirror-bacterium-from-non-living-mirror-components\">Section\n2.2</a> considers how, leveraging the advances in chemical synthesis, a\nmirror bacterium could be created “bottom-up”. While it is not yet\npossible to create living cells from non-living components of any\nchirality, bottom-up synthetic cell research is rapidly advancing, and a\nsubset of the methods could be adapted to create mirror cells in the\nfuture. A plausible strategy to create a mirror bacterium bottom-up\nwould involve creating a mirror genome and mirror transcription and\ntranslation machinery by chemical synthesis and then encapsulating them\nin a synthetic mirror membrane. Under the right conditions, the mirror\ntranscription and translation machinery might then be used to express a\nmirror transcriptome and proteome from the mirror genome, to “boot up” a\nself-replicating mirror cell."
+    },
+    {
+      "type": "paragraph",
+      "html": "<a href=\"#a-natural-chirality-bacterium-might-be-converted-into-a-mirror-bacterium-in-a-stepwise-fashion\">Section\n2.3</a> considers an alternative path to the creation of a mirror cell,\nthe stepwise conversion of a natural-chirality bacterium into a mirror\nbacterium. Extensive work in the field of genetic code expansion and\nreprogramming is enabling researchers to make proteins <em>in vivo</em>\nwith non-canonical amino acids beyond the canonical twenty. Building on\nthis work, it might be possible to create a “crossover” translation\npathway in which natural-chirality bacteria are able to produce mirror\nproteins using natural-chirality machinery. The crossover translation\nsystem could be used to create a self-sustaining mirror central dogma\nwithin the cell. Finally, a synthetic mirror genome could be delivered\nto this mixed-chirality cell and the natural-chirality genome removed,\nto create a fully mirrored bacterium. While this pathway might appear\nmore challenging than the approach discussed in <a href=\"#progress-in-synthetic-biology-could-allow-the-assembly-of-a-mirror-bacterium-from-non-living-mirror-components\">Section\n2.2</a>, it might be differentially accelerated by advances in synthetic\nbiology and translational engineering over the coming decades."
+    },
+    {
+      "type": "paragraph",
+      "html": "<a href=\"#other-approaches-to-creating-mirror-bacteria-are-plausible\">Section\n2.4</a> discusses synergies between these two conceptual approaches and\nadditionally considers more speculative pathways. Scientific progress is\nhard to predict, and as different areas of science advance, alternative\npathways might become increasingly plausible. For example, the\ndevelopment of abiological artificial cells could provide the basis for\nmirror cell research in the future. Advances in computational or\nexperimental methods that would greatly improve our ability to create\ndesigner enzymes could enable alternative pathways to mirror life."
+    },
+    {
+      "type": "paragraph",
+      "html": "<a href=\"#the-feasibility-of-mirror-life-will-increase-as-related-technologies-advance\">Section\n2.5</a> synthesizes the major bottlenecks along each pathway and\ndiscusses the overall feasibility of creating mirror bacteria."
+    }
+  ],
+  "subsections": [
+    {
+      "id": "advances-in-chemistry-permit-the-synthesis-of-mirror-biomolecules-with-diverse-applications",
+      "level": 2,
+      "title": "2.1 Advances in chemistry permit the synthesis of mirror biomolecules with diverse applications",
+      "title_html": "<strong>2.1\nAdvances in chemistry permit the synthesis of mirror biomolecules with\ndiverse applications</strong>",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Historically, most biological macromolecules such as proteins or\nnucleic acids were derived from living organisms. As a result, only\ntheir natural-chirality versions have been accessible for applications\nin basic science and biotechnology. Advances in chemical synthesis\npermit the creation of proteins and nucleic acids of either chirality,\nenabling new applications of these mirror biomolecules."
+        }
+      ],
+      "subsections": [
+        {
+          "id": "progress-in-chemical-peptide-and-protein-synthesis-is-making-mirror-image-peptides-and-proteins-more-accessible",
+          "level": 3,
+          "title": "Progress in chemical peptide and protein synthesis is making mirror-image peptides and proteins more accessible",
+          "title_html": "Progress\nin chemical peptide and protein synthesis is making mirror-image\npeptides and proteins more accessible",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "The creation of a mirror bacterium would require the synthesis of a\nlarge number of mirror-image proteins. Peptides of both chiralities are\nroutinely made by solid-phase peptide synthesis (SPPS) (Behrendt <em>et\nal</em>., 2016). In this process, the starting amino acid is covalently\nattached to a solid polymer support through its carboxyl group and\nadditional amino acids are added in a stepwise fashion. This works\nequally well for natural-chirality and mirror-image polypeptides and\ntypically permits the synthesis of polypeptides of 30–60 amino acids,\nalthough longer polypeptides can sometimes be made under optimized\nconditions. Building on this method, the first synthesis of a\nmirror-image protein was achieved by Kent and colleagues, who in 1992\ncreated a 99-amino-acid mirror-image HIV-1 protease entirely by SPPS and\ndemonstrated that—as expected—the mirror-image protease was capable of\ncleaving a mirror-image peptide substrate but not the natural-chirality\nsubstrate (Milton <em>et al</em>., 1992). Modern SPPS can be automated,\nand improving methods enable the synthesis of increasingly challenging\nand long polypeptides. For example, the recent development of fast-flow\nautomated peptide synthesis devices has permitted the production of\nsmall proteins of up to 164 amino acids, including several small\nmirror-image proteins, within a few days (Callahan <em>et al</em>.,\n2024; Hartrampf <em>et al</em>., 2020)."
+            },
+            {
+              "type": "paragraph",
+              "html": "The development of native chemical ligation has substantially\nincreased the size and complexity of proteins that can be made by total\nchemical synthesis (Kulkarni <em>et al</em>., 2018). This approach\ninvolves synthesizing several peptide fragments of 30–60 amino acid\nlength by SPPS and then ligating these peptides together to form the\nfull-length protein (X. Lin <em>et al</em>., 2023). Successes include\nthe total synthesis of the mirror image of the 312-amino acid\n4-hydroxy-tetrahydrodipicolinate synthase from <em>Escherichia coli</em>\n(DapA) (Weinstock <em>et al</em>., 2014) and the 352-amino acid DNA\npolymerase IV from <em>Sulfolobus solfataricus</em> (Dpo4) (Pech <em>et\nal</em>., 2017; W. Xu <em>et al</em>., 2017)."
+            },
+            {
+              "type": "paragraph",
+              "html": "Recently, the chemical synthesis of the mirror image of the 775-amino\nacid DNA polymerase from <em>Pyrococcus furiosus</em> (<em>Pfu</em> DNA\nPol) (Fan <em>et al</em>., 2021), and the 883-amino acid T7 RNA\npolymerase (T7 RNAP) (Y. Xu & Zhu, 2022) have also been\naccomplished. Since these proteins are too large to be made even with\nnative chemical ligation, the authors performed rational engineering of\nthe enzymes to generate split proteins. The synthesis of <em>Pfu</em>\nDNA Pol was achieved by splitting the enzyme into a 467-amino acid and a\n308-amino acid subunit. T7 RNAP was made by splitting the enzyme into a\n363-amino acid, a 238-amino acid, and a 282-amino acid subunit. The\nauthors additionally introduced point mutations to remove hydrophobic\nresidues to increase the solubility of"
+            },
+            {
+              "type": "box",
+              "id": "box-2.1-applications-of-mirror-peptides-and-proteins",
+              "label": "Box 2.1",
+              "title": "Applications of mirror peptides and proteins",
+              "blocks": [
+                {
+                  "type": "paragraph",
+                  "html": "Peptides are promising <strong>therapeutics</strong> due to their\nability to bind drug targets with high affinity. However,\nnatural-chirality peptides suffer from comparatively low biostability as\nthey can be degraded by proteases (enzymes that degrade peptides and\nproteins) that are abundant in most living organisms and play important\nroles in the immune system (Muttenthaler <em>et al</em>., 2021).\nScientists are therefore exploring the use of additional building\nblocks, including ᴅ-amino acids, to modify peptides in order to create\nbiostable peptide-like drugs (Muttenthaler <em>et al</em>., 2021). In a\nclassical approach, a peptide made of natural-chirality ʟ-amino acids is\nfirst developed using standard drug discovery techniques, and then\nmodified to include non-canonical building blocks, including ᴅ-amino\nacids, to improve its stability while retaining its biological activity\n(Imanishi <em>et al</em>., 2021; Muttenthaler <em>et al</em>., 2021).\nFor example, etelcalcetide, a drug for the treatment of secondary\nhyperparathyroidism, consists of a 7-amino acid ᴅ-peptide linked to a\nsingle ʟ-amino acid (Blair, 2016)."
+                },
+                {
+                  "type": "paragraph",
+                  "html": "Mirror-image proteins might also be used in drug discovery to aid the\ndevelopment of stable fully mirrored peptide drug candidates. Scientists\ncan use standard drug discovery techniques to find natural-chirality\npeptides that bind to <strong>mirror-image versions of a drug\ntarget</strong>. By chiral symmetry, the mirror-image version of the\npeptide will then bind to the natural-chirality version of the target in\npatients, but is expected to have a significantly improved half-life\nbecause it would be resistant to protease degradation and immune\nrecognition (Callahan <em>et al</em>., 2024; Harrison <em>et al</em>.,\n2023; Muttenthaler <em>et al</em>., 2021; Welch <em>et al</em>.,\n2010)."
+                },
+                {
+                  "type": "paragraph",
+                  "html": "Several other applications of mirror-image proteins have been\nexplored to date. For example, mirror-image proteins have been used to\nenable <strong>protein structure determination</strong> by X-ray\ncrystallography. Chiral proteins can only form crystals in chiral space\ngroups, whereas racemic mixtures can form centrosymmetric crystals,\nwhich significantly simplifies phase determination and thereby aids\nresolution of the protein structure (Mackay, 1989). This approach has\nbeen successfully used to determine a number of protein structures\n(Avital-Shmilovici <em>et al</em>., 2013; Banigan <em>et al</em>., 2010;\nDang <em>et al</em>., 2016; Harrison <em>et al</em>., 2023; Huang <em>et\nal</em>., 2016; Hung <em>et al</em>., 1999; Luisier <em>et al</em>.,\n2010; Mandal, Pentelute, Tereshko, Kossiakoff <em>et al</em>., 2009;\nMandal, Pentelute, Tereshko, Thammavongsa <em>et al</em>., 2009; Payne\n<em>et al</em>., 2021; Pentelute <em>et al</em>., 2010; Teng <em>et\nal</em>., 2021; Yeung <em>et al</em>., 2016)."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "html": "the peptide segments produced in SPPS, and to introduce additional\nligation sites to facilitate synthesis (<a href=\"#figure-2.1-chemical-synthesis-of-mirror-proteins\">Figure\n2.1</a>). The functionality of both split proteins was demonstrated,\nwhich enabled the transcription of kilobase mirror-image RNA, an\nimportant step toward the creation of mirror life."
+            },
+            {
+              "type": "paragraph",
+              "html": "As we will discuss in <a href=\"#progress-in-synthetic-biology-could-allow-the-assembly-of-a-mirror-bacterium-from-non-living-mirror-components\">Section\n2.2</a>, the creation of a mirror bacterium through a bottom-up pathway\nwould likely require the synthesis of at least 100 mirror proteins to\ncreate mirror ribosomes and other mirror transcription and translation\nmachinery. Modern chemical protein synthesis technologies are in\nprinciple sufficiently advanced to synthesize most of the mirror\nproteins required. However, the cost and effort involved in synthesizing\nthe large number of proteins required to create a cell bottom-up would\nbe large. Scientists are continuously advancing methods for total\nprotein synthesis that can be applied for mirror-image protein\nsynthesis, including automated fast-flow peptide synthesis devices\n(Callahan <em>et al</em>., 2024) or improved ligation methods (Agouridas\n<em>et al</em>., 2019). Advances in protein engineering might likewise\nincrease the ease and accessibility of split protein and mutagenesis\napproaches for chemical protein synthesis in the future (Dolberg <em>et\nal</em>., 2021; Freschlin <em>et al</em>., 2022; Lovelock <em>et\nal</em>., 2022)."
+            },
+            {
+              "type": "figure",
+              "id": "figure-2.1-chemical-synthesis-of-mirror-proteins",
+              "src": "assets/image13.png",
+              "alt": "",
+              "width": "6.5in",
+              "height": "3.44444in",
+              "caption": {
+                "id": "figure-2.1-chemical-synthesis-of-mirror-proteins",
+                "title": "Figure 2.1: Chemical synthesis of mirror proteins",
+                "title_html": "Figure\n2.1: Chemical synthesis of mirror proteins",
+                "body_html": "<p><strong>A.</strong> Solid-phase peptide synthesis can use ʟ- or\nᴅ-amino acid building blocks to produce ʟ- or ᴅ-peptides. The process\ncan be automated, and typically yields peptides of 30–60 amino acids in\nlength, although longer chains can be achieved under optimized\nconditions. The current record is 164 amino acids (Hartrampf <em>et\nal</em>., 2020). <strong>B.</strong> Native chemical ligation connects\npeptides irrespective of chirality to synthesize longer polypeptide\nchains. Applying this method in a hierarchical fashion, small to\nmedium-sized proteins up to 400 amino acids can be produced.\n<strong>C.</strong> Protein engineering can facilitate the total\nchemical synthesis of functional equivalents of large proteins. In this\napproach, a target protein is split into multiple subunits, and\nmutations are introduced that facilitate synthesis while not affecting\nprotein function. The subunits can then be made by a combination of\nsolid-phase peptide synthesis and native chemical ligation, and the full\nprotein yielded by co-folding the subunits. The current record is a\ntriply split 883- amino acid protein (Y. Xu &amp; Zhu, 2022).</p>"
+              }
+            },
+            {
+              "type": "paragraph",
+              "html": "Alternatively, mirror protein synthesis might in the future be\ncarried out using biological machinery, for example using <em>in\nvitro</em> ribosomal protein synthesis systems (Katoh & Suga, 2022).\nUnlike chemical approaches, biological machinery is inherently\nchirality-specific, so the production of mirror proteins using\nnatural-chirality biological machinery is not feasible with current\ntechnology. Extensive academic research has explored re-engineering\nnatural-chirality ribosomal protein synthesis systems to use building\nblocks other than canonical ʟ-amino acids, including mirror ᴅ-amino\nacids (Katoh & Suga, 2022). A “crossover” translation system would\nuse natural-chirality biological machinery to translate\nnatural-chirality mRNAs into mirror-image proteins by polymerizing\nᴅ-amino acids instead of natural ʟ-amino acids. Notably, tRNAs charged\nwith all 20 ᴅ-amino acids are available through <em>in vitro</em>\nflexizyme technology (Achenbach <em>et al</em>., 2015; Fujino <em>et\nal</em>., 2013). This crossover translation system is not necessary for\nthe bottom-up creation of mirror cells if all the required components\ncan be made by chemical synthesis. However, if an efficient and scalable\nbiological mirror protein synthesis system were created in the future,\nit would be possible to rapidly synthesize most mirror proteins of\ninterest. There is great interest in re-engineered protein translation\nsystems for medical applications, hence progress in this area is\nexpected even absent explicit interest in building mirror proteins\n(Katoh & Suga, 2022)."
+            }
+          ],
+          "subsections": []
+        },
+        {
+          "id": "mirror-image-nucleic-acids-can-be-made-chemically-using-established-methods",
+          "level": 3,
+          "title": "Mirror-image nucleic acids can be made chemically using established methods",
+          "title_html": "Mirror-image\nnucleic acids can be made chemically using established methods",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "Mirror-image DNA and RNA would be key components of a mirror cell.\nCurrent research, however, mainly focuses on potential applications as\ntherapeutics or in biotechnology (see <a href=\"#section-2\">Box 2.2</a>).\nDNA and RNA are chiral because the ᴅ-deoxyribose or ᴅ-ribose sugar\nbackbone contains several chiral centers; the nucleobases are achiral.\nMethods to chemically synthesize the mirror-image ʟ-ribose and\ncorresponding mirror-image ʟ-nucleotide building blocks of DNA and RNA\nhave been available since the 1960s. Natural-chirality ᴅ-DNA\noligonucleotides of up to 200 nucleotides and ᴅ-RNA oligos of up to 70\nnucleotides are routinely produced by chemical solid-phase synthesis, a\nprocess that is highly automated and performed at scale by commercial\nDNA synthesis providers, and longer DNA or RNA oligos can often be\nproduced, although at lower yields (Hoose <em>et al</em>., 2023).\nAdapting this chemical method for mirror DNA or RNA synthesis is\nstraightforward. Several companies offer mirror DNA oligos commercially,\nalthough at higher prices due to the cost of mirror nucleotide building\nblocks (Biomers, n.d.; Glen Research, n.d.). Laboratories with DNA\nsynthesis machines can also purchase mirror nucleotides directly and use\nthem on existing machines to synthesize mirror oligonucleotides."
+            },
+            {
+              "type": "paragraph",
+              "html": "DNA oligos are commonly assembled into kilobase-length DNA pieces\nusing enzymes such as DNA polymerase and DNA ligase (Hoose <em>et\nal</em>., 2023). RNA is made at kilobase length by transcription from a\nDNA template using RNA polymerase (<a href=\"#figure-2.2-synthesis-of-kilobase-length-natural-chirality-and-mirror-dna-and-rna\">Figure\n2.2</a>). The advances in chemical protein synthesis described in the\nprevious subsection have recently enabled researchers to create mirror\nversions of these enzymes (Fan <em>et al</em>., 2021; Weidmann <em>et\nal</em>., 2019), permitting the assembly and"
+            },
+            {
+              "type": "box",
+              "id": "box-2.2-applications-of-mirror-nucleic-acids",
+              "label": "Box 2.2",
+              "title": "Applications of mirror nucleic acids",
+              "blocks": [
+                {
+                  "type": "paragraph",
+                  "html": "DNA is commonly synthesized for recombinant DNA technology, but\nnucleic acids have numerous additional applications in basic science,\nbiotechnology, and medicine. A drawback of DNA and RNA in these\napplications is their limited biostability, as they are recognized and\ndegraded by biological processes. Mirror DNA and RNA retain properties\nof DNA and RNA, including the ability to form predictable structures\ndetermined by base-pairing, but are more stable as they are not\nsusceptible to degradation by nucleases (enzymes which break down DNA\nand RNA) which are highly abundant in the environment."
+                },
+                {
+                  "type": "paragraph",
+                  "html": "These results led to interest in using mirror oligonucleotides as\naptamer therapeutics and in other applications.\n<strong>Aptamers</strong> are oligonucleotides that can bind with high\naffinity to some biological molecule, e.g., a drug target. Aptamers can\nbe discovered rapidly through directed evolution (Tuerk & Gold,\n1990). However, similar to natural-chirality peptides, natural-chirality\noligonucleotides are generally too unstable in physiological\nenvironments to be useful as aptamer drugs. In contrast, mirror-image\naptamers—termed Spiegelmers by TME Pharma, the company developing\nthem—could retain the binding properties but exhibit greater\nbiostability and thus become useful drugs. Two Spiegelmers have reached\nearly clinical testing as of 2024 (Kaur <em>et al</em>., 2018)."
+                },
+                {
+                  "type": "paragraph",
+                  "html": "Mirror oligonucleotides might have diverse applications beyond\naptamer therapeutics. For example, <strong>molecular beacon</strong> or\n<strong>riboswitch</strong> nucleic acids have been explored as\nbiosensors (Seeman & Sleiman, 2017), and mirror-image versions of\nthese can recapitulate their key properties while being more stable.\nMirror image DNA nanostructures are being explored as drug delivery\nsystems due to their greater resistance to serum host nucleases (Kim\n<em>et al</em>., 2016). They could also serve as interesting materials\nin <strong>DNA nanotechnology</strong> due to their ability to form\npredictable shapes with other mirror nucleic acids without interfering\nwith natural-chirality nucleic acid assemblies (C. Lin <em>et al</em>.,\n2009)."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "html": "accurate replication of kilobase-length mirror DNA, and the synthesis\nof kilobase-length mirror RNA from a corresponding mirror DNA template\n(Y. Xu & Zhu, 2022)."
+            },
+            {
+              "type": "paragraph",
+              "html": "While synthetic mirror enzymes are currently available in only a\nhandful of laboratories, current methods could in principle generate the\nmirror-image DNA genes required to assemble a mirror bacterial genome,\neach of which could be transcribed into mirror mRNAs, tRNAs, and rRNAs.\nHowever, assembling these genes into complete mirror chromosomes would\nbe a major challenge, which will be discussed in <a href=\"#progress-in-synthetic-biology-could-allow-the-assembly-of-a-mirror-bacterium-from-non-living-mirror-components\">Section\n2.2</a>."
+            },
+            {
+              "type": "figure",
+              "id": "figure-2.2-synthesis-of-kilobase-length-natural-chirality-and-mirror-dna-and-rna",
+              "src": "assets/image2.png",
+              "alt": "",
+              "width": "6.5in",
+              "height": "2.625in",
+              "caption": {
+                "id": "figure-2.2-synthesis-of-kilobase-length-natural-chirality-and-mirror-dna-and-rna",
+                "title": "Figure 2.2: Synthesis of kilobase-length natural-chirality and mirror DNA and RNA",
+                "title_html": "Figure\n2.2: Synthesis of kilobase-length natural-chirality and mirror DNA and\nRNA",
+                "body_html": "<p><strong>A.</strong> Synthesis of oligonucleotides from nucleotide\nbuilding blocks by solid-phase synthesis can use ᴅ- or ʟ-nucleotide\nbuilding blocks to produce ᴅ- or ʟ-oligonucleotides. This process is\nusually highly automated and typically yields DNA oligonucleotides up to\n200 bp in length or RNA oligonucleotides up to 70 nucleotides in length.\n<strong>B.</strong> <em>In vitro</em> enzymatic reactions such as\npolymerase chain reaction and related methods can be used to assemble\nᴅ-nucleotides into kilobase-length, double-stranded ᴅ-DNA constructs\nsuch as plasmids or gene fragments. Natural-chirality ʟ-enzymes\nselectively act on natural-chirality ᴅ-DNA oligonucleotides, but these\nmethods can be adapted for mirror ʟ-DNA by using mirror-image\nᴅ-proteins. <strong>C.</strong> <em>In vitro</em> transcription with a\nnatural-chirality RNA polymerase can be used to produce kilobase-length\nᴅ-RNA from a kilobase-length ᴅ-DNA template. This method can be adapted\nto use a mirror-image RNA polymerase to produce kilobase-length ʟ-RNA\nfrom a kilobase-length ʟ-DNA template.</p>"
+              }
+            }
+          ],
+          "subsections": []
+        }
+      ]
+    },
+    {
+      "id": "progress-in-synthetic-biology-could-allow-the-assembly-of-a-mirror-bacterium-from-non-living-mirror-components",
+      "level": 2,
+      "title": "2.2 Progress in synthetic biology could allow the assembly of a mirror bacterium from non-living mirror components",
+      "title_html": "<strong>2.2\nProgress in synthetic biology could allow the assembly of a mirror\nbacterium from non-living mirror components</strong>",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "The ability to create a mirror bacterial cell could arise from the\nconvergence of two distinct ongoing research programs. The first is the\nability to synthesize the mirror-image versions of the necessary\ncomponents of a bacterial cell, as described in <a href=\"#advances-in-chemistry-permit-the-synthesis-of-mirror-biomolecules-with-diverse-applications\">Section\n2.1</a>. The second is ongoing research to reconstitute a living\nnatural-chirality bacterium from synthetic components, which we will\ndiscuss in this section. Once the ability to do this is refined using\nnormal-chirality molecules, it would become possible to repeat this\nprocess with mirror image components to create a living mirror\nbacterium."
+        },
+        {
+          "type": "paragraph",
+          "html": "This “bottom-up” pathway could involve the following steps:"
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "start": 1,
+          "items": [
+            {
+              "html": "<p>Synthesis of a mirror genome <em>in vitro</em>.</p>"
+            },
+            {
+              "html": "<p>Creation of mirror ribosomes and a high-efficiency <em>in\nvitro</em> mirror protein synthesis system from mirror\ncomponents.</p>"
+            },
+            {
+              "html": "<p>Encapsulation of the mirror genome and mirror protein synthesis\nsystem into a membrane and “booting” of the mirror bacterium.</p>"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "html": "We begin by providing a brief overview of existing synthetic cell\nresearch, then consider how each of the above steps could be\naccomplished with mirror-image components in the future."
+        }
+      ],
+      "subsections": [
+        {
+          "id": "research-is-progressing-toward-the-creation-of-self-replicating-cells-from-non-living-components",
+          "level": 3,
+          "title": "Research is progressing toward the creation of self-replicating cells from non-living components",
+          "title_html": "Research\nis progressing toward the creation of self-replicating cells from\nnon-living components",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "Bottom-up synthetic biology research attempts to build lifelike\nself-replicating cells from simple, non-living components. These\ncomponents could be similar to those used in natural life—that is, be\nmade of biomolecules like DNA, lipids, and proteins—or could instead use\nalternative chemistries to recapitulate the key processes of living\ncells."
+            },
+            {
+              "type": "paragraph",
+              "html": "A key feature of all cells is the presence of a lipid cell membrane\nthat separates the cell interior from the environment. Synthetic\nlipid-bound compartments or vesicles were first created in the 1960s\n(Bangham <em>et al</em>., 1965; Chang, 1964), and diverse methods for\nthe creation of vesicles have been developed since (Has & Sunthar,\n2020). The lipid bilayer of natural cells consists in large part of\nphospholipids, and these can be used to create synthetic vesicles, but\nother lipid molecules can be used as well."
+            },
+            {
+              "type": "paragraph",
+              "html": "Gene expression, i.e., the synthesis of RNAs and proteins, is another\nkey feature of living cells. Gene expression can be recapitulated in a\ntest tube. For example, cell lysate maintains some transcription and\ntranslation activity if suitably prepared, and its productivity can be\nenhanced by providing an energy regeneration system. These so-called\ncell-free protein synthesis systems have found diverse applications for\nrapid prototyping, cell-free devices, rapid small-scale\nbiomanufacturing, and beyond (Silverman <em>et al</em>., 2020)."
+            },
+            {
+              "type": "paragraph",
+              "html": "Transcription and translation can also be accomplished using a fully\ndefined system, known as “protein synthesis using recombinant elements”\n(PURE), in which the RNAs and proteins that make up the transcription\nand translation machinery (e.g., the RNA polymerase, ribosome,\naminoacyl-tRNA synthetases, tRNAs, and translation factors) have been\nindividually prepared and purified (Shimizu <em>et al</em>., 2001). This\nsystem has the advantage that its composition, unlike that of cell\nextract-based systems, is fully known and can be precisely controlled by\nincluding or omitting specific proteins or RNAs of interest. The\ndrawback is that the PURE system is more expensive to prepare than\nlysate-based systems as it requires the preparation of a large number of\nrecombinant proteins. Current PURE preparations are also generally less\nefficient at protein synthesis than extract-derived systems (Gregorio\n<em>et al</em>., 2019; Li <em>et al</em>., 2017)."
+            },
+            {
+              "type": "paragraph",
+              "html": "DNA and transcription-translation systems can be encapsulated in\nlipid vesicles, creating artificial cells that resemble natural cells in\nthat they are membrane-bound compartments capable of gene expression.\nInterestingly, membrane encapsulation can improve the protein synthesis\nefficiency of lysate-based systems (Garenne <em>et al</em>., 2021;\nNoireaux & Libchaber, 2004). Encapsulated transcription-translation\nsystems can be used to produce diverse proteins, including metabolic\nenzymes or membrane proteins that are inserted into the vesicle membrane\n(Kuruma & Ueda, 2015)."
+            },
+            {
+              "type": "paragraph",
+              "html": "The full central dogma—DNA replication, transcription, and\ntranslation—has recently been reconstituted within an artificial\ncompartment (van Nies <em>et al</em>., 2018). Researchers expressed the\nDNA replication machinery from Φ29 phage within PURE-containing lipid\nvesicles and showed that the encoding DNA could subsequently be\nreplicated. The advantage of a Φ29 phage replication system is its\ncomparative simplicity; but recapitulating the DNA replication machinery\nfrom bacteria such as <em>E. coli</em> in a lipid vesicle would likely\nbe of interest to researchers in the future, as it might permit the\nreplication of synthetic genomes greater than the ~150 kb size limit of\nthe Φ29 replication machinery."
+            },
+            {
+              "type": "paragraph",
+              "html": "Ongoing research aims to encode the PURE components within the\nencapsulated genome to create a self-sustaining central dogma. In one\nattempt, a 116 kb genome encompassing the full set of <em>E. coli</em>\ncentral dogma machinery was encapsulated in an artificial compartment;\nhowever, it was not possible to achieve PURE synthesis at\nself-sustaining levels, or ribosome biogenesis (Libicher <em>et\nal</em>., 2020). Future work on enhancing PURE synthesis efficiency, and\nwork aimed at improving <em>in vitro</em> ribosome biogenesis, might\nallow scientists to accomplish this milestone in the future (Hagino\n& Ichihashi, 2023; Lavickova <em>et al</em>., 2020; Wei & Endy,\n2021)."
+            },
+            {
+              "type": "paragraph",
+              "html": "Alternatively, researchers might attempt to encapsulate a full\nbacterial genome within a vesicle containing transcription and\ntranslation machinery in order to “boot” a live bacterium. In one\nattempt, researchers encapsulated the <em>E. coli</em> genome and a\nlysate-derived transcription-translation solution in a synthetic lipid\nvesicle and observed the expression of a reporter gene from the genome\n(Deyama <em>et al</em>., 2021). However, achieving a full “boot”, i.e.,\nthe creation of a self-replicating bacterium, might require better\ntranscription-translation efficiencies, encapsulation methods that\nensure the genome is not damaged by shearing forces, and the use of\nnative phospholipid membrane (unlike the artificial lipid membrane used\nin Deyama <em>et al.</em>). As noted above, improved\ntranscription-translation systems now produce almost as much protein as\nthe input protein required to create the transcription-translation\nsolution (Garenne <em>et al</em>., 2021), and such high-efficiency\ntranscription-translation systems have enabled the boot of a 40 kb T7\nphage genome within a lipid vesicle to generate functional T7 phage\n(Garenne <em>et al</em>., 2021; Shin <em>et al</em>., 2012). The boot of\na live bacterium from a cell-derived genome, transcription-translation\nsystem, and membrane thus appears increasingly feasible—several of the\nauthors are pursuing optimized strategies and are aware of colleagues\ndoing the same."
+            },
+            {
+              "type": "paragraph",
+              "html": "Bottom-up synthetic cell research is progressing rapidly, and ever\nmore complex behaviors of cells, including movement, sensing and\nresponse to external stimuli, cell-cell communication, synthetic\norganelles, and multicellular assemblies have been reconstituted with\nsynthetic cells (Rothschild <em>et al</em>., 2024). This research is\nalready leading to interesting applications (Adamala <em>et al</em>.,\n2024). Liposomes play a key role in the delivery of mRNA therapeutics\nand gene therapies, and scientists are exploring artificial liposomes as\ntherapeutic delivery devices. While most hallmarks of life have been\nreconstituted in artificial cell-like structures in isolation (Gaut\n& Adamala, 2021), a frontier of current research is to integrate the\ndifferent systems in a single self-replicating cell to create an\nartificial compartment that exhibits all features of life—that is, to\ncreate life in the test tube (Kriebisch <em>et al</em>., 2024)."
+            }
+          ],
+          "subsections": []
+        },
+        {
+          "id": "the-synthesis-of-a-mirror-genome-in-vitro-might-be-attainable-by-building-on-existing-technology",
+          "level": 3,
+          "title": "The synthesis of a mirror genome in vitro might be attainable by building on existing technology",
+          "title_html": "The\nsynthesis of a mirror genome <em>in vitro</em> might be attainable by\nbuilding on existing technology",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "To create a mirror bacterium, researchers would need to synthesize a\nmirror DNA genome. Chemical DNA oligo synthesis and enzymatic assembly,\nas discussed in <a href=\"#advances-in-chemistry-permit-the-synthesis-of-mirror-biomolecules-with-diverse-applications\">Section\n2.1</a>, permits the synthesis of mirror DNA up to several kilobases in\nlength. The synthesis of a mirror genome would require large-scale\nsynthesis of the genome in kilobase-length pieces by these methods, and\ntheir subsequent assembly into a megabase-length genome. The exact\nlength would depend on the specific mirror bacterium to be created: the\nsynthesis of a minimized <em>Mycoplasma mycoides</em> genome, the\nsmallest genome known to be viable, would require a 0.53 megabase (Mb)\ngenome (Hutchison <em>et al</em>., 2016) whereas the genome of <em>E.\ncoli</em> strain K-12 MDS42, a common laboratory strain, would require\n3.98 Mb (Pósfai <em>et al</em>., 2006)."
+            },
+            {
+              "type": "paragraph",
+              "html": "Scientists have successfully synthesized a small number of\nnatural-chirality bacterial genomes, but each synthesis still involves\nmajor effort and the <em>in vivo</em> replication of increasingly large\npieces within bacteria or yeast (Fredens <em>et al</em>., 2019; Gibson\n<em>et al</em>., 2010). The first challenge in adapting these methods\nfor the synthesis of a mirror genome is the cost of synthesizing the\nrequired DNA in kilobase-length pieces, which can be up to $1 million\nUSD from commercial DNA synthesis providers for a large genome; the cost\nto synthesize an equivalent amount of mirror DNA could be orders of\nmagnitude higher."
+            },
+            {
+              "type": "paragraph",
+              "html": "The second challenge is the assembly of the kilobase-length pieces\ninto a megabase-scale genome. Larger-scale DNA assembly into 50–100 kb\npieces, and their subsequent assembly into Mb-length pieces, is\ntypically done in living yeast or <em>E. coli</em> (Fredens <em>et\nal</em>., 2019; Gibson <em>et al</em>., 2010). Such methods could not be\nadapted to assemble mirror DNA unless mirror organisms were already\navailable. However, DNA pieces up to 900 kb in length can also be\nassembled <em>in vitro</em> using synthetic enzymes (Gibson <em>et\nal</em>., 2009). It appears likely that extensions of this or other\nmethods could be used to assemble Mb-scale mirror DNA using mirror\nenzymes, although fidelity and yield may need to be optimized.\nAlternatively, it may be possible to boot synthetic cells with genomes\ncomposed of multiple small chromosomes similar to some existing\nbacterial strains (diCenzo & Finan, 2017; Itaya & Tanaka, 1997;\nK. Wang <em>et al</em>., 2019; Yoneji <em>et al</em>., 2021). Including\nfewer replication and assembly steps could reduce the opportunity for\nerrors that could disrupt essential genes and potentially ease the\nprocess of encapsulating the DNA within a membrane."
+            },
+            {
+              "type": "paragraph",
+              "html": "Current <em>in vitro</em> DNA synthesis and assembly methods exhibit\na low but non-negligible error rate, and genome synthesis projects\ntypically use clonal amplification <em>in vivo</em> to propagate and\nverify assembly intermediates. However, methods such as digital PCR\n(Vogelstein & Kinzler, 1999) or clonal amplification in synthetic\nvesicles (Abil <em>et al</em>., 2023) could serve a similar purpose for\nan <em>in vitro</em> effort, and gene synthesis researchers have\nsubstantially improved <em>in vitro</em> error correction methods (Hoose\n<em>et al</em>., 2023; Sidore <em>et al</em>., 2020; J. Zhang <em>et\nal</em>., 2020)."
+            },
+            {
+              "type": "paragraph",
+              "html": "Overall, while the creation of a synthetic genome entirely <em>in\nvitro</em> would require the adaptation and improvement of a number of\nexisting assembly and error-correction methods to work with mirror DNA,\nthe synthesis of which would be extremely expensive at current prices,\nthis step does not appear to be an insurmountable bottleneck to the\nbottom-up creation of a mirror bacterium."
+            }
+          ],
+          "subsections": []
+        },
+        {
+          "id": "research-is-progressing-toward-mirror-ribosomes-and-a-mirror-protein-synthesis-system",
+          "level": 3,
+          "title": "Research is progressing toward mirror ribosomes and a mirror protein synthesis system",
+          "title_html": "Research\nis progressing toward mirror ribosomes and a mirror protein synthesis\nsystem",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "Bacteria contain thousands of RNAs and proteins. However, it may not\nbe necessary to create all cellular components from scratch to assemble\na living cell. RNA synthesis can be accomplished by a single protein:\nRNA polymerase. In the PURE system mentioned above (Shimizu <em>et\nal</em>., 2001), protein synthesis can be accomplished with as few as 36\nproteins, ribosomes (comprising several RNAs and about 50 proteins),\ntRNAs, and a defined chemical energy mix."
+            },
+            {
+              "type": "paragraph",
+              "html": "If scientists were to succeed at creating sufficiently efficient\nmirror transcription and translation systems from a handful of\nmirror-image RNAs and mirror proteins, and combine them with a mirror\ngenome, they could synthesize directly from the mirror genome the\nthousands of proteins and RNAs required for life. The resulting mirror\nproteins could then synthesize mirror lipids, carbohydrates, a cell\nwall, and metabolites. Hence, to generate mirror proteins outside of a\ncell, researchers would at least need to synthesize the mirror\ncomponents of the minimal PURE translation system: mirror aminoacyl-tRNA\nsynthetases, mirror translation factors, mirror tRNAs, and a mirror\nribosome (Shimizu <em>et al</em>., 2001)."
+            },
+            {
+              "type": "paragraph",
+              "html": "Ribosomes are complex structures consisting of several large rRNAs\nand many ribosomal proteins (r-proteins). For example, the <em>E.\ncoli</em> ribosome consists of three rRNAs and 54 r-proteins (<a href=\"#figure-2.3-components-of-ribosomes-and-the-pure-system\">Figure\n2.3</a>). In the natural-chirality PURE system, ribosomes are typically\npurified from cells, which would not be possible for mirror ribosomes.\nInstead, mirror-image r-proteins and unmodified mirror rRNAs would need\nto be created chemically, and subsequently assembled into functional\nmirror-image ribosomes <em>in vitro</em>. It would be important to\nassemble intact ribosomes with productivities similar to native\nribosomes, as the efficiency of the translation system is expected to be\ncritical to successfully booting up a bacterium."
+            },
+            {
+              "type": "paragraph",
+              "html": "The assembly of small ribosomal subunits entirely from <em>in\nvitro-</em>generated rRNA and protein has not yet been reported.\nHowever, small ribosomal subunits made from <em>in vitro-</em>generated\nrRNA and <em>in vivo</em>-derived r-proteins are functional (Krzyzosiak\n<em>et al</em>., 1987), suggesting that small subunit rRNA modifications\nare not essential for function. Making mirror small ribosomal subunits\ntherefore seems feasible after some optimization. The construction of\nlarge ribosomal subunits from <em>in vitro-</em>generated rRNA and\nprotein has likewise not been achieved. Functional ribosomal large\nsubunits can be made from <em>in vitro-</em>generated rRNA and <em>in\nvivo</em>-derived purified r-proteins, but at substantially reduced\nactivity (Aoyama <em>et al</em>., 2022; Semrad & Green, 2002).\nRibosomal large subunits with greater activity can be generated in\nextract-based systems, which may contain enzymes that supply at least\nsome of the post-transcriptional modifications and other proteins that\naid ribosome biogenesis (Jewett <em>et al</em>., 2013). Identifying\nthese rRNA modification enzymes and ribosome biogenesis factors might\ntherefore enable the <em>in vitro</em> synthesis of large ribosomal\nsubunits. Making mirror large ribosomal subunits that support protein\nsynthesis with high efficiency thus seems like a difficult but tractable\ntechnical step."
+            },
+            {
+              "type": "paragraph",
+              "html": "Native tRNAs, like rRNAs, are extensively modified by\npost-transcriptional modification enzymes in bacteria like <em>E.\ncoli</em>, and <em>in vitro-</em>produced tRNAs and rRNAs lack such\nmodifications. Experimental work shows that these modifications are\nessential to achieve high translation activity for the tRNAs\ncorresponding to 3 out of 20 amino acids (Cui <em>et al</em>., 2015) so\ncreating mirror-image versions of these tRNA-modifying enzymes might be\nnecessary to achieve high mirror PURE productivity. However, it has been\nshown that a complete reconstitution of <em>in vitro</em>-produced tRNAs\nlacking chemical modifications could function in the PURE system when\ntheir concentrations are optimized. Therefore, synthetic mirror tRNAs\ncould function in the mirror PURE system (Iwane <em>et al</em>., 2016;\nIwane <em>et al</em>., 2018). As noted in a previous section, the PURE\nsystem can produce most proteins,"
+            },
+            {
+              "type": "figure",
+              "id": "figure-2.3-components-of-ribosomes-and-the-pure-system",
+              "src": "assets/image3.png",
+              "alt": "",
+              "width": "6.46984in",
+              "height": "5.70313in",
+              "caption": {
+                "id": "figure-2.3-components-of-ribosomes-and-the-pure-system",
+                "title": "Figure 2.3: Components of ribosomes and the PURE system",
+                "title_html": "Figure 2.3:\nComponents of ribosomes and the PURE system",
+                "body_html": "<p><strong>A.</strong> Cryo-EM structure of the <em>E. coli</em>\nribosome (PDB 5AFI). The <em>E. coli</em> ribosome consists of two major\nsubunits, the 50S large subunit and the 30S small subunit. The 50S\nsubunit consists of two rRNAs (23S, light blue, and 5S, yellow) and 34\nr-proteins (blue and dark blue). The small subunit consists of one rRNA\n(16S, orange), and 21 r-proteins (red and dark red). <strong>B.</strong>\nComponents of the PURE system. DNA encoding a target protein is added to\nthe PURE system, which consists of all proteins, amino acids,\nnucleotides, and non-coding RNAs necessary to transcribe it into mRNA\nand translate the mRNA into the desired polypeptide.</p>"
+              }
+            },
+            {
+              "type": "paragraph",
+              "html": "including membrane proteins (Kuruma & Ueda, 2015), but PURE\nsynthesis generally yields lower amounts of protein product than a\ncomparable amount of cellular protein synthesis machinery, and below\nself-sustaining levels. Therefore, the synthesis capacity of current\nPURE systems is unlikely to be sufficient to produce a cellular proteome\nas part of an attempt to “boot up” a living cell from a synthetic\ngenome."
+            },
+            {
+              "type": "paragraph",
+              "html": "Several research groups are actively working to improve the PURE\nsystem’s efficiency, with the aim of developing a PURE system with the\ncapacity for self-regeneration (Hagino & Ichihashi, 2023; Lavickova\n<em>et al</em>., 2020; Wei & Endy, 2021). Challenges for the\noriginal PURE formulation might include lack of important translation\nfactors, chaperones and supporting proteins, lack of homeostasis, and\nnon-native protein concentrations (about 10-fold lower than in the\ncytosol). Research approaches to increase PURE’s productivity therefore\ninclude improved systems to provide energy during the reaction and\nremove byproducts, altering the concentration of the components, and\nadding additional protein factors (de Maddalena <em>et al</em>., 2016;\nKazuta <em>et al</em>., 2014; Lavickova <em>et al</em>., 2020; Li <em>et\nal</em>., 2017). Progress in this field would likely be required to\npermit the booting experiments described in the following subsection.\nHowever, it is difficult to determine precisely what level of PURE\nefficiency would be required. A fully self-regenerating PURE system\nmight not be necessary; during the boot, the PURE system might produce\nthe missing translation factors, chaperones, and other supportive\nproteins."
+            }
+          ],
+          "subsections": []
+        },
+        {
+          "id": "encapsulating-the-mirror-genome-and-mirror-protein-synthesis-system-in-a-membrane-could-boot-up-the-mirror-bacterium",
+          "level": 3,
+          "title": "Encapsulating the mirror genome and mirror protein synthesis system in a membrane could “boot up” the mirror bacterium",
+          "title_html": "Encapsulating\nthe mirror genome and mirror protein synthesis system in a membrane\ncould “boot up” the mirror bacterium",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "If mirror proteins and nucleic acids were successfully used to create\na mirror genome and a mirror protein synthesis system <em>in vitro</em>,\nthe final step to creating a mirror bacterium would involve combining\nthose components in a lipid compartment and attempting to boot up a\nliving, self-replicating cell."
+            },
+            {
+              "type": "paragraph",
+              "html": "The lipids in the bacterial membrane are chiral. Bacterial membranes\nconsist primarily of phospholipids with a chiral ʟ-glycerol-3-phosphate\nbackbone. Notably, archaeal membranes consist primarily of phospholipids\nwith a ᴅ-glycerol-3-phosphate (more commonly known as\nʟ-glycerol-1-phosphate) backbone alongside other differences, and\nexperiments have shown that <em>E. coli</em> can grow without fitness\ndefect with 20–30% archaeal phospholipid content in its membrane\n(Caforio <em>et al</em>., 2018). In any case, mirror lipids can be\nsynthesized chemically, and so are unlikely to be a bottleneck for\nmirror bacterium assembly."
+            },
+            {
+              "type": "paragraph",
+              "html": "The bacterial cell wall is likewise chiral, and the chemical\nconstruction of its mirror-image appears difficult. However, the\nconstruction of a mirror cell wall may not be necessary. Some bacterial\nspecies, most notably <em>Mycoplasma,</em> naturally lack a cell wall.\n<em>E. coli</em> has a cell wall, but experiments have shown that <em>E.\ncoli</em> can replicate without a cell wall and subsequently regenerate\nit (Petrovic Fabijan <em>et al</em>., 2022; Tabata <em>et al</em>.,\n2019). Therefore, scientists could plausibly create mirror bacteria\nwithout chemically constructing a cell wall."
+            },
+            {
+              "type": "paragraph",
+              "html": "Scientists have not yet created a living cell of any chirality in a\ntest tube from non-living components. As discussed above, a first\nmilestone might be the assembly of a living natural-chirality cell in a\ntest tube from cell-derived components (<a href=\"#figure-2.4-milestones-towards-the-creation-of-a-mirror-bacterium\">Figure\n2.4A</a>). In this experiment, the genome, cell lysate/cytosol, and cell\nmembrane would first be harvested from living bacteria, and then\nrecombined to create a living cell. This experiment could establish the\ncore methods for combining a genome, protein synthesis system, and\nmembrane in a way suitable to boot a live bacterium. It is plausible\nthat such an experiment will succeed in the next few years with moderate\nimprovements to existing experimental protocols, for instance by\nimproving the efficiency of extract-based transcription-translation\nsystems and gentle encapsulation methods that would prevent shearing of\nthe genome. However, it may be necessary to extensively optimize the\npreparation of the individual components, the genome, and the booting-up\nprotocol to create a living cell. The difficulty of this step is hard to\npredict, but the necessary technologies for such an attempt are\navailable to scientists today."
+            },
+            {
+              "type": "figure",
+              "id": "figure-2.4-milestones-towards-the-creation-of-a-mirror-bacterium",
+              "src": "assets/image5.png",
+              "alt": "",
+              "width": "6.45313in",
+              "height": "5.00762in",
+              "caption": {
+                "id": "figure-2.4-milestones-towards-the-creation-of-a-mirror-bacterium",
+                "title": "Figure 2.4: Milestones towards the creation of a mirror bacterium",
+                "title_html": "Figure\n2.4: Milestones towards the creation of a mirror bacterium",
+                "body_html": "<p><strong>A.</strong> Schematic depicting the boot of a living\nnatural-chirality bacterium from non-living, cell-derived components. In\nthis experiment, the bacterial genome, lysate, and membrane would be\nharvested from an existing bacterium and then recombined to create a new\nliving bacterium. <strong>B.</strong> Schematic depicting the boot of a\nliving natural-chirality bacterium from non-living, fully synthetic\ncomponents. In this experiment, the genome, lysate, and membrane from A\nwould be replaced by synthetic components made without the help of\nexisting cells, such as a synthetic genome, the PURE system, and\nsynthetic lipids. <strong>C.</strong> Schematic depicting the boot of a\nmirror bacterium from non-living, fully synthetic mirror components. In\nthis experiment, mirror versions of the components in B would be made\nand then combined using the protocol established in B to boot a mirror\nbacterium.</p>"
+              }
+            },
+            {
+              "type": "paragraph",
+              "html": "Each of the three components in the cell reconstitution—genome, cell\nlysate, and membrane—would need to be replaced with a fully synthetic\nversion (not one purified from other cells) to subsequently enable the\ncreation of a mirror bacterium using the same protocol (<a href=\"#figure-2.4-milestones-towards-the-creation-of-a-mirror-bacterium\">Figure\n2.4B</a>)."
+            },
+            {
+              "type": "paragraph",
+              "html": "Ideally, the starting PURE system would have sufficient synthesis\ncapacity to generate the full proteome from the genome and thereby boot\na self-replicating cell in a single step. As noted in the previous\nsection, the required synthesis efficiency is hard to determine, but it\nmight be less than the synthesis capacity needed for self-regeneration,\nas there might be positive feedback in the expression of the genome due\nto the production of translation factors, chaperones, and other\nauxiliary systems that might help to facilitate further genome\nexpression. However, should this fail, it may be possible to do a\n“partial” boot, recover the newly synthesized partial proteome (e.g., by\nremoving the “used-up” PURE system using affinity tags and concentrating\nthe new proteins), and add the new components to another booting\nattempt. Iterations of this process might generate a large fraction of\nthe proteome, enhancing the PURE synthesis capacity until it crosses the\nthreshold for positive feedback to make the entire proteome."
+            },
+            {
+              "type": "paragraph",
+              "html": "Positive feedback is not guaranteed, however. Some intermediate\nbooting states could be toxic to the cell or the booting process (e.g.,\ntranslation of proteases, nucleases, or membrane channels before their\nregulators). If the source of failure were found, it might be addressed\nby supplementing specific proteins to the original PURE mixture or\nmaking changes to the booting genome; the viability of the altered\ngenome could be confirmed in separate experiments. Advances in creating\ncells with minimal genomes might be informative and minimal cells might\nbe easier to boot, as their genomes are less complex (Haimovich <em>et\nal</em>., 2015; Hutchison <em>et al</em>., 2016). Alternatively,\nadvanced genome design or powerful whole-cell models could be used to\nsimplify or otherwise optimize the target genome and hence reduce the\ncomplexity of the booting task."
+            },
+            {
+              "type": "paragraph",
+              "html": "Overall, a boot from fully synthetic components would be a difficult\ntechnical step in the bottom-up pathway. However, as research in\nbottom-up synthetic biology progresses, the enabling methods will\ncontinue to improve. The exact timelines and challenges are hard to\nforecast with precision, but as synthetic cell research progresses\nrapidly, the natural-chirality version of this booting experiment might\nwell succeed within the coming decade (Adamala <em>et al</em>., 2024).\nOnce this has been accomplished, it might “simply” be a matter of\ninvesting the resources required to produce mirror versions of all the\ncomponents, as outlined in the previous sections, and then applying the\nbooting protocol to produce a synthetic mirror bacterium (<a href=\"#figure-2.4-milestones-towards-the-creation-of-a-mirror-bacterium\">Figure\n2.4C</a>)."
+            }
+          ],
+          "subsections": []
+        }
+      ]
+    },
+    {
+      "id": "a-natural-chirality-bacterium-might-be-converted-into-a-mirror-bacterium-in-a-stepwise-fashion",
+      "level": 2,
+      "title": "2.3 A natural-chirality bacterium might be converted into a mirror bacterium in a stepwise fashion",
+      "title_html": "<strong>2.3\nA natural-chirality bacterium might be converted into a mirror bacterium\nin a stepwise fashion</strong>",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "As an alternative to the “bottom-up” path outlined in <a href=\"#progress-in-synthetic-biology-could-allow-the-assembly-of-a-mirror-bacterium-from-non-living-mirror-components\">Section\n2.2</a>, a mirror bacterium could be created by a “top-down” pathway in\nwhich a living natural-chirality bacterium is converted into a mirror\nbacterium. This pathway might require more extensive technology\ndevelopment compared to the “bottom-up” pathway in <a href=\"#progress-in-synthetic-biology-could-allow-the-assembly-of-a-mirror-bacterium-from-non-living-mirror-components\">Section\n2.2</a>, but these technologies are likely to benefit from greater\ninvestments for reasons unrelated to mirror life. A “top-down” strategy\nto create mirror bacteria might involve three steps:"
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "start": 1,
+          "items": [
+            {
+              "html": "<p>Production of mirror-image proteins <em>in vivo</em> by creating\na crossover pathway made of natural-chirality components.</p>"
+            },
+            {
+              "html": "<p>Production of mirror-image proteins <em>in vivo</em> by creating\nan entirely mirror-image central dogma.</p>"
+            },
+            {
+              "html": "<p>Delivery or assembly of a full mirror-image DNA genome <em>in\nvivo</em>, and removal of the natural-chirality genome, to create a\nmirror bacterium.</p>"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "html": "Such work would be able to build on existing research on genetic code\nreprogramming. We begin by outlining these existing approaches, and then\nconsider each step in turn."
+        }
+      ],
+      "subsections": [
+        {
+          "id": "genetic-code-reprogramming-allows-for-the-production-of-proteins-with-non-canonical-amino-acids",
+          "level": 3,
+          "title": "Genetic code reprogramming allows for the production of proteins with non-canonical amino acids",
+          "title_html": "Genetic\ncode reprogramming allows for the production of proteins with\nnon-canonical amino acids",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "Research in genetic code expansion and reprogramming aims to create\nliving cells that produce proteins made of an expanded set of amino\nacids. These non-canonical amino acids (ncAAs) are chemically diverse\nand thereby confer new properties to proteins. This includes a plethora\nof tools to study protein function and create enhanced proteins, such as\nncAAs that crosslink to protein interaction partners, bioorthogonal\nreaction handles that allow site-specific protein modification, and\nmimics of post-translational modifications (Chin, 2017; Young &\nSchultz, 2018). More recent work has seen re-engineering of translation\nto create polymers made entirely of ncAAs, creating new classes of\nbiopolymers that could serve as future materials or therapeutics (de la\nTorre & Chin, 2021)."
+            },
+            {
+              "type": "paragraph",
+              "html": "The incorporation of an ncAA can be achieved by expressing a suitably\nengineered aminoacyl-tRNA synthetase/tRNA (aaRS/tRNA) pair in a cell\n(Mukai <em>et al</em>., 2017; Young & Schultz, 2018). The aaRS\ncharges the ncAA onto its cognate tRNA, which then can be used by the\nribosome to incorporate the ncAA. In many experiments, the tRNA is\nengineered to decode the TAG stop codon, as TAG-decoding tRNAs compete\nefficiently with release factor 1 to permit site-specific incorporation\nof the ncAA at the TAG codon (Mukai <em>et al</em>., 2017)."
+            },
+            {
+              "type": "paragraph",
+              "html": "An important requirement is that the aaRS/tRNA pair needs to be\northogonal to the host translation machinery; that is, the additional\naaRS must charge only its cognate tRNA and none of the host tRNAs, and\nthe additional tRNA likewise must not be charged by any of the host\naaRSs. Moreover, the aaRS active site must only charge the ncAA of\ninterest onto its tRNA and not any of the canonical amino acids or other\nsmall molecules present in the cell."
+            },
+            {
+              "type": "paragraph",
+              "html": "Building on these advances, in recent years researchers have been\nexploring ways of using multiple ncAAs in parallel in the same cell,\ntoward creating a translation pathway for the synthesis of genetically\nencoded non-canonical biopolymers (de la Torre & Chin, 2021). There\nare three principal requirements for such a pathway:"
+            },
+            {
+              "type": "list",
+              "ordered": true,
+              "start": 1,
+              "items": [
+                {
+                  "html": "<p>Blank codons that can be used to encode additional ncAAs need to\nbe created.</p>"
+                },
+                {
+                  "html": "<p>Mutually orthogonal aaRS/tRNA pairs that can work in parallel\nwith the host aaRS/tRNA pairs and each other and can charge multiple\ndistinct ncAAs need to be found.</p>"
+                },
+                {
+                  "html": "<p>If ncAAs with complex side-chains or altered backbone structures\nare to be used, the ribosome and other translation factors might need to\nbe engineered to enable their efficient polymerization.</p>"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "html": "Researchers have been progressing rapidly on these three challenges\nin recent years (de la Torre & Chin, 2021). For example, there are\nmultiple pathways that might create blank codons in cells. The genetic\ncode consists of 64 three-letter codons encoding 21 signals, the 20\nnaturally occurring amino acids and a “stop” or termination signal. Many\ncodons are synonymous; they encode the same signal. Synonymous recoding\nof a genome involves choosing a particular codon, and substituting all\ninstances of that codon with a synonymous codon throughout the genome.\nThe recoded codon no longer appears in the genome. Its cognate tRNA or\nrelease factor may be deleted, or reassigned to a new, potentially\nnon-canonical, amino acid."
+            },
+            {
+              "type": "paragraph",
+              "html": "The falling cost of DNA synthesis and progress in synthetic genomics\nhas recently enabled the synthesis of codon-compressed genomes of this\nkind. In 2013, the first such codon-compressed genome was developed by\nmultisite editing (Lajoie <em>et al</em>., 2013; H. H. Wang <em>et\nal</em>., 2009). The TAG stop codon was replaced by synonymous\nalternatives genome-wide, which allowed the deletion of release factor 1\nand hence reassignment of TAG to ncAAs at enhanced efficiency (Lajoie\n<em>et al</em>., 2013). Subsequently, researchers created an <em>E.\ncoli</em> with a fully synthetic genome containing just 61 codons, in\nwhich TAG as well as TCG and TCA, two of the six serine codons, were\nremoved and substituted with synonymous alternatives (Fredens <em>et\nal</em>., 2019). This organism, dubbed Syn61, contains three blank\ncodons that can be reassigned to three non-canonical amino acids and\nused to synthesize short non-canonical polymers (Robertson <em>et\nal</em>., 2021)."
+            },
+            {
+              "type": "paragraph",
+              "html": "Genome recoding is not necessary if blank codons can be created by a\ndifferent pathway. In one strategy, scientists engineered a ribosome to\nread quadruplet (4-base) codons rather than canonical triplet (3-base)\ncodons (Neumann <em>et al</em>., 2010). In principle this provides up to\n256 blank codons, and researchers have shown that up to four\nnon-canonical amino acids can be used in parallel in response to four\nquadruplet codons (Dunkelmann <em>et al</em>., 2021). However,\nquadruplet decoding suffers from competition with triplet decoding in\nthese experiments, limiting the efficiency of ncAA incorporation.\nCombining recoding with quadruplet decoding can address this challenge\n(Chatterjee <em>et al</em>., 2014). Codon context is another strategy\nthat has been used to optimize quadruplet decoding (Costello <em>et\nal</em>., 2024)."
+            },
+            {
+              "type": "paragraph",
+              "html": "In an alternative approach, researchers have created an organism that\nuses an additional nucleotide pair alongside the A:T and C:G pair that\nmakes up canonical DNA. The additional pair (dTPT3:dNaM) can be\nreplicated as part of the DNA, transcribed into RNA, and used to encode\nprotein synthesis in cells (Malyshev <em>et al</em>., 2014; Y. Zhang\n<em>et al</em>., 2017). Future progress in creating an expanded genetic\nalphabet that can be used efficiently to code for non-canonical amino\nacids might likewise provide a diverse range of blank codons in the\nfuture. In <em>in vitro</em> experiments, researchers have also\nconsidered the possibility of creating parallel genetic codes, where one\ntype of ribosome translates the proteome using the canonical genetic\ncode, and a different type of ribosome uses a separate tRNA pool with a\ndifferent assignment between triplet codons and amino acids (Terasaka\n<em>et al</em>., 2014)."
+            },
+            {
+              "type": "paragraph",
+              "html": "The development of mutually orthogonal aaRS/tRNA pairs is challenging\ndue to the numerous orthogonality requirements. Much work in the field\nhas been driven by the discovery that <em>Methanocaldococcus\njannaschii</em> tyrosine-tRNA synthetase (TyrRS)/tRNA pair and the\npyrrolysyl-tRNA synthetase (PylRS)/tRNA pairs from <em>Methanosarcina\nmazei</em> and <em>Methanosarcina barkeri</em> fulfill these\northogonality requirements <em>in vivo</em> and that their active sites\ncan be engineered to charge a diversity of ncAAs with large hydrophobic\nand aromatic side chains (Mukai <em>et al</em>., 2017). Nonetheless,\nseveral additional pairs beyond the <em>M. jannaschii</em> TyrRS/<em>M.\nmazei</em> and <em>M. barkeri/</em>PylRS pairs have recently been found\nby exploring the natural sequence diversity of synthetases across the\nkingdoms of life. Up to five of these pairs have been found to be\nmutually orthogonal (Beattie <em>et al</em>., 2023). Most pairs are\nderived from tyrosine and pyrrolysine synthetases, and hence available\nncAAs mostly have large hydrophobic or aromatic side chains and a\ncanonical α-ʟ-amino acid backbone. However, further effort at\ndiscovering more diverse aaRS/tRNA pairs and developing improved methods\nfor their engineering will likely increase the number and diversity of\nncAAs that can be used in coming years."
+            },
+            {
+              "type": "paragraph",
+              "html": "Most approaches in genetic code expansion rely on the promiscuity of\nthe ribosome. However, while the ribosome is generally permissive to\ndifferent side chains, the efficiency of ncAAs with altered backbone\nstructures (such as N-alkyl, ᴅ-, or β-amino acids) is generally reduced\n(de la Torre & Chin, 2021). Ribosome engineering is challenging due\nto the central role of ribosomes in metabolism, and many active site\nmutations are lethal. However, researchers have laid the foundation for\nribosome engineering by creating so-called orthogonal ribosomes (Orelle\n<em>et al</em>., 2015; Rackham & Chin, 2005; Schmied <em>et\nal</em>., 2018). These are copies of the ribosome that are isolated from\nhost translation and translate their own set of orthogonal mRNAs, which\nare not read by the host ribosome (<a href=\"#figure-2.5-genetic-code-reprogramming-allows-the-genetically-encoded-synthesis-of-non-canonical-biopolymers-in-cells\">Figure\n2.5</a>). Initial experiments indicate that such ribosomes can be\nengineered to use some challenging amino acids with increased efficiency\n(Schmied <em>et al</em>., 2018)."
+            }
+          ],
+          "subsections": []
+        },
+        {
+          "id": "extensions-of-genetic-code-reprogramming-might-permit-the-creation-of-a-crossover-pathway-for-in-vivo-mirror-protein-synthesis-made-of-natural-chirality-components",
+          "level": 3,
+          "title": "Extensions of genetic code reprogramming might permit the creation of a crossover pathway for in vivo mirror protein synthesis made of natural-chirality components",
+          "title_html": "Extensions\nof genetic code reprogramming might permit the creation of a crossover\npathway for <em>in vivo</em> mirror protein synthesis made of\nnatural-chirality components",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "Researchers studying genetic code expansion and reprogramming are\nre-engineering protein translation to use non-canonical amino acids,\nincluding ᴅ-amino acids (Katoh, Iwane <em>et al</em>., 2017), in\naddition to the canonical amino acids. Extensions of this approach could\nin principle enable the creation of a crossover translation path for the\nproduction of mirror proteins inside natural-chirality bacteria (<a href=\"#figure-2.6-natural-crossover-and-mirror-image-translation\">Figure\n2.6A–B</a>). Advancing this technology to enable <em>in vivo</em> mirror\nprotein synthesis would likely require:"
+            },
+            {
+              "type": "list",
+              "ordered": true,
+              "start": 1,
+              "items": [
+                {
+                  "html": "<p>Generating 19 blank codons in the <em>E. coli</em> genome, one\nfor each ᴅ-amino acid needed.</p>"
+                },
+                {
+                  "html": "<p>Generating 19 orthogonal aaRS/tRNA pairs that charge the 19\nᴅ-amino acids onto orthogonal tRNAs decoding the blank codons.</p>"
+                },
+                {
+                  "html": "<p>Engineering a crossover ribosome that can efficiently polymerize\nᴅ-amino acids, and perhaps engineering other supporting translation\nfactors.</p>"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "html": "As discussed in the previous section, many methods for generating\nblank codons are being studied, but synonymous codon compression is one\npossible approach. Synthesizing a viable genome that uses only 45 codons\ncould free up 19 blank codons. A challenge in creating codon-compressed\ngenomes is that synonymous codons can have coding functions in addition\nto specifying the order of amino acids, such that synonymous codon\nreplacements can have fitness costs to the bacterium or be lethal. The\ncodon replacement scheme in the 61-codon Syn61 genome was determined by\nempirical testing, and the final organism grew 60% slower than its\nparent 64-codon organism, although some"
+            },
+            {
+              "type": "figure",
+              "id": "figure-2.5-genetic-code-reprogramming-allows-the-genetically-encoded-synthesis-of-non-canonical-biopolymers-in-cells",
+              "src": "assets/image15.png",
+              "alt": "",
+              "width": "6.41974in",
+              "height": "4.25543in",
+              "caption": {
+                "id": "figure-2.5-genetic-code-reprogramming-allows-the-genetically-encoded-synthesis-of-non-canonical-biopolymers-in-cells",
+                "title": "Figure 2.5: Genetic code reprogramming allows the genetically encoded synthesis of non-canonical biopolymers in cells",
+                "title_html": "Figure\n2.5: Genetic code reprogramming allows the genetically encoded synthesis\nof non-canonical biopolymers in cells",
+                "body_html": "<p><strong>A.</strong> Natural translation. Aminoacyl-tRNA synthetases\nacylate cognate tRNAs with amino acids, which are then used by the\nribosome to make a protein. <strong>B.</strong> Orthogonal translation.\nThe genetic code is reprogrammed to enable engineered orthogonal\naminoacyl-tRNA synthetases to acylate orthogonal tRNAs with\nnon-canonical amino acids (ncAAs). The resulting aminoacyl-tRNAs can\nthen be used to decode orthogonal codons, potentially by an evolved\northogonal ribosome, to produce non-canonical biopolymers.</p>"
+              }
+            },
+            {
+              "type": "paragraph",
+              "html": "of that fitness loss could be recovered by subsequent laboratory\nevolution (Fredens <em>et al</em>., 2019; Robertson <em>et al</em>.,\n2021)."
+            },
+            {
+              "type": "paragraph",
+              "html": "A 45-codon organism would still have substantial redundancy in its\ngenome; a hypothetical “minimal-code” genome would only use 21 codons\n(for the 20 canonical amino acids and stop codon). As our understanding\nof synonymous codon choices and predictive and empirical methods to\ndesign recoded genomes advances, the creation of such a codon-compressed\ngenome might become increasingly feasible."
+            },
+            {
+              "type": "paragraph",
+              "html": "Codon compression is just one strategy to generate the required blank\ncodons. Alternatively, if the efficiency of quadruplet decoding or of an\nexpanded genetic alphabet could be improved, ᴅ-amino acids could be\nencoded by these newly generated codons. Likewise, if a parallel\ntranslation pathway in which a separate ribosome selectively uses its\nown pool of tRNAs <em>in vivo</em> could be constructed, codons could be\nselectively reassigned in this parallel translation pathway without\ninterfering with cellular translation. While substantial progress will\nbe required to generate 19 blank codons by any of"
+            },
+            {
+              "type": "figure",
+              "id": "figure-2.6-natural-crossover-and-mirror-image-translation",
+              "src": "assets/image19.png",
+              "alt": "",
+              "width": "6.41667in",
+              "height": "4.70196in",
+              "caption": {
+                "id": "figure-2.6-natural-crossover-and-mirror-image-translation",
+                "title": "Figure 2.6: Natural, crossover, and mirror-image translation",
+                "title_html": "Figure\n2.6: Natural, crossover, and mirror-image translation",
+                "body_html": "<p><strong>A.</strong> Natural translation. ʟ-Amino acids are charged by\nʟ-aminoacyl-tRNA synthetases onto ᴅ-tRNAs, which read codons. ʟ-Amino\nacids are polymerized by a natural-chirality ribosome to produce\nʟ-proteins. <strong>B.</strong> Crossover translation. ᴅ-Amino acids are\ncharged by orthogonal ʟ-aminoacyl-tRNA synthetases onto orthogonal\nᴅ-tRNAs, which read orthogonal codons. ᴅ-Amino acids are polymerized by\nan engineered orthogonal natural-chirality ribosome to produce\nᴅ-proteins. <strong>C.</strong> Mirror-image translation. ᴅ-Amino acids\nare charged by ᴅ-aminoacyl-tRNA synthetases onto ʟ-tRNAs which read\ncodons on a ᴅ-mRNA. ᴅ-Amino acids are polymerized by a mirror ribosome\nto produce ᴅ-proteins.</p>"
+              }
+            },
+            {
+              "type": "paragraph",
+              "html": "these approaches, and further technical hurdles such as wobble\ndecoding would need to be addressed, it seems likely that this will\neventually be possible."
+            },
+            {
+              "type": "paragraph",
+              "html": "The <em>in vivo</em> incorporation of ᴅ-amino acids would require the\ngeneration of 19 aaRS/tRNA pairs that could load the 19 ᴅ-amino acids\nonto tRNAs to be used for <em>in vivo</em> mirror protein synthesis.\nEach aaRS/tRNA pair would need to be orthogonal in its aaRS/tRNA\nrecognition to other aaRS/tRNA pairs used for ᴅ-amino acid incorporation\nand the host aaRS/tRNA pairs that use the canonical ʟ-amino acids,\nexclusively and efficiently charge their cognate ᴅ-amino acid and not\nother ᴅ- or ʟ-amino acids, and exclusively and efficiently decode their\ntarget codon."
+            },
+            {
+              "type": "paragraph",
+              "html": "While no aaRS/tRNA pairs for ᴅ-amino acid incorporation <em>in\nvivo</em> have yet been reported, and creating pairs that fulfill these\nrequirements would be a major protein engineering effort, most of the\nnecessary methods have been described in principle. This includes\napproaches for discovering additional orthogonal aaRS/tRNA pairs\n(Cervettini <em>et al</em>., 2020), improving their efficiency (Amiram\n<em>et al</em>., 2015), and methods for engineering synthetases to\ncharge non-canonical amino acids with altered backbones (Dunkelmann\n<em>et al</em>., 2024). Further advances in this field or in related\nareas, e.g., computational methods for protein design, would lower the\nexpertise and resource requirements for this task further."
+            },
+            {
+              "type": "paragraph",
+              "html": "Genetic code expansion has so far mostly relied on the promiscuity of\nthe ribosome toward non-canonical amino acids. However, while the\nribosome is generally permissive toward non-canonical amino acids with\naltered side chains, amino acids with altered backbones such as ᴅ-amino\nacids are polymerized less efficiently. <em>In vitro,</em> under highly\noptimized conditions, up to ten ᴅ-amino acids can be polymerized\nconsecutively by the ribosome<em>,</em> but at significantly reduced\nefficiency compared to ʟ-amino acids (Katoh, Tajima, & Suga, 2017).\nKey translation factors such as EF-Tu, which delivers aminoacyl-tRNAs to\nthe ribosome, are also specific to the ʟ-amino acid backbone\n(Arranz-Gibert <em>et al</em>., 2018). Hence, it is likely that it would\nbe necessary to engineer the ribosome and translation factors to support\nmore efficient polymerization of ᴅ-amino acids <em>in vivo</em> to\nenable the cellular synthesis of mirror proteins. It is an open question\nto what extent ribosomal mutations can be found that enhance ᴅ-amino\nacid incorporation <em>in vivo</em>, and it is hard to predict how\nefficient the crossover ribosomes would be. However, as tools for\nribosome engineering continue to be developed (d’Aquino <em>et al</em>.,\n2018; de la Torre & Chin, 2021) and general protein engineering and\ndirected evolution methods improve (Simon <em>et al</em>., 2019; Yang\n<em>et al</em>., 2019), this challenge is becoming increasingly\ntractable. For example, a ribosome engineered to incorporate ᴅ-amino\nacids and not ʟ-amino acids, with a Shine-Dalgarno sequence that is\northogonal to the existing ribosome, would minimize the risk of unwanted\ncrosstalk between normal and mirror protein creation (Dunkelmann <em>et\nal</em>., 2021; Rackham & Chin, 2005)."
+            },
+            {
+              "type": "paragraph",
+              "html": "The levels of ᴅ-amino acid required for efficient mirror protein\ntranslation from a crossover ribosome might be toxic to existing cells\n(Aliashkevich <em>et al</em>., 2018). Many ᴅ-amino acids are already\npresent in existing organisms, though at lower concentrations than\nʟ-amino acids. Extracellular concentrations in the millimolar range of\ncertain amino acids, especially of ᴅ-Trp, can inhibit growth due to\nmisincorporation by the ribosome (Leiman <em>et al</em>., 2013; Rumbo\n<em>et al</em>., 2016; Soutourina <em>et al</em>., 2000; see also <a href=\"#box-1.2-could-natural-chirality-molecules-be-toxic-to-mirror-life\">Box\n1.2</a>); intracellular concentrations of the corresponding ʟ-amino acid\nenantiomers are only a few-fold lower. That is, the current canonical\ntRNA/aaRS pairs for existing ʟ-amino acids may misincorporate ᴅ-amino\nacids too frequently to tolerate the higher concentrations that would be\nneeded to support a crossover ribosome. The enzyme ᴅ-aminoacyl tRNA\ndeacylase (DTD) functions to hydrolyze tRNAs mischarged with ᴅ-amino\nacids. DTD is highly promiscuous, functioning on a wide range of ᴅ-amino\nacids and an equally broad range of tRNA structures, which may make it\ndifficult to produce orthogonal tRNAs intended to be charged with\nᴅ-amino acids by their own aaRS enzymes. Deleting DTD would resolve this\nproblem, but doing so greatly increases the toxicity of ᴅ-amino acids to\nbacteria (Leiman <em>et al</em>., 2013). In principle, DTD and the new\ntRNAs might be engineered to be orthogonal to one another.\nAlternatively, artificial organelles might be used to sequester the\nmirror components, including ᴅ-amino acids, away from the rest of the\ncell; this possibility is discussed further in <a href=\"#other-approaches-to-creating-mirror-bacteria-are-plausible\">Section\n2.4</a>."
+            }
+          ],
+          "subsections": []
+        },
+        {
+          "id": "a-crossover-pathway-could-be-used-to-create-a-self-sustaining-mirror-central-dogma-in-vivo",
+          "level": 3,
+          "title": "A crossover pathway could be used to create a self-sustaining mirror central dogma in vivo",
+          "title_html": "A\ncrossover pathway could be used to create a self-sustaining mirror\ncentral dogma <em>in vivo</em>",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "Once mirror proteins could be made <em>in vivo</em> using the\ncrossover pathway, the next step would involve creating pathways for the\nproduction of mirror DNA and RNA <em>in vivo</em> (<a href=\"#figure-2.6-natural-crossover-and-mirror-image-translation\">Figure\n2.6C</a>). Mirror DNA could be replicated <em>in vivo</em> by making\nmirror versions of the enzymes that replicate DNA, i.e., initiator\nproteins, a DNA polymerase, helicase, ligase, topoisomerase,\nsingle-strand binding protein, and other accessory proteins that make up\nthe replisome (Oakley, 2019). Additionally, it would be necessary to\nprovide a pathway for the synthesis of mirror-image nucleotide\ntriphosphate (NTP) building blocks. Once these mirror proteins were\nproduced inside the cell, it might be possible to transform an <em>in\nvitro</em>-made mirror DNA plasmid into the cell, which would then be\npropagated by the mirror replisome. Once mirror DNA could be propagated\nwithin a bacterium, RNA could be produced by expressing a mirror RNA\npolymerase."
+            },
+            {
+              "type": "paragraph",
+              "html": "In the crossover pathway, a natural-chirality protein synthesis\nsystem is used to create mirror proteins (<a href=\"#figure-2.6-natural-crossover-and-mirror-image-translation\">Figure\n2.6B</a>). However, once both mirror proteins and mirror RNA can be\nproduced <em>in vivo</em>, scientists might be able to construct a\nmirror version of translation (<a href=\"#figure-2.6-natural-crossover-and-mirror-image-translation\">Figure\n2.6C</a>). Unlike the crossover pathway, a mirror version of translation\nwould use mirror translation machinery made of mirror proteins and\nmirror RNA to create mirror proteins. Once this is established, it could\nbe self-sustaining: mirror replication, transcription, and translation\nmachinery could be encoded in mirror DNA, which is then transcribed and\ntranslated by the mirror machinery. At this point, the crossover\ntranslation system could be removed. This would yield a mixed chirality\nbacterium that simultaneously carried a natural-chirality genome and a\nnatural-chirality proteome similar to natural life, but additionally\ncarried a mirror DNA plasmid and mirror central dogma machinery capable\nof creating mirror DNA, RNA, and proteins (<a href=\"#figure-2.6-natural-crossover-and-mirror-image-translation\">Figure\n2.6C</a>)."
+            },
+            {
+              "type": "paragraph",
+              "html": "Establishing a mirror central dogma might face some technical\nchallenges. For example, the synthesis of mirror ribosomal RNA and\nmirror ribosomal proteins might have to be coordinated for <em>in\nvivo</em> mirror ribosome biogenesis, and suitable mirror RNA-modifying\nenzymes would additionally need to be present. The many components of\nthe mirror translation system might interfere with the natural-chirality\nhost cellular machinery in hard-to-predict ways. Nonetheless, while\ntroubleshooting this system at this stage would require skillful\nexperimentation, it would not necessarily require the large resource\ninvestments that are involved in creating 19 blank codons or engineering\n19 mutually orthogonal aaRS/tRNA pairs, for example, or the synthesis of\na large number of mirror proteins like in the bottom-up approach."
+            }
+          ],
+          "subsections": []
+        },
+        {
+          "id": "a-mirror-bacterium-could-potentially-be-created-by-delivering-a-mirror-dna-genome-and-removing-the-natural-chirality-genome",
+          "level": 3,
+          "title": "A mirror bacterium could potentially be created by delivering a mirror DNA genome and removing the natural-chirality genome",
+          "title_html": "A\nmirror bacterium could potentially be created by delivering a mirror DNA\ngenome and removing the natural-chirality genome",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "Finally, researchers might expand the mirror DNA plasmid to encompass\na complete mirror genome and remove the natural-chirality genome from\nthe cell, to create a fully mirrored bacterium (<a href=\"#figure-2.7-stepwise-conversion-of-a-natural-chirality-bacterium-into-a-mirror-bacterium\">Figure\n2.7</a>). One strategy could be to build a mirror genome <em>in\nvitro</em> and deliver it to the mixed-chirality cell in a single step.\nIf the mirror genome is taken up, the mirror transcription and\ntranslation machinery could begin gene expression from the mirror\ngenome, producing all the mirror proteins and RNAs"
+            },
+            {
+              "type": "figure",
+              "id": "figure-2.7-stepwise-conversion-of-a-natural-chirality-bacterium-into-a-mirror-bacterium",
+              "src": "assets/image23.png",
+              "alt": "",
+              "width": "6.37992in",
+              "height": "4.33333in",
+              "caption": {
+                "id": "figure-2.7-stepwise-conversion-of-a-natural-chirality-bacterium-into-a-mirror-bacterium",
+                "title": "Figure 2.7: Stepwise conversion of a natural-chirality bacterium into a mirror bacterium",
+                "title_html": "Figure\n2.7: Stepwise conversion of a natural-chirality bacterium into a mirror\nbacterium",
+                "body_html": "<p><strong>A.</strong> Stage 1: A natural-chirality bacterium with a\nnatural-chirality central dogma. <strong>B.</strong> Stage II: A\nnatural-chirality bacterium that additionally contains a crossover\ntranslation system made of natural-chirality components that is able to\nproduce mirror proteins <em>in vivo.</em> <strong>C.</strong> Stage III:\nA mixed-chirality bacterium that contains a natural-chirality central\ndogma and a mirror central dogma. <strong>D.</strong> Stage IV: A fully\nmirrored bacterium that contains a mirror genome and a mirror central\ndogma and no natural-chirality components.</p>"
+              }
+            },
+            {
+              "type": "paragraph",
+              "html": "that make up a mirror bacterium. At the same time, enzymes that\ndegrade the natural-chirality genome could be expressed, thereby\nstopping gene expression from the natural-chirality genome. Hence, after\nsome turnover, the mirror genome, transcriptome, and proteome would be\nexpressed whereas the natural-chirality genome, transcriptome, and\nproteome would be degraded. If the transition can be successfully\nmanaged, the result would be a viable mirror cell. This is conceptually\nsimilar to the “booting” experiment in the bottom-up pathway."
+            },
+            {
+              "type": "paragraph",
+              "html": "This chirality conversion step could be made less drastic, improving\nthe chance of success, by expanding the DNA episome in a stepwise\nfashion to build a mirror genome. A challenge in this approach is that\nthe co-expression of some natural-chirality and mirror genes could cause\ntoxicity as some mirror proteins would likely interfere with regular\ncellular processes. For example, mirror bacterial cell division proteins\nmight interfere with cell division, or mirror metabolic enzymes with\nmetabolism. To mitigate this, researchers could try to replace sets of\nproteins governing natural-chirality functional modules, such as cell\ndivision or energy metabolism, entirely with mirror components. This\nwould result in a step-by-step conversion of natural-chirality to mirror\nbacteria in which some functional modules would be natural-chirality,\nand some mirror, during the conversion stages. Like the previous step,\nthe cell conversion step would be a technically challenging but\ntractable path to create a mirror bacterium."
+            }
+          ],
+          "subsections": []
+        }
+      ]
+    },
+    {
+      "id": "other-approaches-to-creating-mirror-bacteria-are-plausible",
+      "level": 2,
+      "title": "2.4 Other approaches to creating mirror bacteria are plausible",
+      "title_html": "<strong>2.4\nOther approaches to creating mirror bacteria are plausible</strong>",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Science rarely proceeds in linear fashion, and progress is unlikely\nto precisely follow the pathways outlined in the above sections. In this\nsection, we turn to consider some pathways that appear more speculative\nbased on our current understanding of the challenges, but could become\nmore plausible in the coming decades as related scientific fields\nadvance."
+        },
+        {
+          "type": "paragraph",
+          "html": "Research along the bottom-up and top-down pathways would not proceed\nin isolation, and would be able to draw on wider progress in the\nsynthetic cell, genetic code expansion, and bioproduction communities.\nFor example, an <em>in vivo</em> system for the synthesis of mirror\nproteins could provide mirror proteins for a bottom-up approach.\nSimilarly, <em>in vitro</em> methods for the synthesis of a mirror DNA\ngenome would facilitate the introduction of a mirror DNA genome in a\nnatural-chirality cell. Insights as to the difficulties of booting up a\ngenome in the bottom-up approach might inform the boot in a top-down\npath, and vice versa."
+        },
+        {
+          "type": "paragraph",
+          "html": "As discussed in <a href=\"#progress-in-synthetic-biology-could-allow-the-assembly-of-a-mirror-bacterium-from-non-living-mirror-components\">Section\n2.2</a>, there is great academic interest in generating synthetic cells\nfrom non-living components. The first synthetic cell could be a replica\nof an existing organism and use DNA, proteins, carbohydrates, and other\nmacromolecules familiar from natural life. However, there is also work\naimed at creating synthetic cells from abiological components, for\nexample using compartments other than phospholipid vesicles (Discher\n<em>et al</em>., 1999; Holowka <em>et al</em>., 2005; Joesaar <em>et\nal</em>., 2019; Shang <em>et al</em>., 2022; van Swaay <em>et al</em>.,\n2015) or atypical or abiological macromolecules to perform key cellular\nfunctions (Jiang <em>et al</em>., 2022; Zhan <em>et al</em>., 2022).\nSimilarly, researchers are interested in synthesizing plausible early\nforms of life to study the origin of life, for example RNA-only\nprotocells (Joyce & Szostak, 2018). Most artificial cells of this\nkind are unlikely to be viable outside the laboratory. However, the\ncreation of such artificial cells may facilitate the creation of a\nmirror bacterium by stepwise conversion of the abiological artificial\ncell into a mirror bacterium."
+        },
+        {
+          "type": "paragraph",
+          "html": "Establishing a crossover and a mirror translation system inside a\nliving bacterium, as discussed in <a href=\"#a-natural-chirality-bacterium-might-be-converted-into-a-mirror-bacterium-in-a-stepwise-fashion\">Section\n2.3</a>, would be challenging and labor-intensive. An alternative\napproach could be to temporarily and fully switch the protein synthesis\nmachinery from natural-chirality protein production to mirror protein\nproduction. If this could be done, the natural-chirality DNA genome\ncould be temporarily translated into a mirror proteome. With the mirror\nproteome in place, if a mirror DNA genome could be delivered at this\nstage and the natural-chirality DNA genome degraded, it might be\npossible to rapidly convert a natural-chirality bacterium into a mirror\nbacterium. This strategy is attractive as it might be easier to\ntemporarily remodel the translation machinery for mirror protein\nsynthesis using the natural-chirality genome than to stably co-express\nmirror protein synthesis systems alongside the natural-chirality protein\nsynthesis that keeps the natural-chirality bacterium alive. However,\nthere would be fewer opportunities for troubleshooting compared to the\npath outlined in <a href=\"#a-natural-chirality-bacterium-might-be-converted-into-a-mirror-bacterium-in-a-stepwise-fashion\">Section\n2.3</a>."
+        },
+        {
+          "type": "paragraph",
+          "html": "Another modification of the approach outlined in <a href=\"#a-natural-chirality-bacterium-might-be-converted-into-a-mirror-bacterium-in-a-stepwise-fashion\">Section\n2.3</a> would employ a natural organelle like the mitochondrion (which\nis non-essential for yeast replication) or the creation of an artificial\norganelle inside a natural-chirality organism to avoid the need for\ncreating blank codons and to sequester the potentially toxic mirror\ncomponents. Researchers have successfully constructed artificial\norganelles made of proteins and of lipid membranes in bacteria using a\nvariety of methods and used them to isolate metabolic pathways from the\nrest of the cell (Oerlemans <em>et al</em>., 2021). For example,\nintroducing peroxisomal proteins from eukarya into bacteria has\ngenerated membrane-encapsulated artificial peroxisomes (Cross <em>et\nal</em>., 2017). The same peptide tags used to transport peroxisomal\nenzymes in eukaryotes (Baker <em>et al</em>., 2024) can direct tagged\nproteins and associated biomolecules into the bacterial peroxisomes,\nallowing them to perform biochemical reactions in isolation. Bacterial\norganelles harboring independently replicating DNA exist in nature: the\nbacterium <em>Candidatus Thiomargarita magnifica</em> features numerous\nmembrane-bound organelles called pepins that contain copies of the\ngenome and/or active ribosomes (Volland <em>et al</em>., 2022). It\nappears likely that the organelles themselves replicate independently,\nmuch like mitochondria in eukaryotic cells. Such an organelle could in\nprinciple harbor an independent episome encoding the desired mirror\nproteins, the polymerase required to transcribe them, and the crossover\ntranslational machinery—including ᴅ-amino acids at high\nconcentrations—capable of producing them <em>in vivo</em>. As artificial\norganelle as well as mitochondrial and chloroplast engineering advance,\nit appears plausible that the technologies required to sequester a\nmirror central dogma within a natural-chirality cell could be\ndeveloped."
+        },
+        {
+          "type": "paragraph",
+          "html": "Future advances in enzyme engineering could enable the creation of\nenzymes using energy to drive the conversion of ʟ-amino acids to ᴅ-amino\nacids within a polypeptide chain. A “protein handedness converter”, if\nit could be created, could provide a shortcut to create mirror life: it\ncould be used to produce mirror-image proteins <em>in vitro</em> for the\nbottom-up pathway, or <em>in vivo</em> for a top-down pathway, or enable\nthe creation of a transient crossover translation system as discussed\nabove."
+        },
+        {
+          "type": "paragraph",
+          "html": "In recent years, progress in artificial intelligence (AI)-based\nscientific methods have had a transformative impact in the life\nsciences. It is plausible that further advances in AI might accelerate\nsolutions for many of the technical hurdles in the approaches outlined\nabove. This could include designing enzymes to manipulate mirror\nbiomolecules, strategies to create key components such as synthetic\nribosomes, engineered translational machinery to facilitate <em>in\nvivo</em> mirror protein production, or improved genome design\napproaches that might facilitate booting or cell conversion experiments,\namong others. AI might also help to accelerate experimentation, for\nexample by facilitating laboratory automation."
+        }
+      ],
+      "subsections": []
+    },
+    {
+      "id": "the-feasibility-of-mirror-life-will-increase-as-related-technologies-advance",
+      "level": 2,
+      "title": "2.5 The feasibility of mirror life will increase as related technologies advance",
+      "title_html": "<strong>2.5\nThe feasibility of mirror life will increase as related technologies\nadvance</strong>",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "In the previous sections, we found that multiple plausible pathways\nto the creation of mirror bacteria exist, although major technological\nhurdles remain."
+        },
+        {
+          "type": "paragraph",
+          "html": "In the bottom-up pathway outlined in <a href=\"#progress-in-synthetic-biology-could-allow-the-assembly-of-a-mirror-bacterium-from-non-living-mirror-components\">Section\n2.2</a>, the most notable bottlenecks are the development of recipes for\nthe assembly of self-replicating cells from a protein synthesis system,\na membrane, and a genome, alongside strategies for creating entirely\nsynthetic ribosomes. Moreover, advances that would reduce the cost and\neffort of mirror protein and nucleic acid synthesis would greatly\nfacilitate any effort toward the creation of a mirror bacterium.\nFinally, existing genome synthesis approaches would need to be adapted\nto enable the synthesis of a mirror genome without <em>in vivo</em>\nmanipulations."
+        },
+        {
+          "type": "paragraph",
+          "html": "In the cell conversion pathway described in <a href=\"#a-natural-chirality-bacterium-might-be-converted-into-a-mirror-bacterium-in-a-stepwise-fashion\">Section\n2.3</a>, a major bottleneck is the development of a crossover\ntranslation pathway that would allow the synthesis of mirror proteins\nentirely with natural-chirality cellular machinery. This, in turn, would\nrequire the creation of 19+ blank codons that could be assigned to\nᴅ-amino acids or an organelle system for sequestration, alongside the\ndevelopment of suitable aaRS/tRNA pairs that could use the 19 ᴅ-amino\nacids <em>in vivo</em>, and a crossover ribosome capable of polymerizing\nthese ᴅ-amino acids efficiently. Moreover, extensive cellular\nengineering may be required to maintain a mirror central dogma within a\nnatural-chirality cell, and to facilitate the final cell conversion step\nto create a fully mirrored bacterium."
+        },
+        {
+          "type": "paragraph",
+          "html": "Overall, our analysis shows that the creation of a mirror bacterium\nis not possible with current technology absent extensive investment of\ntime and resources to overcome several scientifically challenging and\nlabor-intensive technical hurdles. However, we found no technical hurdle\nthat would pose a fundamental obstacle to the creation of a mirror cell,\nand we expect that dedicated research programs could eventually resolve\neach bottleneck."
+        },
+        {
+          "type": "paragraph",
+          "html": "While few laboratories explicitly focus on the creation of mirror\nlife, many of the enabling technologies are actively being developed by\na large community of academic and industrial researchers for reasons\nunrelated to mirror life. For example, a large community of researchers\nis pursuing synthetic cell research for applications in basic science\nand medicine without the aim of creating a mirror bacterium; likewise,\nresearchers in genetic code reprogramming are advancing methods toward\nthe <em>in vivo</em> production of non-canonical biopolymers without an\nexplicit interest in mirror bacteria. For these reasons, we expect that\nover time, with scientific progress, many of the technical hurdles will\nbe overcome even in the absence of explicit efforts to create mirror\nlife. This will increasingly open up pathways to the creation of mirror\nbacteria. While forecasting technological progress is highly uncertain,\nabsent governance of the enabling technologies, we estimate that mirror\nbacteria could be created within the next 15–30 years; or sooner, if\nsubstantial resources were invested in a focused effort."
+        }
+      ],
+      "subsections": []
+    }
+  ],
+  "kind": "chapter",
+  "number": 2
+}

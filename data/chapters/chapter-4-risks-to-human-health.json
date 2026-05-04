@@ -1,0 +1,881 @@
+{
+  "id": "chapter-4-risks-to-human-health",
+  "level": 1,
+  "title": "Risks to Human Health",
+  "title_html": "Chapter 4: Risks to Human\nHealth",
+  "blocks": [
+    {
+      "type": "paragraph",
+      "html": "<em>Ryan K. Duncombe<sup>1</sup>, Timothy W. Hand<sup>2</sup>, Thomas\nV. Inglesby<sup>3,4,5</sup>, Gregory Lewis<sup>6</sup>,</em>"
+    },
+    {
+      "type": "paragraph",
+      "html": "<em>Ruslan Medzhitov<sup>7,8,9,10</sup>, Matthew L.\nNicotra<sup>3</sup>, Jaspreet Pannu<sup>3,11,12</sup>, David A.\nRelman<sup>12,13,14</sup>,</em>"
+    },
+    {
+      "type": "paragraph",
+      "html": "<em>Johanna M. Sweere<sup>1</sup></em>"
+    },
+    {
+      "type": "paragraph",
+      "html": "The previous chapters described the potential pathways by which\nmirror bacteria could be created and modified. The remainder of the\nreport focuses on the potential risks that such mirror bacteria could\npose to humans, animals, plants, and the environment. This chapter\nfocuses on risks to human health, while the next chapter discusses\npotential medical countermeasures that could protect humans from mirror\nbacteria."
+    },
+    {
+      "type": "paragraph",
+      "html": "Humans have evolved complex immune mechanisms to combat bacterial\npathogens; many, though not all, of these mechanisms appear unlikely to\nfunction properly against mirror bacteria. If a generalist mirror\nbacterium as described in <a href=\"#chapter-2-pathways-to-mirror-life\">Chapters 2</a> and <a href=\"#chapter-3-engineering-biosafety-and-biosecurity-of-mirror-bacteria\">3</a>\nentered the human body, the initial infection would likely be\nextracellular because it would lack the adaptations typically needed to\nsurvive and proliferate as an intracellular bacterial pathogen. For this\nreason, we focus on immune mechanisms relevant to extracellular bacteria\nthroughout this chapter."
+    },
+    {
+      "type": "table",
+      "html": "<table>\n<colgroup>\n<col style=\"width: 100%\"/>\n</colgroup>\n<thead>\n<tr>\n<th><p><em>Authors are listed in alphabetical order. Affiliations:</em>\n<sup>1</sup> Mirror Bacteria Dialogues Fund, New York, New York,\nUSA;</p>\n<p><sup>2</sup> Pediatrics Department, Infectious Disease Section, UPMC\nChildren’s Hospital of Pittsburgh, University of Pittsburgh School of\nMedicine, Pittsburgh, Pennsylvania, USA; <sup>3</sup> Center for Health\nSecurity, Bloomberg School of Public Health, Johns Hopkins University,\nBaltimore, Maryland, USA; <sup>4</sup> Environmental Health and\nEngineering, Johns Hopkins Bloomberg School of Public Health, Baltimore,\nMaryland, USA; <sup>5</sup> Johns Hopkins School of Medicine, Baltimore,\nMaryland, USA; <sup>6</sup> Media Laboratory, Massachusetts Institute of\nTechnology; Cambridge, Massachusetts, USA.</p>\n<p><sup>7</sup> Department of Immunobiology, Yale University School of\nMedicine, New Haven, Connecticut, USA; <sup>8</sup> Howard Hughes\nMedical Institute, Chevy Chase, Maryland, USA; <sup>9</sup> Center for\nInfection and Immunity, Yale School of Medicine, New Haven, Connecticut,\nUSA; <sup>10</sup> Tananbaum Center for Theoretical and Analytical Human\nBiology, Yale School of Medicine, New Haven, Connecticut, USA;\n<sup>11</sup> Department of Health Policy, Stanford School of Medicine,\nStanford University, Stanford, California, USA; <sup>12</sup> Department\nof Medicine, Stanford School of Medicine, Stanford University, Stanford,\nCalifornia, USA; <sup>13</sup> Department of Microbiology and\nImmunology, Stanford University School of Medicine, Stanford,\nCalifornia, USA; <sup>14</sup> Infectious Diseases Section, Veterans\nAffairs Palo Alto Health Care System, Palo Alto, California,\nUSA</p></th>\n</tr>\n</thead>\n<tbody>\n</tbody>\n</table>",
+      "kind": "affiliations"
+    },
+    {
+      "type": "paragraph",
+      "html": "<a href=\"#innate-immune-detection-of-mirror-bacteria-could-be-significantly-impaired\">Section\n4.1</a> describes pathogen recognition, which generally relies on\nstereospecific interactions between immune receptors and specific\nmicrobial macromolecules. The macromolecules within mirror bacteria\nwould likely be unable to properly trigger these receptors, and this\ncould greatly impair the immune response."
+    },
+    {
+      "type": "paragraph",
+      "html": "<a href=\"#mirror-bacteria-would-likely-be-resistant-to-most-innate-immune-responses\">Section\n4.2</a> describes the innate immune effectors that target pathogens.\nMirror bacteria would likely be partially or fully resistant to many of\nthese effectors, including antimicrobial enzymes, professional\nphagocytes, and the complement system."
+    },
+    {
+      "type": "paragraph",
+      "html": "<a href=\"#adaptive-immunity-to-mirror-bacteria-would-likely-be-impaired\">Section\n4.3</a> describes the adaptive immune response, which could also be\nsignificantly weakened. In particular, it is plausible that deficiencies\nin dendritic cell activation and antigen presentation would result in a\nfailure to activate T cells, which would inhibit both cellular and\nhumoral (antibody) immune responses."
+    },
+    {
+      "type": "paragraph",
+      "html": "As discussed throughout <a href=\"#innate-immune-detection-of-mirror-bacteria-could-be-significantly-impaired\">Sections\n4.1–4.3</a>, humans with even partial immunodeficiencies are often at\ngreatly heightened risk of serious disease or death from bacterial\ninfection, including from bacteria that are not usually pathogenic for\nhealthy adults. Similarly, natural specialized pathogens commonly\nexhibit high degrees of immune evasion in order to establish infection.\nThe unique biology of mirror bacteria could allow them to evade immune\nmechanisms to a possibly unparalleled extent. Natural pathogens\ntypically utilize virulence factors—bacterial proteins that interact\nwith host ligands to facilitate bacterial adhesion or invasion, or that\ncan directly induce damage. Mirror bacteria would not, absent deliberate\nengineering, possess virulence factors, and most virulence factors\ncopied from natural-chirality pathogens would not function due to\nchirality incompatibilities with host ligands. But even in the absence\nof functional pathogenic virulence factors, their capacity for immune\nevasion raises the possibility that a mirror <em>Escherichia coli</em>\nor similar mirror generalist bacteria could act as a potentially lethal\nhuman pathogen."
+    },
+    {
+      "type": "paragraph",
+      "html": "<a href=\"#mirror-bacteria-could-plausibly-pass-barrier-surfaces-and-translocate-into-the-bloodstream-and-tissues\">Section\n4.4</a> describes the mechanisms by which mirror bacteria could enter\nthe human body without the need for functional virulence factors. Human\nbarrier defenses are imperfect and commensal bacteria can be passively\ntranslocated across physical barriers into the bloodstream in healthy\nindividuals. Similar translocations would likely occur with sufficient\nexposure to mirror bacteria, although it is very uncertain how many\nmirror bacteria would be needed to establish an infection. Mirror\nbacteria would lack specialized adhesion mechanisms or other specialized\nmechanisms that facilitate invasion. This could impair but not\nnecessarily preclude colonization of human barrier surfaces like the\nlung, and adhesion does not appear necessary for infection or\ntranslocation into other bodily regions."
+    },
+    {
+      "type": "paragraph",
+      "html": "<a href=\"#mirror-bacteria-could-plausibly-replicate-in-blood-and-cause-lethal-systemic-infection\">Section\n4.5</a> describes the potential consequences of mirror bacteria within\nthe bloodstream. Given that nutrients and abiotic conditions within\nblood are plausibly growth-permissive to a generalist mirror bacterium\nand that the normal immunological clearance mechanisms are likely\nsignificantly impaired, it is plausible that mirror bacteria within the\nblood could grow exponentially. Both the reduced immunological\nrecognition and absence of virulence factors could result in a disease\nprogression that is difficult to predict but likely highly unusual.\nNevertheless, it is plausible that at high mirror bacterial\nconcentrations, residual immunological recognition would lead to a\nlethal sepsis-like hyperinflammatory response. Even if this is avoided,\nother consequences of infection could potentially be fatal or otherwise\nhighly detrimental to human health."
+    },
+    {
+      "type": "paragraph",
+      "html": "In summary, sufficient exposure to mirror bacteria may be a\nlife-threatening event, even if the mirror bacteria have no particular\nadaptations or virulence factors for human infection (<a href=\"#figure-4.1-the-human-health-risks-of-mirror-bacteria\">Figure\n4.1</a>). Deliberate misuse could increase this danger further."
+    },
+    {
+      "type": "figure",
+      "id": "figure-4.1-the-human-health-risks-of-mirror-bacteria",
+      "src": "assets/image9.png",
+      "alt": "",
+      "width": "6.5in",
+      "height": "3.44444in",
+      "caption": {
+        "id": "figure-4.1-the-human-health-risks-of-mirror-bacteria",
+        "title": "Figure 4.1: The human health risks of mirror bacteria",
+        "title_html": "Figure\n4.1: The human health risks of mirror bacteria",
+        "body_html": "<p>Mirror bacteria that encounter humans may be able to survive and\npotentially colonize boundary surfaces like the skin and gut, aided by\ntheir reversed chirality granting resistance to defenses such as\nsecreted antimicrobial peptides (AMPs), antimicrobial enzymes, and\nimmunoglobulin A (IgA). Mirror bacteria at these surfaces may\ntranslocate into the body through transient breaches in physical\nbarriers, which occur frequently from a variety of causes. The reversed\nchirality of mirror bacteria may prevent the innate immune system from\ndetecting mirror microbe-associated molecular patterns (MAMPs) and the\nadaptive immune system from processing and presenting mirror peptide\nantigens via major histocompatibility complex (MHC) molecules.\nDownstream defenses, such as complement, phagocytosis, and antibody\nproduction would also be impaired. Since mirror bacteria may not be\neffectively cleared by the immune system, this could allow entry into\nthe bloodstream and unchecked proliferation therein.</p>"
+      }
+    }
+  ],
+  "subsections": [
+    {
+      "id": "innate-immune-detection-of-mirror-bacteria-could-be-significantly-impaired",
+      "level": 2,
+      "title": "4.1 Innate immune detection of mirror bacteria could be significantly impaired",
+      "title_html": "<strong>4.1\nInnate immune detection of mirror bacteria could be significantly\nimpaired</strong>",
+      "blocks": [],
+      "subsections": [
+        {
+          "id": "most-pattern-recognition-receptors-could-have-severely-impaired-ability-to-recognize-mirror-versions-of-their-ligands",
+          "level": 3,
+          "title": "Most pattern recognition receptors could have severely impaired ability to recognize mirror versions of their ligands",
+          "title_html": "Most\npattern recognition receptors could have severely impaired ability to\nrecognize mirror versions of their ligands",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "Pathogen recognition is the first step required for an effective\nimmune response. Bacterial pathogens are typically first detected by\nmacrophages and dendritic cells present in submucosal tissues, such as\nalveolar macrophages in the lung or Langerhans and interstitial\ndendritic cells in the skin<a class=\"footnote-ref\" data-footnote-ref=\"fn4\" href=\"#fn4\" id=\"fnref4\" role=\"doc-noteref\"><sup>4</sup></a>. These immune cells\nexpress pattern recognition receptors (PRRs) that bind to\nmicrobe-associated molecular patterns (MAMPs). MAMPs are molecules that\nare highly conserved across a broad range of microbes but otherwise\nabsent in animals, making them reliable indicators of potential\npathogens<a class=\"footnote-ref\" data-footnote-ref=\"fn5\" href=\"#fn5\" id=\"fnref5\" role=\"doc-noteref\"><sup>5</sup></a>. The binding of MAMPs by PRRs is a\ncritical step in the activation of both the innate and the adaptive\nimmune systems. PRR engagement activates macrophages, causing them to\nbecome highly phagocytic and secrete cytokines that induce inflammation,\nleading to an influx of neutrophils to the infection site. Dendritic\ncells are also activated when their PRRs engage MAMPs. Activation causes\nthese professional phagocytes to increase antigen uptake and migrate to\nlymphoid tissues, where they present antigens to T cells to initiate\nadaptive immunity."
+            },
+            {
+              "type": "paragraph",
+              "html": "Almost all known bacterial MAMPs detected by human PRRs are chiral.\nStandard PRRs such as Toll-like receptors (TLRs), for example, bind to\nchiral molecules such as lipopolysaccharide (LPS), proteins,\npeptidoglycan, various lipoproteins, and CpG DNA (Kawai & Akira,\n2010). Other key PRRs, including members of the nucleotide-binding\ndomain and leucine-rich repeat containing (NLR) family, bind to\nflagellin, proteins from bacterial secretion systems, and peptidoglycan\ndegradation products (Muñoz-Wolf & Lavelle, 2016), which are also\nchiral. Formyl peptide receptors, which recognize chiral f-met peptides\nfrom bacteria<a class=\"footnote-ref\" data-footnote-ref=\"fn6\" href=\"#fn6\" id=\"fnref6\" role=\"doc-noteref\"><sup>6</sup></a>, enable phagocytes—especially\nneutrophils—to home to the site of infection (He & Ye, 2017). In\naddition, chiral molecules play a dominant role in non-canonical\nimmunosurveillance mechanisms. For example, the semi-invariant T cell\nreceptor (TCR) in mucosal-associated invariant T cells recognizes\ntransient chiral intermediates of bacterial riboflavin metabolism\n(Corbett <em>et al</em>., 2014). Because protein interactions are\nstereospecific (see <a href=\"#chapter-1-introduction\">Chapter 1</a>), we\nwould expect binding between many chiral PRRs and the mirror-images of\nthese MAMPs to be significantly impaired (<a href=\"#figure-4.2-innate-immune-recognition-of-mirror-bacteria-could-be-severely-impaired\">Figure\n4.2</a>)."
+            },
+            {
+              "type": "paragraph",
+              "html": "There might be some PRRs that could plausibly bind mirror MAMPs,\nparticularly at high MAMP concentration, or for repetitive ligands where\navidity effects could amplify weak residual interactions. For instance,\nhigh concentrations of mirror dsRNA appear to activate the PRRs TLR3 and\nTLR7 (Yu & Sczepanski, 2023), though dsRNA is typically a viral MAMP\nand so its potential relevance for a mirror bacterial infection is\nunclear. In addition, scavenger receptors on macrophages can bind to\nmany different kinds of substances, including abiotic ones (Alquraini\n& El Khoury, 2020), and may be capable of recognizing certain mirror\nmacromolecules."
+            },
+            {
+              "type": "paragraph",
+              "html": "Lipid antigens may potentially be less sensitive to changes in\nchirality than most of the MAMPs discussed above. For example, TLR2 is\nunusually promiscuous in its binding of diacylated and triacylated\nlipopeptides found in bacterial membranes. Most contacts between TLR2\nand its ligands form with the achiral acyl chains of the lipopeptides,\nthough some bonds are dependent on the chiral glycerol backbone carbon\nand the chiral amino acids in the peptide chain (M. S. Jin <em>et\nal</em>., 2007). Lipopeptides with reversed chirality at some of these\ncarbons are able to activate TLR2, albeit with greatly reduced potency.\nIt remains unclear if fully mirrored lipopeptides could activate\nTLR2"
+            },
+            {
+              "type": "figure",
+              "id": "figure-4.2-innate-immune-recognition-of-mirror-bacteria-could-be-severely-impaired",
+              "src": "assets/image6.png",
+              "alt": "",
+              "width": "6.41146in",
+              "height": "5.7305in",
+              "caption": {
+                "id": "figure-4.2-innate-immune-recognition-of-mirror-bacteria-could-be-severely-impaired",
+                "title": "Figure 4.2: Innate immune recognition of mirror bacteria could be severely impaired",
+                "title_html": "Figure\n4.2: Innate immune recognition of mirror bacteria could be severely\nimpaired",
+                "body_html": "<p><strong>A.</strong> Natural-chirality bacteria produce MAMPs, which\nare conserved molecules that are recognized by various PRRs, including\nTLRs and NLRs. These receptors are present on the cell surface, in\nendosomes, and in the cytosol. PRR activation triggers the upregulation\nof innate immune response genes, which results in increased phagocytosis\nby immune cells, increased cytokine and chemokine expression, and many\nother responses. <strong>B.</strong> Mirror bacteria would produce\nmirrored versions of these MAMPs. PRR-mediated detection of mirror MAMPs\nis expected to be severely impaired because almost all known bacterial\nMAMPs detected by human PRRs are chiral. Impaired PRR activation would\nlikely result in reduced or failed induction of innate immune response\ngenes.</p>"
+              }
+            },
+            {
+              "type": "paragraph",
+              "html": "signaling (Metzger <em>et al</em>., 1991; Takeuchi <em>et al</em>.,\n2000). Similarly, LPS is detected by TLR4 and MD2 via interactions with\nthe acyl chains and phosphate groups of the lipid A component. Lipid A\nis chiral, but its long, flexible acyl chains that mediate a majority of\nthe contacts with MD2 and TLR4 are achiral (B. S. Park <em>et al</em>.,\n2009). Experimental data with enantiomeric LPS is lacking, so it is\nultimately unclear how sensitive LPS binding to TLR4/MD2 would be to\nchanges in chirality. Thus, while most PRRs would likely have severely\nimpaired ability to recognize mirror MAMPs, uncertainty remains around\nhow much residual PRR activation could be triggered by a mirror\nbacterial infection, particularly at high concentrations of MAMPs.\nEmpirical evidence from laboratory experiments using mirror MAMPs or\ncomputational modeling could help address these uncertainties."
+            },
+            {
+              "type": "paragraph",
+              "html": "While critical PRR pathways would likely be compromised by mirror\nbiology, we are aware of at least one achiral MAMP: the bacterial\nmolecule (E)-4-Hydroxy-3-methyl-but-2-enyl pyrophosphate (HMBPP). HMBPP\nis typically produced as intermediate in bacterial metabolism (Boucher\n& Doolittle, 2000), and some bacteria use an alternative metabolic\npathway which does not produce HMBPP (Heuston <em>et al</em>., 2012; C.\nWang <em>et al</em>., 2017; R. Yoshida <em>et al</em>., 2020). When\nreleased by intracellular bacteria, HMBPP binds to the cytoplasmic\ndomain of a membrane protein called butyrophilin, inducing a\nconformational change that allows it to dimerize with a second\nbutyrophilin protein and be detected by Vγ9/Vδ2 T cells, a class of\ncells which bridge innate and adaptive immunity (Uldrich <em>et\nal</em>., 2020). It is possible that other achiral MAMPs may be\ndiscovered as the human PRR repertoire is further characterized. It\nseems unlikely, however, that HMBPP recognition or other, unknown,\nachiral MAMPs would themselves suffice to produce an effective innate\nimmune response."
+            },
+            {
+              "type": "paragraph",
+              "html": "Alongside MAMPs, elements of the innate immune system can be\ntriggered when PRRs and other receptors detect damage-associated\nmolecular patterns (DAMPs) generated by host-cell damage and tissue\ndisruption (Gong <em>et al</em>., 2020). As DAMPs arise from the\nnatural-chirality host rather than from pathogen particles, DAMP\ndetection would function normally. Given mirror bacteria would generally\nlack virulence factors that could directly damage host tissue, it seems\nunlikely that significant host-cell damage would arise in the early\nstages of a mirror bacterial infection unless damage-causing virulence\nfactors were intentionally engineered into the bacterium. At the\nrelatively late stages of infection where tissue damage would probably\noccur, it appears unlikely that DAMP-mediated inflammation alone would\nimpede bacterial proliferation. DAMPs are not sufficient to combat\nbacterial infections in PRR-deficient animal models or patients, as\ndescribed below. As such, DAMP-induced inflammation may instead\nexacerbate harms to the patient (see <a href=\"#mirror-bacteria-could-plausibly-replicate-in-blood-and-cause-lethal-systemic-infection\">Section\n4.5</a>)."
+            }
+          ],
+          "subsections": []
+        },
+        {
+          "id": "compromised-immune-detection-of-mirror-bacteria-could-result-in-vulnerability-to-infection",
+          "level": 3,
+          "title": "Compromised immune detection of mirror bacteria could result in vulnerability to infection",
+          "title_html": "Compromised\nimmune detection of mirror bacteria could result in vulnerability to\ninfection",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "The expected inability of much of the human PRR repertoire to respond\nto mirror ligands suggests that the innate immune system's ability to\ndetect mirror bacteria would likely be markedly impaired. Evidence from\nexperiments, analogous human immunodeficiencies, and the clinical\nconsequences of PRR masking observed in natural pathogens suggests this\nloss would result in substantial vulnerability to mirror bacterial\ninfection."
+            },
+            {
+              "type": "paragraph",
+              "html": "Various natural-chirality bacterial pathogens have evolved mechanisms\nto shield surface MAMPs from detection by their corresponding PRRs. For\nexample, certain <em>Helicobacter pylori</em> strains express tri- or\ntetra-acylated LPS instead of hexa-acylated LPS, which are less\nimmunostimulatory (Chmiela <em>et al</em>., 2014; Tran <em>et al</em>.,\n2005). <em>Salmonella</em> and <em>Yersinia pestis</em> are both able to\nalter their LPS composition in order to make them less stimulatory\nduring infection (Kawasaki <em>et al</em>., 2004; Telepnev <em>et\nal</em>., 2009). Various <em>Proteobacteria</em>, including some strains\nof <em>Campylobacter jejuni</em> and <em>H. pylori</em>, express\nflagellin that is significantly less able to stimulate TLR5 signaling\nthan flagellin from other bacterial species (Andersen-Nissen <em>et\nal</em>., 2005). Many commensal bacteria also express flagellins that\nweakly stimulate TRL5, which facilitates their persistence in the human\ngut (Clasen <em>et al</em>., 2023). These modifications, and others,\nhave been found to enhance the ability of bacteria to evade the immune\nsystem and subsequently survive (Arpaia & Barton, 2013)."
+            },
+            {
+              "type": "paragraph",
+              "html": "A range of mouse immunity studies show that mice with deletions in\nmultiple PRRs are much more likely to die from a bacterial infection\nthan healthy controls. For example, mice unable to express any TLRs\nsuccumb to bacterial infections that wild-type mice can clear (Sivick\n<em>et al</em>., 2014). Similarly, mice lacking the NLRs NOD1 and NOD2\n(which recognize bacterial peptidoglycans) also die from <em>E.\ncoli</em> infections that wild-type mice can survive (Y.-G. Kim <em>et\nal</em>., 2008). Finally, mice lacking formyl peptide receptors are more\nsusceptible to bacterial infections than their wild-type counterparts\n(Gao <em>et al</em>., 1999; Liu <em>et al</em>., 2012)."
+            },
+            {
+              "type": "paragraph",
+              "html": "Additionally, studies of mice with deficiencies in individual PRRs\nshow the impact even one receptor failure can have on health. Mice\nlacking individual TLRs that recognize bacterial MAMPs carry increased\nbacterial burdens and are less likely to survive infection (Bhan <em>et\nal</em>., 2008; Feng <em>et al</em>., 2003; Sjölinder <em>et al</em>.,\n2008; Takeuchi <em>et al</em>., 2000; Torres <em>et al</em>., 2004).\nSimilarly, mice lacking a single Nod-like receptor, NOD2, are much more\nvulnerable to bacterial infections than their wild-type counterparts\n(Deshmukh <em>et al</em>., 2009; Divangahi <em>et al</em>., 2008; K.\nShimada <em>et al</em>., 2009)."
+            },
+            {
+              "type": "paragraph",
+              "html": "The closest human analog to such a deficit in PRR function is the\nsevere inherited defects across PRR signaling in those with IRAK-4 or\nMyD88 deficiency. Both IRAK-4 and MyD88 are downstream of and essential\nfor most TLR signaling, and thus their deficiency disables much of the\nhuman PRR repertoire (Picard <em>et al</em>., 2003; von Bernuth <em>et\nal</em>., 2008). Individuals with either condition are extremely\nsusceptible to pyogenic (pus-producing) bacteria, and often experience\nmultiple life-threatening invasive infections during the first years of\nlife (Picard <em>et al</em>., 2010). Roughly 40% of known cases die\nbefore reaching adulthood despite treatment for invasive infections and\nintensive use of vaccination, antibiotic prophylaxis, and immunoglobulin\ninfusions (Picard <em>et al</em>., 2010). Survival dramatically improves\nfrom the second decade onwards, and both the frequency and severity of\ninfections fade. This is hypothesized to be due to the maturation of\nother innate and adaptive immune mechanisms which can compensate for the\nlack of PRR signaling (Ku <em>et al</em>., 2007). However, as discussed\nthroughout this chapter, these compensatory immune mechanisms are also\nunlikely to properly function against mirror bacteria."
+            },
+            {
+              "type": "paragraph",
+              "html": "IRAK-4 and MyD88 deficiencies do not perfectly mimic the mechanistic\ndeficits that would be expected in response to mirror bacteria. For\nexample, these deficiencies also impair immune signaling pathways other\nthan TLR signaling, while leaving intact pathways that may be impaired\nagainst mirror bacteria (Picard <em>et al</em>., 2011). Nonetheless,\nevidence from both human immunodeficiencies and mouse models suggests\nthat healthy individuals could be vulnerable to mirror bacterial\nchallenge due to the limited ability of the innate immune system to\ndetect mirror bacteria."
+            }
+          ],
+          "subsections": []
+        }
+      ]
+    },
+    {
+      "id": "mirror-bacteria-would-likely-be-resistant-to-most-innate-immune-responses",
+      "level": 2,
+      "title": "4.2 Mirror bacteria would likely be resistant to most innate immune responses",
+      "title_html": "<strong>4.2\nMirror bacteria would likely be resistant to most innate immune\nresponses</strong>",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Detection of an infection by the immune system triggers a variety of\nresponses that act to eliminate the invading microbes. In humans, these\nmechanisms include the secretion of antimicrobial proteins and peptides,\nthe complement system, and phagocytosis. Activation of many of these\nmechanisms would likely be severely impaired because they are downstream\nof host receptors. Moreover, the molecular mechanisms of these\nresponses, much like those for detection, often rely on stereospecific\ninteractions between host and pathogen. Therefore, the reversed\nchirality of mirror bacteria would likely confer a high degree of\nresistance to these immune responses."
+        }
+      ],
+      "subsections": [
+        {
+          "id": "some-antimicrobial-peptides-could-retain-the-ability-to-kill-mirror-bacteria-but-their-release-would-likely-be-impaired-by-failures-of-innate-immune-recognition",
+          "level": 3,
+          "title": "Some antimicrobial peptides could retain the ability to kill mirror bacteria, but their release would likely be impaired by failures of innate immune recognition",
+          "title_html": "Some\nantimicrobial peptides could retain the ability to kill mirror bacteria,\nbut their release would likely be impaired by failures of innate immune\nrecognition",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "Antimicrobial peptides (AMPs) are a crucial component of the human\ninnate immune system, serving as endogenous antibiotics that provide a\nfirst line of defense against invading pathogens. Humans express more\nthan 100 antimicrobial peptides, many of which have not been\ncharacterized in great detail (G. Wang, 2014), and a detailed review of\ntheir functions is beyond the scope of this report."
+            },
+            {
+              "type": "paragraph",
+              "html": "Most AMPs can disrupt bacterial cell membranes via electrostatic and\namphipathic interactions, which either destroy osmotic potential, create\npores, or act in a detergent-like manner to break apart the phospholipid\nbilayer (Brogden, 2005). Such mechanisms are insensitive to chirality\nand should be able to target mirror bacterial membranes; this has\npreviously been confirmed in experiments. For instance, the ᴅ-enantiomer\nof defensin HNP4 has similar antimicrobial properties to its natural\ncounterpart (Wei <em>et al</em>., 2009), while the ᴅ-enantiomer of\ncathelicidin LL-37 has similar or somewhat reduced efficacy (Dean <em>et\nal</em>., 2011a, 2011b), suggesting both should retain potency against\nmirror bacteria."
+            },
+            {
+              "type": "paragraph",
+              "html": "Many AMPs, however, are pleiotropic in effect, acting via both\ngeneric membrane disruption and specific chiral targets. For instance,\nthe human defensins HNP1 and hBD-3 both block the synthesis of\npeptidoglycan in the bacterial cell wall by binding to a chiral\nprecursor called lipid II (de Leeuw <em>et al</em>., 2010; Sass <em>et\nal</em>., 2010). The ᴅ-enantiomer of HNP1 is significantly less\nbactericidal than natural HNP1 against <em>Staphylococcus aureus</em>,\nbut not <em>E. coli</em> (Wei <em>et al</em>., 2009), which implies that\nHNP1 would retain efficacy against a mirror <em>E. coli</em> but not a\nmirror <em>S. aureus</em>. By testing ᴅ-enantiomers of other AMPs\nagainst common bacteria, it should be possible to ascertain which AMPs\nwill retain efficacy against mirror bacteria."
+            },
+            {
+              "type": "paragraph",
+              "html": "However, given the likely defects in innate immune detection, it is\nplausible that AMPs would not be present in sufficient concentrations to\nbe effective against mirror bacteria in most extracellular environments.\nBecause many AMPs have toxic effects on mammalian membranes, their\nexpression and secretion are generally tightly controlled and often rely\non MAMPs, inflammatory cytokines, or other immunological signals (Gallo\n& Hooper, 2012). Impaired innate immune detection, described in <a href=\"#innate-immune-detection-of-mirror-bacteria-could-be-significantly-impaired\">Section\n4.1</a>, and defects in professional phagocyte and T cell activation,\ndescribed below, could therefore significantly reduce AMP concentrations\nin extracellular spaces. While some constitutive production and\nsecretion does occur, particularly at mucosal surfaces (Laube <em>et\nal</em>., 2006; Muniz <em>et al</em>., 2012; Yarbrough <em>et al</em>.,\n2015), the fact that constitutively expressed AMPs do not appear to\ncompensate for the loss of PRR signaling in humans with MyD88/IRAK4 or\nother immunodeficiencies suggests impaired innate immune recognition\ncould substantially limit the overall impact of AMPs against mirror\nbacteria."
+            }
+          ],
+          "subsections": []
+        },
+        {
+          "id": "antibacterial-enzymes-would-likely-have-greatly-reduced-activity-against-mirrored-substrates",
+          "level": 3,
+          "title": "Antibacterial enzymes would likely have greatly reduced activity against mirrored substrates",
+          "title_html": "Antibacterial\nenzymes would likely have greatly reduced activity against mirrored\nsubstrates",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "Some antimicrobial proteins are enzymes that cleave bacterial\nmolecules. Because enzyme catalysis is stereospecific, it is generally\nanticipated that many of these enzymes would have little activity\nagainst mirror molecules (Uppalapati <em>et al</em>., 2016). For\nexample, experimental evidence indicates that ᴅ-peptides are partially\nor completely resistant to degradation by representatives from several\nof the major classes of proteases, including carboxypeptidase A, papain,\npepsin, trypsin, elastase, and chymotrypsin (Guichard <em>et al</em>.,\n1994; Miller <em>et al</em>., 1995; Vaissière <em>et al</em>., 2017).\nLimited evidence also suggests that cathepsins are unable to efficiently\ncleave ᴅ-peptides (Chu <em>et al</em>., 2012; Meldal <em>et al</em>.,\n1998). This protease resistance has led to the development of ᴅ-peptides\nas a therapeutic drug class due to their increased half-life (Lander\n<em>et al</em>., 2023; Uppalapati <em>et al</em>., 2016)."
+            },
+            {
+              "type": "paragraph",
+              "html": "The phospholipase A<sub>2</sub> (PLA<sub>2</sub>) family is another\nclass of antibacterial enzymes. These enzymes hydrolyze the sn-2\nposition of bacterial phospholipids present in cell walls, resulting in\nbacterial cell death (Murakami <em>et al</em>., 2016). Two secreted\nPLA<sub>2</sub> (sPLA<sub>2</sub>) enzymes, PLA<sub>2</sub>G2A and\nPLA<sub>2</sub>G5, are upregulated and expressed in phagocytes and other\ncells after pathogen stimulation (Dabral & van den Bogaart, 2021).\nIn addition to killing bacteria, the fatty acids and lysophospholipids\nthey produce also trigger innate immunity in another positive feedback\nloop (Murakami <em>et al</em>., 2016). Given that sPLA<sub>2</sub>\ninteracts with phospholipids in a chiral manner, mirror bacteria would\nlikely be resistant to this mechanism: porcine and bee venom\nPLA<sub>2</sub> do not hydrolyze mirror-image phospholipids (Gudmand\n<em>et al</em>., 2010; Singh <em>et al</em>., 2010)."
+            },
+            {
+              "type": "paragraph",
+              "html": "Lysozyme is an important antibacterial enzyme that cleaves\npeptidoglycan, the major structural component of the cell wall that\nprotects bacteria from osmotic and environmental stressors (Callewaert\n& Michiels, 2010). Lysozyme is expressed at high concentrations in\nthe mucosal epithelia, where it kills extracellular bacteria, and in the\nphagolysosomes of macrophages and neutrophils (Ragland & Criss,\n2017). The peptidoglycan cleaved by lysozyme triggers innate immune\nresponses through activation of extracellular and intracellular PRRs,\ninitiating a positive feedback loop."
+            },
+            {
+              "type": "paragraph",
+              "html": "Lysozyme would likely fail to cleave mirror peptidoglycan. Although\nthis has not been assessed experimentally, lysozyme's catalytic\nmechanism is well studied (Callewaert & Michiels, 2010; Ragland\n& Criss, 2017), and it seems unlikely that its active site could\naccommodate mirror peptidoglycan in a configuration that would permit\nhydrolysis. However, catalytically-disabled lysozyme still retains\nbactericidal activity through disrupting membranes (Derde <em>et\nal</em>., 2013; Ibrahim <em>et al</em>., 2001; Nash <em>et al</em>.,\n2006), similar to the action of many AMPs described previously. It is\ntherefore plausible that this bactericidal activity would function\nagainst mirror bacteria, though lysozyme has a strong affinity for\nlipopolysaccharide (Derde <em>et al</em>., 2015) and it is not clear\nwhether lysozyme would be as effective at disrupting the outer membranes\nof a mirror Gram-negative bacteria. To our knowledge, mirror-image\nlysozyme—which could be used to definitively answer these questions—has\nnot been chemically synthesized."
+            },
+            {
+              "type": "paragraph",
+              "html": "Knockout mice lacking lysozyme-M (one of two murine lysozyme\nproteins) have respiratory tracts with dramatically elevated levels of\nresident bacteria<a class=\"footnote-ref\" data-footnote-ref=\"fn7\" href=\"#fn7\" id=\"fnref7\" role=\"doc-noteref\"><sup>7</sup></a> and show defects in killing and\neliminating bacterial infections (Cole <em>et al</em>., 2005; Davis\n<em>et al</em>., 2011; Ganz <em>et al</em>., 2003; Markart <em>et\nal</em>., 2004; Nash <em>et al</em>., 2006; J. Shimada <em>et al</em>.,\n2008). Many human commensals and pathogens have also evolved to evade\nlysozyme’s catalytic activity, either by modifying peptidoglycan to\nreduce binding (Ragland & Criss, 2017; Vollmer & Tomasz, 2000)\nor by producing proteinaceous inhibitors (Clarke <em>et al</em>., 2010).\nThis further underscores the importance of this catalytic activity as an\nimmune defense."
+            },
+            {
+              "type": "paragraph",
+              "html": "Neutrophil granules also contain a number of other enzymes that act\ndirectly on bacterial components. These include serine proteases,\ncysteine proteases, neutrophil gelatinase-associated lipocalin,\nproteinase 3, cathepsin G, neutrophil elastase, CAP37, and NSP4 (Cowland\n& Borregaard, 2016). These would not be expected to properly\nfunction against mirror bacteria, which could markedly decrease the\neffectiveness of neutrophil-mediated bacterial killing."
+            }
+          ],
+          "subsections": []
+        },
+        {
+          "id": "complement-activity-versus-mirror-bacteria-could-be-partially-impaired",
+          "level": 3,
+          "title": "Complement activity versus mirror bacteria could be partially impaired",
+          "title_html": "Complement\nactivity versus mirror bacteria could be partially impaired",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "The complement system is a set of blood proteins that, upon\nactivation, produce proteins that can stimulate immune cells or attach\nto (opsonize) pathogens to aid their consumption by phagocytes. It can\nalso directly harm Gram-negative bacteria by self-assembling into the\nmembrane attack complex (MAC), which creates holes in the bacterial cell\nmembrane, causing the cell to burst (Dunkelberger & Song, 2010).\nComplement system proteins are consistently present in the blood, and\n<em>in vitro</em> studies suggest complement can target, opsonize, and\nkill bacteria—either via the MAC or phagocytosis—in a matter of minutes\nto hours (Heesterbeek <em>et al</em>., 2018; Verbrugh <em>et al</em>.,\n1979; Zewde <em>et al</em>., 2016). Activation of the complement system\noccurs through three distinct pathways: the classical, alternative, and\nlectin pathways. In the context of mirror bacterial challenge, it\nappears the lectin pathway may be significantly impaired, the classical\npathway could retain some activity through natural antibody binding, and\nthe alternative pathway may remain largely intact (<a href=\"#figure-4.3-complement-activity-against-mirror-bacteria-would-likely-be-impaired\">Figure\n4.3</a>)."
+            },
+            {
+              "type": "paragraph",
+              "html": "The lectin pathway of complement activation is initiated when\nficolins or collectins, such as mannose-binding lectin (MBL), recognize\nand bind to specific carbohydrate patterns on the surface of pathogens\n(Mastellos <em>et al</em>., 2024). This binding activates MBL-associated\nserine proteases (MASPs), which then activate the complement system. The\nspecificity and affinity of lectin-carbohydrate bonds differs across\nlectins and can be very sensitive to the structure of the carbohydrate\n(Raposo <em>et al</em>., 2021). Therefore, it seems unlikely that human\nlectins would bind strongly to mirror carbohydrates. As a result, the\nlectin pathway would likely fail to activate."
+            },
+            {
+              "type": "figure",
+              "id": "figure-4.3-complement-activity-against-mirror-bacteria-would-likely-be-impaired",
+              "src": "assets/image18.png",
+              "alt": "",
+              "width": "6.5in",
+              "height": "6.59722in",
+              "caption": {
+                "id": "figure-4.3-complement-activity-against-mirror-bacteria-would-likely-be-impaired",
+                "title": "Figure 4.3: Complement activity against mirror bacteria would likely be impaired",
+                "title_html": "Figure\n4.3: Complement activity against mirror bacteria would likely be\nimpaired",
+                "body_html": "<p><strong>A.</strong> Natural bacteria trigger three distinct pathways\nof complement activation. The classical pathway is triggered by\ncirculating antibodies that bind to the surface of a bacterium and are\nthen bound by the complement protein C1q. The lectin pathway is\ninitiated when lectins, such as mannose-binding lectin (MBL), bind to\nspecific carbohydrate patterns on the surfaces of bacteria. The\nalternative pathway is activated by the spontaneous hydrolysis of C3 in\nthe blood, generating C3b that binds to bacterial surface molecules. All\nthree pathways activate the complement cascade, a series of protein\ninteractions that results in increased inflammation, innate immune\nactivation, opsonization, and formation of the membrane attack complex\n(MAC). <strong>B.</strong> Mirror bacteria would trigger fewer pathways\nof complement activation. The classical pathway could be impaired due to\nlack of circulating IgG, but natural IgM antibodies or phosphocholine\ncould activate C1q if present. The lectin pathway is unlikely to be\nactivated because it depends on the recognition of chiral carbohydrates.\nThe alternative pathway could remain functional because it involves no\nstereospecific interactions. Impaired complement activation might result\nin reduced inflammation, innate immune cell activation, opsonization,\nand formation of MACs.</p>"
+              }
+            },
+            {
+              "type": "paragraph",
+              "html": "In the classical pathway, circulating IgM or IgG antibodies bind to\nthe surface of a pathogen and are subsequently bound by a protein\ncomplex called C1 (Mastellos <em>et al</em>., 2024). C1 (specifically\nthe component protein C1q) then activates the complement cascade.\nProduction of affinity-matured anti-mirror antibodies that could\npotently activate the classical pathway is expected to be absent or\ngreatly reduced, but predominantly IgM antigen-specific antibodies might\nstill be elicited through T cell-independent mechanisms (see <a href=\"#adaptive-immunity-to-mirror-bacteria-would-likely-be-impaired\">Section\n4.3</a>). Natural IgM antibodies, which are present in circulation prior\nto antigen encounter and have not undergone affinity maturation to any\nspecific antigen, typically have broad specificity and are able to\nweakly bind to a range of different antigens (Coutinho <em>et al</em>.,\n1995; Z.-H. Zhou <em>et al</em>., 2007). When bound to bacterial\nantigen, natural IgM is able to activate the classical complement\npathway, albeit less potently than affinity-matured antibodies (Boes\n<em>et al</em>., 1998; Z.-H. Zhou <em>et al</em>., 2007). As such,\nnatural IgM could plausibly play a role during early stages of mirror\nbacterial infection. Complement activation through natural IgM has been\nshown to confer resistance to bacterial infection in mice (Islam <em>et\nal</em>., 2023; Mold <em>et al</em>., 2002). However, it is uncertain,\nwhether natural IgM would be able to bind mirror antigens, as some\nmurine studies suggest that natural IgM polyreactivity is restricted to\nphylogenetically conserved microbial structures (Hardy & Hayakawa,\n1994; Kantor & Herzenberg, 1993). If natural IgM antibodies indeed\npredominantly bind conserved epitopes, it would be less likely they\nwould bind mirror versions of these epitopes. Without anti-mirror\nantibodies, the classical pathway would be largely unable to\nfunction."
+            },
+            {
+              "type": "paragraph",
+              "html": "The classical pathway can also be activated by C reactive protein\n(CRP) if it binds to phosphocholine in cell membranes and is\nsubsequently bound by C1q (Thompson <em>et al</em>., 1999). However,\nalthough phosphocholine is achiral, it is absent from an estimated 85%\nof bacteria, including <em>E. coli</em> (Geiger <em>et al</em>., 2013;\nKleetz <em>et al</em>., 2021). Moreover, even if phosphocholine were\npresent on the surfaces of mirror bacteria, it is unclear whether CRP\nwould be present at sufficiently high concentrations to alter the course\nof a mirror bacterial infection. Although CRP is constitutively produced\nby the liver, its concentration in the blood increases a thousand-fold\nduring infection (from 1 µg/mL to 1000 µg/mL) in response to the\ninflammatory cytokines IL-6, IL1β, and TNF (Del Giudice & Gangestad,\n2018; Ji <em>et al</em>., 2023). Both IL1β and TNF are primarily\nproduced by activated macrophages (Ott <em>et al</em>., 2007), and as\ndiscussed in the previous subsection, it appears unlikely that\nsignificant macrophage activation would occur in response to mirror\nbacteria. IL-6, meanwhile, can be produced by epithelial cells in\nresponse to both MAMPs and DAMPs (Krueger <em>et al</em>., 1991), so it\nis possible that CRP concentrations could increase given sufficient\ninflammation during later stages of infection. If this occurred, a\nsubstantial amount of CRP might bind to phosphocholine (if present on\nmirror bacteria), and this could potentially preserve some functionality\nof the classical pathway. However, the upstream failures of pathogen\nrecognition appear to be a significant obstacle to enhanced CRP\nproduction, and it is unclear whether low constitutive CRP levels would\nbe sufficient to activate the classical pathway such that it would\ncontribute to anti-mirror immunity in a meaningful way."
+            },
+            {
+              "type": "paragraph",
+              "html": "The alternative complement pathway could function against mirror\nbacteria because it is initiated by the spontaneous production of C3b,\nwhich is highly reactive and will covalently bond with any nucleophilic\ngroup (Law & Dodds, 1997). Factor B then binds to C3b and is cleaved\nto form a C3bBb complex, which in turn can cleave C3 to form more C3b,\nso that the alternative complement activation can self-amplify (Merle\n<em>et al</em>., 2015). The C3bBb complex is short-lived, however,\nunless stabilized by the protein properdin, which is constitutively\nproduced in blood plasma by leukocytes but also stored and released by\nneutrophils in response to inflammatory agonists (J. Y. Chen <em>et\nal</em>., 2018)."
+            },
+            {
+              "type": "paragraph",
+              "html": "To summarize, complement activation would likely be impaired due to\ndisruptions to both the lectin and classical activation pathway, but the\nalternative pathway could remain functional and this could allow some\nactivation to occur. While many pathogens have evolved diverse\nstrategies to avoid complement activation, such as attracting host\ncomplement regulators, enzymatically cleaving complement components, or\nmimicking host surfaces (Serruto <em>et al</em>., 2010), mirror bacteria\nwould not by default have functional versions of these mechanisms.\nTherefore, one would expect C3b to opsonize mirror bacteria for\nphagocytosis, and for C3a and C5a (which are produced downstream of C3b)\nto be released and induce inflammation."
+            },
+            {
+              "type": "paragraph",
+              "html": "In the last stages of complement activation, C5b interacts with\nadditional complement proteins to form a membrane attack complex (MAC)\nwhich is capable of rupturing Gram-negative cell envelopes (Doorduijn\n<em>et al</em>., 2019). This process is not known to depend on any\nspecific surface receptors, so it is likely that the MAC could correctly\nassemble and target mirror Gram-negative bacteria. Gram-positive\nbacteria are resistant to lysis by MAC due to their thick peptidoglycan\nlayer (Berends <em>et al</em>., 2013; Joiner <em>et al</em>., 1984)."
+            },
+            {
+              "type": "paragraph",
+              "html": "It is difficult to estimate how the impairments in complement\nfunctioning described above would ultimately impact the ability of\nmirror bacteria to establish infection, especially in the context of\nother expected failures of the immune response. There are a number of\ninherited diseases of the human complement system that could be\ninformative. If we assume that the alternative pathway would function\nduring a mirror bacterial infection, but the lectin pathway and possibly\nthe classical pathway would be impaired, then the most analogous human\ndeficiency would be that caused by deficiencies in C2 or C4, which are\nshared by the latter two pathways (but not the alternative pathway).\nBoth of these deficiencies are rare and incompletely characterized, but\ntheir primary clinical features are an increased susceptibility to\nbacterial infections, particularly to encapsulated bacteria. These\nfeatures are broadly shared with other complement deficiencies, albeit\nwith variations in autoimmune manifestations and to which bacterial\nspecies individuals are most susceptible (Pettigrew <em>et al</em>.,\n2009). Quantifying the degree of increased susceptibility to bacterial\ninfection in C2 and C4 deficiencies is difficult given data\nscarcity."
+            }
+          ],
+          "subsections": []
+        },
+        {
+          "id": "phagocytosis-of-mirror-bacteria-would-likely-be-compromised",
+          "level": 3,
+          "title": "Phagocytosis of mirror bacteria would likely be compromised",
+          "title_html": "Phagocytosis\nof mirror bacteria would likely be compromised",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "Phagocytosis is the process by which innate immune cells capture,\nkill, and clear bacteria (Gordon, 2016). The first phagocytic cells to\nencounter mirror bacteria would likely be tissue resident macrophages\nand dendritic cells. At rest, these cells exhibit a low level of\nphagocytosis, but they become highly phagocytic upon activation (Mosser\n& Edwards, 2008). As discussed above, macrophages and dendritic\ncells are unlikely to be activated by mirror MAMPs, thereby reducing the\nnumber of mirror bacteria these cells would attempt to phagocytose."
+            },
+            {
+              "type": "paragraph",
+              "html": "If macrophages fail to activate, this could also limit the number of\nneutrophils and monocytes that respond to mirror bacteria. Neutrophils,\nwhich play an essential role in the clearance of many bacteria as the\nmost phagocytic innate immune cells, respond to inflammation by entering\nthe tissues and then following gradients of cytokines, chemokines, and\nMAMPs to the infection site (Burn <em>et al</em>., 2021). Without these\nsignals, many of which are produced by activated macrophages,\nneutrophils may face great difficulties in finding mirror bacteria. Like\nneutrophils, monocytes would also likely fail to respond to a mirror\nbacterial infection due to reduced inflammation and impaired ability to\nsense MAMPs. This could hinder both entry into infected tissues and\ndifferentiation into new macrophages and dendritic cells (Jakubzick\n<em>et al</em>., 2017)."
+            },
+            {
+              "type": "paragraph",
+              "html": "Overall, we expect few phagocytes to respond to mirror bacteria at\nthe beginning of an infection. This could change at later points if the\nrelease of DAMPs from necrotic cells combined with non-specific\ninflammation is sufficient to activate macrophages and dendritic cells\nand recruit neutrophils and monocytes to the infection site.\nAccumulation of the soluble complement factor C5a, which can induce\ninflammation, activate phagocytes, and promote neutrophil chemotaxis,\nmay also improve the likelihood of a phagocyte response (Guo & Ward,\n2005), although it is unclear how these functions would be affected by\nthe lack of PRR signaling."
+            },
+            {
+              "type": "paragraph",
+              "html": "Regardless of their activation status, the reversed chirality of\nmirror bacteria would likely make it difficult for phagocytes to\ninternalize them. Phagocytosis is an active, receptor-mediated process.\nPhagocytic receptors bind either directly to bacteria or indirectly via\nopsonizing complement proteins or antibodies bound to bacteria. These\nreceptors enable phagocytes to grasp the bacterial cells and,\nimportantly, activate signaling pathways that induce the cytoskeletal\nchanges required for internalization (Uribe-Querol & Rosales, 2020).\nMost phagocytosis receptors are not expected to bind mirror bacteria due\nto the reversed chirality of their ligands. Even if some receptors did\nbind, this would not necessarily enable phagocytosis if PRRs or other\nsignals are absent. Scavenger receptors, for instance, have broad\nspecificities and may in theory bind some mirror molecules. But they\ngenerally partner with PRRs or Fc receptors to signal (Alquraini &\nEl Khoury, 2020; Fu & Harrison, 2021), and therefore may be unable\nto facilitate phagocytosis by themselves. Complement receptors would\nalso still bind complement-opsonized mirror bacteria without additional\nassistance, which might allow some mirror bacteria to be internalized.\nAgain, however, this process would plausibly be less efficient because\nthe affinity of complement receptors for their ligands is typically\nenhanced by signaling from other phagocytic receptors and PRRs\n(Uribe-Querol & Rosales, 2020). Macrophages can internalize\ninanimate particles like latex beads (Collin-Faure <em>et al</em>.,\n2023) or asbestos (Ishida <em>et al</em>., 2019), suggesting some\nnonspecific uptake of mirror bacteria may also occur. Still, the overall\nreduced functionality of phagocytic receptors suggests mirror bacteria\ncould be internalized at lower rates than comparable non-mirror\nbacteria."
+            },
+            {
+              "type": "paragraph",
+              "html": "It is also unclear whether phagocytosis would kill those mirror\nbacteria that are internalized. Once engulfed, mirror bacteria would be\nenveloped in a new vesicle called the phagosome, which would eventually\nmature via fusion with lysosomes to form a bactericidal organelle called\nthe phagolysosome (Sivaloganathan & Brynildsen, 2021). Phagosomes\ncontaining synthetic beads can mature into phagolysosomes even in\nresting phagocytes (Alloatti <em>et al</em>., 2015; Dill <em>et\nal</em>., 2015; Hoffmann <em>et al</em>., 2012; Sanjuan <em>et al</em>.,\n2007), suggesting internalized mirror bacteria would also arrive in\nphagolysosomes, although the absence of MAMPs or inflammatory cytokines\nmight speed or slow phagosome maturation, depending on the context\n(Pauwels <em>et al</em>., 2017)."
+            },
+            {
+              "type": "paragraph",
+              "html": "Normally, bacteria are killed in phagolysosomes by oxidants that\npermeabilize the cell membrane, AMPs, or activity of antimicrobial\nenzymes whose function is enhanced by low phagolysosomal pH (~ 4.5)\n(Brown, 2024). As discussed earlier, AMPs that disrupt membranes via\nelectrostatic and amphipathic interactions would likely be unaffected by\nthe reversed chirality of mirror bacteria. Because many of them are\nconstitutively expressed in the lysosomes of phagocytes (M. S. Park\n<em>et al</em>., 2018), they may also be present at concentrations high\nenough to damage mirror bacteria. Antimicrobial enzymes, however, would\nlikely not function against mirror bacteria due to incompatible\nchirality. In addition, many kinds of mirror bacteria, including mirror\n<em>E. coli</em>, could potentially survive the phagolysosomal acidity,\ngiven that many natural bacteria can survive in acidic conditions with\npH < 4.5 (Baka <em>et al</em>., 2013; Gorden & Small, 1993; Ross\n<em>et al</em>., 2003)."
+            },
+            {
+              "type": "paragraph",
+              "html": "On the other hand, oxidants like reactive oxygen species (ROS) would\nremain harmful to mirror bacteria. Although the exact mechanism by which\nROS contributes to antibacterial immunity is controversial (Herb &\nSchramm, 2021), there is some evidence that ROS are sufficient to kill\nbacteria in phagolysosomes. A recent study shows that the ROS that\naccumulate in phagocytic vesicles immediately after internalization can\nkill <em>Pseudomonas aeruginosa</em> cells without the aid of\nantimicrobial enzymes in murine alveolar macrophages (Riazanski <em>et\nal</em>., 2020). It is not known whether this can be generalized to\nother phagocytic cells or to other species of bacteria, or whether the\noxidant levels in the phagolysosomes of unactivated phagocytes would be\nsufficient to kill mirror bacteria. Moreover, mirror bacteria could\nplausibly be protected from low levels of ROS (which are achiral) by the\nsame catalases that naturally protect <em>E. coli</em> from oxidative\nstress (Khademian & Imlay, 2021; Sultana <em>et al</em>., 2022).\nThus, it is difficult to determine how effective ROS would be at killing\ninternalized mirror bacteria by themselves. If ROS levels were low\nenough, it is plausible that many mirror bacteria would survive."
+            },
+            {
+              "type": "paragraph",
+              "html": "To summarize, the available evidence suggests phagocytosis of mirror\nbacteria would be less effective compared to phagocytosis of natural\nbacteria (<a href=\"#section-3\">Figure 4.4</a>). Phagocytes may have\ndifficulty finding mirror bacteria, engulfing them, and killing them.\nSome mirror bacteria may survive inside phagocytes. Furthermore, even\nthose that are killed would not be properly digested due to\nincompatibilities between lysosomal enzymes and mirror macromolecules.\nIn either case, phagosome resolution—the process by which phagocytes\ndigest and recycle the contents of phagolysosomes (Mylvaganam &\nFreeman, 2023)—would probably be disrupted."
+            },
+            {
+              "type": "paragraph",
+              "html": "While the persistence of live mirror bacteria and mirror bacterial\ndebris inside phagocytes seems likely to impede their function, the\nimplications are unclear. During infections with natural-chirality\nbacteria, the presence of live intracellular bacteria or intracellular\nMAMPs can trigger programmed cell death, often in the form of apoptosis,\npyroptosis, or necroptosis, which enclose the pathogen in cellular\nbodies that are processed by phagocytes (Lacey & Miao, 2020).\nPyroptosis and necroptosis additionally induce broad-spectrum\ninflammatory responses that can aid in clearing bacterial"
+            },
+            {
+              "type": "figure",
+              "id": "figure-4.4-mirror-bacteria-could-evade-phagocytosis-and-killing-by-macrophages",
+              "src": "assets/image10.png",
+              "alt": "",
+              "width": "6.5in",
+              "height": "6.19444in",
+              "caption": {
+                "id": "figure-4.4-mirror-bacteria-could-evade-phagocytosis-and-killing-by-macrophages",
+                "title": "Figure 4.4: Mirror bacteria could evade phagocytosis and killing by macrophages",
+                "title_html": "Figure\n4.4: Mirror bacteria could evade phagocytosis and killing by\nmacrophages",
+                "body_html": "<p><strong>A.</strong> Natural bacteria trigger a number of processes\nthat enable macrophages to phagocytose and kill them. Macrophages detect\nmicrobe associated molecular patterns (MAMPs), including formyl-peptides\n(Nfor-MLF) and chemotax toward bacteria. Phagocytosis receptors bind\nbacteria and initiate their internalization. After internalization,\nphagolysosomal reactive oxygen species (ROS), antimicrobial peptides\n(AMPs), and enzymes kill phagocytosed bacteria, which are then digested,\ntheir nutrients being recycled and waste products exocytosed.\n<strong>B.</strong> Mirror bacteria would not be expected to induce\nchemotaxis, binding, or substantial internalization by macrophages\nbecause each of these processes relies on macrophage receptors binding\nchiral proteins or peptides. If a mirror bacterium is internalized, it\nmay or may not be killed in the phagolysosome, as some mechanisms of\ncell lysis are stereospecific (antimicrobial enzymes, some AMPs) but\nothers (ROS, potentially other AMPs) are not. Digestion of mirror\nbacteria and nutrient recycling are unlikely to function properly,\npotentially resulting in macrophage death or decreased\nfunction.</p>"
+              }
+            },
+            {
+              "type": "paragraph",
+              "html": "infections, but they can also harm the host by continuously releasing\nDAMPs if not properly regulated (Booty & Bryant, 2022). However,\nintracellular mirror bacteria might not trigger programmed cell death.\nPyroptosis and necroptosis are often initiated through MAMP detection by\nintracellular PRRs—e.g., TLRs or NLRs (Jorgensen <em>et al</em>., 2017).\nNecroptosis can also be triggered directly by inflammatory cytokines or\nbacterial virulence factors (X. Yu <em>et al</em>., 2024), whereas\npyroptosis can be initiated by specialized host proteins that detect\ndisruptions in cellular pathways (Lacey & Miao, 2020). Mirror\nbacteria would likely be resistant to PRR binding, would not have\nfunctional virulence factors to directly trigger cell death, and it is\nunclear whether cellular pathways would be sufficiently disrupted by the\npersistence of mirror bacteria in phagocytic vesicles. Taken together,\nit is plausible that mirror bacteria would avoid triggering programmed\ncell death unless persistence of live bacteria or debris severely\ninterferes with cellular pathways. Ultimately, even if triggered,\nprogrammed cell death would likely not facilitate clearance, as the\nphagocytes taking up the cellular bodies containing mirror bacteria\nwould in turn face difficulties lysing them."
+            }
+          ],
+          "subsections": []
+        },
+        {
+          "id": "the-role-of-innate-lymphoid-cells-in-mirror-bacterial-infection-is-unclear",
+          "level": 3,
+          "title": "The role of innate lymphoid cells in mirror bacterial infection is unclear",
+          "title_html": "The\nrole of innate lymphoid cells in mirror bacterial infection is\nunclear",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "Innate lymphoid cells (ILCs)—specifically group three ILCs\n(ILC3s)—are one additional innate immune cell type known to be activated\nduring bacterial infections. ILC3s are found in lymphoid tissues and\nnear barrier surfaces such as the gut, respiratory tract, and skin\n(Sonnenberg & Hepworth, 2019) and are an early source of effector\ncytokines that elicit and support antibacterial immune responses in\nhelper T cells and other cell types (Vivier <em>et al</em>., 2018; von\nBurg <em>et al</em>., 2014). Most pathways of ILC3 activation seem\nlikely to be impaired in the case of mirror bacteria. The primary\ndrivers of ILC3 activation are inflammatory cytokines secreted by\nactivated phagocytes (W. Zhou & Sonnenberg, 2020), but this pathway\nmay be hindered by the impaired activation of these cells during mirror\nbacterial infection. Human ILC3s also express TLRs and can be directly\nactivated by MAMPs, but, as discussed earlier, TLR signaling is likely\nto be significantly impaired in the case of most mirror MAMPs. Although\nILC3s can be directly activated by bacterial tryptophan metabolites and\ncomponents of bacterial cell walls (W. Zhou & Sonnenberg, 2020),\nthese are all chiral and unlikely to be sensed in their mirror form.\nILC3s can also directly sense short chain fatty acids (W. Zhou &\nSonnenberg, 2020), some of which are achiral, such as acetic acid,\npropionic acid, and butyric acid, and would likely be sensed if they\nwere secreted by mirror bacteria. The overall impact of ILC3s sensing\nmirror bacteria via short chain fatty acids is unclear because\nexperiments show that this pathway can either promote or suppress the\nproduction of effector cytokines depending on the specific location and\nreceptors involved (Chun <em>et al</em>., 2019; S.-H. Kim <em>et\nal</em>., 2017). Moreover, short chain fatty acids are produced in\nabundance by commensal bacteria (Fusco <em>et al</em>., 2023), so it is\nnot obvious that their production by mirror bacteria would alter ILC3\nfunction. Thus, although ILC3s can promote antibacterial responses,\nwhether they would be relevant during a mirror bacterial infection is\nunclear."
+            }
+          ],
+          "subsections": []
+        }
+      ]
+    },
+    {
+      "id": "adaptive-immunity-to-mirror-bacteria-would-likely-be-impaired",
+      "level": 2,
+      "title": "4.3 Adaptive immunity to mirror bacteria would likely be impaired",
+      "title_html": "<strong>4.3\nAdaptive immunity to mirror bacteria would likely be\nimpaired</strong>",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "In addition to the innate immune system, humans also possess an\nadaptive immune system. A key difference between the innate and adaptive\nsystems is that while the innate immune system relies on invariant PRRs\nfor pathogen detection, the adaptive immune system uses a process of\ngenetic recombination to generate a large and diverse repertoire of\nvariable receptors, each capable of binding to different\npathogen-derived molecules. This vast repertoire of adaptive immune\nreceptors can bind a wide array of biological macromolecules (Chiu\n<em>et al</em>., 2019; Marks & Deane, 2020) and could bind mirror\nmacromolecules. However, B or T cell receptor binding is only one of the\ncomponents necessary for B and T cell activation. As we describe in the\nfollowing section, T and B cell activation also depends on a diversity\nof signals from the innate immune system and, in the majority of cases,\nthe successful presentation of peptide antigens. We expect these to be\nimpaired, and thus we do not expect humans to mount a strong adaptive\nimmune response to mirror bacteria. The likelihood of a weak adaptive\nimmune response would mean the formation of protective memory responses\nmay also be impaired."
+        }
+      ],
+      "subsections": [
+        {
+          "id": "t-cell-activation-would-likely-be-severely-impaired-during-mirror-bacterial-infection",
+          "level": 3,
+          "title": "T cell activation would likely be severely impaired during mirror bacterial infection",
+          "title_html": "T\ncell activation would likely be severely impaired during mirror\nbacterial infection",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "The activation of conventional T cells requires a number of steps,\nmost of which could have serious defects in response to a mirror\nbacterial infection. Adaptive immunity is initiated by dendritic cells\nfrom the innate immune system (Iwasaki & Medzhitov, 2015). In a\nbacterial infection, dendritic cells that have been activated via PRR\nstimulation increase their uptake of bacteria and then migrate to lymph\nnodes. There, the dendritic cells present peptides from the bacteria to\nnaive T cells. If there are T cells with TCRs that can recognize the\nbacterial peptides, they become activated and proliferate, effectively\ninitiating the adaptive immune response. Activated T cells either\nmigrate to the infected tissues, where they kill infected cells and\nsecrete proinflammatory cytokines, or they remain in the lymph node and\nactivate B cells, enabling the latter to make antibodies."
+            },
+            {
+              "type": "paragraph",
+              "html": "The inability of the innate immune system to detect most, if not all,\nmirror MAMPs would likely prevent dendritic cells from being activated.\nThis would result in few, if any, dendritic cells trafficking to the\nlymph nodes and being available to activate T cells—presenting a\nsubstantial barrier to mounting an adaptive immune response."
+            },
+            {
+              "type": "paragraph",
+              "html": "Even if dendritic cells were activated in large numbers, able to\nphagocytose mirror bacteria, and subsequently migrate to the lymph node,\nit appears unlikely that they would be able to efficiently process and\npresent mirror peptide antigens to T cells. Antigen presentation\ninvolves multiple stereospecific steps (<a href=\"#figure-4.5-t-cell-activation-is-likely-to-be-severely-impaired-in-response-to-mirror-bacterial-infection\">Figure\n4.5</a>, left-hand side). In a normal immune response to extracellular\nbacteria, bacteria-derived proteins taken up by dendritic cells are\nfirst cleaved by lysosomal proteases into short (13-25 amino acid)\npeptides before binding to major histocompatibility complex class II\nmolecules (MHC-II)<a class=\"footnote-ref\" data-footnote-ref=\"fn8\" href=\"#fn8\" id=\"fnref8\" role=\"doc-noteref\"><sup>8</sup></a> (Chicz <em>et al</em>., 1992).\nPeptide:MHC-II complexes on the surface of dendritic cells are presented\nto the TCRs of naive T cells expressing CD4, a co-receptor for MHC-II.\nEach CD4<sup>+</sup> T cell bears a unique TCR sequence, endowing it\nwith a distinct structure and the ability to bind specifically to a\nnarrow set of peptide:MHC-II complexes. If this binding takes place with\nhigh affinity (and proper co-stimulation through other,\nnon-pathogen-specific receptors expressed on both cells), the T cell is\nactivated, allowing it to proliferate. Each stage of this process would\nlikely face substantial challenges during a mirror bacterial\ninfection."
+            },
+            {
+              "type": "paragraph",
+              "html": "As discussed in <a href=\"#mirror-bacteria-would-likely-be-resistant-to-most-innate-immune-responses\">Section\n4.2</a>, mirror proteins and mirror peptides resist protease\ndegradation. With respect to antigen processing, an inability to degrade\nmirror proteins has been demonstrated for two lysosomal proteases that\nprocess peptides for MHC-II molecules (Chu <em>et al</em>., 2012; Meldal\n<em>et al</em>., 1998). Given the available evidence, it appears\nunlikely that antigen-presenting cells would successfully cleave the\nvast majority of mirror peptides derived from mirror bacteria,\ngenerating few, if any, mirror peptides as candidates for binding to MHC\nmolecules (<a href=\"#figure-4.5-t-cell-activation-is-likely-to-be-severely-impaired-in-response-to-mirror-bacterial-infection\">Figure\n4.5</a>, Step 1). This would substantially reduce the ability of\ndendritic cells to activate T cells. However, it is possible that small\npeptides could be derived from lysed mirror bacteria directly, as mirror\nbacterial proteases would be able to cleave mirror proteins."
+            },
+            {
+              "type": "paragraph",
+              "html": "Even if mirror peptides were available to bind MHC molecules, it\nseems likely that this step would be relatively inefficient. Mirror\npeptides of appropriate size and amino acid composition (<em>vis a\nvis</em> regular peptides) tend to bind MHC molecules only weakly, if at\nall (Bartnes <em>et al</em>., 1997; Hervé <em>et al</em>., 1997; Hill\n<em>et al</em>., 1994; Lombardi <em>et al</em>., 2020; Mézière <em>et\nal</em>., 1997). Thus, during a mirror bacterial infection, only a\nfraction of the available mirror peptides may be expected to bind MHC\nmolecules with sufficient affinity to be presented on the surfaces of\ndendritic cells in peptide:MHC complexes (<a href=\"#figure-4.5-t-cell-activation-is-likely-to-be-severely-impaired-in-response-to-mirror-bacterial-infection\">Figure\n4.5</a>, Steps 2 and 3)."
+            },
+            {
+              "type": "paragraph",
+              "html": "Were mirror-bacteria-derived, high-affinity mirror peptide:MHC\ncomplexes to be presented to naive T cells, the extent to which T cells\nwould be activated is unclear. TCR binding to a mirror peptide:MHC\ncomplex can involve interactions between the TCR, MHC molecule and both\nthe side chains and backbone of the peptide being presented (Rossjohn\n<em>et al</em>., 2015) (<a href=\"#figure-4.5-t-cell-activation-is-likely-to-be-severely-impaired-in-response-to-mirror-bacterial-infection\">Figure\n4.5</a>, Step 4 and 5). The enormous diversity of TCR receptors and MHC\nallotypes, with a genetic recombination process in each cell that is\ncapable generating one of 10<sup>18</sup> potential TCRs (Sethna <em>et\nal</em>., 2019) and with more than 40 000 MHC alleles in the human\npopulation (encoding over 26 000 distinct protein sequences) (EBI Web\nServices, n.d.), provides many potential combinations that could result\nin functional TCR-peptide-MHC interactions (Heijmans <em>et al</em>.,\n2020). The available experimental evidence shows that T cells can\nrespond to mirror-peptide:MHC complexes, but the response is generally\nweaker than to similar peptide:MHC complexes (Bartnes <em>et al</em>.,\n1997; Chong <em>et al</em>., 1996; Mézière <em>et al</em>., 1997; Nair\n<em>et al</em>., 2003). Very few peptides have been tested, however, so\nit is not clear if this is because ᴅ-peptides are less able to activate\nT cells or to be efficiently presented by MHC, or if this is simply an\nartifact of the handful of examples studied in the literature."
+            },
+            {
+              "type": "paragraph",
+              "html": "In addition to engagement of the TCR with an MHC-peptide complex, T\ncells need additional signals to become fully activated, including\nbinding of dendritic cell co-stimulatory molecules CD80 or CD86 to T\ncell molecule CD28, and activating soluble factors like IL-6, IL-12, or\nIL-23. These activation factors are largely regulated by PRR signaling,\nand plausibly would not be significantly upregulated during a mirror\nbacterial infection (<a href=\"#figure-4.5-t-cell-activation-is-likely-to-be-severely-impaired-in-response-to-mirror-bacterial-infection\">Figure\n4.5</a>, Step 6). As such, T cells that can recognize mirror bacterial\npeptides might not receive sufficient costimulatory signals to survive\nand differentiate into effector T cells."
+            },
+            {
+              "type": "figure",
+              "id": "figure-4.5-t-cell-activation-is-likely-to-be-severely-impaired-in-response-to-mirror-bacterial-infection",
+              "src": "assets/image24.png",
+              "alt": "",
+              "width": "6.5in",
+              "height": "5.94444in",
+              "caption": {
+                "id": "figure-4.5-t-cell-activation-is-likely-to-be-severely-impaired-in-response-to-mirror-bacterial-infection",
+                "title": "Figure 4.5: T cell activation is likely to be severely impaired in response to mirror bacterial infection",
+                "title_html": "Figure\n4.5: T cell activation is likely to be severely impaired in response to\nmirror bacterial infection",
+                "body_html": "<p><strong>A.</strong> T cell activation in response to\nnatural-chirality bacteria is a multi-step process. Activated dendritic\ncells phagocytose bacteria and degrade their proteins into peptides,\nmany of which are loaded onto major histocompatibility complex (MHC)\nmolecules, forming peptide:MHC complexes that translocate to the cell\nsurface. Peptide:MHC complexes are recognized by T cell receptors\n(TCRs), resulting in T cell activation. <strong>B.</strong> Many steps\nof T cell activation could be impaired in responses to mirror bacteria.\nMirror bacteria would likely evade phagocytosis by dendritic cells\nbecause this action is mediated by stereospecific protein receptors. If\nmirror bacteria were phagocytosed, the proteases that mediate protein\ndegradation and peptide formation are stereospecific as well, so few\nmirror peptides would likely be produced (Step 1). If mirror peptides\nwere formed, MHC molecules would likely bind them weakly, if at all\n(Step 2) and few mirror peptide:MHC complexes would be presented on the\nsurface of the dendritic cell (Step 3). Existing data, although limited,\nsuggests that TCRs might bind mirror peptide:MHC complexes weakly (Step\n4). Failure of these steps could weaken TCR signaling (Step 5). Impaired\ninnate immune activation could also result in insufficient\nco-stimulation and cytokine signaling necessary for T cell proliferation\n(Step 6). Taken together, T cell activation in response to mirror\nbacteria would likely be severely impaired.</p>"
+              }
+            },
+            {
+              "type": "paragraph",
+              "html": "The combined effect of impaired innate immune activation, protease\nresistance, weak MHC binding of most mirror peptides, and (potentially)\nweak T cell recognition is likely to severely impair T cell activation\n(<a href=\"#figure-4.5-t-cell-activation-is-likely-to-be-severely-impaired-in-response-to-mirror-bacterial-infection\">Figure\n4.5</a>). Although it is hard to rule out the possibility that a small\nsubset of mirror peptides could pass through the aforementioned\nhurdles—the space of mirror peptides is very large—this seems\nsignificantly less likely to occur during a mirror bacterial infection\ncompared to a natural bacterial infection. It therefore appears that a\nmirror bacterial infection could result in a diminished or ineffective T\ncell response."
+            },
+            {
+              "type": "paragraph",
+              "html": "Antibacterial responses in peripheral tissues are enhanced by the\nfunctions of various types of T cells and other lymphoid cells.\nTherefore, impaired activation of these cells could weaken the overall\nimmune response to mirror bacteria. Activated helper T\ncells—particularly Th17 cells—are important for driving a potent\nantimicrobial response. During infections with natural extracellular\nbacteria, activated dendritic cells secrete cytokines that cause many\nnewly activated T cells to differentiate into Th17 and other helper T\ncells (Korn <em>et al</em>., 2009). These T cells then migrate to the\nsite of infection and secrete cytokines that greatly enhance neutrophil\nrecruitment and cause epithelial cells to proliferate, increase the\nformation and maintenance of tight junctions, and secrete antimicrobial\npeptides (Lewinsohn <em>et al</em>., 2011; Mills, 2023; Schnell <em>et\nal</em>., 2023; Wan & Flavell, 2009). Impaired generation of helper\nT cells during a mirror bacterial infection could diminish these\nantibacterial mechanisms, including AMP production, mucus secretion,\nenhancement of tight junctions, and transport of IgM and IgA across\nepithelial barriers (Mills, 2023), all of which might otherwise be\neffective against mirror bacteria. On the other hand, any damage caused\nby a mirror bacterial infection could expose innate immune cells to\nMAMPs from natural bacteria (especially at mucosal surfaces like the\ngut), causing them to produce inflammatory mediators that would\nstimulate tissue resident helper T cells to produce inflammatory\ncytokines and enhance the local innate immune response."
+            }
+          ],
+          "subsections": []
+        },
+        {
+          "id": "cd1--and-mr1-restricted-t-cells-might-be-able-to-recognize-some-mirror-ligands",
+          "level": 3,
+          "title": "CD1- and MR1-restricted T cells might be able to recognize some mirror ligands",
+          "title_html": "CD1-\nand MR1-restricted T cells might be able to recognize some mirror\nligands",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "CD1-restricted and MR1-restricted T cells secrete potent inflammatory\ncytokines upon activation, which can be protective against many\nbacterial species (Mori <em>et al</em>., 2016). It is possible that both\ncell types would be able to detect some mirror bacterial ligands and\nactivate during a mirror bacterial infection."
+            },
+            {
+              "type": "paragraph",
+              "html": "CD1-restricted T cells detect microbial lipids from a variety of\nbacterial species (e.g., Bacteroides and Mycobacteria) presented by\nantigen presenting cells via the nonclassical MHC molecules CD1a, CD1b,\nCD1c, and CD1d (Van Rhijn <em>et al</em>., 2015). Although CD1 molecules\nhave limited sequence variation (Salio <em>et al</em>., 2014), the\nmechanism by which they bind their ligands does allow for some\nflexibility in the lipid antigens they present. CD1 molecules have deep,\nhydrophobic pockets that bind the largely achiral alkyl chains of\nmicrobial lipids, which allow the chiral head regions of the lipids to\nproject up out of the binding pocket and interact with TCRs (Gras <em>et\nal</em>., 2018). Although the loading of glycolipids into CD1 molecules\ncan require chirality-dependent processing by host lipases and\nglycosidases, smaller lipids can be loaded without the need for\naccessory proteins (Salio <em>et al</em>., 2014). This mechanism allows\nCD1 molecules to bind a limited diversity of lipid antigens and might\nalso permit CD1 molecules to bind and present some mirror lipids.\nMoreover, although the TCRs of CD1-restricted T cells are less variable\nthan those of conventional T cells, they maintain some variation, which\nmight enable them to bind to the achiral regions of mirror lipids.\nTogether, these characteristics suggest that some CD1-restricted T cells\nmight be activated during a mirror bacterial infection."
+            },
+            {
+              "type": "paragraph",
+              "html": "MR1-restricted T cells share many characteristics of CD1-restricted T\ncells, but recognize small molecule metabolites instead of lipids. These\nmetabolites are released by live bacteria and bind to MR1, a\nnonclassical MHC molecule expressed by a broad range of cell types.\nAlthough MR1 displays limited sequence variation in humans (Rozemuller\n<em>et al</em>., 2021) and all known stimulatory MR1 ligands are chiral,\nthe molecule has a flexible binding pocket that might accommodate mirror\nbacterial metabolites (McWilliam & Villadangos, 2024). Further study\nmay reveal additional, achiral ligands. In addition, MR1 ligands are not\nderived from larger precursor molecules, and therefore could plausibly\nbe available in the phagolysosome without the need for enzymatic\nprocessing (Mori <em>et al</em>., 2016). Although the TCRs of\nMR1-restricted T cells are semi-invariant, the presence of some sequence\nvariation makes it difficult to rule out the recognition of mirror\nmetabolites presented by MR1. Thus, similar to the case for\nCD1-restricted T cells, it seems possible that some MR1-restricted T\ncells could be activated by mirror bacteria."
+            },
+            {
+              "type": "paragraph",
+              "html": "Ultimately, the extent to which CD1- and MR1-restricted T cell\nactivation would enhance immune responses to mirror bacteria is unclear.\nMost bacterial infection studies rely on mouse models, but mice make\npoor models to study these cells: they have much lower percentages of\nMR1-restricted T cells than humans, and they lack CD1a, CD1b, and CD1c\n(Mori <em>et al</em>., 2016). In addition, not all bacteria express\n(known) CD1 or MR1 ligands. As such, it is difficult to predict to what\nextent CD1- and MR1- restricted T cells would contribute to protection\nagainst mirror bacteria."
+            }
+          ],
+          "subsections": []
+        },
+        {
+          "id": "impaired-t-cell-activation-would-impair-antibody-mediated-immunity-to-mirror-bacteria",
+          "level": 3,
+          "title": "Impaired T cell activation would impair antibody-mediated immunity to mirror bacteria",
+          "title_html": "Impaired\nT cell activation would impair antibody-mediated immunity to mirror\nbacteria",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "Antibodies typically play an important role in immune responses to\nextracellular bacteria by blocking bacterial binding to host surfaces,\nopsonizing bacterial cells for phagocytosis, and neutralizing bacterial\ntoxins (Lu <em>et al</em>., 2018). Antibodies against protein antigens\nare normally generated after B cells in secondary lymphoid organs\ncapture the proteins via their B cell receptors (BCRs), internalize\nthem, and subsequently process and present peptide:MHC-II complexes to\nactivated helper T cells. The T cells that recognize the peptide:MHC-II\ncomplex then deliver activating signals to that B cell, enabling it to\nproliferate and produce soluble antibodies. While B cells are expected\nto have BCRs that could recognize mirror proteins, their ability to\nprocess and present mirror peptides would be impaired. Impaired ability\nto process and present mirror peptides would severely limit B cell\nsurvival, differentiation potential, and the potential for these BCRs to\nundergo affinity maturation in secondary lymphoid organs because all of\nthese processes rely on (sometimes repeated) T cell help (Victora &\nNussenzweig, 2022). Even if some mirror peptides were presented, the\npreviously described deficit of activated T cells could leave the\ncorresponding B cells without T cell help. Instead of proliferating and\nmaturing, these B cells would then become anergic or undergo apoptosis\n(Turner <em>et al</em>., 2020; Y. Wang <em>et al</em>., 2020; Yarkoni\n<em>et al</em>., 2010). The lack of T cell help could also reduce the B\ncell response to non-protein mirror antigens. Non-protein antigens from\nbacteria are often associated with proteins as part of intact cells or\ncell fragments (Kappler & Hennet, 2020). B cells with BCRs that bind\nnon-protein antigens thus internalize proteins as well, and these\nproteins are subsequently presented via peptide:MHC-II complexes to\nhelper T cells, which, in turn, activate the B cells to produce\nantibodies against the non-protein antigen. Impaired T cell-dependent B\ncell activation could therefore result in a severe reduction in the\noverall antibody response to mirror bacteria."
+            },
+            {
+              "type": "paragraph",
+              "html": "B cells can also be activated without helper T cells, but it is\nunclear how effective this would be in response to mirror bacteria. A\nmajor activation mechanism requires the crosslinking of a sufficient\nnumber of BCRs by highly repetitive molecules, such as the capsular\npolysaccharides found on the surfaces of encapsulated bacteria (Vos\n<em>et al</em>., 2000). Such crosslinking could plausibly be triggered\nby mirror bacteria, particularly by mirror encapsulated bacteria. While\ncrosslinking of BCRs alone can lead to B cell proliferation (Snapper,\n2016), T cell-independent antibody secretion generally requires\nco-stimulation with TLR ligands, although other co-stimulation routes\nhave been documented, especially those involving IL-2 and IL-5 (Snapper,\n2016). The extent of co-stimulation that would occur in response to\nmirror bacteria remains unclear. In particular, we expect TLR\nstimulation by most mirror MAMPs to be impaired, although it is possible\nthat yet unseen co-stimulation routes would emerge. Thus, it is\npossible, though uncertain, that plasmablasts secreting IgM antibodies\nagainst mirror bacteria may arise, which would offer an avenue for the\nactivation of the classical complement pathway (see <a href=\"#mirror-bacteria-would-likely-be-resistant-to-most-innate-immune-responses\">Section\n4.2</a>)."
+            },
+            {
+              "type": "paragraph",
+              "html": "It is unclear to what extent T cell-independent B cell activation\nwould be able to elicit IgG antibodies directed toward mirror bacteria.\nAlthough class switch recombination and AID activity have been observed\nin T cell independent mechanisms, researchers had previously observed\nthat a second signal provided via pathways other than the BCR, such as\nTLR co-stimulation, is typically necessary for these processes (Pone\n<em>et al</em>., 2012; Snapper, 2016). A reduction in IgG antibodies\nwould, at a minimum, result in a functionally altered response; IgG\nantibodies are typically the most abundant antibodies in serum, and can\nactivate innate immune cells via Fc receptors and initiate the\ncomplement cascade via the classical pathway (Lu <em>et al</em>., 2018).\nAdditionally, IgGs can penetrate extravascular sites and provide\nsignaling through Fc receptors that enhance the phagocytic efficiency of\nphagocytes (Uribe-Querol & Rosales, 2020)."
+            },
+            {
+              "type": "paragraph",
+              "html": "Although we expect the production of mirror-antigen-specific IgG\nantibodies would be impaired, B cells in the gut may be able to produce\nIgA antibodies upon encountering mirror bacteria in the gut. Chronic\nimmune stimulation from the intestinal microbiota creates an environment\nthat promotes the activation of B cells whose BCRs bind to T cell\nindependent antigens (e.g., polysaccharides), allowing them to undergo\nisotype switching and differentiate into plasma cells that produce IgA\nin gut associated lymphoid tissues (GALT) (Bemark <em>et al</em>., 2024;\nFagarasan <em>et al</em>., 2010). IgA antibodies are the dominant\nisotype in the gut and are particularly effective at trapping bacteria\nin the mucus layer and keeping them from adhering to epithelial cells\n(T. Chen <em>et al</em>., 2020). Research has also suggested that IgA\nantibodies against T cell independent antigens can acquire mutations\nthrough mechanisms that are not well-defined, allowing them to undergo\naffinity maturation (Bemark <em>et al</em>., 2024). Together, this\nsuggests that GALT-resident B cells responding to mirror bacteria in the\ngut might generate IgA antibodies against mirror antigens. Furthermore,\nif γδ T cells in the GALT become activated by DAMPs, cytokines, and/or\nthe achiral MAMP HMBPP, this may increase the likelihood of anti-mirror\nIgA antibodies production, as γδ T cells have been proposed to directly\ninteract with B cells in the GALT to activate them (Rampoldi <em>et\nal</em>., 2020). Even if these mechanisms do not enable GALT-associated\nB cells to produce IgA antibodies specific for mirror antigens, high\nconcentrations of IgA antibodies are typically present in the gut, and\nmany bind to specific gut bacterial species (C. Yang <em>et al</em>.,\n2022). Therefore, it is plausible that some may have cross-reactivity\nwith mirror bacterial epitopes."
+            },
+            {
+              "type": "paragraph",
+              "html": "Some individuals might fortuitously have pre-existing antibodies that\nwould cross-react with mirror ligands. These could be natural IgM\nantibodies which, as discussed in <a href=\"#mirror-bacteria-would-likely-be-resistant-to-most-innate-immune-responses\">Section\n4.2</a>, may have broader specificities than other antibody types.\nAlternatively, they could be antibodies previously produced in response\nto other pathogenic infections that happen to cross-react with mirror\nantigens. Natural IgM antibodies would be able to initiate the classical\ncomplement pathway, but would not be able to directly opsonize mirror\nbacteria because the Fc receptor for IgM (FcμR) is not expressed on\nphagocytic cells (Kubagawa <em>et al</em>., 2009). For cross-reactivity\nwith antibodies from previous infections, mirror antigens able to\ncrosslink the BCRs of memory B cells would likely be sufficient to\ninduce an antibody response. However, as discussed above, impaired T\ncell responses may hamper the strengthening of this humoral response via\nB cell differentiation or the affinity maturation of mirror-specific\nantibodies (Snapper, 2016)."
+            },
+            {
+              "type": "paragraph",
+              "html": "Experimental evidence shows that mice immunized with full-length\nmirror proteins do not produce detectable IgG, despite producing robust\nIgG responses to non-mirror versions of the same proteins (King <em>et\nal</em>., 1994; Marinec <em>et al</em>., 2021; Uppalapati <em>et\nal</em>., 2016). Although co-stimulation with an adjuvant containing\nnatural-chirality MAMPs did result in some IgG production against a\nmirror protein in one study (Dintzis <em>et al</em>., 1993), this\nmechanism is unlikely to be relevant for mirror bacterial infections due\nto the lack of natural-chirality MAMPs. We are not aware of any studies\nexamining IgM or IgA responses to mirror proteins. As discussed above,\nfailure to produce antibodies against mirror proteins is likely due to\ntheir resistance to proteolytic processing into peptides suitable for\nMHC loading. Since a majority of protein antigens derived from mirror\nbacteria are likely to exist as full-length folded proteins, the results\nof these studies are consistent with a dramatically impaired antibody\nresponse to mirror bacteria."
+            },
+            {
+              "type": "paragraph",
+              "html": "In contrast to full-length mirror proteins, immunization with short\n(7–26 amino acid) mirror peptides has been shown to produce weak or\naltered IgG responses compared to non-mirror peptide controls in\nlaboratory animals (Arranz-Gibert <em>et al</em>., 2018; Chong <em>et\nal</em>., 1996). However, these mirror peptide studies may be less\nrelevant to mirror bacterial infection because they involved the\ninjection of concentrated doses of a single peptide species along with\nadjuvants containing MAMPs, rather than intact proteins in the absence\nof MAMPs."
+            },
+            {
+              "type": "paragraph",
+              "html": "Several studies published between 1960 and 1993 have been interpreted\nas evidence that mirror peptides are immunogenic (Sela & Zisman,\n1997; Van Regenmortel & Muller, 1998), but the relevance of these\nstudies to mirror bacteria is unclear for multiple reasons. In three\nstudies, animals were immunized with long, highly repetitive mirror\npeptides (Gill <em>et al</em>., 1964, 1967; Janeway & Sela, 1967)\nthat are unlike the peptides expected to exist in a mirror bacterium.\nFurthermore, in two of these two studies, the peptides also contained\n1–4% ʟ-amino acids, which could have contributed to the observed immune\nresponse (Jung, 1992; Stupp & Sela, 1967). Several other\ncontemporaneous studies with similar peptides failed to detect antibody\nresponses (Borek <em>et al</em>., 1965; Gill <em>et al</em>., 1963;\nMaurer, 1963, 1965). Other studies employed mirrored versions of\nbranched multichain peptides—which are not found in nature—as immunogens\n(Mozes <em>et al</em>., 1974; Sela <em>et al</em>., 1972; Simonian\n<em>et al</em>., 1968; Zisman <em>et al</em>., 1993). In another two\nstudies cited as evidence for the immunogenicity of mirror peptides,\nanimals were immunized with mirror peptides conjugated to liposomes\nfilled with MPLA, a potent TLR agonist that may have elicited\nT-independent antibody responses (Benkirane <em>et al</em>., 1993;\nGuichard <em>et al</em>., 1994). Moreover, some of these studies\nindicated mirror peptides were only immunogenic when administered at low\ndoses (Gill <em>et al</em>., 1964; Janeway & Sela, 1967; Mozes\n<em>et al</em>., 1974). The experimental design of these early studies\nand their lack of replication since publication more than 50 years ago\nhighlight the urgent need for further research in this area."
+            },
+            {
+              "type": "paragraph",
+              "html": "In summary, secretion of mirror bacteria-specific antibodies would\nlikely rely almost exclusively on T cell-independent routes. Although T\ncell-independent routes have been known to elicit antibody secretion and\neven durable antibody memory—for example, the Pneumovax-23 vaccine\n(Grabenstein & Manoff, 2012)—they typically require co-stimulation\nfrom other immune pathways, notably those involving TLRs. Given the\nexpected impaired activation of the innate immune system, it is less\nclear where co-stimulating signals may come from. Moreover, additional\nsignals are often critical in determining the functional form of an\nantibody response, including the isotypes of antibodies that eventually\narise. The unusual features of mirror bacterial infection make it very\ndifficult to anticipate the functional features of antibody responses\nagainst mirror bacteria."
+            },
+            {
+              "type": "paragraph",
+              "html": "Immune memory responses formed after an initial infection enable\nfaster, more effective responses against future exposures to the same\npathogen and are less dependent on MAMP and DAMP signaling (Chandok\n& Farber, 2004; Lam <em>et al</em>., 2024; Palm & Henry, 2019).\nHowever, durable memory T cell and B cell responses are dependent on a\nrobust adaptive immune response to the initial infection (Palm &\nHenry, 2019; Pennock <em>et al</em>., 2013). Therefore, the impaired\ninitial immune response described here would likely preclude the\nformation of protective memory responses to mirror bacteria as well."
+            }
+          ],
+          "subsections": []
+        },
+        {
+          "id": "mirror-bacteria-evasion-of-adaptive-immunity-might-mimic-mhc-ii-immune-deficiency",
+          "level": 3,
+          "title": "Mirror bacteria evasion of adaptive immunity might mimic MHC-II immune deficiency",
+          "title_html": "Mirror\nbacteria evasion of adaptive immunity might mimic MHC-II immune\ndeficiency",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "MHC-II deficiency is likely the closest clinical analog to the severe\ndeficit in antigen presentation expected during mirror bacterial\ninfections. MHC-II deficiency, also known as bare lymphocyte syndrome\ntype 2, is a rare autosomal recessive primary immunodeficiency where\nloss-of-function in transcription factors for MHC-II results in reduced\nor absent expression of MHC class II molecules on the surface of immune\ncells (Reith <em>et al</em>., 2013). This condition results in a\nprofound impairment of antigen-specific T and B cell responses because\nof MHC-II’s essential role in antigen presentation."
+            },
+            {
+              "type": "paragraph",
+              "html": "Without stem cell transplantation—the only curative treatment—the\nprognosis for MHC-II deficiency is bleak. Despite supportive care,\nantimicrobial prophylaxis, and immunoglobulin administration, the\ntypical clinical course involves multiple severe acute and chronic\ninfections, and death typically occurs within the first decade of life\n(Hanna & Etzioni, 2014; Reith <em>et al</em>., 2013). Survival into\nadulthood is rarely documented, and the factors that explain these more\nfavorable outcomes are poorly understood."
+            },
+            {
+              "type": "paragraph",
+              "html": "Although a close mechanistic analog, MHC-II deficiency would not\nexactly match the severe deficits in antigen presentation expected for\nhealthy individuals challenged with mirror bacteria. Complete absence of\nresponse to foreign antigens is not the only immunological feature of\nMHC-II deficiency: most patients have a substantial CD4+ T-cell\ncytopenia, likely due to the requirement of MHC-II for T-cell\nmaturation, and 20% of patients have autoimmune manifestations. Although\nthe deficit in antigen presentation is likely the primary driver of the\nimmunodeficiency—successful stem cell transplant normalizes antigen\nresponses while CD4+ T cell counts remain low (Ouederni <em>et al</em>.,\n2011), and autoimmune manifestations do not correlate with prognosis\n(Hanna & Etzioni, 2014)—these additional immunological defects\nassociated with MHC-II deficiency may contribute to a greater overall\nfunctional deficit in immunity than would occur in a healthy immune\nsystem challenged with mirror bacteria."
+            },
+            {
+              "type": "paragraph",
+              "html": "The poor outcomes of MHC-II deficiency are attributable to a broad\nand pervasive vulnerability to infection from many organisms, not just\nbacteria. Alongside bacterial infections and bacterial sepsis, viral\nmeningitis, liver failure secondary to infection by protist\n<em>Cryptosporidium parvum</em>, and pneumonia caused by the fungus\n<em>Pneumocystis jiroveci</em> are life-threatening complications\nfrequently reported in MHC-II deficiency case series (Ben-Mustapha et\nal., 2013; Ouederni et al., 2011). Nevertheless, MHC-II deficiency\ndemonstrates a mechanistically similar deficit to that expected against\nmirror bacteria and is sufficient to confer extreme vulnerability to\nbacterial infection. In one case series of 35 patients with MHC-II\ndeficiency (Ouederni et al., 2011), 11 (31%) had documented episodes of\nbacterial sepsis, 10 (28%) bacterial pneumonia, and 5 (14%) bacterial\npyelonephritis, numbers which are greatly elevated compared to the\ngeneral population (e.g., the global incidence of pediatric and neonatal\nsepsis is estimated to be 48 cases per 100 000 person years\n(Fleischmann-Struzek et al., 2018). This vulnerability to bacterial\ndisease may still be underestimated in the MHC-II clinical data due to\nextensive anti-bacterial prophylaxis (which may not be easily available\nfor infections with mirror bacteria, see <a href=\"#chapter-5-medical-countermeasures\">Chapter 5</a>), incomplete or\nunclear ascertainment of the causative organism for infections, and\ncompeting causes of death (i.e., more individuals may have developed\nserious bacterial infections had they survived earlier non-bacterial\ninfections)."
+            }
+          ],
+          "subsections": []
+        },
+        {
+          "id": "profound-immune-evasion-by-mirror-bacteria-could-plausibly-render-humans-vulnerable-to-infection",
+          "level": 3,
+          "title": "Profound immune evasion by mirror bacteria could plausibly render humans vulnerable to infection",
+          "title_html": "Profound\nimmune evasion by mirror bacteria could plausibly render humans\nvulnerable to infection",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "As discussed throughout <a href=\"#innate-immune-detection-of-mirror-bacteria-could-be-significantly-impaired\">Sections\n4.1–4.3</a>, it is plausible that the human immune system would be\nseverely impaired if it were to encounter mirror bacteria. Significant\nuncertainty remains regarding which elements of bacterial immunity would\nremain functional, and whether these remaining functionalities would be\nsufficient to stave off mirror bacterial infection. The immune system is\nextremely complex, with a wide range of microbial sensors and\nantimicrobial effector mechanisms providing great coverage, diversity,\nand redundancy that ensure robustness of defense. Furthermore, these\ndifferent host defense pathways can cooperate, complement, and\ncompensate each other, making it challenging to establish a clear\nhierarchy of importance during any given infection (Nish &\nMedzhitov, 2011). Compounding the difficulty of this assessment is the\npossible diversity in the types of mirror bacteria that could be created\n(e.g., Gram-negative or Gram-positive, encapsulated or\nnon-encapsulated), and the natural heterogeneity of the human immune\nsystem across individuals. There is also a dearth of experimental\nevidence and lack of a clear analog for mirror bacteria: they are unlike\nnatural-chirality pathogens in lacking functional virulence factors, yet\nthey are also unlike commensals due to their suspected profound ability\nto evade immunity. They are also unlike inanimate particles, as they can\nactively spread and multiply. Simply put, mirror bacteria would\nrepresent a unique and unprecedented challenge to the human immune\nsystem."
+            },
+            {
+              "type": "paragraph",
+              "html": "However, several pieces of evidence suggest that the plausible extent\nof immune evasion exhibited by mirror bacteria could render humans\nhighly susceptible to infection, with potentially harmful outcomes.\nFirst, immunodeficiencies affecting even one microbial sensor or\neffector pathway can already render patients (or animal models) more\nvulnerable to bacterial infection, as is seen with deficiencies in\nIRAK-4 or MyD88 (Picard <em>et al</em>., 2010), C2 or C4 (Pettigrew\n<em>et al</em>., 2009), or MHC-II (Ouederni <em>et al</em>., 2011).\nSecond, individuals who are immunocompromised in a manner that affects\nmultiple cell types or effector pathways—e.g., due to chemotherapy, bone\nmarrow transplants, or immunosuppressive therapy—are often at\nsignificant risk of life-threatening infection (Bock <em>et al</em>.,\n2013; Roberts & Fishman, 2021; Safdar <em>et al</em>., 2011). Third,\nprofound immune evasion in the form of MAMP masking, phagocytosis\ninhibition, and antigenic variation, among other strategies, enables\nvarious natural-chirality pathogens to block immune clearance, as seen\nwith e.g., <em>Mycobacterium tuberculosis</em>, <em>Salmonella\ntyphi</em>, <em>Y. pestis</em>, and <em>Neisseria gonorrhoeae</em>. This\ncan result in long-term, persistent infections that do not resolve until\nmedical intervention (Chandra <em>et al</em>., 2022; Demeure <em>et\nal</em>., 2019; Lovett & Duncan, 2018; Monack <em>et al</em>.,\n2004)."
+            },
+            {
+              "type": "paragraph",
+              "html": "These individual pieces of evidence do not make perfect analogies for\nmirror bacterial infections due to caveats outlined elsewhere in this\nchapter. However, when taken together, they paint a concerning picture:\neven if some immune defenses remain functional, mirror bacteria could\npose a severe infection risk to humans. In <a href=\"#mirror-bacteria-could-plausibly-pass-barrier-surfaces-and-translocate-into-the-bloodstream-and-tissues\">Section\n4.4</a>, we discuss what a mirror bacterial invasion could look like if\nhumans were sufficiently exposed to mirror bacteria in the\nenvironment."
+            }
+          ],
+          "subsections": []
+        }
+      ]
+    },
+    {
+      "id": "mirror-bacteria-could-plausibly-pass-barrier-surfaces-and-translocate-into-the-bloodstream-and-tissues",
+      "level": 2,
+      "title": "4.4 Mirror bacteria could plausibly pass barrier surfaces and translocate into the bloodstream and tissues",
+      "title_html": "<strong>4.4\nMirror bacteria could plausibly pass barrier surfaces and translocate\ninto the bloodstream and tissues</strong>",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "As described in <a href=\"#innate-immune-detection-of-mirror-bacteria-could-be-significantly-impaired\">Sections\n4.1–4.3</a>, mirror bacteria would likely evade or impair many elements\nof the immune system. Consequently, if mirror bacteria were to reach\ninternal tissues or the blood, it is plausible that they would not be\nefficiently removed by normal immune processes and might instead cause\ninfection (see <a href=\"#mirror-bacteria-could-plausibly-replicate-in-blood-and-cause-lethal-systemic-infection\">Section\n4.5</a>). Unlike natural-chirality pathogens, however, mirror bacteria\nwould likely not, by default, have functional virulence factors that\nwould facilitate invasion or survival. Furthermore, any virulence\nfactors present could have incompatible chirality with their host\nligands."
+        },
+        {
+          "type": "paragraph",
+          "html": "In this section, we consider whether mirror bacteria would be able to\npass barrier surfaces and enter human tissues in the absence of typical\nvirulence factors that normally mediate such processes. As we will\ndiscuss, human physical barriers are often leaky due to trauma,\nenvironmental compounds, and inflammatory diseases, yielding\nopportunities for bacteria to translocate. It is difficult to predict\nhow frequently mirror bacteria would bypass these defenses in practice,\nas that would depend on the environmental prevalence of mirror bacteria,\nthe efficacy of non-pharmaceutical measures like sterilization\ntechniques or hand-washing, and the robustness of the mirror bacteria to\nthe environmental stressors that limit growth and survival on skin and\nmucosal surfaces. Nevertheless, commensal bacteria lacking specialized\nvirulence factors for invasion are able to translocate through natural\nbarriers and can be found in the bloodstream (Pat <em>et al</em>.,\n2024), which makes it plausible that mirror bacteria would be able to do\nthe same if present in sufficient numbers and given the opportunity."
+        },
+        {
+          "type": "paragraph",
+          "html": "While many pathogens invade deeper tissues only after adhesion to—and\nsubsequent colonization of—barrier surfaces like the lungs, skin, or\ngut, mirror bacteria would plausibly face great difficulty establishing\nsessile colonies due to a lack of functional adhesion receptors that\nconfer strong adhesion capability. However, adhesion is not an absolute\nrequirement for infection, and comparison with encapsulated bacteria\nsuggests that a non-adhesive phenotype might even predispose mirror\nbacteria to enter the bloodstream. It is also not clear that absence of\nadhesion factors would preclude colonization of the lung and other\nbarrier surfaces in all cases, particularly given other unusual\nproperties of mirror bacteria."
+        }
+      ],
+      "subsections": [
+        {
+          "id": "physical-barriers-are-imperfect-and-can-be-crossed-passively-which-could-plausibly-allow-mirror-bacteria-to-invade",
+          "level": 3,
+          "title": "Physical barriers are imperfect and can be crossed passively, which could plausibly allow mirror bacteria to invade",
+          "title_html": "Physical\nbarriers are imperfect and can be crossed passively, which could\nplausibly allow mirror bacteria to invade",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "Humans encounter environmental bacteria on a continuous basis on body\nsurfaces that are directly exposed to the outside world. These surfaces\ninclude the skin, eyes, and mucosa of the respiratory, genitourinary,\nand gastrointestinal tracts, which are protected by both physical and\nchemical barriers that keep the vast majority of commensal and\npathogenic bacteria from entering the underlying tissues (Marshall\n<em>et al</em>., 2018). Barrier epithelial cells are structurally\nconnected like a fence that selectively allows gasses and nutrients to\npass but holds microbes at bay. The structural integrity of the barrier\nrelies on intercellular junctions that connect epithelial cells: protein\ncomplexes including tight junctions, adherens junctions, and desmosomes\n(Matter & Balda, 2003)."
+            },
+            {
+              "type": "paragraph",
+              "html": "Damage to epithelial barriers can allow bacteria to enter the body.\nScratches, abrasions, lacerations, burns, and insect bites routinely\nbreak the skin and provide portals of entry for microbial infection.\nHumans also deliberately induce breaches through surgical wounds,\nneedles, and medical and dental implants, and even through less invasive\ndaily actions like flossing and shaving (Brodell & Rosenthal,\n2008)."
+            },
+            {
+              "type": "paragraph",
+              "html": "Epithelial damage that is sufficient to allow bacterial translocation\ncan also occur in the absence of trauma. Air pollution-related compounds\nlike smoke and ozone, as well as numerous chemical irritants found in\ncommon cleaning agents, have damaging effects on the skin and\nrespiratory tract in case of prolonged exposure, which can result in\nincreased bacterial translocation (Pat <em>et al</em>., 2024). Ingested\nalcohol, fatty acids, and various food additives can disrupt the\nintegrity of the gut epithelial barrier (Portincasa <em>et al</em>.,\n2022), as can many pharmaceutical drugs and medical treatments (Fine\n<em>et al</em>., 2020). Respiratory viral infections disrupt functioning\nof lung epithelia (Gawrysiak <em>et al</em>., 2021; Lalbiaktluangi\n<em>et al</em>., 2023) and can predispose patients to secondary\nbacterial infections in which bacteria benefit from virus-induced\nbarrier damage to invade deeper underlying tissues (Lalbiaktluangi\n<em>et al</em>., 2023; Morris <em>et al</em>., 2017). Some bacterial\npathogens directly cause damage to epithelial cells or tight junctions\nin order to facilitate invasion (Eichner <em>et al</em>., 2017; M. Kim\n<em>et al</em>., 2010). Finally, various non-infectious diseases, such\nas inflammatory bowel disease, atopic dermatitis, asthma, obesity, and\nnon-alcoholic fatty liver disease, are associated with epithelial\nbarrier dysfunction (Hellings & Steelant, 2020; B. E. Kim &\nLeung, 2018; König <em>et al</em>., 2016; Portincasa <em>et al</em>.,\n2022). Disruptions to epithelial layers allow the translocation of\n(non-invasive) commensal microbiota (Pat <em>et al</em>., 2024).\nTherefore, it is plausible that mirror bacteria could be similarly\ntranslocated as a consequence of such disruptions."
+            },
+            {
+              "type": "paragraph",
+              "html": "Even in the absence of epithelial or endothelial damage, bacteria can\npass physical barriers through natural antigen sampling processes. M\ncells—specialized epithelial cells found in parts of the\ngastrointestinal tract and in certain other mucosal-associated lymphoid\ntissues—have been shown in various mammals to transport particulates\nlike resin and latex beads (Gebert <em>et al</em>., 1996; Payne <em>et\nal</em>., 1960) and several bacterial pathogens, including\n<em>Salmonella typhimurium</em>, <em>Yersinia enterocolitica</em>, and\n<em>Vibrio cholerae</em>, across the epithelial barrier through both\nreceptor-mediated and endocytic pathways (Ribet & Cossart, 2015).\nWhile many of these bacterial pathogens have specialized mechanisms by\nwhich to target M cells—mechanisms which would not work even if present\nin mirror bacteria due to incompatible chirality—given that inert\nparticles can be transported by M cells, it appears at least plausible\nthat mirror bacteria could be transferred across epithelial barriers by\nM cells. Mouse studies have shown that interstitial dendritic cells also\nsample commensal bacteria from the gut lumen using transepithelial\ndendrites and subsequently traffic internalized bacteria to mesenteric\nlymph nodes (Niess <em>et al</em>., 2005). To our knowledge, the\npresence of antigen-sampling dendritic cells has not been demonstrated\nin humans, making it unclear whether mirror bacteria could benefit from\nthis or any additional antigen-sampling mechanisms."
+            }
+          ],
+          "subsections": []
+        },
+        {
+          "id": "many-chemical-mechanisms-of-epithelial-barriers-would-likely-be-impaired-against-mirror-bacteria",
+          "level": 3,
+          "title": "Many chemical mechanisms of epithelial barriers would likely be impaired against mirror bacteria",
+          "title_html": "Many\nchemical mechanisms of epithelial barriers would likely be impaired\nagainst mirror bacteria",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "In addition to the physical protection afforded by the epithelium\nitself, epithelial barriers are protected by a number of chemical\nmechanisms that mirror bacteria would need to overcome to establish\ninfection. Membranes of the gastrointestinal, genitourinary, and\nrespiratory tracts are protected by a layer of mucus. This layer is\nprimarily composed of glycoproteins called mucins, which form a slimy\nnetwork with two protective functions. The top layers act like a\nphysical barrier that can bind and trap pathogenic bacteria, whereas the\nlayers closer to the epithelial cells sequester high concentrations of\nprotective AMPs, proteases, and IgA antibodies (Sheng & Hasnain,\n2022). Mirror bacteria are expected to have decreased susceptibility to\nvarious chemical defenses, which could plausibly allow them to stay\nclose enough to physical barriers to increase the basal translocation\nrate and aid with potential colonization."
+            },
+            {
+              "type": "paragraph",
+              "html": "Mucus hinders bacterial invasion through steric hindrance—i.e.,\nproviding a physical block. It also adheres to bacteria through both\nnonspecific mechanisms, such as electrostatic and hydrophobic\ninteractions with bacterial pili and fimbriae, and specific interactions\nbetween glycosaminoglycan mucins and bacterial adhesin receptors\n(McGuckin <em>et al</em>., 2011). Steric hindrance and the non-specific\ninteractions are likely insensitive to chirality, but mirror adhesins\nwould not be able to tightly bind their natural-chirality mucin ligands,\nplausibly reducing the efficacy of mucus at trapping mirror bacteria.\nEven so, migration of mirror bacteria in the mucus layer may still be\nconstrained because mirror versions of the mucin-degrading proteases\nthat facilitate movement of natural bacteria are unlikely to degrade\nnatural mucins. On the other hand, even without such proteases, bacteria\ncapable of flagella-based motility can push through the mucin network\n(Guerry, 2007; Ottemann & Lowenthal, 2002). As such, flagellated\nmirror bacteria may be able to move through these mucin networks with\nreduced opposition due to weaker binding forces."
+            },
+            {
+              "type": "paragraph",
+              "html": "A bacterium that penetrates the top layers of the mucus network will\nencounter the antimicrobial defenses present in the bottom layer, such\nas IgA, ɑ-defensins, lysozymes, lactoperoxidases, siderophore\ninhibitors, and many others (Ribet & Cossart, 2015). AMPs and\nproteases produced by keratinocytes also comprise the primary chemical\ndefenses of the human skin (Gallo & Hooper, 2012). As discussed in\n<a href=\"#mirror-bacteria-would-likely-be-resistant-to-most-innate-immune-responses\">Section\n4.2</a>, mirror bacteria would likely be less sensitive to lysozyme and\nmany other antimicrobial enzymes that would be unable to cleave their\nrespective mirror ligands. This could increase the likelihood of mirror\nbacterial infection because natural-chirality gastrointestinal bacteria\nlike <em>H. pylori</em> and <em>Enterococcus faecalis</em> that are\nresistant to lysozyme are more capable of establishing infections in\nmouse models (Benachour <em>et al</em>., 2012; G. Wang <em>et al</em>.,\n2010). Siderophore inhibitors such as lipocalin-2 would likely remain\neffective, however, as their binding to diverse siderophores is not very\nstereoselective (Goetz <em>et al</em>., 2002) and has been shown to bind\nboth mirror-image and natural-chirality enterobactin (the common\nsiderophore of <em>E. coli</em>) with similar affinity (Abergel <em>et\nal</em>., 2006)."
+            },
+            {
+              "type": "paragraph",
+              "html": "It is possible that mirror-specific IgA antibodies would be present\nat mucosal surfaces (see <a href=\"#adaptive-immunity-to-mirror-bacteria-would-likely-be-impaired\">Section\n4.3</a>). IgA deficiency moderately predisposes patients to recurrent\nrespiratory and gastrointestinal infections, suggesting IgA does confer\nprotection against infection. However, this phenotype might partially be\ndue to general disruptions of the microbiome (Swain <em>et al</em>.,\n2019), and it is difficult to determine how mirror bacteria specifically\nwould be affected by the absence or presence of IgA binding."
+            },
+            {
+              "type": "paragraph",
+              "html": "AMPs that are constitutively expressed at barrier defenses may have\nsome efficacy against mirror bacteria because, as mentioned earlier,\nmany are expected to retain their bactericidal properties. In the\nintestine, for example, some AMPs are expressed and secreted by\nintestinal epithelial cells during homeostasis as a means to control the\nmicrobiota (Muniz <em>et al</em>., 2012; Ostaff <em>et al</em>., 2013).\nBreaches in the mucosal barrier typically result in PRR-mediated\nincreases in the concentrations of these and other, more tightly\nregulated AMPs (Muniz <em>et al</em>., 2012; Ostaff <em>et al</em>.,\n2013). As discussed in <a href=\"#mirror-bacteria-would-likely-be-resistant-to-most-innate-immune-responses\">Section\n4.2</a>, the absence of inflammatory signaling during a mirror bacteria\ninfection might be insufficient to induce additional AMP production.\nHowever, the presence of natural commensals alongside mirror bacteria\nmay still cause localized inflammation and, in some cases, might\ntherefore stimulate AMP production and other defenses."
+            },
+            {
+              "type": "paragraph",
+              "html": "Overall, mirror bacteria would plausibly be more resistant to\nchemical barriers than natural bacteria. IgA antibodies, AMPs,\nantimicrobial enzymes, and the physical properties of the mucus layer\nitself would likely be less effective against mirror bacteria than\nnatural bacteria. The magnitude and significance of this advantage,\nhowever, is difficult to determine, a challenge further compounded by\nthe influence of other microbiota on localized inflammatory\nsignaling."
+            }
+          ],
+          "subsections": []
+        },
+        {
+          "id": "evidence-from-transient-commensal-bacteremias-suggests-translocated-mirror-bacteria-could-end-up-in-the-bloodstream",
+          "level": 3,
+          "title": "Evidence from transient commensal bacteremias suggests translocated mirror bacteria could end up in the bloodstream",
+          "title_html": "Evidence\nfrom transient commensal bacteremias suggests translocated mirror\nbacteria could end up in the bloodstream",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "Bacteria that pass the epithelial barriers reach the interstitial\nspaces, which house tissue-resident immune cells, non-immune cells,\nextracellular matrix, lymphatic vessels, and blood capillaries. These\ntissue-resident immune cells typically induce a local inflammatory\nresponse upon detection of translocated bacteria, which results in\nclearance of most, if not all, of these invaders (Walker, 2017).\nBacteria that are not locally cleared can be taken up by the lymphatic\nsystem and subsequently killed in draining lymph nodes (Siggins &\nSriskandan, 2021). Given the immunological impairments described in <a href=\"#innate-immune-detection-of-mirror-bacteria-could-be-significantly-impaired\">Sections\n4.1–4.3</a>, we expect significantly reduced immunological clearance of\nmirror bacteria in the interstitium and lymph nodes, potentially\ncreating opportunities for mirror bacteria to disseminate through the\nbody and enter the bloodstream if they were to pass through a breach in\nthe epithelial barrier."
+            },
+            {
+              "type": "paragraph",
+              "html": "Various human studies demonstrate that bacteria of the indigenous\nmicrobiota translocate into deep tissues and the bloodstream in healthy\nhumans on a regular basis without the use of specialized invasion\nfactors. For example, culture-based studies of blood collected from\nsubjects after they undertook “daily oral activities” show that the\nprevalence of transient bacteremia can be as high as 24% after brushing,\n40% after flossing, and 17% after chewing on hard candy (Cobe, 1954;\nTomás <em>et al</em>., 2012). Furthermore, metagenomic sequencing of\nwhole blood and cell-free DNA in blood from healthy subjects strongly\nsuggests routine bacterial translocation in healthy adults. In the most\ncompelling of these studies, metagenomic analysis of whole blood from\n9 770 healthy individuals found that 11% of adults had credible evidence\nof DNA from presumptive translocating commensal bacterial species (Tan\n<em>et al</em>., 2023). Finally, upward of a quarter of bacterial\nbloodstream infections lack a known source or focus of infection (Renaud\n<em>et al</em>., 2001; Weinstein <em>et al</em>., 1997), suggesting that\ntransient translocation is a possible cause of a significant proportion\nof bacteremias."
+            },
+            {
+              "type": "paragraph",
+              "html": "There is additional evidence to suggest that human lymph nodes can be\na reservoir for some bacteria, and that bacteria disseminate to the\nbloodstream through the lymphatic system (Siggins & Sriskandan,\n2021). Culture-based studies of patients who undergo a laparotomy for a\nwide variety of surgical indications showed that live bacteria could be\nrecovered from mesenteric lymph nodes in 5–10% of patients at the time\nof initial entry into the abdominal cavity (Deitch, 2002; S. Jin <em>et\nal</em>., 2022; Sedman <em>et al</em>., 1994). Live bacteria have also\nbeen recovered from pelvic lymph nodes of patients with gynecologic\ntumors (Wells <em>et al</em>., 1990) and from cervical lymph nodes in\npatients with oral cancer (Sakamoto <em>et al</em>., 1999). In a study\nof 1 762 lymph node biopsies from patients with suspected infectious\nlymphadenitis, bacterial DNA from a variety of species was detected in\n30% of biopsies through real-time PCR; when 351 lymph nodes were further\ncultured on agar plates, 22% of samples yielded live bacteria (Prudent\n<em>et al</em>., 2018)."
+            },
+            {
+              "type": "paragraph",
+              "html": "Another line of evidence suggesting mirror bacteria could passively\ntranslocate into the body comes from the observation that inert\nmicroplastics of similar size to bacteria have been detected in various\nhuman body compartments, including the blood and the heart (Guan <em>et\nal</em>., 2023; Leslie <em>et al</em>., 2022; Marfella <em>et al</em>.,\n2024). Although the exact mechanisms of how microplastics enter the\nbloodstream are unknown, their initial entry point is thought to be\nthrough the epithelial layers of the lungs and the gut (Khan & Jia,\n2023)."
+            },
+            {
+              "type": "paragraph",
+              "html": "Because these studies are only snapshots in time, they do not\nestablish how frequently bacterial translocations to the bloodstream\noccur, although the >5% frequencies across studies suggest yearly\nincidence is high. The number of bacteria typically translocated in\nthese events, and whether some species have a higher propensity for\ntranslocation than others, is unknown. However, given the unusual degree\nof immune evasion intrinsic to mirror bacteria, it is plausible that\nmirror bacteria that have passively translocated across epithelial\nbarriers could escape immune clearance and eventually find their way to\nthe bloodstream."
+            }
+          ],
+          "subsections": []
+        },
+        {
+          "id": "by-default-mirror-bacteria-would-likely-be-weak-adherents",
+          "level": 3,
+          "title": "By default, mirror bacteria would likely be weak adherents",
+          "title_html": "By\ndefault, mirror bacteria would likely be weak adherents",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "Bacterial adhesion to host barrier surfaces is a very common first\nstep in bacterial colonization and invasion for commensals and pathogens\nalike. Adhesion provides resistance to mechanical removal and\nfacilitates manipulation of host cells through effector systems and\ntoxins (Stones & Krachler, 2016). Additionally, bacterial adhesion\nto host cells or other surfaces is the first event in the formation of\nbiofilms (Achinas <em>et al</em>., 2019). These structured communities\nof bacterial cells provide protection for their inhabitants from\nenvironmental stressors like bacteriophages, immune cells, antibiotics,\nantibodies, and surfactants (Dunne, 2002)."
+            },
+            {
+              "type": "paragraph",
+              "html": "Adhesion and biofilm-forming capacity vary considerably between\nindividual bacterial species (Malhotra <em>et al</em>., 2019; Tu <em>et\nal</em>., 2022) and even between different strains of the same bacterial\nspecies, which often differ from each other in the expression of key\nregulators (Abdulkadieva <em>et al</em>., 2022; Martínez-Meléndez <em>et\nal</em>., 2022; Y. Yang <em>et al</em>., 2024). As such, the extent to\nwhich mirror bacteria would be able to form sessile colonies or biofilms\nwithin the human body will highly depend on the specific properties of\nthe mirror bacterial strain. Specialized adhesion mechanisms that confer\ntight binding are generally stereospecific, and as a result, mirrored\nversions of natural bacteria would probably not adhere well to specific\nsites unless they were intentionally engineered to do so."
+            },
+            {
+              "type": "paragraph",
+              "html": "For concreteness, consider a mirror <em>E. coli</em>, which is a\nplausible model for the first robust mirror bacteria. <em>E. coli</em>\ncan form biofilms on abiotic surfaces (Beloin <em>et al</em>., 2008), so\na mirror <em>E. coli</em> could be capable of biofilm formation in some\nenvironments. In these cases, adhesion is mediated by non-specific\nphysical-chemical interactions between bacterial appendages and host\nsurfaces that are relatively weak (Dufrêne, 2015; Kreve & Dos Reis,\n2021). <em>E. coli</em> generally employs a host of different adhesins\nthat confer specific binding. The ɑ-ᴅ-mannose-binding fimbrial adhesin\nFimH seems particularly important for biofilm formation within the human\nbody, where mucosal surfaces are constantly washed by fluids. Point\nmutations in FimH prevent strong stationary attachment under fluid shear\nforce, so that mutated bacteria instead roll across the surface (B. N.\nAnderson <em>et al</em>., 2007). Because mirror FimH would not be able\nto bind ɑ-ᴅ-mannose (Firon <em>et al</em>., 1983; Gade <em>et al</em>.,\n2017), it is likely that an unmodified, generalist mirror <em>E.\ncoli</em> would have reduced adhesion and biofilm-forming capacity\ncompared to natural commensal and pathogenic <em>E. coli</em>\nstrains."
+            },
+            {
+              "type": "paragraph",
+              "html": "While a mirror <em>E. coli</em> would likely adhere poorly to bodily\nsurfaces, there is no fundamental reason why mirror bacteria could not\nevolve or be engineered to be better adherents. As discussed in <a href=\"#invasive-mirror-bacteria-could-rapidly-evolve-and-diversify\">Section\n8.4</a>, mirror bacteria could evolve rapidly. A mirror <em>E. coli</em>\nwould already possess nonspecific adhesion mechanisms and be capable of\nbiofilm formation, and evolutionary experiments have shown that adhesion\nand biofilm formation on abiotic surfaces can improve upon positive\nnatural selection (M. Yoshida <em>et al</em>., 2022). If improved\nadhesion would facilitate vertebrate colonization and infection—say, by\nreducing the exposure to mirror bacteria needed to cause infection—then\nit could plausibly evolve very rapidly."
+            }
+          ],
+          "subsections": []
+        },
+        {
+          "id": "weak-adhesion-may-impair-colonization-of-barrier-surfaces-but-not-preclude-systemic-infection",
+          "level": 3,
+          "title": "Weak adhesion may impair colonization of barrier surfaces, but not preclude systemic infection",
+          "title_html": "Weak\nadhesion may impair colonization of barrier surfaces, but not preclude\nsystemic infection",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "Since the gut, urinary tract, and other internal barrier surfaces are\nsubject to aggressive mechanical clearing mechanisms, a weakly adhesive\nmirror <em>E. coli</em> might have difficulty colonizing these areas.\nBiofilms also protect bacteria from dry, acidic environments, so any\nimpediments in biofilm formation could make skin colonization\nchallenging."
+            },
+            {
+              "type": "paragraph",
+              "html": "While a reduction in adhesive capacity might hinder colonization of\nbarrier surfaces, it is not a requirement for translocation or\ninfection. Indeed, a weakly adhesive phenotype can confer certain\nbenefits such as improved nutrient access and increased proliferation\n(Achinas <em>et al</em>., 2019), as well as reduced hindrance from the\nextracellular matrix during translocation (McGuckin <em>et al</em>.,\n2011). FimH-mutated <em>E. coli</em> strains that rolled over surfaces\nunder shear stress ultimately colonized larger surface areas than\nnon-mutated <em>E. coli</em> (B. N. Anderson <em>et al</em>., 2007).\nFurthermore, a major function of biofilms is to protect bacteria from\nimmune cells, antibodies, antibiotics, and bacteriophages. Since mirror\nbacteria would already be resistant to most such agents, the need for\nbiofilms as a protective measure would be plausibly diminished."
+            },
+            {
+              "type": "paragraph",
+              "html": "An analogy for the clinical consequences of a weakly adhesive\nphenotype can be seen in infections with encapsulated bacteria, which\nproduce exopolysaccharides that increase electrostatic repulsion to the\nextracellular matrix, mask adhesion molecules, and inhibit phagocytic\nclearance (Absolom, 1988; Hollands <em>et al</em>., 2010; Schembri\n<em>et al</em>., 2004). Encapsulated or mucoid bacterial strains are\ninherently less tissue adhesive (but more immune evasive), and are more\ncommonly associated with bloodstream infections than with localized\nbiofilm infections (Moxon & Kroll, 1990; Siggins <em>et al</em>.,\n2020). For example, non-encapsulated strains of <em>Haemophilus\ninfluenzae</em> are more commonly found as colonies in the\nnasopharyngeal carriage than encapsulated strains; however, the\nencapsulated strains are strongly linked to invasive disease and\nbacteremia (Crowe, 1987; Moxon & Kroll, 1990; Oliver <em>et\nal</em>., 2023). Similarly, in a study with 1100 patients with\n<em>Streptococcus pyogenes</em> infection, encapsulated strains were\nstrongly associated with invasive disease syndromes such as bacteremia,\ntoxic shock syndrome, and rheumatoid fever, but very weakly associated\nwith non-invasive disease like pharyngitis (Johnson <em>et al</em>.,\n1992)."
+            },
+            {
+              "type": "paragraph",
+              "html": "A weakly adhesive or planktonic mirror <em>E. coli</em> (or similar\ngeneralist mirror bacterium) might be able to colonize niches in the\nhuman body so long as there are sufficient nutrients to sustain their\nproliferation at a rate that outpaces mechanical or immunological\nclearance (Stones & Krachler, 2016). Colonization of the lungs would\nbe particularly concerning. <em>Yersinia pseudotuberculosis</em> can\ncolonize the lungs of mice in the absence of specialized adhesion\nfactors (Paczosa <em>et al</em>., 2014), and <em>P. aeruginosa</em> can\nestablish acute lung infections in planktonic (free-living, non-biofilm)\nform in human patients (Valentini <em>et al</em>., 2018). As such,\nmirror bacteria might be able to colonize the lungs even without\nfunctioning adhesins. The gut would be another concerning site for\nlong-term colonization, but the role of bacterial adhesion in gut\ncolonization is less clear (Lin <em>et al</em>., 2024). Whether initial\ncolonization would result in long-term, persistent colonies would likely\ndepend on a wide range of factors, including the ability to access and\nprocess available nutrients. Mirror bacteria would have to compete with\nnative microbiota for nutrient access at these sites, but their\nresistance to many bodily defenses, phages, and most forms of bacterial\nwarfare (see <a href=\"#mirror-bacteria-would-be-inherently-resistant-to-many-biological-controls\">Section\n8.1</a> for a more detailed discussion) could provide significant\nadvantages that might, in some cases, be enough to compensate for\nreduced access to nutrients and other disadvantages that would result\nfrom reversed chirality."
+            },
+            {
+              "type": "paragraph",
+              "html": "The potential clinical consequences of such an infection are hard to\npredict, but if mirror bacteria were able to successfully establish a\npersistent population within some bodily niche, this could provide them\nwith a place to proliferate and disseminate from, increasing the chances\nof eventual translocation into the bloodstream. It is also possible that\nsuccessful colonization could cause adverse clinical pathology\ndirectly—for instance, by causing gut dysbiosis or pulmonary disease. A\nmore detailed assessment of the potential consequences of mirror\nbacterial colonization of luminal or exterior spaces would be\nnecessarily speculative, and is beyond the scope of this report."
+            }
+          ],
+          "subsections": []
+        }
+      ]
+    },
+    {
+      "id": "mirror-bacteria-could-plausibly-replicate-in-blood-and-cause-lethal-systemic-infection",
+      "level": 2,
+      "title": "4.5 Mirror bacteria could plausibly replicate in blood and cause lethal systemic infection",
+      "title_html": "<strong>4.5\nMirror bacteria could plausibly replicate in blood and cause lethal\nsystemic infection</strong>",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Infection with natural-chirality bacteria spans a vast range of\nclinical manifestations. The course of infectious disease pathology is\nvery challenging to infer from pathophysiological first principles due\nto the inherent complexities and heterogeneity of host-pathogen\ninteractions. Assessing general patterns for the clinical course of any\nmirror bacterial infection would be highly uncertain and speculative.\nNonetheless, given the extent to which mirror bacteria may evade immune\ndefenses (<a href=\"#innate-immune-detection-of-mirror-bacteria-could-be-significantly-impaired\">Section\n4.1–4.3</a>), it appears plausible that if mirror bacteria were to\naccess internal compartments like the blood, this could result in a\nsystemic infection. When uncontrolled, systemic infections from natural\nbacteria are extremely dangerous, regardless of the properties or\nseverity of any localized infections caused by the same species. The\npossibility that exposure to mirror bacteria could lead to similar\nsystemic infections is therefore concerning and warrants further\nassessment."
+        },
+        {
+          "type": "paragraph",
+          "html": "As discussed in <a href=\"#mirror-bacteria-could-plausibly-pass-barrier-surfaces-and-translocate-into-the-bloodstream-and-tissues\">Section\n4.4</a>, commensal bacteria frequently translocate across barrier\nsurfaces. Human blood has suitable abiotic conditions and sufficient\nnutrients to permit the replication of many commensals and other common\nbacteria. However, bacteria within blood must also face immunological\nclearance mechanisms, including the complement system, antibodies, and\nprofessional phagocytes (particularly within the spleen and liver). So\nlong as these mechanisms remove bacteria more rapidly than they can\nreplicate, any translocated bacteria will be removed before they can\nestablish a persistent bacteremia. Thus, bacteremias associated with\npassive translocation are typically transient, subclinical, and\nself-limiting."
+        },
+        {
+          "type": "paragraph",
+          "html": "Many immunological responses to natural bacteria appear unlikely to\nfunction effectively against mirror bacteria (<a href=\"#innate-immune-detection-of-mirror-bacteria-could-be-significantly-impaired\">Section\n4.1–4.3</a>). In addition, as discussed below, conditions within the\nblood could be growth-permissive for many mirror bacteria, including\nmirror strains of generalists such as <em>E. coli</em>. It is therefore\nplausible that mirror bacteria within the bloodstream could replicate\nwithout being checked by normal immunological responses. Absent medical\nintervention, the result would likely be fatal, whether due to a delayed\nsepsis-like response or other changes to the blood."
+        }
+      ],
+      "subsections": [
+        {
+          "id": "generalist-mirror-bacteria-could-plausibly-grow-in-human-blood",
+          "level": 3,
+          "title": "Generalist mirror bacteria could plausibly grow in human blood",
+          "title_html": "Generalist\nmirror bacteria could plausibly grow in human blood",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "The blood is a broadly temperate environment for bacterial growth.\nWith a temperature of roughly 37℃, a pH of 7.4, an oxygen tension of\n75–100 mmHg, and a water activity of 0.99, abiotic conditions within\nblood would be growth-permissive for many common bacteria. This is\nsupported by the fact that many bacterial species can proliferate in\nblood: specialist pathogens, commensals of skin and gut, and\nenvironmental bacteria have all caused transfusion-transmitted bacterial\ninfections (Brecher & Hay, 2005)."
+            },
+            {
+              "type": "paragraph",
+              "html": "A mirror bacterium would likely be at a nutritional disadvantage\nrelative to natural-chirality bacteria. Nevertheless, nutrient\navailability does not appear to be limiting for a sufficiently robust\nmirror bacterium. Human fasting blood glucose is between 3.9 and 5.6 mM\n(Wilkinson <em>et al</em>., 2024), while growth in <em>E. coli</em>\nstrains has been demonstrated at glucose concentrations as low as 0.1 µM\n(Füchslin <em>et al</em>., 2012; Shehata & Marr, 1971). If\nengineered to catabolize natural-chirality glucose, a mirror <em>E.\ncoli</em> or similar generalist bacterium would have an ample carbon\nsource. As discussed in <a href=\"#chapter-1-introduction\">Chapter 1</a>,\na number of other nutrients could also be used as a sole carbon source\nby a mirror <em>E. coli</em> K-12 even absent ᴅ-glucose catabolism, many\nof which are present in blood. These include glycerol, ʟ-alanine, and\nʟ-lactate, which are all found at concentrations of a few hundred\nmicromolar, and acetate, acetoacetate, pyruvate, and succinate, present\nin the tens of micromolar (Psychogios <em>et al</em>., 2011). A mirror\n<em>E. coli</em> could likely already utilize, or quickly adapt to\nutilize, most other ʟ-amino acids (<a href=\"#table-1.2-utilization-of-ʟ--and-ᴅ-amino-acids-by-e.-coli\">Table\n1.2</a>)."
+            },
+            {
+              "type": "paragraph",
+              "html": "Another nutritional challenge would be access to trace metals\nessential for growth. The most important (and best characterized) of\nthese is iron, although the picture for copper, zinc, and manganese\nappears broadly similar (Coverdale <em>et al</em>., 2019; Davidsson\n<em>et al</em>., 1989; Kirsipuu <em>et al</em>., 2020). Iron is poorly\nsoluble, and free iron is particularly scarce in blood due to dedicated\niron-binding proteins such as transferrin (G. J. Anderson & Frazer,\n2017; Raymond <em>et al</em>., 2003). Bacteria can scavenge iron in many\nenvironments by producing siderophores, small organic compounds that\nchelate free iron with extremely high affinity and are subsequently\nreabsorbed by the bacteria. These remain effective in blood as they have\na higher affinity for iron than host iron-binding proteins (Miethke\n& Marahiel, 2007; Wilson <em>et al</em>., 2016). Lipocalin-2, a\nhuman acute phase protein, targets these siderophores to restrict\npathogen access to iron (Flo <em>et al</em>., 2004). Specialized\npathogens can have further adaptations to counteract this in turn,\nincluding producing siderophores that evade lipocalin-2 (Fischbach\n<em>et al</em>., 2006) or possessing alternative means of iron\nacquisition, including scavenging host heme (Contreras <em>et al</em>.,\n2014)."
+            },
+            {
+              "type": "paragraph",
+              "html": "The reversed chirality of mirror bacteria would likely impair their\niron acquisition, although this impairment is of uncertain severity and\nunlikely to apply universally. Mirror-image and natural-chirality\nsiderophores should chelate ferric iron equally well, although the\ndiminished ability to form biofilms would likely deprive mirror bacteria\nof the benefits of cooperative production between individual mirror\nbacteria. Unlike many other immune mechanisms, the broad\nelectrostatic/cation-π binding of lipocalin-2 to a wide variety of\nsiderophores (Clifton <em>et al</em>., 2019) appears to be broadly\nnon-stereospecific, and similar binding of lipocalin-2 to\nnatural-chirality and mirror-image enantiomers of one common\nsiderophore, enterobactin, has been experimentally demonstrated (Abergel\n<em>et al</em>., 2006). However, lipocalin-2 production is induced in\ninfection by recognition of MAMPs by TLRs. Since most TLRs are unlikely\nto recognize mirror MAMPs, it is uncertain whether constitutive\nlipocalin-2 expression would be sufficient during a mirror bacterial\ninfection to inhibit growth. The alternative mechanisms of iron\nacquisition (e.g., scavenging heme) have chiral targets, thus their\nmirror images are unlikely to remain effective."
+            },
+            {
+              "type": "paragraph",
+              "html": "High concentrations of certain ᴅ-amino acids can be toxic to\nnatural-chirality bacteria, as discussed in <a href=\"#box-1.2-could-natural-chirality-molecules-be-toxic-to-mirror-life\">Box\n1.2</a>. Most ᴅ-amino acid toxicities require concentrations much\ngreater than found in blood, but ᴅ-cysteine is an exception that can\ncause growth inhibition of <em>E. coli</em> at micromolar concentrations\nin some environments (Soutourina <em>et al</em>., 2000). ʟ-cysteine and\nʟ-cystine concentrations within serum total around 200 uM (Psychogios\n<em>et al</em>., 2011), and though in blood the majority of cysteine is\nlikely bound to proteins through disulfide bonds (Chawla <em>et\nal</em>., 1984), it is possible that ʟ-cysteine could slow or even\nentirely preclude growth of an unadapted mirror <em>E. coli</em>.\nHowever, even if this were the case, it is plausible that resistance to\ncysteine would arise rapidly (see <a href=\"#box-1.2-could-natural-chirality-molecules-be-toxic-to-mirror-life\">Box\n1.2</a>). The extent to which other mirror bacterial strains would be\nsensitive to ʟ-cysteine is unclear; <em>P. aeruginosa</em>, for\ninstance, shows no inhibition by ᴅ-cysteine even at millimolar\nconcentrations when grown in minimal medium. It is conceivable that\nother compounds in blood could prove toxic to a mirror <em>E. coli</em>\nor other mirror bacteria due to their reversed chirality, but this\nappears unlikely given both the low concentrations of most metabolites\nand the direct evidence that, for many metabolites, their enantiomer is\nnot toxic to natural-chirality <em>E. coli</em>."
+            }
+          ],
+          "subsections": []
+        },
+        {
+          "id": "absent-an-effective-immune-response-mirror-bacteria-could-replicate-unchecked-within-the-bloodstream",
+          "level": 3,
+          "title": "Absent an effective immune response, mirror bacteria could replicate unchecked within the bloodstream",
+          "title_html": "Absent\nan effective immune response, mirror bacteria could replicate unchecked\nwithin the bloodstream",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "The typical fate of bacteria within the blood is clearance rather\nthan proliferation, as natural pathogens are usually rapidly removed by\nthe immune system (Levin & Antia, 2001). However, mirror bacteria\nwould likely evade many of the immunological defenses that clear natural\nbacteria from the blood. As discussed in <a href=\"#innate-immune-detection-of-mirror-bacteria-could-be-significantly-impaired\">Sections\n4.1–4.3</a>, impaired innate immune recognition would considerably\nreduce the efficacy of professional phagocytes, the complement system,\nanti-microbial enzymes and peptides, and antibodies. If mirror bacteria\nare able to replicate faster than they are removed by any remaining\nimmunological defenses, their population within the blood will grow\nexponentially."
+            },
+            {
+              "type": "paragraph",
+              "html": "It is plausible that some clearance processes would retain at least\npartial efficacy, such as the alternative activation pathway of the\ncomplement system against Gram-negative bacteria. If these processes are\nable to remove the mirror bacteria faster than they replicate, this may\nbe protective against some kinds of mirror bacteria, particularly those\nsuffering from nutritional or other major defects that limit their\ngrowth rate. However, given that a wide variety of species can cause\ntransfusion-transmitted bacterial infections (Brecher & Hay, 2005),\nand that people with relatively mild immunodeficiencies or\nimmunosuppression are at much greater risk of systemic infection\n(Chaudhary <em>et al</em>., 2017; Kristinsson <em>et al</em>., 2014), it\nis plausible that sufficiently robust mirror bacteria could establish\ninfection even within healthy adults."
+            },
+            {
+              "type": "paragraph",
+              "html": "If the replication rate for a mirror bacterial strain within blood is\ngreater than immune clearance, the presence of even a single bacterium\nwithin the blood could lead to infection. In practice, any given mirror\nbacterium that reaches the blood might die before it replicates, either\ndue to immune mechanisms that would still function against mirror\nbacteria (e.g., complement) or other processes (e.g., a fatal mutation).\nIf more than a handful of mirror bacteria enter the blood, however, the\nprobability of all of them dying before replicating would be lower, and\ninfection would become more likely. Similar behavior is seen in many\nnatural systemic infections, in which all bacteria present may have\ndescended from as few as a single bacterium (Gerlini <em>et al</em>.,\n2014)."
+            }
+          ],
+          "subsections": []
+        },
+        {
+          "id": "systemic-mirror-bacterial-infection-could-plausibly-be-fatal",
+          "level": 3,
+          "title": "Systemic mirror bacterial infection could plausibly be fatal",
+          "title_html": "Systemic\nmirror bacterial infection could plausibly be fatal",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "If able to establish themselves within the blood, mirror bacterial\nconcentrations would likely grow exponentially as long as they have\naccess to sufficient concentrations of appropriate nutrients. In natural\ninfections, the escalating immune response acts as a negative control on\nbacterial populations, but this is unlikely to function efficiently in a\nmirror bacterial infection for the reasons outlined in <a href=\"#innate-immune-detection-of-mirror-bacteria-could-be-significantly-impaired\">Sections\n4.1–4.3</a>. Instead, the mirror bacterial population could plausibly\ngrow until it severely disrupts vital bodily processes, resulting in\nhost death. In typical natural bacterial infections, death is caused by\nsepsis, which is a severe immunological dysregulation. An analogous\nsevere immune dysregulation appears to be the most plausible cause of\ndeath in a mirror bacterial blood infection. Nevertheless, even if a\nsepsis-like response is avoided, mirror bacteria in high concentrations\nwould likely deplete nutrients, modify blood chemistry, and cause\nphysical disruptions to blood vessels and organs. Each effect is\ncredibly lethal, and the prospect that an uncontrolled mirror bacterial\ninfection in the blood would not have severe health consequences appears\nremote."
+            },
+            {
+              "type": "paragraph",
+              "html": "The usual cause of death from natural systemic bacterial infections\nis sepsis, a life-threatening condition that arises when the host\nresponse to infection injures its own tissues and organs (Singer <em>et\nal</em>., 2016). While the immune system is usually able to protect\nhumans from bacterial infections, if it is unable to do so, mounting\npathogen load and tissue damage drive an extreme, dysregulated, and\nself-reinforcing hyperinflammation response (Jarczak <em>et al</em>.,\n2021)."
+            },
+            {
+              "type": "paragraph",
+              "html": "The pathophysiology of sepsis is incompletely understood. In natural\ninfections, the immune system is activated by many pathways, and it is\nchallenging to determine which mechanisms drive sepsis-associated\npathology (van der Poll <em>et al</em>., 2017). Stimulation of the\nimmune system by MAMPs or DAMPs appears to play an important role in\ndriving the hyperinflammatory state (Delano & Ward, 2016; van der\nPoll <em>et al</em>., 2017; Wiersinga <em>et al</em>., 2014), as does\nfailure of regulatory pathways to limit the induced inflammation (Zhang\n& Ning, 2021). However, no specific MAMP or DAMP signals appear to\nbe strictly necessary for the condition to develop. For example,\ninflammation induced by LPS endotoxin can drive sepsis pathophysiology\nduring Gram-negative bacterial infections (Kellum & Ronco, 2023),\nbut LPS is not present in Gram-positive bacteria and therefore cannot\nplay a role in causing sepsis in those types of infections. A variety of\nsimilar hyperinflammatory conditions—grouped under several overlapping\ndiagnostic labels such as Systemic Inflammatory Response Syndrome,\nCytokine Storm Syndrome, and hypercytokinemia—can occur after widespread\ntissue injury, such as those resulting from burns, trauma, or ischemia\n(Chakraborty & Burns, 2024). This suggests that DAMP production and\nrecognition alone may be sufficient to drive life-threatening\nhyperinflammation, and that DAMPs may play important roles in mediating\nsepsis during infection (Cicchinelli <em>et al</em>., 2024)."
+            },
+            {
+              "type": "paragraph",
+              "html": "Innate immune activation would be expected to be less potent in the\ncontext of a mirror bacterial infection. Compared to natural-chirality\npathogens, mirror bacteria would not natively produce immunogenic\nendotoxin nor virulence factors that would directly damage host tissue;\nas discussed earlier (<a href=\"#innate-immune-detection-of-mirror-bacteria-could-be-significantly-impaired\">Sections\n4.1–4.3</a>), most immunological mechanisms of recognition and response\nto mirror bacteria are likely to be substantially impaired."
+            },
+            {
+              "type": "paragraph",
+              "html": "Nonetheless, we think sepsis-like immune dysregulation would likely\nbe the most plausible ultimate outcome of an uncontrolled mirror\nbacterial infection. Although immune recognition of mirror bacteria is\nexpected to be seriously compromised, mirror bacteria remain likely to\ntrigger some immune responses. The complement system, for example, could\nstill be activated through the alternative (and possibly classical)\npathway, resulting in the release of the anaphylatoxins C3a and C5a.\nBoth promote inflammation and activate professional phagocytes; C5a in\nparticular plays a crucial role in causing many of the life-threatening\neffects of sepsis (Ward, 2010). Cross-reactivity of PRRs with mirror\nmacromolecules, which would likely be very weak individually, could\nplausibly also trigger an immune response if mirror bacterial\nconcentrations expand and the number of those interactions multiplies.\nTissue damage caused either indirectly by the immune system or directly\ndue to other consequences of mirror bacterial infection (e.g., by local\nnutrient depletion, phagocyte cell death, or toxic metabolites) could\nalso trigger PRRs through DAMPs, which could nonspecifically activate\nimmune cells and further drive the sepsis-like response. This residual\nimmunological function triggered by DAMPs may not be competent to clear\na mirror bacterial infection, yet still be sufficient to trigger sepsis\nonce this infection becomes overwhelming."
+            },
+            {
+              "type": "paragraph",
+              "html": "This observation is consistent with the clinical experience of\ninfection in immunocompromised patients: despite the hyperinflammatory\nnature of the condition, these patients are at an increased risk of\ndeveloping sepsis (Greenberg <em>et al</em>., 2018; Kumar <em>et\nal</em>., 2015; Tolsma <em>et al</em>., 2014). Sepsis can occur in\nserious infection across bacterial species, and does not appear to\nrequire any specific pathogen factor. Indeed, to the best of our\nknowledge, overwhelming systemic bacterial infection essentially always\nresults in sepsis, regardless of the patient’s immune status or\nbacterial species, and as noted above, similar hyperinflammatory\nconditions also arise in response to widespread tissue damage even\nabsent infection. While the exact processes that would initiate a\nsepsis-like immunological dysfunction during mirror bacterial infection\nare unclear, it appears plausible that such dysfunction would ultimately\nbe triggered, and the result could resemble sepsis seen in natural\nbacterial infection."
+            },
+            {
+              "type": "paragraph",
+              "html": "Sepsis is lethal through multiple distinct and overlapping\nmechanisms. Generalized inflammation disrupts and damages most organ\nsystems, resulting in progressive multiple organ failure (Gotts &\nMatthay, 2016) and hemodynamic collapse (“septic shock”). Perhaps\nparadoxically, late-stage sepsis also causes immunosuppression, which\ncan lead to the acquisition of secondary hospital-acquired infections\n(Hotchkiss <em>et al</em>., 2013). With intensive supportive care and\nurgent administration of antimicrobial therapy, sepsis mortality is\n25–50% (Cecconi <em>et al</em>., 2018); without treatment, sepsis is\nexpected to be fatal within hours or days."
+            },
+            {
+              "type": "paragraph",
+              "html": "Although a sepsis-like disease appears to be the most plausible\noutcome of mirror bacterial infection, it is difficult to be certain\ngiven the expected properties of mirror bacteria. Another possibility is\nthat the combination of immune evasiveness and limited ability to damage\nhost tissue could result in an unprecedented pathophysiology:\nuncontrolled infection in internal compartments which does not provoke a\nsevere systemic inflammatory response. If proliferation is not\ninterrupted by host death, mirror bacterial populations could grow to\nmuch higher concentrations than typically seen in human or animal models\nof bacterial disease."
+            },
+            {
+              "type": "paragraph",
+              "html": "Extremely high mirror bacterial titers in blood are unlikely to be\nsurvivable, though the exact pathologies that would first manifest are\nunclear. A large mass of metabolically active mirror bacteria would\nconsume the nutrients and oxygen carried by the blood. If able to\ncatabolize ᴅ-glucose, for instance, mirror bacteria would likely grow\nuntil the patient died either from hypoglycemia or hypoxemia, depending\non whether ᴅ-glucose or oxygen was depleted first. Notably, per unit\nmass, the metabolic rate of rapidly growing <em>E. coli</em> is about a\nthousand times higher than that of a resting human (Milo & Phillips,\n2015); since blood is about 10% of body mass, this suggests that death\ncould occur through this mechanism once mirror bacteria reach a few\npercent of blood by mass (or ~10<sup>10</sup> cells/mL for a typical\nbacterium). Even absent ᴅ-glucose catabolism, growth on achiral\nnutrients like glycerol or uric acid, or on other accessible nutrients\nlike ʟ-alanine and other ʟ-amino acids, could eventually lead to mirror\nbacterial populations large enough to cause hypoxemia, among other\nproblems. Waste products from bacterial metabolism could also cause\nfatal disruptions to host clinical chemistry, such as acidosis secondary\nto lactic or acetic acid production."
+            },
+            {
+              "type": "paragraph",
+              "html": "Very high concentrations of mirror bacteria could also cause physical\ndisruptions. Because mirror bacteria would adhere at most very weakly to\nthe blood vessel endothelium and (in most cases) are unlikely to form\nbiofilms, such physical disruptions would be unlikely to occur until\nmirror bacterial concentrations become very high. At that point, mirror\nbacteria could thicken blood and disrupt its flow, leading to a\nhyperviscosity syndrome (Kwaan & Bongu, 1999). The coagulation\ncascade is finely controlled, so alterations in viscosity, dilution of\ncoagulation proteins, and other gross changes secondary to high\nbacterial concentrations could predispose patients to hemorrhage,\nclotting, or both simultaneously. Mirror bacteria may also diffuse from\nblood and lymphatics into the end-organs they supply, disrupting their\ntissues and impairing their functions."
+            },
+            {
+              "type": "paragraph",
+              "html": "It is not inconceivable that a systemic mirror bacterial infection\ncould stabilize if key nutrients are depleted, although this appears\nunlikely. Significant depletion of oxygen or glucose from the blood is\nlikely to kill the patient. For a mirror bacterium that cannot consume\nᴅ-glucose, depletion of achiral and other available nutrients within\nblood would still plausibly be harmful. Even if growth were\nnutrient-limited, the infection would only be benign if mirror bacterial\nconcentrations were kept sufficiently low to avoid an adverse immune\nresponse. Even if such stabilization occurred, the equilibrium could be\nbrittle over longer time periods, with later physiological disturbances\n(e.g., age, intercurrent illness, or even long-term harms caused by a\nstable mirror bacterial population) pushing the host back into the\nuncontrolled growth regime."
+            },
+            {
+              "type": "paragraph",
+              "html": "To summarize, it appears plausible that unchecked mirror bacterial\nreplication could result in a severe and dysregulated inflammatory\nresponse similar to sepsis. Even if this was avoided, mirror bacterial\ninfection would probably cause severe harm through a number of other\nmechanisms. For example, low but chronic levels of inflammation, even if\nthey do not eventually amount to hyperinflammation, are associated with\na plethora of health issues ranging from cardiovascular disease to\nautoimmune disorders and cancer (Furman et al., 2019). The human body is\ncomplex, and accurately predicting the consequences of a putative mirror\nbacterial infection is impossible. Nevertheless, if infection is\nestablished and effective treatment is not available (as discussed in <a href=\"#chapter-5-medical-countermeasures\">Chapter 5</a>), the prognosis\nwould likely be bleak."
+            }
+          ],
+          "subsections": []
+        },
+        {
+          "id": "the-unusual-properties-of-mirror-bacteria-could-create-significant-potential-for-misuse",
+          "level": 3,
+          "title": "The unusual properties of mirror bacteria could create significant potential for misuse",
+          "title_html": "The\nunusual properties of mirror bacteria could create significant potential\nfor misuse",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "As described throughout this chapter, mirror bacteria would have very\nunusual properties as potential human pathogens. A mirror bacterium\nwould have unprecedented immune evasion capabilities because of\nincompatibilities between its mirror macromolecules and\nnatural-chirality host defenses. On the other hand, mirror bacteria\nwould, by default, lack specific adhesion mechanisms and other virulence\nfactors. Even if present, these would mostly be dysfunctional, as they\nrely on chiral interactions with host proteins. For any given mirror\nbacterium, it is difficult to know whether immune evasion would suffice\nto overcome other disadvantages. Nevertheless, it appears plausible that\nsufficiently robust mirror bacteria, such as mirror <em>E. coli</em>\nstrains, could prove to be virulent pathogens without any additional\nengineering."
+            },
+            {
+              "type": "paragraph",
+              "html": "If robust biocontainment measures are engineered into mirror\nbacteria, it should be possible to create specific strains that pose\nminimal risks to human health (see <a href=\"#creating-robustly-biosecure-mirror-bacteria-is-not-feasible\">Section\n3.3</a>). However, the fact that, absent robust biocontainment, a\ngeneralist mirror bacterium might be a novel and highly dangerous\npathogen is very concerning from both a biosafety and, particularly, a\nbiosecurity standpoint. Even if the immune system or other barriers\nprovide some level of protection against lethal mirror bacterial\ninfection, invasive mirror bacteria would rapidly evolve (see <a href=\"#invasive-mirror-bacteria-could-rapidly-evolve-and-diversify\">Section\n8.4</a>) and could therefore become increasingly dangerous to\nhumans."
+            },
+            {
+              "type": "paragraph",
+              "html": "A malicious actor could intentionally seek to increase the harms\ncaused by a mirror bacterium by providing it with abilities that are\nunlikely to evolve through natural selection. Many methods for\nincreasing virulence might be technically straightforward if mirror\nbacteria were created and became generally accessible. Describing\npotential “weaponization” steps in more detail (beyond merely disabling\nbiocontainment measures) is outside the scope of this report.\nNevertheless, it appears plausible that even if some biological barriers\nmake mirror bacterial infection by, for example, a mirror <em>E.\ncoli</em> much less likely than anticipated here, these deficiencies\ncould be circumvented by a sufficiently skilled malicious actor. With\ncontinued progress in biotechnology in general, and mirror biology more\nspecifically, it would become progressively easier for a malicious actor\nto bridge the gap between a “safe” mirror bacterium and a highly\npathogenic one."
+            }
+          ],
+          "subsections": []
+        }
+      ]
+    }
+  ],
+  "kind": "chapter",
+  "number": 4
+}

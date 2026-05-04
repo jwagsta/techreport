@@ -1,0 +1,359 @@
+{
+  "schemaVersion": "1.0",
+  "generatedAt": "2026-05-03T00:00:00Z",
+  "notes": "Candidate headshot URLs for the 20 reviewers of the Mirror Bacteria Technical Report. Sources prioritized: Wikimedia Commons (CC), then university faculty/lab pages, institutional press, and personal websites. Direct image URLs were extracted from each source's HTML where possible; for some pages the CMS protected the asset (403/SSL) and only the source page URL is provided so a user can grab the image manually. URLs are best-effort and some institutional CDNs append cache tokens that may expire.",
+  "reviewers": [
+    {
+      "name": "Rocco Casagrande",
+      "candidates": [
+        {
+          "src": "https://res.cloudinary.com/csisideaslab/image/upload/v1537475623/health-commission/Casagrande_Rocco.jpg",
+          "source": "https://healthsecurity.csis.org/authors/rocco-casagrande/",
+          "license": "CSIS Commission on Strengthening America's Health Security profile",
+          "note": "head & shoulders, professional"
+        },
+        {
+          "src": null,
+          "source": "https://www.gryphonscientific.com/our-staff/rocco-casagrande/",
+          "license": "company staff page (Gryphon Scientific, now part of Deloitte)",
+          "note": "fetch was blocked at the time of collection; staff page typically carries a portrait — pull manually"
+        }
+      ]
+    },
+    {
+      "name": "Matthew Wook Chang",
+      "candidates": [
+        {
+          "src": "https://medicine.nus.edu.sg/bch/wp-content/uploads/sites/13/2020/01/Matthew-Chang.2025.1.jpeg",
+          "source": "https://medicine.nus.edu.sg/bch/faculty/chang-matthew/",
+          "license": "university faculty page (NUS Yong Loo Lin School of Medicine, Biochemistry)",
+          "note": "head & shoulders, professional"
+        },
+        {
+          "src": null,
+          "source": "https://syncti.org/leadership/",
+          "license": "institutional leadership page (Singapore Consortium for Synthetic Biology)",
+          "note": "leadership page — pull manually if direct extraction blocked"
+        }
+      ]
+    },
+    {
+      "name": "George M. Church",
+      "candidates": [
+        {
+          "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/George_Church_343263_by_christopher_michel_10-11-23.jpg/250px-George_Church_343263_by_christopher_michel_10-11-23.jpg",
+          "source": "https://en.wikipedia.org/wiki/George_Church_(geneticist)",
+          "license": "Wikimedia Commons (Christopher Michel, 2023; check file page for exact CC license)",
+          "note": "head & shoulders, 2023 portrait"
+        },
+        {
+          "src": "https://upload.wikimedia.org/wikipedia/commons/c/cf/George_church.jpg",
+          "source": "https://commons.wikimedia.org/wiki/Category:George_Church",
+          "license": "Wikimedia Commons (verify license on file page)",
+          "note": "older head & shoulders portrait"
+        },
+        {
+          "src": "https://genetics.hms.harvard.edu/sites/default/files/profile-photos/george%20church.jpeg",
+          "source": "https://genetics.hms.harvard.edu/faculty-staff/george-church",
+          "license": "university faculty page (Harvard Medical School Genetics)",
+          "note": "head & shoulders, faculty headshot"
+        }
+      ]
+    },
+    {
+      "name": "Gitta L. Coaker",
+      "candidates": [
+        {
+          "src": "https://www.coakerlab.org/uploads/8/4/2/3/8423116/published/gitta-2022-headshot.jpg?1672689424",
+          "source": "https://www.coakerlab.org/contact-us.html",
+          "license": "lab website (Coaker Laboratory, UC Davis)",
+          "note": "head & shoulders, professional 2022 headshot"
+        },
+        {
+          "src": null,
+          "source": "https://plantpathology.ucdavis.edu/people/gitta-coaker",
+          "license": "university faculty page (UC Davis Plant Pathology)",
+          "note": "fetch returned 403 at time of collection; faculty page typically carries a portrait — pull manually"
+        }
+      ]
+    },
+    {
+      "name": "Jeffery L. Dangl",
+      "candidates": [
+        {
+          "src": "https://bio.unc.edu/wp-content/uploads/sites/353/2011/06/dangl-jeff-200X250.jpg",
+          "source": "https://bio.unc.edu/faculty-profile/dangl/",
+          "license": "university faculty page (UNC Department of Biology)",
+          "note": "head & shoulders, professional"
+        },
+        {
+          "src": null,
+          "source": "https://www.hhmi.org/scientists/jeffery-l-dangl",
+          "license": "institutional profile (Howard Hughes Medical Institute)",
+          "note": "HHMI investigator profile — pull manually for additional portrait"
+        }
+      ]
+    },
+    {
+      "name": "Drew Endy",
+      "candidates": [
+        {
+          "src": "https://profiles.stanford.edu/proxy/api/cap/profiles/10548/resources/profilephoto/350x350.1592068620265.jpg",
+          "source": "https://profiles.stanford.edu/drew-endy",
+          "license": "university faculty profile (Stanford CAP)",
+          "note": "head & shoulders, 350x350 official Stanford profile photo"
+        }
+      ]
+    },
+    {
+      "name": "Jeff Gore",
+      "candidates": [
+        {
+          "src": "https://physics.mit.edu/wp-content/uploads/2021/03/20180514_Gore-578x410-c-default.jpg",
+          "source": "https://physics.mit.edu/faculty/jeff-gore/",
+          "license": "university faculty page (MIT Physics)",
+          "note": "head & shoulders, MIT faculty photo"
+        }
+      ]
+    },
+    {
+      "name": "Chuan He",
+      "candidates": [
+        {
+          "src": "https://chemistry.uchicago.edu/sites/default/files/styles/faculty_image/public/2024-12/chuan_he.jpg?itok=eqfq03fk",
+          "source": "https://chemistry.uchicago.edu/faculty/chuan-he",
+          "license": "university faculty page (UChicago Chemistry)",
+          "note": "head & shoulders, professional"
+        },
+        {
+          "src": null,
+          "source": "https://www.hhmi.org/scientists/chuan-he",
+          "license": "institutional profile (Howard Hughes Medical Institute)",
+          "note": "HHMI investigator profile — pull manually for additional portrait"
+        }
+      ]
+    },
+    {
+      "name": "Sheng Yang He",
+      "candidates": [
+        {
+          "src": "https://scholars.duke.edu/profile-images/full/1031869.jpg",
+          "source": "https://medschool.duke.edu/profile/sheng-yang-he",
+          "license": "university scholar profile (Duke Scholars / School of Medicine)",
+          "note": "head & shoulders, professional"
+        },
+        {
+          "src": null,
+          "source": "https://www.thehelab.org/people",
+          "license": "lab website (He Lab, Duke)",
+          "note": "lab people page — pull manually if needed"
+        }
+      ]
+    },
+    {
+      "name": "Kenya Honda",
+      "candidates": [
+        {
+          "src": null,
+          "source": "https://jkic.med.keio.ac.jp/en/member/15.html",
+          "license": "institutional profile (Keio Joint Research Center for the Future of Medicine)",
+          "note": "fetch failed (SSL); page typically displays a portrait — pull manually"
+        },
+        {
+          "src": null,
+          "source": "https://www.microbiolimmunol.med.keio.ac.jp/",
+          "license": "lab website (Honda Lab, Keio University Microbiology & Immunology)",
+          "note": "lab homepage — manual extraction required"
+        },
+        {
+          "src": null,
+          "source": "https://bio2q.keio.ac.jp/",
+          "license": "institutional center (Keio Bio2Q, Honda is Center Director)",
+          "note": "Bio2Q center page often carries a director portrait"
+        }
+      ]
+    },
+    {
+      "name": "Wilhelm T. S. Huck",
+      "candidates": [
+        {
+          "src": "https://profilepage.ru.nl/profileservice/rest/1.0//profilephoto/509289?timestamp=1777468652&user=509289&hash=21c1414dc936808f7e480357aee64c9a6c00ce367b325b974a5e006932c53a22&secure=false",
+          "source": "https://www.ru.nl/en/people/huck-w",
+          "license": "university faculty page (Radboud University)",
+          "note": "head & shoulders, official faculty photo (URL contains a hash — may expire)"
+        },
+        {
+          "src": null,
+          "source": "https://www.hucklab.com/people/the-group/",
+          "license": "lab website (Huck Group)",
+          "note": "lab group page — pull manually for an alternative portrait"
+        }
+      ]
+    },
+    {
+      "name": "Jonathan C. Kagan",
+      "candidates": [
+        {
+          "src": "https://kaganlab.com/wp-content/uploads/2023/08/kagan_jonathan-headshot-cropped-2.jpg",
+          "source": "https://kaganlab.com/people/",
+          "license": "lab website (Kagan Lab)",
+          "note": "head & shoulders, cropped headshot"
+        },
+        {
+          "src": "https://www.childrenshospital.org/sites/default/files/styles/max_325x325/public/import/headshot/2325/b83c0c50-c411-47be-a006-dae3b0469234_0.jpg.webp?itok=BKVRghHQ",
+          "source": "https://research.childrenshospital.org/researchers/jonathan-kagan",
+          "license": "institutional profile (Boston Children's Hospital Research)",
+          "note": "head & shoulders, 325x325 official researcher photo (.webp)"
+        }
+      ]
+    },
+    {
+      "name": "Michael S. Kay",
+      "candidates": [
+        {
+          "src": "https://kay.biochem.utah.edu/faculty/kay/KayPhoto2018.jpg",
+          "source": "https://kay.biochem.utah.edu/",
+          "license": "lab website (Kay Lab, University of Utah Biochemistry)",
+          "note": "head & shoulders, 2018 lab portrait"
+        },
+        {
+          "src": null,
+          "source": "https://medicine.utah.edu/faculty/michael-s-kay",
+          "license": "university faculty page (University of Utah School of Medicine)",
+          "note": "fetch returned 403 at time of collection; page typically carries a portrait — pull manually"
+        }
+      ]
+    },
+    {
+      "name": "Simon A. Levin",
+      "candidates": [
+        {
+          "src": null,
+          "source": "https://eeb.princeton.edu/people/simon-levin",
+          "license": "university faculty page (Princeton EEB)",
+          "note": "fetch returned 403; faculty page carries a portrait — pull manually"
+        },
+        {
+          "src": null,
+          "source": "https://slevin.princeton.edu/people/simon-levin-phd",
+          "license": "lab website (Levin Lab, Princeton)",
+          "note": "lab profile page — pull manually"
+        },
+        {
+          "src": null,
+          "source": "https://en.wikipedia.org/wiki/Simon_A._Levin",
+          "license": "Wikipedia article (check infobox image for Wikimedia Commons file)",
+          "note": "Wikipedia page exists; infobox portrait may be CC-licensed — manually inspect"
+        }
+      ]
+    },
+    {
+      "name": "Robert D. Miller",
+      "candidates": [
+        {
+          "src": "https://biology.unm.edu/people/faculty/photo/rdmiller.jpg",
+          "source": "https://biology.unm.edu/people/faculty/profile/miller_robert-d.html",
+          "license": "university faculty page (UNM Department of Biology)",
+          "note": "head & shoulders, faculty headshot (URL inferred from relative path)"
+        },
+        {
+          "src": null,
+          "source": "https://ceti.unm.edu/our-members/profile/rob-miller.html",
+          "license": "institutional center page (UNM Center for Evolutionary & Theoretical Immunology)",
+          "note": "center member page — pull manually for an alternative portrait"
+        }
+      ]
+    },
+    {
+      "name": "John H. Rex",
+      "candidates": [
+        {
+          "src": "https://amr.solutions/wp-content/uploads/2020/01/john-rex-photo.jpeg",
+          "source": "https://amr.solutions/about/",
+          "license": "personal/professional website (AMR.Solutions)",
+          "note": "head & shoulders, professional"
+        }
+      ]
+    },
+    {
+      "name": "Daniel Simberloff",
+      "candidates": [
+        {
+          "src": null,
+          "source": "https://eeb.utk.edu/people/daniel-simberloff/",
+          "license": "university faculty page (UT Knoxville EEB)",
+          "note": "fetch failed (SSL); faculty page typically carries a portrait — pull manually"
+        },
+        {
+          "src": null,
+          "source": "https://en.wikipedia.org/wiki/Daniel_Simberloff",
+          "license": "Wikipedia article (check infobox image for Wikimedia Commons file)",
+          "note": "Wikipedia page exists; manually inspect infobox for a CC-licensed portrait"
+        },
+        {
+          "src": null,
+          "source": "https://www.islandconservation.org/team/daniel-simberloff/",
+          "license": "NGO team page (Island Conservation)",
+          "note": "team profile page — pull manually for an alternative portrait"
+        }
+      ]
+    },
+    {
+      "name": "James M. Tiedje",
+      "candidates": [
+        {
+          "src": "https://canr.msu.edu/contentAsset/image/e30fa2912ec28268d698858950c50b3e/fileAsset/filter/Jpeg,Resize,Crop/jpeg_q/80/resize_w/400/crop_x/0/crop_y/45/crop_w/400/crop_h/400",
+          "source": "https://www.canr.msu.edu/people/james_m_tiedje",
+          "license": "university faculty page (MSU College of Agriculture & Natural Resources)",
+          "note": "head & shoulders, 400x400 cropped faculty portrait"
+        },
+        {
+          "src": null,
+          "source": "https://en.wikipedia.org/wiki/James_Tiedje",
+          "license": "Wikipedia article (check infobox image for Wikimedia Commons file)",
+          "note": "Wikipedia page exists; manually inspect infobox for a CC-licensed portrait"
+        }
+      ]
+    },
+    {
+      "name": "Paul E. Turner",
+      "candidates": [
+        {
+          "src": "https://eeb.yale.edu/sites/default/files/styles/people_thumbnail/public/pictures/picture-58-1519738128.jpg?itok=TH2GULCZ",
+          "source": "https://eeb.yale.edu/people/faculty/paul-turner",
+          "license": "university faculty page (Yale EEB)",
+          "note": "head & shoulders, faculty thumbnail"
+        },
+        {
+          "src": null,
+          "source": "https://medicine.yale.edu/profile/paul-turner/",
+          "license": "university faculty profile (Yale School of Medicine)",
+          "note": "profile page links to a 'Hi-Res Photo' download — pull manually for higher resolution"
+        },
+        {
+          "src": null,
+          "source": "https://en.wikipedia.org/wiki/Paul_E._Turner",
+          "license": "Wikipedia article (check infobox image for Wikimedia Commons file)",
+          "note": "Wikipedia page exists; manually inspect infobox for a CC-licensed portrait"
+        }
+      ]
+    },
+    {
+      "name": "J. Craig Venter",
+      "candidates": [
+        {
+          "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Craigventer2.jpg/250px-Craigventer2.jpg",
+          "source": "https://en.wikipedia.org/wiki/Craig_Venter",
+          "license": "Wikimedia Commons (verify CC license on file page)",
+          "note": "head & shoulders, 2007 portrait"
+        },
+        {
+          "src": "https://www.jcvi.org/system/files/assets/bio/xventer-craig.jpg.pagespeed.ic.uvww__qELA.jpg",
+          "source": "https://www.jcvi.org/about/j-craig-venter",
+          "license": "institutional bio page (J. Craig Venter Institute)",
+          "note": "head & shoulders, official JCVI portrait"
+        }
+      ]
+    }
+  ]
+}

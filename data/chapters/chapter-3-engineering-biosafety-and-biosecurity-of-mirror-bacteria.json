@@ -1,0 +1,271 @@
+{
+  "id": "chapter-3-engineering-biosafety-and-biosecurity-of-mirror-bacteria",
+  "level": 1,
+  "title": "Engineering, Biosafety, and Biosecurity of Mirror Bacteria",
+  "title_html": "Chapter\n3: Engineering, Biosafety, and Biosecurity of Mirror Bacteria",
+  "blocks": [
+    {
+      "type": "paragraph",
+      "html": "<em>Katarzyna P. Adamala<sup>1</sup>, Yizhi Cai<sup>2</sup>, Kevin M.\nEsvelt<sup>3</sup>, John I. Glass<sup>4</sup>, Farren J.\nIsaacs<sup>5,6,7</sup>,</em>"
+    },
+    {
+      "type": "paragraph",
+      "html": "<em>Sebastian B. Oehm<sup>4,8</sup>, Jaspreet\nPannu<sup>9,10,11</sup>, Jack W. Szostak<sup>12</sup></em>"
+    },
+    {
+      "type": "paragraph",
+      "html": "As outlined in subsequent chapters, due to their opposite chirality,\nsufficiently robust mirror bacteria could plausibly evade immune\nresponses and resist predation, allowing them to infect an unusually\nwide range of multicellular organisms and invade diverse environments.\nDepending on the path through which they are created, the first mirror\ncells might not be very robust—perhaps more akin to a synthetic minimal\ncell than a natural bacterium. However, it would likely be relatively\nstraightforward to convert a fragile mirror bacterium into the mirror\nimage of a robustly growing natural-chirality bacterium, yielding a\nrobust mirror bacterium. This distinguishes mirror bacteria from other\ntypes of highly engineered bacteria or synthetic cells, where the\ncreation of fast- and robust-growing strains is often challenging.\nThough biocontainment methods could reduce risks from mirror bacteria,\nthese safeguards are susceptible to human error or could be undone\nthrough genetic engineering. Because fragile and biocontained mirror\nbacteria could be converted into more dangerous versions by a nefarious\nor reckless actor, the creation of any mirror bacterium would create a\nmajor security risk."
+    },
+    {
+      "type": "paragraph",
+      "html": "In <a href=\"#the-creation-of-any-mirror-bacterium-could-enable-the-generation-of-diverse-mirror-bacterial-strains-and-species-and-their-modification-by-routine-genetic-engineering\">Section\n3.1</a>, we discuss how any mirror bacterium could be used as a starting\npoint to generate additional mirror bacterial strains and species, and\nhow these mirror bacteria could be augmented using routine genetic\nengineering. While creating the first mirror bacterium would be a major\nundertaking, subsequent modifications could be accomplished using\nstandard genetic engineering techniques. Using these methods, a fragile\nmirror bacterium could be converted into a strain that grows robustly\nand further enhanced—for example, by engineering its ability to\nmetabolize natural-chirality nutrients."
+    },
+    {
+      "type": "table",
+      "html": "<table>\n<colgroup>\n<col style=\"width: 100%\"/>\n</colgroup>\n<thead>\n<tr>\n<th><p><em>Authors are listed in alphabetical order. Affiliations:</em>\n<sup>1</sup> Department of Genetics, Cell Biology and Development,\nUniversity of Minnesota, Minneapolis, Minnesota, USA; <sup>2</sup>\nManchester Institute of Biotechnology, University of Manchester,\nManchester, UK; <sup>3</sup> Media Laboratory, Massachusetts Institute\nof Technology, Cambridge, Massachusetts, USA; <sup>4</sup> J. Craig\nVenter Institute, La Jolla, California, USA; <sup>5</sup> Department of\nMolecular, Cellular, and Developmental Biology, Yale University, New\nHaven, Connecticut, USA; <sup>6</sup> Systems Biology Institute, Yale\nUniversity, West Haven, Connecticut, USA;</p>\n<p><sup>7</sup> Department of Biomedical Engineering, Yale University,\nNew Haven, Connecticut, USA; <sup>8</sup> Trinity College Cambridge,\nUniversity of Cambridge, Cambridge, UK; <sup>9</sup> Center for Health\nSecurity, Bloomberg School of Public Health, Johns Hopkins University,\nBaltimore, Maryland, USA; <sup>10</sup> Department of Health Policy,\nStanford School of Medicine, Stanford University, Stanford, California,\nUSA; <sup>11</sup> Department of Medicine, Stanford School of Medicine,\nStanford University, Stanford, California, USA; <sup>12</sup> Howard\nHughes Medical Institute, Department of Chemistry, The University of\nChicago, Chicago, Illinois, USA</p></th>\n</tr>\n</thead>\n<tbody>\n</tbody>\n</table>",
+      "kind": "affiliations"
+    },
+    {
+      "type": "paragraph",
+      "html": "In <a href=\"#biocontainment-approaches-might-reduce-accident-risk-but-they-would-face-challenges\">Section\n3.2</a>, we discuss how physical and biological biocontainment\napproaches might reduce the risk of an inadvertent release of mirror\nbacteria. Making the growth and survival of mirror bacteria dependent\nupon multiple molecules not found in nature would reduce the chance of\nan accidental release. Given the serious potential harms of such a\nrelease, however, the safety standards for mirror bacteria would need to\nbe substantially greater than those applied to natural-chirality\norganisms."
+    },
+    {
+      "type": "paragraph",
+      "html": "In <a href=\"#creating-robustly-biosecure-mirror-bacteria-is-not-feasible\">Section\n3.3</a>, we consider the biosecurity implications of mirror bacteria. We\nfind that, while the initial creation of a mirror bacterium would be\ntechnically challenging, the conversion of a fragile or biocontained\nmirror bacterium into a potentially dangerous mirror bacterium could be\naccomplished with relative ease, posing serious security concerns."
+    }
+  ],
+  "subsections": [
+    {
+      "id": "the-creation-of-any-mirror-bacterium-could-enable-the-generation-of-diverse-mirror-bacterial-strains-and-species-and-their-modification-by-routine-genetic-engineering",
+      "level": 2,
+      "title": "3.1 The creation of any mirror bacterium could enable the generation of diverse mirror bacterial strains and species and their modification by routine genetic engineering",
+      "title_html": "<strong>3.1\nThe creation of any mirror bacterium could enable the generation of\ndiverse mirror bacterial strains and species and their modification by\nroutine genetic engineering</strong>",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "As outlined in <a href=\"#chapter-2-pathways-to-mirror-life\">Chapter\n2</a>, the creation of a mirror bacterium would be a highly challenging\nundertaking. Depending on its path to construction, the first mirror\nbacterium might be intrinsically fragile, metabolically limited, and\nhampered by genetic artifacts of the assembly process. Such an organism\nwould likely have insufficient robustness and fitness for invasion of\nthe environment and might require numerous mirror-image nutrients that\nare rare or absent in nature. However, compared with the initial\ncreation of a mirror bacterium, the transformation of such a bacterium\ninto more robust mirror bacterial strains or species would be notably\nless challenging. In addition, mirror bacteria could be augmented with\nnew capabilities through genetic engineering, including the ability to\ndigest natural-chirality sugars."
+        },
+        {
+          "type": "paragraph",
+          "html": "Theoretical applications of mirror bacteria in industry and medicine\n(<a href=\"#box-3.1-some-potential-applications-of-mirror-bacteria-would-require-high-risk-strains\">Box\n3.1</a>) would require robustly growing mirror bacterial strains and\nwould benefit from strains capable of digesting natural-chirality\nnutrients. Absent concerns regarding potential safety and security\nrisks, these applications would create incentives for the development of\nsuch mirror bacteria."
+        }
+      ],
+      "subsections": [
+        {
+          "id": "existing-techniques-for-engineering-bacteria-could-be-adapted-to-mirror-bacteria",
+          "level": 3,
+          "title": "Existing techniques for engineering bacteria could be adapted to mirror bacteria",
+          "title_html": "Existing\ntechniques for engineering bacteria could be adapted to mirror\nbacteria",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "Because mirror biology and natural-chirality biology would behave\nsymmetrically, most tools and techniques developed for genetic\nengineering of natural-chirality bacteria could be adapted for mirror\nbacteria without further development or requirements beyond access to\nsynthetic mirror DNA, the mirror bacterium of interest, and a small set\nof mirror protein reagents for more complex manipulations. While\naccessibility decreases as the required changes become more numerous and\ncomplex, simple changes—such as providing antibiotic resistance and\nengineering a mirror bacterium to feed on natural-chirality nutrients\nlike ᴅ-glucose—would be straightforward for individuals with basic\nmolecular biology training."
+            },
+            {
+              "type": "paragraph",
+              "html": "Scientists have been genetically engineering bacteria for decades and\nhave developed powerful tools for doing so. Notable successes include\nthe production of recombinant proteins such as insulin (Goeddel <em>et\nal</em>., 1979; Overton, 2014), the production of valuable small\nmolecules by fermentation"
+            },
+            {
+              "type": "box",
+              "id": "box-3.1-some-potential-applications-of-mirror-bacteria-would-require-high-risk-strains",
+              "label": "Box 3.1",
+              "title": "Some potential applications of mirror bacteria would require high-risk strains",
+              "blocks": [
+                {
+                  "type": "paragraph",
+                  "html": "The initial development of mirror bacteria may be driven by academic\ninterest rather than interest in any specific application. Nevertheless,\nmirror bacteria could have potential applications in both industry and\nmedicine if not precluded by the serious biosafety and biosecurity risks\noutlined in this report."
+                },
+                {
+                  "type": "paragraph",
+                  "html": "Mirror bacteria could be used to <strong>manufacture mirror\nbiomolecules</strong> such as mirror-image nucleic acids or mirror-image\nproteins. These mirror biomolecules can have applications in drug\ndiscovery and beyond, as discussed in <a href=\"#chapter-2-pathways-to-mirror-life\">Chapter 2</a>. Mirror bacteria\nwould provide a straightforward route to manufacturing these molecules\nat scale, similar to the production of recombinant natural-chirality DNA\nor natural-chirality proteins in natural-chirality bacteria. This would\nrequire the creation of a mirror bacterium (like <em>E. coli</em> or\n<em>B. subtilis</em>) that grows robustly and is fit enough to pay the\nmetabolic costs of biomolecule production. Such strains would benefit\nfrom being able to metabolize natural-chirality nutrients such as\nᴅ-glucose, as growth on natural-chirality media would be substantially\ncheaper than creating synthetic media with mirror nutrients. Hence, even\nif biocontained through other means, such bioproduction strains would be\nclosely related to mirror bacterial species that could potentially act\nas pathogens and spread uncontrollably in the environment."
+                },
+                {
+                  "type": "paragraph",
+                  "html": "There are several alternatives to mirror bacterium-based manufacture\nof mirror biomolecules. Mirror biomolecules can be made at small to\nmedium scale using existing chemical synthesis approaches (Harrison\n<em>et al</em>., 2023), and future research might improve the\naccessibility, scale, and cost-effectiveness of these methods (Tan\n<em>et al</em>., 2020). In the future, scientists could develop methods\nfor mirror biomolecule synthesis using <em>in vitro</em> enzymatic\napproaches (using natural-chirality or mirror enzymes) that do not rely\non self-replicating cells (Weidmann <em>et al</em>., 2019). Scientists\nmight also succeed in engineering natural-chirality bacteria to produce\nmirror biomolecules (de la Torre & Chin, 2021)."
+                },
+                {
+                  "type": "paragraph",
+                  "html": "More speculatively, mirror bacteria might be engineered to act as\n<strong>immune-invisible live cell therapeutics.</strong> The increasing\nability to genetically engineer bacteria has led to increased interest\nin using bacteria as live ‘smart’ therapeutics that could seek out a\nspecific environment within a human patient, sense the disease state,\ncompute an appropriate response, and produce effector molecules\ncorrespondingly to treat the disease (Riglar & Silver, 2018). Mirror\nbacteria might present an interesting chassis for live cell\ntherapeutics, as they are expected to have greatly reduced recognition\nby mammalian immune systems (see <a href=\"#chapter-4-risks-to-human-health\">Chapter 4</a>). If growth of the\nmirror bacteria could be made dependent on one or several unnatural\nmetabolites—i.e., a synthetic auxotrophy—their growth within a human\nhost could be precisely controlled (Mandell <em>et al</em>., 2015).\nHowever, therapeutic applications are generally incompatible with\nphysical containment or access control. A therapeutic mirror bacterial\nstrain would need to be capable of robust growth within a human host,\nand hence be close to highly dangerous forms. Natural-chirality microbes\nthat exhibit reduced immune reactions could represent alternative\nchassis for live-cell therapeutic applications that pose much lower\nbiosafety and biosecurity concerns."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "html": "(Nielsen & Keasling, 2016; Ro <em>et al</em>., 2006), the\ndetection of specific chemical compounds (Chiang & Hasty, 2023;\nRiglar & Silver, 2018), and the <em>in situ</em> production of\ntherapeutics to ameliorate disease (Riglar & Silver, 2018)."
+            },
+            {
+              "type": "paragraph",
+              "html": "Some bacteria are most readily engineered by introducing\nplasmids—extrachromosomal circular DNA that can replicate independently\nfrom the bacterial genome—while others readily integrate introduced DNA\nsequences into their genomes. Researchers can rapidly generate suitable\ngenes through chemical DNA synthesis and <em>in vitro</em> assembly\nmethods, which can then be transformed into bacterial hosts within a few\ndays. The process is routinely practiced by biology undergraduates and,\nin some cases, high school students (Gronvall, 2016; Jackson <em>et\nal</em>., 2019). It can also be done with minimal laboratory equipment\nby citizen scientists and biohackers (Gronvall, 2016)."
+            },
+            {
+              "type": "paragraph",
+              "html": "The synthesis of mirror genes and the transformation of mirror\nbacteria could be relatively straightforward for anyone with access to\nsynthetic mirror DNA and—for larger constructs requiring assembly—a\nsmall set of mirror enzymes. Mirror DNA is already commercially\navailable, although it is more expensive than normal DNA. While mirror\nenzymes are currently only available in a small handful of laboratories,\nthey would likely be much more accessible by the time the first mirror\ncells are created. Alternatively, advances in protein engineering could\nallow natural-chirality enzymes to perform the required functions in the\nfuture. Transformation methods such as electroporation or heat shock are\nnot sensitive to chirality and could be used to introduce synthetic\nmirror DNA into a mirror bacterium in a straightforward manner."
+            },
+            {
+              "type": "paragraph",
+              "html": "Some applications in synthetic biology require more extensive\nengineering of the bacterial genome. In model organisms such as\n<em>Escherichia coli,</em> numerous methods permitting the rapid and\nfacile editing of bacterial genomes have been developed using tools such\nas recombineering (Sharan <em>et al</em>., 2009; Wang <em>et al</em>.,\n2009) or CRISPR-Cas9 (Teng <em>et al</em>., 2024). In extreme cases\ninvolving thousands of changes, it can be more economical to synthesize\nthe entire genome from scratch, as discussed in the following section.\nMany of these techniques require only the introduction of specific\nplasmids or synthetic DNA and hence could be adapted to mirror bacteria\nin a straightforward manner with access to synthetic mirror DNA.\nHowever, more complex manipulations may require skilled practitioners,\ngreater quantities of synthetic DNA, or additional enzymes."
+            },
+            {
+              "type": "paragraph",
+              "html": "Finally, bacterial fitness can be improved and bacteria can be\nadapted to desired environments by adaptive laboratory evolution, which\nwould work equally well for natural-chirality or mirror bacteria. In\nthis process, scientists continuously passage a bacterial strain under\nselective conditions of their choice, such as a specific growth medium\ncontaining unusual nutrients or abiotic stresses (Sandberg <em>et\nal</em>., 2019). This simple process can yield substantial increases in\nfitness for strains that are otherwise fragile and grow slowly due to\nlarge-scale genome modifications such as recoding or genome reduction\n(Hemez <em>et al</em>., 2024; Moger-Reischer <em>et al</em>., 2023)."
+            },
+            {
+              "type": "paragraph",
+              "html": "Adaptive evolution can also optimize novel metabolic pathways,\nconferring the ability to utilize otherwise inaccessible nutrients. For\nexample, <em>E. coli</em> strains have been evolved to grow on\nsuboptimal or even non-native carbon sources (Fong <em>et al</em>.,\n2003; Herring <em>et al</em>., 2006; Lee & Palsson, 2010). Evolution\nalso occurs in the absence of intentional human effort: as described in\n<a href=\"#invasive-mirror-bacteria-could-rapidly-evolve-and-diversify\">Section\n8.4</a>, evolution within the natural environment could exacerbate the\nrisks from mirror bacteria if they escape confinement."
+            }
+          ],
+          "subsections": []
+        },
+        {
+          "id": "any-mirror-bacterium-would-facilitate-the-creation-of-diverse-mirror-bacterial-strains",
+          "level": 3,
+          "title": "Any mirror bacterium would facilitate the creation of diverse mirror bacterial strains",
+          "title_html": "Any\nmirror bacterium would facilitate the creation of diverse mirror\nbacterial strains",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "The first mirror bacterium, if created, could be similar to a mirror\n<em>Mycoplasma</em> or <em>E. coli</em>, perhaps with a reduced or\nminimal genome or other genetic changes to facilitate the booting\nprocess, as discussed in <a href=\"#chapter-2-pathways-to-mirror-life\">Chapter 2</a>. Because strains\nwith highly modified or reduced genomes can be fragile and difficult to\nstudy, a logical next step would involve restoring missing genes and\nremoving any artifacts of the boot process. A minimal <em>E. coli</em>,\nfor instance, could be converted into mirror analogs of more robust and\nuseful strains by introducing genes that mirror those found in other\n<em>E. coli</em>. For instance, researchers might wish to create mirror\nversions of <em>E. coli</em> K-12, BL21, and Nissle 1917, strains that\nare widely used for science, bioproduction, and medicine."
+            },
+            {
+              "type": "paragraph",
+              "html": "Creating a diverse range of mirror bacterial species would be a\nlogical further step: mirror <em>Bacillus subtilis</em> or mirror\ncyanobacterium <em>Synechococcus elongatus</em> would offer different\nproperties and enable different applications compared to mirror\n<em>Mycoplasma</em> or <em>E. coli</em>. While it is plausible that such\nmirror bacteria could be created from scratch using analogous techniques\nto that of the original mirror bacterium, it is also possible that such\nmirror bacteria could be created by converting existing mirror\nbacteria."
+            },
+            {
+              "type": "paragraph",
+              "html": "In 2010, researchers demonstrated that it is possible to convert\n<em>Mycoplasma capricolum</em> into the closely related <em>Mycoplasma\nmycoides</em> by transplanting a chemically synthesized <em>M.\nmycoides</em> genome into a <em>M. capricolum</em> recipient cell\n(Gibson <em>et al</em>., 2010). Genomic transplants between <em>M.\ncapricolum</em> and more distantly related members of the\n<em>Spiroplasma</em> genus have also been performed, though the\nlikelihood of success appears to be inversely related to phylogenetic\ndistance (Labroussaa <em>et al</em>., 2016). Large-scale hybrids of\n<em>E. coli</em> and <em>Salmonella enterica</em> have also been\ncreated, in some cases without any significant reduction in growth\nfitness (Bartke <em>et al</em>., 2021), ultimately replacing over 90% of\nthe genome and effectively transforming the initial bacterium into a\nspecies from a different genus without the need for genomic\ntransplantation. Conversion between more distant species remains poorly\nexplored, but the creation of a <em>Bacillus subtilis</em> bacterium\ncontaining the entire genome of the cyanobacterium\n<em>Synechocystis</em> PCC6803 suggests a potential path via switching\nthe 16S ribosome to the new strain (Itaya <em>et al</em>., 2005).\nOngoing advances in DNA synthesis (Hughes & Ellington, 2017) and\nsynthetic genomics (Schindler <em>et al</em>., 2018) will likely make\nthe process easier in the coming decades. While much remains unknown\nabout the versatility and robustness of interspecies conversion methods,\nthe successful creation of the first mirror bacterial species could\nenable the creation of additional mirror bacterial species even absent\nindependent “boots”."
+            }
+          ],
+          "subsections": []
+        },
+        {
+          "id": "fitness-enhancing-capabilities-can-be-ported-from-existing-organisms",
+          "level": 3,
+          "title": "Fitness-enhancing capabilities can be ported from existing organisms",
+          "title_html": "Fitness-enhancing\ncapabilities can be ported from existing organisms",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "Natural organisms contain a diverse array of genes and functional\ncapabilities that bioengineers could draw upon to create novel and\ndiverse mirror bacterial strains. A natural-chirality gene can be\nmirrored by creating mirror DNA with an identical genetic sequence. By\nchiral symmetry, mirror genes in a mirror organism would function as\nmirror images of their natural-chirality counterparts in a\nnatural-chirality organism. For example, genes allowing the catabolism\nof ᴅ-lactose or ᴅ-mannitol would, if encoded into mirror DNA, allow a\nmirror bacterium to catabolize ʟ-lactose or ʟ-mannitol."
+            },
+            {
+              "type": "paragraph",
+              "html": "As a result, creating metabolic pathways for the catabolism of\nnatural-chirality molecules within mirror bacteria is not\nstraightforward. Conferring the ability to catabolize natural-chirality\nᴅ-glucose would require a metabolic pathway that would, in\nnatural-chirality bacteria, allow the catabolism of mirror-image\nʟ-glucose. This ability is not found in common lab strains (including\n<em>E. coli</em>). It is, however, possible to isolate bacteria with\nthis capacity from soil samples (Shimizu <em>et al</em>., 2012; Yachida\n& Nakamura, 2024), and the genes comprising one such utilization\npathway in <em>Paracoccus laeviglucosivorans</em> have been\ncharacterized <em>in vitro</em>. By encoding genes for this pathway into\nmirror DNA along with a suitable transporter from an ʟ-glucose\ncatabolizer, ᴅ-glucose catabolism could be engineered into mirror\nbacteria, then evolved or engineered for higher metabolic efficiency.\nGiven that ᴅ-glucose is far cheaper and more abundant than ʟ-glucose,\nengineering ᴅ-glucose catabolizing strains would be a logical aim for\nnearly any potential application—but this modification would greatly\nincrease the anticipated fitness of the mirror bacterium in the\nenvironment by enabling it to utilize the most abundant natural\nsugar."
+            },
+            {
+              "type": "paragraph",
+              "html": "Pathways exist to catabolize the mirror versions of other common\nsugars, including ᴅ-arabinose (LeBlanc & Mortlock, 1971), ʟ-fructose\n(Park <em>et al</em>., 2007), ʟ-galactose (Zhu & Lin, 1987),\nʟ-glyceraldehyde (Zhu & Lin, 1987), ʟ-ribose (Trimbur &\nMortlock, 1991), and ʟ-xylose (Usvalampi <em>et al</em>., 2012; see also\n<a href=\"#table-1.3-utilization-of-the-enantiomers-of-common-monosaccharides-by-e.-coli\">Table\n1.3</a>). The ability to catabolize mirror-image ᴅ-amino acids is also\ncommon in natural bacteria (see <a href=\"#table-1.2-utilization-of-ʟ--and-ᴅ-amino-acids-by-e.-coli\">Table\n1.2</a> for ᴅ-amino acid catabolism in <em>E. coli</em>), often\nproceeding through amino acid racemases that interconvert ʟ- and ᴅ-amino\nacids (Miyamoto & Homma, 2021). Such racemases could similarly allow\nmirror bacteria to catabolize the ubiquitous canonical ʟ-amino\nacids."
+            },
+            {
+              "type": "paragraph",
+              "html": "Abilities that require chiral interactions between mirror\nmacromolecules and natural macromolecules would be more challenging to\nengineer. For instance, mirror proteases will not digest\nnormal-chirality proteins (as discussed in <a href=\"#chapter-1-introduction\">Chapter 1</a>), mirror antibodies will\nnot bind to the same ligands as their natural-chirality counterparts,\nand a mirror AB toxin would be unlikely to function against natural\ncells. The <em>de novo</em> design of ᴅ-peptides to bind to specific\nnatural-chirality peptide and protein targets has recently been\ndemonstrated (Sun <em>et al</em>., 2024). As protein design tools\nimprove, it should be possible to create mirror proteins with more\ncomplex activities and specificities, though such mirror proteins would\nnot necessarily share high sequence and structure similarity with any\nexisting natural proteins."
+            }
+          ],
+          "subsections": []
+        }
+      ]
+    },
+    {
+      "id": "biocontainment-approaches-might-reduce-accident-risk-but-they-would-face-challenges",
+      "level": 2,
+      "title": "3.2 Biocontainment approaches might reduce accident risk, but they would face challenges",
+      "title_html": "<strong>3.2\nBiocontainment approaches might reduce accident risk, but they would\nface challenges</strong>",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Given that (1) mirror bacteria might become synthetically accessible\nwithin the next few decades, (2) once created, engineering more robust\nand diverse mirror bacteria would be comparatively straightforward, and\n(3) a sufficiently robust and metabolically flexible mirror bacterium\nreleased into the environment could have severe consequences, mirror\nbacteria pose serious potential biosafety and biosecurity challenges.\nBiocontainment techniques might reduce accident risk from mirror\nbacteria, but securing them against misuse appears more challenging."
+        }
+      ],
+      "subsections": [
+        {
+          "id": "physical-containment-would-likely-be-insufficiently-robust-to-prevent-leaks-of-dangerous-mirror-bacteria",
+          "level": 3,
+          "title": "Physical containment would likely be insufficiently robust to prevent leaks of dangerous mirror bacteria",
+          "title_html": "Physical\ncontainment would likely be insufficiently robust to prevent leaks of\ndangerous mirror bacteria",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "Biologists have long worked with dangerous pathogens. Such work can\nprovide substantial benefits, enabling the behavior of pathogens to be\nbetter understood, and in some cases, the development of vaccines and\nother countermeasures. However, such work can pose risks to both the\nscientists performing the research and to others in the community who\ncould be inadvertently exposed to the pathogen. Over time, biosafety\npractices have developed in order to best mitigate risks while still\nallowing vital research to be conducted."
+            },
+            {
+              "type": "paragraph",
+              "html": "When work on dangerous pathogens is required, strict physical\ncontainment measures within special biosafety laboratories are used to\nminimize risks. Nevertheless, even highly safe laboratories (e.g., with\nthe BSL-4 designation) are susceptible to accident risk, and a number of\nsuch cases have been reported (Byers & Harding, 2016; Gillum <em>et\nal</em>., 2016; Manheim & Lewis, 2022). Therefore, physical\ncontainment alone is typically considered insufficient to permit\nexperiments with biological agents that could have catastrophic\nconsequences. For example, the scientific community has abstained from\nwork involving the recreation or modification of smallpox (World Health\nOrganization, 1980, 1996, 2010), which was eradicated in 1977."
+            },
+            {
+              "type": "paragraph",
+              "html": "Most of the highest-risk biological research is conducted on obligate\npathogens, where protecting lab workers from infection is the highest\npriority. While BSL-3 and 4 laboratories do include measures to\nsterilize waste material and prevent the escape of aerosols, it is\ndifficult to know how often such measures fail because most accidental\nreleases do not result in detectable consequences. There are some\nwell-known exceptions in which accidental leaks did result in visible\ninfections. For instance, the last known death from smallpox, that of\nJanet Parker in 1978, was almost certainly due to a laboratory leak (UK\nDepartment of Health and Social Security, 1980). The 2007 UK outbreak of\nfoot and mouth disease is also likely to have originated from a lab, and\nprobably entered the environment through leaky pipes (Spratt, 2007)."
+            },
+            {
+              "type": "paragraph",
+              "html": "A sufficiently robust mirror bacterium, unlike a virus, could\npotentially replicate independently within the environment, even absent\na suitable host (see <a href=\"#chapter-8-environmental-survival-and-spread\">Chapter 8</a>).\nTherefore, any failure of ventilation or waste sterilization systems\ncould potentially be catastrophic. Given the rate of known\nlaboratory-acquired infections, which likely reflects a higher rate of\nunknown accidental leaks of biological material with or without\ninfection, current physical containment measures do not appear\nsufficiently robust to permit work with potentially dangerous mirror\nbacteria."
+            }
+          ],
+          "subsections": []
+        },
+        {
+          "id": "biological-containment-approaches-might-reduce-the-likelihood-of-environmental-escape-but-would-not-alone-be-sufficient-to-achieve-effective-biosafety-or-biosecurity",
+          "level": 3,
+          "title": "Biological containment approaches might reduce the likelihood of environmental escape but would not alone be sufficient to achieve effective biosafety or biosecurity",
+          "title_html": "Biological\ncontainment approaches might reduce the likelihood of environmental\nescape but would not alone be sufficient to achieve effective biosafety\nor biosecurity",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "Synthetic biologists have long been concerned with the escape of\nbioengineered natural-chirality microbes and have begun developing\ntechniques to contain such organisms. Unlike physical containment,\nbiological containment involves modifying the organism itself so that it\nis incapable of replicating in the external environment without the\naddition of specific chemical compounds. Such measures could allow the\ndevelopment of mirror bacteria with a reduced likelihood of\nenvironmental escape, providing greater robustness compared to physical\ncontainment (though implementing physical containment measures would\nstill provide an additional layer of protection)."
+            },
+            {
+              "type": "paragraph",
+              "html": "A common technique for the biocontainment of engineered bacteria is\nto make their growth and survival dependent on the supply of a specific\nmetabolite—a metabolic auxotrophy. For example, genes for the\nbiosynthesis of key metabolites like nucleosides and amino acids can be\ndisrupted, rendering the bacterium dependent on the supply of a missing\nmetabolite that it cannot produce itself (Bahey-El-Din <em>et al</em>.,\n2010; Ronchel & Ramos, 2001; Steidler <em>et al</em>., 2003). This\nsystem is straightforward to implement, but suffers from several\ndrawbacks in natural-chirality bacteria: the auxotroph might find the\nmissing nutrients in some natural environments or regain the ability to\nproduce them by horizontal gene transfer. In a mirror bacterium, these\ndrawbacks can be largely eliminated, but care would be required to\ncreate systems that are robust to human error."
+            },
+            {
+              "type": "paragraph",
+              "html": "Many mirror molecules are thought to be absent from the natural\nenvironment, which should make it possible to create auxotrophs that\ndefinitely could not survive in nature. Careful experimentation with\nnatural-chirality bacteria could be used to verify that these auxotrophs\ncould not escape using unexpected metabolic pathways. For instance,\nthough ᴅ-amino acids are not as common as ʟ-amino acids, they do occur\nnaturally—and a subset is known to fulfill specific biological functions\n(Genchi, 2017). Furthermore, as discussed in <a href=\"#chapter-1-introduction\">Chapter 1</a>, many bacteria can utilize\nboth amino acid enantiomers due to promiscuous transporters and enzymes\n(see <a href=\"#table-1.2-utilization-of-ʟ--and-ᴅ-amino-acids-by-e.-coli\">Table\n1.2</a>). With careful design, it should be possible to identify\nmetabolic auxotrophies that would avoid these difficulties and minimally\ndisrupt cell functioning. ʟ-pantothenate, for instance, might be absent\nin nature. Since some natural-chirality bacteria already lack\nᴅ-pantothenate biosynthesis and instead obtain ᴅ-pantothenate from the\nenvironment (Gerdes <em>et al</em>., 2002), the pathway is dispensable.\nLipoic acid and biotin auxotrophy are other plausible options. Multiple\ndistinct auxotrophies could be used simultaneously to increase\nrobustness."
+            },
+            {
+              "type": "paragraph",
+              "html": "Though mirror bacteria cannot obtain genetic material from\nnatural-chirality organisms, gene transfer between mirror bacterial\nstrains is possible. In particular, if mirror bacteria with different\nmetabolic auxotrophies were created, they may inadvertently come into\ncontact and transfer genetic material, creating a mirror bacterium that\nis no longer auxotrophic. Technical interventions to prevent horizontal\ngene transfer could help to mitigate this risk. Additionally, human\nerror during attempts to switch an auxotrophy or introduce additional\nbiosynthetic capabilities could also lead to accidental escape."
+            },
+            {
+              "type": "paragraph",
+              "html": "While metabolic auxotrophy is a straightforward way to create a\nmirror bacterium with reduced escape risk, other auxotrophic\nbiocontainment methods have been developed. One approach involves\nre-engineering multiple essential cellular proteins to require the\nincorporation of an unnatural non-canonical amino acid in order to\nfunction, creating a form of ‘synthetic auxotrophy’ (Mandell <em>et\nal</em>., 2015; Rovner <em>et al</em>., 2015). If properly implemented,\nescape from synthetic auxotrophy through horizontal gene transfer or\nother evolutionary mechanisms would be very unlikely. Such\nbiocontainment would, however, be more technically challenging to\nimplement. While non-auxotrophic containment methods exist, they are\nunlikely to be suitable for mirror bacteria because they are vulnerable\nto the gradual acquisition of individual mutations, even taking into\naccount efforts to stack multiple non-auxotrophic methods or implement\ninterventions to reduce the rate of evolutionary drift (Brophy &\nVoigt, 2014; Calles <em>et al</em>., 2019; Gallagher <em>et al</em>.,\n2015). Future advances could yield superior biocontainment\nstrategies."
+            },
+            {
+              "type": "paragraph",
+              "html": "Biological approaches to biocontainment have been developed for\nmicrobes used in industrial or medical applications. In these cases,\nenvironmental escape is undesirable, but generally not expected to cause\nmajor consequences for humans or ecosystems. In contrast, it appears\nthat the accidental release of mirror bacteria could have potentially\nsevere consequences for humans and the environment (see subsequent\nchapters). While effective biocontainment using the approaches discussed\nabove might reduce the escape risk by many orders of magnitude, a low\naccident risk due to human error or unexpected evolutionary events would\npersist even if highly advanced biocontainment approaches were\nimplemented. If mirror bacteria prove highly dangerous, this residual\nrisk may still outweigh the benefits of their scientific and\ntechnological applications."
+            },
+            {
+              "type": "paragraph",
+              "html": "An effective biosafety regime would require not only methods to\nrobustly biocontain mirror bacteria, but also strict provisions to\nprevent these biocontainment measures from being disabled by accident or\nrecklessness. Whether governance mechanisms exist that could lower the\nrisk to an acceptable level, and whether there are realistic\nimplementations of such measures that could be effectively implemented\nacross the many jurisdictions where work on mirror bacteria might occur,\nlies beyond the scope of this report. We will, however, briefly discuss\nthe biosecurity challenges raised by mirror bacteria, which appear\nparticularly severe."
+            }
+          ],
+          "subsections": []
+        }
+      ]
+    },
+    {
+      "id": "creating-robustly-biosecure-mirror-bacteria-is-not-feasible",
+      "level": 2,
+      "title": "3.3 Creating robustly biosecure mirror bacteria is not feasible",
+      "title_html": "<strong>3.3\nCreating robustly biosecure mirror bacteria is not\nfeasible</strong>",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Terrorist groups, including Al-Qaeda (Parachini & Gunaratna,\n2022), the Islamic State (Parachini & Gunaratna, 2022), and Aum\nShinrikyo (Danzig <em>et al</em>, 2011), are known to have pursued\nbiological weapons. Offensive biological weapon development is banned by\nthe 1972 Biological Weapons Convention (United Nations, 1972), but\nseveral states have in the past nevertheless clandestinely pursued such\nweapons illegally, including Iraq under Saddam Hussein (United Nations\nMonitoring, Verification and Inspection Commission, 2007), apartheid\nSouth Africa (Gould & Folb, 2002), and the Soviet Union (Leitenberg\n& Zilinskas, 2012). The possibility that similar actors might pursue\nmirror bacteria as potential weapons is deeply concerning. Though any\ndanger posed by mirror bacteria would likely cause indiscriminate harm\nto humans and natural ecosystems, they might still be pursued for\nblackmail by rogue governments or by non-state groups that see such mass\nharm as intrinsically desirable. Given that the misuse of mirror\nbacteria could result in especially grave consequences for humans and\nmany ecosystems, mirror biogenesis would require robust biosecurity\nprotection. Unfortunately, devising a form of biocontainment that could\nresist deliberate jailbreaking attempts by skilled individuals with\naccess to mirror DNA appears exceptionally difficult."
+        },
+        {
+          "type": "paragraph",
+          "html": "Any bacterial auxotrophy resulting from missing or conditionally\nfunctional genes can be removed by adding easily identified functional\nversions of those genes through bacterial transformation. Therefore, a\nperson with moderate molecular biology training could release bacteria\nfrom most forms of auxotrophy. Given access to mirror DNA—which could be\ngenerated from commercially available mirror phosphoramidites using a\nstandard nucleic acid synthesizer—they could achieve the same outcome\nfor a mirror bacterium. Depending on the mirror bacterial species, the\ntype of biocontainment implemented, and the skill of the practitioner,\nit might take weeks or even months to remove multiple auxotrophies,\nespecially if many genome modifications are required. Still, since the\nskill and resource requirements are limited, many actors could remove\nbiocontainment measures with relative ease. More elaborate\nbiocontainment strategies, such as synthetic auxotrophy for an unnatural\namino acid in a recoded mirror bacterium would be more complex to\nreverse, requiring the replacement of every essential gene rendered\ndependent upon a non-canonical amino acid, but could still be disabled\nby a sufficiently resourced actor. Alternatively, if a known\nbiosynthetic pathway for the non-canonical amino acid is available or\nnewly discovered, it could be engineered into the mirror bacterium\n(Butler <em>et al</em>., 2023)."
+        },
+        {
+          "type": "paragraph",
+          "html": "Even if robust biocontainment strategies could make jailbreaking\nmirror bacteria difficult, several important asymmetries between attack\nand defense make achieving security through such measures challenging.\nDefenders must block every possible pathway by which extant mirror\nbacteria could be weaponized, while malicious actors simply need a\nsingle viable path to weaponization. A single mistake could create an\nunpatchable hole. Moreover, defenders need to create mirror cells that\nremain safe indefinitely, regardless of how other biotechnologies\ndevelop. Feats that seem impossible now might become routine in coming\nyears and decades, so mirror bacteria that appear robustly biosecure\ntoday may not remain so forever—especially given the potential for\nmalicious actors to directly generate weaponized mirror bacteria by\nfollowing established protocols for mirror biogenesis."
+        },
+        {
+          "type": "paragraph",
+          "html": "Given that even fragile or rigorously biocontained mirror bacteria\ncould be weaponized by malicious actors, preventing their access to\nmirror bacteria would be imperative. Existing access controls for\ndangerous pathogens are imperfect, and given the potential for far more\nsevere consequences from an intentional mirror bacterial release, any\naccess controls on mirror bacteria would need to be very restrictive.\nFurther analysis of potential access control measures and whether they\ncould be feasibly implemented across jurisdictions where mirror\nbacterial research might occur, is beyond the scope of this technical\nreport."
+        }
+      ],
+      "subsections": []
+    }
+  ],
+  "kind": "chapter",
+  "number": 3
+}

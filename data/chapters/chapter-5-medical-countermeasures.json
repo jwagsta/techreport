@@ -1,0 +1,278 @@
+{
+  "id": "chapter-5-medical-countermeasures",
+  "level": 1,
+  "title": "Medical Countermeasures",
+  "title_html": "Chapter 5: Medical\nCountermeasures",
+  "blocks": [
+    {
+      "type": "paragraph",
+      "html": "<em>Thomas V. Inglesby<sup>1,2,3</sup>, Gregory Lewis<sup>4</sup>,\nDavid A. Relman<sup>5,6,7</sup>, Johanna M. Sweere<sup>8</sup>, Brian\nWang<sup>9</sup></em>"
+    },
+    {
+      "type": "paragraph",
+      "html": "Public health and medicine have a large suite of interventions to\nmanage infectious disease. Many of these ultimately rely on\nstereospecific interactions, and thus the reverse chirality of mirror\nbacteria reduces the breadth and efficacy of potential responses.\nAdapting interventions (or pioneering new ones) that could be effective\nversus mirror bacteria would likely be challenging."
+    },
+    {
+      "type": "paragraph",
+      "html": "This chapter focuses on possible pharmaceutical countermeasures to\nmirror bacterial infection. Non-pharmaceutical interventions, such as\nPPE, handwashing, and sterilization techniques, are generally\ninsensitive to chirality and could be used to reduce human exposure to\nmirror bacteria. Akin to natural-chirality pathogens, it appears\nunlikely these measures alone would be sufficient to guarantee\nprotection. If a sufficiently invasive mirror bacterium were to become\ncommon in many environments, a possibility explored in <a href=\"#chapter-8-environmental-survival-and-spread\">Chapter 8</a>, then\nthese non-pharmaceutical interventions to reduce exposure would carry\nsignificant costs and may not be sufficient to reliably prevent\ninfection, though this would depend on abundances in the\nenvironment."
+    },
+    {
+      "type": "paragraph",
+      "html": "<a href=\"#chapter-4-risks-to-human-health\">Chapter 4</a> detailed how\nmirror bacteria could pose serious risks to human health upon exposure\nand subsequent infection. Pharmaceutical interventions such as\nantibiotics and vaccines could potentially offer robust means to prevent\ninfection if administered prophylactically or to cure infections once\ndiagnosed. This chapter considers the prospects of developing\nantibiotics and vaccines against mirror bacteria, and touches upon other\npotential pharmaceuticals such as antibody or phage therapies that are\nused in clinical practice to treat bacterial infections. In principle,\nadapting these modalities to target mirror bacteria appears feasible;\nwhether they could substantially reduce the plausible danger posed by\nmirror bacteria to humans is very uncertain, for a number of\nreasons."
+    },
+    {
+      "type": "table",
+      "html": "<table>\n<colgroup>\n<col style=\"width: 100%\"/>\n</colgroup>\n<thead>\n<tr>\n<th><em>Authors are listed in alphabetical order. Affiliations:</em>\n<sup>1</sup> Center for Health Security, Bloomberg School of Public\nHealth, Johns Hopkins University, Baltimore, Maryland, USA; <sup>2</sup>\nEnvironmental Health and Engineering, Johns Hopkins Bloomberg School of\nPublic Health, Baltimore, Maryland, USA; <sup>3</sup> Johns Hopkins\nBloomberg School of Medicine, Baltimore, Maryland, USA; <sup>4</sup>\nMedia Laboratory, Massachusetts Institute of Technology, Cambridge,\nMassachusetts, USA. <sup>5</sup> Department of Medicine, Stanford School\nof Medicine, Stanford University, Stanford, California, USA;\n<sup>6</sup> Department of Microbiology and Immunology, Stanford\nUniversity School of Medicine, Stanford, California, USA; <sup>7</sup>\nInfectious Diseases Section, Veterans Affairs Palo Alto Health Care\nSystem, Palo Alto, California, USA; <sup>8</sup> Mirror Bacteria\nDialogues Fund, New York, New York, USA; <sup>9</sup> Panoplia\nLaboratories, Cambridge, Massachusetts, USA</th>\n</tr>\n</thead>\n<tbody>\n</tbody>\n</table>",
+      "kind": "affiliations"
+    },
+    {
+      "type": "paragraph",
+      "html": "First, antimirror pharmaceuticals that are potent <em>in vitro</em>\nmay not prove clinically effective <em>in vivo</em>. While mirror\nbacterial infections in otherwise healthy individuals would be\nimportantly different from natural pathogen infections in\nimmunodeficient individuals, the deficits in the immune system’s\nresponse to mirror bacteria may resemble severe immunocompromise (see <a href=\"#chapter-4-risks-to-human-health\">Chapter 4</a> for further\ndiscussion). Infection with natural-chirality bacteria in a severely\nimmunocompromised patient is often fatal despite maximal medical\nintervention, and prophylactic antibiotic coverage and extensive\nimmunization are not sufficient to ensure a normal life expectancy for\nthose with severe immunodeficiencies (Hanna & Etzioni, 2014; Picard\n<em>et al</em>., 2010). It is thus uncertain whether pharmaceutical\ninterventions—or a combination of interventions—could reliably treat or\nprevent life-threatening mirror bacterial infection."
+    },
+    {
+      "type": "paragraph",
+      "html": "Second, even for natural-chirality pathogens, discovery and\ndevelopment of a clinically effective pharmaceutical is not easy. Doing\nso rapidly in the midst of an emerging disease outbreak is typically\nharder still. Mirror bacteria may pose additional challenges for\ncountermeasure development versus a newly emerging natural-chirality\npathogen, including the likely necessity for live organisms to be\nhandled in high-containment facilities, the need for mirror-image\nreagents and chemistry for experimental manipulation, and little\nrelevant pre-existing expertise on these organisms within the scientific\ncommunity. Scientific progress over the coming decades may lessen these\nchallenges, but it seems likely they will remain formidable."
+    },
+    {
+      "type": "paragraph",
+      "html": "Third, the successful development of a highly effective medical\ncountermeasure does not guarantee those who need it will receive it.\nLarge-scale manufacture of a newly developed antimirror countermeasure\nmay be difficult, especially if it demands extensive modification of\nexisting manufacturing capacity, or new facilities to be brought online.\nA large proportion of the world population lives in low-income\ncountries, where preventable deaths from a lack of access to relatively\ninexpensive medicines are commonplace (Adenowo <em>et al</em>., 2015;\nUNICEF, 2024): access for these populations to antimirror medical\ncountermeasures, which would probably be substantially more expensive,\nis likely to be limited. The possible combination of environmental\nprevalence, frequent human exposure, and limited durability of\nprotection to a mirror bacteria could, in a worst-case scenario, make\nprotection of their population difficult even for the wealthiest\nnations. Mirror bacteria pose further challenges to other aspects of\noutbreak responses (e.g., diagnostics, sample management) similar to\nthose noted for countermeasure development, but these are beyond the\nscope of this chapter."
+    },
+    {
+      "type": "paragraph",
+      "html": "Last, while in this chapter we focus on protecting humans, mirror\nbacteria could potentially also infect animals and plants, and invade\nnatural ecosystems (see <a href=\"#chapter-6-animal-infection\">Chapters\n6</a>, <a href=\"#chapter-7-plant-infection\">7</a>, and <a href=\"#chapter-8-environmental-survival-and-spread\">8</a>).\nCountermeasures to protect agriculture and the natural environment are\ndiscussed in <a href=\"#chapter-7-plant-infection\">Chapters 7</a> and <a href=\"#chapter-8-environmental-survival-and-spread\">8</a>. As the\nprospects of preventing or remediating ecological damage caused by\nmirror bacteria appear to be very limited (see <a href=\"#countermeasures-to-invasive-mirror-bacteria-might-lessen-but-would-not-halt-the-ecological-damage\">Section\n8.6</a>), environmentally invasive mirror bacteria could cause severe\nharms even if humans could themselves be protected from direct infection\nthrough medical countermeasures."
+    }
+  ],
+  "subsections": [
+    {
+      "id": "new-antimirror-compounds-could-be-developed-to-target-mirror-bacteria-but-most-existing-antibiotics-would-not-function",
+      "level": 2,
+      "title": "5.1 New antimirror compounds could be developed to target mirror bacteria, but most existing antibiotics would not function",
+      "title_html": "<strong>5.1\nNew antimirror compounds could be developed to target mirror bacteria,\nbut most existing antibiotics would not function</strong>",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Antibiotics are small molecules that target mechanisms of survival\nand replication that are absent in humans but present in many or all\nbacteria. They constitute one of the most important and effective\nmethods to combat bacterial infections. Some existing antibiotics could\nbe repurposed to combat mirror bacterial infection, mirror enantiomers\nof existing antibiotics could be developed (with varying degrees of\ndifficulty), and antibiotics that exploit the reversed chirality of\nmirror bacteria to be selectively toxic toward them could possibly be\ndeveloped."
+        }
+      ],
+      "subsections": [
+        {
+          "id": "some-existing-antibiotics-could-be-repurposed-to-combat-mirror-bacterial-infection",
+          "level": 3,
+          "title": "Some existing antibiotics could be repurposed to combat mirror bacterial infection",
+          "title_html": "Some\nexisting antibiotics could be repurposed to combat mirror bacterial\ninfection",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "Most existing antibiotics function by inhibiting chiral enzymes or\ntargeting other specific chiral biomolecules within bacteria (Kohanski\n<em>et al</em>., 2010). The enantiomers of chiral antibiotics are\ngenerally not expected to retain bactericidal activity, as they are\nunlikely to bind tightly to the biomolecules targeted by their\nenantiomer. This has been confirmed experimentally in a number of cases,\nincluding for chloramphenicol (Maxwell & Nickel, 1954), fosfomycin\n(Hirota <em>et al</em>., 1998), and polymyxin B (Slingerland <em>et\nal</em>., 2022), as well as for enantiomers of specific cephalosporins\n(Cesta, 2021), oxazolidinones (Brickner, 1996; Fortuna <em>et al</em>.,\n2014), penicillins (Cesta, 2021), and tetracyclines (Korst <em>et\nal</em>., 1968; Muxfeldt <em>et al</em>., 1979). The fluoroquinolones,\nbuilt around a core achiral structure, provide a partial exception with\nenantiomers sometimes having similar activity (Chu <em>et al</em>.,\n1991; Liu <em>et al</em>., 2005), though the enantiomer of levofloxacin\n(sometimes used racemically as ofloxacin) has much lower activity\n(Morrissey <em>et al</em>., 1996)."
+            },
+            {
+              "type": "paragraph",
+              "html": "Just as the enantiomers of chiral antibiotics usually have little or\nno antibacterial activity, the chiral antibiotics themselves would\nusually have little or no antibacterial activity against mirror\nbacteria. As a result, the utility of antibiotics for the treatment of\nmirror bacterial infections can be informed by their structures. Chiral\nantibiotics would be expected to lose activity against mirror bacteria,\nas can be verified by testing their enantiomers against\nnatural-chirality bacteria. Achiral and racemic antibiotics—those\nconsisting of a mixture of both enantiomers—should by contrast remain\nactive. In <a href=\"#table-5.1-classes-of-existing-antibiotics-and-characteristics-relevant-to-their-applicability-for-treatment-of-mirror-bacterial-infections\">Table\n5.1</a> we classify the major structural classes of antibiotics included\nin the WHO Essential Medicines List (World Health Organization, 2023) by\nwhether they are expected to be stereospecific or not and, if so, the\nlikely ease of producing mirror-image versions to combat mirror\nbacteria."
+            },
+            {
+              "type": "paragraph",
+              "html": "Chirality would not be not the sole determinant of susceptibility: in\nthe same way that a particular antibiotic may only be potent against\nsome normal-chirality bacterial species, a given mirror bacteria may not\nbe susceptible to all antibiotics, even if they were of the “correct”\nchirality. Similarly, susceptibility is not the sole determinant of\nclinical effectiveness: for example, the pharmacokinetic properties of\nan antibiotic may make it incapable of reaching a particular site of\ninfection at a sufficient concentration, or may preclude prophylactic\nuse. It is therefore uncertain whether an antibiotic that would be\nexpected to retain its potency across various mirror bacterial species\nwould in fact effectively treat infections caused by a particular mirror\nbacterial strain."
+            },
+            {
+              "type": "paragraph",
+              "html": "Achiral and racemic antibiotics—which are expected to be as potent\nagainst mirror bacteria as they are against natural-chirality\nbacteria—are therefore promising therapeutic candidates against\nsusceptible mirror bacterial infections, as they could be\nstraightforwardly repurposed with little further development or clinical\nsafety testing. Of the major antibiotic classes, only\n(fluoro)quinolones, sulfonamides, and trimethoprim derivatives consist\nmainly of achiral or racemic members, alongside the miscellaneous\nantibiotics metronidazole and nitrofurantoin. Co-trimoxazole, an\ninexpensive broad-spectrum formulation that combines trimethoprim and\nsulfamethoxazole, is widely used, including in developing nations\n(Church <em>et al</em>., 2015), and quinolones are also among the most\ncommonly used antibiotics globally (Browne <em>et al</em>., 2021)."
+            },
+            {
+              "type": "table",
+              "html": "<table>\n<colgroup>\n<col style=\"width: 1%\"/>\n<col style=\"width: 17%\"/>\n<col style=\"width: 26%\"/>\n<col style=\"width: 24%\"/>\n<col style=\"width: 9%\"/>\n<col style=\"width: 21%\"/>\n</colgroup>\n<thead>\n<tr>\n<th colspan=\"2\" style=\"text-align: left;\"><strong>Antibiotic\nClass</strong></th>\n<th><strong>Examples on 2023 WHO Essential Medicines List</strong></th>\n<th style=\"text-align: left;\"><strong>Target</strong></th>\n<th><strong>Activity vs. mirror</strong></th>\n<th style=\"text-align: right;\"><strong>References</strong></th>\n</tr>\n<tr>\n<th colspan=\"6\"><strong>Achiral or racemic molecules</strong>—plausibly\nusable immediately</th>\n</tr>\n<tr>\n<th></th>\n<th>Fluoroquinolones†</th>\n<th>Ciprofloxacin<br/>\nOfloxacin</th>\n<th>Topoisomerases<br/>\nTopoisomerases</th>\n<th style=\"text-align: center;\">Yes<br/>\nRacemate</th>\n<th style=\"text-align: right;\">Morrissey <em>et al</em>., 1996</th>\n</tr>\n<tr>\n<th></th>\n<th>Sulfonamides</th>\n<th>Sulfadiazine, sulfamethoxazole</th>\n<th>Dihydropteroate synthase</th>\n<th style=\"text-align: center;\">Yes</th>\n<th></th>\n</tr>\n<tr>\n<th></th>\n<th>Miscellaneous</th>\n<th>Metronidazole<br/>\nNitrofurantoin<br/>\nTrimethoprim</th>\n<th>DNA<br/>\nDNA<br/>\nDihydrofolate reductase</th>\n<th style=\"text-align: center;\">Yes<br/>\nYes<br/>\nYes</th>\n<th style=\"text-align: right;\"></th>\n</tr>\n<tr>\n<th colspan=\"6\"><strong>Chiral molecules, produced\nsynthetically</strong>—enantiomers plausibly synthetically accessible,\nbut safety unclear</th>\n</tr>\n<tr>\n<th></th>\n<th>Carbapenems</th>\n<th>Meropenem</th>\n<th>Penicillin-binding proteins</th>\n<th style=\"text-align: center;\">No</th>\n<th></th>\n</tr>\n<tr>\n<th></th>\n<th>Oxazolidinones</th>\n<th>Linezolid</th>\n<th>50S ribosomal subunit</th>\n<th style=\"text-align: center;\">No*</th>\n<th style=\"text-align: right;\">Brickner, 1996</th>\n</tr>\n<tr>\n<th></th>\n<th>Miscellaneous</th>\n<th>Chloramphenicol<br/>\nFosfomycin</th>\n<th>50S ribosomal subunit<br/>\nMurA enzyme</th>\n<th style=\"text-align: center;\">No*<br/>\nNo*</th>\n<th style=\"text-align: right;\">Maxwell &amp; Nickel, 1954<br/>\nHirota <em>et al</em>., 1998</th>\n</tr>\n<tr>\n<th colspan=\"6\"><strong>Chiral molecules, produced through\nbiosynthesis</strong>—enantiomers unlikely to be easily synthesized</th>\n</tr>\n<tr>\n<th></th>\n<th>Aminocyclitol</th>\n<th>Amikacin, gentamicin, plazomicin,<br/>\nspectinomycin, streptomycin</th>\n<th>30S ribosomal subunit</th>\n<th style=\"text-align: center;\">No</th>\n<th></th>\n</tr>\n<tr>\n<th></th>\n<th>Cephalosporins</th>\n<th>Cefalexin, cefazolin, cefiderocol, cefixime, cefotaxime,\nceftazidime, ceftriaxone, ceftolozane, cefuroxime</th>\n<th>Penicillin-binding proteins</th>\n<th style=\"text-align: center;\">No*</th>\n<th style=\"text-align: right;\">Cesta, 2021</th>\n</tr>\n<tr>\n<th></th>\n<th>Lincosamides</th>\n<th>Clindamycin</th>\n<th>50S ribosomal subunit</th>\n<th style=\"text-align: center;\">No</th>\n<th style=\"text-align: right;\"></th>\n</tr>\n<tr>\n<th></th>\n<th>Glycopeptides</th>\n<th>Vancomycin</th>\n<th>Lipid II</th>\n<th style=\"text-align: center;\">No</th>\n<th style=\"text-align: right;\"></th>\n</tr>\n<tr>\n<th></th>\n<th>Macrolides</th>\n<th>Azithromycin,<br/>\nclarithromycin,<br/>\nerythromycin</th>\n<th>50S ribosomal subunit</th>\n<th style=\"text-align: center;\">No</th>\n<th style=\"text-align: right;\"></th>\n</tr>\n<tr>\n<th></th>\n<th>Penicillins</th>\n<th>Amoxicillin, ampicillin, benzylpenicillin, cloxacillin,\nphenoxymethylpenicillin, piperacillin</th>\n<th>Penicillin-binding proteins</th>\n<th style=\"text-align: center;\">No*</th>\n<th style=\"text-align: right;\">Cesta, 2021</th>\n</tr>\n<tr>\n<th></th>\n<th>Polymyxins</th>\n<th>Colistin, polymyxin B</th>\n<th>Lipid A</th>\n<th style=\"text-align: center;\">No*</th>\n<th style=\"text-align: right;\">Slingerland <em>et al</em>., 2022</th>\n</tr>\n<tr>\n<th></th>\n<th>Tetracyclines</th>\n<th>Doxycycline, tetracycline</th>\n<th>30S ribosomal subunit</th>\n<th style=\"text-align: center;\">No*</th>\n<th style=\"text-align: right;\">Korst <em>et al</em>., 1968; Muxfeldt\n<em>et al</em>., 1979</th>\n</tr>\n<tr>\n<th colspan=\"6\"><h5 id=\"table-5.1-classes-of-existing-antibiotics-and-characteristics-relevant-to-their-applicability-for-treatment-of-mirror-bacterial-infections\">Table\n5.1: Classes of existing antibiotics and characteristics relevant to\ntheir applicability for treatment of mirror bacterial infections</h5>\n<p>All antibiotics in the 2023 WHO Essential Medicines List are listed,\nexcluding antileprosy and antituberculosis medicines, which tend to be\nvery specialized. Biomolecular targets and mechanisms of action are\ndescribed in (R. Anderson <em>et al</em>., 2012; Kohanski <em>et\nal</em>., 2010) unless otherwise noted. Activity against mirror bacteria\nis inferred from chirality; for those with an asterisk (*), enantiomer\ncompounds from the class have been tested and found to lack\nantibacterial activity. †The basic fluoroquinolone scaffold is achiral,\nbut some antibiotics in this class are chiral.</p></th>\n</tr>\n</thead>\n<tbody>\n</tbody>\n</table>"
+            }
+          ],
+          "subsections": []
+        },
+        {
+          "id": "enantiomers-of-existing-antibiotics-could-be-produced-although-this-appears-to-be-difficult-for-most-classes",
+          "level": 3,
+          "title": "Enantiomers of existing antibiotics could be produced, although this appears to be difficult for most classes",
+          "title_html": "Enantiomers\nof existing antibiotics could be produced, although this appears to be\ndifficult for most classes",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "The enantiomers of chiral antibiotics may also be effective against\nmirror bacterial infections, as they should interact with chiral targets\nwithin mirror bacteria identically to how existing antibiotics interact\nwith their targets in natural bacteria. However, unlike achiral and\nracemic antibiotics, the enantiomers of chiral antibiotics may possess a\ndifferent pharmacokinetic and side-effect profile than their\nnatural-chirality counterparts, and consequently would require testing\nand separate regulatory authorization (Center for Drug Evaluation and\nResearch, 1992; European Medicines Agency, 1993). However, this process\ncould be accelerated or abbreviated in the context of a major\noutbreak."
+            },
+            {
+              "type": "paragraph",
+              "html": "Large-scale production of a mirror-image antibiotic may be relatively\nfeasible for those chiral antibiotics that are produced synthetically\n(<a href=\"#table-5.1-classes-of-existing-antibiotics-and-characteristics-relevant-to-their-applicability-for-treatment-of-mirror-bacterial-infections\">Table\n5.1</a>). These include the carbapenems, monobactams, oxazolidinones,\nand the miscellaneous antibiotics chloramphenicol and fosfomycin (Brewer\n& Hellinger, 1991; Cao <em>et al</em>., 2019; Foti <em>et al</em>.,\n2021; Hahn, 1967; Papp-Wallace <em>et al</em>., 2011). Synthesis would\nrequire replacing the natural chirality reagents with their enantiomers,\nbut it is plausible that the enantiomers of these antibiotics could be\nstraightforwardly manufactured."
+            },
+            {
+              "type": "paragraph",
+              "html": "Most classes of existing chiral antibiotics, however, are\npredominantly produced in whole or in part via biosynthesis, and the\nbiosynthetic steps cannot be easily adapted to generate the enantiomer\nof their current product (Fedorenko <em>et al</em>., 2015). Given the\ncomplexity of these antibiotics, the re-engineering of biosynthetic\npathways or the execution of total synthetic routes to produce\nenantiomeric versions of these antibiotics (<a href=\"#table-5.1-classes-of-existing-antibiotics-and-characteristics-relevant-to-their-applicability-for-treatment-of-mirror-bacterial-infections\">Table\n5.1</a>) on an industrial scale could present major scientific and\npractical challenges. It is conceivable that strains of mirror bacteria\ncould be cultivated for these biosynthetic tasks, although this would\nshare many of the same scientific and practical challenges and in\naddition would raise considerable safety and security concerns (see <a href=\"#chapter-3-engineering-biosafety-and-biosecurity-of-mirror-bacteria\">Chapter\n3</a>)."
+            },
+            {
+              "type": "paragraph",
+              "html": "Antibiotics with pore-forming or membrane-disrupting activity could\nprove an exception to the principle that chiral antibiotics would not be\neffective against mirror bacteria, as their mechanism of action is often\nnot sensitive to the chirality of the lipid membrane (examples of such\nantibiotics are listed in <a href=\"#table-8.1-naturally-occurring-antibiotics-that-could-retain-efficacy-against-mirror-bacteria\">Table\n8.1</a> of <a href=\"#chapter-8-environmental-survival-and-spread\">Chapter 8</a>). In\nmany cases, the enantiomers of these antibiotics have even been shown to\nbe effective at killing bacteria, so these antibiotics would be expected\nto remain effective against mirror bacteria. Not all membrane-disrupting\nantibiotics would retain efficacy, however, as some bind to chiral\ntargets in the membrane. Daptomycin, for example, binds to the chiral\nmolecule phosphatidylglycerol, and its enantiomer is much less effective\nat harming bacteria (Moreira & Taylor, 2022)."
+            },
+            {
+              "type": "paragraph",
+              "html": "Given their lack of specificity, membrane-disrupting antibiotics that\nwould retain efficacy against mirror bacteria are often toxic to humans,\nwhich can limit applicability. Gramicidin and bacitracin are the only\nexamples that see occasional clinical use, and they are all but\nexclusively used for topical infections due to their cytotoxicity\n(Nguyen <em>et al</em>., 2024; Pavithrra & Rajasekaran, 2020);\nsalinomycin and other ionophores see use only in veterinary medicine\n(Zhou <em>et al</em>., 2013). It is therefore doubtful that such\nantibiotics would prove particularly promising drugs to combat mirror\nbacterial infections."
+            }
+          ],
+          "subsections": []
+        },
+        {
+          "id": "novel-classes-of-antimirror-antibiotics-could-be-developed-to-target-mirror-bacterial-infection",
+          "level": 3,
+          "title": "Novel classes of antimirror antibiotics could be developed to target mirror bacterial infection",
+          "title_html": "Novel\nclasses of antimirror antibiotics could be developed to target mirror\nbacterial infection",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "Current antibiotic therapies exploit the comparatively minor\nbiochemical differences between prokaryotes and eukaryotes in order to\nselectively kill microbes while causing few side effects in human\npatients. Biochemically, all metabolic processes in mirror bacteria will\nbe very different from those in natural-chirality organisms due to the\nreversed chirality of their enzymes, providing a much wider range of\npotential antibiotic targets. For example, metabolic pathways such as\nglycolysis cannot be targeted by antibiotics because they are highly\nconserved in all living organisms, yet small molecules that selectively\ninhibit mirror-image glycolytic enzymes would be credible antimirror\nantibiotic candidates. This abundance of targets could reduce the cost\nof discovering effective, safe, readily manufactured antimirror\ntherapeutics and prophylactics."
+            },
+            {
+              "type": "paragraph",
+              "html": "Existing research may be informative. If a compound X is highly toxic\nto all existing life, but its enantiomer Y is well-tolerated in humans,\nthen Y may be a potent antimirror compound. For example, the enantiomers\nof the most toxic known nucleoside analog, including but not limited to\nthose with potent anticancer, antiviral, and antibacterial activities\n(De Jonghe & Herdewijn, 2022; Niu & Tan, 2015), may be promising\nantimirror compound candidates. Toxicity studies might assess the\ncomparative safety of candidate antimirror compounds and the minimum\ninhibitory concentrations of their enantiomers against existing\nbacteria, with promising candidates entering drug development."
+            },
+            {
+              "type": "paragraph",
+              "html": "On the other hand, achieving <em>in vitro</em> efficacy is typically\neasy for antibiotic discovery campaigns, and toxicity is typically\nmediated via highly unpredictable off-target interactions (largely\ndriven by physicochemical properties). Developing new antibiotics from\ndiscovery to clinical testing and approval takes years, and historically\nthe interval between discovery and clinical introduction has averaged\naround a decade (Gigante <em>et al</em>., 2022; Hutchings <em>et\nal</em>., 2019), though some of this disappointing track record may be\ndue to limited economic incentives for rapid commercial antibiotic\ndevelopment alongside the scientific challenges (M. Anderson <em>et\nal</em>., 2023). It is unclear whether a dedicated antimirror antibiotic\ndevelopment effort could be expected to outperform this historical\naverage during the urgency of a major outbreak."
+            }
+          ],
+          "subsections": []
+        },
+        {
+          "id": "the-clinical-efficacy-and-overall-utility-of-antimirror-compounds-is-unclear",
+          "level": 3,
+          "title": "The clinical efficacy and overall utility of antimirror compounds is unclear",
+          "title_html": "The\nclinical efficacy and overall utility of antimirror compounds is\nunclear",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "Even if existing antibiotics or novel antimirror compounds could kill\nmirror bacteria, they would not necessarily be clinically effective. As\ndiscussed in <a href=\"#chapter-4-risks-to-human-health\">Chapter 4</a>,\nhuman immunity is anticipated to be impaired versus mirror bacterial\nchallenge, and infection is frequently life-threatening in roughly\nanalogous immunodeficiencies despite available options for antibiotic\ntreatment. For antimirror compounds to be useful therapeutically,\ninfections would need to be diagnosed and treatment begun before\nirreversible harm had occurred. It is therefore not clear that\npost-infection antibiotics would be sufficient to cure a mirror\nbacterial infection, or to mitigate serious health effects even if they\ncould prevent fatality."
+            },
+            {
+              "type": "paragraph",
+              "html": "If post-infection antimirror treatments are ineffective or\ninsufficiently reliable, the only available strategy would involve the\nprophylactic use of antimirror compounds (vaccination may be another\nmeans to prevent infection, discussed below). Prophylactic antibiotics\nare commonly prescribed for the immunosuppressed or immunocompromised\n(Picard <em>et al</em>., 2011; Seddon & Bhagani, 2011; Taplitz\n<em>et al</em>., 2018), although they are not always sufficient to\nprevent infection depending on the magnitude of the deficiency. Given\nthe important disanalogies between mirror bacterial infections and\nnatural bacterial infections, it is difficult to know whether antimirror\ncompounds taken prophylactically would be effective. Comprehensive\nprophylaxis would require antimirror compounds that were safe to use\nindefinitely, ideally with minimal side effects. Comprehensive\nprophylaxis for all living humans would likely require antimirrors to be\nproduced at a scale exceeding total current worldwide antibiotic\nproduction."
+            },
+            {
+              "type": "paragraph",
+              "html": "Antimicrobial resistance could also evolve in mirror bacteria in a\nsimilar fashion to their natural-chirality counterparts. Mirror bacteria\nare expected to have a comparable capacity for <em>de novo</em>\nmutation, but would by default have limited ability for horizontal gene\ntransfer (see <a href=\"#invasive-mirror-bacteria-could-rapidly-evolve-and-diversify\">Section\n8.4</a>). As such, resistance mechanisms that depend on point mutations\nin antimirror targets would be much more accessible to mirror bacterial\npopulations than those reliant on a novel protein (e.g., a hypothetical\nmirror-image β-lactamase). It is also possible a malicious actor could\nintentionally engineer antimicrobial resistance to counter existing\nachiral antibiotics, resist specific known antimirrors, or boost overall\nresilience to antimirror compounds."
+            }
+          ],
+          "subsections": []
+        }
+      ]
+    },
+    {
+      "id": "conjugate-vaccines-could-plausibly-be-developed-against-mirror-bacteria",
+      "level": 2,
+      "title": "5.2 Conjugate vaccines could plausibly be developed against mirror bacteria",
+      "title_html": "<strong>5.2\nConjugate vaccines could plausibly be developed against mirror\nbacteria</strong>",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "In addition to antibiotics, bacterial vaccines have historically\nplayed an important role in protection against bacterial infection\n(Osterloh, 2022). All existing bacterial vaccines appear to elicit\nimmunity against pathogen-specific chiral antigens, and so pre-existing\nvaccines would be unlikely to provide effective protection against\nmirror bacteria. Even if the mirror bacteria share an antigen that is\ntargeted by an existing vaccine, immunological memory is unlikely to\nextend to the mirrored antigen as B cell receptors, antibodies, and T\ncell receptors are all chiral molecules (see <a href=\"#adaptive-immunity-to-mirror-bacteria-would-likely-be-impaired\">Section\n4.3</a>). A new vaccine specific to the mirror bacterial species would\nneed to be developed."
+        },
+        {
+          "type": "paragraph",
+          "html": "Bacterial vaccines harness a range of different technologies:\ninactivated, live attenuated, recombinant protein,\nprotein-polysaccharide conjugate, and outer membrane vesicle vaccines\nhave all been licensed. Newer technologies such as plasmid DNA and mRNA\nare currently being explored for the development of novel bacterial\nvaccines (Frost <em>et al</em>., 2023; Mba <em>et al</em>., 2023;\nOsterloh, 2022). However, just as mirror bacterial infections are\nunlikely to stimulate a protective immune response due to the expected\ninability of the human immune system to process mirror bacterial protein\nantigens, the same is likely to be true of vaccination strategies that\nrely on immunogens composed solely of mirror protein antigens. As a\nresult, inactivated, live attenuated, recombinant protein, and outer\nmembrane vesicle vaccines would not be expected to prove effective.\nNucleic acid vaccines would also not be effective against mirror\nbacteria because they cannot encode mirror protein antigens."
+        },
+        {
+          "type": "paragraph",
+          "html": "On the other hand, conjugate vaccines may be a promising approach\nagainst mirror bacteria. Conjugate vaccines stimulate an immune response\nto a normally non-immunogenic antigen by conjugating an immunogenic\ncarrier to it (Rappuoli <em>et al</em>., 2019). Glycoconjugate\nvaccines—which consist of a carrier protein or peptide conjugated to a\npolysaccharide—direct antibody responses against polysaccharides that\nare prevalent on the surface of bacteria, ultimately resulting in\nbacterial cell death via opsonophagocytosis or complement-mediated lysis\n(L. L. Lu <em>et al</em>., 2018; Romero-Steiner <em>et al</em>., 2006).\nThese vaccines have seen success in the prevention of infections by\nencapsulated bacteria, as conjugate vaccines against\n<em>Streptococcus</em> <em>pneumoniae</em>, <em>Haemophilus</em>\n<em>influenzae</em> type B (Hib), and <em>Neisseria</em>\n<em>meningitidis</em> have dramatically reduced incidences of infection\nwith these pathogens in children over the past two decades (McHugh,\n2020; Pollard <em>et al</em>., 2009; Wasserman <em>et al</em>., 2021).\nPeptide-protein conjugates use a similar strategy to direct antibody\nresponses to peptides that are poor immunogens. Although no peptide\nvaccines are in common use, a number are in development for infectious\ndiseases (Eskandari <em>et al</em>., 2021; Ou <em>et al</em>., 2020) and\ncancer therapy (Abd-Aziz & Poh, 2022; Malonis <em>et al</em>.,\n2020). They may be particularly promising for vaccines against mirror\nbacteria as the reversed chirality of mirror bacterial proteins is\nexpected to render them poorly immunogenic (see <a href=\"#adaptive-immunity-to-mirror-bacteria-would-likely-be-impaired\">Section\n4.3</a>)."
+        },
+        {
+          "type": "paragraph",
+          "html": "Conjugate vaccines against mirror bacteria could be developed by\nconjugating a non-mirror carrier protein or peptide to a mirror\npolysaccharide or peptide. The non-mirror carrier protein would be\nexpected to stimulate a T cell response that could then assist\nactivation of B cells that recognize the conjugated mirror antigen. Such\nvaccines would be expected to generate antibodies that bind bacteria\nbearing the mirror antigen, potentially preventing infection (<a href=\"#figure-5.1-conjugate-vaccines-may-improve-adaptive-immune-recognition-of-mirror-bacteria\">Figure\n5.1</a>)."
+        },
+        {
+          "type": "paragraph",
+          "html": "Although promising, the sufficiency of conjugate vaccine-induced\nimmunity for protection against mirror bacterial infections remains\nuncertain. While existing glycoconjugate vaccines in clinical use are\nknown to induce immunological memory, a memory response may take four or\nmore days to become established upon re-encountering the antigen, which\nmay not be rapid enough to prevent colonization by bacteria with short\nincubation periods (Pollard <em>et al</em>., 2009). In the context of\ninfection by a rapidly invasive mirror bacterium largely unimpeded by a\nnatural innate immune response, the induction of a memory response may\nbe too slow or simply inadequate. Conjugate vaccines are also unlikely\nto generate a strong CD8<sup>+</sup> T cell response, which could impair\nefficacy against mirror bacteria capable of surviving opsonophagocytosis\nor otherwise entering and growing inside cells (Osterloh, 2022; Shepherd\n& McLaren, 2020)."
+        },
+        {
+          "type": "paragraph",
+          "html": "In the context of substantial impairment of native B cell and\nCD8<sup>+</sup> T cell responses, long-term conjugate vaccine-induced\nprotection would largely rely on the maintenance of high serum\nanti-polysaccharide antibody titers. Glycoconjugate vaccines can (though\ndo not always) induce persistent antibody titers; for example, antibody\ntiters are maintained at protective levels five years after a single\ndose of a meningococcal glycoconjugate vaccine in adolescents (Quiambao\n<em>et al</em>., 2017). However, given the failure of key components of\nthe immune system outlined in <a href=\"#chapter-4-risks-to-human-health\">Chapter 4</a>, serum antimirror\nantibodies alone may not be sufficient to prevent mirror bacterial\ninfection. If mirror conjugate vaccines are achievable, antibody levels\nneeded for protection are expected to be higher than the usual dosage,\nand frequent re-boosting to maintain protection may be necessary."
+        },
+        {
+          "type": "paragraph",
+          "html": "Manufacturing challenges may hinder the timely development and\ndistribution of glycoconjugate vaccines against mirror bacteria due to\nthe need for large-scale mirror polysaccharide production. Current\nmanufacturing of glycoconjugate vaccines typically involves the\nlarge-scale fermentation of"
+        },
+        {
+          "type": "figure",
+          "id": "figure-5.1-conjugate-vaccines-may-improve-adaptive-immune-recognition-of-mirror-bacteria",
+          "src": "assets/image26.png",
+          "alt": "",
+          "width": "6.45415in",
+          "height": "5.39063in",
+          "caption": {
+            "id": "figure-5.1-conjugate-vaccines-may-improve-adaptive-immune-recognition-of-mirror-bacteria",
+            "title": "Figure 5.1: Conjugate vaccines may improve adaptive immune recognition of mirror bacteria",
+            "title_html": "Figure\n5.1: Conjugate vaccines may improve adaptive immune recognition of\nmirror bacteria",
+            "body_html": "<p><strong>A.</strong> Expected B cell response against a vaccine\ncomposed of mirror bacterial polysaccharides. Follicular dendritic cells\nand B cell receptors should bind mirror polysaccharides, and their long,\nrepeating structure may activate receptor signaling. However, without\nthe ability to present peptide antigens to and receive signals from T\nfollicular helper (Tfh) cells, these B cells would be unlikely to mount\nan IgG antibody response or develop immune memory and are likely to\nundergo apoptosis instead (<a href=\"#adaptive-immunity-to-mirror-bacteria-would-likely-be-impaired\">Section\n4.3</a>). <strong>B.</strong> Expected B cell response against a vaccine\ncomposed of mirror polysaccharides conjugated to natural-chirality\ncarrier proteins. Upon binding follicular dendritic cells,\nglycoconjugates are presented to B cells and bind and activate B cell\nreceptors. This results in internalization of the glycoconjugate and\nproteolysis of the protein carrier into peptides that can be presented\nto Tfh cells. Peptide presentation results in T cell help and a\nfunctional IgG antibody response and immune memory against the target,\nin this case the mirror polysaccharide. Conjugate vaccines using mirror\npeptides could also be feasible.</p>"
+          }
+        },
+        {
+          "type": "paragraph",
+          "html": "pathogenic bacteria, purification of the desired polysaccharide\ncomponent, and chemical conjugation to the carrier (Kay <em>et al</em>.,\n2019; Stark <em>et al</em>., 2021), although direct synthesis of the\npolysaccharide component has been successfully used in the Quimi-Hib\nvaccine licensed in Cuba (Verez-Bencomo <em>et al</em>., 2004).\nManufacture of antimirror peptide-protein conjugates by chemical\nsynthesis would be more straightforward, though this approach would rely\non identifying appropriate peptide targets on the mirror bacterium."
+        },
+        {
+          "type": "paragraph",
+          "html": "Developing such vaccines as a preparedness measure—that is, in\nadvance of a potential outbreak—would be challenging given the diversity\nof bacterial antigens a future mirror bacterial species could possess.\nDeveloping such a vaccine amidst a mirror bacteria outbreak could be\neven more challenging, especially if the outbreak is spreading rapidly.\nStandard timelines for vaccine development span 5–10 years (Pronker\n<em>et al</em>., 2013), although vaccine development and large-scale\ndeployment in a major public health emergency could be much faster, as\nwas seen in the COVID-19 pandemic."
+        }
+      ],
+      "subsections": []
+    },
+    {
+      "id": "the-efficacy-of-other-countermeasures-against-mirror-bacterial-infection-is-unclear",
+      "level": 2,
+      "title": "5.3 The efficacy of other countermeasures against mirror bacterial infection is unclear",
+      "title_html": "<strong>5.3\nThe efficacy of other countermeasures against mirror bacterial infection\nis unclear</strong>",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "html": "Although antibiotics and vaccines are the most important medical\ncountermeasures against bacterial infections, there is a mix of rarely\nused and early-stage therapeutic modalities that could be deployed\nagainst mirror bacteria as alternative or adjunct therapies. Compared to\nantibiotics and vaccines, these other countermeasures tend to have\nlimited (or expensive) production, a much more limited evidence base, or\nrequire further technical development, limiting their promise. Other\nhypothetical countermeasures to mirror bacteria could be enabled by\nfuture advances in science and technology, but guessing at their promise\nand feasibility is beyond the scope of this chapter."
+        }
+      ],
+      "subsections": [
+        {
+          "id": "it-may-be-possible-to-develop-antibody-therapy-against-mirror-bacteria-but-scaling-would-be-difficult",
+          "level": 3,
+          "title": "It may be possible to develop antibody therapy against mirror bacteria, but scaling would be difficult",
+          "title_html": "It\nmay be possible to develop antibody therapy against mirror bacteria, but\nscaling would be difficult",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "Antibodies can be administered to prevent or treat infection. A broad\nrepertoire of antibodies can be harvested from healthy donors and used\nas replacement therapy for patients with antibody-related\nimmunodeficiencies (Orange <em>et al</em>., 2006). Antibodies with\nspecific activity against a given pathogen can be harvested from humans\nor animals that have been exposed to the pathogen and form a common\nelement in post-exposure prophylaxis for rabies and tetanus (Forrat\n<em>et al</em>., 1998; Haradanhalli <em>et al</em>., 2022). Although\nmore commonly used in non-infectious disease, monoclonal antibodies can\nbe raised to target a specific pathogen target, such as palivizumab for\nrespiratory syncytial virus (Fenton <em>et al</em>., 2004)."
+            },
+            {
+              "type": "paragraph",
+              "html": "As a novel pathogen, the chance of any pre-existing antibody therapy\nbeing efficacious against mirror bacteria is remote. Most existing\nmonoclonal antibody treatments were developed by the immunization of\ntransgenic mice (R.-M. Lu <em>et al</em>., 2020), and given that mirror\nbacteria are unlikely to provoke an adaptive immune response in\nvertebrates (see <a href=\"#adaptive-immunity-to-mirror-bacteria-would-likely-be-impaired\">Section\n4.3</a>), this strategy would not straightforwardly work. Fully <em>in\nvitro</em> methods such as phage display should, however, remain viable.\nEven if neutralizing antibodies can be generated, production is\nexpensive (especially if monoclonal antibodies are necessary), and\nprolonged administration to large vulnerable populations is expected to\nbe infeasible."
+            }
+          ],
+          "subsections": []
+        },
+        {
+          "id": "mirror-phages-could-allow-for-phage-therapies-to-be-developed-against-mirror-bacteria",
+          "level": 3,
+          "title": "Mirror phages could allow for phage therapies to be developed against mirror bacteria",
+          "title_html": "Mirror\nphages could allow for phage therapies to be developed against mirror\nbacteria",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "html": "First pioneered in the 19th century, the use of phages to eliminate\nbacterial infections has seen renewed interest given the mounting\nchallenge of antimicrobial resistance. Besides offering an alternative\ntreatment modality, combination treatments of phages and antimicrobials\ncould have synergistic effects in cases where phage-resistance\nadaptations in bacteria increase their antimicrobial sensitivity\n(Hitchcock <em>et al</em>., 2023; Lin <em>et al</em>., 2017; Oromí-Bosch\n<em>et al</em>., 2023). Except for a few countries, however, phage\ntherapy is largely restricted to experimental or compassionate use\n(Hitchcock <em>et al</em>., 2023; McCallin <em>et al</em>., 2019)."
+            },
+            {
+              "type": "paragraph",
+              "html": "Reversed chirality renders mirror bacteria completely resistant to\nall existing bacteriophages, so mirror phages would need to be created\nto target mirror bacterial species. Creating such mirror phages is not\nyet possible, but would likely be easier than creating mirror bacteria;\ngiven an outbreak of mirror bacteria it should be possible to create\nmirror phages by creating mirror-image genomes copied from natural\nphages. Analogous procedures have already been used to create\n(natural-chirality) phiX174 and T7 bacteriophage genomes from synthetic\noligonucleotides (Chan <em>et al</em>., 2005; Smith <em>et al</em>.,\n2003). Numerous synthetic phages have also been generated from cell-free\nsystems, including for bacteria exhibiting transformation efficiencies\ntoo low for <em>in vivo</em> production (Mitsunaka <em>et al</em>.,\n2022)."
+            },
+            {
+              "type": "paragraph",
+              "html": "Mirror phage therapy may have some advantages compared to non-mirror\nphage therapy. Mirror phages are likely more resistant to clearance by\nthe immune system, and because the phages would be exclusive to mirror\nspecies, there would be no risk of horizontal gene transfer with natural\norganisms. Mirror phages, however, could also present some additional\nrisks. As noted in <a href=\"#invasive-mirror-bacteria-could-rapidly-evolve-and-diversify\">Section\n8.4</a>, mirror bacteria would by default lack efficient mechanisms for\nhorizontal gene transfer. While <em>de novo</em> mutations would\naccumulate and cause the initial strain to diversify, adaptations could\nnot spread between strains. By providing a mechanism for horizontal gene\ntransfer, mirror phages could potentially accelerate the evolutionary\nprocesses."
+            },
+            {
+              "type": "paragraph",
+              "html": "Even aside from the more unusual challenges associated with a mirror\nphage, phage therapy remains nascent. The clinical efficacy of a\nhypothetical “mirror phage therapy”, especially in the context of\ndeficient host responses to mirror bacteria, is unknown. It is also\nunknown whether mirror bacteria would evolve resistance to clinical\nmirror phage therapies. There are likely significant practical\nchallenges in designing an effective mirror phage and deploying it at a\nlarge scale. The prospects of using mirror phages as a countermeasure to\nmirror bacteria in the environment are considered further in <a href=\"#chapter-8-environmental-survival-and-spread\">Chapter 8</a>."
+            }
+          ],
+          "subsections": []
+        }
+      ]
+    }
+  ],
+  "kind": "chapter",
+  "number": 5
+}

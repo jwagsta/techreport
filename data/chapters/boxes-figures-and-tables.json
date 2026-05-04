@@ -1,0 +1,195 @@
+{
+  "id": "boxes-figures-and-tables",
+  "level": 1,
+  "title": "Boxes, Figures, and Tables",
+  "title_html": "Boxes, Figures, and Tables",
+  "blocks": [
+    {
+      "type": "paragraph",
+      "html": "<strong>Boxes</strong>"
+    },
+    {
+      "type": "paragraph",
+      "html": "<a href=\"#box-1.1-violations-of-chiral-symmetry-are-negligible-in-biological-systems\">1.1:\nViolations of chiral symmetry are negligible in biological systems\n13</a>"
+    },
+    {
+      "type": "paragraph",
+      "html": "<a href=\"#box-1.2-could-natural-chirality-molecules-be-toxic-to-mirror-life\">1.2:\nCould natural-chirality molecules be toxic to mirror life? 18</a>"
+    },
+    {
+      "type": "paragraph",
+      "html": "<a href=\"#box-1.3-why-is-mirror-life-absent-from-nature\">1.3: Why is\nmirror life absent from nature? 22</a>"
+    },
+    {
+      "type": "paragraph",
+      "html": "<a href=\"#section-1\">2.1: Applications of mirror peptides and\nproteins 29</a>"
+    },
+    {
+      "type": "paragraph",
+      "html": "<a href=\"#section-2\">2.2: Applications of mirror nucleic acids\n32</a>"
+    },
+    {
+      "type": "paragraph",
+      "html": "<a href=\"#box-3.1-some-potential-applications-of-mirror-bacteria-would-require-high-risk-strains\">3.1:\nSome potential applications of mirror bacteria would require high-risk\nstrains</a> 56"
+    },
+    {
+      "type": "paragraph",
+      "html": "<a href=\"#box-6.1-mirror-bacterial-infection-would-likely-be-fatal-to-d.-melanogaster-due-to-defective-peptidoglycan-recognition\">6.1:\nMirror bacterial infection would likely be fatal to <em>D.\nmelanogaster</em> due to defective peptidoglycan recognition 124</a>"
+    },
+    {
+      "type": "paragraph",
+      "html": "<a href=\"#box-8.1-dictyostelium-discoideum-may-not-effectively-phagocytose-and-kill-mirror-bacteria\">8.1:\n<em>Dictyostelium</em> <em>discoideum</em> may not effectively\nphagocytose and kill mirror bacteria 160</a>"
+    },
+    {
+      "type": "paragraph",
+      "html": "<a href=\"#box-8.2-escherichia-coli-can-survive-and-replicate-under-many-environmental-conditions\">8.2:\n<em>Escherichia coli</em> can survive and replicate under many\nenvironmental conditions 170</a>"
+    },
+    {
+      "type": "paragraph",
+      "html": "<strong>Figures</strong>"
+    },
+    {
+      "type": "paragraph",
+      "html": "<a href=\"#figure-1.1-chiral-molecules-have-non-superimposable-mirror-images\">1.1:\nChiral molecules have non-superimposable mirror images 6</a>"
+    },
+    {
+      "type": "paragraph",
+      "html": "<a href=\"#figure-1.2-living-organisms-are-built-from-both-chiral-and-achiral-molecules\">1.2:\nLiving organisms are built from both chiral and achiral molecules\n7</a>"
+    },
+    {
+      "type": "paragraph",
+      "html": "<a href=\"#figure-1.3-mirror-image-amino-acids-compose-mirror-image-peptides-that-fold-into-mirror-image-proteins\">1.3:\nMirror-image amino acids compose mirror-image peptides that fold into\nmirror-image proteins 8</a>"
+    },
+    {
+      "type": "paragraph",
+      "html": "<a href=\"#figure-1.4-mirror-image-enzymes-catalyze-mirror-image-reactions\">1.4:\nMirror-image enzymes catalyze mirror-image reactions 9</a>"
+    },
+    {
+      "type": "paragraph",
+      "html": "<a href=\"#figure-1.5-a-mirror-image-of-the-central-dogma\">1.5: A\nmirror image of the central dogma 10</a>"
+    },
+    {
+      "type": "paragraph",
+      "html": "<a href=\"#figure-2.1-chemical-synthesis-of-mirror-proteins\">2.1:\nChemical synthesis of mirror proteins 30</a>"
+    },
+    {
+      "type": "paragraph",
+      "html": "<a href=\"#figure-2.2-synthesis-of-kilobase-length-natural-chirality-and-mirror-dna-and-rna\">2.2:\nSynthesis of kilobase-length natural-chirality and mirror DNA and RNA\n33</a>"
+    },
+    {
+      "type": "paragraph",
+      "html": "<a href=\"#figure-2.3-components-of-ribosomes-and-the-pure-system\">2.3:\nComponents of ribosomes and the PURE system 38</a>"
+    },
+    {
+      "type": "paragraph",
+      "html": "<a href=\"#figure-2.4-milestones-towards-the-creation-of-a-mirror-bacterium\">2.4:\nMilestones towards the creation of a mirror bacterium 40</a>"
+    },
+    {
+      "type": "paragraph",
+      "html": "<a href=\"#figure-2.5-genetic-code-reprogramming-allows-the-genetically-encoded-synthesis-of-non-canonical-biopolymers-in-cells\">2.5:\nGenetic code reprogramming allows the genetically encoded synthesis of\nnon-canonical biopolymers in cells 45</a>"
+    },
+    {
+      "type": "paragraph",
+      "html": "<a href=\"#figure-2.6-natural-crossover-and-mirror-image-translation\">2.6:\nNatural, crossover, and mirror-image translation 46</a>"
+    },
+    {
+      "type": "paragraph",
+      "html": "<a href=\"#figure-2.7-stepwise-conversion-of-a-natural-chirality-bacterium-into-a-mirror-bacterium\">2.7:\nStepwise conversion of a natural-chirality bacterium into a mirror\nbacterium 49</a>"
+    },
+    {
+      "type": "paragraph",
+      "html": "<a href=\"#figure-4.1-the-human-health-risks-of-mirror-bacteria\">4.1:\nThe human health risks of mirror bacteria 67</a>"
+    },
+    {
+      "type": "paragraph",
+      "html": "<a href=\"#figure-4.2-innate-immune-recognition-of-mirror-bacteria-could-be-severely-impaired\">4.2:\nInnate immune recognition of mirror bacteria could be severely impaired\n69</a>"
+    },
+    {
+      "type": "paragraph",
+      "html": "<a href=\"#figure-4.3-complement-activity-against-mirror-bacteria-would-likely-be-impaired\">4.3:\nComplement activity against mirror bacteria would likely be impaired\n75</a>"
+    },
+    {
+      "type": "paragraph",
+      "html": "<a href=\"#section-3\">4.4: Mirror bacteria could evade phagocytosis\nand killing by macrophages 80</a>"
+    },
+    {
+      "type": "paragraph",
+      "html": "<a href=\"#figure-4.5-t-cell-activation-is-likely-to-be-severely-impaired-in-response-to-mirror-bacterial-infection\">4.5:\nT cell activation is likely to be severely impaired in response to\nmirror bacterial infection 84</a>"
+    },
+    {
+      "type": "paragraph",
+      "html": "<a href=\"#figure-5.1-conjugate-vaccines-may-improve-adaptive-immune-recognition-of-mirror-bacteria\">5.1:\nConjugate vaccines may improve adaptive immune recognition of mirror\nbacteria 115</a>"
+    },
+    {
+      "type": "paragraph",
+      "html": "<a href=\"#figure-6.1-mirror-bacteria-would-likely-evade-d.-melanogaster-immune-mechanisms-due-to-defective-peptidoglycan-recognition\">6.1:\nMirror bacteria would likely evade <em>D. melanogaster</em> immune\nmechanisms due to defective peptidoglycan recognition 126</a>"
+    },
+    {
+      "type": "paragraph",
+      "html": "<a href=\"#figure-6.2-the-number-of-prr-genes-varies-widely-across-animal-species\">6.2:\nThe number of PRR genes varies widely across animal species 132</a>"
+    },
+    {
+      "type": "paragraph",
+      "html": "<a href=\"#figure-7.1-mirror-bacteria-are-likely-to-evade-detection-by-plant-immunity\">7.1:\nMirror bacteria are likely to evade detection by plant immunity\n136</a>"
+    },
+    {
+      "type": "paragraph",
+      "html": "<a href=\"#figure-7.2-mirror-bacteria-might-enter-leaves-through-open-stomata-and-grow-within-the-leaf-apoplast\">7.2:\nMirror bacteria might enter leaves through open stomata and grow within\nthe leaf apoplast 140</a>"
+    },
+    {
+      "type": "paragraph",
+      "html": "<a href=\"#figure-7.3-the-anatomy-of-a-root-could-facilitate-mirror-bacterial-colonization\">7.3:\nThe anatomy of a root could facilitate mirror bacterial colonization\n144</a>"
+    },
+    {
+      "type": "paragraph",
+      "html": "<a href=\"#figure-7.4-plants-transport-water-and-nutrients-via-xylem-and-phloem\">7.4:\nPlants transport water and nutrients via xylem and phloem 146</a>"
+    },
+    {
+      "type": "paragraph",
+      "html": "<a href=\"#figure-8.1-mirror-bacteria-could-be-resistant-to-protists-a-major-cause-of-bacterial-mortality\">8.1:\nMirror bacteria could be resistant to protists, a major cause of\nbacterial mortality 162</a>"
+    },
+    {
+      "type": "paragraph",
+      "html": "<a href=\"#figure-8.2-mirror-phototrophic-bacteria-could-evade-predation-thereby-colonizing-large-fractions-of-the-ocean-with-severe-consequences-for-marine-ecosystems\">8.2:\nMirror phototrophic bacteria could evade predation, thereby colonizing\nlarge fractions of<br/>\nthe ocean with severe consequences for marine ecosystems 173</a>"
+    },
+    {
+      "type": "paragraph",
+      "html": "<strong>Tables</strong>"
+    },
+    {
+      "type": "paragraph",
+      "html": "<a href=\"#table-1.1-achiral-organic-molecules-that-can-be-utilized-by-wild-type-or-mutant-e.-coli-k-12\">1.1:\nAchiral organic molecules that can be utilized by wild-type or mutant\n<em>E. coli</em> K-12 15</a>"
+    },
+    {
+      "type": "paragraph",
+      "html": "<a href=\"#table-1.2-utilization-of-ʟ--and-ᴅ-amino-acids-by-e.-coli\">1.2:\nUtilization of ʟ- and ᴅ-amino acids by <em>E. coli</em> 16</a>"
+    },
+    {
+      "type": "paragraph",
+      "html": "<a href=\"#table-1.3-utilization-of-the-enantiomers-of-common-monosaccharides-by-e.-coli\">1.3:\nUtilization of the enantiomers of common monosaccharides by <em>E.\ncoli</em> 17</a>"
+    },
+    {
+      "type": "paragraph",
+      "html": "<a href=\"#table-5.1-classes-of-existing-antibiotics-and-characteristics-relevant-to-their-applicability-for-treatment-of-mirror-bacterial-infections\">5.1:\nClasses of existing antibiotics and characteristics relevant to their\napplicability for<br/>\ntreatment of mirror bacterial infections 110</a>"
+    },
+    {
+      "type": "paragraph",
+      "html": "<a href=\"#table-8.1-naturally-occurring-antibiotics-that-could-retain-efficacy-against-mirror-bacteria\">8.1:\nNaturally occurring antibiotics that could retain efficacy against\nmirror bacteria 163</a>"
+    },
+    {
+      "type": "paragraph",
+      "html": "<a href=\"#table-8.2-efficacy-of-broad-spectrum-bacteriocins-against-mirror-bacteria\">8.2:\nEfficacy of broad-spectrum bacteriocins against mirror bacteria\n164</a>"
+    },
+    {
+      "type": "paragraph",
+      "html": "<a href=\"#table-8.3-other-examples-of-bacterial-weapon-systems\">8.3:\nOther examples of bacterial weapon systems 166</a>"
+    },
+    {
+      "type": "paragraph",
+      "html": "<a href=\"#table-8.4-rates-of-spread-of-animals-and-novel-pathogens-during-historical-invasions-and-epidemics\">8.4:\nRates of spread of animals and novel pathogens during historical\ninvasions and epidemics 176</a>"
+    }
+  ],
+  "subsections": [],
+  "kind": "backmatter",
+  "number": null
+}

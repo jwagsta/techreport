@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Duotone tuner — Mirror Bacteria Report</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #ffffff;
+    --paper-2: #fafafa;
+    --paper-3: #f4f4f4;
+    --ink: #0a0a0a;
+    --ink-2: #2a2a2a;
+    --muted: #6a6a6a;
+    --muted-2: #8a8a8a;
+    --rule: #e5e5e5;
+    --rule-2: #d6d6d6;
+    --accent: #0f62fe;
+    --serif: 'Source Serif 4', Georgia, serif;
+    --sans: 'Inter', system-ui, -apple-system, sans-serif;
+
+    /* Tunables — bound to sliders */
+    --duotone-strength: 0.48;
+    --tint: #0f62fe;
+    --filter-grayscale: 1;
+    --filter-contrast: 1.05;
+    --filter-brightness: 1.06;
+    --filter-saturate: 1;
+    --circle-size: 60px;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; height: 100%; }
+  body {
+    background: var(--paper-2);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  .topbar {
+    position: sticky; top: 0; z-index: 50;
+    background: var(--paper);
+    border-bottom: 1px solid var(--rule);
+    padding: 10px 22px;
+    display: flex; align-items: center; gap: 16px;
+  }
+  .topbar h1 {
+    margin: 0;
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    font-weight: 600;
+  }
+  .topbar .grow { flex: 1; }
+  .topbar a {
+    color: var(--ink-2);
+    text-decoration: none;
+    font-size: 12px;
+    border: 1px solid var(--rule);
+    border-radius: 999px;
+    padding: 5px 12px;
+  }
+  .topbar a:hover { border-color: var(--accent); color: var(--accent); }
+
+  .main {
+    display: grid;
+    grid-template-columns: 320px minmax(0, 1fr);
+    gap: 20px;
+    padding: 20px;
+    align-items: start;
+  }
+  @media (max-width: 800px) { .main { grid-template-columns: 1fr; } }
+
+  .panel {
+    background: var(--paper);
+    border: 1px solid var(--rule);
+    border-radius: 8px;
+    padding: 18px 20px;
+    position: sticky; top: 60px;
+  }
+  .panel h2 {
+    margin: 0 0 12px;
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+    font-weight: 600;
+  }
+  .control { margin-bottom: 16px; }
+  .control label {
+    display: flex; justify-content: space-between; align-items: baseline;
+    margin-bottom: 4px;
+    font-size: 12px;
+    color: var(--ink-2);
+  }
+  .control label .v {
+    color: var(--muted);
+    font-variant-numeric: tabular-nums;
+    font-size: 11px;
+  }
+  .control input[type=range] { width: 100%; }
+  .control input[type=color] {
+    width: 100%; height: 28px;
+    border: 1px solid var(--rule); border-radius: 4px;
+    padding: 2px;
+  }
+  .control select {
+    width: 100%; padding: 5px 8px;
+    border: 1px solid var(--rule); border-radius: 4px;
+    font: inherit; font-size: 12px;
+    background: var(--paper);
+  }
+  .panel .row { display: flex; gap: 8px; }
+  .panel .row > * { flex: 1; }
+  .panel button {
+    font: inherit; font-size: 12px;
+    padding: 7px 12px;
+    border: 1px solid var(--rule);
+    background: var(--paper);
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  .panel button:hover { border-color: var(--accent); color: var(--accent); }
+  .panel button.primary { background: var(--accent); color: white; border-color: var(--accent); }
+  .panel button.primary:hover { background: #0e54d8; color: white; }
+  .panel pre {
+    margin: 12px 0 0;
+    padding: 10px 12px;
+    background: var(--paper-2);
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+    font-family: ui-monospace, Menlo, monospace;
+    font-size: 11px;
+    line-height: 1.5;
+    white-space: pre-wrap;
+    color: var(--ink-2);
+    max-height: 200px;
+    overflow-y: auto;
+  }
+  .panel .reset {
+    background: transparent; border: none;
+    font-size: 11px; color: var(--muted);
+    cursor: pointer; text-decoration: underline;
+    padding: 0; margin-top: 4px;
+  }
+  .panel .reset:hover { color: var(--accent); }
+
+  .grid-wrap h2 {
+    margin: 0 0 14px;
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+    font-weight: 600;
+  }
+  .face-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 14px 18px;
+  }
+  .face-card {
+    display: flex; flex-direction: column;
+    gap: 6px;
+    padding: 10px 12px;
+    background: var(--paper);
+    border: 1px solid var(--rule);
+    border-radius: 6px;
+    align-items: center;
+    text-align: center;
+  }
+  .face-card .name {
+    font-size: 11px;
+    color: var(--ink-2);
+    line-height: 1.3;
+    min-height: 2.6em;
+  }
+  .face-card .name b { display: block; color: var(--ink); font-weight: 600; }
+
+  /* The duotone face — same logic as the live site */
+  .face {
+    width: var(--circle-size);
+    height: var(--circle-size);
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    isolation: isolate;
+    background: var(--tint);
+  }
+  .face::before, .face::after {
+    content: ""; position: absolute; inset: 0;
+  }
+  .face::before {
+    background-image: var(--head-img);
+    background-size: var(--head-bg-size);
+    background-position: var(--head-bg-pos);
+    background-repeat: no-repeat;
+    filter: grayscale(var(--filter-grayscale)) contrast(var(--filter-contrast)) brightness(var(--filter-brightness)) saturate(var(--filter-saturate));
+    mix-blend-mode: var(--blend-before, screen);
+    z-index: 1;
+  }
+  .face::after {
+    background: var(--tint);
+    mix-blend-mode: var(--blend-after, multiply);
+    opacity: var(--duotone-strength);
+    z-index: 2;
+  }
+  /* Comparison row: original vs current */
+  .compare-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-bottom: 18px;
+  }
+  .compare-row .col {
+    background: var(--paper);
+    border: 1px solid var(--rule);
+    border-radius: 8px;
+    padding: 12px;
+    text-align: center;
+  }
+  .compare-row .col h3 {
+    margin: 0 0 10px;
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted-2);
+    font-weight: 600;
+  }
+  .compare-row .face-strip {
+    display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;
+  }
+  /* Plain (no duotone) face for comparison */
+  .face.plain { background: transparent; }
+  .face.plain::after { display: none; }
+  .face.plain::before { mix-blend-mode: normal; filter: none; }
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <h1>Duotone tuner</h1>
+  <div class="grow"></div>
+  <a href="../headshots/">Headshot picker</a>
+  <a href="../../">Back to site</a>
+</header>
+
+<div class="main">
+  <aside class="panel">
+    <h2>Tunables</h2>
+
+    <div class="control">
+      <label>Duotone strength <span class="v" data-v="duotone-strength">0.48</span></label>
+      <input type="range" id="duotone-strength" min="0" max="1" step="0.01" value="0.48">
+    </div>
+
+    <div class="control">
+      <label>Contrast <span class="v" data-v="filter-contrast">1.05</span></label>
+      <input type="range" id="filter-contrast" min="0.5" max="2" step="0.01" value="1.05">
+    </div>
+
+    <div class="control">
+      <label>Brightness <span class="v" data-v="filter-brightness">1.06</span></label>
+      <input type="range" id="filter-brightness" min="0.5" max="2" step="0.01" value="1.06">
+    </div>
+
+    <div class="control">
+      <label>Grayscale amount <span class="v" data-v="filter-grayscale">1.00</span></label>
+      <input type="range" id="filter-grayscale" min="0" max="1" step="0.01" value="1">
+    </div>
+
+    <div class="control">
+      <label>Saturate (post-grayscale) <span class="v" data-v="filter-saturate">1.00</span></label>
+      <input type="range" id="filter-saturate" min="0" max="2" step="0.01" value="1">
+    </div>
+
+    <div class="control">
+      <label>Tint colour</label>
+      <input type="color" id="tint" value="#0f62fe">
+    </div>
+
+    <div class="control">
+      <label>Circle size <span class="v" data-v="circle-size">60px</span></label>
+      <input type="range" id="circle-size" min="32" max="160" step="2" value="60">
+    </div>
+
+    <div class="control">
+      <label>Blend mode (image)</label>
+      <select id="blend-before">
+        <option value="screen" selected>screen</option>
+        <option value="lighten">lighten</option>
+        <option value="normal">normal</option>
+        <option value="hard-light">hard-light</option>
+      </select>
+    </div>
+
+    <div class="control">
+      <label>Blend mode (overlay)</label>
+      <select id="blend-after">
+        <option value="multiply" selected>multiply</option>
+        <option value="color">color</option>
+        <option value="overlay">overlay</option>
+        <option value="hue">hue</option>
+        <option value="hard-light">hard-light</option>
+      </select>
+    </div>
+
+    <div class="row">
+      <button class="primary" id="btn-copy-css">Copy CSS</button>
+      <button id="btn-reset">Reset</button>
+    </div>
+    <button class="reset" id="btn-restore">Restore last saved</button>
+    <pre id="css-out" hidden></pre>
+  </aside>
+
+  <div class="grid-wrap">
+    <div class="compare-row">
+      <div class="col">
+        <h3>Plain (grayscale only)</h3>
+        <div class="face-strip" id="strip-plain"></div>
+      </div>
+      <div class="col">
+        <h3>With duotone</h3>
+        <div class="face-strip" id="strip-tinted"></div>
+      </div>
+    </div>
+
+    <h2>All headshots</h2>
+    <div class="face-grid" id="face-grid"></div>
+  </div>
+</div>
+
+<script>
+'use strict';
+const STORAGE = 'mb-duotone-tuner-v1';
+const TUNABLES = ['duotone-strength','filter-contrast','filter-brightness','filter-grayscale','filter-saturate','tint','circle-size','blend-before','blend-after'];
+const DEFAULTS = {
+  'duotone-strength': '0.48',
+  'filter-contrast': '1.05',
+  'filter-brightness': '1.06',
+  'filter-grayscale': '1',
+  'filter-saturate': '1',
+  'tint': '#0f62fe',
+  'circle-size': '60',
+  'blend-before': 'screen',
+  'blend-after': 'multiply',
+};
+
+let headshots = {};
+
+async function loadHeadshots() {
+  const r = await fetch('../../headshots-applied.json');
+  if (!r.ok) return {};
+  return r.json();
+}
+
+function applyVar(id, val) {
+  const root = document.documentElement;
+  if (id === 'tint') {
+    root.style.setProperty('--tint', val);
+  } else if (id === 'circle-size') {
+    root.style.setProperty('--circle-size', val + 'px');
+  } else if (id === 'blend-before') {
+    root.style.setProperty('--blend-before', val);
+  } else if (id === 'blend-after') {
+    root.style.setProperty('--blend-after', val);
+  } else {
+    root.style.setProperty('--' + id, val);
+  }
+  // readout
+  const v = document.querySelector('[data-v="' + id + '"]');
+  if (v) {
+    if (id === 'circle-size') v.textContent = val + 'px';
+    else v.textContent = val;
+  }
+}
+
+function setControl(id, val) {
+  const el = document.getElementById(id);
+  if (!el) return;
+  el.value = val;
+  applyVar(id, val);
+}
+
+function loadSaved() {
+  let saved = {};
+  try { saved = JSON.parse(localStorage.getItem(STORAGE) || '{}'); } catch (e) {}
+  for (const id of TUNABLES) {
+    setControl(id, saved[id] != null ? saved[id] : DEFAULTS[id]);
+  }
+}
+
+function persist() {
+  const out = {};
+  for (const id of TUNABLES) {
+    out[id] = document.getElementById(id).value;
+  }
+  localStorage.setItem(STORAGE, JSON.stringify(out));
+}
+
+function buildFaceStyle(rec) {
+  const r = (rec.height || 1) / (rec.width || 1);
+  const c = rec.crop || { x: 0, y: 0, size: 1 };
+  const size = Math.max(0.0001, c.size);
+  const bgSize = (1 / size) * 100;
+  const bgX = size >= 1 ? 0 : (c.x / (1 - size)) * 100;
+  const bgY = Math.abs(r - size) < 1e-9 ? 0 : (c.y * r) / (r - size) * 100;
+  return {
+    '--head-img': `url('${rec.url}')`,
+    '--head-bg-size': bgSize.toFixed(3) + '% auto',
+    '--head-bg-pos': bgX.toFixed(3) + '% ' + bgY.toFixed(3) + '%',
+  };
+}
+
+function makeFace(rec, plain) {
+  const div = document.createElement('div');
+  div.className = 'face' + (plain ? ' plain' : '');
+  const s = buildFaceStyle(rec);
+  for (const [k, v] of Object.entries(s)) {
+    div.style.setProperty(k, v);
+  }
+  return div;
+}
+
+function renderGrid() {
+  const grid = document.getElementById('face-grid');
+  grid.innerHTML = '';
+  const names = Object.keys(headshots).sort();
+  for (const name of names) {
+    const rec = headshots[name];
+    if (!rec || !rec.url) continue;
+    const card = document.createElement('div');
+    card.className = 'face-card';
+    card.appendChild(makeFace(rec));
+    const n = document.createElement('div');
+    n.className = 'name';
+    const last = name.split(' ').pop();
+    n.innerHTML = '<b>' + last + '</b>' + name.replace(last, '').trim();
+    card.appendChild(n);
+    grid.appendChild(card);
+  }
+}
+
+function renderCompare() {
+  const stripPlain = document.getElementById('strip-plain');
+  const stripTinted = document.getElementById('strip-tinted');
+  stripPlain.innerHTML = '';
+  stripTinted.innerHTML = '';
+  const sample = Object.values(headshots).slice(0, 6);
+  for (const rec of sample) {
+    if (!rec || !rec.url) continue;
+    stripPlain.appendChild(makeFace(rec, true));
+    stripTinted.appendChild(makeFace(rec, false));
+  }
+}
+
+function emitCSS() {
+  const out = [':root {'];
+  out.push('  --duotone-strength: ' + document.getElementById('duotone-strength').value + ';');
+  out.push('}');
+  out.push('.face[data-headshot] {');
+  out.push('  background: ' + document.getElementById('tint').value + ';');
+  out.push('}');
+  out.push('.face[data-headshot]::before {');
+  const fc = document.getElementById('filter-contrast').value;
+  const fb = document.getElementById('filter-brightness').value;
+  const fg = document.getElementById('filter-grayscale').value;
+  const fs = document.getElementById('filter-saturate').value;
+  out.push('  filter: grayscale(' + fg + ') contrast(' + fc + ') brightness(' + fb + ') saturate(' + fs + ');');
+  out.push('  mix-blend-mode: ' + document.getElementById('blend-before').value + ';');
+  out.push('}');
+  out.push('.face[data-headshot]::after {');
+  out.push('  background: ' + document.getElementById('tint').value + ';');
+  out.push('  mix-blend-mode: ' + document.getElementById('blend-after').value + ';');
+  out.push('  opacity: var(--duotone-strength);');
+  out.push('}');
+  return out.join('\n');
+}
+
+function copyCSS() {
+  const css = emitCSS();
+  const pre = document.getElementById('css-out');
+  pre.textContent = css;
+  pre.hidden = false;
+  navigator.clipboard.writeText(css).then(() => {
+    const btn = document.getElementById('btn-copy-css');
+    btn.textContent = 'Copied!';
+    setTimeout(() => { btn.textContent = 'Copy CSS'; }, 1400);
+  }).catch(() => {});
+}
+
+function wireSliders() {
+  for (const id of TUNABLES) {
+    document.getElementById(id).addEventListener('input', e => {
+      applyVar(id, e.target.value);
+      persist();
+    });
+  }
+  document.getElementById('btn-copy-css').addEventListener('click', copyCSS);
+  document.getElementById('btn-reset').addEventListener('click', () => {
+    for (const id of TUNABLES) setControl(id, DEFAULTS[id]);
+    persist();
+  });
+  document.getElementById('btn-restore').addEventListener('click', loadSaved);
+}
+
+(async function () {
+  loadSaved();
+  wireSliders();
+  headshots = await loadHeadshots();
+  renderCompare();
+  renderGrid();
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+{
+  "id": "contributions-and-acknowledgments",
+  "level": 1,
+  "title": "Contributions and Acknowledgments",
+  "title_html": "Contributions and\nAcknowledgments",
+  "blocks": [
+    {
+      "type": "paragraph",
+      "html": "<strong>Author Contributions</strong>"
+    },
+    {
+      "type": "paragraph",
+      "html": "Authors are listed alphabetically by surname for each chapter;\nordering does not indicate the level of individual contributions. The\ninitial draft of the technical report was based on research conducted by\nKME, which was further developed through investigations by MLN, SBO, and\nDAR. All authors contributed additional research, writing, editing, or\nfeedback for their respective chapters. DJB and JMS coordinated the\ncompilation and review of the final report."
+    },
+    {
+      "type": "paragraph",
+      "html": "<strong>Acknowledgments<br/>\n</strong>The authors of this report would like to thank the co-authors\nof the <em>Science</em> article for providing input at various stages of\nthe technical report’s creation. In addition, we are grateful to the\nfollowing people who provided critical feedback on drafts of individual\nchapters, or, in some cases, the entire report: William J. Bradshaw,\nSalvadore Buse, Ivana Cvijović, John Donnelly, Seth Donoughe, Steven\nErickson, Julius Fredens, Louise F.H. Funke, Jacob Glanville, Alex\nKleinman, Michael McLaren, Alexander Mijalis, Sriharshita (Harshu)\nMusunuri, Marta Napiorkowska, Velislava Petrova, Georgia Ray, Daniel\nRice, Adin Richards, Maximilian Schons, Jon Sanders, Elizabeth Shepherd,\nChris Somerville, Christopher Stamper, Benjamin Stewart, Gina Suh, Joe\nTorres, Kyle Webster, James H.R. Wheeler, and Heather Youngs. In\naddition, we would like to thank Andrew Snyder-Beattie and James\nWagstaff, who helped to initiate the writing of the report; and James A.\nSmith and Ivana Cvijović, who provided operational support in the\nproduction and review of the report. Finally, we would like to thank all\nof the reviewers (listed on pg iii), including those who chose to remain\nanonymous. Responsibility for the final content rests entirely with the\nauthors."
+    },
+    {
+      "type": "paragraph",
+      "html": "Figures and illustrations presented in this report were based on\nconcepts designed by the authors, and created in partnership with Alana\nMcPherson and Kip Lyall at Science Journal Editors (SJE). The images are\nmade available under a Creative Commons\nAttribution-Noncommercial-Sharealike License (CC BY-NC-SA 4.0)."
+    },
+    {
+      "type": "paragraph",
+      "html": "The authors acknowledge Open Philanthropy for their support of the\ntechnical report through operational assistance, and funding to RKD,\nKME, GL, MLN, SBO, and JMS. DAR also acknowledges past support for work\non the same topic. The authors also acknowledge operational support from\nthe Mirror Biology Dialogues Fund, enabled by financial contributions\nfrom the Alfred P. Sloan Foundation, the David and Lucile Packard\nFoundation, the Gordon and Betty Moore Foundation, Open Philanthropy,\nand Patrick Collison. KPA and JIG acknowledge support from the National\nScience Foundation, Award #1901145 (RCN Build-a-Cell: An Open Community\nConsidering & Advancing the Construction of Synthetic Cells). KME\nacknowledges support from NSF Award #1943141 (Towards Open and\nResponsive Ecological Editing). YC acknowledges support from UKRI\nEngineering and Physical Sciences Research Council EP/V05967X/1 (Open\nPlus Fellowship: Engineering and safeguarding synthetic genomes). Other\nauthors acknowledge general support from a wide range of sources. The\nviews expressed here are those of the individuals and not those of any\norganizations with which they are affiliated."
+    },
+    {
+      "type": "paragraph",
+      "html": "<strong>Competing Interests</strong>"
+    },
+    {
+      "type": "paragraph",
+      "html": "VSC is a co-founder, Scientific Advisor, and equity holder in\nSeqCoast Genomics, LLC, and Middle Author Bioinformatics, LLC. VSC and\nJP are board members of the Mirror Biology Dialogues Fund. FJI is a\nco-founder of Pearl Bio. JDGJ is the founder and a shareholder of\nNorfolk Plant Sciences and Norfolk Healthy Produce. RM is a member of\nthe advisory board for <em>Cell</em>, and the scientific advisory boards\nof Amgen, GlaxoSmithKline, and Janssen Pharmaceuticals. SBO is the\nfounder and an executive at SynX Therapeutics Ltd. HS is listed as a\nco-inventor on patents pertaining to lactazole engineering, as well as\npatents pertaining to tRNA engineering to enable the incorporation of\nvarious D-amino acids. JMS is a former employee and shareholder of\nTeiko.bio. In the last 5 years, RKD, KME, TVI, GL, MLN, SBO, JP, DAR,\nJMS, and BW have, either as individuals or as project leaders, received\nfunding from Open Philanthropy to support work that is not directly\nrelated to this report. KPA, DA, YC, TWH, JIG, REL, JWS, and NJT declare\nno conflicts of interest relevant to this research"
+    }
+  ],
+  "subsections": [],
+  "kind": "backmatter",
+  "number": null
+}

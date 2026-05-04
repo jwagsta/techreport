@@ -1,0 +1,367 @@
+{
+  "schemaVersion": "1.0",
+  "generatedAt": "2026-05-03T00:00:00Z",
+  "notes": "Candidate headshot URLs gathered from public faculty pages, institutional sites, and Wikimedia Commons. Direct image URLs were extracted from each source's HTML where possible; otherwise the source page URL is provided so a user can manually pick the image. Names that differ from the report header (e.g. 'Sebastian B. Oehm' rather than 'Sean B. Otto') match the affiliation list in data/index.json. URLs are best-effort; some institutional CDNs append cache tokens that may expire — re-fetch if a link goes dead.",
+  "authors": [
+    {
+      "name": "Katarzyna P. Adamala",
+      "candidates": [
+        {
+          "src": "https://cbs.umn.edu/sites/cbs.umn.edu/files/styles/cbs_portrait_directory_page/public/2025-03/294a8246-290-360_1.png?itok=9fiHbzq2",
+          "source": "https://cbs.umn.edu/directory/kate-adamala",
+          "license": "university faculty page (UMN College of Biological Sciences)",
+          "note": "head & shoulders, professional"
+        },
+        {
+          "src": null,
+          "source": "https://en.wikipedia.org/wiki/Kate_Adamala",
+          "license": "Wikipedia article (check infobox image for Wikimedia Commons file)",
+          "note": "Wikipedia page exists; manually inspect for an infobox portrait that may be CC-licensed"
+        }
+      ]
+    },
+    {
+      "name": "Deepa Agashe",
+      "candidates": [
+        {
+          "src": "https://www.ncbs.res.in/sites/default/files/faculty/deepa_sub.jpg",
+          "source": "https://www.ncbs.res.in/faculty/deepa",
+          "license": "institutional faculty page (NCBS Bengaluru)",
+          "note": "head & shoulders, professional"
+        }
+      ]
+    },
+    {
+      "name": "Damon J. Binder",
+      "candidates": [
+        {
+          "src": null,
+          "source": "https://www.openphilanthropy.org/about/team/damon-binder/",
+          "license": "team page (Open Philanthropy)",
+          "note": "WebFetch returned 403; team page typically has a portrait — pull manually"
+        },
+        {
+          "src": null,
+          "source": "https://coefficientgiving.org/team/damon-binder/",
+          "license": "team page (Coefficient Giving, current employer)",
+          "note": "team page typically has a portrait — pull manually"
+        }
+      ]
+    },
+    {
+      "name": "Yizhi Cai",
+      "candidates": [
+        {
+          "src": "https://research.manchester.ac.uk/files-asset/75749990/Patrick.f206b88.jpg?w=160&f=jpg",
+          "source": "https://research.manchester.ac.uk/en/persons/yizhi.cai/",
+          "license": "university research portal (University of Manchester)",
+          "note": "head & shoulders thumbnail; may be available at higher res by removing ?w=160"
+        }
+      ]
+    },
+    {
+      "name": "Vaughn S. Cooper",
+      "candidates": [
+        {
+          "src": "https://www.mmg.pitt.edu/sites/default/files/styles/person_large/public/person-images/cooper-vaughn-edited-photo.jpg?itok=ZAi9Zmub",
+          "source": "https://www.mmg.pitt.edu/people/cooper",
+          "license": "university faculty page (Pitt MMG)",
+          "note": "head & shoulders, professional"
+        }
+      ]
+    },
+    {
+      "name": "Ryan K. Duncombe",
+      "candidates": [
+        {
+          "src": null,
+          "source": "https://www.mbdialogues.org/about",
+          "license": "organization page (Mirror Biology Dialogues Fund)",
+          "note": "No clearly-public headshot located via search; MBDF About page lists him without image. Skip or ask author directly."
+        }
+      ]
+    },
+    {
+      "name": "Kevin M. Esvelt",
+      "candidates": [
+        {
+          "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Kevin_Esvelt.png/250px-Kevin_Esvelt.png",
+          "source": "https://en.wikipedia.org/wiki/Kevin_M._Esvelt",
+          "license": "Wikimedia Commons (check file page for exact CC license)",
+          "note": "head & shoulders, 2016"
+        },
+        {
+          "src": "https://lh3.googleusercontent.com/sitesv/AA5AbUDnJZR4AMxM_E4TThm5bO5pTJ2hi5AQDzc0t7WWrmdqnc1W8sUuGZfSRKpwbzBIJEF8klSCDpuOWEdCSvNeoXd50umA-eH2-HpbUP8wzGMMPQzRam5hY7JT2rqluJ31DV-7NjMhLCBffLdyE8zP2ehplS3YQj43Y4PlyULa5dwo4VbjkQK0c3y8EKuyzQuq-iG8GTOntQshuoQB9bmDVH99KU3538247zEL8Lg=w1280",
+          "source": "https://www.sculptingevolution.org/kevin-m-esvelt",
+          "license": "lab website (Sculpting Evolution / MIT Media Lab)",
+          "note": "head & shoulders, professional; Google Sites-hosted"
+        },
+        {
+          "src": null,
+          "source": "https://www.media.mit.edu/people/esvelt/overview/",
+          "license": "MIT Media Lab profile",
+          "note": "fetch failed; MIT Media Lab profile is the canonical source"
+        }
+      ]
+    },
+    {
+      "name": "John I. Glass",
+      "candidates": [
+        {
+          "src": "https://www.jcvi.org/system/files/assets/bio/xglass-john.jpg.pagespeed.ic.wLh9Hy4KNe.jpg",
+          "source": "https://www.jcvi.org/about/john-glass",
+          "license": "institutional bio page (J. Craig Venter Institute)",
+          "note": "head & shoulders, professional"
+        }
+      ]
+    },
+    {
+      "name": "Timothy W. Hand",
+      "candidates": [
+        {
+          "src": "https://www.pediatrics.pitt.edu/sites/default/files/styles/person_large/public/person-images/hand_0001crop_2_copy_2.jpg?itok=JuxFwM7e",
+          "source": "https://www.pediatrics.pitt.edu/people/timothy-w-hand-phd",
+          "license": "university faculty page (Pitt Pediatrics)",
+          "note": "head & shoulders, professional"
+        }
+      ]
+    },
+    {
+      "name": "Thomas V. Inglesby",
+      "candidates": [
+        {
+          "src": null,
+          "source": "https://centerforhealthsecurity.org/who-we-are/our-people/tom-inglesby-md",
+          "license": "institutional bio (Johns Hopkins Center for Health Security)",
+          "note": "fetch returned 403; canonical site has a head & shoulders portrait — pull manually"
+        },
+        {
+          "src": null,
+          "source": "https://publichealth.jhu.edu/faculty/3492/thomas-v-inglesby",
+          "license": "university faculty page (JHU Bloomberg School)",
+          "note": "fetch returned 403; canonical Johns Hopkins faculty page"
+        }
+      ]
+    },
+    {
+      "name": "Farren J. Isaacs",
+      "candidates": [
+        {
+          "src": null,
+          "source": "https://medicine.yale.edu/profile/farren-isaacs/",
+          "license": "Yale faculty profile (offers 'Download Hi-Res Photo')",
+          "note": "Yale profile page has a downloadable hi-res portrait link — pull manually"
+        },
+        {
+          "src": null,
+          "source": "https://mcdb.yale.edu/people/farren-isaacs",
+          "license": "Yale department page (MCDB)",
+          "note": "department faculty page"
+        }
+      ]
+    },
+    {
+      "name": "Jonathan D. G. Jones",
+      "candidates": [
+        {
+          "src": "https://s3.eu-west-2.amazonaws.com/uploads.tsl.ac.uk/shared-images/_1600x1064_crop_center-center_82_line/Jonathan-Jones-DSC8990.jpeg",
+          "source": "https://www.tsl.ac.uk/about/people/jonathan-jones",
+          "license": "institutional faculty page (Sainsbury Laboratory)",
+          "note": "head & shoulders, professional, large 1600x1064 crop"
+        },
+        {
+          "src": null,
+          "source": "https://en.wikipedia.org/wiki/Jonathan_D._G._Jones",
+          "license": "Wikipedia (check infobox for Commons file)",
+          "note": "Wikipedia page exists; may have CC-licensed portrait"
+        }
+      ]
+    },
+    {
+      "name": "Richard E. Lenski",
+      "candidates": [
+        {
+          "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Richard_Lenski_with_Long-Term_Flasks_and_Incubator_on_May_26%2C_2016.jpg/250px-Richard_Lenski_with_Long-Term_Flasks_and_Incubator_on_May_26%2C_2016.jpg",
+          "source": "https://en.wikipedia.org/wiki/Richard_Lenski",
+          "license": "Wikimedia Commons (check file page for exact CC license)",
+          "note": "Lenski with the Long-Term Evolution Experiment flasks; environmental portrait, not strict head & shoulders"
+        },
+        {
+          "src": "https://www.canr.msu.edu/contentAsset/image/c80a2d2b21b532c56314da8b5f2db939/fileAsset/filter/Jpeg,Resize,Crop/jpeg_q/80/resize_w/400/crop_x/0/crop_y/45/crop_w/400/crop_h/400",
+          "source": "https://www.canr.msu.edu/people/lenski_richard",
+          "license": "university faculty page (Michigan State CANR)",
+          "note": "square head & shoulders crop"
+        }
+      ]
+    },
+    {
+      "name": "Gregory Lewis",
+      "candidates": [
+        {
+          "src": null,
+          "source": "https://www.biology.ox.ac.uk/people/gregory-lewis",
+          "license": "university department page (Oxford Biology)",
+          "note": "fetch returned 403; canonical Oxford profile likely has a portrait"
+        },
+        {
+          "src": null,
+          "source": "https://gregoryjlewis.com/",
+          "license": "personal website",
+          "note": "personal site exists but did not surface a clear portrait via fetch"
+        }
+      ]
+    },
+    {
+      "name": "Ruslan Medzhitov",
+      "candidates": [
+        {
+          "src": "https://wti.yale.edu/sites/default/files/styles/hero_focus_crop_xlarge/public/2024-09/Medzhitov%2C%20Ruslan_2024_Wu%20Tsai%20Institute.jpg?h=ad5a3b71&itok=KJF2lYfu",
+          "source": "https://wti.yale.edu/profile/ruslan-medzhitov",
+          "license": "institutional profile (Yale Wu Tsai Institute)",
+          "note": "head & shoulders, professional, 2024"
+        },
+        {
+          "src": "https://www.amacad.org/sites/default/files/styles/headshot_1x/public/person/headshots/Medzhitov%20from%20Yale%20downloadable%20image.png.webp?h=61157650&itok=8MsDaOl1",
+          "source": "https://www.amacad.org/person/ruslan-medzhitov",
+          "license": "American Academy of Arts & Sciences profile (uses Yale-supplied downloadable image)",
+          "note": "head & shoulders, professional"
+        }
+      ]
+    },
+    {
+      "name": "Matthew L. Nicotra",
+      "candidates": [
+        {
+          "src": null,
+          "source": "https://publichealth.jhu.edu/faculty/4856/matthew-nicotra",
+          "license": "university faculty page (JHU Bloomberg School)",
+          "note": "fetch returned 403; canonical JHU faculty page likely has a portrait"
+        }
+      ]
+    },
+    {
+      "name": "Sebastian B. Oehm",
+      "candidates": [
+        {
+          "src": "https://churchlab.hms.harvard.edu/sites/churchlab.hms.harvard.edu/files/styles/lab_member_photo/public/lab-member-photos/oehm_sebastian_.jpg?itok=3GBf1SsW",
+          "source": "https://churchlab.hms.harvard.edu/church-lab-member/sebastian-oehm",
+          "license": "lab website (Church Lab, Harvard Medical School)",
+          "note": "head & shoulders, professional. Note: index.json lists his current affiliation as Cambridge; this image is from his earlier Church Lab page"
+        }
+      ]
+    },
+    {
+      "name": "Jaspreet Pannu",
+      "candidates": [
+        {
+          "src": null,
+          "source": "https://centerforhealthsecurity.org/who-we-are/our-people/jassi-pannu",
+          "license": "institutional bio (Johns Hopkins Center for Health Security, current employer)",
+          "note": "fetch returned 403; canonical bio likely has portrait"
+        },
+        {
+          "src": null,
+          "source": "https://biopolis.stanford.edu/people/jassi-pannu",
+          "license": "Stanford Bio.Polis people page",
+          "note": "fetch returned 403; Stanford profile may have portrait"
+        }
+      ]
+    },
+    {
+      "name": "David A. Relman",
+      "candidates": [
+        {
+          "src": "https://profiles.stanford.edu/services/api/cap/profiles/photocache.4005.jpg",
+          "source": "https://profiles.stanford.edu/david-relman",
+          "license": "Stanford Profiles (CAP) faculty page",
+          "note": "head & shoulders, professional"
+        }
+      ]
+    },
+    {
+      "name": "Hiroaki Suga",
+      "candidates": [
+        {
+          "src": "https://suga.chem.s.u-tokyo.ac.jp/English/image/big_Suga.gif",
+          "source": "https://suga.chem.s.u-tokyo.ac.jp/English/member/Suga.html",
+          "license": "lab website (Suga Lab, University of Tokyo)",
+          "note": "head & shoulders, professional. URL constructed from the relative path '../image/big_Suga.gif' on the lab page; verify before use"
+        },
+        {
+          "src": null,
+          "source": "https://www.s.u-tokyo.ac.jp/en/people/suga_hiroaki/",
+          "license": "university faculty directory (UTokyo School of Science)",
+          "note": "fetch returned token-limit error; alternate canonical page"
+        }
+      ]
+    },
+    {
+      "name": "Johanna M. Sweere",
+      "candidates": [
+        {
+          "src": null,
+          "source": "https://biox.stanford.edu/people/jolien-sweere",
+          "license": "Stanford Bio-X people page (where she was a Bio-X fellow)",
+          "note": "Stanford fellow profile; may have a portrait — pull manually"
+        },
+        {
+          "src": null,
+          "source": "https://www.linkedin.com/in/johanna-sweere/",
+          "license": "LinkedIn (not a free license; for visual reference only)",
+          "note": "LinkedIn portrait visible; do not hot-link, but useful for sourcing"
+        }
+      ]
+    },
+    {
+      "name": "Jack W. Szostak",
+      "candidates": [
+        {
+          "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Jack_Szostak_in_2025.jpg/250px-Jack_Szostak_in_2025.jpg",
+          "source": "https://en.wikipedia.org/wiki/Jack_W._Szostak",
+          "license": "Wikimedia Commons (check file page for exact CC license)",
+          "note": "head & shoulders, 2025"
+        },
+        {
+          "src": "https://chemistry.uchicago.edu/sites/default/files/styles/faculty_image/public/2024-12/Jack_Szostak.jpg?itok=_PqE0YNt",
+          "source": "https://chemistry.uchicago.edu/faculty/jack-w-szostak",
+          "license": "university faculty page (University of Chicago Chemistry)",
+          "note": "head & shoulders, professional"
+        }
+      ]
+    },
+    {
+      "name": "Nicholas J. Talbot",
+      "candidates": [
+        {
+          "src": "https://s3.eu-west-2.amazonaws.com/uploads.tsl.ac.uk/shared-images/_1600x1200_crop_center-center_82_line/Nick-Talbot_M8A1471.jpg",
+          "source": "https://www.tsl.ac.uk/about/people/nick-talbot",
+          "license": "institutional faculty page (Sainsbury Laboratory)",
+          "note": "head & shoulders, professional, 1600x1200 crop"
+        },
+        {
+          "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Professor_Nicholas_Talbot_FRS.jpg/250px-Professor_Nicholas_Talbot_FRS.jpg",
+          "source": "https://en.wikipedia.org/wiki/Nick_Talbot",
+          "license": "Wikimedia Commons (check file page for exact CC license)",
+          "note": "Royal Society admissions day, July 2014; formal portrait"
+        }
+      ]
+    },
+    {
+      "name": "Brian Wang",
+      "candidates": [
+        {
+          "src": null,
+          "source": "https://manifund.org/Brian-Wang",
+          "license": "Manifund profile",
+          "note": "fetch rate-limited; Manifund profile typically has a small portrait"
+        },
+        {
+          "src": null,
+          "source": "https://www.linkedin.com/in/bscwang/",
+          "license": "LinkedIn (not a free license; for visual reference only)",
+          "note": "no clearly public institutional headshot located"
+        }
+      ]
+    }
+  ]
+}
