@@ -10,32 +10,59 @@
   const dSource = document.getElementById('d-source');
   const dJump = document.getElementById('d-jump');
 
-  let pendingHref = null;
+  let currentPreview = null;
+  const history = [];
 
-  function openDrawer(opts) {
-    pendingHref = opts.href || null;
-    if (dSource) dSource.textContent = opts.label || '—';
-    if (dBody) dBody.innerHTML = opts.html || '';
+  function applyPreview(opts) {
+    currentPreview = opts || null;
+    if (dSource) {
+      const lbl = (opts && opts.label) || '';
+      dSource.textContent = lbl;
+      dSource.style.display = lbl ? '' : 'none';
+    }
+    if (dBody) dBody.innerHTML = (opts && opts.html) || '';
+    const prevLabel = document.getElementById('d-preview-label');
+    if (prevLabel) prevLabel.textContent = (opts && opts.previewLabel) || 'Preview';
     if (drawer) {
       drawer.classList.add('open');
-      drawer.classList.toggle('wide', !!opts.wide);
       drawer.setAttribute('aria-hidden', 'false');
+      drawer.classList.toggle('has-history', history.length > 0);
+      if (dJump) {
+        dJump.style.display = (opts && opts.hideJump) ? 'none' : '';
+      }
     }
     if (scrim) scrim.classList.add('open');
   }
 
+  function openDrawer(opts) {
+    if (currentPreview && opts) {
+      // navigating from one preview to another → push the previous onto stack
+      history.push(currentPreview);
+    }
+    applyPreview(opts);
+  }
+
+  window.drawerBack = function () {
+    if (!history.length) return;
+    const prev = history.pop();
+    applyPreview(prev);
+  };
+
   window.closeDrawer = function () {
     if (drawer) drawer.classList.remove('open');
     if (scrim) scrim.classList.remove('open');
-    if (drawer) drawer.setAttribute('aria-hidden', 'true');
-    pendingHref = null;
+    if (drawer) {
+      drawer.setAttribute('aria-hidden', 'true');
+      drawer.classList.remove('has-history');
+    }
+    history.length = 0;
+    currentPreview = null;
   };
 
   window.jumpThere = function () {
-    if (pendingHref) {
-      const href = pendingHref;
+    const href = currentPreview && currentPreview.href;
+    if (href) {
       window.closeDrawer();
-      // small delay so the drawer animation feels complete before jump
       setTimeout(function () { window.location.href = href; }, 200);
     } else {
       window.closeDrawer();
@@ -84,7 +111,7 @@
 
     return {
       label: label,
-      html: '<div class="deyebrow">' + escapeHtml(label) + '</div>' + clone.outerHTML,
+      html: clone.outerHTML,
       href: '#' + targetId,
       wide: shouldBeWide(el),
     };
@@ -108,11 +135,8 @@
           .map(function (p) { return p.outerHTML; }).join('');
         return {
           label: 'Chapter · ' + chapTitle,
-          html:
-            '<div class="deyebrow">' + escapeHtml('Chapter · ' + chapTitle) + '</div>' +
-            headerHtml + firstParas,
+          html: headerHtml + firstParas,
           href: url,
-          wide: false,
         };
       }
       // Targeted preview
@@ -142,7 +166,7 @@
       });
       return {
         label: label,
-        html: '<div class="deyebrow">' + escapeHtml(label) + '</div>' + clone.outerHTML,
+        html: clone.outerHTML,
         href: url + '#' + targetId,
         wide: shouldBeWide(target),
       };
@@ -161,7 +185,7 @@
       return {
         label: 'External target',
         html:
-          '<div class="deyebrow">Link</div>' +
+          '' +
           (guess
             ? '<h2>Open ' + guess.replace(/-/g, ' ') + '</h2><p>Click <em>Jump there</em> above to follow this link.</p>'
             : '<p>Could not locate target on this page.</p>'),
@@ -174,7 +198,7 @@
     return {
       label: niceName,
       html:
-        '<div class="deyebrow">' + escapeHtml(niceName) + '</div>' +
+        '' +
         '<h2>' + (isChapterRoot ? 'Open ' + escapeHtml(niceName) : 'Open section') + '</h2>' +
         '<p>This link points to another part of the report. Click <em>Jump there ↗</em> above to open it, or close this preview to keep reading.</p>',
       href: href,
@@ -188,22 +212,62 @@
     const refHtml = refLi.innerHTML;
     const url = refLi.dataset.url || '';
     const doi = refLi.dataset.doi || '';
-    let actions = '';
+    // Plain-text query for Google Scholar / Google search.
+    const refText = (refLi.textContent || '').replace(/\s+/g, ' ').trim();
+    const googleHref = 'https://www.google.com/search?q=' + encodeURIComponent(refText);
+    const actions = [];
+    actions.push(
+      '<a href="' + escapeHtml(googleHref) + '" target="_blank" rel="noopener noreferrer">Google this paper ↗</a>'
+    );
     if (url) {
-      actions += '<a href="' + escapeHtml(url) + '" target="_blank" rel="noopener noreferrer">Open paper ↗</a>';
+      actions.push(
+        '<a href="' + escapeHtml(url) + '" target="_blank" rel="noopener noreferrer">Open source ↗</a>'
+      );
     }
     if (doi) {
-      actions += '<a href="https://doi.org/' + escapeHtml(doi) + '" target="_blank" rel="noopener noreferrer">DOI: ' + escapeHtml(doi) + '</a>';
+      actions.push(
+        '<a href="https://doi.org/' + escapeHtml(doi) + '" target="_blank" rel="noopener noreferrer">DOI: ' + escapeHtml(doi) + '</a>'
+      );
     }
     return {
-      label: 'Reference',
+      label: '',                // suppress the redundant src-title
+      previewLabel: 'Reference',
       html:
-        '<div class="deyebrow">Reference</div>' +
         '<div class="ref-card">' + refHtml + '</div>' +
-        (actions ? '<div class="ref-actions">' + actions + '</div>' : ''),
-      href: '#ref-' + idx,
+        '<div class="ref-actions">' + actions.join('') + '</div>',
+      href: '',
+      hideJump: true,
     };
   }
+
+  // Click handler on author/reviewer cards → open a drawer preview.
+  // Extensible: future bios / personal pages can be slotted in here.
+  function buildAuthorPreview(name, aff) {
+    const safe = (s) => escapeHtml(s || '');
+    return {
+      label: safe(name),
+      html:
+        '<div style="font-family: var(--sans); padding: 8px 0;">' +
+          '<h2 style="font-family: var(--serif); font-size: 26px; font-weight: 600; line-height: 1.2; margin: 0 0 6px;">' + safe(name) + '</h2>' +
+          (aff
+            ? '<p style="color: var(--muted); font-size: 13px; margin: 0 0 18px;">' + safe(aff) + '</p>'
+            : '') +
+          '<p style="color: var(--muted); font-size: 13px; line-height: 1.55; max-width: 38em;">' +
+            'Bio coming soon. Click <em>Jump</em> to be taken to this person’s public page once it’s linked.' +
+          '</p>' +
+        '</div>',
+      href: '',
+    };
+  }
+
+  document.addEventListener('click', function (e) {
+    const author = e.target.closest('.author-link[data-author-name]');
+    if (author) {
+      e.preventDefault();
+      openDrawer(buildAuthorPreview(author.dataset.authorName, author.dataset.authorAff));
+      return;
+    }
+  });
 
   // Intercept clicks on internal links anywhere in the document — including
   // inside the drawer, where the drawer should swap its own content
@@ -229,7 +293,7 @@
         e.preventDefault();
         const text = fnEl.querySelector('.text');
         const html =
-          '<div class="deyebrow">Footnote ' + escapeHtml(fn) + '</div>' +
+          '' +
           '<p>' + (text ? text.innerHTML : fnEl.innerHTML) + '</p>';
         openDrawer({
           label: 'Note ' + fn,
@@ -258,7 +322,7 @@
     // Show a quick "loading" state, then swap.
     openDrawer({
       label: 'Loading…',
-      html: '<div class="deyebrow">Loading</div><p style="color:var(--muted)">Fetching preview…</p>',
+      html: '<p style="color:var(--muted); font-family: var(--sans); font-size: 13px;">Loading…</p>',
       href: '../' + chapSlug + '/' + (chapSlug === target ? '' : '#' + target),
     });
     fetchSectionFromOtherChapter(chapSlug, target).then(function (p) {

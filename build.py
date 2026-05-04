@@ -149,12 +149,13 @@ def build_citation_map(references_by_chapter: dict) -> dict:
 # Year may be 1900–2099, optionally followed by a letter (1984a).
 _CITE_RE = re.compile(
     r"""
-    \b
+    (?<![\w])
+    (?P<initials>(?:[A-Z]\.\s*){0,3})         # optional leading initials, e.g. "Y. " or "B. E. "
     (?P<author>
         [A-Z][\w'\-]+
         (?:
-            \s+(?:&amp;|&)\s+[A-Z][\w'\-]+
-          | \s+and\s+[A-Z][\w'\-]+
+            \s+(?:&amp;|&)\s+(?:[A-Z]\.\s*)*[A-Z][\w'\-]+
+          | \s+and\s+(?:[A-Z]\.\s*)*[A-Z][\w'\-]+
           | \s*<em>[^<]*?et\s+al[^<]*?</em>\.?
           | \s+et\s+al\.?
           | (?:\s+[A-Z][\w'\-]+){1,4}      # multi-word org names ("United Nations …")
@@ -537,11 +538,14 @@ def author_card(a: dict) -> str:
     style, has_img = _face_style(name)
     face_attrs = ' data-headshot="1"' if has_img else ""
     face_inner = "" if has_img else html.escape(initials_of(name))
+    safe_name = html.escape(name)
+    safe_aff = html.escape(aff)
     return (
-        '<div class="author">'
-        f'<div class="face"{face_attrs} {style} aria-hidden="true">{face_inner}</div>'
-        f'<div class="who"><b>{html.escape(name)}</b><span>{html.escape(aff)}</span></div>'
-        '</div>'
+        '<button type="button" class="author author-link" '
+        f'data-author-name="{safe_name}" data-author-aff="{safe_aff}">'
+        f'<span class="face"{face_attrs} {style} aria-hidden="true">{face_inner}</span>'
+        f'<span class="who"><b>{safe_name}</b><span>{safe_aff}</span></span>'
+        '</button>'
     )
 
 
@@ -619,7 +623,7 @@ TOPSTRIP = """<header class="topstrip">
       <span class="brand-wrap">
         <a class="brand" href="{home}">Technical Report on Mirror Bacteria</a>
         <nav class="chap-menu" aria-label="Chapters">
-          <a class="chap-menu-home" href="{home}">About this report</a>
+          {summary_menu_link}<a class="chap-menu-home" href="{home}">About this report</a>
           <div class="chap-menu-sep"></div>
           {chap_menu}
         </nav>
@@ -639,18 +643,14 @@ TOPSTRIP = """<header class="topstrip">
 CHAPTER_TEMPLATE = """{head}{topstrip}
 <main class="page">
   <nav class="toc" aria-label="Chapter outline">
-    <div class="toc-label">{toc_label}</div>
-    <ol>
-      {toc_items}
-    </ol>
+    <a class="toc-label toc-label-link" href="#" aria-label="Back to top">{toc_label}</a>
+    {toc_items_block}
   </nav>
 
   <section class="content">
     <header class="chap-header">
       <h1 class="chap-title">{title}.</h1>
       <div class="chap-meta">
-        <span>{read_min} min read</span>
-        <span>·</span>
         <span>{publish_date}</span>
         <span>·</span>
         <span>{n_authors} authors</span>
@@ -672,9 +672,13 @@ CHAPTER_TEMPLATE = """{head}{topstrip}
 <div class="drawer-scrim" id="scrim" onclick="closeDrawer()"></div>
 <aside class="drawer" id="drawer" aria-label="Internal link preview" aria-hidden="true">
   <div class="dhead">
-    <div class="src"><span>Preview</span><span class="dot">·</span><span id="d-source">—</span></div>
+    <div class="src">
+      <button class="back" id="d-back" onclick="drawerBack()" aria-label="Back">← Back</button>
+      <span class="preview-label" id="d-preview-label">Preview</span>
+      <span class="src-title" id="d-source">—</span>
+    </div>
     <div class="dactions">
-      <button id="d-jump" onclick="jumpThere()">Jump there ↗</button>
+      <button id="d-jump" onclick="jumpThere()">Jump</button>
       <button class="x" onclick="closeDrawer()" aria-label="Close">×</button>
     </div>
   </div>
@@ -690,10 +694,14 @@ CHAPTER_TEMPLATE = """{head}{topstrip}
 
 INDEX_TEMPLATE = """{head}{topstrip}
 <main class="page index-page">
-  <nav class="toc" aria-label="On this page">
+  <nav class="toc home-toc" aria-label="On this page">
     <div class="toc-label">On this page</div>
-    <ol>
+    <ol class="toc-onpage">
       {toc_items}
+    </ol>
+    <div class="toc-label toc-label-2">Report contents</div>
+    <ol class="toc-chapters">
+      {chap_toc_items}
     </ol>
   </nav>
 
@@ -715,9 +723,11 @@ INDEX_TEMPLATE = """{head}{topstrip}
 
     {contents_html}
 
+    {review_html}
+
     {about_html}
 
-    {review_html}
+    {rationale_html}
 
     {ack_html}
   </section>
@@ -740,21 +750,32 @@ def estimate_read_minutes(body_html: str) -> int:
 # ============================================================
 
 def _build_chap_menu(chapters: list, home_prefix: str = "../") -> str:
-    """Markup for the hover dropdown listing every chapter (incl. Summary at 0)."""
+    """Markup for the chapter dropdown — only numbered chapters (Summary is
+    rendered above the separator alongside the About link)."""
     items = []
     for c in chapters:
         n = c.get("number")
+        if not n:
+            continue
         cid = c.get("id", "")
         t = clean_ws(c.get("title", ""))
-        label = "Summary" if n == 0 else f"Ch. {n}"
         items.append(
             '<a class="chap-menu-item" href="{home}{cid}/">'
-            '<span class="chap-menu-num">{label}</span>'
+            '<span class="chap-menu-num">Ch. {n}</span>'
             '<span class="chap-menu-title">{t}</span>'
-            '</a>'.format(home=home_prefix, cid=html.escape(cid),
-                          label=html.escape(label), t=html.escape(t))
+            '</a>'.format(home=home_prefix, cid=html.escape(cid), n=n, t=html.escape(t))
         )
     return "\n          ".join(items)
+
+
+def _build_summary_menu_link(chapters: list, home_prefix: str = "../") -> str:
+    """The Summary link sits above the separator with the same single-label
+    style as 'About this report' — just the word once, in small caps."""
+    for c in chapters:
+        if c.get("number") == 0:
+            cid = c.get("id", "")
+            return f'<a class="chap-menu-home" href="{home_prefix}{html.escape(cid)}/">Summary</a>'
+    return ""
 
 
 def build_search_index(chapters: list) -> list[dict]:
@@ -913,12 +934,16 @@ def render_chapter_page(
         toc_items.append(
             f'<li><a href="#{html.escape(ss["id"])}">{num_span}{html.escape(ss_title)}</a></li>'
         )
-    toc_items_str = "\n      ".join(toc_items) or "<li><em>—</em></li>"
     if is_summary:
+        # Summary keeps the left column visible (with the blue label) but
+        # has no contents links — it's a single-flow page.
+        toc_items_block = ""
         toc_label = "Summary"
     elif n:
+        toc_items_block = f'<ol>\n      {chr(10).join(toc_items) if toc_items else "<li><em>—</em></li>"}\n    </ol>'
         toc_label = f"Chapter {n}"
     else:
+        toc_items_block = f'<ol>\n      {chr(10).join(toc_items) if toc_items else "<li><em>—</em></li>"}\n    </ol>'
         toc_label = "Contents"
 
     cards = [author_card(a) for a in chap_authors]
@@ -969,6 +994,7 @@ def render_chapter_page(
     topstrip = TOPSTRIP.format(
         home=home,
         chap_menu=_CTX.get("chap_menu", ""),
+        summary_menu_link=_CTX.get("summary_menu_link", ""),
         narrow_crumb=narrow_crumb,
     )
     boot = "window.__TARGETS__=" + json.dumps(target_map, separators=(",", ":")) + ";"
@@ -977,10 +1003,9 @@ def render_chapter_page(
         head=head,
         topstrip=topstrip,
         toc_label=toc_label,
-        toc_items=toc_items_str,
+        toc_items_block=toc_items_block,
         title=html.escape(title),
         publish_date=html.escape(publish_date),
-        read_min=estimate_read_minutes(body_html),
         n_authors=len(chap_authors),
         faculty_strip=faculty_strip,
         body_html=body_html,
@@ -1011,6 +1036,7 @@ def render_index(
     topstrip = TOPSTRIP.format(
         home="./",
         chap_menu=_build_chap_menu(chapters, home_prefix="./"),
+        summary_menu_link=_build_summary_menu_link(chapters, home_prefix="./"),
         narrow_crumb="",
     )
 
@@ -1047,7 +1073,28 @@ def render_index(
         )
 
     abstract_html = render_prose_section(abstract_section, "abstract", "Abstract")
-    about_html = render_prose_section(about_section, "about", "About this report")
+
+    # Pull "Rationale for Public Release" out of about-this-report and render
+    # it as its own top-level section on the home page.
+    rationale_section = None
+    about_section_trimmed = about_section
+    if about_section:
+        rest = []
+        for ss in about_section.get("subsections", []) or []:
+            if ss.get("id") == "rationale-for-public-release":
+                rationale_section = {
+                    "id": "rationale-for-public-release",
+                    "title": "Rationale for public release",
+                    "blocks": ss.get("blocks", []),
+                    "subsections": ss.get("subsections", []),
+                }
+            else:
+                rest.append(ss)
+        about_section_trimmed = dict(about_section)
+        about_section_trimmed["subsections"] = rest
+
+    about_html = render_prose_section(about_section_trimmed, "about", "About this report")
+    rationale_html = render_prose_section(rationale_section, "rationale", "Rationale for public release") if rationale_section else ""
     ack_html = render_prose_section(ack_section, "acknowledgments", "Contributions & acknowledgments")
 
     # Review section: render the prose intro, then a compact reviewer-card grid.
@@ -1095,16 +1142,34 @@ def render_index(
     if abstract_section:
         toc_entries.append(("abstract", "Abstract"))
     toc_entries.append(("contents", "Contents"))
-    if about_section:
-        toc_entries.append(("about", "About"))
     if review_section or reviewers:
         toc_entries.append(("review", "Review"))
+    if about_section:
+        toc_entries.append(("about", "About"))
+    if rationale_section:
+        toc_entries.append(("rationale", "Rationale for release"))
     if ack_section:
         toc_entries.append(("acknowledgments", "Acknowledgments"))
     toc_items = "\n      ".join(
         f'<li><a href="#{tid}">{html.escape(label)}</a></li>'
         for tid, label in toc_entries
     )
+
+    # Second left-column TOC: every chapter (including Summary).
+    chap_toc_items_list = []
+    for c in chapters:
+        n = c.get("number")
+        cid = c.get("id", "")
+        t = clean_ws(c.get("title", ""))
+        label = "Summary" if n == 0 else f"Ch. {n}"
+        chap_toc_items_list.append(
+            '<li><a href="{cid}/">'
+            '<span class="toc-num">{label}</span>'
+            ' {t}</a></li>'.format(cid=html.escape(cid),
+                                    label=html.escape(label),
+                                    t=html.escape(t))
+        )
+    chap_toc_items = "\n      ".join(chap_toc_items_list)
 
     return INDEX_TEMPLATE.format(
         head=head,
@@ -1116,10 +1181,12 @@ def render_index(
         n_authors=len(authors),
         license=html.escape(meta.get("license", "")),
         toc_items=toc_items,
+        chap_toc_items=chap_toc_items,
         authors_strip_html=authors_strip_html,
         abstract_html=abstract_html,
         contents_html=contents_html,
         about_html=about_html,
+        rationale_html=rationale_html,
         review_html=review_html,
         ack_html=ack_html,
     )
@@ -1287,6 +1354,7 @@ def main() -> None:
 
     target_map = collect_target_map(chapters)
     _CTX["chap_menu"] = _build_chap_menu(chapters, home_prefix="../")
+    _CTX["summary_menu_link"] = _build_summary_menu_link(chapters, home_prefix="../")
     _CTX["headshots"] = fetch_all_headshots()
 
     # Emit search index (consumed by site-assets/search.js)
