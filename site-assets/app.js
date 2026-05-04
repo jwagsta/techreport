@@ -210,7 +210,7 @@
     const googleHref = 'https://www.google.com/search?q=' + encodeURIComponent(refText);
     const actions = [];
     actions.push(
-      '<a href="' + escapeHtml(googleHref) + '" target="_blank" rel="noopener noreferrer">Google this paper ↗</a>'
+      '<a href="' + escapeHtml(googleHref) + '" target="_blank" rel="noopener noreferrer">Search for this reference ↗</a>'
     );
     if (url) {
       actions.push(

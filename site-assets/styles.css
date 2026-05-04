@@ -275,24 +275,27 @@ body.search-open { overflow: hidden; }
   transform: translateY(0);
   transition-delay: 0s;
 }
-/* Match the left-sidebar typography: Inter 12.5px / 1.5, hanging-indent
-   number column where the number's left edge lines up with "About this
-   report" / "Summary" above it. */
-.chap-menu .chap-menu-home,
-.chap-menu .chap-menu-item {
-  font-family: var(--sans);
-  font-size: 12.5px;
-  line-height: 1.5;
-}
+/* "About this report" + "Summary" stay in small caps (matches the eyebrow
+   style elsewhere). Chapter titles below are plain sans, sized to match
+   the left-sidebar items. */
 .chap-menu .chap-menu-home {
   display: block;
-  padding: 6px 18px;
-  color: var(--ink-2);
-  font-weight: 500;
+  padding: 7px 18px;
+  font-family: var(--sans);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  font-weight: 600;
 }
 .chap-menu .chap-menu-home:hover {
   background: var(--paper-2);
   color: var(--accent);
+}
+.chap-menu .chap-menu-item {
+  font-family: var(--sans);
+  font-size: 12.5px;
+  line-height: 1.5;
 }
 .chap-menu .chap-menu-sep {
   height: 1px;
@@ -320,8 +323,8 @@ body.search-open { overflow: hidden; }
   text-align: left;
 }
 .chap-menu .chap-menu-title {
-  font-family: var(--serif);
-  font-size: 14px;
+  font-family: var(--sans);
+  font-size: 12.5px;
   color: var(--ink);
   font-weight: 500;
 }
@@ -354,8 +357,8 @@ body.search-open { overflow: hidden; }
   /* Reserve a hanging-indent gutter on the left for the chapter numbers,
      so titles align flush with the on-this-page links and numbers hang
      into this gutter. */
-  padding-left: 32px;
-  padding-right: 12px;
+  padding-left: 24px;
+  padding-right: 8px;
   font-family: var(--sans);
   font-size: 12.5px;
   line-height: 1.5;
@@ -380,30 +383,33 @@ a.toc-label-link:hover { color: var(--ink); }
 .home-toc .toc-chapters { list-style: none; padding: 0; margin: 0; }
 /* Hanging-indent layout: chapter titles align flush left (same x as the
    On-this-page links above); the blue chapter number sits in the gutter
-   to the left of the title (in the toc's padding-left). */
+   to the left of the title (in the toc's padding-left). The ellipsis
+   truncation has to live on the .toc-title (not the <a>) — putting
+   overflow:hidden on the <a> would clip the absolute-positioned number. */
 .home-toc .toc-chapters a {
   display: block;
   position: relative;
   padding: 0;
+}
+.home-toc .toc-chapters li { padding: 6px 0; }
+.home-toc .toc-chapters .toc-title {
+  display: block;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.home-toc .toc-chapters li { padding: 6px 0; }
-.home-toc .toc-chapters .toc-title {
-  display: inline;
-}
 .home-toc .toc-chapters .toc-num {
   position: absolute;
   right: 100%;
-  top: 4px;
-  margin-right: 12px;
-  width: 18px;
+  top: 0;
+  margin-right: 8px;
+  width: 16px;
   text-align: right;
   color: var(--accent);
   font-variant-numeric: tabular-nums;
   font-size: 12px;
   font-weight: 600;
+  line-height: inherit;
 }
 .toc ol { list-style: none; padding: 0; margin: 0; }
 .toc li { padding: 6px 0; line-height: 1.4; }

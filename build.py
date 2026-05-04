@@ -952,10 +952,10 @@ def render_chapter_page(
             f'<li><a href="#{html.escape(ss["id"])}">{num_span}{html.escape(ss_title)}</a></li>'
         )
     if is_summary:
-        # Summary keeps the left column visible (with the blue label) but
-        # has no contents links — it's a single-flow page.
+        # Summary keeps the left column space (for alignment) but has no
+        # visible label and no contents links.
         toc_items_block = ""
-        toc_label = "Summary"
+        toc_label = "&nbsp;"  # preserve vertical rhythm without rendering "SUMMARY"
     elif n:
         toc_items_block = f'<ol>\n      {chr(10).join(toc_items) if toc_items else "<li><em>—</em></li>"}\n    </ol>'
         toc_label = f"Chapter {n}"
