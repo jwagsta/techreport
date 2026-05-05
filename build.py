@@ -930,7 +930,6 @@ def render_report_contents(
             f'<span class="rc-num">{html.escape(str(n))}</span>'
             if n else '<span class="rc-num"></span>'
         )
-        caret = "▾" if is_current else "▸"
         if is_current:
             href = "#"
         else:
@@ -941,7 +940,6 @@ def render_report_contents(
         rows.append(
             f'<a class="{cls}" href="{html.escape(href)}" '
             f'data-fulltitle="{html.escape(ctitle)}">'
-            f'<span class="rc-caret" aria-hidden="true">{caret}</span>'
             f'{num_html}'
             f'<span class="rc-title">{html.escape(ctitle)}</span>'
             f'</a>'

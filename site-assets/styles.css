@@ -1328,14 +1328,14 @@ a.ilink:hover, a.cite:hover {
   margin-bottom: 14px;
 }
 
-/* Each chapter row: caret · number · ellipsis-truncated title.
+/* Each chapter row: number · ellipsis-truncated title.
    The whole row is the link. The number sits in a fixed-width gutter so
    titles align across chapters and across the about/summary rows. */
 .rc .rc-chap {
   display: grid;
-  grid-template-columns: 12px 20px minmax(0, 1fr);
+  grid-template-columns: 20px minmax(0, 1fr);
   align-items: baseline;
-  gap: 4px;
+  gap: 6px;
   padding: 5px 0;
   text-decoration: none;
   color: var(--ink-3);
@@ -1348,12 +1348,6 @@ a.ilink:hover, a.cite:hover {
 .rc .rc-chap.current,
 .rc .rc-chap.expanded { color: var(--ink); font-weight: 600; }
 
-.rc .rc-caret {
-  color: var(--muted-2);
-  font-size: 9px;
-  line-height: 1;
-  padding-top: 4px;
-}
 .rc .rc-num {
   color: var(--accent);
   font-weight: 600;
@@ -1370,8 +1364,8 @@ a.ilink:hover, a.cite:hover {
 }
 
 /* Section row inside the expanded current chapter.
-   Lives in the same grid as chapter rows so the section number sits in the
-   chapter-title column (indented past the chapter number gutter). */
+   Section number sits in a 28 px gutter, with a 12 px lead-in column for the
+   active dot. Section titles wrap onto multiple lines (no truncation). */
 .rc .rc-sec {
   display: grid;
   grid-template-columns: 12px 28px minmax(0, 1fr);
@@ -1389,7 +1383,7 @@ a.ilink:hover, a.cite:hover {
 .rc .rc-sec:hover { color: var(--ink); }
 .rc .rc-sec .rc-secn {
   grid-column: 2;
-  color: var(--accent);
+  color: var(--muted-2);
   font-weight: 600;
   font-variant-numeric: tabular-nums;
   font-size: 11.5px;
@@ -1398,10 +1392,9 @@ a.ilink:hover, a.cite:hover {
 }
 .rc .rc-sec .rc-sectitle {
   grid-column: 3;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
   min-width: 0;
+  /* multi-line wrap: no nowrap / overflow / ellipsis */
+  overflow-wrap: anywhere;
 }
 
 /* Active section: small blue dot in the leftmost gutter column. */
@@ -1410,18 +1403,17 @@ a.ilink:hover, a.cite:hover {
   content: "";
   position: absolute;
   left: 2px;
-  top: 50%;
+  top: 10px;
   width: 6px;
   height: 6px;
   border-radius: 50%;
   background: var(--accent);
-  transform: translateY(-50%);
 }
 
-/* "References" appears as a section row, demoted slightly. */
+/* "References" appears as a section row, demoted to grey small caps. */
 .rc .rc-sec.rc-refs {
   margin-top: 6px;
-  color: var(--accent);
+  color: var(--muted-2);
   font-weight: 600;
   font-size: 11px;
   letter-spacing: 0.10em;
