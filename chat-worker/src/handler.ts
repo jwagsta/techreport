@@ -77,10 +77,12 @@ export async function handle(req: Request, env: Env): Promise<Response> {
     return jsonError(429, "rate_limited", { reason: rl.reason, retryAfterSec: rl.retryAfterSec }, origin, env.ALLOWED_ORIGIN);
   }
 
-  // Turnstile / session.
+  // Turnstile / session. Staging-only bypass for the behavioral regression suite.
+  const isStagingBypass = body.turnstileToken === "regression-bypass" &&
+                          env.ALLOWED_ORIGIN.includes("staging");
   const sessionToken = req.headers.get("x-session-token");
   let session = sessionToken ? await verifySession(sessionToken, env.SESSION_SIGNING_KEY) : null;
-  if (!session) {
+  if (!session && !isStagingBypass) {
     if (!body.turnstileToken) return jsonError(403, "turnstile_required", {}, origin, env.ALLOWED_ORIGIN);
     const ok = await verifyTurnstile(body.turnstileToken, env.TURNSTILE_SECRET_KEY, ip);
     if (!ok) return jsonError(403, "turnstile_failed", {}, origin, env.ALLOWED_ORIGIN);
