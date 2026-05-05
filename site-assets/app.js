@@ -573,6 +573,53 @@
     if (tocEl) tocEl.addEventListener('scroll', hide, { passive: true });
   })();
 
+  // ---------- Figure-caption collision guard ----------
+  // Figcaptions are absolutely positioned so they can extend past the
+  // figure's row when the caption is taller than the image — that's the
+  // intended Tufte-style overflow into next paragraphs. But a long caption
+  // can collide with a sidenote on a paragraph immediately below the figure.
+  // When that's about to happen, extend the figrow's min-height so the
+  // caption fits inside its row again. Otherwise leave it overflowing.
+  (function () {
+    function adjustFigrows() {
+      const figrows = document.querySelectorAll('.figrow');
+      figrows.forEach(function (figrow) {
+        const cap = figrow.querySelector('figcaption');
+        if (!cap) return;
+        figrow.style.minHeight = '';  // reset before measuring
+        const capH = cap.offsetHeight;
+        const figH = figrow.offsetHeight;
+        if (capH <= figH) return;  // image is at least as tall — no overflow.
+        const overflow = capH - figH;
+        let consumed = 0;
+        let collide = false;
+        let sib = figrow.nextElementSibling;
+        while (sib && consumed < overflow) {
+          if (sib.querySelector && sib.querySelector('.row-sidenotes')) {
+            collide = true;
+            break;
+          }
+          consumed += sib.offsetHeight || 0;
+          sib = sib.nextElementSibling;
+        }
+        if (collide) {
+          figrow.style.minHeight = capH + 'px';
+        }
+      });
+    }
+    function schedule() {
+      if (window.requestAnimationFrame) requestAnimationFrame(adjustFigrows);
+      else adjustFigrows();
+    }
+    if (document.readyState === 'complete') schedule();
+    else window.addEventListener('load', schedule, { once: true });
+    let resizeTimer = null;
+    window.addEventListener('resize', function () {
+      if (resizeTimer) clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(schedule, 120);
+    }, { passive: true });
+  })();
+
   // ---------- helper ----------
 
   // ---------- mobile: brand link toggles the chapter menu ----------
