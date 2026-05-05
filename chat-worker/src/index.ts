@@ -1,3 +1,5 @@
+import { handle } from "./handler";
+
 export interface Env {
   RATE_KV: KVNamespace;
   ANTHROPIC_API_KEY: string;
@@ -14,7 +16,7 @@ export interface Env {
 }
 
 export default {
-  async fetch(req: Request, env: Env, ctx: ExecutionContext): Promise<Response> {
-    return new Response("not implemented", { status: 501 });
+  async fetch(req: Request, env: Env): Promise<Response> {
+    return handle(req, env);
   },
 };
