@@ -59,6 +59,9 @@ ASSETS_SRC = DATA / "assets"
 SITE = ROOT / "site"
 SITE_ASSETS = ROOT / "site-assets"
 
+CHAT_API_URL = os.environ.get("CHAT_API_URL", "")
+TURNSTILE_SITE_KEY = os.environ.get("TURNSTILE_SITE_KEY", "")
+
 # Headshot pipeline
 HEADSHOT_SELECTIONS = DATA / "headshot-selections.json"
 HEADSHOT_CACHE_DIR = ROOT / "data" / "headshots"
@@ -719,6 +722,11 @@ PAGE_HEAD = """<!DOCTYPE html>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{css_path}styles.css">
+<link rel="stylesheet" href="{css_path}chat.css">
+<meta name="chat-api" content="{chat_api}">
+<meta name="turnstile-site-key" content="{turnstile_site_key}">
+<meta name="chapter-id" content="{chapter_id}">
+<meta name="chapter-title" content="{chapter_title}">
 </head>
 <body>
 """
@@ -790,6 +798,7 @@ CHAPTER_TEMPLATE = """{head}{topstrip}
 <script>{boot_script}</script>
 <script src="{css_path}app.js"></script>
 <script src="{css_path}search.js"></script>
+<script src="{css_path}chat.js" defer></script>
 </body>
 </html>
 """
@@ -855,6 +864,7 @@ INDEX_TEMPLATE = """{head}{topstrip}
 <script>{boot_script}</script>
 <script src="app.js"></script>
 <script src="search.js"></script>
+<script src="chat.js" defer></script>
 </body>
 </html>
 """
@@ -1207,7 +1217,14 @@ def render_chapter_page(
                 '</section>'
             )
 
-    head = PAGE_HEAD.format(title=html.escape(title), css_path=css_path)
+    head = PAGE_HEAD.format(
+        title=html.escape(title),
+        css_path=css_path,
+        chat_api=html.escape(CHAT_API_URL),
+        turnstile_site_key=html.escape(TURNSTILE_SITE_KEY),
+        chapter_id=html.escape(chapter.get("id", "")),
+        chapter_title=html.escape(title),
+    )
     if is_summary:
         crumb = "Summary"
     elif n:
@@ -1268,7 +1285,14 @@ def render_index(
     _CTX["media_prefix"] = ""
     _CTX["fn_seen"] = set()
 
-    head = PAGE_HEAD.format(title=html.escape(meta.get("title", "")), css_path="")
+    head = PAGE_HEAD.format(
+        title=html.escape(meta.get("title", "")),
+        css_path="",
+        chat_api=html.escape(CHAT_API_URL),
+        turnstile_site_key=html.escape(TURNSTILE_SITE_KEY),
+        chapter_id="index",
+        chapter_title="Home",
+    )
     topstrip = TOPSTRIP.format(
         home="./",
         chap_menu=_build_chap_menu(chapters, home_prefix="./"),
@@ -1710,7 +1734,7 @@ def main() -> None:
         )
         (chap_dir / "index.html").write_text(page)
 
-    for name in ("styles.css", "app.js", "search.js", "favicon.svg"):
+    for name in ("styles.css", "app.js", "search.js", "favicon.svg", "chat.js", "chat.css"):
         src = SITE_ASSETS / name
         if src.exists():
             shutil.copy(src, SITE / name)
