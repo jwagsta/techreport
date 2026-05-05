@@ -1,0 +1,25 @@
+name = "ask-mirror-report"
+main = "src/index.ts"
+compatibility_date = "2026-01-01"
+
+[vars]
+ALLOWED_ORIGIN = "http://localhost:8765"
+DAILY_USD_CEILING = "5.00"
+DAILY_PER_IP_LIMIT = "100"
+PER_MINUTE_PER_IP_LIMIT = "15"
+MAX_OUTPUT_TOKENS = "8000"
+MAX_HISTORY_TURNS = "20"
+TURNSTILE_SITE_KEY = "1x00000000000000000000AA"  # Cloudflare's "always passes" test key
+
+# KV namespace for rate-limit + spend counters.
+# Create with: wrangler kv:namespace create RATE_KV
+[[kv_namespaces]]
+binding = "RATE_KV"
+id = "REPLACE_WITH_REAL_ID"
+preview_id = "REPLACE_WITH_REAL_PREVIEW_ID"
+
+# Secrets (set via `wrangler secret put`):
+#   ANTHROPIC_API_KEY
+#   TURNSTILE_SECRET_KEY
+#   ADMIN_TOKEN
+#   SESSION_SIGNING_KEY
