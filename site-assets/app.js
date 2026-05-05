@@ -496,6 +496,83 @@
     }
   }
 
+  // ---------- Report-contents row hover popout ----------
+  // When a chapter or section row is ellipsis-truncated, hovering it shows
+  // the full title in a small floating cream tooltip (same family as fnpeek).
+  // Disabled on narrow viewports — the TOC is hidden there.
+  (function () {
+    let rcpeek = null;
+    let activeRow = null;
+
+    function ensureRcpeek() {
+      if (rcpeek) return rcpeek;
+      rcpeek = document.createElement('div');
+      rcpeek.className = 'rcpeek';
+      document.body.appendChild(rcpeek);
+      return rcpeek;
+    }
+
+    function isOverflowing(row) {
+      const title = row.querySelector('.rc-title, .rc-sectitle');
+      if (!title) return false;
+      return title.offsetWidth < title.scrollWidth;
+    }
+
+    function position(row, peek) {
+      const rowRect = row.getBoundingClientRect();
+      const peekRect = peek.getBoundingClientRect();
+      // Place to the right of the TOC, vertically aligned with the row.
+      const tocEl = row.closest('.toc');
+      const tocRect = tocEl ? tocEl.getBoundingClientRect() : rowRect;
+      let left = tocRect.right + 8;
+      let top = rowRect.top + rowRect.height / 2 - peekRect.height / 2;
+      // Keep on screen.
+      const maxLeft = window.innerWidth - peekRect.width - 12;
+      if (left > maxLeft) left = maxLeft;
+      if (top < 8) top = 8;
+      const maxTop = window.innerHeight - peekRect.height - 8;
+      if (top > maxTop) top = maxTop;
+      peek.style.left = left + 'px';
+      peek.style.top = top + 'px';
+    }
+
+    function showFor(row) {
+      if (window.matchMedia('(max-width: 900px)').matches) return;
+      if (!isOverflowing(row)) return;
+      const full = row.getAttribute('data-fulltitle') || '';
+      if (!full) return;
+      const peek = ensureRcpeek();
+      peek.textContent = full;
+      // Allow the browser to lay it out before measuring.
+      peek.classList.add('show');
+      // Use rAF so the just-set textContent is reflected in scrollWidth/height.
+      requestAnimationFrame(function () { position(row, peek); });
+      activeRow = row;
+    }
+
+    function hide() {
+      if (!rcpeek) return;
+      rcpeek.classList.remove('show');
+      activeRow = null;
+    }
+
+    document.addEventListener('mouseover', function (e) {
+      const row = e.target.closest('.rc-chap[data-fulltitle], .rc-sec[data-fulltitle]');
+      if (!row || row === activeRow) return;
+      showFor(row);
+    });
+    document.addEventListener('mouseout', function (e) {
+      const row = e.target.closest('.rc-chap[data-fulltitle], .rc-sec[data-fulltitle]');
+      if (!row) return;
+      // Only hide if leaving the row entirely (not just child→parent).
+      if (e.relatedTarget && row.contains(e.relatedTarget)) return;
+      hide();
+    });
+    // Also hide on scroll inside the TOC, since position is fixed-anchored.
+    const tocEl = document.querySelector('.toc.rc');
+    if (tocEl) tocEl.addEventListener('scroll', hide, { passive: true });
+  })();
+
   // ---------- helper ----------
 
   // ---------- mobile: brand link toggles the chapter menu ----------
