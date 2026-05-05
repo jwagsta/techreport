@@ -406,7 +406,7 @@ def render_table(b: dict, used_fns: set[str]) -> str:
         # If the thead is now empty, remove it.
         raw = re.sub(r'<thead>\s*</thead>', '', raw, count=1)
     inner = process_inline(raw, used_fns)
-    return f'<div class="row tablerow">{cap_html}{inner}</div>'
+    return f'<div class="row tablerow">{inner}{cap_html}</div>'
 
 
 def render_box(b: dict, used_fns: set[str]) -> str:
