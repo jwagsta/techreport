@@ -390,13 +390,17 @@ def render_table(b: dict, used_fns: set[str]) -> str:
         else:
             label_num, label_text = title_inner, ""
         body_html = process_inline(rest_inner, used_fns) if rest_inner else ""
+        # label_text and label_num both come straight out of the parser's HTML
+        # so they may already contain inline tags like <em>...</em>. Do NOT
+        # re-escape; emit as-is. Run process_inline so any embedded citations
+        # / footnote refs / internal links get linked the same as body text.
         title_span = (
-            f'<span class="figtitle">{html.escape(label_text)}</span>'
+            f'<span class="figtitle">{process_inline(label_text, used_fns)}</span>'
             if label_text else ""
         )
         cap_html = (
             f'<figcaption class="tablecap" id="{html.escape(table_id)}">'
-            f'<b>{html.escape(label_num)}</b>'
+            f'<b>{label_num}</b>'
             f'{title_span}'
             f'{body_html}'
             f'</figcaption>'
