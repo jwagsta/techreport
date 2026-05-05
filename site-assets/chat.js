@@ -256,16 +256,163 @@
     document.removeEventListener('mouseup', onDragEnd);
   }
 
-  // ---------- Sending (stub — implemented in B3) ----------
+  // ---------- Turnstile ----------
+  function loadTurnstileScript() {
+    if (document.querySelector('script[data-turnstile]')) return;
+    const s = document.createElement('script');
+    s.src = 'https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit';
+    s.async = true; s.defer = true;
+    s.setAttribute('data-turnstile', '1');
+    document.head.appendChild(s);
+  }
+  function getTurnstileToken() {
+    return new Promise((resolve, reject) => {
+      const sk = turnstileSiteKey();
+      if (!sk) return reject(new Error('no-turnstile-site-key'));
+      const tryRender = () => {
+        if (!window.turnstile) return setTimeout(tryRender, 100);
+        const div = document.createElement('div');
+        div.style.cssText = 'position:fixed;bottom:-9999px;left:-9999px';
+        document.body.appendChild(div);
+        window.turnstile.render(div, {
+          sitekey: sk,
+          size: 'invisible',
+          callback: (tok) => { resolve(tok); div.remove(); },
+          'error-callback': () => { reject(new Error('turnstile-error')); div.remove(); },
+          'timeout-callback': () => { reject(new Error('turnstile-timeout')); div.remove(); },
+        });
+        try { window.turnstile.execute(div); } catch (e) { reject(e); div.remove(); }
+      };
+      tryRender();
+    });
+  }
+
+  // ---------- Sending ----------
+  let abortController = null;
+
   async function sendCurrent() {
     const q = input.value.trim();
-    if (!q) return;
-    console.warn('chat.sendCurrent not yet implemented');
+    if (!q || sendBtn.disabled) return;
+    input.value = ''; autoGrow();
+
+    state.messages.push({ role: 'user', content: q });
+    state.messages.push({ role: 'assistant', content: '' });
+    saveState(state);
+    renderMessages();
+    sendBtn.disabled = true;
+
+    try {
+      let turnstileToken = null;
+      if (!state.sessionToken) {
+        try { turnstileToken = await getTurnstileToken(); }
+        catch (_) { setLastAssistant('Verification failed. Please refresh and try again.'); return; }
+      }
+
+      const loc = readerLocation();
+      const history = state.messages.slice(0, -2);
+      const headers = { 'content-type': 'application/json' };
+      if (state.sessionToken) headers['x-session-token'] = state.sessionToken;
+
+      abortController = new AbortController();
+      const res = await fetch(apiUrl(), {
+        method: 'POST',
+        headers,
+        body: JSON.stringify({
+          chapterId: loc.chapterId,
+          chapterTitle: loc.chapterTitle,
+          sectionId: loc.sectionId,
+          sectionTitle: loc.sectionTitle,
+          question: q,
+          history,
+          turnstileToken,
+        }),
+        signal: abortController.signal,
+      });
+
+      if (!res.ok) {
+        const err = await res.json().catch(() => ({ error: 'unknown' }));
+        setLastAssistant(errorMessageFor(err));
+        return;
+      }
+      if (!res.body) { setLastAssistant('No response received.'); return; }
+
+      const reader = res.body.getReader();
+      const dec = new TextDecoder();
+      let buf = '';
+      while (true) {
+        const { value, done } = await reader.read();
+        if (done) break;
+        buf += dec.decode(value, { stream: true });
+        let idx;
+        while ((idx = buf.indexOf('\n\n')) !== -1) {
+          const event = buf.slice(0, idx);
+          buf = buf.slice(idx + 2);
+          handleSseEvent(event);
+        }
+      }
+    } catch (e) {
+      if (e && e.name === 'AbortError') return;
+      console.error('chat error', e);
+      setLastAssistant('Something went wrong. Please try again.');
+    } finally {
+      sendBtn.disabled = false;
+      saveState(state);
+    }
+  }
+
+  function handleSseEvent(evt) {
+    const lines = evt.split('\n');
+    let event = 'message', data = '';
+    for (const ln of lines) {
+      if (ln.startsWith('event: ')) event = ln.slice(7).trim();
+      else if (ln.startsWith('data: ')) data = ln.slice(6);
+    }
+    let payload; try { payload = JSON.parse(data); } catch { return; }
+    if (event === 'session' && payload.token) { state.sessionToken = payload.token; }
+    else if (event === 'text' && typeof payload.delta === 'string') { appendToLastAssistant(payload.delta); }
+    else if (event === 'error') { setLastAssistant(errorMessageFor(payload)); }
+  }
+
+  function appendToLastAssistant(delta) {
+    const i = state.messages.length - 1;
+    if (i < 0 || state.messages[i].role !== 'assistant') return;
+    state.messages[i].content += delta;
+    renderLastAssistant();
+  }
+
+  function setLastAssistant(text) {
+    const i = state.messages.length - 1;
+    if (i < 0 || state.messages[i].role !== 'assistant') return;
+    state.messages[i].content = text;
+    renderLastAssistant();
+  }
+
+  function renderLastAssistant() {
+    const wraps = body.querySelectorAll('.chat-msg-assistant');
+    const last = wraps[wraps.length - 1];
+    if (!last) { renderMessages(); return; }
+    const bubble = last.querySelector('.chat-msg-bubble');
+    bubble.innerHTML = renderMarkdown(state.messages[state.messages.length - 1].content);
+    bubble.querySelectorAll('a[href]').forEach(a => a.addEventListener('click', onCitationClick));
+    body.scrollTop = body.scrollHeight;
+  }
+
+  function errorMessageFor(payload) {
+    switch (payload && payload.error) {
+      case 'rate_limited': return "You're going a bit fast — please wait a moment and try again.";
+      case 'daily_limit':  return 'The assistant is taking a break for today. Please come back tomorrow.';
+      case 'turnstile_required':
+      case 'turnstile_failed': return 'Verification failed. Please refresh the page and try again.';
+      case 'forbidden_origin': return 'This site is not authorized to use the assistant.';
+      case 'upstream_error':  return 'The assistant is unavailable right now. Please try again.';
+      default: return 'Something went wrong. Please try again.';
+    }
   }
 
   // ---------- Boot ----------
   function boot() {
     if (!apiUrl()) return;
+    loadTurnstileScript();
     buildDom();
   }
   if (document.readyState === 'loading') {
