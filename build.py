@@ -53,6 +53,7 @@ INDEX_FILE = DATA / "index.json"
 CHAPTERS_DIR = DATA / "chapters"
 FOOTNOTES_FILE = DATA / "footnotes.json"
 REFERENCES_FILE = DATA / "references.json"
+ABSTRACTS_FILE = DATA / "abstracts.json"
 ASSETS_SRC = DATA / "assets"
 
 SITE = ROOT / "site"
@@ -92,6 +93,14 @@ _HREF_RE = re.compile(r'href="(https?://[^"]+)"', re.I)
 
 def _ref_text(ref_html: str) -> str:
     return re.sub(r"<[^>]+>", "", ref_html).replace("\xa0", " ")
+
+
+# Same key the abstracts pipeline (tools/fetch_abstracts.py) hashes — kept in
+# lockstep so build-time lookups hit. If you change one, change the other.
+def _abstract_key(ref_html: str) -> str:
+    import hashlib
+    norm = re.sub(r"\s+", " ", _ref_text(ref_html)).strip().lower()
+    return hashlib.sha1(norm.encode("utf-8")).hexdigest()[:16]
 
 
 def _extract_doi(ref_html: str) -> str | None:
@@ -979,19 +988,39 @@ def render_chapter_page(
 
     refs_html = ""
     if references:
+        abstracts = _CTX.get("abstracts", {})
         ref_lis = []
         for idx, ref in enumerate(references):
             if not isinstance(ref, dict):
                 continue
             ref_html = ref.get("html", "")
-            doi = _extract_doi(ref_html) or ""
-            url = _extract_url(ref_html) or ""
-            attrs = f'id="ref-{idx}"'
+            abs_rec = abstracts.get(_abstract_key(ref_html)) or {}
+            abs_html = abs_rec.get("abstract_html") or ""
+            # If Crossref/OpenAlex pinned a canonical DOI, prefer it over the
+            # one we may have inline-extracted (the inline match is rare anyway).
+            doi = abs_rec.get("doi") or _extract_doi(ref_html) or ""
+            url = (
+                f"https://doi.org/{doi}" if doi
+                else _extract_url(ref_html) or ""
+            )
+            classes = ["ref-item"]
+            if abs_html:
+                classes.append("has-abstract")
+            attrs = (
+                f'id="ref-{idx}" class="{" ".join(classes)}"'
+            )
             if doi:
                 attrs += f' data-doi="{html.escape(doi)}"'
             if url:
                 attrs += f' data-url="{html.escape(url)}"'
-            ref_lis.append(f'<li {attrs}>{ref_html}</li>')
+            cite_html = f'<div class="ref-cite">{ref_html}</div>'
+            abs_block = (
+                f'<div class="ref-abstract" hidden>'
+                f'<div class="ref-abstract-label">Abstract</div>'
+                f'<div class="ref-abstract-body">{abs_html}</div>'
+                f'</div>'
+            ) if abs_html else ""
+            ref_lis.append(f'<li {attrs}>{cite_html}{abs_block}</li>')
         if ref_lis:
             refs_html = (
                 '<section class="refs" id="references" aria-label="References">'
@@ -1355,6 +1384,16 @@ def main() -> None:
     refs_data = json.loads(REFERENCES_FILE.read_text()) if REFERENCES_FILE.exists() else {}
     _CTX["cite_map"] = build_citation_map(refs_data)
     _CTX["footnotes_lookup"] = footnotes_lookup
+    abstracts_data = (
+        json.loads(ABSTRACTS_FILE.read_text()) if ABSTRACTS_FILE.exists() else {}
+    )
+    # Pass the full cache through — even no_abstract records are valuable
+    # because the pipeline resolved a DOI for them (drives the "Open source"
+    # / DOI link in the bibliography). The render path checks abstract_html
+    # separately and only renders the abstract block if it's present.
+    _CTX["abstracts"] = {
+        k: v for k, v in abstracts_data.items() if isinstance(v, dict)
+    }
 
     chapters = []
     abstract_section = None
