@@ -947,7 +947,7 @@ a.ilink:hover, a.cite:hover {
   color: var(--ink-2);
   padding-left: 28px;
 }
-.refs-list li { margin: 0 0 10px; }
+.refs-list li { margin: 0 0 10px; overflow-wrap: anywhere; }
 .refs-list .ref-item.has-abstract > .ref-cite {
   cursor: pointer;
   position: relative;
@@ -1414,11 +1414,15 @@ a.ilink:hover, a.cite:hover {
     width: 100%;
   }
   .page {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     padding: 70px 18px 100px;  /* room for the fixed topstrip */
     max-width: 100%;
   }
-  .content { max-width: 100%; min-width: 0; }
+  /* Reset desktop grid placement: on mobile the page is a single
+     column and .content must land in column 1, otherwise it creates
+     an implicit second column whose auto-sizing pushes content past
+     the viewport. */
+  .content { grid-column: 1; max-width: 100%; min-width: 0; }
   .prose, .chap-title, .chap-summary, .subsection-title, .section-title {
     max-width: 100% !important;
   }
@@ -1432,14 +1436,18 @@ a.ilink:hover, a.cite:hover {
   .row > .row-sidenotes { display: none; }
   /* "Chapter authors" label fits one line in the narrow stacked layout */
   .faculty .label br { display: none; }
+  /* `1fr` defaults to `minmax(auto, 1fr)`, whose auto floor lets
+     unbreakable content (long URLs, wide images, min-content) push
+     the track wider than the viewport. Use `minmax(0, 1fr)` so the
+     track is allowed to shrink. */
   .content {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
   }
   .body {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
   }
   .row {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     grid-column: 1;
   }
   .prose { max-width: 100%; }
