@@ -3,3 +3,7 @@ node_modules/
 dist/
 .dev.vars
 src/corpus-data.ts
+
+# Private content bundled into the Worker but never committed.
+# Replace with the real FAQ before deploying; see README.
+private/technical-faq.md
