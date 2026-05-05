@@ -440,7 +440,9 @@
     const linkByHash = new Map();
     tocLinks.forEach(function (link) {
       const href = link.getAttribute('href') || '';
-      if (href.startsWith('#')) linkByHash.set(href.slice(1), link);
+      if (href.startsWith('#') && href.length > 1) {
+        linkByHash.set(href.slice(1), link);
+      }
     });
 
     const observed = [];
@@ -450,18 +452,47 @@
     });
 
     if (observed.length) {
+      let lastActiveId = null;
+
+      function setActive(id) {
+        if (!id || id === lastActiveId) return;
+        tocLinks.forEach(function (l) { l.classList.remove('current'); });
+        const link = linkByHash.get(id);
+        if (link) {
+          link.classList.add('current');
+          lastActiveId = id;
+        }
+      }
+
       const io = new IntersectionObserver(function (entries) {
-        entries.forEach(function (entry) {
-          if (entry.isIntersecting) {
-            tocLinks.forEach(function (l) { l.classList.remove('current'); });
-            const id = entry.target.id;
-            const link = linkByHash.get(id);
-            if (link) link.classList.add('current');
-          }
-        });
-      }, { rootMargin: '-30% 0px -60% 0px', threshold: 0 });
+        // Pick the topmost intersecting entry on this batch.
+        const intersecting = entries.filter(function (e) { return e.isIntersecting; });
+        if (intersecting.length) {
+          intersecting.sort(function (a, b) {
+            return a.boundingClientRect.top - b.boundingClientRect.top;
+          });
+          setActive(intersecting[0].target.id);
+        }
+        // If nothing is intersecting, leave lastActiveId in place — this
+        // gives us the "stay on last section past the end of body" behaviour.
+      }, { rootMargin: '-20% 0px -65% 0px', threshold: 0 });
 
       observed.forEach(function (el) { io.observe(el); });
+
+      // Initialise on load: pick the first observed element above viewport
+      // top, falling back to the first one.
+      function initActive() {
+        let pick = observed[0];
+        for (let i = 0; i < observed.length; i++) {
+          const r = observed[i].getBoundingClientRect();
+          if (r.top <= 80) pick = observed[i];
+          else break;
+        }
+        if (pick) setActive(pick.id);
+      }
+      // Defer to after layout settles.
+      if (document.readyState === 'complete') initActive();
+      else window.addEventListener('load', initActive, { once: true });
     }
   }
 
