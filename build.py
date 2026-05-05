@@ -611,6 +611,7 @@ PAGE_HEAD = """<!DOCTYPE html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{title} — Technical Report on Mirror Bacteria</title>
+<link rel="icon" type="image/svg+xml" href="{css_path}favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -1432,7 +1433,7 @@ def main() -> None:
         )
         (chap_dir / "index.html").write_text(page)
 
-    for name in ("styles.css", "app.js", "search.js"):
+    for name in ("styles.css", "app.js", "search.js", "favicon.svg"):
         src = SITE_ASSETS / name
         if src.exists():
             shutil.copy(src, SITE / name)

@@ -61,8 +61,10 @@ body {
   max-width: var(--max);
   margin: 0 auto;
   /* Match the TOC's content-area left so the brand aligns with
-     "On this page" / "Report contents" labels below. */
-  padding: 10px 28px 10px 46px;
+     "On this page" / "Report contents" labels below.
+     Page padding-left (14) + .toc padding-left (24) = 38 — that's
+     where the TOC labels start, so the brand sits at the same x. */
+  padding: 10px 28px 10px 38px;
   display: flex; justify-content: space-between; align-items: center;
   font-size: 12px; letter-spacing: 0.02em;
   color: var(--muted);
