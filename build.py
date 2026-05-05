@@ -652,7 +652,7 @@ CHAPTER_TEMPLATE = """{head}{topstrip}
 
   <section class="content">
     <header class="chap-header">
-      <h1 class="chap-title">{title}.</h1>
+      <h1 class="chap-title">{title}</h1>
       <div class="chap-meta">
         <span>{publish_date}</span>
       </div>
@@ -709,7 +709,7 @@ INDEX_TEMPLATE = """{head}{topstrip}
   <section class="content">
     <header class="chap-header">
       <div class="eyebrow">Technical Report · {publish_date}</div>
-      <h1 class="chap-title">{title}.</h1>
+      <h1 class="chap-title">{title}</h1>
       {tagline}
       <div class="chap-meta">
         <span>{n_chapters} chapters</span><span>·</span>

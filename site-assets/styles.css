@@ -979,14 +979,50 @@ a.ilink:hover, a.cite:hover {
 .drawer.open { transform: translateX(0); }
 .drawer .dbody figure img,
 .drawer .dbody img { max-width: 100%; height: auto; display: block; }
+
+/* Figure preview: full-width image stacked above the caption.
+   The cloned <figure class="row figrow"> still carries the chapter-page
+   subgrid layout, which collapses oddly without its parent grid context.
+   Force a simple block stack and shrink the caption to sidenote sizing. */
+.drawer .dbody .figrow,
+.drawer .dbody figure.row {
+  display: block;
+  margin: 0;
+  width: 100%;
+}
+.drawer .dbody .figrow img,
+.drawer .dbody figure.row img {
+  grid-column: auto;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 0 12px;
+}
+.drawer .dbody .figrow figcaption,
+.drawer .dbody figure.row figcaption {
+  grid-column: auto;
+  align-self: auto;
+  padding-top: 0;
+  margin-top: 0;
+}
 .drawer .dbody figcaption {
-  font-family: var(--sans); font-size: 13px; line-height: 1.5;
+  font-family: var(--sans); font-size: 12.5px; line-height: 1.5;
   color: var(--ink-2); margin-top: 10px;
 }
 .drawer .dbody figcaption b {
   display: block; color: var(--accent);
   font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase;
   font-weight: 600; margin-bottom: 4px;
+}
+.drawer .dbody figcaption .figtitle {
+  font-family: var(--serif);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ink);
+  display: block;
+  margin: 0 0 6px;
+}
+.drawer .dbody figcaption p {
+  font-size: 12.5px; line-height: 1.5; margin: 0 0 0.6em;
 }
 .drawer .dbody table {
   width: 100%; border-collapse: collapse;
@@ -1280,11 +1316,21 @@ a.ilink:hover, a.cite:hover {
    ============================================================ */
 
 @media (max-width: 900px) {
-  body { font-size: 17px; overflow-x: hidden; }
-  html { overflow-x: hidden; }
+  /* `overflow-x: hidden` on <html> creates a scroll container on the
+     html element, which on iOS Safari silently disables `position: sticky`
+     for descendants — that's why the topstrip wasn't pinning and page
+     scroll felt inconsistent. Use `overflow-x: clip` on <body> only, and
+     pin the topstrip with `position: fixed` so it always stays put. */
+  html { overflow-x: visible; overscroll-behavior-y: auto; }
+  body { font-size: 17px; overflow-x: clip; overscroll-behavior-y: auto; }
+  .topstrip {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    width: 100%;
+  }
   .page {
     grid-template-columns: 1fr;
-    padding: 24px 18px 100px;
+    padding: 70px 18px 100px;  /* room for the fixed topstrip */
     max-width: 100%;
   }
   .content { max-width: 100%; min-width: 0; }
@@ -1296,6 +1342,9 @@ a.ilink:hover, a.cite:hover {
   /* TOC is hidden completely on narrow / mobile (chapter and home pages) —
      it becomes a thin sliver in a one-column layout otherwise */
   .toc { display: none; }
+  /* Sidenotes are hidden on narrow — readers reach footnote text by tapping
+     the superscript number, which opens the bottom-sheet drawer. */
+  .row > .row-sidenotes { display: none; }
   /* "Chapter authors" label fits one line in the narrow stacked layout */
   .faculty .label br { display: none; }
   .content {
