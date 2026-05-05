@@ -910,6 +910,80 @@ def collect_target_map(chapters: list) -> dict[str, str]:
 # Page assembly
 # ============================================================
 
+def render_report_contents(
+    chapters: list,
+    current_slug: str,
+    current_sections: list,  # [{id, num, title}]
+    has_refs: bool,
+) -> str:
+    """Render the unified left-side "Report contents" widget for a chapter page.
+
+    `chapters` is the ordered list of chapter dicts (about, summary, ch1…ch9).
+    `current_slug` is the id of the chapter currently being rendered.
+    `current_sections` is the list of h2-level entries for the current chapter,
+    each {id: anchor, num: "2.3" or "", title: full section title}.
+    `has_refs` controls whether to render the trailing References sub-row.
+    """
+    rows = []
+    for c in chapters:
+        cid = c.get("id", "")
+        n = c.get("number")
+        ctitle = clean_ws(c.get("title", "") or "")
+        is_current = cid == current_slug
+        num_html = (
+            f'<span class="rc-num">{html.escape(str(n))}</span>'
+            if n else '<span class="rc-num"></span>'
+        )
+        caret = "▾" if is_current else "▸"
+        if is_current:
+            href = "#"
+        else:
+            href = f"../{cid}/"
+        cls = "rc-chap"
+        if is_current:
+            cls += " expanded current"
+        rows.append(
+            f'<a class="{cls}" href="{html.escape(href)}" '
+            f'data-fulltitle="{html.escape(ctitle)}">'
+            f'<span class="rc-caret" aria-hidden="true">{caret}</span>'
+            f'{num_html}'
+            f'<span class="rc-title">{html.escape(ctitle)}</span>'
+            f'</a>'
+        )
+        if is_current:
+            for s in current_sections:
+                sid = s.get("id", "")
+                snum = s.get("num", "") or ""
+                stitle = clean_ws(s.get("title", "") or "")
+                num_span = (
+                    f'<span class="rc-secn">{html.escape(snum)}</span>'
+                    if snum else '<span class="rc-secn"></span>'
+                )
+                full = f"{snum}   {stitle}".strip() if snum else stitle
+                rows.append(
+                    f'<a class="rc-sec" href="#{html.escape(sid)}" '
+                    f'data-fulltitle="{html.escape(full)}">'
+                    f'{num_span}'
+                    f'<span class="rc-sectitle">{html.escape(stitle)}</span>'
+                    f'</a>'
+                )
+            if has_refs:
+                rows.append(
+                    '<a class="rc-sec rc-refs" href="#references" '
+                    'data-fulltitle="References">'
+                    '<span class="rc-secn"></span>'
+                    '<span class="rc-sectitle">References</span>'
+                    '</a>'
+                )
+    items = "\n      ".join(rows)
+    return (
+        '<nav class="toc rc" aria-label="Report contents">\n'
+        '    <div class="rc-label">Report contents</div>\n'
+        f'    {items}\n'
+        '  </nav>'
+    )
+
+
 def render_chapter_page(
     chapter: dict,
     publish_date: str,
