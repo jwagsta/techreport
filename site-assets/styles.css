@@ -1092,16 +1092,28 @@ a.ilink:hover, a.cite:hover {
 }
 .drawer .dhead .dot { color: var(--rule-2); }
 .drawer .dhead .dactions { display: flex; gap: 8px; flex-shrink: 0; }
-.drawer .dhead .back {
+.drawer .dhead .back,
+.drawer .dhead .fwd {
   background: transparent; border: 1px solid var(--rule);
   border-radius: 6px;
-  padding: 5px 10px;
-  font-family: var(--sans); font-size: 13px;
+  padding: 3px 8px;
+  font-family: var(--sans); font-size: 14px;
+  line-height: 1;
   color: var(--ink-2); cursor: pointer;
-  display: none;
+  display: inline-flex; align-items: center; justify-content: center;
+  min-width: 26px;
 }
-.drawer.has-history .dhead .back { display: inline-flex; align-items: center; gap: 4px; }
-.drawer .dhead .back:hover { border-color: var(--accent); color: var(--accent); }
+.drawer .dhead .back:hover,
+.drawer.has-forward .dhead .fwd:hover { border-color: var(--accent); color: var(--accent); }
+.drawer:not(.has-forward) .dhead .fwd {
+  color: var(--rule-2);
+  cursor: default;
+}
+.drawer .dhead #d-jump .jump-arr {
+  display: inline-block;
+  margin-left: 2px;
+  color: var(--accent);
+}
 .drawer .dhead button {
   background: transparent;
   border: 1px solid var(--rule);

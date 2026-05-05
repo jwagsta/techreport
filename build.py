@@ -674,12 +674,13 @@ CHAPTER_TEMPLATE = """{head}{topstrip}
 <aside class="drawer" id="drawer" aria-label="Internal link preview" aria-hidden="true">
   <div class="dhead">
     <div class="src">
-      <button class="back" id="d-back" onclick="drawerBack()" aria-label="Back">← Back</button>
+      <button class="back" id="d-back" onclick="drawerBack()" aria-label="Back">←</button>
+      <button class="fwd" id="d-fwd" onclick="drawerForward()" aria-label="Forward">→</button>
       <span class="preview-label" id="d-preview-label">Preview</span>
       <span class="src-title" id="d-source">—</span>
     </div>
     <div class="dactions">
-      <button id="d-jump" onclick="jumpThere()">Jump</button>
+      <button id="d-jump" onclick="jumpThere()">Jump <span class="jump-arr">↗</span></button>
       <button class="x" onclick="closeDrawer()" aria-label="Close">×</button>
     </div>
   </div>
@@ -738,12 +739,13 @@ INDEX_TEMPLATE = """{head}{topstrip}
 <aside class="drawer" id="drawer" aria-label="Preview" aria-hidden="true">
   <div class="dhead">
     <div class="src">
-      <button class="back" id="d-back" onclick="drawerBack()" aria-label="Back">← Back</button>
+      <button class="back" id="d-back" onclick="drawerBack()" aria-label="Back">←</button>
+      <button class="fwd" id="d-fwd" onclick="drawerForward()" aria-label="Forward">→</button>
       <span class="preview-label" id="d-preview-label">Preview</span>
       <span class="src-title" id="d-source">—</span>
     </div>
     <div class="dactions">
-      <button id="d-jump" onclick="jumpThere()">Jump</button>
+      <button id="d-jump" onclick="jumpThere()">Jump <span class="jump-arr">↗</span></button>
       <button class="x" onclick="closeDrawer()" aria-label="Close">×</button>
     </div>
   </div>

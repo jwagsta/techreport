@@ -12,6 +12,7 @@
 
   let currentPreview = null;
   const history = [];
+  const forwardStack = [];
 
   function applyPreview(opts) {
     currentPreview = opts || null;
@@ -27,6 +28,7 @@
       drawer.classList.add('open');
       drawer.setAttribute('aria-hidden', 'false');
       drawer.classList.toggle('has-history', history.length > 0);
+      drawer.classList.toggle('has-forward', forwardStack.length > 0);
       if (dJump) {
         dJump.style.display = (opts && opts.hideJump) ? 'none' : '';
       }
@@ -39,13 +41,27 @@
       // navigating from one preview to another → push the previous onto stack
       history.push(currentPreview);
     }
+    // Any new navigation invalidates the forward stack.
+    forwardStack.length = 0;
     applyPreview(opts);
   }
 
   window.drawerBack = function () {
-    if (!history.length) return;
+    if (!history.length) {
+      // No history to go back through → first click closes the drawer.
+      window.closeDrawer();
+      return;
+    }
+    if (currentPreview) forwardStack.push(currentPreview);
     const prev = history.pop();
     applyPreview(prev);
+  };
+
+  window.drawerForward = function () {
+    if (!forwardStack.length) return;
+    if (currentPreview) history.push(currentPreview);
+    const next = forwardStack.pop();
+    applyPreview(next);
   };
 
   window.closeDrawer = function () {
@@ -54,8 +70,10 @@
     if (drawer) {
       drawer.setAttribute('aria-hidden', 'true');
       drawer.classList.remove('has-history');
+      drawer.classList.remove('has-forward');
     }
     history.length = 0;
+    forwardStack.length = 0;
     currentPreview = null;
   };
 
