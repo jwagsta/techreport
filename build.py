@@ -364,11 +364,49 @@ def render_figure(b: dict, used_fns: set[str]) -> str:
     )
 
 
+_TABLE_CAP_RE = re.compile(
+    r'<tr>\s*<th\s+colspan="\d+"[^>]*>\s*'
+    r'<h5\s+id="(table-[^"]+)"[^>]*>(.+?)</h5>\s*'
+    r'(.*?)</th>\s*</tr>',
+    re.DOTALL,
+)
+_TABLE_LABEL_RE = re.compile(r'^(Table\s+[\d.]+)\s*:?\s*(.*)$', re.DOTALL)
+
+
 def render_table(b: dict, used_fns: set[str]) -> str:
     if b.get("kind") == "affiliations":
         return ""  # parser-marked: skip in main flow
-    inner = process_inline(b.get("html", ""), used_fns)
-    return f'<div class="row tablerow">{inner}</div>'
+    raw = b.get("html", "")
+    cap_html = ""
+    m = _TABLE_CAP_RE.search(raw)
+    if m:
+        table_id = m.group(1)
+        title_inner = clean_ws(m.group(2))
+        rest_inner = m.group(3).strip()
+        nm = _TABLE_LABEL_RE.match(title_inner)
+        if nm:
+            label_num = nm.group(1).strip()
+            label_text = clean_ws(nm.group(2)).strip()
+        else:
+            label_num, label_text = title_inner, ""
+        body_html = process_inline(rest_inner, used_fns) if rest_inner else ""
+        title_span = (
+            f'<span class="figtitle">{html.escape(label_text)}</span>'
+            if label_text else ""
+        )
+        cap_html = (
+            f'<figcaption class="tablecap" id="{html.escape(table_id)}">'
+            f'<b>{html.escape(label_num)}</b>'
+            f'{title_span}'
+            f'{body_html}'
+            f'</figcaption>'
+        )
+        # Strip the matched label row from the table HTML so it isn't double-rendered.
+        raw = raw[:m.start()] + raw[m.end():]
+        # If the thead is now empty, remove it.
+        raw = re.sub(r'<thead>\s*</thead>', '', raw, count=1)
+    inner = process_inline(raw, used_fns)
+    return f'<div class="row tablerow">{cap_html}{inner}</div>'
 
 
 def render_box(b: dict, used_fns: set[str]) -> str:

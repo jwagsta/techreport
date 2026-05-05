@@ -821,32 +821,41 @@ h5.subsection-title .subsection-num { font-size: 10px; vertical-align: 2px; lett
 /* Genuine emphasis still bolds via <strong> inside cells */
 .tablerow > table strong { font-weight: 600; color: var(--ink); }
 .tablerow > table em { font-style: italic; }
-/* Table labels (header cells) styled like figure-caption labels:
-   accent blue, sans-serif, uppercase, small letter-spacing. The first
-   thead row gets the strongest treatment; subsequent thead rows
-   (e.g. column headers under a section header) keep the same family
-   but stay in mixed case as a serif legend, mirroring the
-   <b>Figure 1.1</b> + <span class="figtitle"> pattern. */
-.tablerow > table thead th {
+/* When a table's first row is a real header (a row of cells where every cell is a <th> containing <strong>), bold it */
+.tablerow > table thead tr:first-child th { font-weight: 600; color: var(--ink); }
+
+/* Table caption — lifted out of the table at build time (the original
+   doc puts "Table 1.1: ..." inside a colspan-spanning thead cell).
+   Styled to match the Figure caption pattern: accent-blue eyebrow,
+   serif title, sans-serif body. */
+.tablerow > .tablecap {
+  grid-column: 1 / -1;
+  margin: 0 0 12px;
+  max-width: 38em;
+  font-family: var(--sans);
+  font-size: 12.5px;
+  line-height: 1.5;
+  color: var(--ink-2);
+}
+.tablerow > .tablecap > b {
+  display: block;
   color: var(--accent);
   font-weight: 600;
-}
-.tablerow > table thead tr:first-child th {
-  font-family: var(--sans);
   font-size: 11px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  padding-bottom: 8px;
+  margin-bottom: 4px;
 }
-.tablerow > table thead tr:first-child th strong { color: var(--accent); }
-.tablerow > table thead tr + tr th {
+.tablerow > .tablecap .figtitle {
   font-family: var(--serif);
-  font-size: 13px;
+  font-size: 14px;
+  font-weight: 600;
   color: var(--ink);
-  text-transform: none;
-  letter-spacing: 0;
+  display: block;
+  margin: 0 0 6px;
 }
-.tablerow > table thead tr + tr th strong { color: var(--ink); }
+.tablerow > .tablecap p { margin: 0 0 0.5em; }
+.tablerow > .tablecap p:last-child { margin-bottom: 0; }
 /* hide pandoc's empty colgroup-only cells */
 .tablerow > table th:empty,
 .tablerow > table td:empty { padding: 0; }
