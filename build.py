@@ -645,11 +645,7 @@ TOPSTRIP = """<header class="topstrip">
 
 CHAPTER_TEMPLATE = """{head}{topstrip}
 <main class="page">
-  <nav class="toc" aria-label="Chapter outline">
-    <a class="toc-label toc-label-link" href="#" aria-label="Back to top">{toc_label}</a>
-    {toc_items_block}
-    {toc_refs_link}
-  </nav>
+  {report_contents}
 
   <section class="content">
     <header class="chap-header">
@@ -1016,28 +1012,16 @@ def render_chapter_page(
         body_parts.append(render_subsection(ss, depth=2, used_fns=used_fns, number=ss_num))
     body_html = "\n".join(p for p in body_parts if p)
 
-    toc_items = []
+    # Build the section outline for this chapter (h2-level, with section numbers).
+    current_sections = []
     for i, ss in enumerate(chapter.get("subsections", []) or [], start=1):
         ss_num = "" if is_summary or n is None else f"{n}.{i}"
         ss_title = strip_leading_number(clean_ws(ss.get("title", "")), ss_num)
-        num_span = (
-            f'<span class="toc-num">{html.escape(ss_num)}</span> '
-            if ss_num else ""
-        )
-        toc_items.append(
-            f'<li><a href="#{html.escape(ss["id"])}">{num_span}{html.escape(ss_title)}</a></li>'
-        )
-    if is_summary:
-        # Summary keeps the left column space (for alignment) but has no
-        # visible label and no contents links.
-        toc_items_block = ""
-        toc_label = "&nbsp;"  # preserve vertical rhythm without rendering "SUMMARY"
-    elif n:
-        toc_items_block = f'<ol>\n      {chr(10).join(toc_items) if toc_items else "<li><em>—</em></li>"}\n    </ol>'
-        toc_label = f"Chapter {n}"
-    else:
-        toc_items_block = f'<ol>\n      {chr(10).join(toc_items) if toc_items else "<li><em>—</em></li>"}\n    </ol>'
-        toc_label = "Contents"
+        current_sections.append({
+            "id": ss.get("id", ""),
+            "num": ss_num,
+            "title": ss_title,
+        })
 
     cards = [author_card(a) for a in chap_authors]
     faculty_strip = (
@@ -1095,17 +1079,17 @@ def render_chapter_page(
         "window.__HEADSHOTS__=" + json.dumps(_CTX.get("headshots", {}), separators=(",", ":")) + ";"
     )
 
-    toc_refs_link = (
-        '<a class="toc-refs-link" href="#references">References</a>'
-        if refs_html else ""
+    report_contents = render_report_contents(
+        chapters=_CTX.get("chapters_for_toc", []),
+        current_slug=chapter.get("id", ""),
+        current_sections=current_sections,
+        has_refs=bool(refs_html),
     )
 
     return CHAPTER_TEMPLATE.format(
         head=head,
         topstrip=topstrip,
-        toc_label=toc_label,
-        toc_items_block=toc_items_block,
-        toc_refs_link=toc_refs_link,
+        report_contents=report_contents,
         title=html.escape(title),
         publish_date=html.escape(publish_date),
         n_authors=len(chap_authors),
@@ -1486,6 +1470,8 @@ def main() -> None:
             abstract_section, about_section, ack_section, review_section,
         )
     )
+
+    _CTX["chapters_for_toc"] = chapters
 
     for c in chapters:
         cid = (c.get("id") or "").strip()
