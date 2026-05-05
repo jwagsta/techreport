@@ -948,6 +948,79 @@ a.ilink:hover, a.cite:hover {
   padding-left: 28px;
 }
 .refs-list li { margin: 0 0 10px; overflow-wrap: anywhere; }
+.refs-list .ref-item.has-abstract > .ref-cite {
+  cursor: pointer;
+  position: relative;
+  padding-right: 18px;
+  transition: color 0.15s;
+}
+.refs-list .ref-item.has-abstract > .ref-cite::after {
+  content: "+";
+  position: absolute;
+  top: 0;
+  right: 2px;
+  font-family: var(--sans);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--accent);
+  line-height: 1.55;
+  transition: transform 0.15s, color 0.15s;
+}
+.refs-list .ref-item.has-abstract.expanded > .ref-cite::after {
+  content: "\2212"; /* minus */
+}
+.refs-list .ref-item.has-abstract > .ref-cite:hover { color: var(--ink); }
+.refs-list .ref-item .ref-abstract {
+  margin-top: 8px;
+  margin-bottom: 6px;
+  padding: 12px 14px;
+  background: var(--paper-2);
+  border-left: 2px solid var(--accent);
+  border-radius: 2px;
+  color: var(--ink-2);
+}
+.refs-list .ref-item .ref-abstract-label {
+  font-family: var(--sans);
+  font-size: 10.5px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--accent);
+  margin-bottom: 6px;
+}
+.refs-list .ref-item .ref-abstract-body {
+  font-family: var(--serif);
+  font-size: 14px;
+  line-height: 1.55;
+}
+.refs-list .ref-item .ref-abstract-body p { margin: 0 0 8px; }
+.refs-list .ref-item .ref-abstract-body p:last-child { margin-bottom: 0; }
+
+/* Drawer flavour of the same block: lives next to the citation card. */
+.drawer .dbody .ref-abstract.drawer-abstract {
+  margin-top: 14px;
+  padding: 14px 16px;
+  background: var(--paper-2);
+  border-left: 2px solid var(--accent);
+  border-radius: 2px;
+}
+.drawer .dbody .ref-abstract.drawer-abstract .ref-abstract-label {
+  font-family: var(--sans);
+  font-size: 10.5px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--accent);
+  margin-bottom: 6px;
+}
+.drawer .dbody .ref-abstract.drawer-abstract .ref-abstract-body {
+  font-family: var(--serif);
+  font-size: 14.5px;
+  line-height: 1.55;
+  color: var(--ink-2);
+}
+.drawer .dbody .ref-abstract.drawer-abstract .ref-abstract-body p { margin: 0 0 8px; }
+.drawer .dbody .ref-abstract.drawer-abstract .ref-abstract-body p:last-child { margin-bottom: 0; }
 
 /* ============================================================
    DRAWER (right slide on desktop, bottom sheet on mobile)
@@ -1092,16 +1165,28 @@ a.ilink:hover, a.cite:hover {
 }
 .drawer .dhead .dot { color: var(--rule-2); }
 .drawer .dhead .dactions { display: flex; gap: 8px; flex-shrink: 0; }
-.drawer .dhead .back {
+.drawer .dhead .back,
+.drawer .dhead .fwd {
   background: transparent; border: 1px solid var(--rule);
   border-radius: 6px;
-  padding: 5px 10px;
-  font-family: var(--sans); font-size: 13px;
+  padding: 3px 8px;
+  font-family: var(--sans); font-size: 14px;
+  line-height: 1;
   color: var(--ink-2); cursor: pointer;
-  display: none;
+  display: inline-flex; align-items: center; justify-content: center;
+  min-width: 26px;
 }
-.drawer.has-history .dhead .back { display: inline-flex; align-items: center; gap: 4px; }
-.drawer .dhead .back:hover { border-color: var(--accent); color: var(--accent); }
+.drawer .dhead .back:hover,
+.drawer.has-forward .dhead .fwd:hover { border-color: var(--accent); color: var(--accent); }
+.drawer:not(.has-forward) .dhead .fwd {
+  color: var(--rule-2);
+  cursor: default;
+}
+.drawer .dhead #d-jump .jump-arr {
+  display: inline-block;
+  margin-left: 2px;
+  color: var(--accent);
+}
 .drawer .dhead button {
   background: transparent;
   border: 1px solid var(--rule);

@@ -12,6 +12,7 @@
 
   let currentPreview = null;
   const history = [];
+  const forwardStack = [];
 
   function applyPreview(opts) {
     currentPreview = opts || null;
@@ -27,6 +28,7 @@
       drawer.classList.add('open');
       drawer.setAttribute('aria-hidden', 'false');
       drawer.classList.toggle('has-history', history.length > 0);
+      drawer.classList.toggle('has-forward', forwardStack.length > 0);
       if (dJump) {
         dJump.style.display = (opts && opts.hideJump) ? 'none' : '';
       }
@@ -39,13 +41,27 @@
       // navigating from one preview to another → push the previous onto stack
       history.push(currentPreview);
     }
+    // Any new navigation invalidates the forward stack.
+    forwardStack.length = 0;
     applyPreview(opts);
   }
 
   window.drawerBack = function () {
-    if (!history.length) return;
+    if (!history.length) {
+      // No history to go back through → first click closes the drawer.
+      window.closeDrawer();
+      return;
+    }
+    if (currentPreview) forwardStack.push(currentPreview);
     const prev = history.pop();
     applyPreview(prev);
+  };
+
+  window.drawerForward = function () {
+    if (!forwardStack.length) return;
+    if (currentPreview) history.push(currentPreview);
+    const next = forwardStack.pop();
+    applyPreview(next);
   };
 
   window.closeDrawer = function () {
@@ -54,8 +70,10 @@
     if (drawer) {
       drawer.setAttribute('aria-hidden', 'true');
       drawer.classList.remove('has-history');
+      drawer.classList.remove('has-forward');
     }
     history.length = 0;
+    forwardStack.length = 0;
     currentPreview = null;
   };
 
@@ -202,11 +220,20 @@
     const idx = (citeKey.split(':')[1] || '').trim();
     const refLi = document.getElementById('ref-' + idx);
     if (!refLi) return null;
-    const refHtml = refLi.innerHTML;
+    // The bibliography <li> is now structured as
+    //   .ref-cite (the citation)  +  .ref-abstract (hidden until expanded).
+    // For the drawer preview we want the citation text only — the abstract
+    // gets its own labeled block so the visual hierarchy matches the
+    // expanded-in-place view.
+    const citeNode = refLi.querySelector('.ref-cite');
+    const refHtml = citeNode ? citeNode.innerHTML : refLi.innerHTML;
+    const absNode = refLi.querySelector('.ref-abstract-body');
+    const absHtml = absNode ? absNode.innerHTML : '';
     const url = refLi.dataset.url || '';
     const doi = refLi.dataset.doi || '';
     // Plain-text query for Google Scholar / Google search.
-    const refText = (refLi.textContent || '').replace(/\s+/g, ' ').trim();
+    const refText = (citeNode ? citeNode.textContent : refLi.textContent || '')
+      .replace(/\s+/g, ' ').trim();
     const googleHref = 'https://www.google.com/search?q=' + encodeURIComponent(refText);
     const actions = [];
     actions.push(
@@ -222,11 +249,20 @@
         '<a href="https://doi.org/' + escapeHtml(doi) + '" target="_blank" rel="noopener noreferrer">DOI: ' + escapeHtml(doi) + '</a>'
       );
     }
+    const abstractBlock = absHtml
+      ? (
+        '<div class="ref-abstract drawer-abstract">' +
+          '<div class="ref-abstract-label">Abstract</div>' +
+          '<div class="ref-abstract-body">' + absHtml + '</div>' +
+        '</div>'
+      )
+      : '';
     return {
       label: '',                // suppress the redundant src-title
       previewLabel: 'Reference',
       html:
         '<div class="ref-card">' + refHtml + '</div>' +
+        abstractBlock +
         '<div class="ref-actions">' + actions.join('') + '</div>',
       href: '',
       hideJump: true,
@@ -371,6 +407,27 @@
   // ESC closes drawer
   document.addEventListener('keydown', function (e) {
     if (e.key === 'Escape') window.closeDrawer();
+  });
+
+  // ---------- bibliography: click a reference to toggle its abstract ----------
+  // The end-of-chapter <ol class="refs-list"> renders each entry as
+  //   <li class="ref-item has-abstract">
+  //     <div class="ref-cite">…</div>
+  //     <div class="ref-abstract" hidden>…</div>
+  //   </li>
+  // Clicking anywhere on the cite line (except a real link inside it) flips
+  // the hidden state of the sibling abstract block.
+  document.addEventListener('click', function (e) {
+    const cite = e.target.closest('.refs-list .ref-item.has-abstract > .ref-cite');
+    if (!cite) return;
+    // Don't hijack clicks on actual links inside the citation (DOI, etc.).
+    if (e.target.closest('a')) return;
+    const li = cite.parentElement;
+    const abs = li.querySelector(':scope > .ref-abstract');
+    if (!abs) return;
+    const open = li.classList.toggle('expanded');
+    if (open) abs.removeAttribute('hidden');
+    else abs.setAttribute('hidden', '');
   });
 
   // ---------- footnote hover peek ----------
