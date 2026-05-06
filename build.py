@@ -361,12 +361,15 @@ def render_figure(b: dict, used_fns: set[str]) -> str:
         label, sub = m.group(1), m.group(2)
     else:
         label, sub = title, ""
+    title_span = (
+        f'<span class="figtitle">{html.escape(sub)}</span>' if sub else ""
+    )
     return (
         f'<figure class="row figrow" id="{html.escape(fid)}">'
         f'<img src="{html.escape(src)}" alt="{html.escape(alt)}" loading="lazy">'
         f'<figcaption>'
         f'<b>{html.escape(label)}</b>'
-        f'{f"<span class=\"figtitle\">{html.escape(sub)}</span>" if sub else ""}'
+        f'{title_span}'
         f'{body}'
         f'</figcaption>'
         f'</figure>'
