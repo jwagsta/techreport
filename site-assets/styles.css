@@ -21,14 +21,14 @@
   --serif:        'Source Serif 4', Georgia, 'Times New Roman', serif;
   --sans:         'Inter', system-ui, -apple-system, sans-serif;
 
-  --col-toc:      220px;
-  --col-marg:     280px;
+  --col-toc:      300px;
+  --col-marg:     240px;
   --col-gap:      36px;
   --max:          1320px;
 }
 
 @media (max-width: 1100px) {
-  :root { --col-toc: 180px; --col-marg: 240px; --col-gap: 28px; }
+  :root { --col-toc: 240px; --col-marg: 200px; --col-gap: 28px; }
 }
 
 * { box-sizing: border-box; }
@@ -61,8 +61,10 @@ body {
   max-width: var(--max);
   margin: 0 auto;
   /* Match the TOC's content-area left so the brand aligns with
-     "On this page" / "Report contents" labels below. */
-  padding: 10px 28px 10px 46px;
+     "On this page" / "Report contents" labels below.
+     Page padding-left (14) + .toc padding-left (24) = 38 — that's
+     where the TOC labels start, so the brand sits at the same x. */
+  padding: 10px 28px 10px 38px;
   display: flex; justify-content: space-between; align-items: center;
   font-size: 12px; letter-spacing: 0.02em;
   color: var(--muted);
@@ -744,6 +746,9 @@ h5.subsection-title .subsection-num { font-size: 10px; vertical-align: 2px; lett
   margin: 36px 0;
   row-gap: 12px;
   scroll-margin-top: 80px;
+  /* Anchor for the absolutely-positioned figcaption so it can extend
+     below the figure's row into the next paragraph's sidenote area. */
+  position: relative;
 }
 .figrow img {
   grid-column: 1;
@@ -752,9 +757,17 @@ h5.subsection-title .subsection-num { font-size: 10px; vertical-align: 2px; lett
   height: auto;
   display: block;
 }
+/* Pull the figcaption out of the grid flow. The figure row's height now
+   tracks the image only, and the caption is free to overflow downward
+   past the figure into the column space alongside subsequent paragraphs.
+   This eliminates the white-space-under-figure problem when the caption
+   is shorter than the image AND the white-space-under-image problem
+   when the caption is longer than the image. */
 .figrow figcaption {
-  grid-column: 2;
-  align-self: end;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: var(--col-marg);
   font-family: var(--sans);
   font-size: 12.5px; line-height: 1.5;
   color: var(--ink-2);
@@ -810,6 +823,39 @@ h5.subsection-title .subsection-num { font-size: 10px; vertical-align: 2px; lett
 .tablerow > table em { font-style: italic; }
 /* When a table's first row is a real header (a row of cells where every cell is a <th> containing <strong>), bold it */
 .tablerow > table thead tr:first-child th { font-weight: 600; color: var(--ink); }
+
+/* Table caption — lifted out of the table at build time (the original
+   doc puts "Table 1.1: ..." inside a colspan-spanning thead cell).
+   Styled to match the Figure caption pattern: accent-blue eyebrow,
+   serif title, sans-serif body. */
+.tablerow > .tablecap {
+  grid-column: 1;
+  margin: 12px 0 0;
+  max-width: 38em;
+  font-family: var(--sans);
+  font-size: 12.5px;
+  line-height: 1.5;
+  color: var(--ink-2);
+}
+.tablerow > .tablecap > b {
+  display: block;
+  color: var(--accent);
+  font-weight: 600;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+.tablerow > .tablecap .figtitle {
+  font-family: var(--serif);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--ink);
+  display: block;
+  margin: 0 0 6px;
+}
+.tablerow > .tablecap p { margin: 0 0 0.5em; }
+.tablerow > .tablecap p:last-child { margin-bottom: 0; }
 /* hide pandoc's empty colgroup-only cells */
 .tablerow > table th:empty,
 .tablerow > table td:empty { padding: 0; }
@@ -1395,6 +1441,137 @@ a.ilink:hover, a.cite:hover {
   color: var(--ink);
   letter-spacing: -0.005em;
 }
+
+/* ============================================================
+   REPORT CONTENTS — unified left-panel widget on chapter pages
+   ============================================================ */
+
+.toc.rc { padding-left: 24px; padding-right: 12px; }
+
+.rc .rc-label {
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+
+/* Each chapter row: number · ellipsis-truncated title.
+   The whole row is the link. The number sits in a fixed-width gutter so
+   titles align across chapters and across the about/summary rows. */
+.rc .rc-chap {
+  display: grid;
+  grid-template-columns: 20px minmax(0, 1fr);
+  align-items: baseline;
+  gap: 6px;
+  padding: 5px 0;
+  text-decoration: none;
+  color: var(--ink-3);
+  font-family: var(--sans);
+  font-size: 12.5px;
+  line-height: 1.45;
+  border: 0;
+}
+.rc .rc-chap:hover { color: var(--ink); }
+.rc .rc-chap.current,
+.rc .rc-chap.expanded { color: var(--ink); font-weight: 600; }
+
+.rc .rc-num {
+  color: var(--accent);
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  font-size: 12px;
+  text-align: right;
+  padding-right: 4px;
+}
+.rc .rc-title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 0;
+}
+
+/* Section row inside the expanded current chapter.
+   Section number sits in a 28 px gutter, with a 12 px lead-in column for the
+   active dot. Section titles wrap onto multiple lines (no truncation). */
+.rc .rc-sec {
+  display: grid;
+  grid-template-columns: 12px 28px minmax(0, 1fr);
+  align-items: baseline;
+  gap: 4px;
+  padding: 3px 0;
+  margin-left: 0;
+  text-decoration: none;
+  color: var(--ink-3);
+  font-family: var(--sans);
+  font-size: 12px;
+  line-height: 1.45;
+  position: relative;
+}
+.rc .rc-sec:hover { color: var(--ink); }
+.rc .rc-sec .rc-secn {
+  grid-column: 2;
+  color: var(--muted-2);
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  font-size: 11.5px;
+  text-align: right;
+  padding-right: 4px;
+}
+.rc .rc-sec .rc-sectitle {
+  grid-column: 3;
+  min-width: 0;
+  /* multi-line wrap: no nowrap / overflow / ellipsis */
+  overflow-wrap: anywhere;
+}
+
+/* Active section: small blue dot in the leftmost gutter column. */
+.rc .rc-sec.current { color: var(--ink); font-weight: 600; }
+.rc .rc-sec.current::before {
+  content: "";
+  position: absolute;
+  left: 2px;
+  top: 10px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+/* "References" appears as a section row, demoted to grey small caps. */
+.rc .rc-sec.rc-refs {
+  margin-top: 6px;
+  color: var(--muted-2);
+  font-weight: 600;
+  font-size: 11px;
+  letter-spacing: 0.10em;
+  text-transform: uppercase;
+}
+.rc .rc-sec.rc-refs:hover { color: var(--ink); }
+.rc .rc-sec.rc-refs .rc-sectitle { font-family: var(--sans); }
+
+/* Floating popout — matches the .fnpeek reference / footnote tooltip:
+   white paper background, light grey border, soft drop shadow. */
+.rcpeek {
+  position: fixed;
+  z-index: 80;
+  background: var(--paper);
+  border: 1px solid var(--rule);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
+  border-radius: 4px;
+  padding: 12px 16px;
+  max-width: 460px;
+  font-family: var(--sans);
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--ink-2);
+  pointer-events: none;
+  opacity: 0;
+  transform: translateY(4px);
+  transition: opacity 0.12s, transform 0.12s;
+}
+.rcpeek.show { opacity: 1; transform: translateY(0); }
 
 /* ============================================================
    MOBILE

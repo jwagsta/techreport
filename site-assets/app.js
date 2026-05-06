@@ -497,7 +497,9 @@
     const linkByHash = new Map();
     tocLinks.forEach(function (link) {
       const href = link.getAttribute('href') || '';
-      if (href.startsWith('#')) linkByHash.set(href.slice(1), link);
+      if (href.startsWith('#') && href.length > 1) {
+        linkByHash.set(href.slice(1), link);
+      }
     });
 
     const observed = [];
@@ -507,20 +509,173 @@
     });
 
     if (observed.length) {
+      let lastActiveId = null;
+
+      function setActive(id) {
+        if (!id || id === lastActiveId) return;
+        tocLinks.forEach(function (l) { l.classList.remove('current'); });
+        const link = linkByHash.get(id);
+        if (link) {
+          link.classList.add('current');
+          lastActiveId = id;
+        }
+      }
+
       const io = new IntersectionObserver(function (entries) {
-        entries.forEach(function (entry) {
-          if (entry.isIntersecting) {
-            tocLinks.forEach(function (l) { l.classList.remove('current'); });
-            const id = entry.target.id;
-            const link = linkByHash.get(id);
-            if (link) link.classList.add('current');
-          }
-        });
-      }, { rootMargin: '-30% 0px -60% 0px', threshold: 0 });
+        // Pick the topmost intersecting entry on this batch.
+        const intersecting = entries.filter(function (e) { return e.isIntersecting; });
+        if (intersecting.length) {
+          intersecting.sort(function (a, b) {
+            return a.boundingClientRect.top - b.boundingClientRect.top;
+          });
+          setActive(intersecting[0].target.id);
+        }
+        // If nothing is intersecting, leave lastActiveId in place — this
+        // gives us the "stay on last section past the end of body" behaviour.
+      }, { rootMargin: '-20% 0px -65% 0px', threshold: 0 });
 
       observed.forEach(function (el) { io.observe(el); });
+
+      // Initialise on load: pick the first observed element above viewport
+      // top, falling back to the first one.
+      function initActive() {
+        let pick = observed[0];
+        for (let i = 0; i < observed.length; i++) {
+          const r = observed[i].getBoundingClientRect();
+          if (r.top <= 80) pick = observed[i];
+          else break;
+        }
+        if (pick) setActive(pick.id);
+      }
+      // Defer to after layout settles.
+      if (document.readyState === 'complete') initActive();
+      else window.addEventListener('load', initActive, { once: true });
     }
   }
+
+  // ---------- Report-contents row hover popout ----------
+  // When a chapter or section row is ellipsis-truncated, hovering it shows
+  // the full title in a small floating cream tooltip (same family as fnpeek).
+  // Disabled on narrow viewports — the TOC is hidden there.
+  (function () {
+    let rcpeek = null;
+    let activeRow = null;
+
+    function ensureRcpeek() {
+      if (rcpeek) return rcpeek;
+      rcpeek = document.createElement('div');
+      rcpeek.className = 'rcpeek';
+      document.body.appendChild(rcpeek);
+      return rcpeek;
+    }
+
+    function isOverflowing(row) {
+      const title = row.querySelector('.rc-title, .rc-sectitle');
+      if (!title) return false;
+      return title.offsetWidth < title.scrollWidth;
+    }
+
+    function position(row, peek) {
+      const rowRect = row.getBoundingClientRect();
+      const peekRect = peek.getBoundingClientRect();
+      // Place to the right of the TOC, vertically aligned with the row.
+      const tocEl = row.closest('.toc');
+      const tocRect = tocEl ? tocEl.getBoundingClientRect() : rowRect;
+      let left = tocRect.right + 8;
+      let top = rowRect.top + rowRect.height / 2 - peekRect.height / 2;
+      // Keep on screen.
+      const maxLeft = window.innerWidth - peekRect.width - 12;
+      if (left > maxLeft) left = maxLeft;
+      if (top < 8) top = 8;
+      const maxTop = window.innerHeight - peekRect.height - 8;
+      if (top > maxTop) top = maxTop;
+      peek.style.left = left + 'px';
+      peek.style.top = top + 'px';
+    }
+
+    function showFor(row) {
+      if (window.matchMedia('(max-width: 900px)').matches) return;
+      if (!isOverflowing(row)) return;
+      const full = row.getAttribute('data-fulltitle') || '';
+      if (!full) return;
+      const peek = ensureRcpeek();
+      peek.textContent = full;
+      // Allow the browser to lay it out before measuring.
+      peek.classList.add('show');
+      // Use rAF so the just-set textContent is reflected in scrollWidth/height.
+      requestAnimationFrame(function () { position(row, peek); });
+      activeRow = row;
+    }
+
+    function hide() {
+      if (!rcpeek) return;
+      rcpeek.classList.remove('show');
+      activeRow = null;
+    }
+
+    document.addEventListener('mouseover', function (e) {
+      const row = e.target.closest('.rc-chap[data-fulltitle], .rc-sec[data-fulltitle]');
+      if (!row || row === activeRow) return;
+      showFor(row);
+    });
+    document.addEventListener('mouseout', function (e) {
+      const row = e.target.closest('.rc-chap[data-fulltitle], .rc-sec[data-fulltitle]');
+      if (!row) return;
+      // Only hide if leaving the row entirely (not just child→parent).
+      if (e.relatedTarget && row.contains(e.relatedTarget)) return;
+      hide();
+    });
+    // Also hide on scroll inside the TOC, since position is fixed-anchored.
+    const tocEl = document.querySelector('.toc.rc');
+    if (tocEl) tocEl.addEventListener('scroll', hide, { passive: true });
+  })();
+
+  // ---------- Figure-caption collision guard ----------
+  // Figcaptions are absolutely positioned so they can extend past the
+  // figure's row when the caption is taller than the image — that's the
+  // intended Tufte-style overflow into next paragraphs. But a long caption
+  // can collide with a sidenote on a paragraph immediately below the figure.
+  // When that's about to happen, extend the figrow's min-height so the
+  // caption fits inside its row again. Otherwise leave it overflowing.
+  (function () {
+    function adjustFigrows() {
+      const figrows = document.querySelectorAll('.figrow');
+      figrows.forEach(function (figrow) {
+        const cap = figrow.querySelector('figcaption');
+        if (!cap) return;
+        figrow.style.minHeight = '';  // reset before measuring
+        const capH = cap.offsetHeight;
+        const figH = figrow.offsetHeight;
+        if (capH <= figH) return;  // image is at least as tall — no overflow.
+        const overflow = capH - figH;
+        let consumed = 0;
+        let collide = false;
+        let sib = figrow.nextElementSibling;
+        while (sib && consumed < overflow) {
+          if (sib.querySelector && sib.querySelector('.row-sidenotes')) {
+            collide = true;
+            break;
+          }
+          consumed += sib.offsetHeight || 0;
+          sib = sib.nextElementSibling;
+        }
+        if (collide) {
+          figrow.style.minHeight = capH + 'px';
+        }
+      });
+    }
+    function schedule() {
+      if (window.requestAnimationFrame) requestAnimationFrame(adjustFigrows);
+      else adjustFigrows();
+    }
+    if (document.readyState === 'complete') schedule();
+    else window.addEventListener('load', schedule, { once: true });
+    let resizeTimer = null;
+    window.addEventListener('resize', function () {
+      if (resizeTimer) clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(schedule, 120);
+    }, { passive: true });
+  })();
 
   // ---------- helper ----------
 

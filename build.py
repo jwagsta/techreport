@@ -373,11 +373,53 @@ def render_figure(b: dict, used_fns: set[str]) -> str:
     )
 
 
+_TABLE_CAP_RE = re.compile(
+    r'<tr>\s*<th\s+colspan="\d+"[^>]*>\s*'
+    r'<h5\s+id="(table-[^"]+)"[^>]*>(.+?)</h5>\s*'
+    r'(.*?)</th>\s*</tr>',
+    re.DOTALL,
+)
+_TABLE_LABEL_RE = re.compile(r'^(Table\s+[\d.]+)\s*:?\s*(.*)$', re.DOTALL)
+
+
 def render_table(b: dict, used_fns: set[str]) -> str:
     if b.get("kind") == "affiliations":
         return ""  # parser-marked: skip in main flow
-    inner = process_inline(b.get("html", ""), used_fns)
-    return f'<div class="row tablerow">{inner}</div>'
+    raw = b.get("html", "")
+    cap_html = ""
+    m = _TABLE_CAP_RE.search(raw)
+    if m:
+        table_id = m.group(1)
+        title_inner = clean_ws(m.group(2))
+        rest_inner = m.group(3).strip()
+        nm = _TABLE_LABEL_RE.match(title_inner)
+        if nm:
+            label_num = nm.group(1).strip()
+            label_text = clean_ws(nm.group(2)).strip()
+        else:
+            label_num, label_text = title_inner, ""
+        body_html = process_inline(rest_inner, used_fns) if rest_inner else ""
+        # label_text and label_num both come straight out of the parser's HTML
+        # so they may already contain inline tags like <em>...</em>. Do NOT
+        # re-escape; emit as-is. Run process_inline so any embedded citations
+        # / footnote refs / internal links get linked the same as body text.
+        title_span = (
+            f'<span class="figtitle">{process_inline(label_text, used_fns)}</span>'
+            if label_text else ""
+        )
+        cap_html = (
+            f'<figcaption class="tablecap" id="{html.escape(table_id)}">'
+            f'<b>{label_num}</b>'
+            f'{title_span}'
+            f'{body_html}'
+            f'</figcaption>'
+        )
+        # Strip the matched label row from the table HTML so it isn't double-rendered.
+        raw = raw[:m.start()] + raw[m.end():]
+        # If the thead is now empty, remove it.
+        raw = re.sub(r'<thead>\s*</thead>', '', raw, count=1)
+    inner = process_inline(raw, used_fns)
+    return f'<div class="row tablerow">{inner}{cap_html}</div>'
 
 
 def render_box(b: dict, used_fns: set[str]) -> str:
@@ -620,6 +662,7 @@ PAGE_HEAD = """<!DOCTYPE html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{title} — Technical Report on Mirror Bacteria</title>
+<link rel="icon" type="image/svg+xml" href="{css_path}favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -653,11 +696,7 @@ TOPSTRIP = """<header class="topstrip">
 
 CHAPTER_TEMPLATE = """{head}{topstrip}
 <main class="page">
-  <nav class="toc" aria-label="Chapter outline">
-    <a class="toc-label toc-label-link" href="#" aria-label="Back to top">{toc_label}</a>
-    {toc_items_block}
-    {toc_refs_link}
-  </nav>
+  {report_contents}
 
   <section class="content">
     <header class="chap-header">
@@ -920,6 +959,78 @@ def collect_target_map(chapters: list) -> dict[str, str]:
 # Page assembly
 # ============================================================
 
+def render_report_contents(
+    chapters: list,
+    current_slug: str,
+    current_sections: list,  # [{id, num, title}]
+    has_refs: bool,
+) -> str:
+    """Render the unified left-side "Report contents" widget for a chapter page.
+
+    `chapters` is the ordered list of chapter dicts (about, summary, ch1…ch9).
+    `current_slug` is the id of the chapter currently being rendered.
+    `current_sections` is the list of h2-level entries for the current chapter,
+    each {id: anchor, num: "2.3" or "", title: full section title}.
+    `has_refs` controls whether to render the trailing References sub-row.
+    """
+    rows = []
+    for c in chapters:
+        cid = c.get("id", "")
+        n = c.get("number")
+        ctitle = clean_ws(c.get("title", "") or "")
+        is_current = cid == current_slug
+        num_html = (
+            f'<span class="rc-num">{html.escape(str(n))}</span>'
+            if n else '<span class="rc-num"></span>'
+        )
+        if is_current:
+            href = "#"
+        else:
+            href = f"../{cid}/"
+        cls = "rc-chap"
+        if is_current:
+            cls += " expanded current"
+        rows.append(
+            f'<a class="{cls}" href="{html.escape(href)}" '
+            f'data-fulltitle="{html.escape(ctitle)}">'
+            f'{num_html}'
+            f'<span class="rc-title">{html.escape(ctitle)}</span>'
+            f'</a>'
+        )
+        if is_current:
+            for s in current_sections:
+                sid = s.get("id", "")
+                snum = s.get("num", "") or ""
+                stitle = clean_ws(s.get("title", "") or "")
+                num_span = (
+                    f'<span class="rc-secn">{html.escape(snum)}</span>'
+                    if snum else '<span class="rc-secn"></span>'
+                )
+                full = f"{snum}   {stitle}".strip() if snum else stitle
+                rows.append(
+                    f'<a class="rc-sec" href="#{html.escape(sid)}" '
+                    f'data-fulltitle="{html.escape(full)}">'
+                    f'{num_span}'
+                    f'<span class="rc-sectitle">{html.escape(stitle)}</span>'
+                    f'</a>'
+                )
+            if has_refs:
+                rows.append(
+                    '<a class="rc-sec rc-refs" href="#references" '
+                    'data-fulltitle="References">'
+                    '<span class="rc-secn"></span>'
+                    '<span class="rc-sectitle">References</span>'
+                    '</a>'
+                )
+    items = "\n      ".join(rows)
+    return (
+        '<nav class="toc rc" aria-label="Report contents">\n'
+        '    <div class="rc-label">Report contents</div>\n'
+        f'    {items}\n'
+        '  </nav>'
+    )
+
+
 def render_chapter_page(
     chapter: dict,
     publish_date: str,
@@ -952,28 +1063,16 @@ def render_chapter_page(
         body_parts.append(render_subsection(ss, depth=2, used_fns=used_fns, number=ss_num))
     body_html = "\n".join(p for p in body_parts if p)
 
-    toc_items = []
+    # Build the section outline for this chapter (h2-level, with section numbers).
+    current_sections = []
     for i, ss in enumerate(chapter.get("subsections", []) or [], start=1):
         ss_num = "" if is_summary or n is None else f"{n}.{i}"
         ss_title = strip_leading_number(clean_ws(ss.get("title", "")), ss_num)
-        num_span = (
-            f'<span class="toc-num">{html.escape(ss_num)}</span> '
-            if ss_num else ""
-        )
-        toc_items.append(
-            f'<li><a href="#{html.escape(ss["id"])}">{num_span}{html.escape(ss_title)}</a></li>'
-        )
-    if is_summary:
-        # Summary keeps the left column space (for alignment) but has no
-        # visible label and no contents links.
-        toc_items_block = ""
-        toc_label = "&nbsp;"  # preserve vertical rhythm without rendering "SUMMARY"
-    elif n:
-        toc_items_block = f'<ol>\n      {chr(10).join(toc_items) if toc_items else "<li><em>—</em></li>"}\n    </ol>'
-        toc_label = f"Chapter {n}"
-    else:
-        toc_items_block = f'<ol>\n      {chr(10).join(toc_items) if toc_items else "<li><em>—</em></li>"}\n    </ol>'
-        toc_label = "Contents"
+        current_sections.append({
+            "id": ss.get("id", ""),
+            "num": ss_num,
+            "title": ss_title,
+        })
 
     cards = [author_card(a) for a in chap_authors]
     faculty_strip = (
@@ -1051,17 +1150,17 @@ def render_chapter_page(
         "window.__HEADSHOTS__=" + json.dumps(_CTX.get("headshots", {}), separators=(",", ":")) + ";"
     )
 
-    toc_refs_link = (
-        '<a class="toc-refs-link" href="#references">References</a>'
-        if refs_html else ""
+    report_contents = render_report_contents(
+        chapters=_CTX.get("chapters_for_toc", []),
+        current_slug=chapter.get("id", ""),
+        current_sections=current_sections,
+        has_refs=bool(refs_html),
     )
 
     return CHAPTER_TEMPLATE.format(
         head=head,
         topstrip=topstrip,
-        toc_label=toc_label,
-        toc_items_block=toc_items_block,
-        toc_refs_link=toc_refs_link,
+        report_contents=report_contents,
         title=html.escape(title),
         publish_date=html.escape(publish_date),
         n_authors=len(chap_authors),
@@ -1453,6 +1552,8 @@ def main() -> None:
         )
     )
 
+    _CTX["chapters_for_toc"] = chapters
+
     for c in chapters:
         cid = (c.get("id") or "").strip()
         if not cid:
@@ -1473,7 +1574,7 @@ def main() -> None:
         )
         (chap_dir / "index.html").write_text(page)
 
-    for name in ("styles.css", "app.js", "search.js"):
+    for name in ("styles.css", "app.js", "search.js", "favicon.svg"):
         src = SITE_ASSETS / name
         if src.exists():
             shutil.copy(src, SITE / name)
