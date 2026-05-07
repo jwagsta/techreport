@@ -1469,6 +1469,58 @@ def fetch_all_headshots() -> dict:
 # Build orchestration
 # ============================================================
 
+def _reorder_chapter_blocks(chapters: list) -> None:
+    """Apply manual block reorderings for specific chapters in-place.
+
+    The parser places figures where pandoc emits them, which is sometimes
+    several paragraphs after the first inline reference. When two figures
+    end up directly adjacent, the absolutely-positioned figcaptions can
+    visually collide. Here we move specific figures next to their first
+    in-text reference. Figures keep their numerical order — only figures
+    move, never paragraphs.
+    """
+    for ch in chapters:
+        if ch.get("id") != "chapter-1-introduction":
+            continue
+        blocks = ch.get("blocks") or []
+
+        def find_fig(prefix: str) -> int:
+            for i, b in enumerate(blocks):
+                if (b.get("type") == "figure"
+                        and (b.get("id") or "").startswith(prefix)):
+                    return i
+            return -1
+
+        def find_para(needle: str) -> int:
+            for i, b in enumerate(blocks):
+                if (b.get("type") == "paragraph"
+                        and needle in (b.get("html") or "")):
+                    return i
+            return -1
+
+        # Pair A: move Fig 1.2 to just before the "protein binding is
+        # stereospecific" paragraph (sandwiches it between the
+        # mirror-organism-construction para and the protein-binding para).
+        i_fig = find_fig("figure-1.2")
+        i_dst = find_para("protein binding is stereospecific")
+        if i_fig != -1 and i_dst != -1 and i_fig > i_dst:
+            fig = blocks.pop(i_fig)
+            blocks.insert(i_dst, fig)
+
+        # Pair B: move Fig 1.5 to just after the "Once created, mirror
+        # cells could be further engineered" paragraph (figs 1.4 and 1.5
+        # were back-to-back; this drops para 19 between them).
+        i_fig = find_fig("figure-1.5")
+        i_dst = find_para("Once created, mirror cells could be further engineered")
+        if i_fig != -1 and i_dst != -1 and i_fig < i_dst:
+            fig = blocks.pop(i_fig)
+            # i_dst shifted down by 1 after the pop; original index is
+            # the post-shift slot immediately AFTER the dst paragraph.
+            blocks.insert(i_dst, fig)
+
+        ch["blocks"] = blocks
+
+
 def main() -> None:
     if not INDEX_FILE.exists():
         raise SystemExit(
@@ -1520,6 +1572,11 @@ def main() -> None:
         elif cid == "summary":
             summary_section = ch
     chapters.sort(key=lambda c: c.get("number") or 0)
+
+    # Editorial reorderings: break up adjacent figure pairs by sliding
+    # figures next to their first in-text reference. Figures stay in
+    # numerical order; only figures (not paragraphs) move.
+    _reorder_chapter_blocks(chapters)
 
     # Treat Summary as a "chapter 0" — render it as its own page and slot it
     # at the front of the chapter list so the menu / contents include it.
