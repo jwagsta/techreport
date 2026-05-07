@@ -731,6 +731,34 @@ a.toc-label-link:hover { color: var(--ink); }
   overflow-wrap: anywhere;
 }
 
+/* Numbered / bulleted lists in the body. Pandoc emits <li><p>...</p></li>
+   for each item, and browser defaults give each <p> a full 1em top + 1em
+   bottom — so adjacent items get ~32px of dead space between them.
+   Collapse that to a small visual gap. */
+.prose-list,
+.body ol,
+.body ul {
+  grid-column: 1;
+  max-width: 38em;
+  margin: 0;
+  padding-left: 24px;
+  line-height: 1.55;
+}
+.prose-list > li,
+.body ol > li,
+.body ul > li {
+  margin: 0 0 6px;
+}
+.prose-list > li:last-child,
+.body ol > li:last-child,
+.body ul > li:last-child { margin-bottom: 0; }
+.prose-list > li > p,
+.body ol > li > p,
+.body ul > li > p { margin: 0; }
+.prose-list > li > p + p,
+.body ol > li > p + p,
+.body ul > li > p + p { margin-top: 6px; }
+
 /* per-row sidenote slot — sits in the right margin column, top-aligned with the paragraph */
 .row > .row-sidenotes {
   grid-column: 2;
