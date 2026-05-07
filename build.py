@@ -763,9 +763,8 @@ CHAPTER_TEMPLATE = """{head}{topstrip}
       {chapter_eyebrow}
       <h1 class="chap-title">{title}</h1>
       <div class="chap-meta">
-        <span>{publish_date}</span>
+        <span>Technical Report on Mirror Bacteria: Feasibility and Risks &middot; {publish_date}</span>
       </div>
-      <p class="chap-citation">{chapter_citation}</p>
     </header>
 
     {faculty_strip}
@@ -1270,13 +1269,6 @@ def render_chapter_page(
         if eyebrow_text else ''
     )
 
-    chapter_citation = (
-        'Adamala et al. (2024). '
-        '<em>Technical Report on Mirror Bacteria: Feasibility and Risks.</em> '
-        '<a href="https://www.science.org/stoken/author-tokens/ST-2327/full" rel="noopener" target="_blank">'
-        'doi:10.1126/science.ads9158</a>'
-    )
-
     # Mark front-/back-matter pages so chapter-only treatments (e.g. the
     # large drop-cap on the first paragraph) don't apply.
     page_kind_class = (
@@ -1297,7 +1289,6 @@ def render_chapter_page(
         css_path=css_path,
         boot_script=boot,
         chapter_eyebrow=chapter_eyebrow,
-        chapter_citation=chapter_citation,
         page_kind_class=page_kind_class,
     )
 
