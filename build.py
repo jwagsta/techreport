@@ -1440,13 +1440,19 @@ def render_index(
                 continue
             review_body += render_block(b, used)
     reviewer_cards = "".join(author_card(r, role="reviewer") for r in reviewers)
+    reviewer_strip_html = (
+        '<section class="reviewer-strip-section">'
+        '<div class="strip-label">Report reviewers</div>'
+        f'<div class="reviewer-strip">{reviewer_cards}</div>'
+        '</section>'
+    ) if reviewers else ''
     review_html = ""
     if review_body or reviewers:
         review_html = (
             '<section class="prose-section">'
             '<h2 class="section-title" id="review">Review</h2>'
             f'<article class="body">{review_body}</article>'
-            + (f'<div class="reviewer-strip">{reviewer_cards}</div>' if reviewers else '')
+            + reviewer_strip_html
             + '</section>'
         )
 
@@ -1459,8 +1465,11 @@ def render_index(
 
     # Author cards inline directly under the chap-header (no section wrapper).
     authors_strip_html = (
-        f'<div class="author-strip">{authors_html}</div>' if authors_html else ''
-    )
+        '<section class="author-strip-section">'
+        '<div class="strip-label">Report authors</div>'
+        f'<div class="author-strip">{authors_html}</div>'
+        '</section>'
+    ) if authors_html else ''
 
     tagline = (
         '<p class="chap-summary">'

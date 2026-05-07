@@ -267,6 +267,7 @@
   function openWindow() {
     state.open = true; saveState();
     win.hidden = false;
+    if (launcher && window.innerWidth < 1024) launcher.classList.add('chat-launcher-hidden');
     requestAnimationFrame(() => win.classList.add('open'));
     setTimeout(() => input && input.focus(), 50);
   }
@@ -274,6 +275,7 @@
   function minimize() {
     state.open = false; saveState();
     win.classList.remove('open');
+    if (launcher) launcher.classList.remove('chat-launcher-hidden');
     if (window.innerWidth < 1024) {
       setTimeout(() => { win.hidden = true; }, 220);
     } else {

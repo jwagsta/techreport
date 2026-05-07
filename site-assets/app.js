@@ -721,26 +721,42 @@
       strip.dataset.stackInit = '1';
       const authors = strip.querySelectorAll('.author');
       const total = authors.length;
-      if (total > MAX_VISIBLE) {
-        const more = document.createElement('span');
-        more.className = 'author-stack-more';
-        more.textContent = '+' + (total - MAX_VISIBLE);
-        more.setAttribute('aria-hidden', 'true');
-        strip.appendChild(more);
+      if (total <= MAX_VISIBLE) return;
+
+      const toggle = document.createElement('button');
+      toggle.type = 'button';
+      toggle.className = 'author-stack-toggle';
+      function refresh() {
+        const expanded = strip.classList.contains('expanded');
+        toggle.textContent = expanded ? 'Show less' : '+' + (total - MAX_VISIBLE);
+        toggle.setAttribute('aria-expanded', expanded ? 'true' : 'false');
       }
-      // Capture-phase listener so we beat the document-level
-      // [data-author-name] handler that opens the drawer.
+      refresh();
+      // Toggle button click: flip state regardless of viewport (desktop just
+      // ignores the .expanded class via media-query rules).
+      toggle.addEventListener('click', function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        strip.classList.toggle('expanded');
+        refresh();
+      });
+      strip.appendChild(toggle);
+
+      // Tap-anywhere-on-the-row to expand when collapsed (mobile only).
+      // Capture-phase so we beat the document-level [data-author-name] handler.
       strip.addEventListener('click', function (e) {
         if (!window.matchMedia(NARROW).matches) return;
         if (strip.classList.contains('expanded')) return;
+        if (e.target === toggle || toggle.contains(e.target)) return;
         e.preventDefault();
         e.stopPropagation();
         strip.classList.add('expanded');
+        refresh();
       }, true);
     }
 
     function init() {
-      document.querySelectorAll('.author-strip, .faculty .list')
+      document.querySelectorAll('.author-strip, .reviewer-strip, .faculty .list')
         .forEach(setup);
     }
     if (document.readyState === 'loading') {
