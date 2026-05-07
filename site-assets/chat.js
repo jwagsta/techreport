@@ -469,7 +469,9 @@
       }
 
       const loc = readerLocation();
-      const history = state.messages.slice(0, -2);
+      // Anthropic rejects extra fields on messages — strip our local-only
+      // properties (e.g. `expanded`) before sending.
+      const history = state.messages.slice(0, -2).map(m => ({ role: m.role, content: m.content }));
       const headers = { 'content-type': 'application/json' };
       if (state.sessionToken) headers['x-session-token'] = state.sessionToken;
 
