@@ -109,28 +109,36 @@
     return null;
   }
 
-  // Custom rendering for citations:
+  // Custom rendering for citations. We use the class `chat-cite` (not the
+  // bare `cite` used by the report's body content) so the existing
+  // document-level cite-handler in app.js doesn't intercept our clicks.
   //   [§4.1 Innate immune detection ...](url)  → eyebrow + serif title
-  //   [Chapter 4](url)                          → eyebrow only
-  //   [anything else](url)                      → plain link
+  //   [Section 4.1 — Innate immune detection](url) → same
+  //   [4.1 Innate immune detection](url)        → same
+  //   [Chapter 4](url) / [Chapter 4 — Title]    → eyebrow + optional title
+  //   [anything else](url)                       → plain link
   function renderLink(text, url) {
     const safe = safeHref(url);
-    if (!safe) return escapeHtml(text);                         // hallucinated path → plain text
+    if (!safe) return escapeHtml(text);
 
-    // Match "§N.M …" or "§N.M.O …" with the rest as title
-    const sec = text.match(/^§\s*(\d+(?:\.\d+){0,3})\s+(.+)$/);
+    // Match a section-number prefix in any of: "§4.1", "Section 4.1",
+    // "Sec. 4.1", or just "4.1" / "4.1.2" at the start. The remaining
+    // text is the section title.
+    const sec = text.match(
+      /^(?:§\s*|Section\s+|Sec\.?\s+)?(\d+(?:\.\d+){1,3})(?:\s*[—–:-]\s*|\s+)(.+)$/i,
+    );
     if (sec) {
-      return `<a class="cite" href="${escapeAttr(safe)}">` +
+      return `<a class="chat-cite" href="${escapeAttr(safe)}">` +
                `<span class="cite-num">§${escapeHtml(sec[1])}</span>` +
                `<span class="cite-title">${escapeHtml(sec[2])}</span>` +
              `</a>`;
     }
     // Match "Chapter N" or "Chapter N — Title"
-    const ch = text.match(/^Chapter\s+(\d+)(?:\s*[—–-]\s*(.+))?$/);
+    const ch = text.match(/^Chapter\s+(\d+)(?:\s*[—–:-]\s*(.+))?$/i);
     if (ch) {
       const num = `<span class="cite-num">Chapter ${escapeHtml(ch[1])}</span>`;
       const title = ch[2] ? `<span class="cite-title">${escapeHtml(ch[2])}</span>` : '';
-      return `<a class="cite" href="${escapeAttr(safe)}">${num}${title}</a>`;
+      return `<a class="chat-cite" href="${escapeAttr(safe)}">${num}${title}</a>`;
     }
     return `<a href="${escapeAttr(safe)}">${escapeHtml(text)}</a>`;
   }

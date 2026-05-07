@@ -163,14 +163,14 @@
   text-decoration-thickness: 1px;
   text-underline-offset: 2px;
 }
-.chat-msg-bubble .cite {
+.chat-msg-bubble .chat-cite {
   display: inline;
   text-decoration: none;
   border-bottom: 1px solid var(--rule, #e5e5e5);
   padding-bottom: 1px;
 }
-.chat-msg-bubble .cite:hover { border-bottom-color: var(--accent, #0f62fe); }
-.chat-msg-bubble .cite-num {
+.chat-msg-bubble .chat-cite:hover { border-bottom-color: var(--accent, #0f62fe); }
+.chat-msg-bubble .chat-cite-num {
   color: var(--accent, #0f62fe);
   font: 700 11px/1 Inter, sans-serif;
   letter-spacing: 0.08em;
@@ -179,7 +179,7 @@
   vertical-align: 1px;
   white-space: nowrap;
 }
-.chat-msg-bubble .cite-title {
+.chat-msg-bubble .chat-cite-title {
   font-family: "Source Serif 4", Georgia, serif;
   font-weight: 400;
   color: var(--ink, #0a0a0a);
