@@ -587,8 +587,8 @@ a.toc-label-link:hover { color: var(--ink); }
    live on their own page at /contributions-and-acknowledgments/.
    ============================================================ */
 .ack-link-row {
-  margin: 56px 0 8px;
-  padding: 24px 0 0;
+  margin: 28px 0 8px;
+  padding: 16px 0 0;
   border-top: 1px solid var(--rule, #e5e5e5);
 }
 .ack-link {
@@ -1429,10 +1429,26 @@ a.ilink:hover, a.cite:hover {
 .index-page .author-strip-section,
 .index-page .reviewer-strip-section {
   grid-column: 1 / -1;
-  margin: 8px 0 36px;
+  margin: 8px 0 12px;
   padding: 18px 0 22px;
   border-top: 1px solid var(--rule);
   border-bottom: 1px solid var(--rule);
+}
+
+/* Pull the big section-title top margin in on the home page. The
+   default 56px is right for chapter prose where each section gets
+   plenty of breathing room; on home, where each prose-section is
+   short, that turns into chasms of empty space. */
+.index-page .section-title,
+.kind-frontmatter .section-title,
+.kind-frontmatter h3.subsection-title,
+.kind-backmatter .section-title,
+.kind-backmatter h3.subsection-title {
+  margin-top: 28px;
+}
+.kind-frontmatter h4.subsection-title,
+.kind-backmatter h4.subsection-title {
+  margin-top: 20px;
 }
 .index-page .strip-label {
   font-family: var(--sans);
