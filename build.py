@@ -760,10 +760,12 @@ CHAPTER_TEMPLATE = """{head}{topstrip}
 
   <section class="content">
     <header class="chap-header">
+      {chapter_eyebrow}
       <h1 class="chap-title">{title}</h1>
       <div class="chap-meta">
         <span>{publish_date}</span>
       </div>
+      <p class="chap-citation">{chapter_citation}</p>
     </header>
 
     {faculty_strip}
@@ -1253,6 +1255,32 @@ def render_chapter_page(
         has_refs=bool(refs_html),
     )
 
+    # Eyebrow above chapter title — "CHAPTER N" in small-caps blue, matching
+    # the report's section-heading typography. Summary (number 0) and the
+    # un-numbered front/back-matter pages get a kind-appropriate eyebrow.
+    chap_kind = (chapter.get("kind") or "").lower()
+    if n and n > 0:
+        eyebrow_text = f"Chapter {n}"
+    elif chapter.get("id") == "summary":
+        eyebrow_text = "Summary"
+    elif chap_kind == "frontmatter":
+        eyebrow_text = "Front matter"
+    elif chap_kind == "backmatter":
+        eyebrow_text = "Back matter"
+    else:
+        eyebrow_text = ""
+    chapter_eyebrow = (
+        f'<div class="eyebrow">{html.escape(eyebrow_text)}</div>'
+        if eyebrow_text else ''
+    )
+
+    chapter_citation = (
+        'Adamala et al. (2024). '
+        '<em>Technical Report on Mirror Bacteria: Feasibility and Risks.</em> '
+        '<a href="https://doi.org/10.1126/science.ads9158" rel="noopener" target="_blank">'
+        'doi:10.1126/science.ads9158</a>'
+    )
+
     return CHAPTER_TEMPLATE.format(
         head=head,
         topstrip=topstrip,
@@ -1266,6 +1294,8 @@ def render_chapter_page(
         refs_html=refs_html,
         css_path=css_path,
         boot_script=boot,
+        chapter_eyebrow=chapter_eyebrow,
+        chapter_citation=chapter_citation,
     )
 
 

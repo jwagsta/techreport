@@ -504,6 +504,20 @@ a.toc-label-link:hover { color: var(--ink); }
   margin-top: 16px;
   display: flex; flex-wrap: wrap; gap: 12px;
 }
+.chap-citation {
+  font-family: var(--sans);
+  font-size: 13px; line-height: 1.5;
+  color: var(--ink-3);
+  margin: 12px 0 0;
+  max-width: 60em;
+}
+.chap-citation em { font-style: italic; }
+.chap-citation a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid var(--accent);
+}
+.chap-citation a:hover { background: var(--accent-soft); }
 
 /* ============================================================
    FACULTY STRIP
