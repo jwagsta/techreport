@@ -2,7 +2,7 @@
    Mirror Bacteria Report — "Ask AI" chat widget
    ============================================================ */
 
-/* ---------- Launcher (circle with "Ask AI" centered) ---------- */
+/* ---------- Launcher (circle with sparkle icon + "Ask AI") ---------- */
 .chat-launcher {
   position: fixed;
   bottom: 24px;
@@ -16,17 +16,23 @@
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.18);
   cursor: pointer;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 3px;
   z-index: 1000;
-  font: 700 13px/1.1 Inter, system-ui, sans-serif;
-  letter-spacing: 0.04em;
   text-align: center;
   transition: transform 120ms ease, box-shadow 120ms ease;
   padding: 0;
 }
 .chat-launcher:hover { transform: translateY(-1px); box-shadow: 0 8px 24px rgba(0, 0, 0, 0.22); }
-.chat-launcher-label { display: block; }
+.chat-launcher-icon { width: 20px; height: 20px; flex: none; display: block; }
+.chat-launcher-label {
+  display: block;
+  font: 700 10px/1 Inter, system-ui, sans-serif;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
 .chat-launcher[hidden] { display: none; }
 
 /* ---------- Window (desktop) / Bottom sheet (mobile) ---------- */
