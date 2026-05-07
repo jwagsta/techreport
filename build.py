@@ -820,7 +820,7 @@ INDEX_TEMPLATE = """{head}{topstrip}
 
   <section class="content">
     <header class="chap-header">
-      <div class="eyebrow">Technical Report · {publish_date}</div>
+      <div class="eyebrow">{publish_date}</div>
       <h1 class="chap-title">{title}</h1>
       {tagline}
       <div class="chap-meta">
@@ -829,6 +829,8 @@ INDEX_TEMPLATE = """{head}{topstrip}
         <span>{license}</span>
       </div>
     </header>
+
+    {site_context_html}
 
     {authors_strip_html}
 
@@ -1452,6 +1454,35 @@ def render_index(
         '</p>'
     )
 
+    # Header context box — visually distinct callout explaining the site,
+    # the AI assistant, and where to find the official archived copy.
+    # TODO(stanford-url): replace the Stanford Digital Repository placeholder
+    # below with the actual SDR URL once it's published.
+    site_context_html = (
+        '<aside class="site-context" aria-label="About this site">'
+        '<h2 class="site-context-title">About this site</h2>'
+        '<div class="site-context-body">'
+        '<p>This site is an interactive companion to the December 2024 '
+        '<em>Technical Report on Mirror Bacteria</em>, released alongside '
+        'the Science Policy Forum article '
+        '<a href="https://www.science.org/doi/10.1126/science.ads9158" '
+        'rel="noopener" target="_blank">'
+        '"Confronting risks of mirror life"</a>. '
+        'The official archived copy of the full report is available at the '
+        '<a href="https://purl.stanford.edu/" rel="noopener" target="_blank">'
+        'Stanford Digital Repository</a>.</p>'
+        '<p>Use the <strong>Ask AI</strong> button in the bottom-right corner '
+        'to put questions to a Claude-powered assistant grounded in the '
+        "report's text. Every substantive claim is cited with a link back to "
+        'the relevant section.</p>'
+        '<p>The authors welcome feedback and corrections — please email '
+        '<a href="mailto:technical-report@mbdialogues.org">'
+        'technical-report@mbdialogues.org</a> '
+        'with any errors, missing context, or comments.</p>'
+        '</div>'
+        '</aside>'
+    )
+
     toc_entries = []
     if abstract_section:
         toc_entries.append(("abstract", "Abstract"))
@@ -1505,6 +1536,7 @@ def render_index(
         license=html.escape(meta.get("license", "")),
         toc_items=toc_items,
         chap_toc_items=chap_toc_items,
+        site_context_html=site_context_html,
         authors_strip_html=authors_strip_html,
         abstract_html=abstract_html,
         contents_html=contents_html,

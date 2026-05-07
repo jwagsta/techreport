@@ -520,6 +520,47 @@ a.toc-label-link:hover { color: var(--ink); }
 .chap-citation a:hover { background: var(--accent-soft); }
 
 /* ============================================================
+   SITE CONTEXT BOX (home page only)
+   Visually distinct callout that explains what this site is, points
+   to the canonical archived report, and gives an author contact.
+   Lives between the chapter header and the abstract on the home page.
+   ============================================================ */
+.site-context {
+  margin: 32px 0 40px;
+  padding: 20px 22px;
+  background: var(--paper-2, #fafafa);
+  border: 1px solid var(--rule, #e5e5e5);
+  border-left: 3px solid var(--accent, #0f62fe);
+  border-radius: 4px;
+  max-width: 880px;
+}
+.site-context-title {
+  font-family: var(--sans);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 0 0 12px;
+}
+.site-context-body {
+  font-family: var(--sans);
+  font-size: 14px;
+  line-height: 1.55;
+  color: var(--ink-2);
+}
+.site-context-body p { margin: 0 0 10px; }
+.site-context-body p:last-child { margin-bottom: 0; }
+.site-context-body em { font-style: italic; }
+.site-context-body strong { font-weight: 600; }
+.site-context-body a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid var(--accent);
+}
+.site-context-body a:hover { background: var(--accent-soft); }
+
+/* ============================================================
    FACULTY STRIP
    ============================================================ */
 
