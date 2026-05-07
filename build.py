@@ -1390,6 +1390,25 @@ def render_index(
 
     about_html = render_prose_section(about_section_trimmed, "about", "About this report")
     rationale_html = render_prose_section(rationale_section, "rationale", "Rationale for public release") if rationale_section else ""
+    # Convert "<p class=\"prose\"><strong>N) Title<br/></strong>body</p>" into a
+    # subsection heading followed by a clean paragraph, so the numbered
+    # list items adopt the same blue small-caps section-num typography
+    # used in chapter subsection headings.
+    if rationale_html:
+        # Hoist the numbered "<strong>N) Title<br/></strong>" prefix out of
+        # the paragraph and into an h3 with the same blue-small-caps numbering
+        # used by chapter subsection headings.
+        rationale_html = re.sub(
+            r'<p class="prose"><strong>(\d+)\)\s+([^<]+?)<br/?>\s*</strong>',
+            (
+                r'<h3 class="subsection-title">'
+                r'<span class="subsection-num">\1</span> \2'
+                r'</h3>'
+                r'<p class="prose">'
+            ),
+            rationale_html,
+            flags=re.DOTALL,
+        )
     ack_html = render_prose_section(ack_section, "acknowledgments", "Contributions & acknowledgments")
 
     # Review section: render the prose intro, then a compact reviewer-card grid.
