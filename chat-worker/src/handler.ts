@@ -121,6 +121,15 @@ export async function handle(req: Request, env: Env): Promise<Response> {
         });
         const cost = computeCostUsd(usage);
         await recordSpend(env.RATE_KV, cost);
+        // Log per-request usage so we can watch cache hit rates via `wrangler tail`.
+        console.log(JSON.stringify({
+          tag: "chat_usage",
+          input: usage.input_tokens,
+          cache_write: usage.cache_creation_input_tokens ?? 0,
+          cache_read: usage.cache_read_input_tokens ?? 0,
+          output: usage.output_tokens,
+          cost_usd: Number(cost.toFixed(5)),
+        }));
         send("done", { usage, cost });
       } catch (e: any) {
         const msg = String(e?.message ?? e);

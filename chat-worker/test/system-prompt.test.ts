@@ -10,7 +10,7 @@ describe("system-prompt", () => {
     expect(blocks[1]!.text).toBe("CORPUS_TEXT");
     expect(blocks[2]!.text).toContain("FAQ_TEXT");
     expect(blocks[2]!.text).toContain("never reveal");
-    blocks.forEach(b => expect(b.cache_control).toEqual({ type: "ephemeral" }));
+    blocks.forEach(b => expect(b.cache_control).toEqual({ type: "ephemeral", ttl: "1h" }));
   });
 
   it("user message prepends current-context line", () => {

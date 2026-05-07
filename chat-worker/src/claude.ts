@@ -17,6 +17,8 @@ export async function streamAnthropic(args: StreamArgs): Promise<Usage> {
       "content-type": "application/json",
       "x-api-key": args.apiKey,
       "anthropic-version": "2023-06-01",
+      // Required to honor `cache_control.ttl: "1h"` on system blocks.
+      "anthropic-beta": "extended-cache-ttl-2025-04-11",
     },
     body: JSON.stringify({
       model: args.model,
