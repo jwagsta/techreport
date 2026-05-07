@@ -1752,6 +1752,66 @@ a.ilink:hover, a.cite:hover {
   .drawer.open { transform: translateY(0); }
   .faculty { grid-template-columns: 1fr; gap: 12px; }
   .faculty .list { grid-template-columns: 1fr; }
+
+  /* ============================================================
+     MOBILE AUTHOR STACK
+     Collapsed: chapter and home author lists become a row of small
+     overlapping headshot circles (avatar group). Tap any to expand
+     into the full grid view. JS toggles the .expanded class.
+     ============================================================ */
+  .index-page .author-strip:not(.expanded),
+  .faculty .list:not(.expanded) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 0;
+    align-items: center;
+    cursor: pointer;
+    padding: 4px 0;
+  }
+  .index-page .author-strip:not(.expanded) .author,
+  .faculty .list:not(.expanded) .author {
+    display: block;
+    margin-left: -10px;
+    flex: 0 0 auto;
+    cursor: pointer;
+  }
+  .index-page .author-strip:not(.expanded) .author:first-child,
+  .faculty .list:not(.expanded) .author:first-child {
+    margin-left: 0;
+  }
+  .index-page .author-strip:not(.expanded) .author:nth-child(n+6),
+  .faculty .list:not(.expanded) .author:nth-child(n+6) {
+    display: none;
+  }
+  .index-page .author-strip:not(.expanded) .who,
+  .faculty .list:not(.expanded) .who { display: none; }
+  .index-page .author-strip:not(.expanded) .author .face,
+  .faculty .list:not(.expanded) .author .face {
+    width: 36px; height: 36px;
+    border: 2px solid var(--paper, #fff);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+  }
+  /* "+N more" badge appended by JS when there are more than 5 authors. */
+  .author-stack-more {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px; height: 36px;
+    margin-left: -10px;
+    border: 2px solid var(--paper, #fff);
+    border-radius: 50%;
+    background: var(--paper-3, #f4f4f4);
+    color: var(--ink-3, #4a4a4a);
+    font: 600 11px/1 var(--sans), Inter, sans-serif;
+    letter-spacing: 0.04em;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+  }
+  .author-stack-label {
+    margin-left: 12px;
+    font: 500 12px/1.3 var(--sans), Inter, sans-serif;
+    color: var(--muted, #6a6a6a);
+  }
 }
 
 /* ============================================================

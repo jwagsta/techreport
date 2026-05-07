@@ -705,4 +705,54 @@
       .replace(/>/g, '&gt;')
       .replace(/"/g, '&quot;');
   }
+
+  // ============================================================
+  // Mobile author stacks — collapsed view shows max 5 overlapping
+  // headshots with a "+N more" badge. Tap anywhere on the row to
+  // expand into the full grid view; tapping individual faces while
+  // collapsed expands rather than opening the per-author drawer.
+  // ============================================================
+  (function initAuthorStacks() {
+    const NARROW = '(max-width: 900px)';
+    const MAX_VISIBLE = 5;
+
+    function setup(strip) {
+      if (strip.dataset.stackInit === '1') return;
+      strip.dataset.stackInit = '1';
+      const authors = strip.querySelectorAll('.author');
+      const total = authors.length;
+      if (total > MAX_VISIBLE) {
+        const more = document.createElement('span');
+        more.className = 'author-stack-more';
+        more.textContent = '+' + (total - MAX_VISIBLE);
+        more.setAttribute('aria-hidden', 'true');
+        strip.appendChild(more);
+      }
+      // Capture-phase listener so we beat the document-level
+      // [data-author-name] handler that opens the drawer.
+      strip.addEventListener('click', function (e) {
+        if (!window.matchMedia(NARROW).matches) return;
+        if (strip.classList.contains('expanded')) return;
+        e.preventDefault();
+        e.stopPropagation();
+        strip.classList.add('expanded');
+      }, true);
+    }
+
+    function init() {
+      document.querySelectorAll('.author-strip, .faculty .list')
+        .forEach(setup);
+    }
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', init);
+    } else { init(); }
+
+    // Switching back to wide viewport: drop the expanded marker so the
+    // grid layout returns naturally.
+    window.addEventListener('resize', function () {
+      if (window.matchMedia(NARROW).matches) return;
+      document.querySelectorAll('.author-strip.expanded, .faculty .list.expanded')
+        .forEach(s => s.classList.remove('expanded'));
+    });
+  })();
 })();
