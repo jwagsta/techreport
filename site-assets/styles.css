@@ -76,18 +76,25 @@ body {
 /* Crumb visible only on narrow viewports — replaces the hidden chapter TOC */
 .topstrip .narrow-crumb {
   display: none;
-  align-items: center;
   font-family: var(--sans);
   font-size: 11px;
-  letter-spacing: 0.12em;
+  line-height: 1.1;             /* matches the brand's two-line cadence */
+  letter-spacing: 0.10em;
   text-transform: uppercase;
   color: var(--ink-2);
   font-weight: 600;
-  margin-left: 12px;
 }
 .topstrip .brand-line1, .topstrip .brand-line2 { white-space: nowrap; }
 @media (max-width: 900px) {
-  .topstrip .narrow-crumb { display: inline-flex; }
+  /* Lift narrow-crumb out of .crumbs so .inner has three direct flex
+     children (brand · crumb · search). With justify-content: space-between
+     this gives equal gaps either side of the chapter crumb. */
+  .topstrip .crumbs { display: contents; }
+  .topstrip .narrow-crumb {
+    display: inline-block;
+    text-align: center;
+    max-width: 38vw;             /* keeps long titles from devouring the row */
+  }
   /* Force the brand title onto two lines, breaking after "Technical Report"
      so the chapter crumb on the right has room. */
   .topstrip .brand { display: inline-flex; flex-direction: column; line-height: 1.1; }
