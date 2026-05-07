@@ -884,9 +884,6 @@ h5.subsection-title .subsection-num { font-size: 10px; vertical-align: 2px; lett
   margin: 36px 0;
   row-gap: 12px;
   scroll-margin-top: 80px;
-  /* Anchor for the absolutely-positioned figcaption so it can extend
-     below the figure's row into the next paragraph's sidenote area. */
-  position: relative;
 }
 .figrow img {
   grid-column: 1;
@@ -894,18 +891,17 @@ h5.subsection-title .subsection-num { font-size: 10px; vertical-align: 2px; lett
   max-width: 38em;
   height: auto;
   display: block;
+  align-self: start;
 }
-/* Pull the figcaption out of the grid flow. The figure row's height now
-   tracks the image only, and the caption is free to overflow downward
-   past the figure into the column space alongside subsequent paragraphs.
-   This eliminates the white-space-under-figure problem when the caption
-   is shorter than the image AND the white-space-under-image problem
-   when the caption is longer than the image. */
+/* Caption sits in the right margin column alongside the image, top-
+   aligned with it. The figrow row's intrinsic height = max(image,
+   caption), so subsequent elements (especially section headings)
+   always start cleanly below the entire figure block. The previous
+   absolute-positioned approach hid the caption from layout, which
+   meant a long caption visually overlapped the next section heading. */
 .figrow figcaption {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: var(--col-marg);
+  grid-column: 2;
+  align-self: start;
   font-family: var(--sans);
   font-size: 12.5px; line-height: 1.5;
   color: var(--ink-2);
