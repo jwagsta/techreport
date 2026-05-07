@@ -806,8 +806,8 @@ CHAPTER_TEMPLATE = """{head}{topstrip}
 
 INDEX_TEMPLATE = """{head}{topstrip}
 <main class="page index-page">
-  <nav class="toc home-toc" aria-label="On this page">
-    <div class="toc-label">On this page</div>
+  <nav class="toc home-toc" aria-label="About">
+    <div class="toc-label">About</div>
     <ol class="toc-onpage">
       {toc_items}
     </ol>
