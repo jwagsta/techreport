@@ -197,15 +197,18 @@
   let launcher, win, body, input, sendBtn;
 
   function buildDom() {
-    launcher = el('button', { className: 'chat-launcher', 'aria-label': 'Ask AI' }, [
-      el('svg', {
-        className: 'chat-launcher-icon',
-        viewBox: '0 0 24 24', fill: 'currentColor', 'aria-hidden': 'true',
-        // Four-point sparkle — universal "AI / smart" mark
-        html: '<path d="M12 2.5l1.7 5.4 5.4 1.7-5.4 1.7L12 16.7l-1.7-5.4L4.9 9.6l5.4-1.7L12 2.5z"/><path d="M19 14.5l.9 2.7 2.6.8-2.6.8L19 21.5l-.9-2.7-2.6-.8 2.6-.8.9-2.7z" opacity=".75"/>',
-      }),
-      el('span', { className: 'chat-launcher-label', text: 'Ask AI' }),
-    ]);
+    launcher = document.createElement('button');
+    launcher.className = 'chat-launcher';
+    launcher.setAttribute('aria-label', 'Ask AI');
+    // SVG must be parsed in the SVG namespace; createElement('svg') makes an
+    // HTML element and won't render. innerHTML on an HTML parent does the
+    // right thing.
+    launcher.innerHTML =
+      '<svg class="chat-launcher-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">' +
+        '<path d="M12 2.5l1.7 5.4 5.4 1.7-5.4 1.7L12 16.7l-1.7-5.4L4.9 9.6l5.4-1.7L12 2.5z"/>' +
+        '<path d="M19 14.5l.9 2.7 2.6.8-2.6.8L19 21.5l-.9-2.7-2.6-.8 2.6-.8.9-2.7z" opacity=".75"/>' +
+      '</svg>' +
+      '<span class="chat-launcher-label">Ask AI</span>';
     launcher.addEventListener('click', toggleOpen);
     document.body.appendChild(launcher);
 
