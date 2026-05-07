@@ -17,6 +17,7 @@ interface ChatRequest {
   question: string;
   history: Array<{ role: "user" | "assistant"; content: string }>;
   turnstileToken?: string;
+  userBackground?: "non-specialist" | "some-background" | "expert" | null;
 }
 
 const MODEL = "claude-sonnet-4-6";
@@ -98,6 +99,7 @@ export async function handle(req: Request, env: Env): Promise<Response> {
   const userMsg = buildUserMessage(
     { chapterTitle: body.chapterTitle, sectionTitle: body.sectionTitle },
     body.question,
+    body.userBackground ?? null,
   );
   const messages = [...history, { role: "user" as const, content: userMsg }];
 

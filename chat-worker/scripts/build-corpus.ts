@@ -16,11 +16,7 @@ interface Index {
   toc: Array<{ id: string; title: string; level: number; number?: number | null; kind?: string }>;
 }
 
-interface Block {
-  type: string;
-  html?: string;
-  text?: string;
-}
+interface Block { type: string; html?: string; text?: string; }
 
 interface Section {
   id: string;
@@ -42,8 +38,8 @@ interface Chapter {
 
 function stripHtml(s: string): string {
   return s
-    .replace(/<sup[^>]*>.*?<\/sup>/gs, "")     // drop footnote refs
-    .replace(/<[^>]+>/g, "")                    // drop remaining tags
+    .replace(/<sup[^>]*>.*?<\/sup>/gs, "")
+    .replace(/<[^>]+>/g, "")
     .replace(/&nbsp;/g, " ")
     .replace(/&amp;/g, "&")
     .replace(/&lt;/g, "<")
@@ -66,32 +62,71 @@ function renderBlocks(blocks: Block[] | undefined): string {
   return blocks.map(blockText).filter(Boolean).join("\n\n");
 }
 
-function renderSubsections(subs: Section[] | undefined, depth = 3): string {
+// Compute the public URL for a TOC entry. Chapters and summary have their
+// own pages; everything else (frontmatter / backmatter) lives on the home page.
+function chapterUrl(c: { id: string; kind?: string }): string {
+  if (c.kind === "chapter") return `/${c.id}/`;
+  if (c.id === "summary") return `/summary/`;
+  return `/`;
+}
+
+// Sections inside a chapter/summary anchor by section id; sections inside
+// home-page frontmatter just point to the home page (specific anchors are
+// not stable across kinds).
+function sectionUrl(parentUrl: string, sectionId: string): string {
+  if (parentUrl === "/") return "/";
+  return `${parentUrl}#${sectionId}`;
+}
+
+function renderSubsections(
+  subs: Section[] | undefined,
+  parentUrl: string,
+  depth = 3,
+): string {
   if (!subs) return "";
   return subs.map(s => {
-    const heading = `${"#".repeat(Math.min(depth, 6))} ${s.title}\nanchor: ${s.id}`;
+    const heading = `${"#".repeat(Math.min(depth, 6))} ${s.title}`;
+    const url = `url: ${sectionUrl(parentUrl, s.id)}`;
     const body = renderBlocks(s.blocks);
-    const nested = renderSubsections(s.subsections, depth + 1);
-    return [heading, body, nested].filter(Boolean).join("\n\n");
+    const nested = renderSubsections(s.subsections, parentUrl, depth + 1);
+    return [heading, url, body, nested].filter(Boolean).join("\n\n");
   }).join("\n\n");
 }
 
 function renderChapter(c: Chapter): string {
   const num = c.number ? `Chapter ${c.number} — ` : "";
-  const heading = `## ${num}${c.title}\nslug: ${c.id}`;
+  const url = chapterUrl(c);
+  const heading = `## ${num}${c.title}`;
+  const urlLine = `url: ${url}`;
   const body = renderBlocks(c.blocks);
-  const subs = renderSubsections(c.subsections);
-  return [heading, body, subs].filter(Boolean).join("\n\n");
+  const subs = renderSubsections(c.subsections, url);
+  return [heading, urlLine, body, subs].filter(Boolean).join("\n\n");
+}
+
+function buildUrlManifest(toc: Index["toc"]): string {
+  const lines = ["URL MANIFEST — these are the ONLY valid links to cite.", ""];
+  for (const t of toc) {
+    const url = chapterUrl({ id: t.id, kind: t.kind });
+    const num = t.number ? `Chapter ${t.number} ` : "";
+    lines.push(`- ${url}  (${num}${t.title})`);
+  }
+  lines.push("");
+  lines.push("Section anchors live under their chapter's URL, e.g. /chapter-4-risks-to-human-health/#some-section-id");
+  lines.push("Frontmatter and backmatter content (Abstract, Authors, About this Report, Contributions, Acknowledgments, Review, etc.) all live on the home page at /. Do not invent paths like /contributions-and-acknowledgments/.");
+  return lines.join("\n");
 }
 
 function main() {
   const index: Index = JSON.parse(fs.readFileSync(path.join(DATA, "index.json"), "utf8"));
-  const parts: string[] = [`# ${index.meta.title}\n(${index.meta.publishDate})\n`];
+  const parts: string[] = [
+    `# ${index.meta.title}\n(${index.meta.publishDate})\n`,
+    buildUrlManifest(index.toc),
+  ];
   for (const t of index.toc) {
     const cp = path.join(DATA, "chapters", `${t.id}.json`);
     if (!fs.existsSync(cp)) { console.warn(`skip missing chapter: ${t.id}`); continue; }
     const c: Chapter = JSON.parse(fs.readFileSync(cp, "utf8"));
-    parts.push(renderChapter(c));
+    parts.push(renderChapter({ ...c, kind: c.kind ?? t.kind }));
   }
   const corpus = parts.join("\n\n");
   const faq = fs.readFileSync(FAQ_PATH, "utf8");

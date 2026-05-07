@@ -5,11 +5,15 @@ describe("corpus-data", () => {
   it("contains the report title", () => {
     expect(REPORT_CORPUS).toContain("Technical Report on Mirror Bacteria");
   });
-  it("contains chapter slug markers", () => {
-    expect(REPORT_CORPUS).toMatch(/slug: chapter-/);
+  it("contains chapter URL markers", () => {
+    expect(REPORT_CORPUS).toMatch(/url: \/chapter-/);
   });
-  it("contains section anchor markers", () => {
-    expect(REPORT_CORPUS).toMatch(/anchor: /);
+  it("contains section URL markers with anchors", () => {
+    expect(REPORT_CORPUS).toMatch(/url: \/chapter-[\w-]+\/#/);
+  });
+  it("includes a URL manifest at the top", () => {
+    expect(REPORT_CORPUS).toContain("URL MANIFEST");
+    expect(REPORT_CORPUS).toContain("Do not invent paths");
   });
   it("FAQ is non-empty", () => {
     expect(PRIVATE_FAQ.length).toBeGreaterThan(0);

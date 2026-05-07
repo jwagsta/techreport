@@ -31,4 +31,15 @@ describe("system-prompt", () => {
     );
     expect(m).toBe("[Reader is currently on: Abstract]\n\nSummary?");
   });
+
+  it("user message includes background when provided", () => {
+    const m = buildUserMessage(
+      { chapterTitle: "Abstract", sectionTitle: null },
+      "Summary?",
+      "non-specialist",
+    );
+    expect(m).toBe(
+      "[Reader background: non-specialist]\n[Reader is currently on: Abstract]\n\nSummary?",
+    );
+  });
 });
