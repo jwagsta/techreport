@@ -95,17 +95,31 @@
     return s.replace(/&/g, '&amp;').replace(/"/g, '&quot;');
   }
 
+  // Site root pathname, derived from this script's own URL. The AI emits
+  // root-relative links like "/chapter-3-.../#anchor"; when the site is
+  // served from a sub-path (e.g. /techreport/ on GitHub Pages) those links
+  // resolve to the wrong place unless we prefix them.
+  const SITE_BASE_PATH = (function () {
+    const el = document.currentScript ||
+      document.querySelector('script[src$="chat.js"], script[src$="/chat.js"]');
+    if (!el) return '';
+    try {
+      return new URL(el.src, location.href).pathname.replace(/\/[^/]*$/, '');
+    } catch { return ''; }
+  })();
+
   // Allow only known-good URL shapes. Anything else → strip the link, keep the text.
   // Valid: same-page anchor (#foo), root (/), root with anchor (/#foo),
   // /chapter-*/, /chapter-*/#anchor, /summary/, /summary/#anchor, http(s)://...
   function safeHref(href) {
     if (!href) return null;
     if (/^https?:\/\//i.test(href)) return href;
-    if (href === '/' || href === '#' ) return href;
+    if (href === '#') return href;
     if (/^#[\w-]+$/.test(href)) return href;
-    if (/^\/(#[\w-]+)?$/.test(href)) return href;
-    if (/^\/chapter-[\w-]+\/(#[\w-]+)?$/.test(href)) return href;
-    if (/^\/summary\/(#[\w-]+)?$/.test(href)) return href;
+    if (href === '/') return SITE_BASE_PATH + '/';
+    if (/^\/(#[\w-]+)?$/.test(href)) return SITE_BASE_PATH + href;
+    if (/^\/chapter-[\w-]+\/(#[\w-]+)?$/.test(href)) return SITE_BASE_PATH + href;
+    if (/^\/summary\/(#[\w-]+)?$/.test(href)) return SITE_BASE_PATH + href;
     return null;
   }
 
