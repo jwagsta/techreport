@@ -95,6 +95,55 @@ def _ref_text(ref_html: str) -> str:
     return re.sub(r"<[^>]+>", "", ref_html).replace("\xa0", " ")
 
 
+# Some abstract HTML records start with a redundant "Abstract" header.
+# We see four flavours, all stripped so the bibliography and drawer
+# don't render "ABSTRACT" twice:
+#   (a) standalone:  <p>Abstract</p><p>real abstract …</p>
+#   (b) bare-text:   Abstract <p>real abstract …</p>
+#   (c) inline:      <p>Abstract: real abstract …</p>  / <p>Abstract Foo …</p>
+#   (d) noisy lead:  <p>▪ Abstract Foo …</p>  /  <p>Abstract\n Foo …</p>
+#                    (literal backslash-n; bullet characters before)
+# The boundary after "abstract" accepts colon, period, whitespace, a
+# literal backslash-n sequence, or zero-width before `<` / capital letter.
+_ABS_HEADER_BOUNDARY = (
+    r'(?:\s*[:.]\s*|(?:\s|\\n)+(?=[<A-Z])|(?=[<A-Z]))'
+)
+_LEAD_NOISE = r'[^A-Za-z<]*'  # bullets / spaces / punctuation before the word
+_ABS_HEADER_STANDALONE_RE = re.compile(
+    r'^\s*<p[^>]*>' + _LEAD_NOISE
+    + r'(?:<(?:strong|b|em)[^>]*>\s*)?'
+    + r'abstract\s*[:.]?\s*'
+    + r'(?:</(?:strong|b|em)>\s*)?'
+    + r'</p>\s*',
+    re.IGNORECASE,
+)
+_ABS_HEADER_BARE_RE = re.compile(
+    r'^' + _LEAD_NOISE
+    + r'(?:<(?:strong|b|em)[^>]*>\s*)?'
+    + r'abstract'
+    + _ABS_HEADER_BOUNDARY
+    + r'(?:</(?:strong|b|em)>\s*)?',
+    re.IGNORECASE,
+)
+_ABS_HEADER_INLINE_RE = re.compile(
+    r'^(\s*<p[^>]*>)' + _LEAD_NOISE
+    + r'(?:<(?:strong|b|em)[^>]*>\s*)?'
+    + r'abstract'
+    + _ABS_HEADER_BOUNDARY
+    + r'(?:</(?:strong|b|em)>\s*)?',
+    re.IGNORECASE,
+)
+
+
+def _strip_abstract_header(s: str) -> str:
+    if not s:
+        return s
+    s = _ABS_HEADER_STANDALONE_RE.sub("", s, count=1)
+    s = _ABS_HEADER_BARE_RE.sub("", s, count=1)
+    s = _ABS_HEADER_INLINE_RE.sub(r"\1", s, count=1)
+    return s
+
+
 # Same key the abstracts pipeline (tools/fetch_abstracts.py) hashes — kept in
 # lockstep so build-time lookups hit. If you change one, change the other.
 def _abstract_key(ref_html: str) -> str:
@@ -1090,6 +1139,7 @@ def render_chapter_page(
 
     refs_html = ""
     if references:
+        import urllib.parse as _urlparse
         abstracts = _CTX.get("abstracts", {})
         ref_lis = []
         for idx, ref in enumerate(references):
@@ -1097,7 +1147,7 @@ def render_chapter_page(
                 continue
             ref_html = ref.get("html", "")
             abs_rec = abstracts.get(_abstract_key(ref_html)) or {}
-            abs_html = abs_rec.get("abstract_html") or ""
+            abs_html = _strip_abstract_header(abs_rec.get("abstract_html") or "")
             # If Crossref/OpenAlex pinned a canonical DOI, prefer it over the
             # one we may have inline-extracted (the inline match is rare anyway).
             doi = abs_rec.get("doi") or _extract_doi(ref_html) or ""
@@ -1116,10 +1166,36 @@ def render_chapter_page(
             if url:
                 attrs += f' data-url="{html.escape(url)}"'
             cite_html = f'<div class="ref-cite">{ref_html}</div>'
+            # Action links — same set the drawer offers — appear inside the
+            # expanded block alongside the abstract so the bibliography view
+            # has parity with the inline-citation drawer view.
+            ref_text = _ref_text(ref_html).replace("\xa0", " ").strip()
+            google_href = (
+                "https://www.google.com/search?q="
+                + _urlparse.quote_plus(ref_text)
+            )
+            actions = [
+                f'<a href="{html.escape(google_href)}" target="_blank" '
+                f'rel="noopener noreferrer">Search for this reference ↗</a>'
+            ]
+            if url:
+                actions.append(
+                    f'<a href="{html.escape(url)}" target="_blank" '
+                    f'rel="noopener noreferrer">Open source ↗</a>'
+                )
+            if doi:
+                actions.append(
+                    f'<a href="https://doi.org/{html.escape(doi)}" target="_blank" '
+                    f'rel="noopener noreferrer">DOI: {html.escape(doi)}</a>'
+                )
+            actions_html = (
+                f'<div class="ref-actions">{"".join(actions)}</div>'
+            )
             abs_block = (
                 f'<div class="ref-abstract" hidden>'
                 f'<div class="ref-abstract-label">Abstract</div>'
                 f'<div class="ref-abstract-body">{abs_html}</div>'
+                f'{actions_html}'
                 f'</div>'
             ) if abs_html else ""
             ref_lis.append(f'<li {attrs}>{cite_html}{abs_block}</li>')
