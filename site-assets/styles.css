@@ -1815,7 +1815,18 @@ a.ilink:hover, a.cite:hover {
   .tablerow .prose-table {
     grid-column: 1;
   }
-  .figrow figcaption { padding-top: 8px; }
+  /* Caption is absolutely positioned in the desktop margin column;
+     on mobile (no margin column) put it back in normal flow under
+     the figure. */
+  .figrow figcaption {
+    position: static;
+    width: auto;
+    max-width: 100%;
+    padding-top: 8px;
+  }
+  /* References ignore .prose's 38em cap on mobile — they should fill
+     the same width as the rest of the body text. */
+  .refs { max-width: 100%; }
   .chap-title { font-size: 36px; }
   .chap-summary { font-size: 18px; }
   .footnotes-list { grid-template-columns: 1fr; }
