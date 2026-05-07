@@ -561,6 +561,40 @@ a.toc-label-link:hover { color: var(--ink); }
 .site-context-body a:hover { background: var(--accent-soft); }
 
 /* ============================================================
+   ACKNOWLEDGMENTS LINK FOOTER (home page)
+   Replaces the previous full ack_html block. Acknowledgments now
+   live on their own page at /contributions-and-acknowledgments/.
+   ============================================================ */
+.ack-link-row {
+  margin: 56px 0 8px;
+  padding: 24px 0 0;
+  border-top: 1px solid var(--rule, #e5e5e5);
+}
+.ack-link {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  text-decoration: none;
+  color: var(--ink-2);
+  padding: 4px 0;
+}
+.ack-link-eyebrow {
+  font-family: var(--sans);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+.ack-link-cta {
+  font-family: var(--serif);
+  font-size: 18px;
+  line-height: 1.4;
+  color: var(--ink-2);
+}
+.ack-link:hover .ack-link-cta { color: var(--accent); }
+
+/* ============================================================
    FACULTY STRIP
    ============================================================ */
 

@@ -1279,7 +1279,7 @@ def render_chapter_page(
     chapter_citation = (
         'Adamala et al. (2024). '
         '<em>Technical Report on Mirror Bacteria: Feasibility and Risks.</em> '
-        '<a href="https://doi.org/10.1126/science.ads9158" rel="noopener" target="_blank">'
+        '<a href="https://www.science.org/stoken/author-tokens/ST-2327/full" rel="noopener" target="_blank">'
         'doi:10.1126/science.ads9158</a>'
     )
 
@@ -1333,7 +1333,13 @@ def render_index(
     )
 
     chap_links = []
+    # The chapter-list grid lives directly under the home-page Contents
+    # heading. We exclude back-matter pages (acknowledgments, etc.) so they
+    # don't appear in the main chapter grid; back-matter is reachable via
+    # the dedicated link footer at the bottom of the home page.
     for c in chapters:
+        if (c.get("kind") or "chapter") == "backmatter":
+            continue
         n = c.get("number")
         cid = c.get("id", "")
         t = clean_ws(c.get("title", ""))
@@ -1411,7 +1417,19 @@ def render_index(
             rationale_html,
             flags=re.DOTALL,
         )
-    ack_html = render_prose_section(ack_section, "acknowledgments", "Contributions & acknowledgments")
+    # Acknowledgments now live on their own page; on the home page render
+    # only a small "Read full acknowledgments" footer link.
+    if ack_section:
+        ack_html = (
+            '<section class="ack-link-row" id="acknowledgments">'
+            '<a class="ack-link" href="contributions-and-acknowledgments/">'
+            '<span class="ack-link-eyebrow">Contributions &amp; acknowledgments</span>'
+            '<span class="ack-link-cta">Read the full list of contributors and acknowledgments &rarr;</span>'
+            '</a>'
+            '</section>'
+        )
+    else:
+        ack_html = ""
 
     # Review section: render the prose intro, then a compact reviewer-card grid.
     review_body = ""
@@ -1456,8 +1474,6 @@ def render_index(
 
     # Header context box — visually distinct callout explaining the site,
     # the AI assistant, and where to find the official archived copy.
-    # TODO(stanford-url): replace the Stanford Digital Repository placeholder
-    # below with the actual SDR URL once it's published.
     site_context_html = (
         '<aside class="site-context" aria-label="About this site">'
         '<h2 class="site-context-title">About this site</h2>'
@@ -1465,11 +1481,11 @@ def render_index(
         '<p>This site is an interactive companion to the December 2024 '
         '<em>Technical Report on Mirror Bacteria</em>, released alongside '
         'the Science Policy Forum article '
-        '<a href="https://www.science.org/doi/10.1126/science.ads9158" '
+        '<a href="https://www.science.org/stoken/author-tokens/ST-2327/full" '
         'rel="noopener" target="_blank">'
         '"Confronting risks of mirror life"</a>. '
         'The official archived copy of the full report is available at the '
-        '<a href="https://purl.stanford.edu/" rel="noopener" target="_blank">'
+        '<a href="https://purl.stanford.edu/cv716pj4036" rel="noopener" target="_blank">'
         'Stanford Digital Repository</a>.</p>'
         '<p>Use the <strong>Ask AI</strong> button in the bottom-right corner '
         'to put questions to a Claude-powered assistant grounded in the '
@@ -1493,20 +1509,24 @@ def render_index(
         toc_entries.append(("about", "About"))
     if rationale_section:
         toc_entries.append(("rationale", "Rationale for release"))
-    if ack_section:
-        toc_entries.append(("acknowledgments", "Acknowledgments"))
+    # Acknowledgments now live on a dedicated page — the entry at the
+    # bottom of the on-page TOC links straight there rather than to a
+    # local anchor.
     toc_items = "\n      ".join(
         f'<li><a href="#{tid}">{html.escape(label)}</a></li>'
         for tid, label in toc_entries
     )
 
-    # Second left-column TOC: every chapter (including Summary).
+    # Second left-column TOC: every numbered chapter + Summary; backmatter
+    # (acknowledgments) is reached via the dedicated footer link.
     chap_toc_items_list = []
     for c in chapters:
+        if (c.get("kind") or "chapter") == "backmatter":
+            continue
         n = c.get("number")
         cid = c.get("id", "")
         t = clean_ws(c.get("title", ""))
-        num_text = "" if n == 0 else str(n)
+        num_text = "" if n == 0 else (str(n) if n else "")
         chap_toc_items_list.append(
             '<li><a href="{cid}/" title="{title_attr}">'
             '<span class="toc-num">{num}</span>'
@@ -1766,6 +1786,14 @@ def main() -> None:
         summary_section["kind"] = "chapter"
         summary_section["number"] = 0
         chapters = [summary_section] + chapters
+
+    # Render acknowledgments as its own backmatter page. We keep the
+    # ack_section reference so the home-page link can use the title.
+    if ack_section is not None:
+        ack_page_section = dict(ack_section)
+        ack_page_section["kind"] = "backmatter"
+        ack_page_section["number"] = None
+        chapters.append(ack_page_section)
 
     reviewers = index_data.get("reviewers", [])
 
