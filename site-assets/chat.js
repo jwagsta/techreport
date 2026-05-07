@@ -404,7 +404,10 @@
       case 'turnstile_required':
       case 'turnstile_failed': return 'Verification failed. Please refresh the page and try again.';
       case 'forbidden_origin': return 'This site is not authorized to use the assistant.';
-      case 'upstream_error':  return 'The assistant is unavailable right now. Please try again.';
+      case 'upstream_rate_limited': return 'The assistant is briefly overloaded. Please wait a minute and try again.';
+      case 'upstream_auth':         return 'The assistant is misconfigured (auth). Please contact the site owner.';
+      case 'upstream_billing':      return 'The assistant is unavailable (billing). Please contact the site owner.';
+      case 'upstream_error':        return 'The assistant is unavailable right now. Please try again.';
       default: return 'Something went wrong. Please try again.';
     }
   }

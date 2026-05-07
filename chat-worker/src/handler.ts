@@ -123,8 +123,13 @@ export async function handle(req: Request, env: Env): Promise<Response> {
         await recordSpend(env.RATE_KV, cost);
         send("done", { usage, cost });
       } catch (e: any) {
-        send("error", { message: "upstream_error" });
-        console.error("anthropic stream error:", e?.message ?? e);
+        const msg = String(e?.message ?? e);
+        const errCode = msg.startsWith("Anthropic 429") ? "upstream_rate_limited"
+                      : msg.startsWith("Anthropic 401") ? "upstream_auth"
+                      : msg.startsWith("Anthropic 402") ? "upstream_billing"
+                      : "upstream_error";
+        send("error", { error: errCode });
+        console.error("anthropic stream error:", msg);
       } finally {
         controller.close();
       }
