@@ -76,16 +76,28 @@ body {
 /* Crumb visible only on narrow viewports — replaces the hidden chapter TOC */
 .topstrip .narrow-crumb {
   display: none;
-  align-items: center;
   font-family: var(--sans);
   font-size: 11px;
-  letter-spacing: 0.12em;
+  line-height: 1.1;             /* matches the brand's two-line cadence */
+  letter-spacing: 0.10em;
   text-transform: uppercase;
   color: var(--ink-2);
   font-weight: 600;
 }
+.topstrip .brand-line1, .topstrip .brand-line2 { white-space: nowrap; }
 @media (max-width: 900px) {
-  .topstrip .narrow-crumb { display: inline-flex; }
+  /* Lift narrow-crumb out of .crumbs so .inner has three direct flex
+     children (brand · crumb · search). With justify-content: space-between
+     this gives equal gaps either side of the chapter crumb. */
+  .topstrip .crumbs { display: contents; }
+  .topstrip .narrow-crumb {
+    display: inline-block;
+    text-align: center;
+    max-width: 38vw;             /* keeps long titles from devouring the row */
+  }
+  /* Force the brand title onto two lines, breaking after "Technical Report"
+     so the chapter crumb on the right has room. */
+  .topstrip .brand { display: inline-flex; flex-direction: column; line-height: 1.1; }
 }
 .topstrip .actions { display: flex; gap: 18px; }
 
@@ -269,13 +281,22 @@ body.search-open { overflow: hidden; }
   z-index: 110;
   font-family: var(--sans);
 }
-.topstrip .brand-wrap:hover .chap-menu,
-.topstrip .brand-wrap:focus-within .chap-menu,
+/* Hover/focus expansion of the chapter menu only fires on narrow viewports;
+   on wide the brand is just a link home (no dropdown). */
 .topstrip .brand-wrap.menu-open .chap-menu {
   opacity: 1;
   pointer-events: auto;
   transform: translateY(0);
   transition-delay: 0s;
+}
+@media (max-width: 900px) {
+  .topstrip .brand-wrap:hover .chap-menu,
+  .topstrip .brand-wrap:focus-within .chap-menu {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+    transition-delay: 0s;
+  }
 }
 /* "About this report" + "Summary" stay in small caps (matches the eyebrow
    style elsewhere). Chapter titles below are plain sans, sized to match
@@ -504,6 +525,95 @@ a.toc-label-link:hover { color: var(--ink); }
   margin-top: 16px;
   display: flex; flex-wrap: wrap; gap: 12px;
 }
+.chap-citation {
+  font-family: var(--sans);
+  font-size: 13px; line-height: 1.5;
+  color: var(--ink-3);
+  margin: 12px 0 0;
+  max-width: 60em;
+}
+.chap-citation em { font-style: italic; }
+.chap-citation a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid var(--accent);
+}
+.chap-citation a:hover { background: var(--accent-soft); }
+
+/* ============================================================
+   SITE CONTEXT BOX (home page only)
+   Visually distinct callout that explains what this site is, points
+   to the canonical archived report, and gives an author contact.
+   Lives between the chapter header and the abstract on the home page.
+   ============================================================ */
+.site-context {
+  margin: 12px 0 40px;
+  padding: 20px 22px;
+  background: var(--paper-2, #fafafa);
+  border: 1px solid var(--rule, #e5e5e5);
+  border-left: 3px solid var(--accent, #0f62fe);
+  border-radius: 4px;
+  max-width: 880px;
+}
+.site-context-title {
+  font-family: var(--sans);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 0 0 12px;
+}
+.site-context-body {
+  font-family: var(--sans);
+  font-size: 14px;
+  line-height: 1.55;
+  color: var(--ink-2);
+}
+.site-context-body p { margin: 0 0 10px; }
+.site-context-body p:last-child { margin-bottom: 0; }
+.site-context-body em { font-style: italic; }
+.site-context-body strong { font-weight: 600; }
+.site-context-body a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid var(--accent);
+}
+.site-context-body a:hover { background: var(--accent-soft); }
+
+/* ============================================================
+   ACKNOWLEDGMENTS LINK FOOTER (home page)
+   Replaces the previous full ack_html block. Acknowledgments now
+   live on their own page at /contributions-and-acknowledgments/.
+   ============================================================ */
+.ack-link-row {
+  margin: 28px 0 8px;
+  padding: 16px 0 0;
+  border-top: 1px solid var(--rule, #e5e5e5);
+}
+.ack-link {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  text-decoration: none;
+  color: var(--ink-2);
+  padding: 4px 0;
+}
+.ack-link-eyebrow {
+  font-family: var(--sans);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+.ack-link-cta {
+  font-family: var(--serif);
+  font-size: 18px;
+  line-height: 1.4;
+  color: var(--ink-2);
+}
+.ack-link:hover .ack-link-cta { color: var(--accent); }
 
 /* ============================================================
    FACULTY STRIP
@@ -621,6 +731,34 @@ a.toc-label-link:hover { color: var(--ink); }
   overflow-wrap: anywhere;
 }
 
+/* Numbered / bulleted lists in the body. Pandoc emits <li><p>...</p></li>
+   for each item, and browser defaults give each <p> a full 1em top + 1em
+   bottom — so adjacent items get ~32px of dead space between them.
+   Collapse that to a small visual gap. */
+.prose-list,
+.body ol,
+.body ul {
+  grid-column: 1;
+  max-width: 38em;
+  margin: 0;
+  padding-left: 24px;
+  line-height: 1.55;
+}
+.prose-list > li,
+.body ol > li,
+.body ul > li {
+  margin: 0 0 6px;
+}
+.prose-list > li:last-child,
+.body ol > li:last-child,
+.body ul > li:last-child { margin-bottom: 0; }
+.prose-list > li > p,
+.body ol > li > p,
+.body ul > li > p { margin: 0; }
+.prose-list > li > p + p,
+.body ol > li > p + p,
+.body ul > li > p + p { margin-top: 6px; }
+
 /* per-row sidenote slot — sits in the right margin column, top-aligned with the paragraph */
 .row > .row-sidenotes {
   grid-column: 2;
@@ -668,7 +806,7 @@ a.toc-label-link:hover { color: var(--ink); }
 .row > .row-sidenotes .sidenote .text p:last-child { margin-bottom: 0; }
 
 /* drop cap on the very first paragraph after the chapter header — chapter pages only */
-.page:not(.index-page) .body > .row:first-child > .prose::first-letter {
+.page:not(.index-page):not(.kind-frontmatter):not(.kind-backmatter) .body > .row:first-child > .prose::first-letter {
   initial-letter: 3 2;
   -webkit-initial-letter: 3 2;
   font-weight: 600;
@@ -746,8 +884,9 @@ h5.subsection-title .subsection-num { font-size: 10px; vertical-align: 2px; lett
   margin: 36px 0;
   row-gap: 12px;
   scroll-margin-top: 80px;
-  /* Anchor for the absolutely-positioned figcaption so it can extend
-     below the figure's row into the next paragraph's sidenote area. */
+  /* Anchor for the absolutely-positioned figcaption so it can hang
+     downward past the figure's row into the margin column space
+     alongside subsequent paragraphs. */
   position: relative;
 }
 .figrow img {
@@ -757,12 +896,12 @@ h5.subsection-title .subsection-num { font-size: 10px; vertical-align: 2px; lett
   height: auto;
   display: block;
 }
-/* Pull the figcaption out of the grid flow. The figure row's height now
-   tracks the image only, and the caption is free to overflow downward
-   past the figure into the column space alongside subsequent paragraphs.
-   This eliminates the white-space-under-figure problem when the caption
-   is shorter than the image AND the white-space-under-image problem
-   when the caption is longer than the image. */
+/* Caption pulled out of layout flow — sits in the right margin column
+   and is free to overflow downward past the figure. The figrow's
+   height tracks the image only, so text immediately below the figure
+   gets regular spacing under the IMAGE (not waiting for the caption
+   to end). The caption's overflow flows alongside the next paragraphs
+   in their otherwise-empty margin column. */
 .figrow figcaption {
   position: absolute;
   top: 0;
@@ -1313,15 +1452,47 @@ a.ilink:hover, a.cite:hover {
   max-width: none;
 }
 
-/* author cards inline below the chapter-header — three-column grid spanning
-   the full content width (main + sidenote columns combined), with horizontal
-   rules above and below to match the chapter-author strip. */
-.index-page .author-strip {
+/* "Report authors" / "Report reviewers" eyebrow above the strip on home,
+   matches the .faculty .label "Chapter authors" treatment on chapter pages.
+   Span both columns of .content's grid so the strip extends full-width. */
+.index-page .author-strip-section,
+.index-page .reviewer-strip-section {
   grid-column: 1 / -1;
-  margin: 8px 0 36px;
+  margin: 8px 0 12px;
   padding: 18px 0 22px;
   border-top: 1px solid var(--rule);
   border-bottom: 1px solid var(--rule);
+}
+
+/* Pull the big section-title top margin in on the home page. The
+   default 56px is right for chapter prose where each section gets
+   plenty of breathing room; on home, where each prose-section is
+   short, that turns into chasms of empty space. */
+.index-page .section-title,
+.kind-frontmatter .section-title,
+.kind-frontmatter h3.subsection-title,
+.kind-backmatter .section-title,
+.kind-backmatter h3.subsection-title {
+  margin-top: 28px;
+}
+.kind-frontmatter h4.subsection-title,
+.kind-backmatter h4.subsection-title {
+  margin-top: 20px;
+}
+.index-page .strip-label {
+  font-family: var(--sans);
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted-2);
+  margin-bottom: 14px;
+}
+
+/* author cards inline below the chapter-header — three-column grid spanning
+   the full content width (main + sidenote columns combined). The horizontal
+   rules now live on the wrapper section above. */
+.index-page .author-strip {
+  grid-column: 1 / -1;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: minmax(48px, auto);
@@ -1592,9 +1763,16 @@ a.ilink:hover, a.cite:hover {
   }
   .page {
     grid-template-columns: minmax(0, 1fr);
-    padding: 70px 18px 100px;  /* room for the fixed topstrip */
+    padding: 86px 18px 100px;  /* extra top padding gives the eyebrow breathing room under the fixed topstrip */
     max-width: 100%;
   }
+  /* Tighten the topstrip horizontal padding on mobile so the brand and
+     crumb sit closer to the edges (matches the page padding on the right). */
+  .topstrip .inner { padding: 8px 18px; }
+  /* Match the eyebrow → title spacing rhythm we have on desktop, so the
+     eyebrow doesn't sit too close to the title at smaller font sizes. */
+  .chap-header .eyebrow { margin-bottom: 4px; }
+  .chap-header .chap-title { margin-top: 8px; }
   /* Reset desktop grid placement: on mobile the page is a single
      column and .content must land in column 1, otherwise it creates
      an implicit second column whose auto-sizing pushes content past
@@ -1620,6 +1798,11 @@ a.ilink:hover, a.cite:hover {
   .content {
     grid-template-columns: minmax(0, 1fr);
   }
+  /* Override the desktop-only `.index-page > .content { grid-column: 2 }`
+     rule — on mobile .page is single-column, so .content must land in
+     column 1 (otherwise it's pushed into an implicit second track which
+     made the home page's left gutter visibly wider than the right). */
+  .index-page > .content { grid-column: 1; }
   .body {
     grid-template-columns: minmax(0, 1fr);
   }
@@ -1633,7 +1816,18 @@ a.ilink:hover, a.cite:hover {
   .tablerow .prose-table {
     grid-column: 1;
   }
-  .figrow figcaption { padding-top: 8px; }
+  /* Caption is absolutely positioned in the desktop margin column;
+     on mobile (no margin column) put it back in normal flow under
+     the figure. */
+  .figrow figcaption {
+    position: static;
+    width: auto;
+    max-width: 100%;
+    padding-top: 8px;
+  }
+  /* References ignore .prose's 38em cap on mobile — they should fill
+     the same width as the rest of the body text. */
+  .refs { max-width: 100%; }
   .chap-title { font-size: 36px; }
   .chap-summary { font-size: 18px; }
   .footnotes-list { grid-template-columns: 1fr; }
@@ -1651,6 +1845,113 @@ a.ilink:hover, a.cite:hover {
   .drawer.open { transform: translateY(0); }
   .faculty { grid-template-columns: 1fr; gap: 12px; }
   .faculty .list { grid-template-columns: 1fr; }
+
+}
+
+/* ============================================================
+   AUTHOR STACK (count + toggle)
+   Default — both elements hidden on wide so author lists keep
+   the full grid layout they had before. Mobile rules below
+   re-enable them.
+   ============================================================ */
+.author-stack-count,
+.author-stack-toggle { display: none; }
+
+@media (max-width: 900px) {
+  .author-strip,
+  .reviewer-strip,
+  .faculty .list { position: relative; }
+
+  /* Collapsed view: row of overlapping headshot circles. */
+  .author-strip:not(.expanded),
+  .reviewer-strip:not(.expanded),
+  .faculty .list:not(.expanded) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 0;
+    align-items: center;
+    cursor: pointer;
+    padding: 4px 0;
+  }
+  .author-strip:not(.expanded) .author,
+  .reviewer-strip:not(.expanded) .author,
+  .faculty .list:not(.expanded) .author {
+    display: block;
+    margin-left: -10px;
+    flex: 0 0 auto;
+    cursor: pointer;
+  }
+  .author-strip:not(.expanded) .author:first-child,
+  .reviewer-strip:not(.expanded) .author:first-child,
+  .faculty .list:not(.expanded) .author:first-child {
+    margin-left: 0;
+  }
+  /* Truncation only when there are too many circles to fit cleanly —
+     JS adds .has-overflow when total authors exceeds the visible count
+     (currently 10). Without it, every circle is shown (e.g. 4–7
+     chapter authors). */
+  .author-strip:not(.expanded).has-overflow .author:nth-child(n+11),
+  .reviewer-strip:not(.expanded).has-overflow .author:nth-child(n+11),
+  .faculty .list:not(.expanded).has-overflow .author:nth-child(n+11) {
+    display: none;
+  }
+  .author-strip:not(.expanded) .who,
+  .reviewer-strip:not(.expanded) .who,
+  .faculty .list:not(.expanded) .who { display: none; }
+  .author-strip:not(.expanded) .author .face,
+  .reviewer-strip:not(.expanded) .author .face,
+  .faculty .list:not(.expanded) .author .face {
+    width: 36px; height: 36px;
+    border: 1px solid var(--paper, #fff);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+  }
+
+  /* "+N" inline badge — only shown when JS marks the strip as
+     overflowing AND it's collapsed. Sits right next to the last
+     visible circle so the count is unambiguously about those circles. */
+  .has-overflow:not(.expanded) .author-stack-count {
+    display: inline-block;
+    margin-left: 8px;
+    font: 600 13px/1 var(--sans), Inter, sans-serif;
+    color: var(--ink-3, #4a4a4a);
+    letter-spacing: 0.02em;
+  }
+
+  /* Toggle: plain blue text (no border, no circle background).
+     Reads as "+" in collapsed view, "Show less" when expanded. */
+  .author-strip:not(.expanded) .author-stack-toggle,
+  .reviewer-strip:not(.expanded) .author-stack-toggle,
+  .faculty .list:not(.expanded) .author-stack-toggle {
+    display: inline-block;
+    margin-left: auto;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0 4px;
+    font: 400 22px/1 var(--sans), Inter, sans-serif;
+    color: var(--accent, #0f62fe);
+  }
+  .author-strip.expanded .author-stack-toggle,
+  .reviewer-strip.expanded .author-stack-toggle,
+  .faculty .list.expanded .author-stack-toggle {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px 0;
+    font: 500 12px/1 var(--sans), Inter, sans-serif;
+    color: var(--accent, #0f62fe);
+  }
+  .author-strip.expanded,
+  .reviewer-strip.expanded,
+  .faculty .list.expanded {
+    padding-top: 22px;
+  }
+  .author-stack-toggle:hover { opacity: 0.7; }
 }
 
 /* ============================================================

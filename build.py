@@ -59,6 +59,9 @@ ASSETS_SRC = DATA / "assets"
 SITE = ROOT / "site"
 SITE_ASSETS = ROOT / "site-assets"
 
+CHAT_API_URL = os.environ.get("CHAT_API_URL", "")
+TURNSTILE_SITE_KEY = os.environ.get("TURNSTILE_SITE_KEY", "")
+
 # Headshot pipeline
 HEADSHOT_SELECTIONS = DATA / "headshot-selections.json"
 HEADSHOT_CACHE_DIR = ROOT / "data" / "headshots"
@@ -719,6 +722,11 @@ PAGE_HEAD = """<!DOCTYPE html>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{css_path}styles.css">
+<link rel="stylesheet" href="{css_path}chat.css">
+<meta name="chat-api" content="{chat_api}">
+<meta name="turnstile-site-key" content="{turnstile_site_key}">
+<meta name="chapter-id" content="{chapter_id}">
+<meta name="chapter-title" content="{chapter_title}">
 </head>
 <body>
 """
@@ -727,7 +735,7 @@ TOPSTRIP = """<header class="topstrip">
   <div class="inner">
     <div class="crumbs">
       <span class="brand-wrap">
-        <a class="brand" href="{home}">Technical Report on Mirror Bacteria</a>
+        <a class="brand" href="{home}"><span class="brand-line1">Technical Report</span> <span class="brand-line2">on Mirror Bacteria</span></a>
         <nav class="chap-menu" aria-label="Chapters">
           <a class="chap-menu-home" href="{home}">About this report</a>{summary_menu_link}
           <div class="chap-menu-sep"></div>
@@ -747,14 +755,15 @@ TOPSTRIP = """<header class="topstrip">
 </header>"""
 
 CHAPTER_TEMPLATE = """{head}{topstrip}
-<main class="page">
+<main class="page {page_kind_class}">
   {report_contents}
 
   <section class="content">
     <header class="chap-header">
+      {chapter_eyebrow}
       <h1 class="chap-title">{title}</h1>
       <div class="chap-meta">
-        <span>{publish_date}</span>
+        <span>Technical Report on Mirror Bacteria: Feasibility and Risks &middot; {publish_date}</span>
       </div>
     </header>
 
@@ -790,14 +799,15 @@ CHAPTER_TEMPLATE = """{head}{topstrip}
 <script>{boot_script}</script>
 <script src="{css_path}app.js"></script>
 <script src="{css_path}search.js"></script>
+<script src="{css_path}chat.js" defer></script>
 </body>
 </html>
 """
 
 INDEX_TEMPLATE = """{head}{topstrip}
 <main class="page index-page">
-  <nav class="toc home-toc" aria-label="On this page">
-    <div class="toc-label">On this page</div>
+  <nav class="toc home-toc" aria-label="About">
+    <div class="toc-label">About</div>
     <ol class="toc-onpage">
       {toc_items}
     </ol>
@@ -809,15 +819,11 @@ INDEX_TEMPLATE = """{head}{topstrip}
 
   <section class="content">
     <header class="chap-header">
-      <div class="eyebrow">Technical Report · {publish_date}</div>
+      <div class="eyebrow">{publish_date}</div>
       <h1 class="chap-title">{title}</h1>
-      {tagline}
-      <div class="chap-meta">
-        <span>{n_chapters} chapters</span><span>·</span>
-        <span>{n_authors} authors</span><span>·</span>
-        <span>{license}</span>
-      </div>
     </header>
+
+    {site_context_html}
 
     {authors_strip_html}
 
@@ -855,6 +861,7 @@ INDEX_TEMPLATE = """{head}{topstrip}
 <script>{boot_script}</script>
 <script src="app.js"></script>
 <script src="search.js"></script>
+<script src="chat.js" defer></script>
 </body>
 </html>
 """
@@ -1207,7 +1214,14 @@ def render_chapter_page(
                 '</section>'
             )
 
-    head = PAGE_HEAD.format(title=html.escape(title), css_path=css_path)
+    head = PAGE_HEAD.format(
+        title=html.escape(title),
+        css_path=css_path,
+        chat_api=html.escape(CHAT_API_URL),
+        turnstile_site_key=html.escape(TURNSTILE_SITE_KEY),
+        chapter_id=html.escape(chapter.get("id", "")),
+        chapter_title=html.escape(title),
+    )
     if is_summary:
         crumb = "Summary"
     elif n:
@@ -1215,7 +1229,7 @@ def render_chapter_page(
     else:
         crumb = title or ""
     narrow_crumb = (
-        f'<span class="narrow-crumb"><span class="crumb-sep">·</span>{html.escape(crumb)}</span>'
+        f'<span class="narrow-crumb">{html.escape(crumb)}</span>'
         if crumb else ""
     )
     topstrip = TOPSTRIP.format(
@@ -1236,6 +1250,31 @@ def render_chapter_page(
         has_refs=bool(refs_html),
     )
 
+    # Eyebrow above chapter title — "CHAPTER N" in small-caps blue, matching
+    # the report's section-heading typography. Summary (number 0) and the
+    # un-numbered front/back-matter pages get a kind-appropriate eyebrow.
+    chap_kind = (chapter.get("kind") or "").lower()
+    if n and n > 0:
+        eyebrow_text = f"Chapter {n}"
+    elif chapter.get("id") == "summary":
+        eyebrow_text = "Summary"
+    elif chap_kind == "frontmatter":
+        eyebrow_text = "Front matter"
+    elif chap_kind == "backmatter":
+        eyebrow_text = "Back matter"
+    else:
+        eyebrow_text = ""
+    chapter_eyebrow = (
+        f'<div class="eyebrow">{html.escape(eyebrow_text)}</div>'
+        if eyebrow_text else ''
+    )
+
+    # Mark front-/back-matter pages so chapter-only treatments (e.g. the
+    # large drop-cap on the first paragraph) don't apply.
+    page_kind_class = (
+        f"kind-{chap_kind}" if chap_kind in ("frontmatter", "backmatter") else "kind-chapter"
+    )
+
     return CHAPTER_TEMPLATE.format(
         head=head,
         topstrip=topstrip,
@@ -1249,6 +1288,8 @@ def render_chapter_page(
         refs_html=refs_html,
         css_path=css_path,
         boot_script=boot,
+        chapter_eyebrow=chapter_eyebrow,
+        page_kind_class=page_kind_class,
     )
 
 
@@ -1268,7 +1309,14 @@ def render_index(
     _CTX["media_prefix"] = ""
     _CTX["fn_seen"] = set()
 
-    head = PAGE_HEAD.format(title=html.escape(meta.get("title", "")), css_path="")
+    head = PAGE_HEAD.format(
+        title=html.escape(meta.get("title", "")),
+        css_path="",
+        chat_api=html.escape(CHAT_API_URL),
+        turnstile_site_key=html.escape(TURNSTILE_SITE_KEY),
+        chapter_id="index",
+        chapter_title="Home",
+    )
     topstrip = TOPSTRIP.format(
         home="./",
         chap_menu=_build_chap_menu(chapters, home_prefix="./"),
@@ -1277,7 +1325,13 @@ def render_index(
     )
 
     chap_links = []
+    # The chapter-list grid lives directly under the home-page Contents
+    # heading. We exclude back-matter pages (acknowledgments, etc.) so they
+    # don't appear in the main chapter grid; back-matter is reachable via
+    # the dedicated link footer at the bottom of the home page.
     for c in chapters:
+        if (c.get("kind") or "chapter") == "backmatter":
+            continue
         n = c.get("number")
         cid = c.get("id", "")
         t = clean_ws(c.get("title", ""))
@@ -1336,7 +1390,44 @@ def render_index(
 
     about_html = render_prose_section(about_section_trimmed, "about", "About this report")
     rationale_html = render_prose_section(rationale_section, "rationale", "Rationale for public release") if rationale_section else ""
-    ack_html = render_prose_section(ack_section, "acknowledgments", "Contributions & acknowledgments")
+    # Convert "<p class=\"prose\"><strong>N) Title<br/></strong>body</p>" into a
+    # subsection heading followed by a clean paragraph, so the numbered
+    # list items adopt the same blue small-caps section-num typography
+    # used in chapter subsection headings.
+    if rationale_html:
+        # Hoist the numbered "<strong>N) Title<br/></strong>" prefix out of
+        # the paragraph and into an h3 with the same blue-small-caps numbering
+        # used by chapter subsection headings.
+        #
+        # Important: we also move the heading OUT of the surrounding
+        # `<div class="row">`, so the row's adjacent `<div class="row-sidenotes">`
+        # (which holds the footnote aside referenced from the body) anchors
+        # against the body paragraph, not the heading. Otherwise clicking
+        # footnote 1 scrolled to above the heading instead of to its citation.
+        rationale_html = re.sub(
+            r'<div class="row"><p class="prose"><strong>(\d+)\)\s+([^<]+?)<br/?>\s*</strong>',
+            (
+                r'<h3 class="subsection-title">'
+                r'<span class="subsection-num">\1</span> \2'
+                r'</h3>'
+                r'<div class="row"><p class="prose">'
+            ),
+            rationale_html,
+            flags=re.DOTALL,
+        )
+    # Acknowledgments now live on their own page; on the home page render
+    # only a small "Read full acknowledgments" footer link.
+    if ack_section:
+        ack_html = (
+            '<section class="ack-link-row" id="acknowledgments">'
+            '<a class="ack-link" href="contributions-and-acknowledgments/">'
+            '<span class="ack-link-eyebrow">Contributions &amp; acknowledgments</span>'
+            '<span class="ack-link-cta">Read the full list of contributors and acknowledgments &rarr;</span>'
+            '</a>'
+            '</section>'
+        )
+    else:
+        ack_html = ""
 
     # Review section: render the prose intro, then a compact reviewer-card grid.
     review_body = ""
@@ -1349,13 +1440,19 @@ def render_index(
                 continue
             review_body += render_block(b, used)
     reviewer_cards = "".join(author_card(r, role="reviewer") for r in reviewers)
+    reviewer_strip_html = (
+        '<section class="reviewer-strip-section">'
+        '<div class="strip-label">Report reviewers</div>'
+        f'<div class="reviewer-strip">{reviewer_cards}</div>'
+        '</section>'
+    ) if reviewers else ''
     review_html = ""
     if review_body or reviewers:
         review_html = (
             '<section class="prose-section">'
             '<h2 class="section-title" id="review">Review</h2>'
             f'<article class="body">{review_body}</article>'
-            + (f'<div class="reviewer-strip">{reviewer_cards}</div>' if reviewers else '')
+            + reviewer_strip_html
             + '</section>'
         )
 
@@ -1368,8 +1465,11 @@ def render_index(
 
     # Author cards inline directly under the chap-header (no section wrapper).
     authors_strip_html = (
-        f'<div class="author-strip">{authors_html}</div>' if authors_html else ''
-    )
+        '<section class="author-strip-section">'
+        '<div class="strip-label">Report authors</div>'
+        f'<div class="author-strip">{authors_html}</div>'
+        '</section>'
+    ) if authors_html else ''
 
     tagline = (
         '<p class="chap-summary">'
@@ -1377,6 +1477,33 @@ def render_index(
         'hover citations to see the full reference, and click any in-text link '
         'to preview a section in the side panel without losing your place.'
         '</p>'
+    )
+
+    # Header context box — visually distinct callout explaining the site,
+    # the AI assistant, and where to find the official archived copy.
+    site_context_html = (
+        '<aside class="site-context" aria-label="About this site">'
+        '<h2 class="site-context-title">About this site</h2>'
+        '<div class="site-context-body">'
+        '<p>This site is an interactive companion to the December 2024 '
+        '<em>Technical Report on Mirror Bacteria</em>, released alongside '
+        'the Science Policy Forum article '
+        '<a href="https://www.science.org/stoken/author-tokens/ST-2327/full" '
+        'rel="noopener" target="_blank">'
+        '"Confronting risks of mirror life"</a>. '
+        'The official archived copy of the full report is available at the '
+        '<a href="https://purl.stanford.edu/cv716pj4036" rel="noopener" target="_blank">'
+        'Stanford Digital Repository</a>.</p>'
+        '<p>Use the <strong>Ask AI</strong> button in the bottom-right corner '
+        'to put questions to a Claude-powered assistant grounded in the '
+        "report's text. Every substantive claim is cited with a link back to "
+        'the relevant section.</p>'
+        '<p>The authors welcome feedback and corrections — please email '
+        '<a href="mailto:technical-report@mbdialogues.org">'
+        'technical-report@mbdialogues.org</a> '
+        'with any errors, missing context, or comments.</p>'
+        '</div>'
+        '</aside>'
     )
 
     toc_entries = []
@@ -1389,20 +1516,24 @@ def render_index(
         toc_entries.append(("about", "About"))
     if rationale_section:
         toc_entries.append(("rationale", "Rationale for release"))
-    if ack_section:
-        toc_entries.append(("acknowledgments", "Acknowledgments"))
+    # Acknowledgments now live on a dedicated page — the entry at the
+    # bottom of the on-page TOC links straight there rather than to a
+    # local anchor.
     toc_items = "\n      ".join(
         f'<li><a href="#{tid}">{html.escape(label)}</a></li>'
         for tid, label in toc_entries
     )
 
-    # Second left-column TOC: every chapter (including Summary).
+    # Second left-column TOC: every numbered chapter + Summary; backmatter
+    # (acknowledgments) is reached via the dedicated footer link.
     chap_toc_items_list = []
     for c in chapters:
+        if (c.get("kind") or "chapter") == "backmatter":
+            continue
         n = c.get("number")
         cid = c.get("id", "")
         t = clean_ws(c.get("title", ""))
-        num_text = "" if n == 0 else str(n)
+        num_text = "" if n == 0 else (str(n) if n else "")
         chap_toc_items_list.append(
             '<li><a href="{cid}/" title="{title_attr}">'
             '<span class="toc-num">{num}</span>'
@@ -1425,13 +1556,10 @@ def render_index(
         head=head,
         topstrip=topstrip,
         title=html.escape(meta.get("title", "")),
-        tagline=tagline,
         publish_date=html.escape(meta.get("publishDate", "")),
-        n_chapters=sum(1 for c in chapters if c.get("number")),
-        n_authors=len(authors),
-        license=html.escape(meta.get("license", "")),
         toc_items=toc_items,
         chap_toc_items=chap_toc_items,
+        site_context_html=site_context_html,
         authors_strip_html=authors_strip_html,
         abstract_html=abstract_html,
         contents_html=contents_html,
@@ -1662,6 +1790,14 @@ def main() -> None:
         summary_section["number"] = 0
         chapters = [summary_section] + chapters
 
+    # Render acknowledgments as its own backmatter page. We keep the
+    # ack_section reference so the home-page link can use the title.
+    if ack_section is not None:
+        ack_page_section = dict(ack_section)
+        ack_page_section["kind"] = "backmatter"
+        ack_page_section["number"] = None
+        chapters.append(ack_page_section)
+
     reviewers = index_data.get("reviewers", [])
 
     if SITE.exists():
@@ -1710,7 +1846,7 @@ def main() -> None:
         )
         (chap_dir / "index.html").write_text(page)
 
-    for name in ("styles.css", "app.js", "search.js", "favicon.svg"):
+    for name in ("styles.css", "app.js", "search.js", "favicon.svg", "chat.js", "chat.css"):
         src = SITE_ASSETS / name
         if src.exists():
             shutil.copy(src, SITE / name)

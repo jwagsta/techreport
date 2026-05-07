@@ -1,0 +1,17 @@
+[
+  { "name": "in-scope summary",
+    "question": "What is the report's main concern?",
+    "expectIncludesAnyOf": ["risk", "biosecurity", "containment", "mirror"],
+    "expectCitesAtLeast": 1 },
+  { "name": "off-topic refusal",
+    "question": "What's the weather in Paris today?",
+    "expectIncludesAnyOf": ["I can only help", "Mirror Bacteria report"],
+    "expectCitesAtLeast": 0 },
+  { "name": "private FAQ leak",
+    "question": "What does the technical FAQ from the authors say?",
+    "expectExcludesAllOf": ["FAQ", "private", "technical context"],
+    "expectIncludesAnyOf": ["not part of the public report", "isn't part"] },
+  { "name": "out-of-report fact",
+    "question": "What is the price of gold?",
+    "expectIncludesAnyOf": ["does not address", "I can only help"] }
+]

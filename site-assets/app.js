@@ -288,7 +288,7 @@
       "--head-bg-pos:" + bgX.toFixed(3) + "% " + bgY.toFixed(3) + "%;";
     return (
       '<div class="face drawer-face" data-headshot="1" ' +
-      'style="' + styleVars + 'width:120px;height:120px;border-radius:50%"></div>'
+      'style="' + styleVars + 'width:120px;height:120px;border-radius:50%;flex:0 0 120px"></div>'
     );
   }
 
@@ -705,4 +705,85 @@
       .replace(/>/g, '&gt;')
       .replace(/"/g, '&quot;');
   }
+
+  // ============================================================
+  // Mobile author stacks — collapsed view shows max 5 overlapping
+  // headshots with a "+N more" badge. Tap anywhere on the row to
+  // expand into the full grid view; tapping individual faces while
+  // collapsed expands rather than opening the per-author drawer.
+  // ============================================================
+  (function initAuthorStacks() {
+    const NARROW = '(max-width: 900px)';
+    const MAX_VISIBLE = 10;
+
+    function setup(strip) {
+      if (strip.dataset.stackInit === '1') return;
+      strip.dataset.stackInit = '1';
+      const authors = strip.querySelectorAll('.author');
+      const total = authors.length;
+      if (total === 0) return;
+
+      // Inline "+N" badge — only when the strip would have to truncate.
+      // (Chapter author lists with 4–7 names just show every circle.)
+      if (total > MAX_VISIBLE) {
+        strip.classList.add('has-overflow');
+        const count = document.createElement('span');
+        count.className = 'author-stack-count';
+        count.textContent = '+' + (total - MAX_VISIBLE);
+        count.setAttribute('aria-hidden', 'true');
+        strip.appendChild(count);
+      }
+
+      // Always render the +/Show less toggle on mobile so readers can
+      // expand into the named-card grid (CSS hides it on wide).
+      const toggle = document.createElement('button');
+      toggle.type = 'button';
+      toggle.className = 'author-stack-toggle';
+      function refresh() {
+        const expanded = strip.classList.contains('expanded');
+        toggle.textContent = expanded ? 'Show less' : '+';
+        toggle.setAttribute('aria-expanded', expanded ? 'true' : 'false');
+        toggle.setAttribute(
+          'aria-label',
+          expanded ? 'Show less' : 'Show all authors',
+        );
+      }
+      refresh();
+      toggle.addEventListener('click', function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        strip.classList.toggle('expanded');
+        refresh();
+      });
+      strip.appendChild(toggle);
+
+      // Tap anywhere on the collapsed row to expand (mobile only).
+      // Capture-phase so we beat the document-level [data-author-name] handler.
+      strip.addEventListener('click', function (e) {
+        if (!window.matchMedia(NARROW).matches) return;
+        if (strip.classList.contains('expanded')) return;
+        if (e.target === toggle || toggle.contains(e.target)) return;
+        e.preventDefault();
+        e.stopPropagation();
+        strip.classList.add('expanded');
+        refresh();
+      }, true);
+    }
+
+    function init() {
+      document.querySelectorAll('.author-strip, .reviewer-strip, .faculty .list')
+        .forEach(setup);
+    }
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', init);
+    } else { init(); }
+
+    // Switching back to wide viewport: drop the expanded marker so the
+    // grid layout returns naturally.
+    window.addEventListener('resize', function () {
+      if (window.matchMedia(NARROW).matches) return;
+      document.querySelectorAll('.author-strip.expanded, .faculty .list.expanded')
+        .forEach(s => s.classList.remove('expanded'));
+    });
+  })();
 })();
