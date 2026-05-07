@@ -1686,12 +1686,16 @@ a.ilink:hover, a.cite:hover {
   }
   .page {
     grid-template-columns: minmax(0, 1fr);
-    padding: 70px 18px 100px;  /* room for the fixed topstrip; left + right equal */
+    padding: 86px 18px 100px;  /* extra top padding gives the eyebrow breathing room under the fixed topstrip */
     max-width: 100%;
   }
   /* Tighten the topstrip horizontal padding on mobile so the brand and
      crumb sit closer to the edges (matches the page padding on the right). */
   .topstrip .inner { padding: 8px 18px; }
+  /* Match the eyebrow → title spacing rhythm we have on desktop, so the
+     eyebrow doesn't sit too close to the title at smaller font sizes. */
+  .chap-header .eyebrow { margin-bottom: 4px; }
+  .chap-header .chap-title { margin-top: 8px; }
   /* Reset desktop grid placement: on mobile the page is a single
      column and .content must land in column 1, otherwise it creates
      an implicit second column whose auto-sizing pushes content past
