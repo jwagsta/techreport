@@ -288,7 +288,7 @@
       "--head-bg-pos:" + bgX.toFixed(3) + "% " + bgY.toFixed(3) + "%;";
     return (
       '<div class="face drawer-face" data-headshot="1" ' +
-      'style="' + styleVars + 'width:120px;height:120px;border-radius:50%"></div>'
+      'style="' + styleVars + 'width:120px;height:120px;border-radius:50%;flex:0 0 120px"></div>'
     );
   }
 

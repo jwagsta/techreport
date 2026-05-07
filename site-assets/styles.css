@@ -83,9 +83,14 @@ body {
   text-transform: uppercase;
   color: var(--ink-2);
   font-weight: 600;
+  margin-left: 12px;
 }
+.topstrip .brand-line1, .topstrip .brand-line2 { white-space: nowrap; }
 @media (max-width: 900px) {
   .topstrip .narrow-crumb { display: inline-flex; }
+  /* Force the brand title onto two lines, breaking after "Technical Report"
+     so the chapter crumb on the right has room. */
+  .topstrip .brand { display: inline-flex; flex-direction: column; line-height: 1.1; }
 }
 .topstrip .actions { display: flex; gap: 18px; }
 
@@ -757,7 +762,7 @@ a.toc-label-link:hover { color: var(--ink); }
 .row > .row-sidenotes .sidenote .text p:last-child { margin-bottom: 0; }
 
 /* drop cap on the very first paragraph after the chapter header — chapter pages only */
-.page:not(.index-page) .body > .row:first-child > .prose::first-letter {
+.page:not(.index-page):not(.kind-frontmatter):not(.kind-backmatter) .body > .row:first-child > .prose::first-letter {
   initial-letter: 3 2;
   -webkit-initial-letter: 3 2;
   font-weight: 600;
@@ -1681,9 +1686,12 @@ a.ilink:hover, a.cite:hover {
   }
   .page {
     grid-template-columns: minmax(0, 1fr);
-    padding: 70px 18px 100px;  /* room for the fixed topstrip */
+    padding: 70px 18px 100px;  /* room for the fixed topstrip; left + right equal */
     max-width: 100%;
   }
+  /* Tighten the topstrip horizontal padding on mobile so the brand and
+     crumb sit closer to the edges (matches the page padding on the right). */
+  .topstrip .inner { padding: 8px 18px; }
   /* Reset desktop grid placement: on mobile the page is a single
      column and .content must land in column 1, otherwise it creates
      an implicit second column whose auto-sizing pushes content past

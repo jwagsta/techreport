@@ -735,7 +735,7 @@ TOPSTRIP = """<header class="topstrip">
   <div class="inner">
     <div class="crumbs">
       <span class="brand-wrap">
-        <a class="brand" href="{home}">Technical Report on Mirror Bacteria</a>
+        <a class="brand" href="{home}"><span class="brand-line1">Technical Report</span> <span class="brand-line2">on Mirror Bacteria</span></a>
         <nav class="chap-menu" aria-label="Chapters">
           <a class="chap-menu-home" href="{home}">About this report</a>{summary_menu_link}
           <div class="chap-menu-sep"></div>
@@ -755,7 +755,7 @@ TOPSTRIP = """<header class="topstrip">
 </header>"""
 
 CHAPTER_TEMPLATE = """{head}{topstrip}
-<main class="page">
+<main class="page {page_kind_class}">
   {report_contents}
 
   <section class="content">
@@ -822,12 +822,6 @@ INDEX_TEMPLATE = """{head}{topstrip}
     <header class="chap-header">
       <div class="eyebrow">{publish_date}</div>
       <h1 class="chap-title">{title}</h1>
-      {tagline}
-      <div class="chap-meta">
-        <span>{n_chapters} chapters</span><span>·</span>
-        <span>{n_authors} authors</span><span>·</span>
-        <span>{license}</span>
-      </div>
     </header>
 
     {site_context_html}
@@ -1236,7 +1230,7 @@ def render_chapter_page(
     else:
         crumb = title or ""
     narrow_crumb = (
-        f'<span class="narrow-crumb"><span class="crumb-sep">·</span>{html.escape(crumb)}</span>'
+        f'<span class="narrow-crumb">{html.escape(crumb)}</span>'
         if crumb else ""
     )
     topstrip = TOPSTRIP.format(
@@ -1283,6 +1277,12 @@ def render_chapter_page(
         'doi:10.1126/science.ads9158</a>'
     )
 
+    # Mark front-/back-matter pages so chapter-only treatments (e.g. the
+    # large drop-cap on the first paragraph) don't apply.
+    page_kind_class = (
+        f"kind-{chap_kind}" if chap_kind in ("frontmatter", "backmatter") else "kind-chapter"
+    )
+
     return CHAPTER_TEMPLATE.format(
         head=head,
         topstrip=topstrip,
@@ -1298,6 +1298,7 @@ def render_chapter_page(
         boot_script=boot,
         chapter_eyebrow=chapter_eyebrow,
         chapter_citation=chapter_citation,
+        page_kind_class=page_kind_class,
     )
 
 
@@ -1406,13 +1407,19 @@ def render_index(
         # Hoist the numbered "<strong>N) Title<br/></strong>" prefix out of
         # the paragraph and into an h3 with the same blue-small-caps numbering
         # used by chapter subsection headings.
+        #
+        # Important: we also move the heading OUT of the surrounding
+        # `<div class="row">`, so the row's adjacent `<div class="row-sidenotes">`
+        # (which holds the footnote aside referenced from the body) anchors
+        # against the body paragraph, not the heading. Otherwise clicking
+        # footnote 1 scrolled to above the heading instead of to its citation.
         rationale_html = re.sub(
-            r'<p class="prose"><strong>(\d+)\)\s+([^<]+?)<br/?>\s*</strong>',
+            r'<div class="row"><p class="prose"><strong>(\d+)\)\s+([^<]+?)<br/?>\s*</strong>',
             (
                 r'<h3 class="subsection-title">'
                 r'<span class="subsection-num">\1</span> \2'
                 r'</h3>'
-                r'<p class="prose">'
+                r'<div class="row"><p class="prose">'
             ),
             rationale_html,
             flags=re.DOTALL,
@@ -1549,11 +1556,7 @@ def render_index(
         head=head,
         topstrip=topstrip,
         title=html.escape(meta.get("title", "")),
-        tagline=tagline,
         publish_date=html.escape(meta.get("publishDate", "")),
-        n_chapters=sum(1 for c in chapters if c.get("number")),
-        n_authors=len(authors),
-        license=html.escape(meta.get("license", "")),
         toc_items=toc_items,
         chap_toc_items=chap_toc_items,
         site_context_html=site_context_html,
