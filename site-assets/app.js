@@ -714,7 +714,7 @@
   // ============================================================
   (function initAuthorStacks() {
     const NARROW = '(max-width: 900px)';
-    const MAX_VISIBLE = 5;
+    const MAX_VISIBLE = 10;
 
     function setup(strip) {
       if (strip.dataset.stackInit === '1') return;

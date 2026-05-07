@@ -1832,11 +1832,12 @@ a.ilink:hover, a.cite:hover {
     margin-left: 0;
   }
   /* Truncation only when there are too many circles to fit cleanly —
-     JS adds .has-overflow when total authors exceeds 5. Without it,
-     every circle is shown (e.g. 4–7 chapter authors). */
-  .author-strip:not(.expanded).has-overflow .author:nth-child(n+6),
-  .reviewer-strip:not(.expanded).has-overflow .author:nth-child(n+6),
-  .faculty .list:not(.expanded).has-overflow .author:nth-child(n+6) {
+     JS adds .has-overflow when total authors exceeds the visible count
+     (currently 10). Without it, every circle is shown (e.g. 4–7
+     chapter authors). */
+  .author-strip:not(.expanded).has-overflow .author:nth-child(n+11),
+  .reviewer-strip:not(.expanded).has-overflow .author:nth-child(n+11),
+  .faculty .list:not(.expanded).has-overflow .author:nth-child(n+11) {
     display: none;
   }
   .author-strip:not(.expanded) .who,
@@ -1851,34 +1852,29 @@ a.ilink:hover, a.cite:hover {
   }
 
   /* "+N" inline badge — only shown when JS marks the strip as
-     overflowing AND it's collapsed. Sits adjacent to the last visible
-     circle so the count is obviously about those circles. */
+     overflowing AND it's collapsed. Sits right next to the last
+     visible circle so the count is unambiguously about those circles. */
   .has-overflow:not(.expanded) .author-stack-count {
     display: inline-block;
-    margin-left: 14px;
+    margin-left: 8px;
     font: 600 13px/1 var(--sans), Inter, sans-serif;
     color: var(--ink-3, #4a4a4a);
     letter-spacing: 0.02em;
   }
 
-  /* "+" toggle button at the right edge in collapsed view, becomes
-     "Show less" at top-right in expanded view. Always present on
-     mobile so readers can flip to the named-card grid. */
+  /* Toggle: plain blue text (no border, no circle background).
+     Reads as "+" in collapsed view, "Show less" when expanded. */
   .author-strip:not(.expanded) .author-stack-toggle,
   .reviewer-strip:not(.expanded) .author-stack-toggle,
   .faculty .list:not(.expanded) .author-stack-toggle {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+    display: inline-block;
     margin-left: auto;
-    width: 32px; height: 32px;
-    background: var(--paper-3, #f4f4f4);
-    border: 1px solid var(--rule, #e5e5e5);
-    border-radius: 50%;
+    background: none;
+    border: none;
     cursor: pointer;
-    padding: 0;
-    font: 600 22px/1 var(--sans), Inter, sans-serif;
-    color: var(--muted, #6a6a6a);
+    padding: 0 4px;
+    font: 400 22px/1 var(--sans), Inter, sans-serif;
+    color: var(--accent, #0f62fe);
   }
   .author-strip.expanded .author-stack-toggle,
   .reviewer-strip.expanded .author-stack-toggle,
@@ -1891,19 +1887,15 @@ a.ilink:hover, a.cite:hover {
     border: none;
     cursor: pointer;
     padding: 4px 0;
-    font: 600 11px/1 var(--sans), Inter, sans-serif;
-    color: var(--muted, #6a6a6a);
-    letter-spacing: 0.06em;
+    font: 500 12px/1 var(--sans), Inter, sans-serif;
+    color: var(--accent, #0f62fe);
   }
   .author-strip.expanded,
   .reviewer-strip.expanded,
   .faculty .list.expanded {
     padding-top: 22px;
   }
-  .author-stack-toggle:hover {
-    color: var(--accent, #0f62fe);
-    border-color: var(--accent, #0f62fe);
-  }
+  .author-stack-toggle:hover { opacity: 0.7; }
 }
 
 /* ============================================================
