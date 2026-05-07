@@ -281,13 +281,22 @@ body.search-open { overflow: hidden; }
   z-index: 110;
   font-family: var(--sans);
 }
-.topstrip .brand-wrap:hover .chap-menu,
-.topstrip .brand-wrap:focus-within .chap-menu,
+/* Hover/focus expansion of the chapter menu only fires on narrow viewports;
+   on wide the brand is just a link home (no dropdown). */
 .topstrip .brand-wrap.menu-open .chap-menu {
   opacity: 1;
   pointer-events: auto;
   transform: translateY(0);
   transition-delay: 0s;
+}
+@media (max-width: 900px) {
+  .topstrip .brand-wrap:hover .chap-menu,
+  .topstrip .brand-wrap:focus-within .chap-menu {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+    transition-delay: 0s;
+  }
 }
 /* "About this report" + "Summary" stay in small caps (matches the eyebrow
    style elsewhere). Chapter titles below are plain sans, sized to match
@@ -1415,9 +1424,11 @@ a.ilink:hover, a.cite:hover {
 }
 
 /* "Report authors" / "Report reviewers" eyebrow above the strip on home,
-   matches the .faculty .label "Chapter authors" treatment on chapter pages. */
+   matches the .faculty .label "Chapter authors" treatment on chapter pages.
+   Span both columns of .content's grid so the strip extends full-width. */
 .index-page .author-strip-section,
 .index-page .reviewer-strip-section {
+  grid-column: 1 / -1;
   margin: 8px 0 36px;
   padding: 18px 0 22px;
   border-top: 1px solid var(--rule);
@@ -1742,6 +1753,11 @@ a.ilink:hover, a.cite:hover {
   .content {
     grid-template-columns: minmax(0, 1fr);
   }
+  /* Override the desktop-only `.index-page > .content { grid-column: 2 }`
+     rule — on mobile .page is single-column, so .content must land in
+     column 1 (otherwise it's pushed into an implicit second track which
+     made the home page's left gutter visibly wider than the right). */
+  .index-page > .content { grid-column: 1; }
   .body {
     grid-template-columns: minmax(0, 1fr);
   }
@@ -1774,20 +1790,23 @@ a.ilink:hover, a.cite:hover {
   .faculty { grid-template-columns: 1fr; gap: 12px; }
   .faculty .list { grid-template-columns: 1fr; }
 
-  /* ============================================================
-     MOBILE AUTHOR STACK
-     Author lists (chapter, home, reviewers) collapse to a row of
-     overlapping headshot circles (avatar group), max 5 visible,
-     plus a text toggle on the right that flips between "+N" and
-     "Show less". JS handles the .expanded class and toggle text.
-     ============================================================ */
+}
+
+/* ============================================================
+   AUTHOR STACK (count + toggle)
+   Default — both elements hidden on wide so author lists keep
+   the full grid layout they had before. Mobile rules below
+   re-enable them.
+   ============================================================ */
+.author-stack-count,
+.author-stack-toggle { display: none; }
+
+@media (max-width: 900px) {
   .author-strip,
   .reviewer-strip,
-  .faculty .list {
-    position: relative;
-  }
+  .faculty .list { position: relative; }
 
-  /* Collapsed view */
+  /* Collapsed view: row of overlapping headshot circles. */
   .author-strip:not(.expanded),
   .reviewer-strip:not(.expanded),
   .faculty .list:not(.expanded) {
@@ -1812,9 +1831,12 @@ a.ilink:hover, a.cite:hover {
   .faculty .list:not(.expanded) .author:first-child {
     margin-left: 0;
   }
-  .author-strip:not(.expanded) .author:nth-child(n+6),
-  .reviewer-strip:not(.expanded) .author:nth-child(n+6),
-  .faculty .list:not(.expanded) .author:nth-child(n+6) {
+  /* Truncation only when there are too many circles to fit cleanly —
+     JS adds .has-overflow when total authors exceeds 5. Without it,
+     every circle is shown (e.g. 4–7 chapter authors). */
+  .author-strip:not(.expanded).has-overflow .author:nth-child(n+6),
+  .reviewer-strip:not(.expanded).has-overflow .author:nth-child(n+6),
+  .faculty .list:not(.expanded).has-overflow .author:nth-child(n+6) {
     display: none;
   }
   .author-strip:not(.expanded) .who,
@@ -1824,23 +1846,47 @@ a.ilink:hover, a.cite:hover {
   .reviewer-strip:not(.expanded) .author .face,
   .faculty .list:not(.expanded) .author .face {
     width: 36px; height: 36px;
-    border: 1px solid var(--paper, #fff);     /* slim outline (was 2px) */
+    border: 1px solid var(--paper, #fff);
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
   }
 
-  /* Expanded view: the regular grid layout returns; reserve top-right
-     space for the "Show less" toggle. */
-  .author-strip.expanded,
-  .reviewer-strip.expanded,
-  .faculty .list.expanded {
-    padding-top: 22px;
+  /* "+N" inline badge — only shown when JS marks the strip as
+     overflowing AND it's collapsed. Sits adjacent to the last visible
+     circle so the count is obviously about those circles. */
+  .has-overflow:not(.expanded) .author-stack-count {
+    display: inline-block;
+    margin-left: 14px;
+    font: 600 13px/1 var(--sans), Inter, sans-serif;
+    color: var(--ink-3, #4a4a4a);
+    letter-spacing: 0.02em;
   }
 
-  /* The toggle itself — one element appended by JS, sitting top-right
-     of the strip in both states. In collapsed mode it's the only
-     non-circle thing on the row; in expanded mode it floats above the
-     grid. */
-  .author-stack-toggle {
+  /* "+" toggle button at the right edge in collapsed view, becomes
+     "Show less" at top-right in expanded view. Always present on
+     mobile so readers can flip to the named-card grid. */
+  .author-strip:not(.expanded) .author-stack-toggle,
+  .reviewer-strip:not(.expanded) .author-stack-toggle,
+  .faculty .list:not(.expanded) .author-stack-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    width: 32px; height: 32px;
+    background: var(--paper-3, #f4f4f4);
+    border: 1px solid var(--rule, #e5e5e5);
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 0;
+    font: 600 22px/1 var(--sans), Inter, sans-serif;
+    color: var(--muted, #6a6a6a);
+  }
+  .author-strip.expanded .author-stack-toggle,
+  .reviewer-strip.expanded .author-stack-toggle,
+  .faculty .list.expanded .author-stack-toggle {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
     background: none;
     border: none;
     cursor: pointer;
@@ -1849,21 +1895,14 @@ a.ilink:hover, a.cite:hover {
     color: var(--muted, #6a6a6a);
     letter-spacing: 0.06em;
   }
-  .author-stack-toggle:hover { color: var(--accent, #0f62fe); }
-  /* Collapsed: push toggle to the right end of the flex row */
-  .author-strip:not(.expanded) .author-stack-toggle,
-  .reviewer-strip:not(.expanded) .author-stack-toggle,
-  .faculty .list:not(.expanded) .author-stack-toggle {
-    margin-left: auto;
-    padding-left: 12px;
+  .author-strip.expanded,
+  .reviewer-strip.expanded,
+  .faculty .list.expanded {
+    padding-top: 22px;
   }
-  /* Expanded: pin top-right of the strip */
-  .author-strip.expanded .author-stack-toggle,
-  .reviewer-strip.expanded .author-stack-toggle,
-  .faculty .list.expanded .author-stack-toggle {
-    position: absolute;
-    top: 0;
-    right: 0;
+  .author-stack-toggle:hover {
+    color: var(--accent, #0f62fe);
+    border-color: var(--accent, #0f62fe);
   }
 }
 

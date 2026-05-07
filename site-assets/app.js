@@ -721,19 +721,34 @@
       strip.dataset.stackInit = '1';
       const authors = strip.querySelectorAll('.author');
       const total = authors.length;
-      if (total <= MAX_VISIBLE) return;
+      if (total === 0) return;
 
+      // Inline "+N" badge — only when the strip would have to truncate.
+      // (Chapter author lists with 4–7 names just show every circle.)
+      if (total > MAX_VISIBLE) {
+        strip.classList.add('has-overflow');
+        const count = document.createElement('span');
+        count.className = 'author-stack-count';
+        count.textContent = '+' + (total - MAX_VISIBLE);
+        count.setAttribute('aria-hidden', 'true');
+        strip.appendChild(count);
+      }
+
+      // Always render the +/Show less toggle on mobile so readers can
+      // expand into the named-card grid (CSS hides it on wide).
       const toggle = document.createElement('button');
       toggle.type = 'button';
       toggle.className = 'author-stack-toggle';
       function refresh() {
         const expanded = strip.classList.contains('expanded');
-        toggle.textContent = expanded ? 'Show less' : '+' + (total - MAX_VISIBLE);
+        toggle.textContent = expanded ? 'Show less' : '+';
         toggle.setAttribute('aria-expanded', expanded ? 'true' : 'false');
+        toggle.setAttribute(
+          'aria-label',
+          expanded ? 'Show less' : 'Show all authors',
+        );
       }
       refresh();
-      // Toggle button click: flip state regardless of viewport (desktop just
-      // ignores the .expanded class via media-query rules).
       toggle.addEventListener('click', function (e) {
         e.preventDefault();
         e.stopPropagation();
@@ -742,7 +757,7 @@
       });
       strip.appendChild(toggle);
 
-      // Tap-anywhere-on-the-row to expand when collapsed (mobile only).
+      // Tap anywhere on the collapsed row to expand (mobile only).
       // Capture-phase so we beat the document-level [data-author-name] handler.
       strip.addEventListener('click', function (e) {
         if (!window.matchMedia(NARROW).matches) return;
