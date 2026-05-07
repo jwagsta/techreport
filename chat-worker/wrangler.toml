@@ -3,7 +3,7 @@ main = "src/index.ts"
 compatibility_date = "2026-01-01"
 
 [vars]
-ALLOWED_ORIGIN = "http://localhost:8765"
+ALLOWED_ORIGIN = "https://jwagsta.github.io"
 DAILY_USD_CEILING = "5.00"
 DAILY_PER_IP_LIMIT = "100"
 PER_MINUTE_PER_IP_LIMIT = "15"
