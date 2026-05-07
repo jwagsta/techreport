@@ -31,6 +31,12 @@ jobs:
         env:
           BUILD_PROD: "1"
           BASE_PATH: "/techreport"
+          # Chat widget env vars — sourced from repo secrets so the
+          # widget loads on the deployed site. If a secret isn't set,
+          # the widget silently disables itself (build.py treats empty
+          # CHAT_API_URL as "feature off").
+          CHAT_API_URL: ${{ secrets.CHAT_API_URL }}
+          TURNSTILE_SITE_KEY: ${{ secrets.TURNSTILE_SITE_KEY }}
         run: python3 build.py
 
       - uses: actions/upload-pages-artifact@v3

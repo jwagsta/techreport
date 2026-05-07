@@ -3,7 +3,7 @@ main = "src/index.ts"
 compatibility_date = "2026-01-01"
 
 [vars]
-ALLOWED_ORIGIN = "http://localhost:8765"
+ALLOWED_ORIGIN = "https://jwagsta.github.io"
 DAILY_USD_CEILING = "5.00"
 DAILY_PER_IP_LIMIT = "100"
 PER_MINUTE_PER_IP_LIMIT = "15"
@@ -15,8 +15,8 @@ TURNSTILE_SITE_KEY = "1x00000000000000000000AA"  # Cloudflare's "always passes" 
 # Create with: wrangler kv:namespace create RATE_KV
 [[kv_namespaces]]
 binding = "RATE_KV"
-id = "REPLACE_WITH_REAL_ID"
-preview_id = "REPLACE_WITH_REAL_PREVIEW_ID"
+id = "2a78d898445b4010b3b90302af4f2312"
+preview_id = "8ff069ae3d7c4a09a3dbd1a05b38e93c"
 
 # Secrets (set via `wrangler secret put`):
 #   ANTHROPIC_API_KEY
