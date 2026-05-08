@@ -93,6 +93,29 @@ _DOI_RE = re.compile(r"\b(10\.\d{4,9}/[^\s<>\"\)]+)", re.I)
 # Pull explicit hrefs out of reference HTML.
 _HREF_RE = re.compile(r'href="(https?://[^"]+)"', re.I)
 
+# Match plain-text URLs in reference HTML so we can wrap them in <a> tags.
+# Negative lookbehind avoids re-wrapping URLs already inside an href= attribute.
+_PLAIN_URL_RE = re.compile(r'(?<!href=")(?<!href=\')\bhttps?://[^\s<"\']+', re.I)
+
+
+def _linkify_urls(s: str) -> str:
+    """Wrap bare https?:// URLs in <a> tags. Trailing punctuation (.,;) is
+    preserved outside the link so e.g. "see https://x.org/foo." doesn't
+    swallow the period."""
+    def repl(m: re.Match[str]) -> str:
+        url = m.group(0)
+        trail = ""
+        while url and url[-1] in ".,;:)]":
+            trail = url[-1] + trail
+            url = url[:-1]
+        if not url:
+            return m.group(0)
+        return (
+            f'<a href="{html.escape(url, quote=True)}" target="_blank" '
+            f'rel="noopener noreferrer">{html.escape(url)}</a>{trail}'
+        )
+    return _PLAIN_URL_RE.sub(repl, s)
+
 
 def _ref_text(ref_html: str) -> str:
     return re.sub(r"<[^>]+>", "", ref_html).replace("\xa0", " ")
@@ -1153,6 +1176,10 @@ def render_chapter_page(
             if not isinstance(ref, dict):
                 continue
             ref_html = ref.get("html", "")
+            # The source docx occasionally carries stray highlighted text
+            # (e.g. tracked-change leftovers) that pandoc emits as <mark>.
+            # Strip those so references don't render with a yellow box.
+            ref_html = re.sub(r"</?mark[^>]*>", "", ref_html)
             abs_rec = abstracts.get(_abstract_key(ref_html)) or {}
             abs_html = _strip_abstract_header(abs_rec.get("abstract_html") or "")
             # If Crossref/OpenAlex pinned a canonical DOI, prefer it over the
@@ -1162,9 +1189,10 @@ def render_chapter_page(
                 f"https://doi.org/{doi}" if doi
                 else _extract_url(ref_html) or ""
             )
-            classes = ["ref-item"]
-            if abs_html:
-                classes.append("has-abstract")
+            # Every reference is expandable — even those without an abstract
+            # show the action links (Search / Open source / DOI) under the
+            # cite. The class name is preserved for the existing JS hook.
+            classes = ["ref-item", "has-abstract"]
             attrs = (
                 f'id="ref-{idx}" class="{" ".join(classes)}"'
             )
@@ -1172,7 +1200,8 @@ def render_chapter_page(
                 attrs += f' data-doi="{html.escape(doi)}"'
             if url:
                 attrs += f' data-url="{html.escape(url)}"'
-            cite_html = f'<div class="ref-cite">{ref_html}</div>'
+            # Linkify any plain-text URLs in the citation itself.
+            cite_html = f'<div class="ref-cite">{_linkify_urls(ref_html)}</div>'
             # Action links — same set the drawer offers — appear inside the
             # expanded block alongside the abstract so the bibliography view
             # has parity with the inline-citation drawer view.
@@ -1199,13 +1228,16 @@ def render_chapter_page(
             actions_html = (
                 f'<div class="ref-actions">{"".join(actions)}</div>'
             )
-            abs_block = (
-                f'<div class="ref-abstract" hidden>'
+            abstract_html_block = (
                 f'<div class="ref-abstract-label">Abstract</div>'
                 f'<div class="ref-abstract-body">{abs_html}</div>'
+            ) if abs_html else ""
+            abs_block = (
+                f'<div class="ref-abstract" hidden>'
+                f'{abstract_html_block}'
                 f'{actions_html}'
                 f'</div>'
-            ) if abs_html else ""
+            )
             ref_lis.append(f'<li {attrs}>{cite_html}{abs_block}</li>')
         if ref_lis:
             refs_html = (
