@@ -367,14 +367,19 @@
     body.scrollTop = body.scrollHeight;
   }
 
+  const THINKING_HTML =
+    '<div class="chat-thinking" role="status" aria-label="Assistant is thinking">' +
+      '<span></span><span></span><span></span>' +
+    '</div>';
+
   function buildMsgNode(m, i) {
     const cls = 'chat-msg chat-msg-' + m.role;
     const bubble = el('div', { className: 'chat-msg-bubble' });
-    bubble.innerHTML = m.role === 'assistant'
-      ? renderMarkdown(m.content)
-      : escapeHtml(m.content);
     if (m.role === 'assistant') {
+      bubble.innerHTML = m.content ? renderMarkdown(m.content) : THINKING_HTML;
       bubble.querySelectorAll('a[href]').forEach(a => a.addEventListener('click', onCitationClick));
+    } else {
+      bubble.innerHTML = escapeHtml(m.content);
     }
     return el('div', { className: cls, 'data-i': i }, [bubble]);
   }
@@ -580,7 +585,8 @@
     const last = wraps[wraps.length - 1];
     if (!last) { renderMessages(); return; }
     const bubble = last.querySelector('.chat-msg-bubble');
-    bubble.innerHTML = renderMarkdown(state.messages[state.messages.length - 1].content);
+    const content = state.messages[state.messages.length - 1].content;
+    bubble.innerHTML = content ? renderMarkdown(content) : THINKING_HTML;
     bubble.querySelectorAll('a[href]').forEach(a => a.addEventListener('click', onCitationClick));
     body.scrollTop = body.scrollHeight;
   }
