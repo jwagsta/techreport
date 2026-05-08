@@ -497,6 +497,7 @@ a.toc-label-link:hover { color: var(--ink); }
   margin-bottom: 24px;
   padding-bottom: 28px;
   max-width: 880px;
+  scroll-margin-top: 80px;
 }
 .eyebrow {
   font-family: var(--sans);
@@ -1753,47 +1754,49 @@ a.ilink:hover, a.cite:hover {
   text-overflow: ellipsis;
 }
 
-/* Section row inside the expanded current chapter.
-   Section number sits in a 28 px gutter, with a 12 px lead-in column for the
-   active dot. Section titles wrap onto multiple lines (no truncation). */
+/* Section row inside the expanded current chapter. Hanging-indent
+   layout to match the chapter rows: title sits 22px in (visual nesting
+   under the chapter title), section number absolute-positioned in the
+   widget's left padding gutter so its right edge lines up with the
+   chapter number above. Section titles wrap onto multiple lines. */
 .rc .rc-sec {
-  display: grid;
-  grid-template-columns: 12px 28px minmax(0, 1fr);
-  align-items: baseline;
-  gap: 4px;
-  padding: 3px 0;
-  margin-left: 0;
+  display: block;
+  position: relative;
+  padding: 3px 0 3px 22px;
   text-decoration: none;
   color: var(--ink-3);
   font-family: var(--sans);
   font-size: 12px;
   line-height: 1.45;
-  position: relative;
 }
 .rc .rc-sec:hover { color: var(--ink); }
 .rc .rc-sec .rc-secn {
-  grid-column: 2;
+  position: absolute;
+  right: 100%;
+  top: 3px;
+  margin-right: 6px;
   color: var(--muted-2);
   font-weight: 600;
   font-variant-numeric: tabular-nums;
   font-size: 11.5px;
-  text-align: right;
-  padding-right: 4px;
 }
 .rc .rc-sec .rc-sectitle {
-  grid-column: 3;
-  min-width: 0;
+  display: block;
   /* multi-line wrap: no nowrap / overflow / ellipsis */
   overflow-wrap: anywhere;
 }
 
-/* Active section: small blue dot in the leftmost gutter column. */
+/* Active section: hide the number, drop a blue dot in the gutter so
+   its right edge lines up with the chapter number above. */
 .rc .rc-sec.current { color: var(--ink); font-weight: 600; }
+.rc .rc-sec.current .rc-secn { visibility: hidden; }
 .rc .rc-sec.current::before {
   content: "";
   position: absolute;
-  left: 2px;
-  top: 10px;
+  right: 100%;
+  margin-right: 6px;
+  top: 50%;
+  margin-top: -3px;
   width: 6px;
   height: 6px;
   border-radius: 50%;
