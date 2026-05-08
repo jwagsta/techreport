@@ -1589,17 +1589,21 @@ a.ilink:hover, a.cite:hover {
 .index-page .reviewer-strip .author .who span { font-size: 11.5px; }
 
 /* On-this-page TOC entries are simple single-line links (no number gutter). */
+.index-page .home-toc .toc-onpage li {
+  position: relative;
+}
 .index-page .home-toc .toc-onpage a {
   display: block;
-  position: relative;
   grid-template-columns: none;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 /* Active section: small blue dot in the toc's left padding, mirroring
-   the chapter-page rc-sec.current treatment. */
-.index-page .home-toc .toc-onpage a.current::before {
+   the chapter-page rc-sec.current treatment. The dot lives on the <li>
+   (not on the <a>::before) because the link has overflow:hidden for the
+   ellipsis treatment, which would clip a negatively-offset pseudo-element. */
+.index-page .home-toc .toc-onpage li:has(a.current)::before {
   content: "";
   position: absolute;
   left: -14px;
