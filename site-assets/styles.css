@@ -819,8 +819,11 @@ a.toc-label-link:hover { color: var(--ink); }
 }
 .row > .row-sidenotes .sidenote .text p:last-child { margin-bottom: 0; }
 
-/* drop cap on the very first paragraph after the chapter header — chapter pages only */
-.page:not(.index-page):not(.kind-frontmatter):not(.kind-backmatter) .body > .row:first-child > .prose::first-letter {
+/* drop cap on the very first paragraph after the chapter header — chapter pages only.
+   Two selectors so the cap lands on the right paragraph whether or not a
+   SUMMARY heading row precedes the intro prose. */
+.page:not(.index-page):not(.kind-frontmatter):not(.kind-backmatter) .body > .row:first-child > .prose::first-letter,
+.page:not(.index-page):not(.kind-frontmatter):not(.kind-backmatter) .body > .row:has(> .chap-summary-label) + .row > .prose::first-letter {
   initial-letter: 3 2;
   -webkit-initial-letter: 3 2;
   font-weight: 600;
