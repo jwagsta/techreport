@@ -1153,6 +1153,10 @@ def render_chapter_page(
             if not isinstance(ref, dict):
                 continue
             ref_html = ref.get("html", "")
+            # The source docx occasionally carries stray highlighted text
+            # (e.g. tracked-change leftovers) that pandoc emits as <mark>.
+            # Strip those so references don't render with a yellow box.
+            ref_html = re.sub(r"</?mark[^>]*>", "", ref_html)
             abs_rec = abstracts.get(_abstract_key(ref_html)) or {}
             abs_html = _strip_abstract_header(abs_rec.get("abstract_html") or "")
             # If Crossref/OpenAlex pinned a canonical DOI, prefer it over the
