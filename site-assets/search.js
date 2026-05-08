@@ -16,22 +16,20 @@
 
   // ----- index loading -----
 
+  // Derive the path to the site root from this script's own src. The HTML
+  // already encodes the correct relative prefix ("search.js" at root,
+  // "../search.js" on chapter pages), which is more reliable than guessing
+  // from window.location (the site may be served from a sub-path like
+  // /techreport/ on GitHub Pages, where pathname-based heuristics fail).
+  const SITE_ROOT = (function () {
+    const el = document.currentScript;
+    const src = (el && el.getAttribute('src')) || '';
+    const dir = src.replace(/\/?[^/]*$/, '');
+    return dir || '.';
+  })();
+
   function basePath() {
-    // Determine the URL prefix to reach the site root from the current page.
-    // Chapter pages live one level deep (/chapter-1-introduction/), so prefix is "..".
-    // The index page is at the root, so prefix is ".".
-    const path = window.location.pathname;
-    if (/\/chapter-[\w-]+\/?$/.test(path) || path.split('/').filter(Boolean).length >= 1 && path !== '/') {
-      // Anything inside a single sub-directory.
-      // Resolve relative to current dir: '../search-index.json' or './search-index.json'.
-      const segs = path.split('/').filter(Boolean);
-      // If page is /<slug>/, depth=1 → use "..";  if root, depth=0 → use ".".
-      // Use 'index.html' alone counts as root.
-      if (segs.length >= 1 && !segs[segs.length - 1].includes('.')) {
-        return '..';
-      }
-    }
-    return '.';
+    return SITE_ROOT;
   }
 
   async function loadIndex() {

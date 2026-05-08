@@ -95,17 +95,31 @@
     return s.replace(/&/g, '&amp;').replace(/"/g, '&quot;');
   }
 
+  // Site root pathname, derived from this script's own URL. The AI emits
+  // root-relative links like "/chapter-3-.../#anchor"; when the site is
+  // served from a sub-path (e.g. /techreport/ on GitHub Pages) those links
+  // resolve to the wrong place unless we prefix them.
+  const SITE_BASE_PATH = (function () {
+    const el = document.currentScript ||
+      document.querySelector('script[src$="chat.js"], script[src$="/chat.js"]');
+    if (!el) return '';
+    try {
+      return new URL(el.src, location.href).pathname.replace(/\/[^/]*$/, '');
+    } catch { return ''; }
+  })();
+
   // Allow only known-good URL shapes. Anything else → strip the link, keep the text.
   // Valid: same-page anchor (#foo), root (/), root with anchor (/#foo),
   // /chapter-*/, /chapter-*/#anchor, /summary/, /summary/#anchor, http(s)://...
   function safeHref(href) {
     if (!href) return null;
     if (/^https?:\/\//i.test(href)) return href;
-    if (href === '/' || href === '#' ) return href;
+    if (href === '#') return href;
     if (/^#[\w-]+$/.test(href)) return href;
-    if (/^\/(#[\w-]+)?$/.test(href)) return href;
-    if (/^\/chapter-[\w-]+\/(#[\w-]+)?$/.test(href)) return href;
-    if (/^\/summary\/(#[\w-]+)?$/.test(href)) return href;
+    if (href === '/') return SITE_BASE_PATH + '/';
+    if (/^\/(#[\w-]+)?$/.test(href)) return SITE_BASE_PATH + href;
+    if (/^\/chapter-[\w-]+\/(#[\w-]+)?$/.test(href)) return SITE_BASE_PATH + href;
+    if (/^\/summary\/(#[\w-]+)?$/.test(href)) return SITE_BASE_PATH + href;
     return null;
   }
 
@@ -353,14 +367,19 @@
     body.scrollTop = body.scrollHeight;
   }
 
+  const THINKING_HTML =
+    '<div class="chat-thinking" role="status" aria-label="Assistant is thinking">' +
+      '<span></span><span></span><span></span>' +
+    '</div>';
+
   function buildMsgNode(m, i) {
     const cls = 'chat-msg chat-msg-' + m.role;
     const bubble = el('div', { className: 'chat-msg-bubble' });
-    bubble.innerHTML = m.role === 'assistant'
-      ? renderMarkdown(m.content)
-      : escapeHtml(m.content);
     if (m.role === 'assistant') {
+      bubble.innerHTML = m.content ? renderMarkdown(m.content) : THINKING_HTML;
       bubble.querySelectorAll('a[href]').forEach(a => a.addEventListener('click', onCitationClick));
+    } else {
+      bubble.innerHTML = escapeHtml(m.content);
     }
     return el('div', { className: cls, 'data-i': i }, [bubble]);
   }
@@ -566,7 +585,8 @@
     const last = wraps[wraps.length - 1];
     if (!last) { renderMessages(); return; }
     const bubble = last.querySelector('.chat-msg-bubble');
-    bubble.innerHTML = renderMarkdown(state.messages[state.messages.length - 1].content);
+    const content = state.messages[state.messages.length - 1].content;
+    bubble.innerHTML = content ? renderMarkdown(content) : THINKING_HTML;
     bubble.querySelectorAll('a[href]').forEach(a => a.addEventListener('click', onCitationClick));
     body.scrollTop = body.scrollHeight;
   }
