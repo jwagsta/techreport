@@ -34,7 +34,7 @@ SESSION_SIGNING_KEY=any-32-byte-string-for-local-dev-only!
    wrangler secret put SESSION_SIGNING_KEY     # 32+ random bytes
    ```
 4. Update `[vars]` in `wrangler.toml`:
-   - `ALLOWED_ORIGIN` to the production site origin (e.g. `https://mirrorbacteria.org`)
+   - `ALLOWED_ORIGIN` to the production site origin (the GitHub Pages site is `https://jwagsta.github.io`; path doesn't matter for CORS)
    - `TURNSTILE_SITE_KEY` to the real Turnstile site key
 5. `npm run build:corpus` whenever `../data/` changes.
 6. `npm run deploy`.
