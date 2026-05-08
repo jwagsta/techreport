@@ -1717,14 +1717,13 @@ a.ilink:hover, a.cite:hover {
   margin-bottom: 14px;
 }
 
-/* Each chapter row: number · ellipsis-truncated title.
-   The whole row is the link. The number sits in a fixed-width gutter so
-   titles align across chapters and across the about/summary rows. */
+/* Each chapter row: number · ellipsis-truncated title. Hanging-indent
+   layout to match the homepage TOC — titles flush-left with the
+   "REPORT CONTENTS" label, blue numbers absolute-positioned in the
+   widget's left padding gutter. */
 .rc .rc-chap {
-  display: grid;
-  grid-template-columns: 20px minmax(0, 1fr);
-  align-items: baseline;
-  gap: 6px;
+  display: block;
+  position: relative;
   padding: 5px 0;
   text-decoration: none;
   color: var(--ink-3);
@@ -1738,18 +1737,20 @@ a.ilink:hover, a.cite:hover {
 .rc .rc-chap.expanded { color: var(--ink); font-weight: 600; }
 
 .rc .rc-num {
+  position: absolute;
+  right: 100%;
+  top: 5px;
+  margin-right: 6px;
   color: var(--accent);
   font-weight: 600;
   font-variant-numeric: tabular-nums;
   font-size: 12px;
-  text-align: right;
-  padding-right: 4px;
 }
 .rc .rc-title {
+  display: block;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  min-width: 0;
 }
 
 /* Section row inside the expanded current chapter.
