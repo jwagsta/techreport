@@ -1133,6 +1133,9 @@ a.ilink:hover, a.cite:hover {
   padding-left: 28px;
 }
 .refs-list li { margin: 0 0 10px; overflow-wrap: anywhere; }
+/* Bare URLs inside reference citations get linkified at build time —
+   keep them visually subdued and aligned with the rest of the site. */
+.refs-list .ref-cite a { color: var(--accent); text-underline-offset: 2px; }
 .refs-list .ref-item.has-abstract > .ref-cite {
   cursor: pointer;
   position: relative;
