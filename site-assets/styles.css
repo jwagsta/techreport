@@ -1257,6 +1257,12 @@ a.ilink:hover, a.cite:hover {
 }
 .drawer .dbody .figrow figcaption,
 .drawer .dbody figure.row figcaption {
+  /* Undo the chapter-page sidenote positioning so the caption stacks
+     beneath the image inside the drawer. */
+  position: static;
+  top: auto;
+  right: auto;
+  width: auto;
   grid-column: auto;
   align-self: auto;
   padding-top: 0;
