@@ -760,8 +760,9 @@ TOPSTRIP = """<header class="topstrip">
       <span class="brand-wrap">
         <a class="brand" href="{home}"><span class="brand-line1">Technical Report</span> <span class="brand-line2">on Mirror Bacteria</span></a>
         <nav class="chap-menu" aria-label="Chapters">
-          <a class="chap-menu-home" href="{home}">About this report</a>{summary_menu_link}
+          <a class="chap-menu-home" href="{home}">About</a>
           <div class="chap-menu-sep"></div>
+          {summary_menu_link}
           {chap_menu}
         </nav>
       </span>{narrow_crumb}
@@ -787,6 +788,7 @@ CHAPTER_TEMPLATE = """{head}{topstrip}
       <h1 class="chap-title">{title}</h1>
       <div class="chap-meta">
         <span>Technical Report on Mirror Bacteria: Feasibility and Risks &middot; {publish_date}</span>
+        <span class="chap-doi">DOI: <a href="https://doi.org/10.25740/cv716pj4036" rel="noopener" target="_blank">10.25740/cv716pj4036</a></span>
       </div>
     </header>
 
@@ -844,6 +846,10 @@ INDEX_TEMPLATE = """{head}{topstrip}
     <header class="chap-header">
       <div class="eyebrow">{publish_date}</div>
       <h1 class="chap-title">{title}</h1>
+      <div class="chap-doi">
+        DOI:
+        <a href="https://doi.org/10.25740/cv716pj4036" rel="noopener" target="_blank">10.25740/cv716pj4036</a>
+      </div>
     </header>
 
     {site_context_html}
@@ -919,12 +925,18 @@ def _build_chap_menu(chapters: list, home_prefix: str = "../") -> str:
 
 
 def _build_summary_menu_link(chapters: list, home_prefix: str = "../") -> str:
-    """The Summary link sits above the separator with the same single-label
-    style as 'About this report' — just the word once, in small caps."""
+    """Render the Summary entry as a regular chapter row (empty num gutter,
+    sentence-case title) so it visually aligns with the numbered chapters
+    that follow it in the dropdown."""
     for c in chapters:
         if c.get("number") == 0:
             cid = c.get("id", "")
-            return f'<a class="chap-menu-home" href="{home_prefix}{html.escape(cid)}/">Summary</a>'
+            return (
+                '<a class="chap-menu-item" href="{home}{cid}/">'
+                '<span class="chap-menu-num"></span>'
+                '<span class="chap-menu-title">Summary</span>'
+                '</a>'.format(home=home_prefix, cid=html.escape(cid))
+            )
     return ""
 
 
@@ -1581,12 +1593,11 @@ def render_index(
         for tid, label in toc_entries
     )
 
-    # Second left-column TOC: every numbered chapter + Summary; backmatter
-    # (acknowledgments) is reached via the dedicated footer link.
+    # Second left-column TOC: every numbered chapter + Summary + the
+    # Contributions & acknowledgments backmatter page. Numberless rows
+    # render with an empty num gutter so they align with the chapters.
     chap_toc_items_list = []
     for c in chapters:
-        if (c.get("kind") or "chapter") == "backmatter":
-            continue
         n = c.get("number")
         cid = c.get("id", "")
         t = clean_ws(c.get("title", ""))

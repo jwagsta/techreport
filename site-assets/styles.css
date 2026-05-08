@@ -539,6 +539,19 @@ a.toc-label-link:hover { color: var(--ink); }
   margin-top: 16px;
   display: flex; flex-wrap: wrap; gap: 12px;
 }
+
+/* DOI line under the title — accent-blue link, grey label, small. Used
+   on the homepage (inside .chap-header) and on chapter pages (inside
+   .chap-meta alongside the publish-date label). */
+.chap-header > .chap-doi {
+  font-family: var(--sans);
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 14px;
+}
+.chap-meta .chap-doi { color: var(--muted); }
+.chap-doi a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
+.chap-doi a:hover { text-decoration-thickness: 1.5px; }
 .chap-citation {
   font-family: var(--sans);
   font-size: 13px; line-height: 1.5;
