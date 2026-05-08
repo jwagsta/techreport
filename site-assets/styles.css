@@ -500,6 +500,7 @@ a.toc-label-link:hover { color: var(--ink); }
 }
 .eyebrow {
   font-family: var(--sans);
+  font-weight: 600;
   font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase;
   color: var(--accent);
 }
@@ -513,6 +514,19 @@ a.toc-label-link:hover { color: var(--ink); }
   color: var(--ink);
   max-width: 22ch;
 }
+/* Eyebrow above the chapter intro paragraphs — same accent-blue
+   sans treatment as inline section numbers (.section-num). */
+.chap-summary-label {
+  font-family: var(--sans);
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 0 0 14px;
+  scroll-margin-top: 80px;
+}
+
 .chap-summary {
   font-size: 22px; line-height: 1.45;
   color: var(--ink-2);
@@ -1763,15 +1777,18 @@ a.ilink:hover, a.cite:hover {
   background: var(--accent);
 }
 
-/* "References" appears as a section row, demoted to grey small caps. */
-.rc .rc-sec.rc-refs {
-  margin-top: 6px;
+/* "References" and "Summary" appear as meta section rows, demoted to
+   grey small caps. References hangs off the bottom, Summary off the top. */
+.rc .rc-sec.rc-refs,
+.rc .rc-sec.rc-summary {
   color: var(--muted-2);
   font-weight: 600;
   font-size: 11px;
   letter-spacing: 0.10em;
   text-transform: uppercase;
 }
+.rc .rc-sec.rc-refs { margin-top: 6px; }
+.rc .rc-sec.rc-summary { margin-bottom: 4px; }
 .rc .rc-sec.rc-refs:hover { color: var(--ink); }
 .rc .rc-sec.rc-refs .rc-sectitle { font-family: var(--sans); }
 
