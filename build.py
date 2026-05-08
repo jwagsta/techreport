@@ -1046,6 +1046,7 @@ def render_report_contents(
     current_slug: str,
     current_sections: list,  # [{id, num, title}]
     has_refs: bool,
+    has_summary: bool = False,
 ) -> str:
     """Render the unified left-side "Report contents" widget for a chapter page.
 
@@ -1080,6 +1081,14 @@ def render_report_contents(
             f'</a>'
         )
         if is_current:
+            if has_summary:
+                rows.append(
+                    '<a class="rc-sec rc-summary" href="#summary" '
+                    'data-fulltitle="Summary">'
+                    '<span class="rc-secn"></span>'
+                    '<span class="rc-sectitle">Summary</span>'
+                    '</a>'
+                )
             for s in current_sections:
                 sid = s.get("id", "")
                 snum = s.get("num", "") or ""
@@ -1139,7 +1148,21 @@ def render_chapter_page(
     body_blocks = blocks[byline_consumed:]
 
     is_summary = n == 0
-    body_parts = [render_block(b, used_fns) for b in body_blocks]
+    # Numbered chapters open with intro paragraphs that summarise the
+    # sections to follow. Mark them with a small "SUMMARY" eyebrow so
+    # readers can anchor to it from the TOC.
+    is_chapter = (chapter.get("kind") or "chapter") == "chapter" and not is_summary
+    has_summary = is_chapter and any(
+        b for b in body_blocks if isinstance(b, dict) and b.get("type") not in ("hr",)
+    )
+    body_parts = []
+    if has_summary:
+        body_parts.append(
+            '<div class="row">'
+            '<h2 class="chap-summary-label" id="summary">Summary</h2>'
+            '</div>'
+        )
+    body_parts.extend(render_block(b, used_fns) for b in body_blocks)
     for i, ss in enumerate(chapter.get("subsections", []) or [], start=1):
         ss_num = "" if is_summary or n is None else f"{n}.{i}"
         body_parts.append(render_subsection(ss, depth=2, used_fns=used_fns, number=ss_num))
@@ -1281,6 +1304,7 @@ def render_chapter_page(
         current_slug=chapter.get("id", ""),
         current_sections=current_sections,
         has_refs=bool(refs_html),
+        has_summary=has_summary,
     )
 
     # Eyebrow above chapter title — "CHAPTER N" in small-caps blue, matching
