@@ -230,19 +230,22 @@ def build_citation_map(references_by_chapter: dict) -> dict:
 #   Joyce et al., 1984
 #   Joyce & Cleaves 2010
 #   Joyce and Cleaves, 2010
+#   Van Herreweghe & Michiels, 2012        (2-word primary surname)
+#   Eleftherianos, Zhang et al., 2021      (Author1, Author2 et al.)
 # Year may be 1900–2099, optionally followed by a letter (1984a).
 _CITE_RE = re.compile(
     r"""
     (?<![\w])
     (?P<initials>(?:[A-Z]\.\s*){0,3})         # optional leading initials, e.g. "Y. " or "B. E. "
     (?P<author>
-        [A-Z][\w'\-]+
+        [A-Z][\w'\-]+(?:\s+[A-Z][\w'\-]+)?    # 1-2 word primary surname (e.g. "Van Herreweghe")
         (?:
-            \s+(?:&amp;|&)\s+(?:[A-Z]\.\s*)*[A-Z][\w'\-]+
-          | \s+and\s+(?:[A-Z]\.\s*)*[A-Z][\w'\-]+
+            \s+(?:&amp;|&)\s+(?:[A-Z]\.\s*)*[A-Z][\w'\-]+(?:\s+[A-Z][\w'\-]+)?
+          | \s+and\s+(?:[A-Z]\.\s*)*[A-Z][\w'\-]+(?:\s+[A-Z][\w'\-]+)?
           | \s*<em>[^<]*?et\s+al[^<]*?</em>\.?
           | \s+et\s+al\.?
-          | (?:\s+[A-Z][\w'\-]+){1,4}      # multi-word org names ("United Nations …")
+          | ,\s+[A-Z][\w'\-]+(?:\s+[A-Z][\w'\-]+)?\s*(?:<em>[^<]*?et\s+al[^<]*?</em>\.?|et\s+al\.?)
+          | (?:\s+[A-Z][\w'\-]+){1,4}         # multi-word org names ("United Nations …")
         )?
     )
     [\s,]*
@@ -505,18 +508,30 @@ def render_box(b: dict, used_fns: set[str]) -> str:
     label = html.escape(b.get("label", "Box"))
     title = html.escape(clean_ws(b.get("title", "")))
     body = "".join(render_block(child, used_fns) for child in b.get("blocks", []))
-    # Boxes use a flat block layout (display:block override), so the page's
-    # subgrid-based sidenote column doesn't apply inside them. Strip any
-    # row-sidenotes elements that paragraphs emit for footnotes — readers
-    # can still click the inline ref marker to open the footnote in the
-    # drawer. Then strip the surrounding .row wrapper from each paragraph.
-    body = re.sub(r'<div class="row-sidenotes">.*?</div>', '', body, flags=re.S)
+    # Hoist any row-sidenotes elements out of the box's flat layout into a
+    # single sidenote block at the boxrow level — they then land in the
+    # page's right-margin sidenote column alongside the box card.
+    sidenote_chunks: list[str] = []
+    def _hoist_sidenote(m: re.Match[str]) -> str:
+        sidenote_chunks.append(m.group(1))
+        return ""
+    body = re.sub(
+        r'<div class="row-sidenotes">(.*?)</div>',
+        _hoist_sidenote, body, flags=re.S,
+    )
     body = re.sub(r'<div class="row">(<p[^>]*>.*?</p>)</div>', r'\1', body, flags=re.S)
+    sidenote_html = (
+        f'<div class="row-sidenotes">{"".join(sidenote_chunks)}</div>'
+        if sidenote_chunks else ""
+    )
     return (
         f'<aside class="row boxrow callout" id="{bid}">'
+        f'<div class="box-card">'
         f'<div class="box-label">{label}</div>'
         f'<h4 class="box-title">{title}</h4>'
         f'<div class="box-body">{body}</div>'
+        f'</div>'
+        f'{sidenote_html}'
         f'</aside>'
     )
 
@@ -769,7 +784,7 @@ TOPSTRIP = """<header class="topstrip">
       <span class="brand-wrap">
         <a class="brand" href="{home}"><span class="brand-line1">Technical Report</span> <span class="brand-line2">on Mirror Bacteria</span></a>
         <nav class="chap-menu" aria-label="Chapters">
-          <a class="chap-menu-home" href="{home}">About</a>
+          <a class="chap-menu-home" href="{home}"><span class="chap-menu-num"></span><span class="chap-menu-title">About</span></a>
           <div class="chap-menu-sep"></div>
           {summary_menu_link}
           {chap_menu}
