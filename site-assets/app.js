@@ -236,12 +236,13 @@
       .replace(/\s+/g, ' ').trim();
     const googleHref = 'https://www.google.com/search?q=' + encodeURIComponent(refText);
     const actions = [];
+    const arrow = '<span class="ext-arrow" aria-hidden="true">↗</span>';
     actions.push(
-      '<a href="' + escapeHtml(googleHref) + '" target="_blank" rel="noopener noreferrer">Search for this reference ↗</a>'
+      '<a href="' + escapeHtml(googleHref) + '" target="_blank" rel="noopener noreferrer">Search for this reference' + arrow + '</a>'
     );
     if (url) {
       actions.push(
-        '<a href="' + escapeHtml(url) + '" target="_blank" rel="noopener noreferrer">Open source ↗</a>'
+        '<a href="' + escapeHtml(url) + '" target="_blank" rel="noopener noreferrer">Open source' + arrow + '</a>'
       );
     }
     if (doi) {

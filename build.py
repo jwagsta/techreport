@@ -1181,14 +1181,15 @@ def render_chapter_page(
                 "https://www.google.com/search?q="
                 + _urlparse.quote_plus(ref_text)
             )
+            arrow = '<span class="ext-arrow" aria-hidden="true">↗</span>'
             actions = [
                 f'<a href="{html.escape(google_href)}" target="_blank" '
-                f'rel="noopener noreferrer">Search for this reference ↗</a>'
+                f'rel="noopener noreferrer">Search for this reference{arrow}</a>'
             ]
             if url:
                 actions.append(
                     f'<a href="{html.escape(url)}" target="_blank" '
-                    f'rel="noopener noreferrer">Open source ↗</a>'
+                    f'rel="noopener noreferrer">Open source{arrow}</a>'
                 )
             if doi:
                 actions.append(
