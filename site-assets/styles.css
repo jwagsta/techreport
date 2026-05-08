@@ -1813,8 +1813,11 @@ a.ilink:hover, a.cite:hover {
   content: "";
   position: absolute;
   left: 0;
-  top: 50%;
-  margin-top: -3px;
+  /* Align with the first line of the title (3px row padding + half a
+     12px/1.45 line minus half the dot height ≈ 9px), so multi-line
+     section titles still anchor the dot to the top line, not the middle
+     of the wrapped block. */
+  top: 9px;
   width: 6px;
   height: 6px;
   border-radius: 50%;
