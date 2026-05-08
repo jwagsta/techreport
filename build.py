@@ -505,7 +505,12 @@ def render_box(b: dict, used_fns: set[str]) -> str:
     label = html.escape(b.get("label", "Box"))
     title = html.escape(clean_ws(b.get("title", "")))
     body = "".join(render_block(child, used_fns) for child in b.get("blocks", []))
-    # Strip the surrounding .row wrappers from child paragraphs since we're already inside a box card.
+    # Boxes use a flat block layout (display:block override), so the page's
+    # subgrid-based sidenote column doesn't apply inside them. Strip any
+    # row-sidenotes elements that paragraphs emit for footnotes — readers
+    # can still click the inline ref marker to open the footnote in the
+    # drawer. Then strip the surrounding .row wrapper from each paragraph.
+    body = re.sub(r'<div class="row-sidenotes">.*?</div>', '', body, flags=re.S)
     body = re.sub(r'<div class="row">(<p[^>]*>.*?</p>)</div>', r'\1', body, flags=re.S)
     return (
         f'<aside class="row boxrow callout" id="{bid}">'
@@ -534,7 +539,11 @@ def render_list(b: dict, used_fns: set[str]) -> str:
 
 def render_blockquote(b: dict, used_fns: set[str]) -> str:
     inner = "".join(render_block(child, used_fns) for child in b.get("blocks", []))
-    inner = re.sub(r'<div class="row">(.*?)</div>', r'\1', inner, flags=re.S)
+    # Same flattening as render_box — strip footnote sidenote elements
+    # before unwrapping the .row containers, since blockquote also uses a
+    # flat layout.
+    inner = re.sub(r'<div class="row-sidenotes">.*?</div>', '', inner, flags=re.S)
+    inner = re.sub(r'<div class="row">(<p[^>]*>.*?</p>)</div>', r'\1', inner, flags=re.S)
     return f'<blockquote class="row prose-quote">{inner}</blockquote>'
 
 
@@ -783,7 +792,7 @@ CHAPTER_TEMPLATE = """{head}{topstrip}
   {report_contents}
 
   <section class="content">
-    <header class="chap-header">
+    <header class="chap-header" id="summary">
       {chapter_eyebrow}
       <h1 class="chap-title">{title}</h1>
       <div class="chap-meta">
@@ -1169,9 +1178,12 @@ def render_chapter_page(
     )
     body_parts = []
     if has_summary:
+        # The visible eyebrow above the intro paragraphs. The id="summary"
+        # anchor lives on the chap-header (so clicking the TOC's Summary
+        # entry jumps to the very top of the chapter, not mid-page).
         body_parts.append(
             '<div class="row">'
-            '<h2 class="chap-summary-label" id="summary">Summary</h2>'
+            '<h2 class="chap-summary-label">Summary</h2>'
             '</div>'
         )
     body_parts.extend(render_block(b, used_fns) for b in body_blocks)

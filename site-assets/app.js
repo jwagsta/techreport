@@ -141,13 +141,21 @@
       const chapNumLabel = chapMatch ? 'Chapter ' + chapMatch[1] + ' · ' : '';
       let target = chapSlug === targetId ? null : doc.getElementById(targetId);
       if (!target) {
-        // Whole-chapter preview: header + first paragraph or two of body
+        // Whole-chapter preview: header + the full summary, which is
+        // every direct child of .body up to (but not including) the
+        // first <section class="subsection">.
         const headerHtml = doc.querySelector('.chap-header')?.outerHTML || '';
-        const firstParas = Array.from(doc.querySelectorAll('.body .row .prose')).slice(0, 3)
-          .map(function (p) { return p.outerHTML; }).join('');
+        const body = doc.querySelector('.body');
+        let summaryHtml = '';
+        if (body) {
+          for (const child of Array.from(body.children)) {
+            if (child.matches('section.subsection')) break;
+            summaryHtml += child.outerHTML;
+          }
+        }
         return {
           label: chapNumLabel + chapTitle,
-          html: headerHtml + firstParas,
+          html: headerHtml + summaryHtml,
           href: url,
         };
       }
