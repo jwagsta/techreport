@@ -1181,6 +1181,32 @@ a.ilink:hover, a.cite:hover {
 .refs-list .ref-item .ref-abstract-body p { margin: 0 0 8px; }
 .refs-list .ref-item .ref-abstract-body p:last-child { margin-bottom: 0; }
 
+/* End-of-chapter bibliography: action links (Search / Open source / DOI).
+   Underlined link text with a non-underlined diagonal arrow alongside. */
+.refs-list .ref-actions {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 18px;
+  font-family: var(--sans);
+  font-size: 13px;
+  line-height: 1.4;
+}
+.refs-list .ref-actions a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.refs-list .ref-actions a:hover { text-decoration-thickness: 1.5px; }
+
+/* Diagonal arrow opt-out from the parent link's underline. inline-block
+   creates a fresh decoration context so the underline doesn't run under it. */
+.ext-arrow {
+  display: inline-block;
+  margin-left: 3px;
+  text-decoration: none;
+}
+
 /* Drawer flavour of the same block: lives next to the citation card. */
 .drawer .dbody .ref-abstract.drawer-abstract {
   margin-top: 14px;
@@ -1257,6 +1283,12 @@ a.ilink:hover, a.cite:hover {
 }
 .drawer .dbody .figrow figcaption,
 .drawer .dbody figure.row figcaption {
+  /* Undo the chapter-page sidenote positioning so the caption stacks
+     beneath the image inside the drawer. */
+  position: static;
+  top: auto;
+  right: auto;
+  width: auto;
   grid-column: auto;
   align-self: auto;
   padding-top: 0;
